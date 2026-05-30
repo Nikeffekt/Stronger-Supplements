@@ -21,18 +21,44 @@ var meinStack     = {};  // { suppId: { prod, preis } } – gewählter Stack
 
 // ── JSON → DB ADAPTER ──
 // Wandelt die produkte.json Struktur (10 gleichwertige Anbieter)
-// in die App-Struktur um (1 Hauptprodukt + Alternativen)
+// in die App-Struktur um (1 Hauptprodukt + Alternativen + alle)
 //
 // Mapping: JSON-Keys → App-Keys (falls abweichend)
 var JSON_KEY_MAP = {
-  'omega_3':       'omega3',
-  'vitamin_d3_k2': 'vitamin_d3',
-  'eaa_bcaa':      'eaas',
+  'omega_3':         'omega3',
+  'vitamin_d3_k2':   'vitamin_d3',
+  'eaa_bcaa':        'eaas',
   'grüner_tee_egcg': 'gruener_tee',
 };
 
+// Mapping: marktposition → segment (für getPersonalisierteAlts)
+var SEGMENT_MAP = {
+  'DACH #1 Premium':              'dach_premium',
+  'Studio-Distribution DACH':     'dach_premium',
+  'Global Masse / Preis-Leistung':'preis_leistung',
+  'Budget Global':                'preis_leistung',
+  'Wachstum CEE / Preisjäger':    'budget_cee',
+  'Functional EU / CEE Leader':   'functional',
+  'Globaler Bestseller':          'reviews_global',
+  'Review-König EU':              'eu_reviews',
+  'Premium / Medical Grade':      'premium_medical',
+  'Medical Grade / Biohacker':    'medical_grade',
+  'Tradition & Qualität EU':      'tradition',
+  'Trend / Functional':           'trend',
+};
+
+// Allergen-Filter je Wirkstoff (gilt für alle Anbieter dieses Wirkstoffs)
+var WIRKSTOFF_FILTER = {
+  'whey_protein':   ['laktose'],
+  'omega3':         ['fisch'],
+  'kollagen':       ['tierisch'],
+  'eaas':           [],
+  'omega3_vegan':   [],
+  'pflanzenprotein':[],
+  'iso_clear':      [],   // laktosefrei per Definition
+};
+
 function preisBereinigen(preisStr) {
-  // '~29,90 €' → '29,90'
   if (!preisStr) return '0,00';
   var m = preisStr.match(/(\d+[,\.]\d+)/);
   if (m) return m[1].replace('.', ',');
@@ -41,13 +67,11 @@ function preisBereinigen(preisStr) {
 }
 
 function ratingBereinigen(ratingStr) {
-  // '4,8 ★' → '4.8 ★'
   if (!ratingStr) return '4.5 ★';
   return ratingStr.replace(',', '.');
 }
 
 function tagsAusAnbieter(anbieter) {
-  // Generiert bis zu 3 Tags aus Trigger/Empfehlung/Zertifikat
   var tags = [];
   if (anbieter.trigger) {
     anbieter.trigger.split(',').forEach(function (t) {
@@ -60,19 +84,31 @@ function tagsAusAnbieter(anbieter) {
   return tags.slice(0, 3);
 }
 
-function anbieterZuProdukt(anbieter) {
-  // Wandelt einen Anbieter-Eintrag aus der JSON in ein Produkt-Objekt um
+function segmentAusAnbieter(anbieter) {
+  var mp = anbieter.marktposition || '';
+  // Exakter Match
+  if (SEGMENT_MAP[mp]) return SEGMENT_MAP[mp];
+  // Fuzzy Match
+  var keys = Object.keys(SEGMENT_MAP);
+  for (var i = 0; i < keys.length; i++) {
+    if (mp.indexOf(keys[i]) >= 0) return SEGMENT_MAP[keys[i]];
+  }
+  return 'other';
+}
+
+function anbieterZuProdukt(anbieter, appKey) {
   return {
-    marke:  anbieter.name    || '–',
-    name:   anbieter.produkt || '–',
-    preis:  preisBereinigen(anbieter.preis_paket || anbieter.preis || ''),
-    rating: ratingBereinigen(anbieter.bewertung  || ''),
-    tags:   tagsAusAnbieter(anbieter),
+    marke:   anbieter.name    || '–',
+    name:    anbieter.produkt || '–',
+    preis:   preisBereinigen(anbieter.preis_paket || anbieter.preis || ''),
+    rating:  ratingBereinigen(anbieter.bewertung  || ''),
+    tags:    tagsAusAnbieter(anbieter),
+    segment: segmentAusAnbieter(anbieter),
+    filter:  WIRKSTOFF_FILTER[appKey] || [],
   };
 }
 
 function bauDB(jsonDaten) {
-  // Baut die globale DB aus den geladenen JSON-Daten auf
   var wirkstoffe = jsonDaten && jsonDaten.wirkstoffe;
   if (!wirkstoffe) {
     console.warn('produkte.json: Keine Wirkstoffe gefunden.');
@@ -83,21 +119,102 @@ function bauDB(jsonDaten) {
     var wirkstoff = wirkstoffe[jsonKey];
     if (!wirkstoff.anbieter || !wirkstoff.anbieter.length) return;
 
-    // App-Key bestimmen (Mapping oder direkt)
     var appKey = JSON_KEY_MAP[jsonKey] || jsonKey;
+    var alleProdukte = wirkstoff.anbieter.map(function (a) {
+      return anbieterZuProdukt(a, appKey);
+    });
 
-    // Anbieter in Produkte umwandeln
-    var alleProdukte = wirkstoff.anbieter.map(anbieterZuProdukt);
-
-    // Erster Anbieter = Hauptprodukt, Rest = Alternativen
-    // (Reihenfolge in der Excel bestimmt die Empfehlung)
     DB[appKey] = {
       hauptprodukt: alleProdukte[0],
-      alternativen: alleProdukte.slice(1),  // alle weiteren Anbieter
+      alternativen: alleProdukte.slice(1),
+      alle:         alleProdukte,   // für getPersonalisierteAlts
     };
   });
 
   console.log('✅ DB geladen: ' + Object.keys(DB).length + ' Wirkstoffe');
+}
+
+
+// ── PERSONALISIERTE ALTERNATIVEN ──
+// Wählt bis zu 5 kompatible Produkte – gefiltert und nach Profil priorisiert
+function getPersonalisierteAlts(suppId, a) {
+  var db = DB[suppId];
+  if (!db || !db.alle) return [];
+
+  var unvert      = a.unvertraeglichkeiten || ['A'];
+  var ernaehrung  = a.ernaehrung || 'A';
+  var vegan       = ernaehrung === 'D';
+  var vegetarisch = ernaehrung === 'C' || ernaehrung === 'D';
+  var hatLaktose  = unvert.indexOf('B') >= 0;
+  var hatFisch    = unvert.indexOf('C') >= 0;
+  var hatGluten   = unvert.indexOf('D') >= 0;
+  var hatSoja     = unvert.indexOf('E') >= 0;
+  var alter       = a.intro || 'C';
+  var ziele       = a.ziele || [];
+  var erfahrung   = a.erfahrung || 'einsteiger';
+  var fett        = ziele.indexOf('B') >= 0;
+  var mu          = ziele.indexOf('A') >= 0;
+  var health      = ziele.indexOf('F') >= 0;
+
+  // Strenger Allergen-Filter
+  function istKompatibel(p) {
+    var f = p.filter || [];
+    if (hatLaktose && f.indexOf('laktose')   >= 0) return false;
+    if (hatFisch   && f.indexOf('fisch')     >= 0) return false;
+    if (hatGluten  && f.indexOf('gluten')    >= 0) return false;
+    if (hatSoja    && f.indexOf('soja')      >= 0) return false;
+    if (vegan      && f.indexOf('tierisch')  >= 0) return false;
+    if (vegetarisch && f.indexOf('gelatine') >= 0) return false;
+    if (vegetarisch && f.indexOf('fisch')    >= 0) return false;
+    return true;
+  }
+
+  var alle = db.alle.filter(istKompatibel);
+  if (alle.length === 0) return [];
+
+  function findSeg(seg) {
+    for (var i = 0; i < alle.length; i++) {
+      if (alle[i].segment === seg) return alle[i];
+    }
+    return null;
+  }
+
+  // Slot 1: Bestes Produkt nach Profil
+  var best = null;
+  if (vegan)                                              best = findSeg('trend') || findSeg('premium_medical');
+  else if ((erfahrung === 'profi' || erfahrung === 'fortgeschritten') && mu) best = findSeg('premium_medical') || findSeg('medical_grade');
+  else if (fett)                                          best = findSeg('functional') || findSeg('premium_medical');
+  else if (health && (alter === 'D' || alter === 'E'))    best = findSeg('medical_grade') || findSeg('premium_medical');
+  else if (erfahrung === 'einsteiger')                    best = findSeg('preis_leistung');
+  if (!best) best = findSeg('dach_premium') || alle[0];
+
+  // Slot 2: Trend passend zur Altersklasse
+  var trend = null;
+  if (alter === 'A' || alter === 'B')      trend = findSeg('budget_cee') || findSeg('trend');
+  else if (alter === 'C')                  trend = findSeg('trend') || findSeg('functional');
+  else if (alter === 'D' || alter === 'E') trend = findSeg('medical_grade') || findSeg('tradition');
+  if (!trend) trend = findSeg('trend') || alle[Math.min(3, alle.length - 1)];
+
+  // Slot 3–5: DACH Premium / Preis-Leistung / Reviews
+  var dach    = findSeg('dach_premium')   || alle[0];
+  var preis   = findSeg('preis_leistung') || alle[1];
+  var reviews = findSeg('reviews_global') || findSeg('eu_reviews') || alle[2];
+
+  // Deduplizieren und auf max. 5 begrenzen
+  var result = [], seen = [];
+  function addIfNew(p) {
+    if (!p) return;
+    var key = p.marke + '|' + p.name;
+    if (seen.indexOf(key) < 0) { seen.push(key); result.push(p); }
+  }
+  addIfNew(best);
+  addIfNew(trend);
+  addIfNew(dach);
+  addIfNew(preis);
+  addIfNew(reviews);
+  for (var i = 0; i < alle.length && result.length < 5; i++) addIfNew(alle[i]);
+
+  return result;
 }
 
 function ladeProdukte() {
@@ -900,7 +1017,8 @@ function oeffneWirkstoffPopup(eid, prio, a) {
   var d          = dosis(eid, a);
   var prioColor  = prio === 'essential' ? '#FF6B00' : prio === 'empfohlen' ? '#3B82F6' : '#10B981';
   var prioLabel  = prio === 'essential' ? 'Essentiell' : prio === 'empfohlen' ? 'Empfohlen' : 'Optional';
-  var produkte   = [db.hauptprodukt].concat(db.alternativen || []);
+  var produkte   = getPersonalisierteAlts(eid, a);
+  if (!produkte || !produkte.length) produkte = [db.hauptprodukt].concat(db.alternativen || []);
 
   var h = '';
   h += '<div class="pw-popup-header" style="border-color:' + prioColor + '20;">';
