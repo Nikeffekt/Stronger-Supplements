@@ -1942,6 +1942,66 @@ button {
   gap: 12px;
 }
 
+/* Klickbarer Einnahme-Block */
+.pw-einnahme-klickbar {
+  cursor: pointer;
+  transition: border-color 0.18s, background 0.18s;
+  flex-wrap: wrap;
+  position: relative;
+}
+.pw-einnahme-klickbar:hover {
+  border-color: rgba(255,107,0,0.35);
+  background: rgba(255,107,0,0.05);
+}
+.pw-einnahme-aktiv {
+  border-color: rgba(255,107,0,0.5) !important;
+  background: rgba(255,107,0,0.08) !important;
+}
+
+/* Hint-Text "Tippe für Beispiel" */
+.pw-einnahme-hint {
+  width: 100%;
+  font-size: 10px;
+  color: rgba(255,107,0,0.6);
+  letter-spacing: 0.5px;
+  padding-top: 6px;
+  margin-top: 4px;
+  border-top: 1px solid rgba(255,107,0,0.15);
+}
+
+/* Beispiel-Panel */
+.pw-bsp-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.3s ease, padding 0.3s ease;
+  opacity: 0;
+  padding: 0 16px;
+  background: rgba(255,107,0,0.06);
+  border: 1px solid rgba(255,107,0,0.2);
+  border-radius: 12px;
+  margin-top: 0;
+}
+.pw-bsp-panel.pw-bsp-offen {
+  max-height: 300px;
+  opacity: 1;
+  padding: 14px 16px;
+  margin-top: 8px;
+}
+.pw-bsp-titel {
+  font-family: var(--font-d);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #FF6B00;
+  margin-bottom: 8px;
+}
+.pw-bsp-text {
+  font-size: 13px;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.75);
+}
+
 .pw-einnahme-block   { flex: 1; }
 .pw-einnahme-lbl     { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.7px; color: rgba(255, 255, 255, 0.3); margin-bottom: 4px; }
 .pw-einnahme-val     { font-size: 13px; font-weight: 700; color: #fff; }

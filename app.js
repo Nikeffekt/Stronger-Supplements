@@ -1031,10 +1031,16 @@ function oeffneWirkstoffPopup(eid, prio, a) {
   h += '<button class="pw-popup-close tipp" id="pw-close">✕</button>';
   h += '</div>';
   h += '<p class="pw-popup-erkl">' + erkl + '</p>';
-  h += '<div class="pw-popup-einnahme">';
+  h += '<div class="pw-popup-einnahme pw-einnahme-klickbar" id="pw-einnahme-toggle" title="Tippe für konkretes Beispiel">';
   h += '<div class="pw-einnahme-block"><div class="pw-einnahme-lbl">⏱ EINNAHME</div><div class="pw-einnahme-val">' + d.z + '</div></div>';
   h += '<div class="pw-einnahme-divider"></div>';
   h += '<div class="pw-einnahme-block"><div class="pw-einnahme-lbl">💊 DOSIERUNG</div><div class="pw-einnahme-val" style="color:#34D399;">' + d.d + '</div></div>';
+  h += '<div class="pw-einnahme-hint">💡 Tippe für Beispiel</div>';
+  h += '</div>';
+  // Beispiel-Panel (initial versteckt)
+  h += '<div class="pw-bsp-panel" id="pw-bsp-panel">';
+  h += '<div class="pw-bsp-titel">📋 Konkretes Beispiel</div>';
+  h += '<div class="pw-bsp-text">' + (d.bsp || 'Laut Produktangabe einnehmen.') + '</div>';
   h += '</div>';
   h += '</div>';
 
@@ -1070,6 +1076,17 @@ function oeffneWirkstoffPopup(eid, prio, a) {
   setTimeout(function () { document.getElementById('pw-popup').classList.add('pw-popup-open'); }, 10);
 
   document.getElementById('pw-close').addEventListener('click', schliessePopup);
+
+  // Einnahme-Block: Beispiel-Panel aufklappen/zuklappen
+  var einnahmeToggle = document.getElementById('pw-einnahme-toggle');
+  var bspPanel       = document.getElementById('pw-bsp-panel');
+  if (einnahmeToggle && bspPanel) {
+    einnahmeToggle.addEventListener('click', function () {
+      var offen = bspPanel.classList.contains('pw-bsp-offen');
+      bspPanel.classList.toggle('pw-bsp-offen', !offen);
+      einnahmeToggle.classList.toggle('pw-einnahme-aktiv', !offen);
+    });
+  }
 
   document.querySelectorAll('.pw-prod-kaufen').forEach(function (btn) {
     btn.addEventListener('click', function () {
