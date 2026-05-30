@@ -50,7 +50,7 @@ function initQueue() {
       ]
     },
     {
-      id: 'groesse', typ: 'nummer', tag: 'Schritt 3',
+      id: 'groesse', typ: 'rad', tag: 'Schritt 3',
       frage: 'Wie groß bist du?',
       hint: 'Basis für BMI-Berechnung.',
       einheit: 'cm', min: 140, max: 220, std: 175
