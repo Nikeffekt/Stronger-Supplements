@@ -1,0 +1,521 @@
+{
+  "meta": {
+    "version": "1.0",
+    "beschreibung": "Metadaten für alle 25 Wirkstoffe – Kategorie, Priorität, Einnahme, Quiz-Mapping",
+    "kategorien": {
+      "gesundheit":     { "label": "Gesundheit & Mikronährstoffe", "emoji": "🩺", "farbe": "#4FC3F7" },
+      "verdauung":      { "label": "Verdauung & Darmgesundheit",    "emoji": "🦠", "farbe": "#52B788" },
+      "muskelaufbau":   { "label": "Muskelaufbau & Performance",    "emoji": "💪", "farbe": "#FF6B6B" },
+      "regeneration":   { "label": "Schlaf & Regeneration",         "emoji": "😴", "farbe": "#B39DDB" },
+      "gelenke":        { "label": "Gelenke & Bindegewebe",         "emoji": "🦴", "farbe": "#A8D5A2" },
+      "gewicht":        { "label": "Gewichtsmanagement",            "emoji": "⚖️", "farbe": "#FFD166" }
+    },
+    "prioritaeten": {
+      "essential": { "label": "Essential",  "farbe": "#FF6B00", "beschreibung": "Basis-Stack – maximale Wirksamkeit belegt" },
+      "empfohlen": { "label": "Empfohlen",  "farbe": "#3B82F6", "beschreibung": "Ergänzung je nach Ziel & Budget" },
+      "optional":  { "label": "Optional",   "farbe": "#8B5CF6", "beschreibung": "Fortgeschrittene / spezifische Ziele" }
+    }
+  },
+  "wirkstoffe": {
+    "magnesium": {
+      "id":           "magnesium",
+      "name":         "Magnesium",
+      "name_lang":    "Magnesium Bisglycinat",
+      "emoji":        "🟢",
+      "kategorie":    "gesundheit",
+      "prioritaet":   "essential",
+      "tagline":      "Muskelkontraktion, Nerven & Schlaf",
+      "beschreibung": "Magnesium ist an über 300 Enzymreaktionen beteiligt. Besonders für Sportler wichtig – Schweiß reduziert den Magnesiumspiegel stark.",
+      "einnahme": {
+        "dosis":    "300–400 mg",
+        "zeitpunkt":"Abends vor dem Schlafen",
+        "hinweis":  "Nicht zusammen mit Kalzium einnehmen"
+      },
+      "beste_form":   "Bisglycinat (Chelat)",
+      "synergie":     ["zink", "vitamin_d3_k2", "zma"],
+      "quiz_ziele":   ["muskelaufbau", "abnehmen", "gesundheit", "ausdauer"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  true
+    },
+    "vitamin_d3_k2": {
+      "id":           "vitamin_d3_k2",
+      "name":         "Vitamin D3 + K2",
+      "name_lang":    "Vitamin D3 + K2 (MK-7)",
+      "emoji":        "☀️",
+      "kategorie":    "gesundheit",
+      "prioritaet":   "essential",
+      "tagline":      "Knochen, Immunsystem & Testosteron",
+      "beschreibung": "Vitamin D3-Mangel ist in DACH sehr verbreitet. K2 (MK-7 all-trans) sorgt dafür, dass Kalzium in die Knochen und nicht in die Gefäße gelangt.",
+      "einnahme": {
+        "dosis":    "2000–5000 IE D3 + 100 µg K2",
+        "zeitpunkt":"Morgens zur fettreichen Mahlzeit",
+        "hinweis":  "Fettlöslich – immer mit Fett einnehmen"
+      },
+      "beste_form":   "Cholecalciferol (D3) + MK-7 all-trans (K2)",
+      "synergie":     ["omega_3", "magnesium", "zink"],
+      "quiz_ziele":   ["muskelaufbau", "abnehmen", "gesundheit", "ausdauer"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  true
+    },
+    "omega_3": {
+      "id":           "omega_3",
+      "name":         "Omega-3",
+      "name_lang":    "Omega-3 Fettsäuren (EPA + DHA)",
+      "emoji":        "🐟",
+      "kategorie":    "gesundheit",
+      "prioritaet":   "essential",
+      "tagline":      "Entzündung, Herz, Gehirn & Recovery",
+      "beschreibung": "EPA und DHA wirken entzündungshemmend und unterstützen Herzgesundheit, kognitive Funktion und die Regeneration nach dem Training.",
+      "einnahme": {
+        "dosis":    "2000 mg EPA+DHA",
+        "zeitpunkt":"Zur Mahlzeit (Fett verbessert Aufnahme)",
+        "hinweis":  "TG-Form hat bessere Bioverfügbarkeit als EE-Form"
+      },
+      "beste_form":   "Triglycerid-Form (TG)",
+      "synergie":     ["vitamin_d3_k2", "curcumin", "kollagen"],
+      "quiz_ziele":   ["muskelaufbau", "abnehmen", "gesundheit", "ausdauer"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  true
+    },
+    "zink": {
+      "id":           "zink",
+      "name":         "Zink",
+      "name_lang":    "Zink Bisglycinat",
+      "emoji":        "🔷",
+      "kategorie":    "gesundheit",
+      "prioritaet":   "essential",
+      "tagline":      "Testosteron, Immunsystem & Enzyme",
+      "beschreibung": "Zink ist essenziell für Testosteronproduktion, Immunabwehr und Wundheilung. Intensives Training erhöht den Zinkverlust über Schweiß.",
+      "einnahme": {
+        "dosis":    "10–25 mg",
+        "zeitpunkt":"Abends, getrennt von Kalzium",
+        "hinweis":  "Nicht auf nüchternen Magen – kann Übelkeit verursachen"
+      },
+      "beste_form":   "Bisglycinat (TRAACS)",
+      "synergie":     ["magnesium", "vitamin_c", "zma"],
+      "quiz_ziele":   ["muskelaufbau", "gesundheit"],
+      "quiz_gender":  ["maennlich"],
+      "pflichtfeld":  false
+    },
+    "vitamin_c": {
+      "id":           "vitamin_c",
+      "name":         "Vitamin C",
+      "name_lang":    "Vitamin C (Ascorbinsäure)",
+      "emoji":        "🍊",
+      "kategorie":    "gesundheit",
+      "prioritaet":   "empfohlen",
+      "tagline":      "Kollagensynthese, Antioxidans & Immunsystem",
+      "beschreibung": "Vitamin C ist Cofaktor der Kollagensynthese und schützt Zellen vor oxidativem Stress. Synergist zu Kollagen und Eisen.",
+      "einnahme": {
+        "dosis":    "500–1000 mg",
+        "zeitpunkt":"Morgens oder zu den Mahlzeiten",
+        "hinweis":  "Zusammen mit Kollagen einnehmen für maximale Wirkung"
+      },
+      "beste_form":   "Liposomal oder Ester-C",
+      "synergie":     ["kollagen", "zink", "eisen"],
+      "quiz_ziele":   ["gesundheit", "abnehmen", "muskelaufbau"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "probiotika": {
+      "id":           "probiotika",
+      "name":         "Probiotika",
+      "name_lang":    "Probiotika Komplex",
+      "emoji":        "🦠",
+      "kategorie":    "verdauung",
+      "prioritaet":   "empfohlen",
+      "tagline":      "Darmflora, Nährstoffaufnahme & Immunsystem",
+      "beschreibung": "Ein gesundes Mikrobiom verbessert die Nährstoffaufnahme, stärkt das Immunsystem und reduziert Entzündungen. Besonders wichtig nach Antibiotika.",
+      "einnahme": {
+        "dosis":    "≥10 Mrd. CFU",
+        "zeitpunkt":"Morgens nüchtern oder zu den Mahlzeiten",
+        "hinweis":  "Mindestens 8 verschiedene Stämme bevorzugen"
+      },
+      "beste_form":   "Enteric coated, multi-strain (≥8 Stämme)",
+      "synergie":     ["vitamin_c", "omega_3", "l_glutamin"],
+      "quiz_ziele":   ["gesundheit", "abnehmen"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "verdauungsenzyme": {
+      "id":           "verdauungsenzyme",
+      "name":         "Verdauungsenzyme",
+      "name_lang":    "Verdauungsenzyme Komplex",
+      "emoji":        "🧫",
+      "kategorie":    "verdauung",
+      "prioritaet":   "empfohlen",
+      "tagline":      "Proteinverwertung, Blähungen & Laktoseintoleranz",
+      "beschreibung": "Verdauungsenzyme verbessern die Aufspaltung von Proteinen, Fetten und Kohlenhydraten. Besonders hilfreich für Whey-Nutzer und Laktoseintolerante.",
+      "einnahme": {
+        "dosis":    "1 Portion",
+        "zeitpunkt":"Direkt zu jeder Hauptmahlzeit",
+        "hinweis":  "Enteric coated schützt Enzyme vor Magensäure"
+      },
+      "beste_form":   "Protease + Amylase + Lipase + Laktase",
+      "synergie":     ["probiotika", "whey_protein"],
+      "quiz_ziele":   ["muskelaufbau", "gesundheit"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "whey_protein": {
+      "id":           "whey_protein",
+      "name":         "Whey Protein",
+      "name_lang":    "Whey Protein Konzentrat / Isolat",
+      "emoji":        "🥛",
+      "kategorie":    "muskelaufbau",
+      "prioritaet":   "essential",
+      "tagline":      "Muskelaufbau, Sättigung & Recovery",
+      "beschreibung": "Whey ist das am schnellsten absorbierbare Protein. Ideal post-workout für maximale Muskelproteinsynthese. Hoher Leucin-Gehalt triggert mTOR.",
+      "einnahme": {
+        "dosis":    "20–30 g",
+        "zeitpunkt":"Direkt nach dem Training",
+        "hinweis":  "Isolat bei Laktoseintoleranz bevorzugen"
+      },
+      "beste_form":   "Isolat (laktosefrei) oder Konzentrat",
+      "synergie":     ["kreatin", "eaa_bcaa", "kollagen"],
+      "quiz_ziele":   ["muskelaufbau"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "iso_clear": {
+      "id":           "iso_clear",
+      "name":         "Iso Clear",
+      "name_lang":    "Whey Isolat Clear (Fruchtgeschmack)",
+      "emoji":        "🧬",
+      "kategorie":    "muskelaufbau",
+      "prioritaet":   "empfohlen",
+      "tagline":      "Whey Isolat, fettarm & leichte Textur",
+      "beschreibung": "Iso Clear ist ein klares, fruchtiges Proteingetränk auf Whey-Isolat-Basis. Ideal für alle die klassische Proteinshakes nicht mögen.",
+      "einnahme": {
+        "dosis":    "20–25 g",
+        "zeitpunkt":"Post-Workout oder als Snack",
+        "hinweis":  ">80% Protein, <1g Fett pro Portion"
+      },
+      "beste_form":   "Whey Isolat (>80% Protein)",
+      "synergie":     ["eaa_bcaa", "kreatin"],
+      "quiz_ziele":   ["muskelaufbau", "abnehmen"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "kreatin": {
+      "id":           "kreatin",
+      "name":         "Kreatin",
+      "name_lang":    "Kreatin Monohydrat",
+      "emoji":        "🔵",
+      "kategorie":    "muskelaufbau",
+      "prioritaet":   "essential",
+      "tagline":      "Kraft, Schnellkraft & Muskelmasse",
+      "beschreibung": "Kreatin ist das am besten erforschte Supplement überhaupt. Erhöht ATP-Resynthese für mehr Kraft und Schnellkraft. Wirkt auch kognitiv.",
+      "einnahme": {
+        "dosis":    "3–5 g täglich",
+        "zeitpunkt":"Täglich – Zeitpunkt egal (Konsistenz wichtiger)",
+        "hinweis":  "Keine Ladephase nötig – einfach täglich 3–5g"
+      },
+      "beste_form":   "Monohydrat (Creapure®)",
+      "synergie":     ["whey_protein", "beta_alanin", "pre_workout"],
+      "quiz_ziele":   ["muskelaufbau"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "eaa_bcaa": {
+      "id":           "eaa_bcaa",
+      "name":         "EAA & BCAA",
+      "name_lang":    "Essentielle Aminosäuren (EAA)",
+      "emoji":        "💪",
+      "kategorie":    "muskelaufbau",
+      "prioritaet":   "empfohlen",
+      "tagline":      "Muskelproteinsynthese & Anti-Katabolismus",
+      "beschreibung": "EAAs liefern alle 9 essentiellen Aminosäuren. Besonders wichtig im Fasten-Training, bei Diäten oder wenn kein Whey möglich ist.",
+      "einnahme": {
+        "dosis":    "7–10 g EAA",
+        "zeitpunkt":"Intra-Workout oder post-workout",
+        "hinweis":  "EAA > BCAA – BCAA sind in EAA enthalten"
+      },
+      "beste_form":   "EAA (alle 9 essentiellen Aminosäuren)",
+      "synergie":     ["whey_protein", "kreatin"],
+      "quiz_ziele":   ["muskelaufbau", "abnehmen", "ausdauer"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "pre_workout": {
+      "id":           "pre_workout",
+      "name":         "Pre-Workout",
+      "name_lang":    "Pre-Workout Booster",
+      "emoji":        "⚡",
+      "kategorie":    "muskelaufbau",
+      "prioritaet":   "optional",
+      "tagline":      "Energie, Fokus, Pump & Ausdauer",
+      "beschreibung": "Pre-Workout Booster kombinieren Koffein, Citrullin und Beta-Alanin für maximale Performance. Nur für fortgeschrittene Sportler empfohlen.",
+      "einnahme": {
+        "dosis":    "1 Portion",
+        "zeitpunkt":"20–30 Min. vor dem Training",
+        "hinweis":  "Nicht nach 16 Uhr – beeinträchtigt Schlaf"
+      },
+      "beste_form":   "Citrullin + Koffein + Beta-Alanin + Kreatin",
+      "synergie":     ["kreatin", "eaa_bcaa"],
+      "quiz_ziele":   ["muskelaufbau", "ausdauer"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "l_carnitin": {
+      "id":           "l_carnitin",
+      "name":         "L-Carnitin",
+      "name_lang":    "L-Carnitin-L-Tartrat",
+      "emoji":        "🔥",
+      "kategorie":    "muskelaufbau",
+      "prioritaet":   "empfohlen",
+      "tagline":      "Fettverbrennung, Energie & Recovery",
+      "beschreibung": "L-Carnitin transportiert Fettsäuren in die Mitochondrien zur Energiegewinnung. Besonders effektiv bei Ausdauersport und in der Definitionsphase.",
+      "einnahme": {
+        "dosis":    "1000–3000 mg",
+        "zeitpunkt":"30 Min. vor dem Training",
+        "hinweis":  "LCLT für Sport, ALCAR für kognitive Wirkung"
+      },
+      "beste_form":   "L-Carnitin-L-Tartrat (LCLT)",
+      "synergie":     ["omega_3", "whey_protein"],
+      "quiz_ziele":   ["abnehmen", "ausdauer"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "beta_alanin": {
+      "id":           "beta_alanin",
+      "name":         "Beta-Alanin",
+      "name_lang":    "Beta-Alanin (CarnoSyn®)",
+      "emoji":        "⚡",
+      "kategorie":    "muskelaufbau",
+      "prioritaet":   "empfohlen",
+      "tagline":      "Laktat-Puffer, Ausdauer & Muskelermüdung",
+      "beschreibung": "Beta-Alanin erhöht den Carnosin-Spiegel im Muskel und puffert Laktat. Verlängert die Ausdauer bei hochintensiven Einheiten. Kribbeln (Parästhesie) ist normal.",
+      "einnahme": {
+        "dosis":    "3200–6400 mg täglich",
+        "zeitpunkt":"Aufgeteilt über den Tag (reduziert Kribbeln)",
+        "hinweis":  "CarnoSyn® hat die beste Studienlage"
+      },
+      "beste_form":   "CarnoSyn® (patentiert)",
+      "synergie":     ["kreatin", "pre_workout"],
+      "quiz_ziele":   ["muskelaufbau", "ausdauer"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "l_glutamin": {
+      "id":           "l_glutamin",
+      "name":         "L-Glutamin",
+      "name_lang":    "L-Glutamin (freie Form)",
+      "emoji":        "🟡",
+      "kategorie":    "muskelaufbau",
+      "prioritaet":   "optional",
+      "tagline":      "Darmgesundheit, Immunsystem & Recovery",
+      "beschreibung": "Glutamin ist die häufigste Aminosäure im Körper und wird bei intensivem Training stark verbraucht. Schützt den Darm und das Immunsystem.",
+      "einnahme": {
+        "dosis":    "5–10 g",
+        "zeitpunkt":"Post-Workout und/oder vor dem Schlafen",
+        "hinweis":  "Besonders wichtig in der Diätphase"
+      },
+      "beste_form":   "L-Glutamin freie Form (Pulver)",
+      "synergie":     ["eaa_bcaa", "whey_protein", "probiotika"],
+      "quiz_ziele":   ["muskelaufbau", "gesundheit"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "hmb": {
+      "id":           "hmb",
+      "name":         "HMB",
+      "name_lang":    "HMB (β-Hydroxy-β-Methylbutyrat)",
+      "emoji":        "🛡️",
+      "kategorie":    "muskelaufbau",
+      "prioritaet":   "optional",
+      "tagline":      "Anti-Katabolismus, Muskelerhalt & Kraft",
+      "beschreibung": "HMB ist ein Leucin-Metabolit und schützt Muskeln vor Abbau. Besonders wirksam bei Anfängern, in der Diätphase und für Sportler ab 40.",
+      "einnahme": {
+        "dosis":    "3000 mg täglich (3x 1g)",
+        "zeitpunkt":"Über den Tag verteilt",
+        "hinweis":  "Wirkung am stärksten bei Anfängern und 40+"
+      },
+      "beste_form":   "Calcium-HMB oder HMB freie Säure",
+      "synergie":     ["kreatin", "eaa_bcaa"],
+      "quiz_ziele":   ["muskelaufbau"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "ashwagandha": {
+      "id":           "ashwagandha",
+      "name":         "Ashwagandha",
+      "name_lang":    "Ashwagandha KSM-66",
+      "emoji":        "🌿",
+      "kategorie":    "regeneration",
+      "prioritaet":   "empfohlen",
+      "tagline":      "Stressreduktion, Cortisol & Schlafqualität",
+      "beschreibung": "Ashwagandha (KSM-66) senkt Cortisol, verbessert Schlafqualität und kann Testosteron leicht erhöhen. Adaptogen – hilft dem Körper mit Stress umzugehen.",
+      "einnahme": {
+        "dosis":    "600 mg",
+        "zeitpunkt":"Abends vor dem Schlafen",
+        "hinweis":  "KSM-66 mit ≥5% Withanoliden bevorzugen"
+      },
+      "beste_form":   "KSM-66 (≥5% Withanolide)",
+      "synergie":     ["magnesium", "zink", "melatonin"],
+      "quiz_ziele":   ["gesundheit", "muskelaufbau"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "melatonin": {
+      "id":           "melatonin",
+      "name":         "Melatonin",
+      "name_lang":    "Melatonin (niedrig dosiert)",
+      "emoji":        "🌙",
+      "kategorie":    "regeneration",
+      "prioritaet":   "empfohlen",
+      "tagline":      "Einschlafen, Schlafrhythmus & Regeneration",
+      "beschreibung": "Melatonin reguliert den circadianen Rhythmus. Niedrige Dosen (0,5–1 mg) sind effektiver als hohe. EU empfiehlt max. 1 mg.",
+      "einnahme": {
+        "dosis":    "0,5–1 mg",
+        "zeitpunkt":"30 Min. vor dem Schlafen",
+        "hinweis":  "EU-Empfehlung: max. 1 mg – weniger ist mehr"
+      },
+      "beste_form":   "Sublingual (schnellste Wirkung)",
+      "synergie":     ["magnesium", "ashwagandha"],
+      "quiz_ziele":   ["gesundheit"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "zma": {
+      "id":           "zma",
+      "name":         "ZMA",
+      "name_lang":    "ZMA (Zink + Magnesium + Vitamin B6)",
+      "emoji":        "💎",
+      "kategorie":    "regeneration",
+      "prioritaet":   "empfohlen",
+      "tagline":      "Schlafqualität, Testosteron & Recovery",
+      "beschreibung": "ZMA kombiniert Zink, Magnesium und Vitamin B6 für optimale Schlafqualität und hormonelle Balance. Klassischer Abend-Stack für Sportler.",
+      "einnahme": {
+        "dosis":    "30 mg Zink + 450 mg Mg + 10 mg B6",
+        "zeitpunkt":"30–60 Min. vor dem Schlafen, nüchtern",
+        "hinweis":  "Kein Kalzium gleichzeitig einnehmen"
+      },
+      "beste_form":   "Zink Mono-Methionin + Magnesium Aspartat",
+      "synergie":     ["ashwagandha", "vitamin_d3_k2"],
+      "quiz_ziele":   ["muskelaufbau", "gesundheit"],
+      "quiz_gender":  ["maennlich"],
+      "pflichtfeld":  false
+    },
+    "kollagen": {
+      "id":           "kollagen",
+      "name":         "Kollagen",
+      "name_lang":    "Kollagen Peptide (Hydrolysat)",
+      "emoji":        "🦴",
+      "kategorie":    "gelenke",
+      "prioritaet":   "empfohlen",
+      "tagline":      "Gelenke, Haut, Sehnen & Knorpel",
+      "beschreibung": "Kollagen Peptide liefern Bausteine für Knorpel, Sehnen und Haut. Zusammen mit Vitamin C ist die Aufnahme am höchsten.",
+      "einnahme": {
+        "dosis":    "10–15 g",
+        "zeitpunkt":"Morgens nüchtern mit Vitamin C",
+        "hinweis":  "Vitamin C ist essentiell für Kollagensynthese"
+      },
+      "beste_form":   "Hydrolysat Typ I + III",
+      "synergie":     ["vitamin_c", "omega_3", "msm"],
+      "quiz_ziele":   ["gesundheit", "abnehmen"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "curcumin": {
+      "id":           "curcumin",
+      "name":         "Curcumin",
+      "name_lang":    "Curcumin / Kurkuma Extrakt",
+      "emoji":        "🌱",
+      "kategorie":    "gelenke",
+      "prioritaet":   "empfohlen",
+      "tagline":      "Entzündungshemmung & Gelenk-Recovery",
+      "beschreibung": "Curcumin hemmt entzündliche Prozesse und unterstützt die Gelenk-Recovery. BCM-95 oder Phytosom haben deutlich bessere Bioverfügbarkeit als Standard.",
+      "einnahme": {
+        "dosis":    "500 mg Curcuminoide",
+        "zeitpunkt":"Zur Mahlzeit (Fett verbessert Aufnahme)",
+        "hinweis":  "Piperin erhöht Aufnahme um das 20-fache – aber Vorsicht bei Medikamenten"
+      },
+      "beste_form":   "BCM-95 oder Phytosom + Piperin",
+      "synergie":     ["omega_3", "kollagen", "msm"],
+      "quiz_ziele":   ["gesundheit", "ausdauer"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "glucosamin_chond": {
+      "id":           "glucosamin_chond",
+      "name":         "Glucosamin + Chondroitin",
+      "name_lang":    "Glucosaminsulfat + Chondroitinsulfat",
+      "emoji":        "🦵",
+      "kategorie":    "gelenke",
+      "prioritaet":   "empfohlen",
+      "tagline":      "Knorpelaufbau, Gelenkschutz & Schmerz",
+      "beschreibung": "Glucosamin und Chondroitin sind Bausteine des Gelenkknorpels. Besonders relevant für Laufsportler, Kraftsportler ab 35 und alle mit Gelenkproblemen.",
+      "einnahme": {
+        "dosis":    "1500 mg Glucosamin + 1200 mg Chondroitin",
+        "zeitpunkt":"Zu den Mahlzeiten verteilt",
+        "hinweis":  "Wirkung tritt erst nach 4–8 Wochen ein"
+      },
+      "beste_form":   "Glucosaminsulfat + Chondroitinsulfat",
+      "synergie":     ["kollagen", "msm", "curcumin"],
+      "quiz_ziele":   ["gesundheit", "ausdauer"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "msm": {
+      "id":           "msm",
+      "name":         "MSM",
+      "name_lang":    "MSM (Methylsulfonylmethan)",
+      "emoji":        "🌊",
+      "kategorie":    "gelenke",
+      "prioritaet":   "optional",
+      "tagline":      "Entzündungshemmung, Gelenke & Schwefel",
+      "beschreibung": "MSM liefert organischen Schwefel für Gelenke, Bindegewebe und Entgiftung. Synergist zu Glucosamin und Kollagen.",
+      "einnahme": {
+        "dosis":    "1000–3000 mg täglich",
+        "zeitpunkt":"Zu den Mahlzeiten",
+        "hinweis":  "OptiMSM® hat die höchste Reinheit"
+      },
+      "beste_form":   "OptiMSM® (patentiert)",
+      "synergie":     ["glucosamin_chond", "kollagen", "curcumin"],
+      "quiz_ziele":   ["gesundheit", "ausdauer"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "grüner_tee_egcg": {
+      "id":           "grüner_tee_egcg",
+      "name":         "Grüner Tee (EGCG)",
+      "name_lang":    "Grüner Tee Extrakt (EGCG)",
+      "emoji":        "🍵",
+      "kategorie":    "gewicht",
+      "prioritaet":   "empfohlen",
+      "tagline":      "Fettverbrennung, Thermogenese & Antioxidans",
+      "beschreibung": "EGCG (Epigallocatechingallat) erhöht die Thermogenese und unterstützt die Fettverbrennung. Entkoffeinierte Variante für den Abend geeignet.",
+      "einnahme": {
+        "dosis":    "400–800 mg EGCG",
+        "zeitpunkt":"Morgens nüchtern oder vor dem Training",
+        "hinweis":  "Entkoffeiniert bevorzugen – ≥45% EGCG-Standardisierung"
+      },
+      "beste_form":   "Standardisiert ≥45% EGCG (entkoffeiniert)",
+      "synergie":     ["l_carnitin", "omega_3"],
+      "quiz_ziele":   ["abnehmen"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    },
+    "cla": {
+      "id":           "cla",
+      "name":         "CLA",
+      "name_lang":    "CLA (Konjugierte Linolsäure)",
+      "emoji":        "🔶",
+      "kategorie":    "gewicht",
+      "prioritaet":   "optional",
+      "tagline":      "Körperfettanteil, Muskelmasse & Body-Recomp",
+      "beschreibung": "CLA beeinflusst die Körperzusammensetzung positiv – reduziert Körperfett und unterstützt Muskelerhalt. Beliebt im Abnehm- und Definitionssegment.",
+      "einnahme": {
+        "dosis":    "3000–4000 mg täglich",
+        "zeitpunkt":"Zu den Hauptmahlzeiten (3x täglich)",
+        "hinweis":  "c9t11 + t10c12 Isomere für beste Wirkung"
+      },
+      "beste_form":   "Clarinol® (c9t11 + t10c12 Isomere)",
+      "synergie":     ["l_carnitin", "omega_3"],
+      "quiz_ziele":   ["abnehmen"],
+      "quiz_gender":  ["maennlich", "weiblich"],
+      "pflichtfeld":  false
+    }
+  }
+}

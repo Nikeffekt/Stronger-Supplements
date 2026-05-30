@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SupplAI – Dein Supplement-Berater</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <header class="hdr">
+    <button class="btn-hdr" id="btn-reset" style="opacity:0;pointer-events:none;min-width:60px;">↺</button>
+    <div class="logo" style="text-align:center;display:inline-flex;flex-direction:column;align-items:flex-start;gap:1px;">
+      <div style="display:flex;align-items:flex-end;gap:6px;">
+        <div style="display:flex;align-items:center;gap:0;">
+          <span style="font-family:'Barlow Condensed',Impact,sans-serif;font-size:60px;font-weight:900;letter-spacing:2px;text-transform:uppercase;font-style:italic;color:#FF6B00;line-height:1;-webkit-text-fill-color:#FF6B00;">S</span>
+          <span style="font-family:'Barlow Condensed',Impact,sans-serif;font-size:40px;font-weight:900;letter-spacing:2px;text-transform:uppercase;font-style:italic;color:#fff;line-height:1;-webkit-text-fill-color:#fff;">TRONGER</span>
+        </div>
+        <svg width="72" height="52" viewBox="0 0 72 52" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:4px;">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stop-color="#FF4500"><animate attributeName="stop-color" values="#FF4500;#FF8C00;#FFB347;#FF6B00;#FF4500" dur="2s" repeatCount="indefinite"/></stop>
+              <stop offset="100%" stop-color="#FFB347"><animate attributeName="stop-color" values="#FFB347;#FF6B00;#FF4500;#FFB347;#FFB347" dur="2s" repeatCount="indefinite"/></stop>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="1" x2="0" y2="0">
+              <stop offset="0%" stop-color="#FF6B00"><animate attributeName="stop-color" values="#FF6B00;#FF4500;#FF8C00;#FFD580;#FF6B00" dur="2.5s" repeatCount="indefinite"/></stop>
+              <stop offset="100%" stop-color="#FFD580"><animate attributeName="stop-color" values="#FFD580;#FF6B00;#FF4500;#FF8C00;#FFD580" dur="2.5s" repeatCount="indefinite"/></stop>
+            </linearGradient>
+          </defs>
+          <rect x="0"  y="40" width="8" height="12" rx="1.5" fill="url(#g1)" opacity="0.3"><animate attributeName="height" values="12;16;12" dur="1.8s" repeatCount="indefinite"/><animate attributeName="y" values="40;36;40" dur="1.8s" repeatCount="indefinite"/></rect>
+          <rect x="10" y="32" width="8" height="20" rx="1.5" fill="url(#g1)" opacity="0.5"><animate attributeName="height" values="20;24;20" dur="1.8s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="y" values="32;28;32" dur="1.8s" begin="0.2s" repeatCount="indefinite"/></rect>
+          <rect x="20" y="22" width="8" height="30" rx="1.5" fill="url(#g1)" opacity="0.7"><animate attributeName="height" values="30;34;30" dur="1.8s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="y" values="22;18;22" dur="1.8s" begin="0.4s" repeatCount="indefinite"/></rect>
+          <rect x="30" y="12" width="8" height="40" rx="1.5" fill="url(#g2)" opacity="0.85"><animate attributeName="height" values="40;44;40" dur="1.8s" begin="0.6s" repeatCount="indefinite"/><animate attributeName="y" values="12;8;12" dur="1.8s" begin="0.6s" repeatCount="indefinite"/></rect>
+          <rect x="40" y="2"  width="8" height="50" rx="1.5" fill="url(#g2)"><animate attributeName="height" values="50;52;50" dur="1.8s" begin="0.8s" repeatCount="indefinite"/><animate attributeName="y" values="2;0;2" dur="1.8s" begin="0.8s" repeatCount="indefinite"/></rect>
+          <polyline points="4,40 14,31 24,21 34,11 44,1" stroke="rgba(255,255,255,0.8)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <polyline points="40,7 44,1 48,7" stroke="rgba(255,255,255,0.9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          <circle cx="44" cy="1" r="3" fill="#FF6B00"><animate attributeName="r" values="3;5;3" dur="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0.6;1" dur="1.5s" repeatCount="indefinite"/></circle>
+          <line x1="54" y1="5" x2="58" y2="1" stroke="#FF6B00" stroke-width="1.5" stroke-linecap="round"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.2s" repeatCount="indefinite"/></line>
+          <line x1="58" y1="8" x2="62" y2="6" stroke="#FF8C00" stroke-width="1" stroke-linecap="round"><animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/></line>
+          <line x1="56" y1="12" x2="60" y2="11" stroke="#FFB347" stroke-width="1" stroke-linecap="round"><animate attributeName="opacity" values="0.3;0.8;0.3" dur="1.8s" repeatCount="indefinite"/></line>
+        </svg>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;margin-left:6px;">
+        <div style="height:1px;width:16px;flex-shrink:0;background:rgba(255,107,0,0.4);"></div>
+        <span style="font-family:'Barlow Condensed',Impact,sans-serif;font-size:16px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:rgba(255,255,255,0.8);">– SUPPLEMENTS <span style="font-size:11px;letter-spacing:1px;text-transform:lowercase;color:#FF6B00;opacity:0.9;">.com</span></span>
+      </div>
+    </div>
+    <button class="btn-hdr" id="btn-reset2">↺ Neu</button>
+  </header>
+
+  <!-- START -->
+  <div id="s-start" class="screen on">
+    <div class="sport-start">
+
+      <!-- Hero Block mit Video-Hintergrund -->
+      <div class="sport-start-hero">
+
+        <!-- Video-Hintergrund -->
+        <div class="hero-video-bg" id="hero-video-bg">
+          <video id="hv1" autoplay muted loop playsinline>
+            <source src="https://player.vimeo.com/external/434045526.sd.mp4?s=c27eecc69a27dbc4ff2b87d38aab35f6&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+          </video>
+          <video id="hv2" autoplay muted loop playsinline>
+            <source src="https://player.vimeo.com/external/371571553.sd.mp4?s=2f3ca7b3e2e79ff38d0c1e1d0e8a9f4a&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+          </video>
+          <video id="hv3" autoplay muted loop playsinline>
+            <source src="https://player.vimeo.com/external/403280003.sd.mp4?s=9a2b8c1d3e4f5a6b7c8d9e0f1a2b3c4d&profile_id=164&oauth2_token_id=57447761" type="video/mp4">
+          </video>
+          <div class="hero-video-overlay"></div>
+        </div>
+
+        <!-- Hintergrund Fitness Icons (behalten) -->
+        <div class="hero-bg-icons" aria-hidden="true">
+          <span class="hbi hbi-1">🏋️</span>
+          <span class="hbi hbi-2">💪</span>
+          <span class="hbi hbi-3">🥇</span>
+          <span class="hbi hbi-4">⚡</span>
+          <span class="hbi hbi-5">🏆</span>
+          <span class="hbi hbi-6">🔥</span>
+          <span class="hbi hbi-7">💊</span>
+          <span class="hbi hbi-8">🧬</span>
+        </div>
+
+        <!-- Supplement Ticker -->
+        <div class="hero-ticker-wrap">
+          <div class="hero-ticker" id="hero-ticker">
+            <div class="hero-ticker-inner" id="ticker-inner">
+              <span class="ht-item tipp" data-id="whey_protein"><span class="ht-icon">💪</span>Whey Protein</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="kreatin"><span class="ht-icon">⚡</span>Kreatin</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="vitamin_d3"><span class="ht-icon">☀️</span>Vitamin D3</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="omega3"><span class="ht-icon">🐟</span>Omega-3</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="magnesium"><span class="ht-icon">🌙</span>Magnesium</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="ashwagandha"><span class="ht-icon">🌿</span>Ashwagandha</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="l_carnitin"><span class="ht-icon">🔥</span>L-Carnitin</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="vitamin_b12"><span class="ht-icon">🧬</span>Vitamin B12</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="beta_alanin"><span class="ht-icon">🏃</span>Beta-Alanin</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="zink"><span class="ht-icon">🛡️</span>Zink</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="kollagen"><span class="ht-icon">✨</span>Kollagen</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="eisen"><span class="ht-icon">🩸</span>Eisen</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="vitamin_c"><span class="ht-icon">🍊</span>Vitamin C</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="zma"><span class="ht-icon">💤</span>ZMA</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="pre_workout"><span class="ht-icon">🚀</span>Pre-Workout</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="curcumin"><span class="ht-icon">🌱</span>Curcumin</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="probiotika"><span class="ht-icon">🦠</span>Probiotika</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="melatonin"><span class="ht-icon">🌙</span>Melatonin</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="hmb"><span class="ht-icon">💎</span>HMB</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="eaas"><span class="ht-icon">🔬</span>EAAs</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="l_glutamin"><span class="ht-icon">🛡️</span>L-Glutamin</span><span class="ht-dot">·</span>
+              <span class="ht-item tipp" data-id="multivitamin"><span class="ht-icon">🌈</span>Multivitamin</span><span class="ht-dot">·</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ticker Popup -->
+        <div class="ticker-popup" id="ticker-popup">
+          <div class="ticker-popup-icon" id="ticker-popup-icon"></div>
+          <div class="ticker-popup-name" id="ticker-popup-name"></div>
+          <div class="ticker-popup-text" id="ticker-popup-text"></div>
+        </div>
+
+        <!-- ══ BUTTON OBEN ══ -->
+        <button class="hero-stack-btn" id="btn-start" style="margin-bottom:16px;position:relative;z-index:3;overflow:hidden;">
+          <span class="hero-stack-dein">GET</span>
+          <span class="hero-stack-stack">STRONGER.</span>
+        </button>
+
+      <!-- ══ USP DIREKT UNTER BUTTON ══ -->
+      <div class="usp-impact-list" style="margin:0 -24px;">
+
+        <div class="usp-impact-row usp-row-orange">
+          <div class="usp-impact-left">
+            <div class="usp-impact-num">01</div>
+            <div class="usp-impact-icon-wrap">🎯</div>
+          </div>
+          <div class="usp-impact-right">
+            <div class="usp-impact-title">PRÄZISE</div>
+            <div class="usp-impact-sub">Genau was du brauchst. Exakt auf dich abgestimmt. 100% individuell.</div>
+          </div>
+        </div>
+
+        <div class="usp-impact-row usp-row-blue">
+          <div class="usp-impact-left">
+            <div class="usp-impact-num">02</div>
+            <div class="usp-impact-icon-wrap">⏱</div>
+          </div>
+          <div class="usp-impact-right">
+            <div class="usp-impact-title">EINNAHME&shy;PLAN</div>
+            <div class="usp-impact-sub">Morgens. Abends. Vor dem Training. Jede Dosis. Jede Uhrzeit. Exakt für dich.</div>
+          </div>
+        </div>
+
+        <div class="usp-impact-row usp-row-green">
+          <div class="usp-impact-left">
+            <div class="usp-impact-num">03</div>
+            <div class="usp-impact-icon-wrap">🏆</div>
+          </div>
+          <div class="usp-impact-right">
+            <div class="usp-impact-title">TOP BRANDS</div>
+            <div class="usp-impact-sub">ESN. Myprotein. Norsan. BioTechUSA. Du wählst. Wir erklären warum.</div>
+          </div>
+        </div>
+
+        <div class="usp-impact-row usp-row-purple">
+          <div class="usp-impact-left">
+            <div class="usp-impact-num">04</div>
+            <div class="usp-impact-icon-wrap">🛡️</div>
+          </div>
+          <div class="usp-impact-right">
+            <div class="usp-impact-title">MEDI&shy;CHECK</div>
+            <div class="usp-impact-sub">Medikamente. Allergien. Erkrankungen. Alles geprüft. Bevor du kaufst.</div>
+          </div>
+        </div>
+
+      </div><!-- /usp-impact-list -->
+
+      </div><!-- /sport-start-hero -->
+
+    </div>
+  </div>
+
+  <!-- QUIZ -->
+  <div id="s-quiz" class="screen">
+    <div class="prog-wrap">
+      <div class="prog-bar"><div class="prog-fill" id="prog" style="width:0%"></div></div>
+      <div class="prog-txt" id="prog-txt">0 / 12</div>
+    </div>
+    <div id="quiz-box" style="background:#1A1A1A;border:1px solid rgba(255,255,255,0.07);border-radius:24px;padding:28px 32px;box-shadow:0 8px 32px rgba(0,0,0,0.4);"></div>
+  </div>
+
+  <!-- LOGIN -->
+  <div id="s-login" class="screen">
+    <div style="background:#1A1A1A;border:1px solid rgba(255,255,255,0.07);border-radius:24px;box-shadow:0 8px 32px rgba(0,0,0,0.4);" class="login-body">
+      <div class="login-ava">👋</div>
+      <h2>Fast fertig!</h2>
+      <p>Speichere dein Profil oder überspringe diesen Schritt.</p>
+      <div class="field-g"><label class="field-lbl">Name</label><input type="text" class="field-inp" id="inp-name" placeholder="Max Mustermann"></div>
+      <div class="field-g"><label class="field-lbl">E-Mail</label><input type="email" class="field-inp" id="inp-email" placeholder="max@beispiel.at"></div>
+      <div class="login-acts">
+        <button class="btn-primary" id="btn-login">Profil speichern →</button>
+        <button class="btn-ghost" id="btn-skip" style="text-align:center;">Überspringen</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROFIL -->
+  <div id="s-profil" class="screen"></div>
+
+  <!-- SHOP -->
+  <div id="s-shop" class="screen"></div>
+
+</div><!-- /app -->
+
+<!-- Kauf-Sektion ist jetzt unten auf der Seite -->
+
+<div class="toast" id="toast"></div>
+
+<script src="quiz.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
