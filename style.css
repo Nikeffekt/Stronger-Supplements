@@ -548,6 +548,102 @@ button {
 }
 
 
+/* ── Geburtsjahr-Rad ── */
+.yw-outer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0 4px;
+}
+
+.yw-label {
+  font-size: 13px;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.yw-container {
+  position: relative;
+  width: 180px;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.yw-scroll {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 104px 0; /* 2 items padding top+bottom so center = selected */
+}
+.yw-scroll::-webkit-scrollbar { display: none; }
+
+.yw-item {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+  font-family: var(--font-d);
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color 0.15s, font-size 0.15s;
+  user-select: none;
+}
+
+/* Fade-Masken oben/unten */
+.yw-container::before,
+.yw-container::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 90px;
+  z-index: 2;
+  pointer-events: none;
+}
+.yw-container::before {
+  top: 0;
+  background: linear-gradient(to bottom, var(--card) 0%, transparent 100%);
+}
+.yw-container::after {
+  bottom: 0;
+  background: linear-gradient(to top, var(--card) 0%, transparent 100%);
+}
+
+/* Highlight-Linie für selektierten Slot */
+.yw-line {
+  position: absolute;
+  left: 16px; right: 16px;
+  height: 1px;
+  background: rgba(255,107,0,0.35);
+  z-index: 3;
+  pointer-events: none;
+}
+.yw-line.top { top: 104px; }
+.yw-line.bot { top: 156px; }
+
+/* Selektiertes Jahr groß + orange */
+.yw-selected-display {
+  font-family: var(--font-d);
+  font-size: 42px;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--orange);
+  letter-spacing: 2px;
+  line-height: 1;
+  min-height: 50px;
+  text-align: center;
+}
+
 /* ══════════════════════════════════════════════════════════════════════════
    10. LOGIN
 ══════════════════════════════════════════════════════════════════════════ */

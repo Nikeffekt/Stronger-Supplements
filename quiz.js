@@ -34,16 +34,10 @@ function getAvatar(a) {
 function initQueue() {
   fQueue = [
     {
-      id: 'intro', typ: 'choice', tag: 'Schritt 1',
-      frage: 'Wie alt bist du?',
+      id: 'intro', typ: 'rad', tag: 'Schritt 1',
+      frage: 'Wann bist du geboren?',
       hint: 'Beeinflusst Vitamin-D, Kollagen und Dosierungen.',
-      opts: [
-        { k: 'A', l: 'Unter 18' },
-        { k: 'B', l: '18–25' },
-        { k: 'C', l: '26–35' },
-        { k: 'D', l: '36–45' },
-        { k: 'E', l: 'Über 45' }
-      ]
+      min: 1940, max: 2010, std: 1990
     },
     {
       id: 'geschlecht', typ: 'choice', tag: 'Schritt 2',
@@ -250,6 +244,28 @@ function renderFrage() {
     h += '</div>';
   }
 
+  // Geburtsjahr-Rad
+  if (f.typ === 'rad') {
+    var aktJahr = AW['geburtsjahr'] || f.std;
+    h += '<div class="yw-outer">';
+    h += '<div class="yw-label">Geburtsjahr</div>';
+    h += '<div class="yw-container">';
+    h += '<div class="yw-scroll" id="yw-scroll">';
+    for (var y = f.max; y >= f.min; y--) {
+      h += '<div class="yw-item" data-year="' + y + '">' + y + '</div>';
+    }
+    h += '</div>';
+    h += '<div class="yw-line top"></div>';
+    h += '<div class="yw-line bot"></div>';
+    h += '</div>';
+    h += '<div class="yw-selected-display" id="yw-display">' + aktJahr + '</div>';
+    h += '</div>';
+    h += '<div class="quiz-nav">';
+    h += '<button class="btn-ghost" id="btn-z">← Zurück</button>';
+    h += '<button class="btn-primary" id="btn-w" style="width:auto;padding:12px 24px;font-size:14px;">Weiter →</button>';
+    h += '</div>';
+  }
+
   // Numerische Eingabe
   if (f.typ === 'nummer') {
     h += '<div class="num-wrap">';
@@ -276,7 +292,61 @@ function bindQuiz(f) {
     else zeige('s-start');
   });
 
-  // Weiter-Button (Multi & Nummer)
+  // Geburtsjahr-Rad initialisieren
+  if (f.typ === 'rad') {
+    var ywScroll  = document.getElementById('yw-scroll');
+    var ywDisplay = document.getElementById('yw-display');
+    var ywItems   = ywScroll ? ywScroll.querySelectorAll('.yw-item') : [];
+    var aktJahrRad = AW['geburtsjahr'] || f.std;
+    var itemH = 52;
+
+    // Zur gespeicherten Position scrollen (max → min, also Index = max - jahr)
+    var startIdx = f.max - aktJahrRad;
+    if (ywScroll) ywScroll.scrollTop = startIdx * itemH;
+
+    // Highlight-Funktion: hebt mittleres sichtbares Element hervor
+    function ywHighlight() {
+      if (!ywScroll) return;
+      var idx = Math.round(ywScroll.scrollTop / itemH);
+      idx = Math.max(0, Math.min(idx, ywItems.length - 1));
+      var jahr = f.max - idx;
+      if (ywDisplay) ywDisplay.textContent = jahr;
+      for (var i = 0; i < ywItems.length; i++) {
+        var dist = Math.abs(i - idx);
+        if (dist === 0) {
+          ywItems[i].style.color   = '#FF6B00';
+          ywItems[i].style.fontSize = '28px';
+          ywItems[i].style.fontWeight = '900';
+        } else if (dist === 1) {
+          ywItems[i].style.color   = 'rgba(255,255,255,0.55)';
+          ywItems[i].style.fontSize = '22px';
+          ywItems[i].style.fontWeight = '700';
+        } else if (dist === 2) {
+          ywItems[i].style.color   = 'rgba(255,255,255,0.25)';
+          ywItems[i].style.fontSize = '18px';
+          ywItems[i].style.fontWeight = '600';
+        } else {
+          ywItems[i].style.color   = 'rgba(255,255,255,0.1)';
+          ywItems[i].style.fontSize = '15px';
+          ywItems[i].style.fontWeight = '500';
+        }
+      }
+    }
+
+    // Beim Klick auf ein Item: direkt scrollen
+    for (var i = 0; i < ywItems.length; i++) {
+      (function(item, idx) {
+        item.addEventListener('click', function() {
+          ywScroll.scrollTo({ top: idx * itemH, behavior: 'smooth' });
+        });
+      })(ywItems[i], i);
+    }
+
+    ywHighlight();
+    if (ywScroll) ywScroll.addEventListener('scroll', ywHighlight);
+  }
+
+  // Weiter-Button (Multi, Nummer & Rad)
   var bw = document.getElementById('btn-w');
   if (bw) bw.addEventListener('click', function () {
     if (f.typ === 'multi') {
@@ -289,6 +359,15 @@ function bindQuiz(f) {
         return;
       }
       AW[f.id] = v;
+    } else if (f.typ === 'rad') {
+      // Geburtsjahr ablesen und in Alterskategorie A–E umrechnen
+      var yw = document.getElementById('yw-scroll');
+      var idx = yw ? Math.round(yw.scrollTop / 52) : 0;
+      idx = Math.max(0, Math.min(idx, f.max - f.min));
+      var gebJahr = f.max - idx;
+      AW['geburtsjahr'] = gebJahr;
+      var alter = new Date().getFullYear() - gebJahr;
+      AW[f.id] = alter < 18 ? 'A' : alter <= 25 ? 'B' : alter <= 35 ? 'C' : alter <= 45 ? 'D' : 'E';
     }
     naechste();
   });
