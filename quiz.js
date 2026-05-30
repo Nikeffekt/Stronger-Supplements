@@ -37,7 +37,7 @@ function initQueue() {
       id: 'intro', typ: 'rad', tag: 'Schritt 1',
       frage: 'Wann bist du geboren?',
       hint: 'Beeinflusst Vitamin-D, Kollagen und Dosierungen.',
-      min: 1940, max: 2010, std: 1990
+      min: 1940, max: 2010, std: 1990, absteigend: true
     },
     {
       id: 'geschlecht', typ: 'choice', tag: 'Schritt 2',
@@ -56,7 +56,7 @@ function initQueue() {
       einheit: 'cm', min: 140, max: 220, std: 175
     },
     {
-      id: 'gewicht', typ: 'nummer', tag: 'Schritt 4',
+      id: 'gewicht', typ: 'rad', tag: 'Schritt 4',
       frage: 'Wie viel wiegst du?',
       hint: 'Grundlage für exakte Proteindosierung.',
       einheit: 'kg', min: 40, max: 200, std: 75
@@ -244,21 +244,31 @@ function renderFrage() {
     h += '</div>';
   }
 
-  // Geburtsjahr-Rad
+  // Wert-Rad (Geburtsjahr, Gewicht, …)
   if (f.typ === 'rad') {
-    var aktJahr = AW['geburtsjahr'] || f.std;
+    var radKey    = f.id === 'intro' ? 'geburtsjahr' : f.id;
+    var aktWert   = AW[radKey] || f.std;
+    var einheit   = f.einheit ? ' ' + f.einheit : '';
+    // Werte-Array aufbauen
+    var radWerte = [];
+    if (f.absteigend) {
+      for (var rv = f.max; rv >= f.min; rv--) radWerte.push(rv);
+    } else {
+      for (var rv = f.min; rv <= f.max; rv++) radWerte.push(rv);
+    }
+    var radLabel = f.id === 'intro' ? 'Geburtsjahr' : (f.einheit ? 'Gewicht in ' + f.einheit : 'Wert');
     h += '<div class="yw-outer">';
-    h += '<div class="yw-label">Geburtsjahr</div>';
+    h += '<div class="yw-label">' + radLabel + '</div>';
     h += '<div class="yw-container">';
     h += '<div class="yw-scroll" id="yw-scroll">';
-    for (var y = f.max; y >= f.min; y--) {
-      h += '<div class="yw-item" data-year="' + y + '">' + y + '</div>';
+    for (var ri = 0; ri < radWerte.length; ri++) {
+      h += '<div class="yw-item" data-val="' + radWerte[ri] + '">' + radWerte[ri] + einheit + '</div>';
     }
     h += '</div>';
     h += '<div class="yw-line top"></div>';
     h += '<div class="yw-line bot"></div>';
     h += '</div>';
-    h += '<div class="yw-selected-display" id="yw-display">' + aktJahr + '</div>';
+    h += '<div class="yw-selected-display" id="yw-display">' + aktWert + einheit + '</div>';
     h += '</div>';
     h += '<div class="quiz-nav">';
     h += '<button class="btn-ghost" id="btn-z">← Zurück</button>';
@@ -292,48 +302,60 @@ function bindQuiz(f) {
     else zeige('s-start');
   });
 
-  // Geburtsjahr-Rad initialisieren
+  // Wert-Rad initialisieren
   if (f.typ === 'rad') {
     var ywScroll  = document.getElementById('yw-scroll');
     var ywDisplay = document.getElementById('yw-display');
     var ywItems   = ywScroll ? ywScroll.querySelectorAll('.yw-item') : [];
-    var aktJahrRad = AW['geburtsjahr'] || f.std;
-    var itemH = 52;
+    var radKeyB   = f.id === 'intro' ? 'geburtsjahr' : f.id;
+    var aktWertB  = AW[radKeyB] || f.std;
+    var einheitB  = f.einheit ? ' ' + f.einheit : '';
+    var itemH     = 52;
 
-    // Zur gespeicherten Position scrollen (max → min, also Index = max - jahr)
-    var startIdx = f.max - aktJahrRad;
-    if (ywScroll) ywScroll.scrollTop = startIdx * itemH;
+    // Werte-Array spiegeln wie beim Rendern
+    var radWerteB = [];
+    if (f.absteigend) {
+      for (var rv = f.max; rv >= f.min; rv--) radWerteB.push(rv);
+    } else {
+      for (var rv = f.min; rv <= f.max; rv++) radWerteB.push(rv);
+    }
 
-    // Highlight-Funktion: hebt mittleres sichtbares Element hervor
+    // Startposition auf gespeicherten/Standard-Wert setzen
+    var startIdxB = radWerteB.indexOf(aktWertB);
+    if (startIdxB < 0) startIdxB = radWerteB.indexOf(f.std);
+    if (startIdxB < 0) startIdxB = 0;
+    if (ywScroll) ywScroll.scrollTop = startIdxB * itemH;
+
+    // Highlight: Mittel-Item orange+groß, Nachbarn abgestuft
     function ywHighlight() {
       if (!ywScroll) return;
       var idx = Math.round(ywScroll.scrollTop / itemH);
       idx = Math.max(0, Math.min(idx, ywItems.length - 1));
-      var jahr = f.max - idx;
-      if (ywDisplay) ywDisplay.textContent = jahr;
+      var wert = radWerteB[idx];
+      if (ywDisplay) ywDisplay.textContent = wert + einheitB;
       for (var i = 0; i < ywItems.length; i++) {
         var dist = Math.abs(i - idx);
         if (dist === 0) {
-          ywItems[i].style.color   = '#FF6B00';
-          ywItems[i].style.fontSize = '28px';
+          ywItems[i].style.color      = '#FF6B00';
+          ywItems[i].style.fontSize   = '28px';
           ywItems[i].style.fontWeight = '900';
         } else if (dist === 1) {
-          ywItems[i].style.color   = 'rgba(255,255,255,0.55)';
-          ywItems[i].style.fontSize = '22px';
+          ywItems[i].style.color      = 'rgba(255,255,255,0.55)';
+          ywItems[i].style.fontSize   = '22px';
           ywItems[i].style.fontWeight = '700';
         } else if (dist === 2) {
-          ywItems[i].style.color   = 'rgba(255,255,255,0.25)';
-          ywItems[i].style.fontSize = '18px';
+          ywItems[i].style.color      = 'rgba(255,255,255,0.25)';
+          ywItems[i].style.fontSize   = '18px';
           ywItems[i].style.fontWeight = '600';
         } else {
-          ywItems[i].style.color   = 'rgba(255,255,255,0.1)';
-          ywItems[i].style.fontSize = '15px';
+          ywItems[i].style.color      = 'rgba(255,255,255,0.1)';
+          ywItems[i].style.fontSize   = '15px';
           ywItems[i].style.fontWeight = '500';
         }
       }
     }
 
-    // Beim Klick auf ein Item: direkt scrollen
+    // Klick auf Item scrollt direkt hin
     for (var i = 0; i < ywItems.length; i++) {
       (function(item, idx) {
         item.addEventListener('click', function() {
@@ -360,14 +382,27 @@ function bindQuiz(f) {
       }
       AW[f.id] = v;
     } else if (f.typ === 'rad') {
-      // Geburtsjahr ablesen und in Alterskategorie A–E umrechnen
+      // Aktuellen Wert aus Scroll-Position ablesen
       var yw = document.getElementById('yw-scroll');
-      var idx = yw ? Math.round(yw.scrollTop / 52) : 0;
-      idx = Math.max(0, Math.min(idx, f.max - f.min));
-      var gebJahr = f.max - idx;
-      AW['geburtsjahr'] = gebJahr;
-      var alter = new Date().getFullYear() - gebJahr;
-      AW[f.id] = alter < 18 ? 'A' : alter <= 25 ? 'B' : alter <= 35 ? 'C' : alter <= 45 ? 'D' : 'E';
+      var ridx = yw ? Math.round(yw.scrollTop / 52) : 0;
+      var radWerteW = [];
+      if (f.absteigend) {
+        for (var rv = f.max; rv >= f.min; rv--) radWerteW.push(rv);
+      } else {
+        for (var rv = f.min; rv <= f.max; rv++) radWerteW.push(rv);
+      }
+      ridx = Math.max(0, Math.min(ridx, radWerteW.length - 1));
+      var gewaehlterWert = radWerteW[ridx];
+
+      if (f.id === 'intro') {
+        // Geburtsjahr → Alterskategorie A–E
+        AW['geburtsjahr'] = gewaehlterWert;
+        var alter = new Date().getFullYear() - gewaehlterWert;
+        AW[f.id] = alter < 18 ? 'A' : alter <= 25 ? 'B' : alter <= 35 ? 'C' : alter <= 45 ? 'D' : 'E';
+      } else {
+        // Numerischer Wert direkt speichern (z.B. Gewicht in kg)
+        AW[f.id] = String(gewaehlterWert);
+      }
     }
     naechste();
   });
