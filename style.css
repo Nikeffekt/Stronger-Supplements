@@ -2169,6 +2169,7 @@ button {
   bottom: 100px;
   left: 50%;
   transform: translateX(-50%) translateY(60px);
+  opacity: 0;
   background: linear-gradient(135deg, #1a1a1a, #222);
   border: 1px solid rgba(255, 107, 0, 0.3);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 107, 0, 0.1);
@@ -2178,12 +2179,15 @@ button {
   font-size: 13px;
   font-weight: 500;
   z-index: 9999;
-  transition: transform 0.28s ease;
+  pointer-events: none;
+  transition: transform 0.28s ease, opacity 0.28s ease;
   white-space: nowrap;
 }
 
 .toast.on {
   transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
 
