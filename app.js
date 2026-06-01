@@ -1097,6 +1097,7 @@ function oeffneWirkstoffPopup(eid, prio, a) {
       var prod = pidx === -1 ? db.hauptprodukt : db.alternativen[pidx];
       if (!prod) return;
       meinStack[eid] = { prod: prod, preis: parseFloat(prod.preis.replace(',', '.')) };
+      if (window.aktualisiereCartBadge) window.aktualisiereCartBadge();
       schliessePopup();
       setTimeout(function () {
         zeigeProfil();
@@ -1358,6 +1359,66 @@ function oeffneStartModal() {
   var btnReset2 = document.getElementById('btn-reset2');
   if (btnReset)  btnReset.addEventListener('click',  function () { resetApp(); });
   if (btnReset2) btnReset2.addEventListener('click', function () { resetApp(); });
+
+  // ── HAMBURGER MENÜ ──
+  var btnMenu    = document.getElementById('btn-menu');
+  var menuOverlay = document.getElementById('hdr-menu-overlay');
+  var menuClose  = document.getElementById('hdr-menu-close');
+  var btnResetMenu = document.getElementById('btn-reset-menu');
+
+  function oeffneMenu() {
+    if (menuOverlay) menuOverlay.classList.add('offen');
+    document.body.style.overflow = 'hidden';
+  }
+  function schliesseMenu() {
+    if (menuOverlay) menuOverlay.classList.remove('offen');
+    document.body.style.overflow = '';
+  }
+
+  if (btnMenu)    btnMenu.addEventListener('click', oeffneMenu);
+  if (menuClose)  menuClose.addEventListener('click', schliesseMenu);
+  if (menuOverlay) menuOverlay.addEventListener('click', function (ev) {
+    if (ev.target === menuOverlay) schliesseMenu();
+  });
+  if (btnResetMenu) btnResetMenu.addEventListener('click', function () {
+    schliesseMenu();
+    resetApp();
+  });
+
+  // Menü-Links: Stack-Berater startet Quiz
+  var menuItems = document.querySelectorAll('.hdr-menu-item');
+  menuItems.forEach(function (item) {
+    item.addEventListener('click', function (ev) {
+      var text = item.textContent || '';
+      if (text.indexOf('Stack-Berater') >= 0) {
+        ev.preventDefault();
+        schliesseMenu();
+        oeffneStartModal();
+      } else if (text.indexOf('Alle Produkte') >= 0) {
+        ev.preventDefault();
+        schliesseMenu();
+        zeigeShop();
+      } else if (text.indexOf('Startseite') >= 0) {
+        ev.preventDefault();
+        schliesseMenu();
+        zeige('s-start');
+      }
+    });
+  });
+
+  // ── WARENKORB BADGE ──
+  // Zählt wie viele Produkte im meinStack sind und aktualisiert das Badge
+  function aktualisiereCartBadge() {
+    var badge = document.getElementById('cart-badge');
+    if (!badge) return;
+    var anzahl = Object.keys(meinStack).length;
+    badge.textContent = anzahl;
+    badge.style.display = anzahl > 0 ? 'flex' : 'none';
+  }
+  // Initial verstecken
+  aktualisiereCartBadge();
+  // Badge nach Stack-Änderungen aktualisieren (globale Hilfsfunktion)
+  window.aktualisiereCartBadge = aktualisiereCartBadge;
 
   // Login
   var btnLogin = document.getElementById('btn-login');

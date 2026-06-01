@@ -10,45 +10,97 @@
 <body>
 <div id="app">
 
-  <header class="hdr">
-    <button class="btn-hdr" id="btn-reset" style="opacity:0;pointer-events:none;min-width:60px;">↺</button>
-    <div class="logo" style="text-align:center;display:inline-flex;flex-direction:column;align-items:flex-start;gap:1px;">
-      <div style="display:flex;align-items:flex-end;gap:6px;">
-        <div style="display:flex;align-items:center;gap:0;">
-          <span style="font-family:'Barlow Condensed',Impact,sans-serif;font-size:60px;font-weight:900;letter-spacing:2px;text-transform:uppercase;font-style:italic;color:#FF6B00;line-height:1;-webkit-text-fill-color:#FF6B00;">S</span>
-          <span style="font-family:'Barlow Condensed',Impact,sans-serif;font-size:40px;font-weight:900;letter-spacing:2px;text-transform:uppercase;font-style:italic;color:#fff;line-height:1;-webkit-text-fill-color:#fff;">TRONGER</span>
-        </div>
-        <svg width="72" height="52" viewBox="0 0 72 52" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:4px;">
-          <defs>
-            <linearGradient id="g1" x1="0" y1="1" x2="0" y2="0">
-              <stop offset="0%" stop-color="#FF4500"><animate attributeName="stop-color" values="#FF4500;#FF8C00;#FFB347;#FF6B00;#FF4500" dur="2s" repeatCount="indefinite"/></stop>
-              <stop offset="100%" stop-color="#FFB347"><animate attributeName="stop-color" values="#FFB347;#FF6B00;#FF4500;#FFB347;#FFB347" dur="2s" repeatCount="indefinite"/></stop>
-            </linearGradient>
-            <linearGradient id="g2" x1="0" y1="1" x2="0" y2="0">
-              <stop offset="0%" stop-color="#FF6B00"><animate attributeName="stop-color" values="#FF6B00;#FF4500;#FF8C00;#FFD580;#FF6B00" dur="2.5s" repeatCount="indefinite"/></stop>
-              <stop offset="100%" stop-color="#FFD580"><animate attributeName="stop-color" values="#FFD580;#FF6B00;#FF4500;#FF8C00;#FFD580" dur="2.5s" repeatCount="indefinite"/></stop>
-            </linearGradient>
-          </defs>
-          <rect x="0"  y="40" width="8" height="12" rx="1.5" fill="url(#g1)" opacity="0.3"><animate attributeName="height" values="12;16;12" dur="1.8s" repeatCount="indefinite"/><animate attributeName="y" values="40;36;40" dur="1.8s" repeatCount="indefinite"/></rect>
-          <rect x="10" y="32" width="8" height="20" rx="1.5" fill="url(#g1)" opacity="0.5"><animate attributeName="height" values="20;24;20" dur="1.8s" begin="0.2s" repeatCount="indefinite"/><animate attributeName="y" values="32;28;32" dur="1.8s" begin="0.2s" repeatCount="indefinite"/></rect>
-          <rect x="20" y="22" width="8" height="30" rx="1.5" fill="url(#g1)" opacity="0.7"><animate attributeName="height" values="30;34;30" dur="1.8s" begin="0.4s" repeatCount="indefinite"/><animate attributeName="y" values="22;18;22" dur="1.8s" begin="0.4s" repeatCount="indefinite"/></rect>
-          <rect x="30" y="12" width="8" height="40" rx="1.5" fill="url(#g2)" opacity="0.85"><animate attributeName="height" values="40;44;40" dur="1.8s" begin="0.6s" repeatCount="indefinite"/><animate attributeName="y" values="12;8;12" dur="1.8s" begin="0.6s" repeatCount="indefinite"/></rect>
-          <rect x="40" y="2"  width="8" height="50" rx="1.5" fill="url(#g2)"><animate attributeName="height" values="50;52;50" dur="1.8s" begin="0.8s" repeatCount="indefinite"/><animate attributeName="y" values="2;0;2" dur="1.8s" begin="0.8s" repeatCount="indefinite"/></rect>
-          <polyline points="4,40 14,31 24,21 34,11 44,1" stroke="rgba(255,255,255,0.8)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <polyline points="40,7 44,1 48,7" stroke="rgba(255,255,255,0.9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          <circle cx="44" cy="1" r="3" fill="#FF6B00"><animate attributeName="r" values="3;5;3" dur="1.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0.6;1" dur="1.5s" repeatCount="indefinite"/></circle>
-          <line x1="54" y1="5" x2="58" y2="1" stroke="#FF6B00" stroke-width="1.5" stroke-linecap="round"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.2s" repeatCount="indefinite"/></line>
-          <line x1="58" y1="8" x2="62" y2="6" stroke="#FF8C00" stroke-width="1" stroke-linecap="round"><animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/></line>
-          <line x1="56" y1="12" x2="60" y2="11" stroke="#FFB347" stroke-width="1" stroke-linecap="round"><animate attributeName="opacity" values="0.3;0.8;0.3" dur="1.8s" repeatCount="indefinite"/></line>
-        </svg>
-      </div>
-      <div style="display:flex;align-items:center;gap:8px;margin-left:6px;">
-        <div style="height:1px;width:16px;flex-shrink:0;background:rgba(255,107,0,0.4);"></div>
-        <span style="font-family:'Barlow Condensed',Impact,sans-serif;font-size:16px;font-weight:700;letter-spacing:5px;text-transform:uppercase;color:rgba(255,255,255,0.8);">– SUPPLEMENTS <span style="font-size:11px;letter-spacing:1px;text-transform:lowercase;color:#FF6B00;opacity:0.9;">.com</span></span>
-      </div>
+    <!-- ══ ANNOUNCEMENT BAR ══ -->
+  <div class="ann-bar" id="ann-bar">
+    <div class="ann-track" id="ann-track">
+      <span class="ann-item"><span class="ann-dot"></span>Bis zu −40% auf Bars &amp; Porridge</span>
+      <span class="ann-sep">·</span>
+      <span class="ann-item"><span class="ann-dot"></span>Kostenloser Versand ab 49 €</span>
+      <span class="ann-sep">·</span>
+      <span class="ann-item"><span class="ann-dot"></span>Neu: GOAT Bar Banana Bread &amp; Apple Cinnamon</span>
+      <span class="ann-sep">·</span>
+      <span class="ann-item"><span class="ann-dot"></span>Bis zu −40% auf Bars &amp; Porridge</span>
+      <span class="ann-sep">·</span>
+      <span class="ann-item"><span class="ann-dot"></span>Kostenloser Versand ab 49 €</span>
+      <span class="ann-sep">·</span>
+      <span class="ann-item"><span class="ann-dot"></span>Neu: GOAT Bar Banana Bread &amp; Apple Cinnamon</span>
+      <span class="ann-sep">·</span>
     </div>
-    <button class="btn-hdr" id="btn-reset2">↺ Neu</button>
-  </header>
+  </div>
+
+<header class="hdr">
+
+  <!-- Links: Hamburger + Suche -->
+  <div class="hdr-links">
+    <button class="hdr-icon-btn" id="btn-menu" aria-label="Menü">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <rect y="3"  width="20" height="2" rx="1" fill="currentColor"/>
+        <rect y="9"  width="20" height="2" rx="1" fill="currentColor"/>
+        <rect y="15" width="20" height="2" rx="1" fill="currentColor"/>
+      </svg>
+    </button>
+    <button class="hdr-icon-btn" id="btn-suche" aria-label="Suche">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="2"/>
+        <line x1="12.5" y1="12.5" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mitte: Logo -->
+  <div class="hdr-logo">
+    <div class="hdr-logo-zeile1">
+      <span class="hdr-logo-s">S</span><span class="hdr-logo-rest">TRONGER</span>
+    </div>
+    <div class="hdr-logo-zeile2">
+      <span class="hdr-logo-strich"></span>
+      <span class="hdr-logo-sub">SUPPLEMENTS</span>
+      <span class="hdr-logo-strich"></span>
+    </div>
+  </div>
+
+  <!-- Rechts: Merkliste + Warenkorb -->
+  <div class="hdr-rechts">
+    <button class="hdr-icon-btn" id="btn-merkliste" aria-label="Merkliste">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M10 17s-7-4.5-7-9a4 4 0 0 1 7-2.66A4 4 0 0 1 17 8c0 4.5-7 9-7 9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="hdr-icon-btn hdr-icon-btn--cart" id="btn-warenkorb" aria-label="Warenkorb">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M1 1h2.5l1.5 8h10l1.5-5H5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="8"  cy="17" r="1.2" fill="currentColor"/>
+        <circle cx="14" cy="17" r="1.2" fill="currentColor"/>
+      </svg>
+      <span class="hdr-cart-badge" id="cart-badge">0</span>
+    </button>
+  </div>
+
+  <!-- Reset versteckt (funktional für App-Logik) -->
+  <button id="btn-reset"  style="display:none;">↺</button>
+  <button id="btn-reset2" style="display:none;">↺</button>
+
+</header>
+
+<!-- Hamburger Menü Overlay -->
+<div class="hdr-menu-overlay" id="hdr-menu-overlay">
+  <div class="hdr-menu-panel" id="hdr-menu-panel">
+    <div class="hdr-menu-header">
+      <span class="hdr-menu-logo"><span>S</span>TRONGER</span>
+      <button class="hdr-menu-close" id="hdr-menu-close">✕</button>
+    </div>
+    <nav class="hdr-menu-nav">
+      <a class="hdr-menu-item" href="#">🏠 Startseite</a>
+      <a class="hdr-menu-item" href="#">🛍️ Alle Produkte</a>
+      <a class="hdr-menu-item" href="#">🎯 Stack-Berater</a>
+      <a class="hdr-menu-item" href="#">⚡ Angebote</a>
+      <a class="hdr-menu-item" href="#">📖 Supplement-Guide</a>
+    </nav>
+    <div class="hdr-menu-footer">
+      <button class="hdr-menu-reset" id="btn-reset-menu">↺ App zurücksetzen</button>
+    </div>
+  </div>
+</div>
 
   <!-- START -->
   <div id="s-start" class="screen on">
