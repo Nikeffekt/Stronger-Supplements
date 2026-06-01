@@ -177,7 +177,8 @@
       <!-- ══ USP DIREKT UNTER BUTTON ══ -->
       <div class="usp-impact-list" style="margin:0 -24px;">
 
-        <div class="usp-impact-row usp-row-orange">
+        <!-- USP 01: Präzise → eigener Screen -->
+        <div class="usp-impact-row usp-row-orange usp-klickbar" onclick="zeige('s-usp-praezise')">
           <div class="usp-impact-left">
             <div class="usp-impact-num">01</div>
             <div class="usp-impact-icon-wrap">🎯</div>
@@ -186,9 +187,11 @@
             <div class="usp-impact-title">PRÄZISE</div>
             <div class="usp-impact-sub">Genau was du brauchst. Exakt auf dich abgestimmt. 100% individuell.</div>
           </div>
+          <div class="usp-pfeil">›</div>
         </div>
 
-        <div class="usp-impact-row usp-row-blue">
+        <!-- USP 02: Einnahmeplan → eigener Screen -->
+        <div class="usp-impact-row usp-row-blue usp-klickbar" onclick="zeige('s-usp-einnahme')">
           <div class="usp-impact-left">
             <div class="usp-impact-num">02</div>
             <div class="usp-impact-icon-wrap">⏱</div>
@@ -197,9 +200,11 @@
             <div class="usp-impact-title">EINNAHME&shy;PLAN</div>
             <div class="usp-impact-sub">Morgens. Abends. Vor dem Training. Jede Dosis. Jede Uhrzeit. Exakt für dich.</div>
           </div>
+          <div class="usp-pfeil">›</div>
         </div>
 
-        <div class="usp-impact-row usp-row-green">
+        <!-- USP 03: Top Brands → eigener Screen -->
+        <div class="usp-impact-row usp-row-green usp-klickbar" onclick="zeige('s-usp-brands')">
           <div class="usp-impact-left">
             <div class="usp-impact-num">03</div>
             <div class="usp-impact-icon-wrap">🏆</div>
@@ -208,9 +213,11 @@
             <div class="usp-impact-title">TOP BRANDS</div>
             <div class="usp-impact-sub">ESN. Myprotein. Norsan. BioTechUSA. Du wählst. Wir erklären warum.</div>
           </div>
+          <div class="usp-pfeil">›</div>
         </div>
 
-        <div class="usp-impact-row usp-row-purple">
+        <!-- USP 04: MediCheck → eigener Screen -->
+        <div class="usp-impact-row usp-row-purple usp-klickbar" onclick="zeige('s-usp-medicheck')">
           <div class="usp-impact-left">
             <div class="usp-impact-num">04</div>
             <div class="usp-impact-icon-wrap">🛡️</div>
@@ -219,6 +226,7 @@
             <div class="usp-impact-title">MEDI&shy;CHECK</div>
             <div class="usp-impact-sub">Medikamente. Allergien. Erkrankungen. Alles geprüft. Bevor du kaufst.</div>
           </div>
+          <div class="usp-pfeil">›</div>
         </div>
 
       </div><!-- /usp-impact-list -->
@@ -572,6 +580,301 @@
       </div>
     </div>
   </div>
+
+  <!-- PROFIL -->
+  <div id="s-profil" class="screen"></div>
+
+  <!-- SHOP -->
+  <div id="s-shop" class="screen"></div>
+
+
+  <!-- ══════════════════════════════════════════════
+       USP SCREENS – Detail-Ansichten
+  ══════════════════════════════════════════════ -->
+
+  <!-- USP 01: PRÄZISE -->
+  <div id="s-usp-praezise" class="screen">
+    <div class="usp-screen-wrap">
+
+      <!-- Sticky Header -->
+      <div class="usp-screen-header usp-header-orange">
+        <button class="usp-screen-back" onclick="zeige('s-start')">← Zurück</button>
+        <span class="usp-screen-num">01</span>
+      </div>
+
+      <!-- Hero -->
+      <div class="usp-screen-hero usp-hero-orange">
+        <div class="usp-screen-icon">🎯</div>
+        <h1 class="usp-screen-title">PRÄZISE</h1>
+        <p class="usp-screen-claim">Nicht irgendein Stack. Deiner.</p>
+      </div>
+
+      <!-- Inhalt -->
+      <div class="usp-screen-body">
+
+        <!-- Problem -->
+        <div class="usp-content-block usp-block-problem">
+          <div class="usp-block-label">❌ Das Problem</div>
+          <p>Die meisten kaufen Supplements blind – basierend auf Influencer-Empfehlungen, Werbung oder dem Tipp vom Gym-Buddy. Das Ergebnis: Du nimmst Dinge, die du nicht brauchst. Du vermisst Dinge, die du wirklich brauchst. Geld raus, Wirkung gleich null.</p>
+        </div>
+
+        <!-- Lösung -->
+        <div class="usp-content-block usp-block-solution">
+          <div class="usp-block-label">✅ Unsere Lösung</div>
+          <p>Wir analysieren dich – Ziel, Körper, Training, Ernährung, Schlaf, Stress. Erst dann empfehlen wir. Das Ergebnis ist kein generischer Stack aus dem Internet, sondern exakt das, was für deine Situation sinnvoll ist.</p>
+        </div>
+
+        <!-- Wie es funktioniert -->
+        <div class="usp-block-label usp-label-standalone">🔍 Wie es funktioniert</div>
+
+        <div class="usp-step-list">
+          <div class="usp-step">
+            <div class="usp-step-num usp-step-orange">1</div>
+            <div class="usp-step-content">
+              <div class="usp-step-title">Ziel definieren</div>
+              <div class="usp-step-text">Muskelaufbau, Fettabbau, Performance, Gesundheit – dein primäres Ziel bestimmt die Basis deines Stacks.</div>
+            </div>
+          </div>
+          <div class="usp-step">
+            <div class="usp-step-num usp-step-orange">2</div>
+            <div class="usp-step-content">
+              <div class="usp-step-title">Profil aufbauen</div>
+              <div class="usp-step-text">Trainingsfrequenz, Ernährungsweise, Schlafdauer, Stresslevel – jeder Faktor beeinflusst, welche Supplements wirklich wirken.</div>
+            </div>
+          </div>
+          <div class="usp-step">
+            <div class="usp-step-num usp-step-orange">3</div>
+            <div class="usp-step-content">
+              <div class="usp-step-title">Präzise Empfehlung</div>
+              <div class="usp-step-text">Kein Einheits-Stack. Jeder Wirkstoff in deiner Empfehlung ist begründet – mit konkretem Nutzen für genau deine Situation.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Highlight-Box -->
+        <div class="usp-highlight-box usp-highlight-orange">
+          <div class="usp-highlight-icon">💡</div>
+          <div class="usp-highlight-text">Zwei Menschen mit demselben Ziel können völlig verschiedene Stacks brauchen – je nach Ernährung, Training und Lebensstil. Genau das bilden wir ab.</div>
+        </div>
+
+      </div><!-- /body -->
+    </div>
+  </div><!-- /s-usp-praezise -->
+
+
+  <!-- USP 02: EINNAHMEPLAN -->
+  <div id="s-usp-einnahme" class="screen">
+    <div class="usp-screen-wrap">
+
+      <!-- Sticky Header -->
+      <div class="usp-screen-header usp-header-blue">
+        <button class="usp-screen-back" onclick="zeige('s-start')">← Zurück</button>
+        <span class="usp-screen-num">02</span>
+      </div>
+
+      <!-- Hero -->
+      <div class="usp-screen-hero usp-hero-blue">
+        <div class="usp-screen-icon">⏱</div>
+        <h1 class="usp-screen-title">EINNAHMEPLAN</h1>
+        <p class="usp-screen-claim">Das richtige Supplement. Zur richtigen Zeit. In der richtigen Dosis.</p>
+      </div>
+
+      <!-- Inhalt -->
+      <div class="usp-screen-body">
+
+        <!-- Problem -->
+        <div class="usp-content-block usp-block-problem">
+          <div class="usp-block-label">❌ Das Problem</div>
+          <p>Supplement kaufen ist das eine. Richtig einnehmen das andere. Kreatin nach dem Training oder vorher? Vitamin D morgens oder abends? Magnesium zusammen mit Zink? Falsche Kombination oder falsches Timing kann die Wirkung halbieren – oder im schlimmsten Fall zu Überdosierungen führen.</p>
+        </div>
+
+        <!-- Überdosierung -->
+        <div class="usp-content-block usp-block-warning">
+          <div class="usp-block-label">⚠️ Überdosierung – ein echtes Risiko</div>
+          <p>Viele Supplements überschneiden sich in ihren Inhaltsstoffen. Wer mehrere Produkte gleichzeitig nimmt, riskiert unbewusst zu hohe Dosen – zum Beispiel zu viel Vitamin B6, zu viel Zink oder zu viel Koffein aus verschiedenen Quellen. Wir prüfen das für dich.</p>
+        </div>
+
+        <!-- Timing-Übersicht -->
+        <div class="usp-block-label usp-label-standalone">🕐 Timing-Logik</div>
+
+        <div class="usp-timing-list">
+          <div class="usp-timing-row">
+            <div class="usp-timing-zeit usp-zeit-blue">Morgens</div>
+            <div class="usp-timing-text">Vitamin D3+K2, Omega-3, Kreatin (täglich konsistent), Zink (nüchtern möglich)</div>
+          </div>
+          <div class="usp-timing-row">
+            <div class="usp-timing-zeit usp-zeit-orange">Pre-Workout</div>
+            <div class="usp-timing-text">Koffein, Beta-Alanin, L-Citrullin, Pre-Workout-Komplexe – 20–30 Min. vorher</div>
+          </div>
+          <div class="usp-timing-row">
+            <div class="usp-timing-zeit usp-zeit-green">Post-Workout</div>
+            <div class="usp-timing-text">Whey Protein, EAAs, Kreatin (alternativ), Kohlenhydrate für Regeneration</div>
+          </div>
+          <div class="usp-timing-row">
+            <div class="usp-timing-zeit usp-zeit-purple">Abends</div>
+            <div class="usp-timing-text">Magnesium, Ashwagandha, Melatonin, ZMA – unterstützen Schlaf und Regeneration</div>
+          </div>
+          <div class="usp-timing-row">
+            <div class="usp-timing-zeit usp-zeit-gray">Zu den Mahlzeiten</div>
+            <div class="usp-timing-text">Omega-3, Curcumin, fettlösliche Vitamine (A, D, E, K) – Aufnahme mit Fett deutlich besser</div>
+          </div>
+        </div>
+
+        <!-- Highlight-Box -->
+        <div class="usp-highlight-box usp-highlight-blue">
+          <div class="usp-highlight-icon">💡</div>
+          <div class="usp-highlight-text">Dein persönlicher Einnahmeplan zeigt dir für jeden Wirkstoff: Wann. Wie viel. Womit kombinieren. Womit NICHT kombinieren. Alles auf einen Blick.</div>
+        </div>
+
+      </div><!-- /body -->
+    </div>
+  </div><!-- /s-usp-einnahme -->
+
+
+  <!-- USP 03: TOP BRANDS -->
+  <div id="s-usp-brands" class="screen">
+    <div class="usp-screen-wrap">
+
+      <!-- Sticky Header -->
+      <div class="usp-screen-header usp-header-green">
+        <button class="usp-screen-back" onclick="zeige('s-start')">← Zurück</button>
+        <span class="usp-screen-num">03</span>
+      </div>
+
+      <!-- Hero -->
+      <div class="usp-screen-hero usp-hero-green">
+        <div class="usp-screen-icon">🏆</div>
+        <h1 class="usp-screen-title">TOP BRANDS</h1>
+        <p class="usp-screen-claim">Geprüfte Marken. Transparente Qualität. Kein Marketing-Bullshit.</p>
+      </div>
+
+      <!-- Inhalt -->
+      <div class="usp-screen-body">
+
+        <!-- Problem -->
+        <div class="usp-content-block usp-block-problem">
+          <div class="usp-block-label">❌ Das Problem</div>
+          <p>Der Supplement-Markt ist unreguliert und unübersichtlich. Günstige Produkte enthalten oft unterdosierte Wirkstoffe, minderwertige Formen (z. B. Magnesiumoxid statt Bisglycinate) oder unnötige Füllstoffe. Ohne Hintergrundwissen kaufst du oft Marketing statt Wirkung.</p>
+        </div>
+
+        <!-- Dopplungen -->
+        <div class="usp-content-block usp-block-warning">
+          <div class="usp-block-label">⚠️ Das Doppelungs-Problem</div>
+          <p>Viele Produkte enthalten dieselben Inhaltsstoffe – versteckt in verschiedenen Namen. Wer z. B. einen Multivitamin und zusätzlich Vitamin D, Zink und Magnesium separat nimmt, überschreitet schnell sichere Tagesdosen. Wir erkennen solche Überschneidungen automatisch.</p>
+        </div>
+
+        <!-- Warum unsere Brands -->
+        <div class="usp-block-label usp-label-standalone">✅ Warum diese Marken</div>
+
+        <div class="usp-brand-list">
+          <div class="usp-brand-row">
+            <div class="usp-brand-name">ESN</div>
+            <div class="usp-brand-reason">DACH-Marktführer, Labortests, transparente Deklaration, Made in Germany</div>
+          </div>
+          <div class="usp-brand-row">
+            <div class="usp-brand-name">Myprotein</div>
+            <div class="usp-brand-reason">Globale Bestseller, unabhängige Zertifizierungen, breites Sortiment, sehr gute Preis-Leistung</div>
+          </div>
+          <div class="usp-brand-row">
+            <div class="usp-brand-name">Norsan</div>
+            <div class="usp-brand-reason">Medical-Grade Omega-3, höchste EPA/DHA-Konzentration, keine Oxidation, ärztlich empfohlen</div>
+          </div>
+          <div class="usp-brand-row">
+            <div class="usp-brand-name">BioTechUSA</div>
+            <div class="usp-brand-reason">Starke CEE-Präsenz, gute Qualitätskontrolle, vielfältige Produktpalette</div>
+          </div>
+          <div class="usp-brand-row">
+            <div class="usp-brand-name">+8 weitere</div>
+            <div class="usp-brand-reason">Kurzentschlossen. Sportnahrung Engel. Body Attack. Olimp. Optimum Nutrition u. v. m.</div>
+          </div>
+        </div>
+
+        <!-- Highlight-Box -->
+        <div class="usp-highlight-box usp-highlight-green">
+          <div class="usp-highlight-icon">💡</div>
+          <div class="usp-highlight-text">Du wählst deine Lieblingsmarke – oder wir empfehlen dir die beste Option für deinen Wirkstoff. Jede Empfehlung ist begründet: Wirkstoffform, Dosierung, Reinheit.</div>
+        </div>
+
+      </div><!-- /body -->
+    </div>
+  </div><!-- /s-usp-brands -->
+
+
+  <!-- USP 04: MEDICHECK -->
+  <div id="s-usp-medicheck" class="screen">
+    <div class="usp-screen-wrap">
+
+      <!-- Sticky Header -->
+      <div class="usp-screen-header usp-header-purple">
+        <button class="usp-screen-back" onclick="zeige('s-start')">← Zurück</button>
+        <span class="usp-screen-num">04</span>
+      </div>
+
+      <!-- Hero -->
+      <div class="usp-screen-hero usp-hero-purple">
+        <div class="usp-screen-icon">🛡️</div>
+        <h1 class="usp-screen-title">MEDICHECK</h1>
+        <p class="usp-screen-claim">Supplements, die wirklich zu dir passen. Sicher. Durchdacht.</p>
+      </div>
+
+      <!-- Inhalt -->
+      <div class="usp-screen-body">
+
+        <!-- Problem -->
+        <div class="usp-content-block usp-block-problem">
+          <div class="usp-block-label">❌ Das Problem</div>
+          <p>Kein Supplement-Shop fragt dich, ob du Medikamente nimmst. Ob du Allergien hast. Ob eine Grunderkrankung vorliegt. Dabei können Wechselwirkungen zwischen Supplements und Medikamenten gefährlich sein – zum Beispiel Kreatin bei Nierenerkrankungen, Vitamin K bei Blutverdünnern oder Johanniskraut bei Antidepressiva.</p>
+        </div>
+
+        <!-- Was wir prüfen -->
+        <div class="usp-block-label usp-label-standalone">🔬 Was MediCheck prüft</div>
+
+        <div class="usp-step-list">
+          <div class="usp-step">
+            <div class="usp-step-num usp-step-purple">✓</div>
+            <div class="usp-step-content">
+              <div class="usp-step-title">Medikamenten-Interaktionen</div>
+              <div class="usp-step-text">Wir gleichen deine Medikamente mit bekannten Wechselwirkungen ab. Supplement X kann Wirkstoff Y verstärken oder abschwächen – das zeigen wir dir, bevor du kaufst.</div>
+            </div>
+          </div>
+          <div class="usp-step">
+            <div class="usp-step-num usp-step-purple">✓</div>
+            <div class="usp-step-content">
+              <div class="usp-step-title">Allergien & Unverträglichkeiten</div>
+              <div class="usp-step-text">Laktose in Whey. Fisch in Omega-3. Soja in Pflanzenproteinen. Wir filtern automatisch alle Produkte, die für dich ungeeignet sind.</div>
+            </div>
+          </div>
+          <div class="usp-step">
+            <div class="usp-step-num usp-step-purple">✓</div>
+            <div class="usp-step-content">
+              <div class="usp-step-title">Grunderkrankungen</div>
+              <div class="usp-step-text">Schilddrüse, Niere, Herzkreislauf, Diabetes – bestimmte Wirkstoffe sind in solchen Fällen kontraindiziert. Wir erkennen das und passen deine Empfehlung an.</div>
+            </div>
+          </div>
+          <div class="usp-step">
+            <div class="usp-step-num usp-step-purple">✓</div>
+            <div class="usp-step-content">
+              <div class="usp-step-title">Vegane & religiöse Anforderungen</div>
+              <div class="usp-step-text">Gelatinekapseln, tierische Kollagenquellen, nicht-halale Verarbeitungshilfen – wir bieten für jeden Bedarf geprüfte Alternativen.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Highlight-Box -->
+        <div class="usp-highlight-box usp-highlight-purple">
+          <div class="usp-highlight-icon">🛡️</div>
+          <div class="usp-highlight-text">MediCheck ist kein Ersatz für ärztliche Beratung – aber er stellt sicher, dass du niemals unbedacht etwas kaufst, das deiner Gesundheit schaden könnte. Sicherheit zuerst.</div>
+        </div>
+
+        <!-- Disclaimer -->
+        <div class="usp-disclaimer">
+          Alle Angaben basieren auf öffentlich verfügbaren Fachinformationen. Bei ernsthaften Erkrankungen oder komplexer Medikation empfehlen wir immer zusätzlich die Rücksprache mit einem Arzt oder Apotheker.
+        </div>
+
+      </div><!-- /body -->
+    </div>
+  </div><!-- /s-usp-medicheck -->
+
 
   <!-- PROFIL -->
   <div id="s-profil" class="screen"></div>

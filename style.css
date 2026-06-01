@@ -2843,8 +2843,353 @@ button {
 
 .guide-detail-studie-icon { font-size: 20px; flex-shrink: 0; }
 
-.guide-detail-studie-text {
-  font-size: 12px;
+
+/* ══════════════════════════════════════════════════════════════════════════
+   25. USP DETAIL-SCREENS
+══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Klickbare USP-Rows ── */
+.usp-klickbar {
+  cursor: pointer;
+  transition: background 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.usp-klickbar:active {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Pfeil-Icon rechts in der Row */
+.usp-pfeil {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+  margin-left: auto;
+  padding-left: 8px;
+  font-family: var(--font-b);
+}
+
+/* ── Screen-Wrapper ── */
+.usp-screen-wrap {
+  min-height: 100vh;
+  background: var(--bg);
+  padding-bottom: 60px;
+}
+
+/* ── Sticky Header ── */
+.usp-screen-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.usp-screen-back {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+/* Farb-Varianten für Back-Button */
+.usp-header-orange .usp-screen-back { color: var(--orange); }
+.usp-header-blue   .usp-screen-back { color: var(--blue); }
+.usp-header-green  .usp-screen-back { color: var(--green); }
+.usp-header-purple .usp-screen-back { color: #8B5CF6; }
+
+/* Nummer oben rechts */
+.usp-screen-num {
+  font-family: var(--font-d);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+/* ── Hero-Bereich ── */
+.usp-screen-hero {
+  padding: 40px 24px 32px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtiler Glow-Hintergrund im Hero */
+.usp-screen-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 160px;
+  border-radius: 50%;
+  opacity: 0.12;
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.usp-hero-orange::before { background: var(--orange); }
+.usp-hero-blue::before   { background: var(--blue); }
+.usp-hero-green::before  { background: var(--green); }
+.usp-hero-purple::before { background: #8B5CF6; }
+
+.usp-screen-icon {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.usp-screen-title {
+  font-family: var(--font-d);
+  font-size: 42px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 10px;
+  line-height: 1;
+  position: relative;
+}
+
+.usp-screen-claim {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  line-height: 1.5;
+  position: relative;
+}
+
+/* ── Body ── */
+.usp-screen-body {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── Content Blocks ── */
+.usp-content-block {
+  border-radius: var(--r);
+  padding: 18px;
+}
+
+.usp-block-problem {
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.15);
+}
+
+.usp-block-solution {
+  background: rgba(16, 185, 129, 0.06);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.usp-block-warning {
+  background: rgba(245, 158, 11, 0.06);
+  border: 1px solid rgba(245, 158, 11, 0.18);
+}
+
+.usp-block-label {
+  font-family: var(--font-d);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 10px;
+}
+
+/* Label als eigenes Element außerhalb eines Blocks */
+.usp-label-standalone {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.usp-content-block p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Steps ── */
+.usp-step-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: var(--r);
+  overflow: hidden;
+}
+
+.usp-step {
+  display: flex;
+  gap: 16px;
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  align-items: flex-start;
+}
+
+.usp-step:last-child {
+  border-bottom: none;
+}
+
+.usp-step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-d);
+  font-size: 13px;
+  font-weight: 900;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.usp-step-orange { background: rgba(255, 107, 0, 0.25); color: var(--orange); }
+.usp-step-purple { background: rgba(139, 92, 246, 0.2); color: #A78BFA; }
+
+.usp-step-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.usp-step-text {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
   line-height: 1.6;
 }
+
+/* ── Timing Liste (Einnahmeplan) ── */
+.usp-timing-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: var(--r);
+  overflow: hidden;
+}
+
+.usp-timing-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.usp-timing-row:last-child {
+  border-bottom: none;
+}
+
+.usp-timing-zeit {
+  font-family: var(--font-d);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  min-width: 80px;
+  text-align: center;
+}
+
+.usp-zeit-blue   { background: rgba(59, 130, 246, 0.15); color: #60A5FA; }
+.usp-zeit-orange { background: rgba(255, 107, 0, 0.15);  color: #FF8C00; }
+.usp-zeit-green  { background: rgba(16, 185, 129, 0.15); color: #34D399; }
+.usp-zeit-purple { background: rgba(139, 92, 246, 0.15); color: #A78BFA; }
+.usp-zeit-gray   { background: rgba(255, 255, 255, 0.06); color: rgba(255,255,255,0.4); }
+
+.usp-timing-text {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.55;
+}
+
+/* ── Brand Liste ── */
+.usp-brand-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: var(--r);
+  overflow: hidden;
+}
+
+.usp-brand-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.usp-brand-row:last-child {
+  border-bottom: none;
+}
+
+.usp-brand-name {
+  font-family: var(--font-d);
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.usp-brand-reason {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+}
+
+/* ── Highlight Box ── */
+.usp-highlight-box {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  border-radius: var(--r);
+  padding: 18px;
+}
+
+.usp-highlight-orange { background: rgba(255, 107, 0, 0.08); border: 1px solid rgba(255, 107, 0, 0.2); }
+.usp-highlight-blue   { background: rgba(59, 130, 246, 0.08); border: 1px solid rgba(59, 130, 246, 0.2); }
+.usp-highlight-green  { background: rgba(16, 185, 129, 0.08); border: 1px solid rgba(16, 185, 129, 0.2); }
+.usp-highlight-purple { background: rgba(139, 92, 246, 0.08); border: 1px solid rgba(139, 92, 246, 0.2); }
+
+.usp-highlight-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  line-height: 1.4;
+}
+
+.usp-highlight-text {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.65;
+}
+
+/* ── Disclaimer ── */
+.usp-disclaimer {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.25);
+  line-height: 1.6;
+  text-align: center;
+  padding: 0 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 20px;
+}
+
