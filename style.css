@@ -2144,3 +2144,175 @@ button {
 }
 
 /* Ticker Popup */
+
+
+/* ══════════════════════════════════════════════════════════════════════════
+   25. WERBEBANNER KARUSSELL
+══════════════════════════════════════════════════════════════════════════ */
+
+.banner-karussell {
+  position: relative;
+  width: calc(100% + 48px);
+  margin: 0 -24px 20px;
+  overflow: hidden;
+  border-radius: 0;
+  background: #000;
+  aspect-ratio: 3 / 4;
+  max-height: 480px;
+}
+
+/* Slides */
+.banner-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.banner-slide.aktiv {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Bild */
+.banner-bild-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.banner-bild {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  display: block;
+}
+
+/* Overlay – Gradient oben für Lesbarkeit */
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.45) 45%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+/* Content oben */
+.banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 22px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  z-index: 2;
+}
+
+/* Badge */
+.banner-badge {
+  background: var(--orange);
+  color: #fff;
+  font-family: var(--font-d);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+
+.banner-badge-gruen { background: var(--green); }
+.banner-badge-blau  { background: var(--blue); }
+
+/* Code Badge */
+.banner-code-wrap {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 100px;
+  letter-spacing: 0.5px;
+}
+
+.banner-code-wrap strong {
+  color: #fff;
+  font-weight: 800;
+}
+
+/* Headline */
+.banner-headline {
+  font-family: var(--font-d);
+  font-size: clamp(28px, 8vw, 40px);
+  font-weight: 900;
+  line-height: 1.0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+}
+
+/* Subtext */
+.banner-sub {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.55;
+  margin: 0;
+  max-width: 300px;
+}
+
+.banner-sub strong { color: #fff; }
+
+/* CTA Button */
+.banner-cta {
+  background: linear-gradient(135deg, var(--orange-l), var(--orange));
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 11px 22px;
+  font-family: var(--font-d);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(255, 107, 0, 0.4);
+  margin-top: 4px;
+  transition: transform 0.15s;
+}
+
+.banner-cta:active { transform: scale(0.97); }
+
+/* Navigation Dots */
+.banner-dots {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: 3;
+}
+
+.banner-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.banner-dot.aktiv-dot {
+  background: var(--orange);
+  width: 18px;
+  border-radius: 3px;
+}

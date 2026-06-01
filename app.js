@@ -230,7 +230,7 @@ function ladeProdukte() {
     })
     .catch(function (err) {
       console.warn('produkte.json konnte nicht geladen werden:', err);
-      console.warn('Stelle sicher dass die Datei unter data/produkte.json liegt.');
+      console.warn('Stelle sicher dass produkte.json im selben Ordner wie index.html liegt.');
     });
 }
 
@@ -1157,8 +1157,60 @@ function resetApp() {
 
 // ── INIT ──
 // Wird ausgeführt sobald das DOM vollständig geladen ist
+
+// ── BANNER KARUSSELL ──
+function initBanner() {
+  var slides = document.querySelectorAll('.banner-slide');
+  var dots   = document.querySelectorAll('.banner-dot');
+  if (!slides.length) return;
+
+  var aktuell = 0;
+  var interval;
+
+  function zeigSlide(idx) {
+    slides[aktuell].classList.remove('aktiv');
+    dots[aktuell].classList.remove('aktiv-dot');
+    aktuell = (idx + slides.length) % slides.length;
+    slides[aktuell].classList.add('aktiv');
+    dots[aktuell].classList.add('aktiv-dot');
+  }
+
+  function startAuto() {
+    interval = setInterval(function () { zeigSlide(aktuell + 1); }, 6000);
+  }
+
+  // Dot-Klick
+  dots.forEach(function (dot) {
+    dot.addEventListener('click', function () {
+      clearInterval(interval);
+      zeigSlide(parseInt(dot.getAttribute('data-dot')));
+      startAuto();
+    });
+  });
+
+  // Touch Swipe
+  var startX = 0;
+  var karussell = document.getElementById('banner-karussell');
+  if (karussell) {
+    karussell.addEventListener('touchstart', function (e) {
+      startX = e.touches[0].clientX;
+    }, { passive: true });
+    karussell.addEventListener('touchend', function (e) {
+      var diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 40) {
+        clearInterval(interval);
+        zeigSlide(diff > 0 ? aktuell + 1 : aktuell - 1);
+        startAuto();
+      }
+    }, { passive: true });
+  }
+
+  startAuto();
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   initQueue();
+  initBanner();
 
   // Produktdaten aus JSON laden (ersetzt inline DB)
   ladeProdukte();
