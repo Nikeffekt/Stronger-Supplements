@@ -1487,22 +1487,6 @@ function initHamburger() {
       resetApp();
     });
   }
-
-  // Menü-Links
-  var menuItems = document.querySelectorAll('.hdr-menu-item');
-  menuItems.forEach(function (item) {
-    item.addEventListener('click', function () {
-      overlay.classList.remove('offen');
-    });
-  });
-
-  var startItem = document.querySelector('.hdr-menu-item[data-screen="s-start"]');
-  if (startItem) {
-    startItem.addEventListener('click', function (e) {
-      e.preventDefault();
-      zeige('s-start');
-    });
-  }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
