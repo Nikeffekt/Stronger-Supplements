@@ -1656,3 +1656,285 @@ function oeffneStartModal() {
     zeigeProfil();
   });
 });
+
+
+/* ============================================================
+   KI-CHAT – Floating Button & Overlay
+   Verbindet sich mit dem Cloudflare Worker (sicherer Proxy)
+   Kennt: Wirkstoffe, Produkte, Quiz-Antworten, User-Stack
+============================================================ */
+
+// ── Konfiguration ──
+var KI_PROXY_URL = 'https://stronger-proxy.stronger-supplements.workers.dev';
+
+// ── State ──
+var kiOffen      = false;
+var kiLaedt      = false;
+var kiVerlauf    = [];   // Array von { role: 'user'|'assistant', content: '...' }
+var kiBegruesst  = false;
+
+// ── Komprimierter Wirkstoff-Index (für System-Prompt) ──
+var KI_WIRKSTOFFE = {
+  "magnesium":        { name: "Magnesium",         kat: "gesundheit",    prio: "essential",   tagline: "Muskelkontraktion, Nerven & Schlaf",          timing: "Abends", brands: ["ESN","Myprotein","Thorne","NOW Foods"] },
+  "vitamin_d3_k2":    { name: "Vitamin D3+K2",     kat: "gesundheit",    prio: "essential",   tagline: "Knochen, Immunsystem & Testosteron",           timing: "Morgens zu Fett", brands: ["ESN","Myprotein","Thorne"] },
+  "omega_3":          { name: "Omega-3",            kat: "gesundheit",    prio: "essential",   tagline: "Entzündung, Herz, Gehirn & Recovery",          timing: "Zu Mahlzeiten", brands: ["Norsan","Nordic Naturals","ESN"] },
+  "zink":             { name: "Zink",               kat: "gesundheit",    prio: "essential",   tagline: "Testosteron, Immunsystem & Enzyme",             timing: "Morgens nüchtern", brands: ["ESN","Thorne","NOW Foods"] },
+  "vitamin_c":        { name: "Vitamin C",          kat: "gesundheit",    prio: "empfohlen",   tagline: "Kollagensynthese & Antioxidans",                timing: "Morgens/mittags", brands: ["ESN","Myprotein","NOW Foods"] },
+  "probiotika":       { name: "Probiotika",         kat: "verdauung",     prio: "empfohlen",   tagline: "Darmflora & Nährstoffaufnahme",                 timing: "Nüchtern morgens", brands: ["ESN","Thorne","NOW Foods"] },
+  "verdauungsenzyme": { name: "Verdauungsenzyme",   kat: "verdauung",     prio: "empfohlen",   tagline: "Proteinverwertung & Blähungen",                 timing: "Zu Mahlzeiten", brands: ["ESN","Myprotein","Thorne"] },
+  "whey_protein":     { name: "Whey Protein",       kat: "muskelaufbau",  prio: "essential",   tagline: "Muskelaufbau, Sättigung & Recovery",            timing: "Post-Workout", brands: ["ESN","Myprotein","Optimum Nutrition"] },
+  "iso_clear":        { name: "Iso Clear",          kat: "muskelaufbau",  prio: "empfohlen",   tagline: "Whey Isolat, fettarm & leichte Textur",         timing: "Post-Workout", brands: ["ESN","Myprotein","BioTechUSA"] },
+  "kreatin":          { name: "Kreatin Monohydrat", kat: "muskelaufbau",  prio: "essential",   tagline: "Kraft, Schnellkraft & Muskelmasse",             timing: "Täglich konsistent", brands: ["ESN","Myprotein","Optimum Nutrition"] },
+  "eaa_bcaa":         { name: "EAA & BCAA",         kat: "muskelaufbau",  prio: "empfohlen",   tagline: "Muskelproteinsynthese & Anti-Katabolismus",     timing: "Intra-Workout", brands: ["ESN","Myprotein","BioTechUSA"] },
+  "pre_workout":      { name: "Pre-Workout",        kat: "muskelaufbau",  prio: "optional",    tagline: "Energie, Fokus & Pump",                         timing: "20-30 Min. vor Training", brands: ["ESN","Myprotein","BioTechUSA"] },
+  "l_carnitin":       { name: "L-Carnitin",         kat: "muskelaufbau",  prio: "empfohlen",   tagline: "Fettverbrennung & Energie",                     timing: "Vor Training/Mahlzeit", brands: ["ESN","Myprotein","NOW Foods"] },
+  "beta_alanin":      { name: "Beta-Alanin",        kat: "muskelaufbau",  prio: "empfohlen",   tagline: "Ausdauer & Muskelpuffer",                       timing: "Pre-Workout", brands: ["ESN","Myprotein","NOW Foods"] },
+  "ashwagandha":      { name: "Ashwagandha",        kat: "regeneration",  prio: "empfohlen",   tagline: "Cortisol senken, Schlaf & Stressresistenz",     timing: "Abends", brands: ["ESN","Myprotein","Thorne"] },
+  "melatonin":        { name: "Melatonin",          kat: "regeneration",  prio: "optional",    tagline: "Einschlafhilfe & Schlafqualität",               timing: "30 Min. vor Schlaf", brands: ["ESN","Myprotein","NOW Foods"] },
+  "zma":              { name: "ZMA",                kat: "regeneration",  prio: "optional",    tagline: "Zink + Magnesium + B6 für Schlaf & Testosteron", timing: "Abends nüchtern", brands: ["ESN","Myprotein","NOW Foods"] },
+  "kollagen":         { name: "Kollagen Peptide",   kat: "gelenke",       prio: "empfohlen",   tagline: "Gelenke, Haut & Bindegewebe",                   timing: "Mit Vitamin C", brands: ["Norsan","ESN","Myprotein"] },
+  "glucosamin_chond": { name: "Glucosamin+Chondroitin", kat: "gelenke",  prio: "optional",    tagline: "Knorpelschutz & Gelenkschmierung",              timing: "Zu Mahlzeiten", brands: ["ESN","Myprotein","Thorne"] },
+  "curcumin":         { name: "Curcumin",           kat: "gelenke",       prio: "empfohlen",   tagline: "Entzündungshemmend & Antioxidans",              timing: "Zu Fett", brands: ["ESN","Thorne","NOW Foods"] },
+  "l_glutamin":       { name: "L-Glutamin",         kat: "muskelaufbau",  prio: "optional",    tagline: "Darmgesundheit & Muskelregeneration",           timing: "Post-Workout/Abends", brands: ["ESN","Myprotein","NOW Foods"] },
+  "hmb":              { name: "HMB",                kat: "muskelaufbau",  prio: "optional",    tagline: "Muskelschutz beim Abnehmen",                    timing: "Mit Mahlzeiten", brands: ["ESN","Myprotein","Thorne"] },
+  "msm":              { name: "MSM",                kat: "gelenke",       prio: "optional",    tagline: "Schwefel für Gelenke & Haut",                   timing: "Zu Mahlzeiten", brands: ["ESN","Myprotein","NOW Foods"] },
+  "grüner_tee_egcg":  { name: "Grüner Tee (EGCG)", kat: "fettabbau",     prio: "optional",    tagline: "Fettverbrennung & Antioxidans",                 timing: "Vor Training/morgens", brands: ["ESN","Myprotein","NOW Foods"] },
+  "cla":              { name: "CLA",                kat: "fettabbau",     prio: "optional",    tagline: "Körperfettreduktion & Muskeldefinition",        timing: "Zu Mahlzeiten", brands: ["ESN","Myprotein","NOW Foods"] }
+};
+
+// ── System-Prompt aufbauen ──
+// Wird bei jeder Anfrage neu gebaut damit User-Kontext aktuell ist
+function kiSystemPrompt() {
+  // Wirkstoff-Index als kompakter Text
+  var wIndex = Object.entries(KI_WIRKSTOFFE).map(function(entry) {
+    var w = entry[1];
+    return w.name + ' [' + w.kat + ', ' + w.prio + ']: ' + w.tagline + ' · Timing: ' + w.timing + ' · Marken: ' + w.brands.join(', ');
+  }).join('\n');
+
+  // Quiz-Antworten des Users
+  var quizInfo = 'Noch kein Quiz ausgefüllt.';
+  if (AW && Object.keys(AW).length > 0) {
+    var zeilen = [];
+    if (AW.intro)       zeilen.push('Jahrgang: ' + AW.intro);
+    if (AW.geschlecht)  zeilen.push('Geschlecht: ' + ({ A:'Männlich', B:'Weiblich', C:'k.A.' }[AW.geschlecht] || AW.geschlecht));
+    if (AW.groesse)     zeilen.push('Größe: ' + AW.groesse + ' cm');
+    if (AW.gewicht)     zeilen.push('Gewicht: ' + AW.gewicht + ' kg');
+    if (AW.ziel)        zeilen.push('Ziel: ' + AW.ziel);
+    if (AW.training)    zeilen.push('Training: ' + AW.training + 'x/Woche');
+    if (AW.ernaehrung)  zeilen.push('Ernährung: ' + AW.ernaehrung);
+    if (AW.schlaf)      zeilen.push('Schlaf: ' + AW.schlaf);
+    if (AW.stress)      zeilen.push('Stress: ' + AW.stress);
+    if (AW.allergien)   zeilen.push('Allergien: ' + AW.allergien);
+    if (AW.medis)       zeilen.push('Medikamente: ' + AW.medis);
+    quizInfo = zeilen.join('\n');
+  }
+
+  // Aktueller Stack des Users
+  var stackInfo = 'Kein Stack ausgewählt.';
+  if (meinStack && Object.keys(meinStack).length > 0) {
+    stackInfo = Object.values(meinStack).map(function(s) {
+      return '- ' + s.prod.name + ' (' + (s.preis || '?') + ' €/Monat)';
+    }).join('\n');
+  }
+
+  // User-Name
+  var userName = (NP && NP.name && NP.name !== 'Nutzer') ? NP.name : null;
+
+  return [
+    'Du bist der KI-Supplement-Assistent von SupplAI – einer App die Supplement-Stacks personalisiert empfiehlt.',
+    'Du bist präzise, wissenschaftlich fundiert und sprichst den User direkt und freundlich an (Du-Form).',
+    'Antworte kompakt (max. 3-4 Sätze) außer der User fragt nach einer detaillierten Erklärung.',
+    'Verwende Emojis sparsam aber sinnvoll.',
+    'Empfehle immer konkrete Produkte aus unserem Sortiment wenn möglich.',
+    'Weise auf Wechselwirkungen, Überdosierungsrisiken und Timing-Regeln hin.',
+    '',
+    '── VERFÜGBARE WIRKSTOFFE & PRODUKTE ──',
+    wIndex,
+    '',
+    '── USER-PROFIL (aus Quiz) ──',
+    quizInfo,
+    '',
+    '── AKTUELLER STACK DES USERS ──',
+    stackInfo,
+    '',
+    userName ? ('── USER-NAME: ' + userName) : '',
+    '',
+    'Halte dich an diese Daten. Erfinde keine Produkte oder Wirkstoffe die nicht im Index stehen.',
+    'Du bist kein Arzt – weise bei medizinischen Fragen auf einen Arzt hin.'
+  ].join('\n');
+}
+
+// ── Chat öffnen/schließen ──
+function kiChatToggle() {
+  kiOffen = !kiOffen;
+  var overlay = document.getElementById('ki-overlay');
+  var fab     = document.getElementById('ki-fab');
+  var icon    = document.getElementById('ki-fab-icon');
+
+  if (kiOffen) {
+    overlay.classList.add('sichtbar');
+    fab.classList.add('offen');
+    icon.textContent = '✕';
+    // Begrüßung beim ersten Öffnen
+    if (!kiBegruesst) {
+      kiBegruesst = true;
+      setTimeout(function() { kiBegruessen(); }, 300);
+    }
+    // Fokus auf Eingabefeld
+    setTimeout(function() {
+      var inp = document.getElementById('ki-input');
+      if (inp) inp.focus();
+    }, 350);
+  } else {
+    overlay.classList.remove('sichtbar');
+    fab.classList.remove('offen');
+    icon.textContent = '💬';
+  }
+}
+
+// ── Begrüßungsnachricht ──
+function kiBegruessen() {
+  var name = (NP && NP.name && NP.name !== 'Nutzer') ? ', ' + NP.name : '';
+  var quizGemacht = AW && Object.keys(AW).length > 5;
+  var stackVorhanden = meinStack && Object.keys(meinStack).length > 0;
+
+  var text;
+  if (quizGemacht && stackVorhanden) {
+    text = 'Hey' + name + '! 👋 Ich kenne deinen Stack und dein Profil. Frag mich alles – Timing, Dosierung, Wechselwirkungen oder neue Empfehlungen.';
+  } else if (quizGemacht) {
+    text = 'Hey' + name + '! 👋 Ich hab dein Quiz-Profil geladen. Stell mir eine Frage zu deinen Supplements oder deinem Stack.';
+  } else {
+    text = 'Hey' + name + '! 👋 Ich bin dein persönlicher Supplement-Assistent. Frag mich alles – von Kreatin bis Vitamin D. Tipp: Füll das Quiz aus für personalisierte Empfehlungen.';
+  }
+
+  kiNachrichtHinzufuegen('ki', text);
+}
+
+// ── Nachricht zum Chat hinzufügen ──
+function kiNachrichtHinzufuegen(rolle, text) {
+  var container = document.getElementById('ki-messages');
+  if (!container) return;
+
+  var div = document.createElement('div');
+  div.className = 'ki-msg ki-msg-' + rolle;
+
+  var bubble = document.createElement('div');
+  bubble.className = 'ki-msg-bubble';
+  // Zeilenumbrüche respektieren
+  bubble.innerHTML = text.replace(/\n/g, '<br>');
+
+  div.appendChild(bubble);
+  container.appendChild(div);
+
+  // Scroll nach unten
+  container.scrollTop = container.scrollHeight;
+}
+
+// ── Tipp-Indikator anzeigen/verstecken ──
+function kiTippAnzeigen(an) {
+  var container = document.getElementById('ki-messages');
+  var status    = document.getElementById('ki-status');
+  if (!container) return;
+
+  var bestehend = document.getElementById('ki-typing-indicator');
+
+  if (an && !bestehend) {
+    var div = document.createElement('div');
+    div.id = 'ki-typing-indicator';
+    div.className = 'ki-msg ki-msg-ki';
+    div.innerHTML = '<div class="ki-msg-bubble"><div class="ki-typing"><span></span><span></span><span></span></div></div>';
+    container.appendChild(div);
+    container.scrollTop = container.scrollHeight;
+    if (status) { status.textContent = 'schreibt…'; status.classList.add('tippt'); }
+  } else if (!an && bestehend) {
+    bestehend.remove();
+    if (status) { status.textContent = 'Online · Dein Supplement-Experte'; status.classList.remove('tippt'); }
+  }
+}
+
+// ── Nachricht senden ──
+function kiSenden() {
+  if (kiLaedt) return;
+
+  var input = document.getElementById('ki-input');
+  var text  = input ? input.value.trim() : '';
+  if (!text) return;
+
+  // Eingabefeld leeren
+  input.value = '';
+  kiAutoResize(input);
+
+  // User-Nachricht anzeigen
+  kiNachrichtHinzufuegen('user', text);
+
+  // Verlauf aktualisieren
+  kiVerlauf.push({ role: 'user', content: text });
+
+  // Verlauf auf max. 10 Nachrichten begrenzen (Kosten sparen)
+  if (kiVerlauf.length > 10) {
+    kiVerlauf = kiVerlauf.slice(kiVerlauf.length - 10);
+  }
+
+  // KI anfragen
+  kiAnfragen();
+}
+
+// ── API-Anfrage an Cloudflare Worker ──
+function kiAnfragen() {
+  kiLaedt = true;
+  kiTippAnzeigen(true);
+
+  var sendBtn = document.getElementById('ki-send');
+  if (sendBtn) sendBtn.disabled = true;
+
+  fetch(KI_PROXY_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      systemPrompt: kiSystemPrompt(),
+      messages:     kiVerlauf
+    })
+  })
+  .then(function(res) { return res.json(); })
+  .then(function(daten) {
+    kiLaedt = false;
+    kiTippAnzeigen(false);
+    if (sendBtn) sendBtn.disabled = false;
+
+    // Antwort extrahieren
+    var antwort = '';
+    if (daten.content && daten.content[0] && daten.content[0].text) {
+      antwort = daten.content[0].text;
+    } else if (daten.error) {
+      antwort = '⚠️ Fehler: ' + daten.error;
+    } else {
+      antwort = '⚠️ Unbekannter Fehler. Bitte versuche es nochmal.';
+    }
+
+    // Antwort zum Verlauf hinzufügen und anzeigen
+    kiVerlauf.push({ role: 'assistant', content: antwort });
+    kiNachrichtHinzufuegen('ki', antwort);
+  })
+  .catch(function(err) {
+    kiLaedt = false;
+    kiTippAnzeigen(false);
+    if (sendBtn) sendBtn.disabled = false;
+    kiNachrichtHinzufuegen('ki', '⚠️ Verbindungsfehler. Prüfe deine Internetverbindung.');
+    console.error('KI-Fehler:', err);
+  });
+}
+
+// ── Enter-Taste senden (Shift+Enter = neue Zeile) ──
+function kiKeydown(event) {
+  if (event.key === 'Enter' && !event.shiftKey) {
+    event.preventDefault();
+    kiSenden();
+  }
+}
+
+// ── Textarea Höhe automatisch anpassen ──
+function kiAutoResize(el) {
+  el.style.height = 'auto';
+  el.style.height = Math.min(el.scrollHeight, 100) + 'px';
+}
+

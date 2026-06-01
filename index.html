@@ -888,6 +888,58 @@
 
 <div class="toast" id="toast"></div>
 
+
+<!-- ══════════════════════════════════════════════════════════════════════
+     KI-CHAT – Floating Button + Overlay
+     Immer sichtbar, auf jedem Screen
+══════════════════════════════════════════════════════════════════════════ -->
+
+<!-- Floating Button -->
+<button class="ki-fab" id="ki-fab" onclick="kiChatToggle()" aria-label="KI-Assistent öffnen">
+  <span class="ki-fab-icon" id="ki-fab-icon">💬</span>
+</button>
+
+<!-- Chat Overlay -->
+<div class="ki-overlay" id="ki-overlay">
+
+  <!-- Header -->
+  <div class="ki-header">
+    <div class="ki-header-left">
+      <div class="ki-avatar">🤖</div>
+      <div class="ki-header-info">
+        <div class="ki-header-name">SUPPLA<span style="color:var(--orange)">I</span></div>
+        <div class="ki-header-status" id="ki-status">Online · Dein Supplement-Experte</div>
+      </div>
+    </div>
+    <button class="ki-close" onclick="kiChatToggle()">✕</button>
+  </div>
+
+  <!-- Nachrichten -->
+  <div class="ki-messages" id="ki-messages">
+    <!-- Begrüßung wird per JS eingefügt -->
+  </div>
+
+  <!-- Eingabe -->
+  <div class="ki-input-wrap">
+    <textarea
+      class="ki-input"
+      id="ki-input"
+      placeholder="Frag mich alles über Supplements…"
+      rows="1"
+      onkeydown="kiKeydown(event)"
+      oninput="kiAutoResize(this)"
+    ></textarea>
+    <button class="ki-send" id="ki-send" onclick="kiSenden()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="22" y1="2" x2="11" y2="13"></line>
+        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+      </svg>
+    </button>
+  </div>
+
+</div><!-- /ki-overlay -->
+
+
 <script src="quiz.js"></script>
 <script src="app.js"></script>
 </body>
