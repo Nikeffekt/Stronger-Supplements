@@ -18,9 +18,7 @@
  *   9.  Quiz
  *   10. Login
  *   11. Profil
- *   12. Shop – Pakete (3-Spalten)
- *   13. Shop – Sport Dark
- *   14. Shop – v3 Tab + Produkt-Karten
+ *   12. Shop – v3 Tab + Produkt-Karten (aktive Version)
  *   15. Profil – Wirkstoff-Zeilen & Pop-up
  *   16. Start Screen
  *   17. Toast
@@ -253,8 +251,6 @@ button {
   50%       { box-shadow: 0 0 40px rgba(255, 107, 0, 0.35), 0 0 0 12px rgba(255, 107, 0, 0.06); }
 }
 
-@keyframes ticker-scroll {
-  0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
 
@@ -963,532 +959,9 @@ button {
 }
 
 
-/* ══════════════════════════════════════════════════════════════════════════
-   12. SHOP – PAKETE (3-SPALTEN)
-══════════════════════════════════════════════════════════════════════════ */
-
-.shop-header {
-  margin-bottom: 16px;
-}
-
-.pakete-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 10px;
-  margin-bottom: 0;
-  align-items: start;
-}
-
-.paket-spalte {
-  background: var(--card);
-  border: 1.5px solid var(--border);
-  border-radius: var(--r-xl);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.paket-spalte.empfohlen-spalte {
-  border-color: var(--orange);
-  box-shadow: 0 4px 24px rgba(232, 146, 10, 0.15);
-}
-
-/* Spalten-Header */
-.spalte-header {
-  padding: 12px 10px 10px;
-  text-align: center;
-  position: relative;
-}
-
-.spalte-header.essential-h {
-  background: rgba(232, 146, 10, 0.06);
-  border-bottom: 1px solid rgba(232, 146, 10, 0.1);
-}
-
-.spalte-header.empfohlen-h {
-  background: rgba(232, 146, 10, 0.09);
-  border-bottom: 1px solid rgba(232, 146, 10, 0.2);
-}
-
-.spalte-header.complete-h {
-  background: rgba(16, 185, 129, 0.05);
-  border-bottom: 1px solid rgba(16, 185, 129, 0.1);
-}
-
-.spalte-badge {
-  position: absolute;
-  top: -9px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--orange);
-  color: #fff;
-  font-size: 9px;
-  font-weight: 700;
-  padding: 2px 10px;
-  border-radius: 100px;
-  white-space: nowrap;
-}
-
-.spalte-icon   { font-size: 18px; margin-bottom: 4px; }
-.spalte-name   { font-size: 13px; font-weight: 800; color: var(--text); margin-bottom: 1px; }
-.spalte-count  { font-size: 10px; color: var(--text3); }
-
-/* Produkt-Items in Spalte */
-.spalte-items {
-  padding: 6px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.prod-item {
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: var(--r);
-  overflow: hidden;
-}
-
-.prod-item.abgewaehlt { opacity: 0.4; }
-
-.prod-item-bar { height: 2px; }
-.prod-item-bar.essential { background: linear-gradient(90deg, var(--orange-l), var(--orange)); }
-.prod-item-bar.empfohlen { background: linear-gradient(90deg, #3B82F6, #60A5FA); }
-.prod-item-bar.optional  { background: linear-gradient(90deg, #10B981, #34D399); }
-
-.prod-item-body      { padding: 8px 10px; }
-.prod-item-top       { display: flex; align-items: flex-start; justify-content: space-between; gap: 6px; margin-bottom: 4px; }
-.prod-item-ikon      { font-size: 14px; flex-shrink: 0; margin-top: 1px; }
-.prod-item-info      { flex: 1; min-width: 0; }
-.prod-item-wirkstoff { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: var(--text3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.prod-item-name      { font-size: 11px; font-weight: 700; color: var(--text); line-height: 1.2; margin-bottom: 1px; }
-.prod-item-marke     { font-size: 10px; color: var(--text3); }
-
-.prod-item-toggle { width: 26px; height: 26px; border-radius: 7px; border: none; display: flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; }
-.prod-item-toggle.an  { background: rgba(5, 150, 105, 0.12); color: var(--green); }
-.prod-item-toggle.aus { background: rgba(0, 0, 0, 0.05); color: var(--text3); }
-
-.prod-item-preis   { font-family: var(--font-d); font-size: 15px; font-weight: 700; color: var(--orange); }
-.prod-item-einnahme{ font-size: 9px; color: var(--text3); margin-top: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-
-/* Alternativen kompakt */
-.prod-item-alts    { background: rgba(0, 0, 0, 0.02); border-top: 1px solid var(--border); padding: 6px 10px; }
-.alt-toggle-btn    { width: 100%; background: none; border: none; font-size: 10px; font-weight: 600; color: var(--text3); padding: 2px 0; text-align: left; display: flex; align-items: center; justify-content: space-between; }
-.alt-list          { margin-top: 6px; display: flex; flex-direction: column; gap: 5px; }
-.alt-row           { display: flex; align-items: center; justify-content: space-between; gap: 6px; padding: 5px 7px; background: var(--card); border-radius: 8px; }
-.alt-row-name      { font-size: 10px; font-weight: 600; color: var(--text); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.alt-row-marke     { font-size: 9px; color: var(--text3); }
-.alt-row-preis     { font-size: 11px; font-weight: 700; color: var(--orange); flex-shrink: 0; }
-
-/* Preis-Box */
-.spalte-preis-box   { padding: 10px; border-top: 1px solid var(--border); margin-top: auto; }
-.spalte-preis-label { font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text3); text-align: center; margin-bottom: 2px; }
-.spalte-preis-val   { font-family: var(--font-d); font-size: 20px; font-weight: 700; color: var(--orange); text-align: center; }
-.spalte-preis-mo    { font-size: 10px; color: var(--text3); text-align: center; }
-
-/* Kauf-Sektion */
-.kauf-section        { background: var(--card); border: 1.5px solid var(--orange-border); border-radius: var(--r-xl); padding: 20px; margin-top: 16px; box-shadow: 0 4px 20px rgba(232, 146, 10, 0.1); }
-.kauf-section-titel  { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.7px; color: var(--text3); text-align: center; margin-bottom: 14px; }
-.kauf-zeilen         { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
-.kauf-zeile          { display: flex; align-items: center; justify-content: space-between; }
-.kauf-zeile-label    { font-size: 13px; font-weight: 600; color: var(--text2); display: flex; align-items: center; gap: 6px; }
-.kauf-zeile-preis    { font-family: var(--font-d); font-size: 16px; font-weight: 700; color: var(--orange); }
-.kauf-total-zeile    { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid var(--border); }
-.kauf-total-label    { font-size: 14px; font-weight: 700; color: var(--text); }
-.kauf-total-preis    { font-family: var(--font-d); font-size: 28px; font-weight: 700; color: var(--orange); }
-
 
 /* ══════════════════════════════════════════════════════════════════════════
-   13. SHOP – SPORT DARK ATHLETIC
-══════════════════════════════════════════════════════════════════════════ */
-
-#s-shop {
-  background: transparent;
-}
-
-.sport-shop {
-  background: #111111;
-  border-radius: 20px;
-  overflow: hidden;
-  margin: 0 -24px;
-  padding: 0 0 24px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-/* Shop Header */
-.sport-shop-header {
-  background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
-  padding: 20px 20px 16px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.sport-back-btn {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  touch-action: manipulation;
-  flex-shrink: 0;
-}
-
-.sport-shop-title {
-  font-family: var(--font-d);
-  font-size: 22px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #fff;
-  flex: 1;
-}
-
-.sport-shop-title span { color: #FF6B00; }
-
-/* Paket-Zeilen */
-.sport-pakete {
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.sport-paket {
-  border-radius: 16px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  transition: border-color 0.2s;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.sport-paket::before {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  border-radius: 17px;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.essential-paket { border-color: rgba(255, 107, 0, 0.3); }
-.essential-paket::before { background: linear-gradient(135deg, rgba(255, 107, 0, 0.4), transparent 60%); opacity: 1; }
-
-.empfohlen-paket { border-color: rgba(255, 107, 0, 0.6); box-shadow: 0 0 40px rgba(255, 107, 0, 0.2), 0 0 80px rgba(255, 107, 0, 0.08); }
-.empfohlen-paket::before { background: linear-gradient(135deg, #FF6B00, #FF8C00, rgba(255, 107, 0, 0.2)); opacity: 1; }
-
-.complete-paket  { border-color: rgba(16, 185, 129, 0.3); }
-.complete-paket::before  { background: linear-gradient(135deg, rgba(16, 185, 129, 0.4), transparent 60%); opacity: 1; }
-
-/* Paket Header */
-.sport-paket-header {
-  padding: 12px 16px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  position: relative;
-  overflow: hidden;
-}
-
-.sport-paket-header::after {
-  content: '';
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.06) 0%, transparent 70%);
-}
-
-.essential-paket .sport-paket-header { background: rgba(255, 107, 0, 0.1); }
-.empfohlen-paket .sport-paket-header { background: linear-gradient(135deg, rgba(255, 107, 0, 0.2), rgba(255, 140, 0, 0.1)); }
-.complete-paket  .sport-paket-header { background: rgba(16, 185, 129, 0.08); }
-
-.sport-paket-icon { font-size: 20px; flex-shrink: 0; }
-.sport-paket-info { flex: 1; min-width: 0; }
-
-.sport-paket-name {
-  font-family: var(--font-d);
-  font-size: clamp(14px, 2vw, 20px);
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #fff;
-  line-height: 1;
-  margin-bottom: 2px;
-}
-
-.essential-paket .sport-paket-name { color: #FF6B00; }
-.empfohlen-paket .sport-paket-name { color: #FF8C00; }
-.complete-paket  .sport-paket-name { color: #10B981; }
-
-.sport-paket-desc  { font-size: 11px; color: rgba(255, 255, 255, 0.45); letter-spacing: 0.3px; }
-
-.sport-ideal-badge {
-  background: #FF6B00;
-  color: #fff;
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 3px 10px;
-  border-radius: 100px;
-  flex-shrink: 0;
-}
-
-.sport-paket-preis       { text-align: right; flex-shrink: 0; }
-.sport-paket-preis-val   { font-family: var(--font-d); font-size: 18px; font-weight: 800; color: #FF6B00; line-height: 1; }
-.sport-paket-preis-mo    { font-size: 9px; color: rgba(255, 255, 255, 0.35); letter-spacing: 0.5px; }
-
-/* Produkt-Liste */
-.sport-prod-list {
-  padding: 6px 8px 8px;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  flex: 1;
-}
-
-.sport-prod-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 7px 8px;
-  border-radius: 9px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: background 0.15s;
-}
-
-.sport-prod-row.abgewaehlt { opacity: 0.3; }
-.sport-prod-row:active     { background: rgba(255, 255, 255, 0.07); }
-
-.sport-prio-dot           { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
-.sport-prio-dot.essential { background: #FF6B00; }
-.sport-prio-dot.empfohlen { background: #3B82F6; }
-.sport-prio-dot.optional  { background: #10B981; }
-
-.sport-prod-ikon          { font-size: 14px; flex-shrink: 0; }
-.sport-prod-info          { flex: 1; min-width: 0; }
-
-.sport-prod-wirkstoff {
-  font-size: 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: rgba(255, 255, 255, 0.4);
-  margin-bottom: 1px;
-}
-
-.sport-prod-name  { font-size: 11px; font-weight: 700; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.sport-prod-marke { font-size: 9px; color: rgba(255, 255, 255, 0.35); }
-.sport-prod-preis { font-family: var(--font-d); font-size: 13px; font-weight: 700; color: #FF6B00; flex-shrink: 0; }
-
-.sport-toggle      { width: 24px; height: 24px; border-radius: 6px; border: none; display: flex; align-items: center; justify-content: center; font-size: 11px; flex-shrink: 0; cursor: pointer; touch-action: manipulation; }
-.sport-toggle.an   { background: rgba(255, 107, 0, 0.15); color: #FF6B00; }
-.sport-toggle.aus  { background: rgba(255, 255, 255, 0.06); color: rgba(255, 255, 255, 0.3); }
-
-/* Einnahme-Zeile */
-.sport-einnahme-zeile {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  margin: 0 8px 5px 8px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 8px;
-  padding: 6px 10px;
-}
-
-.sport-einnahme-left  { display: flex; flex-direction: column; gap: 2px; }
-.sport-einnahme-right { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
-
-.sport-einnahme-label,
-.sport-einnahme-dosis-label { font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.7px; color: rgba(255, 255, 255, 0.3); }
-
-.sport-einnahme-zeit  { font-size: 10px; font-weight: 700; color: #FF8C00; letter-spacing: 0.2px; }
-.sport-einnahme-dosis { font-family: var(--font-m); font-size: 10px; font-weight: 600; color: #34D399; letter-spacing: 0.2px; }
-
-/* Alternativen Chips */
-.sport-alt-chips       { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; padding: 0 8px 6px 8px; }
-.sport-alt-chips-label { font-size: 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255, 255, 255, 0.25); flex-shrink: 0; }
-
-.sport-alt-chip {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 100px;
-  padding: 2px 8px;
-  font-size: 9px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.4);
-  cursor: pointer;
-  touch-action: manipulation;
-  transition: all 0.15s;
-  font-family: var(--font-b);
-}
-
-.sport-alt-chip:active    { transform: scale(0.96); }
-.sport-alt-chip.aktiv-chip { background: rgba(255, 107, 0, 0.15); border-color: rgba(255, 107, 0, 0.45); color: #FF6B00; }
-
-/* Sport Paket Extras-Label */
-.sport-extras-label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 12px 0;
-  font-size: 9px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.25);
-}
-
-.sport-extras-label::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.07);
-}
-
-/* Kauf-Sektion */
-.sport-kauf {
-  margin: 16px 16px 0;
-  background: linear-gradient(135deg, rgba(255, 107, 0, 0.08), rgba(255, 140, 0, 0.04));
-  border: 1px solid rgba(255, 107, 0, 0.3);
-  border-radius: 16px;
-  padding: 18px;
-  position: relative;
-  overflow: hidden;
-}
-
-.sport-kauf::before {
-  content: '';
-  position: absolute;
-  top: -30px;
-  right: -30px;
-  width: 120px;
-  height: 120px;
-  background: radial-gradient(circle, rgba(255, 107, 0, 0.12) 0%, transparent 70%);
-  border-radius: 50%;
-}
-
-.sport-kauf-titel       { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: rgba(255, 255, 255, 0.4); text-align: center; margin-bottom: 12px; }
-.sport-kauf-zeilen      { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
-.sport-kauf-zeile       { display: flex; align-items: center; justify-content: space-between; }
-.sport-kauf-zeile-label { font-size: 12px; color: rgba(255, 255, 255, 0.55); display: flex; align-items: center; gap: 6px; }
-.sport-kauf-zeile-preis { font-size: 14px; font-weight: 700; color: #fff; }
-
-.sport-kauf-total {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 12px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 14px;
-}
-
-.sport-kauf-total-label { font-family: var(--font-d); font-size: 16px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #fff; }
-.sport-kauf-total-preis {
-  font-family: var(--font-d);
-  font-size: 32px;
-  font-weight: 800;
-  color: #FF6B00;
-  line-height: 1;
-  background: linear-gradient(135deg, #FF6B00, #FFB347);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.sport-kauf-total-mo { font-size: 12px; color: rgba(255, 255, 255, 0.4); }
-
-.btn-sport-kaufen {
-  width: 100%;
-  background: linear-gradient(135deg, #FF6B00 0%, #FF8C00 50%, #FFB347 100%);
-  color: #fff;
-  border: none;
-  border-radius: 14px;
-  padding: 16px;
-  font-family: var(--font-d);
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  cursor: pointer;
-  touch-action: manipulation;
-  box-shadow: 0 8px 32px rgba(255, 107, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.1) inset;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn-sport-kaufen::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 60%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
-  animation: shimmer 3s infinite;
-}
-
-.btn-sport-kaufen:active { transform: scale(0.98); }
-
-/* Prod-Block */
-.sport-prod-block            { border-bottom: 1px solid rgba(255, 255, 255, 0.04); padding-bottom: 2px; margin-bottom: 2px; }
-.sport-prod-block:last-child { border-bottom: none; }
-.sport-prod-block.abgewaehlt { opacity: 0.3; }
-
-/* Alt-Row */
-.sport-alt-row         { cursor: pointer; touch-action: manipulation; transition: background 0.15s; }
-.sport-alt-row:active  { background: rgba(255, 255, 255, 0.06); }
-.sport-alt-row.gewaehlt-alt { background: rgba(255, 107, 0, 0.12); border-radius: 8px; }
-
-.sport-alt-waehlen {
-  font-size: 10px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.3);
-  flex-shrink: 0;
-  padding: 4px 8px;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.sport-alt-waehlen.aktiv { background: rgba(255, 107, 0, 0.2); border-color: rgba(255, 107, 0, 0.4); color: #FF6B00; }
-
-.sport-alt-name  { font-size: 11px; color: rgba(255, 255, 255, 0.6); flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.sport-alt-marke { font-size: 10px; color: rgba(255, 255, 255, 0.3); }
-.sport-alt-preis { font-size: 12px; font-weight: 700; color: rgba(255, 107, 0, 0.7); flex-shrink: 0; }
-
-/* Disclaimer */
-.sport-disclaimer {
-  text-align: center;
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.2);
-  padding: 12px 20px 0;
-  line-height: 1.5;
-}
-
-
-/* ══════════════════════════════════════════════════════════════════════════
-   14. SHOP v3 – TAB + PRODUKT-KARTEN
+   12. SHOP v3 – TAB + PRODUKT-KARTEN (aktive Version)
 ══════════════════════════════════════════════════════════════════════════ */
 
 .shop-wrap {
@@ -2124,21 +1597,6 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.sport-start-hero {
-  padding: 36px 24px 28px !important;
-  position: relative !important;
-  overflow: hidden !important;
-  background: none !important;
-}
-
-.sport-start-hero::before,
-.sport-start-hero::after { display: none !important; }
-
-/* Veraltete Styles ausblenden (durch Hero-Button ersetzt) */
-.btn-sport-start { display: none !important; }
-.sport-start-h1  { display: none !important; }
-.sport-start-sub { display: none !important; }
-
 /* Stats */
 .sport-start-stats { display: flex; align-items: center; justify-content: space-around; padding: 18px 20px; background: rgba(255, 255, 255, 0.03); border-top: 1px solid rgba(255, 255, 255, 0.06); border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
 .sport-stat        { text-align: center; }
@@ -2273,7 +1731,7 @@ button {
 
 
 /* ══════════════════════════════════════════════════════════════════════════
-   19. HERO – STACK BUTTON & TICKER
+   19. HERO – STACK BUTTON
 ══════════════════════════════════════════════════════════════════════════ */
 
 /* Hintergrund Icons */
@@ -2473,50 +1931,12 @@ button {
 .hsk-feat-div { width: 1px; height: 40px; background: rgba(255, 255, 255, 0.07); flex-shrink: 0; }
 
 /* Ticker */
-.hero-ticker-wrap { position: relative; z-index: 2; overflow: hidden; margin: 0 -24px; padding: 0; }
 
-.hero-ticker-wrap::before,
-.hero-ticker-wrap::after { content: ''; position: absolute; top: 0; bottom: 0; width: 60px; z-index: 3; pointer-events: none; }
 
-.hero-ticker-wrap::before { left: 0;  background: linear-gradient(90deg, #111111, transparent); }
-.hero-ticker-wrap::after  { right: 0; background: linear-gradient(-90deg, #111111, transparent); }
 
-.hero-ticker {
-  display: flex;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  background: rgba(255, 255, 255, 0.02);
-  overflow: hidden;
-}
 
-.hero-ticker-inner {
-  display: flex;
-  align-items: center;
-  gap: 0;
-  white-space: nowrap;
-  animation: ticker-scroll 28s linear infinite;
-  will-change: transform;
-}
 
-.ht-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 0 18px;
-  font-family: var(--font-d);
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.45);
-  white-space: nowrap;
-  transition: color 0.2s;
-}
 
-.ht-item:hover { color: rgba(255, 107, 0, 0.8); }
-.ht-icon       { font-size: 16px; line-height: 1; }
-.ht-dot        { color: rgba(255, 107, 0, 0.3); font-size: 16px; font-weight: 900; flex-shrink: 0; }
 
 
 /* ══════════════════════════════════════════════════════════════════════════
@@ -2622,14 +2042,9 @@ button {
 }
 
 @media (max-width: 600px) {
-  .sport-pakete          { grid-template-columns: 1fr; gap: 10px; }
-  .sport-paket-name      { font-size: 16px; }
 }
 
 @media (min-width: 601px) and (max-width: 800px) {
-  .sport-pakete          { grid-template-columns: 1fr 1fr 1fr; }
-  .sport-prod-name       { font-size: 10px; }
-  .sport-prod-marke      { font-size: 9px; }
 }
 
 
@@ -2717,38 +2132,15 @@ button {
 
 
 /* ══════════════════════════════════════════════════════════════════════════
-   24. HERO VIDEO HINTERGRUND & SPORT-START-HERO
+   24. SPORT-START-HERO
 ══════════════════════════════════════════════════════════════════════════ */
 
-.hero-video-bg {
-  display: none; /* Video-Hintergrund deaktiviert – externe Links laden nicht lokal */
-}
 
 .sport-start-hero {
-  padding: 24px 24px 20px !important;
+  padding: 24px 24px 20px;
   position: relative;
   overflow: hidden;
-  min-height: unset !important;
+  min-height: unset;
 }
 
 /* Ticker Popup */
-.ticker-popup {
-  display: none;
-  position: absolute;
-  bottom: 70px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(26,26,26,0.95);
-  border: 1px solid rgba(255,107,0,0.3);
-  border-radius: 16px;
-  padding: 12px 20px;
-  text-align: center;
-  z-index: 10;
-  min-width: 200px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-}
-
-.ticker-popup.visible { display: block; }
-.ticker-popup-icon    { font-size: 28px; margin-bottom: 6px; }
-.ticker-popup-name    { font-family: var(--font-d); font-size: 18px; font-weight: 800; color: #FF8C00; letter-spacing: 1px; margin-bottom: 4px; }
-.ticker-popup-text    { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.5; }
