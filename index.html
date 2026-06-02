@@ -6,6 +6,7 @@
 <title>SupplAI – Dein Supplement-Berater</title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="ki-chat/ki-chat.css">
 </head>
 <body>
 <div id="app">
@@ -941,6 +942,21 @@
 
 
 <script src="quiz.js"></script>
+
+<!-- Daten (statisch) – müssen VOR Engine geladen werden -->
+<script src="data/wirkstoff-erklaerungen.js"></script>
+<script src="data/wirkstoff-inhalte.js"></script>
+
+<!-- Engine (Berechnungslogik) – muss VOR app.js geladen werden -->
+<script src="engine/overlaps.js"></script>
+<script src="engine/empfehlungen.js"></script>
+<script src="engine/personalisierung.js"></script>
+
+<!-- App-Logik -->
 <script src="app.js"></script>
+
+<!-- KI-Chat – muss NACH app.js geladen werden -->
+<script src="ki-chat/ki-system-prompt.js"></script>
+<script src="ki-chat/ki-chat.js"></script>
 </body>
 </html>

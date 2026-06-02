@@ -1,0 +1,38 @@
+/* ============================================================
+   data/wirkstoff-inhalte.js
+   Welche Wirkstoffe sind in welchem Produkt enthalten?
+   Wird genutzt um Doppel-Empfehlungen zu erkennen (Overlap-Check)
+   Ausgelagert aus app.js
+   Genutzt von: engine/overlaps.js → loesOverlaps()
+============================================================ */
+
+// ── INGREDIENT OVERLAP MAP ──
+// Verhindert Doppelempfehlungen (z. B. ZMA wenn Mg + Zink schon drin)
+var INHALT = {
+  'whey_protein':   ['protein'],
+  'iso_clear':      ['protein'],
+  'pflanzenprotein':['protein'],
+  'kreatin':        ['kreatin'],
+  'magnesium':      ['magnesium'],
+  'omega3':         ['omega3'],
+  'omega3_vegan':   ['omega3'],
+  'vitamin_d3':     ['vitamin_d3', 'vitamin_k2'],
+  'vitamin_b12':    ['vitamin_b12'],
+  'eisen':          ['eisen'],
+  'ashwagandha':    ['ashwagandha'],
+  'l_carnitin':     ['l_carnitin'],
+  'beta_alanin':    ['beta_alanin'],
+  'elektrolyte':    ['elektrolyte', 'magnesium_trace'],
+  'vitamin_c':      ['vitamin_c'],
+  'zink':           ['zink'],
+  'kollagen':       ['kollagen'],
+  'eaas':           ['eaas'],
+  'l_glutamin':     ['l_glutamin'],
+  'multivitamin':   ['vitamin_c', 'zink', 'vitamin_d3', 'vitamin_b12', 'eisen', 'magnesium_trace', 'multivitamin'],
+  'zma':            ['zink', 'magnesium', 'vitamin_b6'],
+  'pre_workout':    ['koffein', 'beta_alanin', 'citrullin'],
+  'curcumin':       ['curcumin'],
+  'probiotika':     ['probiotika'],
+  'melatonin':      ['melatonin'],
+  'hmb':            ['hmb'],
+};
