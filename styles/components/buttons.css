@@ -1,0 +1,104 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/components/buttons.css
+   Globale Button-Komponenten – wiederverwendbar über alle Screens
+
+   Abhängigkeiten:
+   → tokens.css muss vorher geladen sein (var(--*) Tokens)
+
+   Nicht hier enthalten (screen-spezifisch):
+   → .shop-kauf-btn    → screens/shop.css
+   → .pk-toggle        → screens/shop.css
+   → .usp-screen-back  → screens/usp.css
+   → .hdr-menu-reset   → components/header.css
+   → .hero-stack-btn   → screens/start.css
+══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ── Primär-Button ──
+   Hauptaktion auf einem Screen – immer volle Breite, auffällig. */
+.btn-primary {
+  width: 100%;
+  background: var(--grad-orange);
+  color: #fff;
+  border: none;
+  border-radius: var(--r-sm);
+  padding: 16px;
+  font-family: var(--font-d);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 6px 24px var(--orange-glow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform var(--t-fast), box-shadow var(--t-fast);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 12px var(--orange-glow-s);
+}
+
+
+/* ── Ghost-Button ──
+   Dezente Sekundär-Aktion, z. B. "Überspringen" oder "Zurück". */
+.btn-ghost {
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: var(--text3);
+  padding: 10px 14px;
+  border-radius: var(--r);
+  transition: color var(--t-fast);
+}
+
+.btn-ghost:active {
+  color: var(--text2);
+}
+
+
+/* ── Outline-Button ──
+   Gleichrangige Alternative zum Primary – z. B. in Button-Paaren. */
+.btn-outline {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1.5px solid var(--border2);
+  border-radius: 100px;
+  padding: 11px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text2);
+  transition: background var(--t-fast), border-color var(--t-fast);
+}
+
+.btn-outline:active {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* ── Alle-Kaufen-Button ──
+   Runder CTA-Button, z. B. am Ende des Profil-Screens.
+   Nutzt --orange-gold als Shadow-Farbe (goldener Glow, bewusste
+   Abweichung vom Standard-Orange für wärmere Wirkung). */
+.btn-alle-kaufen {
+  width: 100%;
+  background: var(--grad-orange);
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 16px;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 0 6px 20px rgba(232, 146, 10, 0.32);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform var(--t-fast), box-shadow var(--t-fast);
+}
+
+.btn-alle-kaufen:active {
+  transform: scale(0.98);
+}

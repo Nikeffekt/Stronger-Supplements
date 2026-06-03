@@ -1,0 +1,372 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/screens/shop.css
+   Shop Screen – Navigation, Tabs, Produkt-Karten, Kauf-Leiste
+
+   Abhängigkeiten:
+   → tokens.css  (var(--*) Tokens)
+   → layout.css  (@keyframes shimmer)
+
+   Status: CSS bereit – Screen-HTML noch nicht implementiert.
+   Referenz: scripts/ui/shop.js (noch nicht angelegt)
+══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ══ SHOP WRAPPER ════════════════════════════════════════════════════════ */
+
+.shop-wrap {
+  min-height: 100vh;
+  background: var(--bg);
+  margin: 0 var(--bleed);
+  border-radius: var(--r-lg) var(--r-lg) 0 0;
+  overflow: hidden;
+}
+
+
+/* ══ SHOP NAVIGATION (sticky) ════════════════════════════════════════════ */
+
+.shop-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px 14px;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  border-bottom: 1px solid rgba(255, 107, 0, 0.12);
+}
+
+/* Zurück-Button */
+.shop-nav-back {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--r-sm);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border2);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background var(--t-fast);
+}
+
+.shop-nav-back:active { background: rgba(255, 255, 255, 0.1); }
+
+/* Titel – Gradient-Text */
+.shop-nav-title {
+  font-family: var(--font-d);
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #fff 30%, var(--orange-l) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shop-nav-title span {
+  background: var(--grad-orange-xl);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shop-nav-count {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+
+/* ══ TABS (sticky unter Navigation) ═════════════════════════════════════ */
+
+.shop-tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: var(--bg3);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  /* Direkt unter der Shop-Nav – Höhe wird durch shop-nav bestimmt.
+     Nicht den globalen --header-height nutzen da Shop eine eigene
+     Nav hat, die unabhängig vom App-Header ist. */
+  top: 57px;
+  z-index: var(--z-header-sub);
+}
+
+/* Einzelner Tab */
+.shop-tab {
+  padding: 12px 8px 10px;
+  text-align: center;
+  cursor: pointer;
+  touch-action: manipulation;
+  position: relative;
+  transition: background var(--t-base);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.shop-tab:last-child { border-right: none; }
+
+/* Aktiv-Indikator: Orange Linie unten */
+.shop-tab::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: transparent;
+  transition: background var(--t-base);
+}
+
+.shop-tab-aktiv        { background: var(--orange-bg-soft); }
+.shop-tab-aktiv::after { background: linear-gradient(90deg, var(--orange), var(--orange-xl)); }
+
+/* Floating Badge über dem Tab (z. B. "EMPFOHLEN") */
+.shop-tab-badge {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--grad-orange);
+  color: #fff;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.shop-tab-label {
+  font-family: var(--font-d);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1px;
+  transition: color var(--t-base);
+}
+
+.shop-tab-aktiv .shop-tab-label { color: #fff; }
+
+.shop-tab-sub   { font-size: 9px; color: rgba(255, 255, 255, 0.25); letter-spacing: 0.3px; margin-bottom: 3px; }
+.shop-tab-preis { font-family: var(--font-d); font-size: 13px; font-weight: 700; letter-spacing: 0.5px; transition: color var(--t-base); }
+
+
+/* ══ PRODUKT LISTE ═══════════════════════════════════════════════════════ */
+
+/* Gruppen-Label (z. B. "ESSENTIALS") */
+.shop-gruppe-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-d);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.25);
+  padding: 16px 20px 8px;
+}
+
+.shop-prod-liste { padding: 0 12px; }
+
+
+/* ══ PRODUKT-KARTE ═══════════════════════════════════════════════════════ */
+
+.pk-karte {
+  display: flex;
+  background: var(--card-dark);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  transition: border-color var(--t-base), transform var(--t-fast);
+}
+
+.pk-karte:active { transform: scale(0.99); }
+.pk-karte.pk-aus { opacity: 0.35; }
+
+/* Farbiger linker Akzentstreifen (Priorität-Farbe) */
+.pk-streifen { width: 3px; flex-shrink: 0; }
+
+.pk-main   { flex: 1; padding: 13px 14px; min-width: 0; }
+.pk-zeile1 { display: flex; align-items: flex-start; gap: 10px; }
+
+/* Icon-Box */
+.pk-ikon {
+  font-size: 22px;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.pk-kopf { flex: 1; min-width: 0; }
+
+/* Wirkstoff-Label (klein, über Produktname) */
+.pk-wirkstoff {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: rgba(255, 255, 255, 0.35);
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* "ALT" Badge */
+.pk-alt-badge {
+  background: var(--orange-bg);
+  color: var(--orange-l);
+  font-size: 8px;
+  padding: 1px 5px;
+  border-radius: 4px;
+  letter-spacing: 0.3px;
+}
+
+.pk-prodname { font-size: 14px; font-weight: 700; color: #fff; line-height: 1.2; margin-bottom: 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pk-marke    { font-size: 11px; color: rgba(255, 255, 255, 0.35); }
+
+/* Rechte Spalte: Preis + Toggle */
+.pk-rechts    { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; flex-shrink: 0; }
+.pk-preis     { font-family: var(--font-d); font-size: 22px; font-weight: 800; color: var(--orange); line-height: 1; }
+.pk-preis-eur { font-size: 14px; opacity: 0.7; }
+.pk-rating    { font-size: 10px; color: rgba(255, 255, 255, 0.35); }
+
+/* An/Aus Toggle-Button */
+.pk-toggle     { width: 32px; height: 32px; border-radius: var(--r-sm); border: none; display: flex; align-items: center; justify-content: center; margin-top: 2px; transition: background var(--t-fast), box-shadow var(--t-fast), color var(--t-fast); }
+.pk-toggle.an  { background: rgba(255, 107, 0, 0.15); color: var(--orange); box-shadow: 0 0 10px rgba(255, 107, 0, 0.2); }
+.pk-toggle.aus { background: rgba(255, 255, 255, 0.06); color: rgba(255, 255, 255, 0.4); border: 1px solid rgba(255, 255, 255, 0.1); }
+
+
+/* ── Einnahme-Bar ── */
+.pk-einnahme-bar {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  padding: 7px 10px;
+  margin: 10px 0 8px;
+  gap: 6px;
+}
+
+.pk-einnahme-slot    { display: flex; align-items: center; gap: 5px; flex: 1; }
+.pk-einnahme-icon    { font-size: 12px; }
+.pk-einnahme-text    { font-size: 11px; color: rgba(255, 255, 255, 0.5); font-weight: 500; }
+.pk-dosis-text       { font-family: var(--font-m); color: var(--green-l); font-weight: 600; }
+.pk-einnahme-divider { width: 1px; height: 16px; background: rgba(255, 255, 255, 0.08); flex-shrink: 0; }
+
+
+/* ── Alternativen-Chips ── */
+.pk-alts       { display: flex; align-items: center; flex-wrap: wrap; gap: 5px; }
+.pk-alts-label { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: rgba(255, 255, 255, 0.2); flex-shrink: 0; }
+
+.pk-chip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 4px 10px;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background var(--t-fast), border-color var(--t-fast), transform var(--t-fast);
+}
+
+.pk-chip:active                      { transform: scale(0.96); }
+.pk-chip-aktiv                       { background: var(--orange-bg); border-color: var(--orange-border); }
+.pk-chip-marke                       { font-size: 10px; font-weight: 700; color: rgba(255, 255, 255, 0.45); font-family: var(--font-b); }
+.pk-chip-aktiv .pk-chip-marke        { color: var(--orange-l); }
+.pk-chip-preis                       { font-size: 10px; font-weight: 600; color: rgba(255, 255, 255, 0.25); font-family: var(--font-m); }
+.pk-chip-aktiv .pk-chip-preis        { color: rgba(255, 140, 0, 0.7); }
+
+
+/* ══ FIXIERTE KAUF-LEISTE (bottom) ═══════════════════════════════════════ */
+
+.shop-kauf-leiste {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 680px;
+  background: rgba(10, 10, 10, 0.97);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-top: 1px solid var(--orange-border);
+  padding: 14px 24px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  z-index: var(--z-banner);
+}
+
+.shop-kauf-info  { flex: 1; }
+.shop-kauf-count { font-size: 11px; color: rgba(255, 255, 255, 0.35); letter-spacing: 0.3px; margin-bottom: 2px; }
+
+/* Preis – animierter Gradient-Text */
+.shop-kauf-preis {
+  font-family: var(--font-d);
+  font-size: 30px;
+  font-weight: 900;
+  background: var(--grad-orange-xl);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+
+/* Haupt-CTA Button mit Shimmer-Effekt */
+.shop-kauf-btn {
+  background: var(--grad-orange-btn);
+  color: #fff;
+  border: none;
+  border-radius: var(--r);
+  padding: 14px 24px;
+  font-family: var(--font-d);
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  touch-action: manipulation;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow:
+    0 6px 24px var(--orange-glow),
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset;
+  white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--t-fast);
+}
+
+/* Shimmer-Animation – @keyframes in layout.css */
+.shop-kauf-btn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: shimmer 2.5s infinite;
+}
+
+.shop-kauf-btn:active { transform: scale(0.97); }
+.shop-kauf-arrow      { font-size: 20px; line-height: 1; }

@@ -1,0 +1,42 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/main.css
+   Sammeldatei – importiert alle CSS-Dateien in der korrekten Reihenfolge
+
+   Reihenfolge ist wichtig:
+   1. base/     → Tokens zuerst (alle anderen nutzen var(--*))
+   2. components/ → Wiederverwendbare UI-Teile
+   3. screens/  → Screen-spezifische Styles
+
+   Einbinden in index.html:
+     <link rel="stylesheet" href="styles/main.css">
+
+   Hinweis: @import ist in der Produktion langsamer als direkte
+   <link>-Tags. Für ein Build-Tool (z. B. Vite, Parcel) können
+   die Imports direkt gebündelt werden.
+══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ── 1. BASE ── */
+@import './base/tokens.css';      /* CSS-Variablen – muss immer zuerst kommen */
+@import './base/reset.css';       /* Reset & Body-Defaults */
+@import './base/layout.css';      /* #app, Screen-System, globale Animationen */
+
+
+/* ── 2. COMPONENTS ── */
+@import './components/announcement-bar.css';
+@import './components/header.css';
+@import './components/cards.css';
+@import './components/buttons.css';
+@import './components/progressbar.css';
+@import './components/toast.css';
+
+
+/* ── 3. SCREENS ── */
+@import './screens/start.css';
+@import './screens/quiz.css';
+@import './screens/login.css';
+@import './screens/profil.css';
+@import './screens/shop.css';
+@import './screens/guide.css';
+@import './screens/usp.css';
+@import './screens/ki-chat.css';

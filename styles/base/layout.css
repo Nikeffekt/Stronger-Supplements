@@ -1,0 +1,105 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/base/layout.css
+   Globales App-Layout, Screen-Mechanik und Breakpoints
+
+   Abhängigkeiten:
+   → tokens.css muss vorher geladen sein (var(--*) Tokens)
+
+   Hinweis: Komponenten-spezifische Layouts (z. B. Shop, Profil)
+   gehören in die jeweilige Screen-Datei, nicht hier.
+══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ── App-Container ──
+   Zentriert die App auf max. 680px – wirkt wie ein "Phone-Frame"
+   auf Desktop. Padding-bottom schafft Platz für die fixierte
+   Kauf-Leiste am unteren Rand. */
+#app {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 var(--app-padding-x) 80px;
+  position: relative;
+  z-index: var(--z-content);
+}
+
+/* Abstand zwischen sticky Header und erstem Screen-Inhalt */
+#app > .screen.on {
+  padding-top: 16px;
+}
+
+
+/* ── Screen-System ──
+   Screens werden per JS via .on Klasse ein-/ausgeblendet.
+   fadeUp sorgt für einen weichen Übergang beim Einblenden. */
+.screen {
+  display: none;
+}
+
+.screen.on {
+  display: block;
+  animation: fadeUp var(--t-slow) ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ── Globale Animationen ──
+   Werden von mehreren Komponenten geteilt → gehören ins Layout,
+   nicht in eine einzelne Komponenten-Datei. */
+
+/* Puls: z. B. Live-Dots, Status-Indikatoren */
+@keyframes puls {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+/* Shimmer: Glanz-Effekt auf Buttons und Karten */
+@keyframes shimmer {
+  0%   { left: -100%; }
+  100% { left: 200%; }
+}
+
+/* Gradient-Flow: Animierte Farbverläufe */
+@keyframes gradient-flow {
+  0%   { background-position: 0% center; }
+  50%  { background-position: 100% center; }
+  100% { background-position: 0% center; }
+}
+
+/* Pulse-Ring: Glow-Puls um Elemente (z. B. Hero-Button) */
+@keyframes pulse-ring {
+  0%, 100% {
+    box-shadow:
+      0 0 24px rgba(255, 107, 0, 0.20),
+      0 0 0 6px rgba(255, 107, 0, 0.04);
+  }
+  50% {
+    box-shadow:
+      0 0 40px rgba(255, 107, 0, 0.35),
+      0 0 0 12px rgba(255, 107, 0, 0.06);
+  }
+}
+
+
+/* ── Breakpoints ──
+   Die App ist Mobile-first (max-width: 680px ist bereits der Container).
+   Breakpoints passen nur Ausnahmen an – z. B. Grid-Kollaps auf sehr
+   kleinen Displays. Leere Breakpoints werden nicht definiert. */
+
+/* Sehr kleine Displays (< 380px): Grids auf 1 Spalte reduzieren */
+@media (max-width: 380px) {
+  .feat-grid,
+  .paket-tabs,
+  .aw-list.grid2 {
+    grid-template-columns: 1fr;
+  }
+}

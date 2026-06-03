@@ -1,0 +1,300 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/screens/quiz.css
+   Quiz Screen – Fragen, Antwort-Buttons, Numerik-Input, Jahresrad
+
+   Abhängigkeiten:
+   → tokens.css  (var(--*) Tokens)
+   → layout.css  (@keyframes puls)
+══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ══ QUIZ HEADER ═════════════════════════════════════════════════════════ */
+
+/* Orange Tag-Badge über der Frage (z. B. "FRAGE 3") */
+.quiz-tag {
+  display: inline-flex;
+  background: var(--orange-bg);
+  border: 1px solid var(--orange-border);
+  border-radius: 100px;
+  padding: 5px 14px;
+  font-family: var(--font-d);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--orange);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+/* Frage-Headline – Gradient-Text weiß → orange */
+.quiz-q {
+  font-family: var(--font-d);
+  font-size: clamp(26px, 5vw, 36px);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #fff 40%, rgba(255, 107, 0, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hinweistext unter der Frage */
+.quiz-hint {
+  font-size: 13px;
+  color: var(--text3);
+  margin-bottom: 24px;
+  line-height: 1.55;
+}
+
+
+/* ══ ANTWORT-LISTE ════════════════════════════════════════════════════════ */
+
+.aw-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+/* 2-Spalten-Layout für kurze Antworten (z. B. Geschlecht) */
+.aw-list.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+/* Einzelner Antwort-Button */
+.aw-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r);
+  padding: 14px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  text-align: left;
+  width: 100%;
+  /* Explizit – kein 'all' */
+  transition: background var(--t-fast), border-color var(--t-fast), box-shadow var(--t-fast);
+}
+
+.aw-btn:active {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+/* Ausgewählt */
+.aw-btn.sel {
+  background: var(--orange-bg);
+  border-color: var(--orange);
+  box-shadow:
+    0 0 0 1px var(--orange-glow),
+    0 4px 16px rgba(255, 107, 0, 0.15);
+}
+
+/* Buchstaben-Key links (A, B, C …) */
+.aw-key {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-m);
+  font-size: 11px;
+  color: var(--text3);
+  transition: background var(--t-fast), border-color var(--t-fast), box-shadow var(--t-fast);
+}
+
+.aw-btn.sel .aw-key {
+  background: var(--orange);
+  border-color: var(--orange);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 107, 0, 0.4);
+}
+
+/* Checkmark rechts – nur bei .sel sichtbar */
+.aw-check {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--orange);
+  color: #fff;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(255, 107, 0, 0.5);
+  transition: opacity var(--t-fast);
+}
+
+.aw-btn.sel .aw-check { opacity: 1; }
+
+
+/* ══ NUMERIK INPUT (Größe, Gewicht) ══════════════════════════════════════ */
+
+.num-wrap {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.num-inp {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r);
+  /* Rechts Platz für die Einheit (kg / cm) */
+  padding: 16px 56px 16px 20px;
+  font-size: 32px;
+  font-family: var(--font-m);
+  font-weight: 500;
+  color: var(--text);
+  -webkit-appearance: none;
+  transition: border-color var(--t-fast), background var(--t-fast), box-shadow var(--t-fast);
+}
+
+.num-inp:focus {
+  border-color: var(--orange);
+  outline: none;
+  background: var(--orange-bg-soft);
+  box-shadow: 0 0 0 3px var(--orange-bg);
+}
+
+/* Einheit rechts (kg / cm) */
+.num-unit {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: var(--text3);
+  font-family: var(--font-m);
+  pointer-events: none;
+}
+
+/* Navigation Zurück / Weiter */
+.quiz-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+}
+
+
+/* ══ JAHRESRAD (Geburtsjahrgang-Picker) ══════════════════════════════════ */
+
+.yw-outer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0 4px;
+}
+
+.yw-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+/* Sichtbarer Ausschnitt des Scroll-Rades */
+.yw-container {
+  position: relative;
+  width: 180px;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+/* Scrollbarer Inhalt – snap to center */
+.yw-scroll {
+  height: 100%;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  /* 2 Items Padding oben + unten → Mitte = selektiert */
+  padding: 104px 0;
+}
+
+.yw-scroll::-webkit-scrollbar { display: none; }
+
+/* Einzelnes Jahr */
+.yw-item {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: center;
+  font-family: var(--font-d);
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.25);
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color var(--t-fast), font-size var(--t-fast);
+  user-select: none;
+}
+
+/* Fade-Masken oben + unten für Drum-Wheel-Effekt */
+.yw-container::before,
+.yw-container::after {
+  content: '';
+  position: absolute;
+  left: 0; right: 0;
+  height: 90px;
+  z-index: var(--z-card-detail);
+  pointer-events: none;
+}
+
+.yw-container::before {
+  top: 0;
+  background: linear-gradient(to bottom, var(--card) 0%, transparent 100%);
+}
+
+.yw-container::after {
+  bottom: 0;
+  background: linear-gradient(to top, var(--card) 0%, transparent 100%);
+}
+
+/* Orange Highlight-Linien ober- und unterhalb des selektierten Slots */
+.yw-line {
+  position: absolute;
+  left: 16px; right: 16px;
+  height: 1px;
+  background: rgba(255, 107, 0, 0.35);
+  z-index: var(--z-card-detail);
+  pointer-events: none;
+}
+
+/* Obere Linie */
+.yw-line.top { top: 104px; }
+/* Untere Linie */
+.yw-line.bot { top: 156px; }
+
+/* Großes Anzeige-Display des selektierten Jahres */
+.yw-selected-display {
+  font-family: var(--font-d);
+  font-size: 42px;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--orange);
+  letter-spacing: 2px;
+  line-height: 1;
+  min-height: 50px;
+  text-align: center;
+}

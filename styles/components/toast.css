@@ -1,0 +1,44 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/components/toast.css
+   Toast Notification – temporäre Feedback-Meldung
+
+   Abhängigkeiten:
+   → tokens.css muss vorher geladen sein (var(--*) Tokens)
+
+   Verwendung: JS setzt .on-Klasse → Toast fährt hoch.
+   Logik in: scripts/ui/toast.js
+══════════════════════════════════════════════════════════════════════════ */
+
+
+/* Versteckt per Default – fährt per translateY rein */
+.toast {
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%) translateY(60px);
+  opacity: 0;
+  pointer-events: none;
+
+  /* Aussehen */
+  background: linear-gradient(135deg, var(--card), #222);
+  border: 1px solid var(--orange-border);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.6),
+    0 0 0 1px var(--orange-bg);
+  color: #fff;
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+
+  z-index: var(--z-toast);
+  transition: transform var(--t-spring), opacity var(--t-spring);
+}
+
+/* Sichtbar – JS toggle */
+.toast.on {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}

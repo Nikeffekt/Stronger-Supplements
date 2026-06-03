@@ -1,0 +1,257 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/screens/guide.css
+   Supplement Guide Screen – Übersichtsliste + Detail-Overlay (Slide-in)
+
+   Abhängigkeiten:
+   → tokens.css  (var(--*) Tokens)
+══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ══ GUIDE WRAPPER ═══════════════════════════════════════════════════════ */
+
+.guide-wrap {
+  padding: 0 0 40px;
+  min-height: 100vh;
+  position: relative;
+}
+
+
+/* ══ GUIDE HEADER (sticky) ═══════════════════════════════════════════════ */
+
+.guide-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: var(--z-sticky);
+}
+
+/* Zurück-Button */
+.guide-back {
+  background: none;
+  border: none;
+  color: var(--orange);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 0;
+  min-width: 60px;
+  transition: opacity var(--t-fast);
+}
+
+.guide-back:active { opacity: 0.7; }
+
+/* Titel */
+.guide-titel {
+  font-family: var(--font-d);
+  font-size: 20px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0;
+}
+
+
+/* ══ INTRO TEXT ══════════════════════════════════════════════════════════ */
+
+.guide-intro {
+  padding: 14px 20px 8px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.55;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+
+/* ══ KATEGORIEN ══════════════════════════════════════════════════════════ */
+
+.guide-kat { margin-bottom: 4px; }
+
+/* Kategorie-Header mit orangem Akzentstreifen links */
+.guide-kat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px 10px;
+  border-left: 3px solid var(--orange);
+  margin: 12px 0 4px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.guide-kat-emoji { font-size: 18px; }
+
+.guide-kat-label {
+  font-family: var(--font-d);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* ══ SUPPLEMENT ZEILEN ═══════════════════════════════════════════════════ */
+
+.guide-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: background var(--t-fast);
+}
+
+.guide-item:active { background: var(--orange-bg-soft); }
+
+/* Emoji-Icon */
+.guide-item-emoji {
+  font-size: 24px;
+  width: 36px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.guide-item-info { flex: 1; min-width: 0; }
+
+.guide-item-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.guide-item-tagline {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Prioritäts-Badge (essential / empfohlen / optional) */
+.guide-item-prio {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+  text-align: right;
+}
+
+/* Chevron rechts */
+.guide-item-arrow {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-left: 4px;
+}
+
+
+/* ══ DETAIL OVERLAY (Slide-in von rechts) ════════════════════════════════ */
+
+/* Vollbild-Overlay das von rechts reinschiebt */
+.guide-detail {
+  position: fixed;
+  inset: 0;
+  background: var(--bg);
+  transform: translateX(100%);
+  transition: transform var(--t-spring);
+  z-index: var(--z-banner);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.guide-detail.sichtbar { transform: translateX(0); }
+
+/* Inhalts-Padding – großes Top-Padding da kein eigener Header */
+.guide-detail-inner { padding: 104px 24px 60px; }
+
+/* Zurück-Link oben */
+.guide-detail-back {
+  background: none;
+  border: none;
+  color: var(--orange);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0 0 20px;
+  display: block;
+  transition: opacity var(--t-fast);
+}
+
+.guide-detail-back:active { opacity: 0.7; }
+
+/* Emoji groß */
+.guide-detail-emoji {
+  font-size: 52px;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+/* Name */
+.guide-detail-name {
+  font-family: var(--font-d);
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: 0 0 6px;
+}
+
+/* Tagline / Kurzbeschreibung */
+.guide-detail-tagline {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.guide-detail-prio-wrap { margin-bottom: 20px; }
+
+/* Prioritäts-Badge im Detail */
+.guide-detail-prio {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 100px;
+  background: var(--orange-bg);
+  color: var(--orange);
+  border: 1px solid var(--orange-border);
+}
+
+/* Ausführlicher Beschreibungstext */
+.guide-detail-beschreibung {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.75;
+  margin-bottom: 24px;
+  /* Zeilenumbrüche aus JS-Strings respektieren */
+  white-space: pre-line;
+}
+
+/* Studien-Referenz Box */
+.guide-detail-studie {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border2);
+  border-radius: var(--r);
+  padding: 14px 16px;
+}
+
+.guide-detail-studie-icon { font-size: 20px; flex-shrink: 0; }

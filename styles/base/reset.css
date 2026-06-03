@@ -1,0 +1,113 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/base/reset.css
+   Reset, Body-Defaults und globale Basis-Styles
+
+   Abhängigkeiten:
+   → tokens.css muss vorher geladen sein (var(--*) Tokens)
+══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ── Box-Model Reset ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ── HTML & Body ── */
+html,
+body {
+  min-height: 100%;
+  font-family: var(--font-b);
+  background: var(--bg);
+  color: var(--text);
+  /* Verhindert horizontales Scrollen auf Mobile */
+  overflow-x: hidden;
+}
+
+
+/* ── Globale Hintergrund-Effekte ──
+   Zwei überlagerte Pseudo-Elemente erzeugen den subtilen Farbglow
+   der dem Dark Theme Tiefe gibt. Beide pointer-events: none damit
+   sie nie versehentlich Klicks blockieren. */
+
+/* Ecken-Glows (Orange oben-links, Blau unten-rechts) */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 10% 10%, rgba(255, 107, 0, 0.05) 0%, transparent 50%),
+    radial-gradient(ellipse at 90% 90%, rgba(59, 130, 246, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: var(--z-base);
+}
+
+/* Zentraler Glow hinter App-Content */
+body::after {
+  content: '';
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 107, 0, 0.04) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: var(--z-base);
+}
+
+
+/* ── Touch-Optimierung ──
+   Verhindert den blauen Highlight-Flash auf Mobile beim Tippen. */
+button,
+div,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* ── Button Defaults ── */
+button {
+  cursor: pointer;
+  /* Verhindert 300ms Tap-Delay auf Touch-Geräten */
+  touch-action: manipulation;
+  font-family: var(--font-b);
+  border: none;
+  background: none;
+}
+
+
+/* ── Link Defaults ── */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* ── Bild-Defaults ── */
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* ── Input & Textarea Defaults ── */
+input,
+textarea,
+select {
+  font-family: var(--font-b);
+  color: var(--text);
+  /* Verhindert Browser-Zoom auf Focus in iOS (min. 16px) */
+  font-size: max(16px, 1em);
+}
+
+/* Zahlen-Inputs: Spinner ausblenden */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

@@ -1,0 +1,44 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/components/progressbar.css
+   Quiz Fortschrittsbalken
+
+   Abhängigkeiten:
+   → tokens.css muss vorher geladen sein (var(--*) Tokens)
+
+   Verwendet in: Quiz-Screen (scripts/quiz/quiz.js)
+══════════════════════════════════════════════════════════════════════════ */
+
+
+.prog-wrap {
+  margin-bottom: 22px;
+}
+
+/* Hintergrund-Spur */
+.prog-bar {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+/* Aktiver Fortschritt – Breite wird per JS gesetzt */
+.prog-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--orange), var(--orange-l));
+  border-radius: 2px;
+  transition: width var(--t-smooth);
+  /* Leuchtender Glow-Effekt auf dem Fill */
+  box-shadow:
+    0 0 12px rgba(255, 107, 0, 0.6),
+    0 0 4px  rgba(255, 107, 0, 0.4);
+}
+
+/* "Frage X von Y" Text rechts */
+.prog-txt {
+  font-family: var(--font-m);
+  font-size: 11px;
+  color: var(--text3);
+  text-align: right;
+  letter-spacing: 0.5px;
+}

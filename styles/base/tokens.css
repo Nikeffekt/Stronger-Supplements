@@ -1,0 +1,151 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/base/tokens.css
+   Design Tokens – Single Source of Truth für das gesamte Design-System
+   Alle CSS-Variablen werden hier definiert und nirgendwo sonst.
+
+   Kategorien:
+   1. Farben – Hintergrund
+   2. Farben – Text
+   3. Farben – Orange (Primär-Akzent)
+   4. Farben – Sekundär-Akzente (Blue, Green, Red, weitere)
+   5. Farben – Rahmen & Schatten
+   6. Farben – Karten & Oberflächen
+   7. Typografie
+   8. Border-Radius
+   9. Abstände (Spacing)
+   10. Z-Index Layer
+   11. Transitions
+   12. Header (abgeleitete Tokens)
+══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+
+  /* ── 1. Hintergrund ── */
+  --bg:              #0A0A0A;   /* Basis-Hintergrund (fast Schwarz) */
+  --bg2:             #141414;   /* Leicht aufgehellte Fläche */
+  --bg3:             #111111;   /* Zwischenton (z. B. Shop-Tabs) */
+
+  /* ── 2. Text ── */
+  --text:            #F5F5F0;   /* Primärer Text (warm-weiß) */
+  --text2:           #A8A29E;   /* Sekundärer Text */
+  --text3:           #6B6560;   /* Dezenter Text / Labels */
+
+  /* ── 3. Orange – Primär-Akzent ── */
+  /* Feste Werte */
+  --orange:          #FF6B00;   /* Primär-Orange */
+  --orange-l:        #FF8C00;   /* Helles Orange (Gradient-Mitte) */
+  --orange-xl:       #FFB347;   /* Sehr helles Orange (Gradient-Ende) */
+  --orange-gold:     #E8920A;   /* Gold-Orange (Sonderfall: btn-alle-kaufen) */
+
+  /* Transparente Varianten */
+  --orange-bg:       rgba(255, 107, 0, 0.10);
+  --orange-bg-hover: rgba(255, 107, 0, 0.08);
+  --orange-bg-soft:  rgba(255, 107, 0, 0.06);
+  --orange-border:   rgba(255, 107, 0, 0.30);
+  --orange-border-l: rgba(255, 107, 0, 0.20);
+  --orange-border-s: rgba(255, 107, 0, 0.15);
+  --orange-glow:     rgba(255, 107, 0, 0.40);
+  --orange-glow-s:   rgba(255, 107, 0, 0.20);
+
+  /* Gradient-Shortcuts (häufig verwendet) */
+  --grad-orange:     linear-gradient(135deg, var(--orange-l), var(--orange));
+  --grad-orange-xl:  linear-gradient(135deg, var(--orange), var(--orange-xl));
+  --grad-orange-btn: linear-gradient(135deg, var(--orange) 0%, var(--orange-l) 60%, var(--orange-xl) 100%);
+
+  /* ── 4. Sekundär-Akzente ── */
+  --blue:            #3B82F6;
+  --blue-bg:         rgba(59, 130, 246, 0.10);
+  --blue-border:     rgba(59, 130, 246, 0.25);
+
+  --green:           #10B981;
+  --green-l:         #34D399;   /* Helles Grün (z. B. Dosis-Text) */
+  --green-bg:        rgba(16, 185, 129, 0.10);
+  --green-border:    rgba(16, 185, 129, 0.25);
+
+  --red:             #EF4444;
+  --red-bg:          rgba(239, 68, 68, 0.06);
+  --red-border:      rgba(239, 68, 68, 0.15);
+
+  --purple:          #8B5CF6;
+  --purple-l:        #A78BFA;
+  --purple-bg:       rgba(139, 92, 246, 0.08);
+  --purple-border:   rgba(139, 92, 246, 0.20);
+
+  --teal:            #14B8A6;
+  --teal-l:          #2DD4BF;
+  --teal-bg:         rgba(20, 184, 166, 0.08);
+  --teal-border:     rgba(20, 184, 166, 0.20);
+
+  --amber:           #F59E0B;
+  --amber-l:         #FCD34D;
+  --amber-bg:        rgba(245, 158, 11, 0.08);
+  --amber-border:    rgba(245, 158, 11, 0.20);
+
+  --pink:            #EC4899;
+  --pink-l:          #F9A8D4;
+  --pink-bg:         rgba(236, 72, 153, 0.08);
+  --pink-border:     rgba(236, 72, 153, 0.20);
+
+  --cyan:            #06B6D4;
+  --cyan-l:          #67E8F9;
+  --cyan-bg:         rgba(6, 182, 212, 0.08);
+  --cyan-border:     rgba(6, 182, 212, 0.20);
+
+  /* ── 5. Rahmen & Schatten ── */
+  --border:          rgba(255, 255, 255, 0.07);
+  --border2:         rgba(255, 255, 255, 0.12);
+  --shadow:          0 4px 24px rgba(0, 0, 0, 0.40);
+  --shadow-lg:       0 12px 48px rgba(0, 0, 0, 0.60);
+
+  /* ── 6. Karten & Oberflächen ── */
+  --card:            #1A1A1A;
+  --card2:           rgba(26, 26, 26, 0.92);
+  --card-dark:       #161616;   /* Dunklere Karte (Shop, Popup) */
+  --surface:         #1E1E1E;   /* UI-Oberflächen (KI-Chat Header, Input) */
+
+  /* ── 7. Typografie ── */
+  --font-d:          'Barlow Condensed', 'Impact', sans-serif;  /* Display / Headlines */
+  --font-b:          'DM Sans', sans-serif;                     /* Body */
+  --font-m:          'DM Mono', monospace;                      /* Mono / Zahlen */
+
+  /* ── 8. Border-Radius ── */
+  --r:               14px;
+  --r-sm:            10px;
+  --r-lg:            20px;
+  --r-xl:            26px;
+
+  /* ── 9. Abstände ── */
+  /* Horizontaler Innenabstand der App */
+  --app-padding-x:   24px;
+  /* Negativer Margin um volle Breite zu nutzen (z. B. Banner, Shop) */
+  --bleed:           -24px;
+
+  /* ── 10. Z-Index Layer ── */
+  /* Klares, dokumentiertes Stacking-System.
+     Alle z-index Werte im Projekt kommen von hier – nie hardcoden. */
+  --z-base:          0;
+  --z-content:       1;
+  --z-card-detail:   2;    /* Interne Karten-Elemente (Icons, Inhalte) */
+  --z-sticky:        10;   /* Sticky Elemente innerhalb von Containern */
+  --z-header:        100;  /* Haupt-Header + Shop-Nav */
+  --z-header-sub:    90;   /* Shop-Tabs (unter Header) */
+  --z-header-over:   101;  /* Elemente die über dem Header liegen müssen */
+  --z-banner:        200;  /* Kauf-Leiste, fixierte Buttons */
+  --z-guide:         500;  /* Guide / Sidebar Overlay */
+  --z-overlay:       1000; /* Modal / Wirkstoff-Popup */
+  --z-toast:         9999; /* Toast Notifications */
+  --z-fab:           99999;  /* Floating Action Button (KI-Chat) */
+  --z-fab-overlay:   99998;  /* KI-Chat Overlay (unter FAB) */
+
+  /* ── 11. Transitions ── */
+  /* Standard-Transitions – nie 'all' verwenden */
+  --t-fast:          0.15s ease;
+  --t-base:          0.20s ease;
+  --t-slow:          0.35s ease;
+  --t-spring:        0.28s cubic-bezier(0.32, 0.72, 0, 1); /* Bottom Sheet */
+  --t-smooth:        0.5s cubic-bezier(0.4, 0, 0.2, 1);    /* Progress Bars */
+
+  /* ── 12. Header (abgeleitete Tokens) ── */
+  /* Höhe des sticky Headers – wird für Offsets verwendet (z. B. Shop-Tabs top) */
+  --header-height:   57px;
+}

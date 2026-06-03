@@ -1,0 +1,76 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/components/announcement-bar.css
+   Scrollender Ticker-Banner ganz oben auf der Seite
+
+   Abhängigkeiten:
+   → tokens.css muss vorher geladen sein (var(--*) Tokens)
+   → layout.css muss vorher geladen sein (@keyframes puls)
+
+   Hinweis: Die Höhe des Bars (34px) bestimmt den top-Offset des Headers.
+   Wenn die Höhe geändert wird, muss auch .hdr { top: ... } in header.css
+   angepasst werden (oder als Token --ann-bar-height ergänzt werden).
+══════════════════════════════════════════════════════════════════════════ */
+
+
+/* Äußerer Container – sticky ganz oben */
+.ann-bar {
+  width: 100%;
+  background: #000;
+  border-bottom: 1px solid var(--orange-border);
+  overflow: hidden;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  /* Über dem Header damit der Header darunter klebt */
+  z-index: var(--z-header-over);
+}
+
+/* Scrollender Track – doppelter Inhalt für nahtlose Loop-Animation */
+.ann-track {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: ann-scroll 22s linear infinite;
+  /* GPU-Layer für flüssige Animation */
+  will-change: transform;
+}
+
+@keyframes ann-scroll {
+  0%   { transform: translateX(0); }
+  /* -50% weil Inhalt doppelt vorhanden → nahtloser Loop */
+  100% { transform: translateX(-50%); }
+}
+
+/* Einzelne Meldung */
+.ann-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-b);
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.3px;
+  padding: 0 6px;
+}
+
+/* Pulsierender Dot vor jeder Meldung */
+.ann-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--orange);
+  flex-shrink: 0;
+  /* @keyframes puls ist in layout.css definiert */
+  animation: puls 2s infinite;
+}
+
+/* Trennzeichen · zwischen Meldungen */
+.ann-sep {
+  color: rgba(255, 107, 0, 0.4);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 4px;
+}

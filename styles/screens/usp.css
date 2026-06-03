@@ -1,0 +1,430 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/screens/usp.css
+   USP Detail-Screens – gemeinsame Klassen für alle 12 USP-Screens
+   + klickbare Rows auf dem Start-Screen
+   + USP-Card Teaser (Start-Screen)
+
+   Abhängigkeiten:
+   → tokens.css  (var(--*) Tokens)
+
+   Farbvarianten: orange, blue, green, purple, teal, amber, pink, cyan
+   Jede Variante hat: header-back-color, hero-glow, highlight-box,
+   step-num, row-accent (in start.css), zeit-badge
+══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ══ KLICKBARE USP ROWS (Start-Screen) ═══════════════════════════════════ */
+
+.usp-klickbar {
+  cursor: pointer;
+  transition: background var(--t-fast);
+}
+
+.usp-klickbar:active { background: rgba(255, 255, 255, 0.04); }
+
+/* Pfeil-Icon rechts in der Row */
+.usp-pfeil {
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+  margin-left: auto;
+  padding-left: 8px;
+  font-family: var(--font-b);
+}
+
+
+/* ══ USP CARD TEASER (Start-Screen) ══════════════════════════════════════ */
+
+.usp-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px 8px;
+}
+
+.usp-card {
+  position: relative;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  padding: 20px 18px 16px;
+  display: flex;
+  flex-direction: column;
+  background: var(--card-dark);
+  min-height: 140px;
+}
+
+/* Orange Gradient-Overlay innen */
+.usp-card-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 107, 0, 0.18), rgba(255, 140, 0, 0.06));
+  z-index: var(--z-base);
+}
+
+/* Große dekorative Nummer im Hintergrund */
+.usp-card-num {
+  position: absolute;
+  bottom: -10px;
+  right: 12px;
+  font-family: var(--font-d);
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 1;
+  color: rgba(255, 107, 0, 0.12);
+  z-index: var(--z-content);
+  letter-spacing: -4px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.usp-card-icon    { font-size: 28px; margin-bottom: 10px; position: relative; z-index: var(--z-card-detail); line-height: 1; }
+.usp-card-content { position: relative; z-index: var(--z-card-detail); flex: 1; }
+
+.usp-card-title {
+  font-family: var(--font-d);
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, #fff 40%, var(--orange-l) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.usp-card-text { font-size: 13px; color: rgba(255, 255, 255, 0.5); line-height: 1.6; margin-bottom: 14px; max-width: 340px; }
+
+.usp-card-tag {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 100px;
+  padding: 4px 12px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 1px solid;
+  position: relative;
+  z-index: var(--z-card-detail);
+  align-self: flex-start;
+}
+
+
+/* ══ USP SCREEN WRAPPER ══════════════════════════════════════════════════ */
+
+.usp-screen-wrap {
+  min-height: 100vh;
+  background: var(--bg);
+  padding-bottom: 60px;
+}
+
+
+/* ══ STICKY HEADER ═══════════════════════════════════════════════════════ */
+
+.usp-screen-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  position: sticky;
+  top: 0;
+  z-index: var(--z-sticky);
+  background: var(--bg);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Zurück-Button – Farbe via Varianten-Klasse */
+.usp-screen-back {
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 0;
+  transition: opacity var(--t-fast);
+}
+
+.usp-screen-back:active { opacity: 0.7; }
+
+/* Farb-Varianten für Back-Button */
+.usp-header-orange .usp-screen-back { color: var(--orange); }
+.usp-header-blue   .usp-screen-back { color: var(--blue); }
+.usp-header-green  .usp-screen-back { color: var(--green); }
+.usp-header-purple .usp-screen-back { color: var(--purple); }
+.usp-header-teal   .usp-screen-back { color: var(--teal); }
+.usp-header-amber  .usp-screen-back { color: var(--amber); }
+.usp-header-pink   .usp-screen-back { color: var(--pink); }
+.usp-header-cyan   .usp-screen-back { color: var(--cyan); }
+
+/* Screen-Nummer oben rechts */
+.usp-screen-num {
+  font-family: var(--font-d);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+
+/* ══ HERO-BEREICH ════════════════════════════════════════════════════════ */
+
+.usp-screen-hero {
+  padding: 40px 24px 32px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Farbiger Glow-Kreis im Hero (Farbe via Variante) */
+.usp-screen-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 160px;
+  border-radius: 50%;
+  opacity: 0.12;
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+/* Glow-Farben je Variante */
+.usp-hero-orange::before { background: var(--orange); }
+.usp-hero-blue::before   { background: var(--blue); }
+.usp-hero-green::before  { background: var(--green); }
+.usp-hero-purple::before { background: var(--purple); }
+.usp-hero-teal::before   { background: var(--teal); }
+.usp-hero-amber::before  { background: var(--amber); }
+.usp-hero-pink::before   { background: var(--pink); }
+.usp-hero-cyan::before   { background: var(--cyan); }
+
+.usp-screen-icon {
+  font-size: 48px;
+  line-height: 1;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.usp-screen-title {
+  font-family: var(--font-d);
+  font-size: 42px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 10px;
+  line-height: 1;
+  position: relative;
+}
+
+.usp-screen-claim {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  line-height: 1.5;
+  position: relative;
+}
+
+
+/* ══ BODY ════════════════════════════════════════════════════════════════ */
+
+.usp-screen-body {
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* ══ CONTENT BLOCKS ══════════════════════════════════════════════════════ */
+
+.usp-content-block {
+  border-radius: var(--r);
+  padding: 18px;
+}
+
+.usp-block-problem  { background: var(--red-bg);    border: 1px solid var(--red-border); }
+.usp-block-solution { background: var(--green-bg);  border: 1px solid var(--green-border); }
+.usp-block-warning  { background: var(--amber-bg);  border: 1px solid rgba(245, 158, 11, 0.18); }
+
+.usp-block-label {
+  font-family: var(--font-d);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  margin-bottom: 10px;
+}
+
+/* Label außerhalb eines Blocks */
+.usp-label-standalone {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.usp-content-block p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.7;
+  margin: 0;
+}
+
+
+/* ══ STEPS ═══════════════════════════════════════════════════════════════ */
+
+.usp-step-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  overflow: hidden;
+}
+
+.usp-step {
+  display: flex;
+  gap: 16px;
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  align-items: flex-start;
+}
+
+.usp-step:last-child { border-bottom: none; }
+
+/* Nummerierter Kreis – Farbe via Variante */
+.usp-step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-d);
+  font-size: 13px;
+  font-weight: 900;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+/* Step-Num Farbvarianten */
+.usp-step-orange { background: rgba(255, 107, 0, 0.25); color: var(--orange); }
+.usp-step-purple { background: var(--purple-bg);        color: var(--purple-l); }
+.usp-step-teal   { background: var(--teal-bg);          color: var(--teal-l); }
+.usp-step-amber  { background: var(--amber-bg);         color: var(--amber-l); }
+.usp-step-pink   { background: var(--pink-bg);          color: var(--pink-l); }
+.usp-step-cyan   { background: var(--cyan-bg);          color: var(--cyan-l); }
+.usp-step-green  { background: var(--green-bg);         color: var(--green-l); }
+
+.usp-step-title { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 4px; }
+.usp-step-text  { font-size: 13px; color: rgba(255, 255, 255, 0.55); line-height: 1.6; }
+
+
+/* ══ TIMING LISTE ════════════════════════════════════════════════════════ */
+
+.usp-timing-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  overflow: hidden;
+}
+
+.usp-timing-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.usp-timing-row:last-child { border-bottom: none; }
+
+/* Zeit-Badge (Pill) */
+.usp-timing-zeit {
+  font-family: var(--font-d);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  min-width: 80px;
+  text-align: center;
+}
+
+/* Zeit-Badge Farbvarianten */
+.usp-zeit-blue   { background: rgba(59, 130, 246, 0.15);  color: #60A5FA; }
+.usp-zeit-orange { background: var(--orange-bg-border-s); color: var(--orange-l); }
+.usp-zeit-green  { background: rgba(16, 185, 129, 0.15);  color: var(--green-l); }
+.usp-zeit-purple { background: var(--purple-bg);          color: var(--purple-l); }
+.usp-zeit-gray   { background: rgba(255, 255, 255, 0.06); color: rgba(255, 255, 255, 0.4); }
+.usp-zeit-amber  { background: var(--amber-bg);           color: var(--amber-l); }
+
+.usp-timing-text { font-size: 13px; color: rgba(255, 255, 255, 0.6); line-height: 1.55; }
+
+
+/* ══ BRAND LISTE ═════════════════════════════════════════════════════════ */
+
+.usp-brand-list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  overflow: hidden;
+}
+
+.usp-brand-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.usp-brand-row:last-child { border-bottom: none; }
+
+.usp-brand-name   { font-family: var(--font-d); font-size: 15px; font-weight: 900; letter-spacing: 1px; color: #fff; }
+.usp-brand-reason { font-size: 12px; color: rgba(255, 255, 255, 0.5); line-height: 1.5; }
+
+
+/* ══ HIGHLIGHT BOX ═══════════════════════════════════════════════════════ */
+
+.usp-highlight-box {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  border-radius: var(--r);
+  padding: 18px;
+}
+
+/* Highlight-Box Farbvarianten */
+.usp-highlight-orange { background: var(--orange-bg-hover); border: 1px solid var(--orange-border-l); }
+.usp-highlight-blue   { background: var(--blue-bg);         border: 1px solid var(--blue-border); }
+.usp-highlight-green  { background: var(--green-bg);        border: 1px solid var(--green-border); }
+.usp-highlight-purple { background: var(--purple-bg);       border: 1px solid var(--purple-border); }
+.usp-highlight-teal   { background: var(--teal-bg);         border: 1px solid var(--teal-border); }
+.usp-highlight-amber  { background: var(--amber-bg);        border: 1px solid var(--amber-border); }
+.usp-highlight-pink   { background: var(--pink-bg);         border: 1px solid var(--pink-border); }
+.usp-highlight-cyan   { background: var(--cyan-bg);         border: 1px solid var(--cyan-border); }
+
+.usp-highlight-icon { font-size: 20px; flex-shrink: 0; line-height: 1.4; }
+.usp-highlight-text { font-size: 13px; color: rgba(255, 255, 255, 0.7); line-height: 1.65; }
+
+
+/* ══ DISCLAIMER ══════════════════════════════════════════════════════════ */
+
+.usp-disclaimer {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.25);
+  line-height: 1.6;
+  text-align: center;
+  padding: 20px 8px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}

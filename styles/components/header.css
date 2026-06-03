@@ -1,0 +1,330 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/components/header.css
+   Announcement Bar, Header Navigation & Hamburger Menü
+
+   Abhängigkeiten:
+   → tokens.css muss vorher geladen sein (var(--*) Tokens)
+
+   Hinweis: Die alte .hdr-Definition aus Sektion 4 wurde durch
+   Sektion 27 vollständig überschrieben. Hier steht nur noch die
+   aktive finale Version – die alte Doppeldefinition wurde entfernt.
+══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ══ ANNOUNCEMENT BAR ══════════════════════════════════════════════════ */
+
+.ann-bar {
+  width: 100%;
+  background: #000;
+  border-bottom: 1px solid var(--orange-border);
+  overflow: hidden;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  /* Über dem Header – Header klebt direkt darunter */
+  z-index: var(--z-header-over);
+}
+
+/* Scrollender Ticker-Track */
+.ann-track {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  animation: ann-scroll 22s linear infinite;
+  /* GPU-Beschleunigung für flüssige Animation */
+  will-change: transform;
+}
+
+@keyframes ann-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Einzelne Meldung */
+.ann-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-b);
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.3px;
+  padding: 0 6px;
+}
+
+/* Pulsierender Dot vor jeder Meldung */
+.ann-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--orange);
+  flex-shrink: 0;
+  animation: puls 2s infinite; /* keyframe in layout.css */
+}
+
+/* Trennzeichen zwischen Meldungen */
+.ann-sep {
+  color: rgba(255, 107, 0, 0.4);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 4px;
+}
+
+
+/* ══ HEADER NAVIGATION ══════════════════════════════════════════════════ */
+
+/* 3-Spalten-Grid: Icons Links | Logo Mitte | Icons Rechts */
+.hdr {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(255, 107, 0, 0.15);
+  position: sticky;
+  /* Direkt unter dem Announcement Bar (34px hoch) */
+  top: 34px;
+  z-index: var(--z-header);
+}
+
+/* Icon-Gruppen Links / Rechts */
+.hdr-links  { display: flex; align-items: center; gap: 4px; justify-content: flex-start; }
+.hdr-rechts { display: flex; align-items: center; gap: 4px; justify-content: flex-end; }
+
+/* Icon Buttons (Hamburger, Suche, Merkliste, Warenkorb) */
+.hdr-icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  touch-action: manipulation;
+  /* Nur die Properties animieren die sich ändern */
+  transition: background var(--t-fast), color var(--t-fast);
+  position: relative;
+}
+
+.hdr-icon-btn:active {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+/* Warenkorb-Button etwas heller da wichtigste Aktion */
+.hdr-icon-btn--cart { color: rgba(255, 255, 255, 0.85); }
+
+/* Warenkorb Badge (Anzahl der Artikel) */
+.hdr-cart-badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: var(--orange);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 800;
+  min-width: 15px;
+  height: 15px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 0 3px;
+  pointer-events: none;
+}
+
+
+/* ── Logo (Mitte) ── */
+.hdr-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hdr-logo-zeile1 {
+  display: flex;
+  align-items: baseline;
+  line-height: 1;
+}
+
+/* Großes "S" in Orange */
+.hdr-logo-s {
+  font-family: var(--font-d);
+  font-size: 28px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: var(--orange);
+  line-height: 1;
+  /* Überschreibt -webkit-text-fill-color falls anderswo gesetzt */
+  -webkit-text-fill-color: var(--orange);
+}
+
+/* "TRONGER" in Weiß */
+.hdr-logo-rest {
+  font-family: var(--font-d);
+  font-size: 28px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1;
+  -webkit-text-fill-color: #fff;
+}
+
+/* Zeile 2: Striche + "SUPPLEMENTS" */
+.hdr-logo-zeile2 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.hdr-logo-strich {
+  display: block;
+  width: 14px;
+  height: 1px;
+  background: rgba(255, 107, 0, 0.45);
+  flex-shrink: 0;
+}
+
+.hdr-logo-sub {
+  font-family: var(--font-b);
+  font-size: 7.5px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+  white-space: nowrap;
+}
+
+
+/* ══ HAMBURGER MENÜ OVERLAY ══════════════════════════════════════════════ */
+
+/* Dunkles Backdrop über dem gesamten Viewport */
+.hdr-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  z-index: var(--z-guide);
+  pointer-events: none;
+  transition: background var(--t-slow);
+}
+
+.hdr-menu-overlay.offen {
+  background: rgba(0, 0, 0, 0.7);
+  pointer-events: auto;
+  backdrop-filter: blur(4px);
+}
+
+/* Slide-in Panel von links */
+.hdr-menu-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  max-width: 300px;
+  height: 100%;
+  background: var(--bg3);
+  border-right: 1px solid var(--border);
+  transform: translateX(-100%);
+  transition: transform var(--t-spring);
+  display: flex;
+  flex-direction: column;
+}
+
+.hdr-menu-overlay.offen .hdr-menu-panel {
+  transform: translateX(0);
+}
+
+/* Panel Header mit Logo + Close-Button */
+.hdr-menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.hdr-menu-logo {
+  font-family: var(--font-d);
+  font-size: 24px;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.hdr-menu-logo span { color: var(--orange); }
+
+.hdr-menu-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Navigations-Links */
+.hdr-menu-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+  flex: 1;
+}
+
+.hdr-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background var(--t-fast), color var(--t-fast);
+}
+
+.hdr-menu-item:active {
+  background: var(--orange-bg-soft);
+  color: var(--orange);
+}
+
+/* Footer mit Reset-Button */
+.hdr-menu-footer {
+  padding: 16px 20px;
+  border-top: 1px solid var(--border);
+}
+
+.hdr-menu-reset {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border2);
+  border-radius: var(--r-sm);
+  padding: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+}

@@ -1,0 +1,558 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/screens/start.css
+   Start Screen – Sport-Hero, Hero-Button, Banner-Karussell, USP Impact List
+
+   Abhängigkeiten:
+   → tokens.css  (var(--*) Tokens)
+   → layout.css  (@keyframes puls, gradient-flow, shimmer)
+══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ══ LEGACY START HERO (alt – ggf. noch aktiv?) ══════════════════════════ */
+/* Hinweis: .start-hero / .feat-grid existieren noch im HTML.
+   Falls der Sport-Start sie ersetzt, können diese entfernt werden. */
+
+.start-hero   { text-align: center; padding: 16px 0 28px; }
+.start-badge  {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--orange-bg);
+  border: 1px solid var(--orange-border);
+  border-radius: 100px;
+  padding: 6px 16px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--orange);
+  margin-bottom: 20px;
+}
+.badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--orange-l); animation: puls 2s infinite; }
+
+.start-hero h1    { font-family: var(--font-d); font-size: clamp(32px, 8vw, 44px); font-weight: 700; line-height: 1.1; letter-spacing: -1px; margin-bottom: 14px; }
+.start-hero h1 em { font-style: normal; color: var(--orange); }
+.start-hero p     { font-size: 15px; color: var(--text2); line-height: 1.7; margin-bottom: 28px; max-width: 340px; margin-left: auto; margin-right: auto; }
+
+.feat-grid        { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 24px; }
+.feat-tile        { background: var(--card); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 16px 10px; text-align: center; }
+.feat-tile .ico   { font-size: 22px; margin-bottom: 6px; }
+.feat-tile strong { display: block; font-size: 12px; font-weight: 700; margin-bottom: 3px; }
+.feat-tile span   { font-size: 10px; color: var(--text3); line-height: 1.4; }
+
+
+/* ══ SPORT START WRAPPER ═════════════════════════════════════════════════ */
+
+.sport-start {
+  background: var(--bg3);
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  margin: 0 var(--bleed);
+  border: 1px solid var(--border);
+}
+
+
+/* ── Hero-Bereich (Banner + Button) ── */
+.sport-start-hero {
+  padding: 0 24px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* ── Hintergrund Fitness-Icons (dekorativ) ── */
+.hero-bg-icons {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: var(--z-base);
+}
+
+/* Basis für alle Icons */
+.hbi {
+  position: absolute;
+  font-size: 64px;
+  opacity: 0.04;
+  filter: grayscale(100%);
+  user-select: none;
+  line-height: 1;
+}
+
+/* Individuelle Positionen */
+.hbi-1 { top: 8%;  left: -4%;  font-size: 90px; transform: rotate(-20deg); opacity: 0.05; }
+.hbi-2 { top: 30%; right: -2%; font-size: 80px; transform: rotate(15deg);  opacity: 0.04; }
+.hbi-3 { top: 60%; left: 5%;   font-size: 70px; transform: rotate(-10deg); opacity: 0.04; }
+.hbi-4 { top: 5%;  right: 20%; font-size: 56px; transform: rotate(25deg);  opacity: 0.05; }
+.hbi-5 { top: 50%; right: 5%;  font-size: 75px; transform: rotate(-15deg); opacity: 0.04; }
+.hbi-6 { top: 75%; left: 30%;  font-size: 60px; transform: rotate(8deg);   opacity: 0.04; }
+.hbi-7 { top: 20%; left: 25%;  font-size: 50px; transform: rotate(-30deg); opacity: 0.03; }
+.hbi-8 { top: 80%; right: 20%; font-size: 55px; transform: rotate(20deg);  opacity: 0.04; }
+
+
+/* ══ HERO STACK BUTTON ═══════════════════════════════════════════════════ */
+
+.hero-stack-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(170deg, #1e1e1e 0%, var(--bg2) 60%, #0f0f0f 100%);
+  border: 1.5px solid rgba(255, 107, 0, 0.5);
+  border-radius: 24px;
+  padding: 22px 28px 18px;
+  cursor: pointer;
+  touch-action: manipulation;
+  position: relative;
+  z-index: var(--z-card-detail);
+  margin-bottom: 24px;
+  width: 100%;
+  overflow: hidden;
+  transition: transform var(--t-fast), box-shadow var(--t-fast);
+  box-shadow:
+    0 12px 40px rgba(255, 107, 0, 0.25),
+    0 4px 12px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255, 255, 255, 0.04) inset,
+    0 1px 0 rgba(255, 255, 255, 0.08) inset;
+}
+
+/* Glanz-Linie oben */
+.hero-stack-btn::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+}
+
+/* Subtiler Orange-Schimmer innen */
+.hero-stack-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--orange-bg-soft) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.hero-stack-btn:active {
+  transform: scale(0.985) translateY(2px);
+  box-shadow:
+    0 6px 20px rgba(255, 107, 0, 0.20),
+    0 2px 6px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+}
+
+/* Label über dem Haupt-Text */
+.hero-btn-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 107, 0, 0.7);
+  margin-bottom: 6px;
+  position: relative;
+  z-index: var(--z-card-detail);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-btn-label-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--orange);
+  animation: puls 2s infinite;
+}
+
+/* "GET" Text */
+.hero-stack-dein {
+  font-family: var(--font-d);
+  font-size: clamp(48px, 13vw, 76px);
+  font-weight: 900;
+  line-height: 0.88;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.88);
+  display: block;
+  position: relative;
+  z-index: var(--z-card-detail);
+}
+
+/* "STRONGER" – animierter Gradient-Text */
+.hero-stack-stack {
+  font-family: var(--font-d);
+  font-size: clamp(60px, 17vw, 96px);
+  font-weight: 900;
+  line-height: 0.86;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, var(--orange) 0%, var(--orange-xl) 40%, var(--orange-l) 70%, var(--orange) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-flow 3s ease infinite;
+  display: block;
+  position: relative;
+  z-index: var(--z-card-detail);
+}
+
+/* Footer-Zeile mit CTA + Pfeil */
+.hero-btn-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  position: relative;
+  z-index: var(--z-card-detail);
+}
+
+.hero-btn-cta {
+  font-family: var(--font-d);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.hero-btn-arrow-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--r-sm);
+  background: var(--grad-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  box-shadow: 0 4px 12px var(--orange-glow-s);
+  color: #fff;
+  flex-shrink: 0;
+}
+
+
+/* ── Subtext Knallfarben (Statistiken im Button) ── */
+.hero-sub-knall {
+  position: relative;
+  z-index: var(--z-card-detail);
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hsk-zeile1 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px; }
+
+.hsk-num {
+  font-family: var(--font-d);
+  font-size: clamp(36px, 9vw, 56px);
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--orange), var(--orange-xl));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -1px;
+}
+
+.hsk-fragen { font-family: var(--font-d); font-size: clamp(28px, 7vw, 44px); font-weight: 900; letter-spacing: 3px; color: #fff; line-height: 1; }
+.hsk-sep    { font-size: 20px; color: rgba(255, 107, 0, 0.5); font-weight: 900; line-height: 1; }
+.hsk-text   { font-family: var(--font-d); font-size: clamp(22px, 5vw, 34px); font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: rgba(255, 255, 255, 0.45); line-height: 1; }
+
+.hsk-highlight {
+  font-family: var(--font-d);
+  font-size: clamp(28px, 7vw, 44px);
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 1;
+  background: linear-gradient(135deg, var(--orange) 0%, var(--orange-xl) 50%, var(--orange) 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-flow 3s ease infinite;
+}
+
+/* Features Grid im Button */
+.hsk-features {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  overflow: hidden;
+  position: relative;
+  z-index: var(--z-card-detail);
+}
+
+.hsk-features::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    var(--orange-bg-soft) 0%,
+    transparent 33%,
+    rgba(59, 130, 246, 0.06) 66%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+.hsk-feat       { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 5px; padding: 12px 8px; position: relative; }
+.hsk-feat-icon  { font-size: 22px; line-height: 1; display: block; }
+
+.hsk-feat-label {
+  font-family: var(--font-d);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #fff 30%, rgba(255, 107, 0, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Farb-Varianten für einzelne Feature-Labels */
+.hsk-feat:nth-child(3) .hsk-feat-label { background: linear-gradient(135deg, #fff 30%, rgba(59, 130, 246, 0.9) 100%);  -webkit-background-clip: text; background-clip: text; }
+.hsk-feat:nth-child(5) .hsk-feat-label { background: linear-gradient(135deg, #fff 30%, rgba(16, 185, 129, 0.9) 100%); -webkit-background-clip: text; background-clip: text; }
+
+.hsk-feat-div { width: 1px; height: 40px; background: var(--border); flex-shrink: 0; }
+
+
+/* ══ STATS LEISTE ════════════════════════════════════════════════════════ */
+
+.sport-start-stats   { display: flex; align-items: center; justify-content: space-around; padding: 18px 20px; background: rgba(255, 255, 255, 0.03); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.sport-stat          { text-align: center; }
+.sport-stat-val      { font-family: var(--font-d); font-size: 28px; font-weight: 900; color: var(--orange); line-height: 1; margin-bottom: 3px; }
+.sport-stat-label    { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.7px; color: rgba(255, 255, 255, 0.3); }
+.sport-stat-divider  { width: 1px; height: 28px; background: rgba(255, 255, 255, 0.08); }
+
+
+/* ══ FEATURE LIST ════════════════════════════════════════════════════════ */
+
+.sport-start-feats { padding: 16px 20px; display: flex; flex-direction: column; gap: 0; }
+.sport-feat        { display: flex; align-items: flex-start; gap: 14px; padding: 14px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+.sport-feat:last-child { border-bottom: none; }
+.sport-feat-icon   { font-size: 20px; flex-shrink: 0; width: 38px; height: 38px; background: rgba(255, 255, 255, 0.05); border-radius: var(--r-sm); display: flex; align-items: center; justify-content: center; }
+.sport-feat-title  { font-size: 13px; font-weight: 700; color: #fff; margin-bottom: 3px; }
+.sport-feat-desc   { font-size: 12px; color: rgba(255, 255, 255, 0.4); line-height: 1.5; }
+
+
+/* ══ TRUST LEISTE ════════════════════════════════════════════════════════ */
+
+.sport-start-trust      { display: flex; align-items: center; justify-content: center; gap: 16px; padding: 14px 20px; border-top: 1px solid var(--border); flex-wrap: wrap; }
+.sport-start-trust span { font-size: 10px; font-weight: 600; color: rgba(255, 255, 255, 0.25); letter-spacing: 0.3px; }
+
+
+/* ══ BANNER KARUSSELL ════════════════════════════════════════════════════ */
+
+.banner-karussell {
+  position: relative;
+  width: calc(100% + 48px);
+  margin: 0 -24px 20px;
+  overflow: hidden;
+  background: #000;
+  aspect-ratio: 3 / 4;
+  max-height: 480px;
+}
+
+/* Slides – nur .aktiv ist sichtbar */
+.banner-slide       { position: absolute; inset: 0; opacity: 0; transition: opacity 0.5s ease; pointer-events: none; }
+.banner-slide.aktiv { opacity: 1; pointer-events: auto; }
+
+/* Bild */
+.banner-bild-wrap { position: absolute; inset: 0; }
+.banner-bild      { width: 100%; height: 100%; object-fit: cover; object-position: center bottom; display: block; }
+
+/* Gradient-Overlay für Lesbarkeit des Textes */
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.45) 45%,
+    rgba(0, 0, 0, 0.10) 100%
+  );
+}
+
+/* Content oben links */
+.banner-content {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  padding: 22px 20px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  z-index: var(--z-card-detail);
+}
+
+/* Farb-Badge */
+.banner-badge           { background: var(--orange); color: #fff; font-family: var(--font-d); font-size: 10px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; }
+.banner-badge-gruen     { background: var(--green); }
+.banner-badge-blau      { background: var(--blue); }
+
+/* Rabatt-Code Badge */
+.banner-code-wrap       { background: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.25); color: rgba(255, 255, 255, 0.8); font-size: 11px; font-weight: 600; padding: 4px 12px; border-radius: 100px; letter-spacing: 0.5px; }
+.banner-code-wrap strong { color: #fff; font-weight: 800; }
+
+/* Headline */
+.banner-headline {
+  font-family: var(--font-d);
+  font-size: clamp(28px, 8vw, 40px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0;
+}
+
+/* Subtext */
+.banner-sub          { font-size: 13px; color: rgba(255, 255, 255, 0.75); line-height: 1.55; margin: 0; max-width: 300px; }
+.banner-sub strong   { color: #fff; }
+
+/* CTA Button */
+.banner-cta {
+  background: var(--grad-orange);
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 11px 22px;
+  font-family: var(--font-d);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 16px var(--orange-glow);
+  margin-top: 4px;
+  transition: transform var(--t-fast);
+}
+
+.banner-cta:active { transform: scale(0.97); }
+
+/* Navigation Dots */
+.banner-dots {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+  z-index: var(--z-card-detail);
+}
+
+.banner-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  /* Nur die animierten Properties explizit */
+  transition: background var(--t-base), width var(--t-base), border-radius var(--t-base);
+}
+
+/* Aktiver Dot – wird breiter */
+.banner-dot.aktiv-dot {
+  background: var(--orange);
+  width: 18px;
+  border-radius: 3px;
+}
+
+
+/* ══ USP IMPACT LIST (unter Hero-Button) ════════════════════════════════ */
+
+.usp-impact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  margin-top: 8px;
+}
+
+.usp-impact-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+  /* Klickbar – Cursor wird per JS oder HTML gesetzt */
+}
+
+/* Farbiger linker Akzentstreifen */
+.usp-impact-row::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+}
+
+.usp-row-orange::before { background: var(--orange); }
+.usp-row-blue::before   { background: var(--blue); }
+.usp-row-green::before  { background: var(--green); }
+.usp-row-purple::before { background: var(--purple); }
+.usp-row-teal::before   { background: var(--teal); }
+.usp-row-amber::before  { background: var(--amber); }
+.usp-row-pink::before   { background: var(--pink); }
+.usp-row-cyan::before   { background: var(--cyan); }
+
+/* Linke Spalte: Nummer + Icon */
+.usp-impact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  width: 44px;
+}
+
+.usp-impact-num {
+  font-family: var(--font-d);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.usp-impact-icon-wrap { font-size: 22px; line-height: 1; }
+
+/* Rechte Spalte: Text */
+.usp-impact-right { flex: 1; }
+
+.usp-impact-title {
+  font-family: var(--font-d);
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+/* Titelfarbe je Row-Farbe */
+.usp-row-orange .usp-impact-title { color: var(--orange-l); }
+.usp-row-blue   .usp-impact-title { color: #60A5FA; }
+.usp-row-green  .usp-impact-title { color: var(--green-l); }
+.usp-row-purple .usp-impact-title { color: var(--purple-l); }
+.usp-row-teal   .usp-impact-title { color: var(--teal-l); }
+.usp-row-amber  .usp-impact-title { color: var(--amber-l); }
+.usp-row-pink   .usp-impact-title { color: var(--pink-l); }
+.usp-row-cyan   .usp-impact-title { color: var(--cyan-l); }
+
+.usp-impact-sub {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.5;
+}
