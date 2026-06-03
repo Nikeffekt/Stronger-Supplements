@@ -1432,22 +1432,39 @@
 </div><!-- /ki-overlay -->
 
 
-<script src="quiz.js"></script>
+<!-- Fundament – zuerst laden -->
+<script src="scripts/state.js"></script>
+<script src="scripts/navigation.js"></script>
 
-<!-- Daten (statisch) – müssen VOR Engine geladen werden -->
+<!-- Daten & Konstanten -->
+<script src="scripts/data/konstanten.js"></script>
 <script src="data/wirkstoff-erklaerungen.js"></script>
 <script src="data/wirkstoff-inhalte.js"></script>
+<script src="scripts/data/produkte-loader.js"></script>
 
-<!-- Engine (Berechnungslogik) – muss VOR app.js geladen werden -->
+<!-- Engine (Berechnungslogik) -->
 <script src="engine/overlaps.js"></script>
 <script src="engine/empfehlungen.js"></script>
 <script src="engine/personalisierung.js"></script>
 
-<!-- App-Logik -->
-<script src="app.js"></script>
+<!-- UI -->
+<script src="scripts/ui/toast.js"></script>
+<script src="scripts/ui/reset.js"></script>
+<script src="scripts/ui/banner.js"></script>
+<script src="scripts/ui/header.js"></script>
+<script src="scripts/ui/start-modal.js"></script>
+<script src="scripts/ui/shop.js"></script>
+<script src="scripts/ui/guide.js"></script>
+<script src="scripts/ui/profil.js"></script>
 
-<!-- KI-Chat – muss NACH app.js geladen werden -->
-<script src="ki-chat/ki-system-prompt.js"></script>
-<script src="ki-chat/ki-chat.js"></script>
+<!-- Quiz -->
+<script src="scripts/quiz/quiz.js"></script>
+
+<!-- KI-Chat -->
+<script src="scripts/chat/ki-system-prompt.js"></script>
+<script src="scripts/chat/ki-chat.js"></script>
+
+<!-- Einstiegspunkt – muss zuletzt geladen werden -->
+<script src="scripts/main.js"></script>
 </body>
 </html>
