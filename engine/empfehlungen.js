@@ -7,32 +7,40 @@
    Abhängigkeiten:
    - loesOverlaps() (aus engine/overlaps.js)
    Genutzt von: app.js → zeigeProfil(), getEmpIcon(), getEmpName()
+
+   Fixes:
+   - Bug #2: ZMA wird aktiv empfohlen (war im Scoring vorhanden, aber nie gepusht)
+   - L01:    Protein auch bei alter=E (45+) trotz wenig Sport (Sarkopenie)
+   - L02:    Training 4+/Woche (kraft4) bekommt eigenen Protein-Faktor (2.2)
+   - L03:    Vegan-Proteinbedarf erhöht (~15% mehr wegen geringerer Bioverfügbarkeit)
+   - L04:    Stack-Maximum: max. 7 Essential+Empfohlen, max. 3 Optional
+   - L06:    Menopause-Score für Vitamin D, Omega-3, Magnesium erhöht
+   - L07:    Kollagen auch für Männer 50+ bei Kraft oder Regen
 ============================================================ */
 
-// ── EMPFEHLUNGS-ENGINE ──
-// Kernlogik: berechnet personalisierten Supplement-Stack anhand der Quiz-Antworten
 function berechneEmpfehlungen(a) {
-  var z        = a.ziele || [];
-  var vegan    = a.ernaehrung === 'D';
-  var w        = a.geschlecht === 'B';
-  var alter    = a.intro;
+  var z         = a.ziele || [];
+  var vegan     = a.ernaehrung === 'D';
+  var w         = a.geschlecht === 'B';
+  var alter     = a.intro;
   var erfahrung = a.erfahrung || 'einsteiger';
-  var kraft    = a.training === 'A' || a.training === 'B';
-  var cardio   = a.training === 'C';
-  var mix      = a.training === 'D';
-  var wenig    = a.training === 'E';
-  var vorh     = a.vorhanden || ['A'];
-  var unvert   = a.unvertraeglichkeiten || ['A'];
-  var meds     = a.medikamente || ['A'];
+  var kraft4    = a.training === 'A';               // L02: 4+/Woche separat
+  var kraft     = a.training === 'A' || a.training === 'B';
+  var cardio    = a.training === 'C';
+  var mix       = a.training === 'D';
+  var wenig     = a.training === 'E';
+  var vorh      = a.vorhanden || ['A'];
+  var unvert    = a.unvertraeglichkeiten || ['A'];
+  var meds      = a.medikamente || ['A'];
   var situation = a.situation || 'A';
 
   // Ziele
-  var mu     = z.indexOf('A') >= 0;
-  var fett   = z.indexOf('B') >= 0;
+  var mu      = z.indexOf('A') >= 0;
+  var fett    = z.indexOf('B') >= 0;
   var energie = z.indexOf('C') >= 0;
-  var ausd   = z.indexOf('D') >= 0;
-  var regen  = z.indexOf('E') >= 0;
-  var health = z.indexOf('F') >= 0;
+  var ausd    = z.indexOf('D') >= 0;
+  var regen   = z.indexOf('E') >= 0;
+  var health  = z.indexOf('F') >= 0;
 
   // Unverträglichkeiten & Medikamente
   var hatLaktose  = unvert.indexOf('B') >= 0;
@@ -100,7 +108,7 @@ function berechneEmpfehlungen(a) {
     });
   }
 
-  // Magnesium (nicht bei Wenig-Sport)
+  // Magnesium (nicht bei Wenig-Sport, außer 45+)
   if (!hatMg && !wenig) {
     E.push({
       id: 'magnesium',
@@ -126,18 +134,33 @@ function berechneEmpfehlungen(a) {
     });
   }
 
-  // Protein (wenn nicht schon vorhanden und Sport aktiv)
-  if (!hatProt && !wenig) {
+  // Protein
+  // L01: auch bei 45+ (alter=E) trotz wenig Sport – Sarkopenie-Prävention
+  // L02: Training 4+/Woche bekommt Faktor 2.2
+  // L03: Vegan +15% wegen geringerer Bioverfügbarkeit pflanzlicher Proteine
+  var brauchtProtein = !hatProt && (!wenig || alter === 'E');
+  if (brauchtProtein) {
     var pId = vegan ? 'pflanzenprotein' : (hatLaktose || erfahrung === 'profi' ? 'iso_clear' : 'whey_protein');
-    var kg  = parseFloat(a.gewicht) || 75;
-    var pb  = Math.round(kg * (mu && kraft ? 2 : mu ? 1.8 : 1.6));
+    var kg = parseFloat(a.gewicht) || 75;
+    var faktor;
+    if (vegan) {
+      // L03: Vegan-Faktor erhöht
+      faktor = (mu && kraft4) ? 2.2 : (mu && kraft) ? 2.0 : mu ? 1.9 : 1.7;
+    } else {
+      // L02: kraft4 (4+/Woche) bekommt maximalen Faktor
+      faktor = (mu && kraft4) ? 2.2 : (mu && kraft) ? 2.0 : mu ? 1.8 : 1.6;
+    }
+    var pb = Math.round(kg * faktor);
+    var protGrund = wenig && alter === 'E'
+      ? 'Ab 45: Muskelmasse schwindet ohne Protein (Sarkopenie) – auch bei wenig Sport wichtig'
+      : 'Protein-Tagesziel: ' + pb + ' g – ohne Supplement kaum erreichbar';
     E.push({
       id: pId,
       prioritaet: 'essential',
       kategorie: 'performance',
       name: vegan ? 'Pflanzenprotein' : (hatLaktose ? 'ISO Clear (laktosefrei)' : 'Whey Protein'),
       ikon: '💪',
-      fit_grund: 'Protein-Tagesziel: ' + pb + ' g – ohne Supplement kaum erreichbar'
+      fit_grund: protGrund
     });
   }
 
@@ -265,17 +288,22 @@ function berechneEmpfehlungen(a) {
     });
   }
 
-  // Kollagen (Frauen 36+, Regen-Fokus)
-  if (w && (alter === 'D' || alter === 'E' || regen)) {
+  // Kollagen
+  // L07: auch für Männer 50+ bei Kraft oder Regen (nicht nur Frauen)
+  var brauchtKollagen = (w && (alter === 'D' || alter === 'E' || regen)) ||
+                        (!w && alter === 'E' && (kraft || regen));
+  if (brauchtKollagen) {
     E.push({
       id: 'kollagen',
       prioritaet: 'optional',
       kategorie: 'gesundheit',
       name: 'Kollagen Peptide',
       ikon: '✨',
-      fit_grund: alter === 'D' || alter === 'E'
-        ? 'Ab 36: Kollagenproduktion sinkt – Gelenke, Sehnen und Haut'
-        : 'Gelenk-Support bei hohem Trainingsvolumen'
+      fit_grund: !w
+        ? 'Ab 45: Kollagenproduktion sinkt – Gelenke, Sehnen und Muskelqualität'
+        : (alter === 'D' || alter === 'E')
+          ? 'Ab 36: Kollagenproduktion sinkt – Gelenke, Sehnen und Haut'
+          : 'Gelenk-Support bei hohem Trainingsvolumen'
     });
   }
 
@@ -291,7 +319,8 @@ function berechneEmpfehlungen(a) {
     });
   }
 
-  // Wechseljahre: Kollagen extra empfohlen
+  // Wechseljahre: Kollagen extra als empfohlen
+  // (Bug #1 Fix in overlaps.js verhindert Duplikat mit dem optionalen Kollagen oben)
   if (istMeno) {
     E.push({
       id: 'kollagen',
@@ -314,8 +343,6 @@ function berechneEmpfehlungen(a) {
       fit_grund: 'Allgemeine Mikronährstoff-Absicherung als Basis-Schutz'
     });
   }
-
-  // ── NEUE WIRKSTOFFE ──
 
   // Curcumin (Gelenke/Entzündung, 35+)
   if ((health || regen || alter === 'D' || alter === 'E') && erfahrung !== 'einsteiger') {
@@ -365,6 +392,20 @@ function berechneEmpfehlungen(a) {
     });
   }
 
+  // Bug #2 Fix: ZMA wird jetzt aktiv empfohlen
+  // Hinweis: loesOverlaps() entfernt ZMA automatisch wenn Mg + Zink bereits einzeln empfohlen.
+  // Bei Regen oder Schlaf + Kraft + nicht Einsteiger + kein Nierenproblem
+  if ((regen || istSchlaf) && kraft && erfahrung !== 'einsteiger' && !hatNiere) {
+    E.push({
+      id: 'zma',
+      prioritaet: 'optional',
+      kategorie: 'regeneration',
+      name: 'ZMA',
+      ikon: '🌙',
+      fit_grund: 'Zink + Magnesium + B6 – verbessert Schlaftiefe und hormonelle Regeneration nach intensivem Training'
+    });
+  }
+
   // Overlaps auflösen
   var res = loesOverlaps(E);
   var empfehlungen = res.empfehlungen;
@@ -382,23 +423,23 @@ function berechneEmpfehlungen(a) {
     // Muskelaufbau + Kraft
     if (mu && kraft) {
       if (id === 'whey_protein' || id === 'iso_clear' || id === 'pflanzenprotein') score += 400;
-      if (id === 'kreatin')    score += 380;
-      if (id === 'eaas')       score += 200;
-      if (id === 'pre_workout')score += 150;
-      if (id === 'beta_alanin')score += 120;
-      if (id === 'zink')       score += 100;
-      if (id === 'kollagen')   score += 80;
-      if (id === 'hmb')        score += 60;
+      if (id === 'kreatin')     score += 380;
+      if (id === 'eaas')        score += 200;
+      if (id === 'pre_workout') score += 150;
+      if (id === 'beta_alanin') score += 120;
+      if (id === 'zink')        score += 100;
+      if (id === 'kollagen')    score += 80;
+      if (id === 'hmb')         score += 60;
     }
 
     // Fettabbau
     if (fett) {
-      if (id === 'l_carnitin') score += 350;
+      if (id === 'l_carnitin')  score += 350;
       if (id === 'whey_protein' || id === 'iso_clear' || id === 'pflanzenprotein') score += 300;
-      if (id === 'elektrolyte')score += 200;
-      if (id === 'hmb')        score += 180;
-      if (id === 'vitamin_c')  score += 150;
-      if (id === 'probiotika') score += 100;
+      if (id === 'elektrolyte') score += 200;
+      if (id === 'hmb')         score += 180;
+      if (id === 'vitamin_c')   score += 150;
+      if (id === 'probiotika')  score += 100;
     }
 
     // Ausdauer / Cardio
@@ -432,12 +473,12 @@ function berechneEmpfehlungen(a) {
 
     // Gesundheit
     if (health) {
-      if (id === 'vitamin_d3')                          score += 350;
-      if (id === 'omega3' || id === 'omega3_vegan')     score += 300;
-      if (id === 'multivitamin')                        score += 250;
-      if (id === 'zink')                                score += 200;
-      if (id === 'curcumin')                            score += 180;
-      if (id === 'probiotika')                          score += 150;
+      if (id === 'vitamin_d3')                        score += 350;
+      if (id === 'omega3' || id === 'omega3_vegan')   score += 300;
+      if (id === 'multivitamin')                      score += 250;
+      if (id === 'zink')                              score += 200;
+      if (id === 'curcumin')                          score += 180;
+      if (id === 'probiotika')                        score += 150;
     }
 
     // Schlafprobleme
@@ -450,24 +491,32 @@ function berechneEmpfehlungen(a) {
 
     // Vegan
     if (vegan) {
-      if (id === 'pflanzenprotein')                     score += 300;
-      if (id === 'omega3_vegan')                        score += 300;
-      if (id === 'vitamin_b12')                         score += 350;
+      if (id === 'pflanzenprotein')                   score += 300;
+      if (id === 'omega3_vegan')                      score += 300;
+      if (id === 'vitamin_b12')                       score += 350;
     }
 
     // Frauen
     if (w) {
-      if (id === 'eisen')                               score += 200;
-      if (id === 'kollagen')                            score += 150;
-      if (id === 'omega3' || id === 'omega3_vegan')     score += 100;
+      if (id === 'eisen')                             score += 200;
+      if (id === 'kollagen')                          score += 150;
+      if (id === 'omega3' || id === 'omega3_vegan')   score += 100;
     }
 
     // Alter 36+
     if (alter === 'D' || alter === 'E') {
-      if (id === 'kollagen')                            score += 150;
-      if (id === 'curcumin')                            score += 150;
-      if (id === 'vitamin_d3')                          score += 100;
-      if (id === 'omega3' || id === 'omega3_vegan')     score += 100;
+      if (id === 'kollagen')                          score += 150;
+      if (id === 'curcumin')                          score += 150;
+      if (id === 'vitamin_d3')                        score += 100;
+      if (id === 'omega3' || id === 'omega3_vegan')   score += 100;
+    }
+
+    // L06: Wechseljahre – Basisbedarf nach vorne priorisieren
+    if (istMeno) {
+      if (id === 'kollagen')                          score += 350;
+      if (id === 'vitamin_d3')                        score += 300;
+      if (id === 'omega3' || id === 'omega3_vegan')   score += 250;
+      if (id === 'magnesium')                         score += 200;
     }
 
     // Einsteiger: einfache Stacks nach vorne, komplexe nach hinten
@@ -484,6 +533,14 @@ function berechneEmpfehlungen(a) {
   }
 
   empfehlungen.sort(function (a, b) { return getPrio(b) - getPrio(a); });
+
+  // L04: Stack-Maximum – nach dem Sorting, damit die besten Supplements überleben
+  // Essential + Empfohlen: max. 7 | Optional: max. 3
+  var essEmp  = empfehlungen.filter(function (e) { return e.prioritaet !== 'optional'; });
+  var optList = empfehlungen.filter(function (e) { return e.prioritaet === 'optional'; });
+  if (essEmp.length  > 7) essEmp  = essEmp.slice(0, 7);
+  if (optList.length > 3) optList = optList.slice(0, 3);
+  empfehlungen = essEmp.concat(optList);
 
   return empfehlungen;
 }
