@@ -813,6 +813,22 @@ function initHamburger() {
       resetApp();
     });
   }
+
+  // Menü-Links verdrahten
+  function schliesseMenu() { overlay.classList.remove('offen'); }
+
+  var menuItems = document.querySelectorAll('.hdr-menu-item');
+  menuItems.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+      var text = item.textContent || '';
+      schliesseMenu();
+      if      (text.indexOf('Startseite')      >= 0) zeige('s-start');
+      else if (text.indexOf('Stack-Berater')   >= 0) oeffneStartModal();
+      else if (text.indexOf('Alle Produkte')   >= 0) zeigeShop();
+      else if (text.indexOf('Supplement-Guide')>= 0) guideOeffnen();
+    });
+  });
 }
 
 document.addEventListener('DOMContentLoaded', function () {
