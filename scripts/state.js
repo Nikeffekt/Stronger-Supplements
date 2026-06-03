@@ -30,3 +30,8 @@ var gewaehlteAlts    = {};  // { suppId: altIndex } – gewählte Alternative je
 
 // ── SHOP STATE ──
 var aktivTab = 'essential';  // Aktiver Tab im Shop
+
+// ── DATEN-CACHE ──
+// Werden durch produkte-loader.js aus den JSON-Dateien befüllt
+var ERKLAERUNG = {};  // { wirkstoffId: 'Beschreibungstext' }
+var INHALT     = {};  // { wirkstoffId: ['wirkstoff1', 'wirkstoff2'] }

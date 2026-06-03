@@ -1,16 +1,21 @@
 /* ============================================================
    scripts/data/produkte-loader.js
-   Lädt produkte.json, bereinigt die Daten und befüllt die globale DB
+   Lädt alle drei Daten-JSONs parallel und befüllt den globalen State
+
+   Geladene Dateien:
+   - data/produkte.json              → DB
+   - data/wirkstoff-erklaerungen.json → ERKLAERUNG
+   - data/wirkstoff-inhalte.json      → INHALT
 
    Abhängigkeiten:
-   - scripts/state.js       (globale Variable DB)
+   - scripts/state.js           (DB, ERKLAERUNG, INHALT)
    - scripts/data/konstanten.js (JSON_KEY_MAP, SEGMENT_MAP, WIRKSTOFF_FILTER)
    Wird genutzt von: scripts/main.js → ladeProdukte()
 ============================================================ */
 
 // ── HILFSFUNKTIONEN ──
 
-// Bereinigt Preis-Strings aus der JSON (z. B. "29,90 €" → "29,90")
+// Bereinigt Preis-Strings (z. B. "29,90 €" → "29,90")
 function preisBereinigen(preisStr) {
   if (!preisStr) return '0,00';
   var m = preisStr.match(/(\d+[,\.]\d+)/);
@@ -42,9 +47,7 @@ function tagsAusAnbieter(anbieter) {
 // Bestimmt das interne Segment aus der marktposition eines Anbieters
 function segmentAusAnbieter(anbieter) {
   var mp = anbieter.marktposition || '';
-  // Exakter Match
   if (SEGMENT_MAP[mp]) return SEGMENT_MAP[mp];
-  // Fuzzy Match (Teilstring)
   var keys = Object.keys(SEGMENT_MAP);
   for (var i = 0; i < keys.length; i++) {
     if (mp.indexOf(keys[i]) >= 0) return SEGMENT_MAP[keys[i]];
@@ -52,7 +55,7 @@ function segmentAusAnbieter(anbieter) {
   return 'other';
 }
 
-// Wandelt einen Anbieter-Eintrag aus der JSON in ein App-Produkt-Objekt um
+// Wandelt einen Anbieter-Eintrag in ein App-Produkt-Objekt um
 function anbieterZuProdukt(anbieter, appKey) {
   return {
     marke:   anbieter.name    || '–',
@@ -67,9 +70,6 @@ function anbieterZuProdukt(anbieter, appKey) {
 
 
 // ── DB AUFBAUEN ──
-// Wandelt die produkte.json Struktur in die App-DB-Struktur um:
-// JSON:  { wirkstoffe: { kreatin: { anbieter: [...] } } }
-// DB:    { kreatin: { hauptprodukt: {...}, alternativen: [...], alle: [...] } }
 function bauDB(jsonDaten) {
   var wirkstoffe = jsonDaten && jsonDaten.wirkstoffe;
   if (!wirkstoffe) {
@@ -89,7 +89,7 @@ function bauDB(jsonDaten) {
     DB[appKey] = {
       hauptprodukt: alleProdukte[0],
       alternativen: alleProdukte.slice(1),
-      alle:         alleProdukte,  // für getPersonalisierteAlts()
+      alle:         alleProdukte,
     };
   });
 
@@ -97,20 +97,42 @@ function bauDB(jsonDaten) {
 }
 
 
-// ── PRODUKTE LADEN ──
-// Lädt data/produkte.json und befüllt die globale DB.
-// Fallback: DB bleibt leer → Popups zeigen Hinweis.
+// ── ALLE DATEN PARALLEL LADEN ──
+// Lädt produkte.json, wirkstoff-erklaerungen.json und wirkstoff-inhalte.json
+// gleichzeitig mit Promise.all – schneller als sequenziell.
+// Fallback: Leere Objekte damit die App nicht abstürzt.
 function ladeProdukte() {
-  fetch('data/produkte.json')
-    .then(function (r) {
-      if (!r.ok) throw new Error('HTTP ' + r.status);
+  Promise.all([
+    fetch('data/produkte.json').then(function (r) {
+      if (!r.ok) throw new Error('produkte.json: HTTP ' + r.status);
+      return r.json();
+    }),
+    fetch('data/wirkstoff-erklaerungen.json').then(function (r) {
+      if (!r.ok) throw new Error('wirkstoff-erklaerungen.json: HTTP ' + r.status);
+      return r.json();
+    }),
+    fetch('data/wirkstoff-inhalte.json').then(function (r) {
+      if (!r.ok) throw new Error('wirkstoff-inhalte.json: HTTP ' + r.status);
       return r.json();
     })
-    .then(function (daten) {
-      bauDB(daten);
-    })
-    .catch(function (err) {
-      console.warn('produkte.json konnte nicht geladen werden:', err);
-      console.warn('Stelle sicher dass data/produkte.json korrekt liegt.');
-    });
+  ])
+  .then(function (ergebnisse) {
+    var produkteDaten    = ergebnisse[0];
+    var erklaerungDaten  = ergebnisse[1];
+    var inhaltDaten      = ergebnisse[2];
+
+    // Globale Variablen befüllen
+    bauDB(produkteDaten);
+
+    // ERKLAERUNG und INHALT direkt aus JSON übernehmen
+    Object.keys(erklaerungDaten).forEach(function (k) { ERKLAERUNG[k] = erklaerungDaten[k]; });
+    Object.keys(inhaltDaten).forEach(function (k)     { INHALT[k]     = inhaltDaten[k]; });
+
+    console.log('✅ Erklärungen geladen: ' + Object.keys(ERKLAERUNG).length + ' Einträge');
+    console.log('✅ Inhalte geladen: '     + Object.keys(INHALT).length     + ' Einträge');
+  })
+  .catch(function (err) {
+    console.warn('Fehler beim Laden der Daten:', err);
+    console.warn('Stelle sicher dass alle JSON-Dateien im data/-Ordner liegen.');
+  });
 }
