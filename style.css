@@ -3195,6 +3195,41 @@ button {
 
 
 
+/* ── Neue Farb-Varianten: Teal, Amber, Pink, Cyan ── */
+
+/* Teal */
+.usp-row-teal { background: rgba(20, 184, 166, 0.06); border-left: 3px solid #14B8A6; }
+.usp-header-teal .usp-screen-back { color: #14B8A6; }
+.usp-hero-teal::before { background: #14B8A6; }
+.usp-highlight-teal { background: rgba(20, 184, 166, 0.08); border: 1px solid rgba(20, 184, 166, 0.2); }
+.usp-step-teal { background: rgba(20, 184, 166, 0.2); color: #2DD4BF; }
+
+/* Amber */
+.usp-row-amber { background: rgba(245, 158, 11, 0.06); border-left: 3px solid #F59E0B; }
+.usp-header-amber .usp-screen-back { color: #F59E0B; }
+.usp-hero-amber::before { background: #F59E0B; }
+.usp-highlight-amber { background: rgba(245, 158, 11, 0.08); border: 1px solid rgba(245, 158, 11, 0.2); }
+.usp-zeit-amber { background: rgba(245, 158, 11, 0.15); color: #FCD34D; }
+
+/* Pink */
+.usp-row-pink { background: rgba(236, 72, 153, 0.06); border-left: 3px solid #EC4899; }
+.usp-header-pink .usp-screen-back { color: #EC4899; }
+.usp-hero-pink::before { background: #EC4899; }
+.usp-highlight-pink { background: rgba(236, 72, 153, 0.08); border: 1px solid rgba(236, 72, 153, 0.2); }
+.usp-step-pink { background: rgba(236, 72, 153, 0.2); color: #F9A8D4; }
+
+/* Cyan */
+.usp-row-cyan { background: rgba(6, 182, 212, 0.06); border-left: 3px solid #06B6D4; }
+.usp-header-cyan .usp-screen-back { color: #06B6D4; }
+.usp-hero-cyan::before { background: #06B6D4; }
+.usp-highlight-cyan { background: rgba(6, 182, 212, 0.08); border: 1px solid rgba(6, 182, 212, 0.2); }
+.usp-step-cyan { background: rgba(6, 182, 212, 0.2); color: #67E8F9; }
+
+/* Green step variant (war bisher nicht definiert) */
+.usp-step-green { background: rgba(16, 185, 129, 0.2); color: #34D399; }
+
+
+
 /* ══════════════════════════════════════════════════════════════════════════
    HINWEIS: KI-Chat Styles ausgelagert → siehe ki-chat/ki-chat.css
 ══════════════════════════════════════════════════════════════════════════ */
