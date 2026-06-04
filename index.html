@@ -102,6 +102,21 @@
   </div>
 </div>
 
+<!-- Such-Dropdown -->
+<div class="suche-dropdown" id="suche-dropdown">
+  <div class="suche-input-wrap">
+    <div class="suche-input-icon">
+      <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+        <circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="2"/>
+        <line x1="12.5" y1="12.5" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <input type="text" class="suche-input" id="suche-input" placeholder="Wirkstoffe, Produkte, Themen…" autocomplete="off">
+    <button class="suche-clear" id="suche-clear" aria-label="Eingabe löschen">✕</button>
+  </div>
+  <div class="suche-treffer" id="suche-treffer"></div>
+</div>
+
   <!-- START -->
   <div id="s-start" class="screen on">
     <div class="sport-start">
@@ -1450,6 +1465,7 @@
 <script src="scripts/ui/reset.js"></script>
 <script src="scripts/ui/banner.js"></script>
 <script src="scripts/ui/header.js"></script>
+<script src="scripts/ui/suche.js"></script>
 <script src="scripts/ui/start-modal.js"></script>
 <script src="scripts/ui/shop.js"></script>
 <script src="scripts/ui/guide.js"></script>

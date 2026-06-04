@@ -1,0 +1,225 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/components/suche.css
+   Globale Suche – Dropdown unter dem Header
+
+   Abhängigkeiten:
+   → tokens.css muss vorher geladen sein (var(--*) Tokens)
+
+   Logik in: scripts/ui/suche.js
+══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ── Dropdown Container ──
+   Klebt direkt unter dem Header (Header ist sticky bei top: 34px,
+   Header-Höhe ist --header-height) */
+.suche-dropdown {
+  /* Versteckt per Default – wird per JS auf 'block' umgeschaltet */
+  display: none;
+
+  position: fixed;
+  /* 34px (ann-bar) + Header-Höhe = unterhalb des Headers */
+  top: calc(34px + var(--header-height));
+  left: 0;
+  right: 0;
+  background: rgba(10, 10, 10, 0.97);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--orange-border-s);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+  z-index: var(--z-header-sub);
+
+  /* Slide-in Animation beim Öffnen */
+  animation: suche-slide-in var(--t-spring);
+}
+
+.suche-dropdown.offen {
+  display: block;
+}
+
+@keyframes suche-slide-in {
+  from {
+    transform: translateY(-12px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* ── Suchfeld ── */
+.suche-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.suche-input-icon {
+  color: var(--orange);
+  flex-shrink: 0;
+  display: flex;
+}
+
+.suche-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text);
+  font-size: 16px;
+  font-family: var(--font-b);
+  padding: 4px 0;
+}
+
+.suche-input::placeholder {
+  color: var(--text3);
+}
+
+/* X-Button zum Leeren */
+.suche-clear {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  color: var(--text3);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 11px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background var(--t-fast), color var(--t-fast);
+}
+
+.suche-clear:active {
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--text);
+}
+
+/* Sichtbar wenn Input nicht leer */
+.suche-clear.sichtbar { display: flex; }
+
+
+/* ══ TREFFER-LISTE ════════════════════════════════════════════════════════ */
+
+.suche-treffer {
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 6px 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Dezenter Scrollbar */
+.suche-treffer::-webkit-scrollbar { width: 3px; }
+.suche-treffer::-webkit-scrollbar-track { background: transparent; }
+.suche-treffer::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+
+/* ── Einzelner Treffer ── */
+.suche-treffer-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 20px;
+  cursor: pointer;
+  touch-action: manipulation;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  transition: background var(--t-fast);
+}
+
+.suche-treffer-item:last-child { border-bottom: none; }
+
+.suche-treffer-item:active,
+.suche-treffer-item:hover {
+  background: var(--orange-bg-soft);
+}
+
+/* Icon links */
+.suche-treffer-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* Text-Bereich */
+.suche-treffer-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.suche-treffer-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.suche-treffer-sub {
+  font-size: 11px;
+  color: var(--text3);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Highlight für Match-Begriff im Namen */
+.suche-treffer-name mark {
+  background: var(--orange-bg);
+  color: var(--orange-l);
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+/* Kategorie-Badge rechts */
+.suche-treffer-tag {
+  font-family: var(--font-d);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.suche-treffer-tag.tag-wirkstoff { background: var(--orange-bg);  color: var(--orange-l); }
+.suche-treffer-tag.tag-guide     { background: var(--blue-bg);    color: #60A5FA; }
+.suche-treffer-tag.tag-produkt   { background: var(--green-bg);   color: var(--green-l); }
+
+
+/* ── Empty/Hint State ── */
+.suche-leer {
+  padding: 28px 20px;
+  text-align: center;
+  color: var(--text3);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.suche-leer-hint {
+  font-size: 11px;
+  color: var(--text3);
+  margin-top: 4px;
+  opacity: 0.7;
+}

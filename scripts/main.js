@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initQueue();
   initBanner();
   initHamburger();
+  initSuche();
 
   // ── Start-Button ──
   var btnStart = document.getElementById('btn-start');
