@@ -98,8 +98,8 @@ function bauDB(jsonDaten) {
 
 
 // ── ALLE DATEN PARALLEL LADEN ──
-// Lädt produkte.json, wirkstoff-erklaerungen.json und wirkstoff-inhalte.json
-// gleichzeitig mit Promise.all – schneller als sequenziell.
+// Lädt produkte.json, wirkstoff-erklaerungen.json, wirkstoff-inhalte.json
+// und wirkstoffe-wissen.json gleichzeitig mit Promise.all – schneller als sequenziell.
 // Fallback: Leere Objekte damit die App nicht abstürzt.
 function ladeProdukte() {
   Promise.all([
@@ -114,22 +114,27 @@ function ladeProdukte() {
     fetch('data/wirkstoff-inhalte.json').then(function (r) {
       if (!r.ok) throw new Error('wirkstoff-inhalte.json: HTTP ' + r.status);
       return r.json();
+    }),
+    fetch('data/wirkstoffe-wissen.json').then(function (r) {
+      if (!r.ok) throw new Error('wirkstoffe-wissen.json: HTTP ' + r.status);
+      return r.json();
     })
   ])
   .then(function (ergebnisse) {
-    var produkteDaten    = ergebnisse[0];
-    var erklaerungDaten  = ergebnisse[1];
-    var inhaltDaten      = ergebnisse[2];
+    var produkteDaten   = ergebnisse[0];
+    var erklaerungDaten = ergebnisse[1];
+    var inhaltDaten     = ergebnisse[2];
+    var wissenDaten     = ergebnisse[3];
 
     // Globale Variablen befüllen
     bauDB(produkteDaten);
-
-    // ERKLAERUNG und INHALT direkt aus JSON übernehmen
     Object.keys(erklaerungDaten).forEach(function (k) { ERKLAERUNG[k] = erklaerungDaten[k]; });
     Object.keys(inhaltDaten).forEach(function (k)     { INHALT[k]     = inhaltDaten[k]; });
+    Object.keys(wissenDaten).forEach(function (k)     { WIRKSTOFFE_WISSEN[k] = wissenDaten[k]; });
 
-    console.log('✅ Erklärungen geladen: ' + Object.keys(ERKLAERUNG).length + ' Einträge');
-    console.log('✅ Inhalte geladen: '     + Object.keys(INHALT).length     + ' Einträge');
+    console.log('✅ Erklärungen geladen: '  + Object.keys(ERKLAERUNG).length        + ' Einträge');
+    console.log('✅ Inhalte geladen: '      + Object.keys(INHALT).length            + ' Einträge');
+    console.log('✅ Wissensbasis geladen: ' + (Object.keys(WIRKSTOFFE_WISSEN).length - 1) + ' Wirkstoffe');
   })
   .catch(function (err) {
     console.warn('Fehler beim Laden der Daten:', err);

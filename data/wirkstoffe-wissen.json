@@ -1,0 +1,196 @@
+{
+  "_meta": {
+    "schema_version": "1.0",
+    "letzte_aktualisierung": "2026-06-05",
+    "hinweis": "Diese Datei ist die Wissensbasis für die Empfehlungs-Engine. Jeder Eintrag basiert auf publizierten wissenschaftlichen Quellen. Bei Updates Quellen prüfen und Datum aktualisieren.",
+    "disclaimer": "Stronger ist kein medizinisches Beratungssystem. Bei gesundheitlichen Fragen oder Vorerkrankungen ist eine ärztliche Beratung notwendig."
+  },
+
+  "kreatin": {
+    "id": "kreatin",
+    "name": "Kreatin Monohydrat",
+    "kategorie": "performance",
+    "ikon": "⚡",
+    "kurz_beschreibung": "Das wissenschaftlich am besten erforschte Sportsupplement weltweit – steigert Kraft, Muskelmasse und kognitive Leistung.",
+
+    "evidenz": {
+      "level": "A",
+      "score": 95,
+      "review_typ": "meta-analyse",
+      "studien_anzahl": 685,
+      "konsens": "ISSN Position Stand 2017 (Kreider et al.)",
+      "effekt_groesse": [
+        {
+          "wert": 4.43,
+          "einheit": "kg",
+          "kontext": "Mehr Oberkörperkraft (1RM) vs. Placebo + Krafttraining",
+          "quelle": "Delpino et al. 2024 Meta-Analyse, Adults <50"
+        },
+        {
+          "wert": 11.35,
+          "einheit": "kg",
+          "kontext": "Mehr Unterkörperkraft (1RM) vs. Placebo + Krafttraining",
+          "quelle": "Delpino et al. 2024 Meta-Analyse, Adults <50"
+        },
+        {
+          "wert": 0.93,
+          "einheit": "kg",
+          "kontext": "Mehr Magermasse (FFM) bei untrainierten Personen nach 8-12 Wochen",
+          "quelle": "Burke et al. systematic review 2025"
+        }
+      ]
+    },
+
+    "indikationen": [
+      {
+        "ziel": "muskelaufbau",
+        "staerke": 1.0,
+        "kommentar": "Höchste Evidenz aller Supplements für Muskelaufbau in Kombination mit Krafttraining"
+      },
+      {
+        "ziel": "kraftsteigerung",
+        "staerke": 1.0,
+        "kommentar": "Konsistent 5–15% mehr Kraftzuwachs vs. Training ohne Kreatin"
+      },
+      {
+        "ziel": "regeneration",
+        "staerke": 0.6,
+        "kommentar": "Phosphokreatin-Resynthese beschleunigt – moderate Evidenz"
+      },
+      {
+        "ziel": "knochengesundheit_frauen",
+        "staerke": 0.5,
+        "kommentar": "Bei postmenopausalen Frauen mit Krafttraining: Femurhals-BMD-Erhalt belegt (Chilibeck 2023, 2-Jahres-RCT, n=237). Programme ≥24 Wochen zeigen Effekt."
+      },
+      {
+        "ziel": "sarkopenie_praevention",
+        "staerke": 0.7,
+        "kommentar": "Bei älteren Erwachsenen (>50) signifikante Muskelmassen- und Kraftzuwächse mit Krafttraining (Sharifian 2024 Meta-Analyse, n=1093)"
+      },
+      {
+        "ziel": "kognition_alt",
+        "staerke": 0.35,
+        "kommentar": "Bei älteren Erwachsenen (66-76 J.) wurde ein Effekt auf Gedächtnis gezeigt. ABER: EFSA hat 2024 Health Claim abgelehnt wegen statistischer Mängel früherer Meta-Analysen. Realistisch bewerten."
+      },
+      {
+        "ziel": "ausdauer_hochintensiv",
+        "staerke": 0.7,
+        "kommentar": "Wingate-Test: +47.81 Watt Spitzenleistung. Wirkt v.a. bei kurzen, intensiven Belastungen (<30s)"
+      }
+    ],
+
+    "kontraindikationen": [
+      {
+        "art": "medikament",
+        "wert": "niereninsuffizienz",
+        "schwere": "hart",
+        "hinweis": "Bei bestehender Nierenerkrankung NICHT empfehlen ohne ärztliche Rücksprache. Bei gesunden Nieren ist Kreatin sicher (Naeini 2019, 2025 Meta-Analysen)."
+      },
+      {
+        "art": "schwangerschaft",
+        "wert": "schwangerschaft",
+        "schwere": "vorsichtig",
+        "hinweis": "Datenlage in Schwangerschaft unzureichend – nur nach ärztlicher Rücksprache"
+      }
+    ],
+
+    "dosierung": {
+      "standard": "3-5 g täglich",
+      "bereich": { "min": 3, "max": 5, "einheit": "g" },
+      "loading_optional": {
+        "dosierung": "20 g/Tag aufgeteilt in 4×5 g für 5-7 Tage",
+        "danach": "3-5 g täglich",
+        "kommentar": "Optional – beschleunigt Sättigung, ist aber nicht notwendig"
+      },
+      "timing": "Konsistent täglich, Tageszeit unwichtig. Mit Kohlenhydraten leicht bessere Aufnahme.",
+      "quelle": "ISSN Position Stand 2017 (Kreider et al.) + NIH Office of Dietary Supplements"
+    },
+
+    "population_spezifisch": {
+      "frauen": {
+        "relevant": true,
+        "kommentar": "Frauen haben 70-80% niedrigere endogene Kreatin-Speicher als Männer und 30-40% niedrigere Nahrungsaufnahme. Besonders relevant in Menstruation, Schwangerschaft (nach Arzt) und Postmenopause.",
+        "quelle": "Smith-Ryan et al. 2025, Tandfonline"
+      },
+      "senioren_50plus": {
+        "relevant": true,
+        "staerke": 0.85,
+        "kommentar": "Sarkopenie-Prävention. Programme ≥12 Wochen mit Krafttraining zeigen klinisch relevante Effekte.",
+        "quelle": "Sharifian et al. 2024 Meta-Analyse"
+      },
+      "vegetarier_veganer": {
+        "relevant": true,
+        "staerke": 0.9,
+        "kommentar": "Vegetarier und Veganer haben deutlich niedrigere Muskel-Kreatinspeicher (Fleisch/Fisch ist Haupt-Nahrungsquelle). Profitieren überproportional von Supplementierung."
+      }
+    },
+
+    "warnhinweise": [
+      "Serum-Kreatinin kann leicht ansteigen ohne dass eine Nierenschädigung vorliegt – das ist ein Messartefakt (mehr Kreatin → mehr Kreatinin-Abbau)",
+      "Bei Loading-Phase können kurzfristig leichte Magenbeschwerden auftreten",
+      "Ausreichend Wasser trinken (Kreatin bindet Wasser im Muskel)"
+    ],
+
+    "quellen": [
+      {
+        "titel": "International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine",
+        "autoren": "Kreider RB, Kalman DS, Antonio J, et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28615996/",
+        "jahr": 2017,
+        "typ": "position_stand",
+        "doi": "10.1186/s12970-017-0173-z"
+      },
+      {
+        "titel": "Effects of Creatine Supplementation and Resistance Training on Muscle Strength Gains in Adults <50 Years of Age: A Systematic Review and Meta-Analysis",
+        "autoren": "Delpino FM, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11547435/",
+        "jahr": 2024,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Impact of creatine supplementation and exercise training in older adults: a systematic review and meta-analysis",
+        "autoren": "Sharifian G, et al.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12506341/",
+        "jahr": 2024,
+        "typ": "meta_analyse",
+        "doi": "10.1186/s11556-025-00384-9"
+      },
+      {
+        "titel": "A 2-Year Randomized Controlled Trial on Creatine Supplementation during Exercise for Postmenopausal Bone Health",
+        "autoren": "Chilibeck PD, Candow DG, Zello GA, et al.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10487398/",
+        "jahr": 2023,
+        "typ": "rct"
+      },
+      {
+        "titel": "Creatine in women's health: bridging the gap from menstruation through pregnancy to menopause",
+        "autoren": "Smith-Ryan AE, et al.",
+        "url": "https://www.tandfonline.com/doi/full/10.1080/15502783.2025.2502094",
+        "jahr": 2025,
+        "typ": "review"
+      },
+      {
+        "titel": "Effect of creatine supplementation on kidney function: a systematic review and meta-analysis",
+        "autoren": "Kabiri Naeini E, et al.",
+        "url": "https://bmcnephrol.biomedcentral.com/articles/10.1186/s12882-025-04344-4",
+        "jahr": 2025,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Common questions and misconceptions about creatine supplementation",
+        "autoren": "Antonio J, Candow DG, Forbes SC, et al.",
+        "url": "https://link.springer.com/article/10.1186/s12970-021-00412-w",
+        "jahr": 2021,
+        "typ": "review"
+      },
+      {
+        "titel": "EFSA Scientific Opinion: Creatine and improvement in cognitive function",
+        "autoren": "EFSA Panel on Nutrition, Novel Foods and Food Allergens",
+        "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2024.9100",
+        "jahr": 2024,
+        "typ": "position_stand",
+        "doi": "10.2903/j.efsa.2024.9100"
+      }
+    ]
+  }
+}

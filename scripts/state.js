@@ -33,5 +33,6 @@ var aktivTab = 'essential';  // Aktiver Tab im Shop
 
 // ── DATEN-CACHE ──
 // Werden durch produkte-loader.js aus den JSON-Dateien befüllt
-var ERKLAERUNG = {};  // { wirkstoffId: 'Beschreibungstext' }
-var INHALT     = {};  // { wirkstoffId: ['wirkstoff1', 'wirkstoff2'] }
+var ERKLAERUNG        = {};  // { wirkstoffId: 'Beschreibungstext' }
+var INHALT            = {};  // { wirkstoffId: ['wirkstoff1', 'wirkstoff2'] }
+var WIRKSTOFFE_WISSEN = {};  // { wirkstoffId: {name, evidenz, indikationen, ...} }

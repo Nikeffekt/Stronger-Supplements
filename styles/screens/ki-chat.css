@@ -150,6 +150,8 @@
 .ki-messages {
   flex: 1;
   overflow-y: auto;
+  /* Verhindert Scroll-Chaining zum darunter liegenden Screen */
+  overscroll-behavior: contain;
   padding: 16px 14px;
   display: flex;
   flex-direction: column;

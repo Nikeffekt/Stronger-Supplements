@@ -167,6 +167,7 @@
   transition: transform var(--t-spring);
   z-index: var(--z-banner);
   overflow-y: auto;
+  overscroll-behavior: contain;
   -webkit-overflow-scrolling: touch;
 }
 

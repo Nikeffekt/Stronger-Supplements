@@ -1,0 +1,376 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   styles/screens/guide-detail.css
+   Erweiterte Guide-Detail Sektionen für die wissenschaftliche Wissensbasis
+
+   Wird zusätzlich zu guide.css geladen.
+
+   Abhängigkeiten:
+   → tokens.css muss vorher geladen sein
+══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ── Evidenz-Badge oben ── */
+.gd-evidenz-badge {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 18px;
+  border-radius: 14px;
+  border: 1px solid;
+  margin-bottom: 24px;
+}
+
+.gd-evidenz-level {
+  font-family: var(--font-d);
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.gd-evidenz-sub {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+
+/* ── Sektion-Wrapper ── */
+.gd-sektion {
+  margin-bottom: 28px;
+  padding-bottom: 4px;
+}
+
+.gd-sektion-warn {
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.18);
+  border-radius: var(--r);
+  padding: 16px;
+}
+
+.gd-sektion-titel {
+  font-family: var(--font-d);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+
+/* ── EFFEKTGRÖSSEN ── */
+.gd-effekt {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+}
+
+.gd-effekt-wert {
+  font-family: var(--font-d);
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--orange-l);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.gd-effekt-einheit {
+  font-size: 18px;
+  color: var(--text2);
+  font-weight: 700;
+}
+
+.gd-effekt-kontext {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+.gd-effekt-quelle {
+  font-size: 11px;
+  color: var(--text3);
+  font-style: italic;
+}
+
+.gd-studien-anzahl {
+  text-align: center;
+  font-size: 12px;
+  color: var(--text3);
+  margin-top: 12px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: var(--r-sm);
+}
+
+
+/* ── INDIKATIONEN (Wofür ist es gut) ── */
+.gd-indikation {
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.gd-indikation:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.gd-ind-zeile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.gd-ind-ziel {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  flex-shrink: 0;
+  min-width: 180px;
+}
+
+.gd-ind-bar {
+  flex: 1;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.gd-ind-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--orange), var(--orange-l));
+  border-radius: 3px;
+  transition: width var(--t-smooth);
+}
+
+.gd-ind-pct {
+  font-family: var(--font-m);
+  font-size: 11px;
+  color: var(--orange-l);
+  flex-shrink: 0;
+  min-width: 36px;
+  text-align: right;
+}
+
+.gd-ind-kommentar {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.55;
+  margin-left: 0;
+}
+
+
+/* ── DOSIERUNG ── */
+.gd-dosis-box {
+  background: var(--orange-bg-soft);
+  border: 1px solid var(--orange-border-s);
+  border-radius: var(--r);
+  padding: 18px;
+}
+
+.gd-dosis-haupt {
+  font-family: var(--font-d);
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--orange-l);
+  margin-bottom: 8px;
+}
+
+.gd-dosis-timing {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 12px;
+  line-height: 1.55;
+}
+
+.gd-dosis-loading {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--r-sm);
+  padding: 12px;
+  margin-top: 12px;
+}
+
+.gd-dosis-loading-titel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--orange-l);
+  margin-bottom: 4px;
+}
+
+.gd-dosis-loading-hint {
+  font-size: 11px;
+  color: var(--text3);
+  margin-top: 4px;
+  font-style: italic;
+}
+
+.gd-dosis-quelle {
+  font-size: 11px;
+  color: var(--text3);
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+
+/* ── POPULATION-SPEZIFISCH ── */
+.gd-pop {
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 3px solid var(--orange);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+
+.gd-pop-titel {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.gd-pop-text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.55;
+  margin-bottom: 4px;
+}
+
+.gd-pop-quelle {
+  font-size: 11px;
+  color: var(--text3);
+  font-style: italic;
+}
+
+
+/* ── WARNHINWEISE / KONTRAINDIKATIONEN ── */
+.gd-warn {
+  background: rgba(239, 68, 68, 0.05);
+  border-left: 3px solid rgba(239, 68, 68, 0.6);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+}
+
+.gd-warn-titel {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(239, 68, 68, 0.9);
+  margin-bottom: 4px;
+}
+
+.gd-warn-text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.55;
+}
+
+
+/* ── HINWEISE-LISTE ── */
+.gd-hinweise-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gd-hinweise-liste li {
+  position: relative;
+  padding: 8px 0 8px 24px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.gd-hinweise-liste li:last-child {
+  border-bottom: none;
+}
+
+.gd-hinweise-liste li::before {
+  content: '💡';
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+
+/* ── QUELLEN ── */
+.gd-quellen-hint {
+  font-size: 12px;
+  color: var(--text3);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.gd-quelle {
+  display: block;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: background var(--t-fast), border-color var(--t-fast);
+}
+
+.gd-quelle:hover,
+.gd-quelle:active {
+  background: var(--orange-bg-soft);
+  border-color: var(--orange-border-s);
+}
+
+.gd-quelle-titel {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+.gd-quelle-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 11px;
+  color: var(--text3);
+}
+
+.gd-quelle-jahr {
+  font-family: var(--font-m);
+  color: var(--orange-l);
+  font-weight: 600;
+}
+
+.gd-quelle-typ {
+  background: rgba(255, 107, 0, 0.1);
+  color: var(--orange-l);
+  padding: 1px 8px;
+  border-radius: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 9px;
+}
+
+
+/* ── DISCLAIMER ── */
+.gd-disclaimer {
+  margin-top: 32px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: var(--r-sm);
+  font-size: 11px;
+  color: var(--text3);
+  line-height: 1.6;
+  text-align: center;
+  font-style: italic;
+}

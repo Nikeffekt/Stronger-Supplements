@@ -111,6 +111,9 @@
 .suche-treffer {
   max-height: calc(100vh - 200px);
   overflow-y: auto;
+  /* Verhindert Scroll-Chaining: wenn am Ende der Liste, scrollt nicht
+     der dahinter liegende Screen weiter */
+  overscroll-behavior: contain;
   max-width: 680px;
   margin: 0 auto;
   padding: 6px 0;

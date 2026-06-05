@@ -307,6 +307,8 @@
   border-top: 1px solid var(--border2);
   max-height: 88vh;
   overflow-y: auto;
+  /* Verhindert Scroll-Chaining zum darunter liegenden Profil-Screen */
+  overscroll-behavior: contain;
   transform: translateY(100%);
   transition: transform var(--t-spring);
   -webkit-overflow-scrolling: touch;

@@ -1,78 +1,333 @@
 /* ============================================================
    scripts/ui/guide.js
-   Supplement Guide – Daten, Listen-Aufbau und Detail-Overlay
+   Supplement Guide – nutzt wirkstoffe-wissen.json als Datenquelle
 
    Abhängigkeiten:
-   - scripts/navigation.js  (zeige)
-============================================================ */
+   - scripts/state.js           (WIRKSTOFFE_WISSEN – wird von produkte-loader.js befüllt)
+   - scripts/navigation.js      (zeige)
 
-// ── GUIDE DATEN ──
-var GUIDE_DATEN = {
-  "magnesium":         { name: "Magnesium",              emoji: "🟢", tagline: "Muskelkontraktion, Nerven & Schlaf",              kategorie: "gesundheit",   prioritaet: "essential", beschreibung: "Magnesium ist an über 300 Enzymreaktionen beteiligt – darunter Muskelkontraktion, Nervenfunktion und Energieproduktion. Sportler verlieren durch Schweiß erhöhte Mengen. Ein Mangel äußert sich durch Krämpfe, Schlafprobleme und Erschöpfung.\n\n💊 Einnahme:\n300–400 mg Magnesium Bisglycinat täglich, abends mit einem großen Glas Wasser direkt vor dem Schlafen. Nicht zusammen mit Kalzium einnehmen – beide Mineralien konkurrieren um dieselben Transportwege.\n\n📌 Beispiel:\nWenn du regelmäßig Wadenkrämpfe bekommst, schlecht schläfst oder dich trotz ausreichend Schlaf erschöpft fühlst – besonders nach intensivem Sport – könnte ein Magnesiummangel die Ursache sein." },
-  "vitamin_d3_k2":     { name: "Vitamin D3 + K2",        emoji: "☀️", tagline: "Knochen, Immunsystem & Testosteron",              kategorie: "gesundheit",   prioritaet: "essential", beschreibung: "Vitamin D3 ist kein Vitamin sondern ein Hormon-Vorläufer. Reguliert Kalziumaufnahme, Immunsystem und Testosteronproduktion. K2 (MK-7) stellt sicher, dass Kalzium in die Knochen geht und nicht in die Gefäße eingelagert wird. In Mitteleuropa haben 70–80% der Bevölkerung im Winter einen Mangel.\n\n💊 Einnahme:\n2.000–5.000 IU D3 + 100–200 mcg K2 täglich, morgens zum Frühstück mit einer fetthaltigen Mahlzeit – zum Beispiel mit Eiern, Avocado oder einem Löffel Olivenöl. D3 ist fettlöslich und wird ohne Fett kaum aufgenommen.\n\n📌 Beispiel:\nWenn du viel Zeit in Innenräumen verbringst, dich oft müde und antriebslos fühlst oder häufig krank wirst – vor allem im Winter – lohnt sich ein Bluttest." },
-  "omega_3":           { name: "Omega-3",                emoji: "🐟", tagline: "Entzündung, Herz, Gehirn & Recovery",             kategorie: "gesundheit",   prioritaet: "essential", beschreibung: "EPA und DHA sind essenzielle Omega-3-Fettsäuren mit stark entzündungshemmender Wirkung. Unterstützen Herzgesundheit, Gehirnfunktion, Gelenke und beschleunigen die Regeneration nach dem Training.\n\n💊 Einnahme:\n2–3 g EPA+DHA täglich, zu einer Hauptmahlzeit mit Fett. Fischöl immer im Kühlschrank lagern. Auf nüchternen Magen kann Fischöl Übelkeit verursachen.\n\n📌 Beispiel:\nWenn deine Gelenke nach dem Training schmerzen, du dich langsam erholst oder häufig Entzündungszeichen hast – dann ist dein Omega-6/Omega-3-Verhältnis wahrscheinlich zu ungünstig." },
-  "zink":              { name: "Zink",                   emoji: "🔷", tagline: "Testosteron, Immunsystem & Enzyme",               kategorie: "gesundheit",   prioritaet: "essential", beschreibung: "Zink ist essenziell für über 300 Enzymreaktionen, Testosteronproduktion, Immunabwehr und Wundheilung. Intensives Training erhöht den Zinkverlust über Schweiß erheblich.\n\n💊 Einnahme:\n15–25 mg täglich, abends auf nüchternen Magen. Nicht gleichzeitig mit Eisen, Kalzium oder Milchprodukten.\n\n📌 Beispiel:\nWenn du intensiv trainierst und dich dauerhaft müde und anfällig für Erkältungen fühlst." },
-  "vitamin_c":         { name: "Vitamin C",              emoji: "🍊", tagline: "Kollagensynthese, Antioxidans & Immunsystem",      kategorie: "gesundheit",   prioritaet: "empfohlen", beschreibung: "Vitamin C ist ein wasserlösliches Antioxidans und Cofaktor der Kollagensynthese. Schützt Zellen vor freien Radikalen und verbessert die Eisenaufnahme.\n\n💊 Einnahme:\n500–1.000 mg täglich zu einer Mahlzeit. Bei Kollagen-Einnahme immer gleichzeitig nehmen.\n\n📌 Beispiel:\nWenn du Kollagen-Peptide nimmst aber keine Wirkung spürst – fehlt dir wahrscheinlich Vitamin C als Cofaktor." },
-  "probiotika":        { name: "Probiotika",             emoji: "🦠", tagline: "Darmflora, Nährstoffaufnahme & Immunsystem",      kategorie: "verdauung",    prioritaet: "empfohlen", beschreibung: "Das Mikrobiom besteht aus ca. 100 Billionen Bakterien die Verdauung, Immunsystem und sogar Stimmung beeinflussen.\n\n💊 Einnahme:\nMindestens 10 Milliarden KBE täglich, morgens nüchtern mit lauwarmem Wasser.\n\n📌 Beispiel:\nWenn du nach einer Antibiotika-Kur Verdauungsprobleme hast oder dich oft aufgebläht fühlst." },
-  "verdauungsenzyme":  { name: "Verdauungsenzyme",       emoji: "🧫", tagline: "Proteinverwertung, Blähungen & Laktoseintoleranz", kategorie: "verdauung",    prioritaet: "empfohlen", beschreibung: "Verdauungsenzyme verbessern die Aufspaltung von Proteinen, Fetten und Kohlenhydraten. Besonders hilfreich bei hoher Proteinzufuhr.\n\n💊 Einnahme:\nDirekt vor dem ersten Bissen oder zu Beginn der Mahlzeit.\n\n📌 Beispiel:\nWenn du täglich viel Protein isst und nach Shakes Blähungen bekommst." },
-  "whey_protein":      { name: "Whey Protein",           emoji: "🥛", tagline: "Muskelaufbau, Sättigung & Recovery",              kategorie: "muskelaufbau", prioritaet: "essential", beschreibung: "Whey ist das am schnellsten absorbierbare Protein mit hohem Leucin-Gehalt (ca. 11%). Ideal für das Zeitfenster direkt nach dem Training.\n\n💊 Einnahme:\n25–40 g in 250–300 ml Wasser, innerhalb von 30–60 Minuten nach dem Training.\n\n📌 Beispiel:\nWenn du nach dem Training kein vollständiges Essen zu dir nehmen kannst." },
-  "iso_clear":         { name: "Iso Clear",              emoji: "🧬", tagline: "Whey Isolat, fettarm & leichte Textur",           kategorie: "muskelaufbau", prioritaet: "empfohlen", beschreibung: "Iso Clear ist ein Whey-Isolat als klares, fruchtiges Getränk. Kaum Laktose und Fett, für Laktoseintolerante geeignet.\n\n💊 Einnahme:\n25 g in 400–500 ml kaltem Wasser, nicht mit heißem Wasser mischen.\n\n📌 Beispiel:\nWenn du klassische cremige Proteinshakes nicht verträgst." },
-  "kreatin":           { name: "Kreatin",                emoji: "🔵", tagline: "Kraft, Schnellkraft & Muskelmasse",               kategorie: "muskelaufbau", prioritaet: "essential", beschreibung: "Kreatin Monohydrat ist das am besten erforschte Supplement der Welt mit über 1.000 Studien. Erhöht die Phosphokreatin-Speicher im Muskel.\n\n💊 Einnahme:\n3–5 g täglich nach dem Training. Kein Laden nötig. Ausreichend Wasser trinken.\n\n📌 Beispiel:\nWenn du seit Monaten keine Kraftfortschritte machst." },
-  "eaa_bcaa":          { name: "EAA & BCAA",             emoji: "💪", tagline: "Muskelproteinsynthese & Anti-Katabolismus",       kategorie: "muskelaufbau", prioritaet: "empfohlen", beschreibung: "EAAs liefern alle 9 essentiellen Aminosäuren. Im nüchternen Training oder bei Diäten besonders wertvoll.\n\n💊 Einnahme:\n10–15 g in 500 ml Wasser, 15–20 Minuten vor dem nüchternen Training.\n\n📌 Beispiel:\nWenn du morgens nüchtern trainierst und Angst hast dabei Muskeln abzubauen." },
-  "pre_workout":       { name: "Pre-Workout",            emoji: "⚡", tagline: "Energie, Fokus, Pump & Ausdauer",                 kategorie: "muskelaufbau", prioritaet: "optional",  beschreibung: "Pre-Workout Booster kombinieren Koffein, L-Citrullin und Beta-Alanin für maximale Performance.\n\n💊 Einnahme:\n20–30 Minuten vor dem Training, nicht nach 16 Uhr wegen Koffein. Max. 3–4x pro Woche.\n\n📌 Beispiel:\nWenn du nach der Arbeit erschöpft ins Gym gehst und die Trainingsqualität leidet." },
-  "l_carnitin":        { name: "L-Carnitin",             emoji: "🔥", tagline: "Fettverbrennung, Energie & Recovery",             kategorie: "muskelaufbau", prioritaet: "empfohlen", beschreibung: "L-Carnitin transportiert Fettsäuren in die Mitochondrien zur Energiegewinnung. Besonders effektiv bei Ausdauersport.\n\n💊 Einnahme:\n1–2 g, 30–45 Minuten vor dem Training mit einem kohlenhydratreichen Snack.\n\n📌 Beispiel:\nWenn du Ausdauertraining machst und mehr Energie beim Cardio willst." },
-  "beta_alanin":       { name: "Beta-Alanin",            emoji: "⚡", tagline: "Laktat-Puffer, Ausdauer & Muskelermüdung",        kategorie: "muskelaufbau", prioritaet: "empfohlen", beschreibung: "Beta-Alanin erhöht den Carnosin-Spiegel im Muskel und puffert Laktat. Das Kribbeln (Parästhesie) ist harmlos.\n\n💊 Einnahme:\n3,2 g täglich aufgeteilt in 2x 1,6 g. Muss täglich eingenommen werden – Carnosin-Aufbau dauert 4–6 Wochen.\n\n📌 Beispiel:\nWenn du bei intensiven Intervallen früh abbrichst weil der Muskel brennt." },
-  "l_glutamin":        { name: "L-Glutamin",             emoji: "🟡", tagline: "Darmgesundheit, Immunsystem & Recovery",          kategorie: "muskelaufbau", prioritaet: "optional",  beschreibung: "L-Glutamin ist die häufigste Aminosäure im Körper. Schützt die Darmschleimhaut und fördert die Immunfunktion.\n\n💊 Einnahme:\n5–10 g täglich nach dem Training oder abends.\n\n📌 Beispiel:\nWenn du täglich trainierst und im Winter häufig krank wirst." },
-  "hmb":               { name: "HMB",                   emoji: "🛡️", tagline: "Anti-Katabolismus, Muskelerhalt & Kraft",         kategorie: "muskelaufbau", prioritaet: "optional",  beschreibung: "HMB hemmt den Muskelabbau und beschleunigt die Reparatur von Muskelfasern. Besonders wirksam in der Diätphase und für ältere Sportler.\n\n💊 Einnahme:\n3 g täglich aufgeteilt in 3x 1 g zu den Hauptmahlzeiten. Wirkung tritt nach 2–4 Wochen ein.\n\n📌 Beispiel:\nWenn du gerade anfängst, über 40 bist oder in einer Diät Muskeln schützen willst." },
-  "ashwagandha":       { name: "Ashwagandha",            emoji: "🌿", tagline: "Stressreduktion, Cortisol & Schlafqualität",      kategorie: "regeneration", prioritaet: "empfohlen", beschreibung: "Ashwagandha KSM-66 ist der am besten erforschte Extrakt. Senkt Cortisol, verbessert Schlafqualität und kann Testosteron leicht erhöhen.\n\n💊 Einnahme:\n300–600 mg KSM-66 abends zum Abendessen. Wirkung tritt nach 4–8 Wochen ein.\n\n📌 Beispiel:\nWenn du unter chronischem Stress leidest und abends nicht abschalten kannst." },
-  "melatonin":         { name: "Melatonin",              emoji: "🌙", tagline: "Einschlafen, Schlafrhythmus & Regeneration",      kategorie: "regeneration", prioritaet: "empfohlen", beschreibung: "Melatonin ist das körpereigene Schlafhormon. Niedrige Dosen sind effektiver als hohe.\n\n💊 Einnahme:\n0,5–1 mg, 30–60 Minuten vor dem Schlafen. Nicht dauerhaft täglich verwenden.\n\n📌 Beispiel:\nWenn du nach einer Zeitzonenreise nicht in den Schlaf findest." },
-  "zma":               { name: "ZMA",                   emoji: "💎", tagline: "Schlafqualität, Testosteron & Recovery",           kategorie: "regeneration", prioritaet: "empfohlen", beschreibung: "ZMA kombiniert Zink, Magnesium und Vitamin B6 für optimale Schlafqualität und hormonelle Balance.\n\n💊 Einnahme:\n1 Portion auf nüchternen Magen 30–60 Min. vor dem Schlafen. Nicht mit Milch einnehmen.\n\n📌 Beispiel:\nWenn du intensiv trainierst und morgens nicht erholt aufwachst." },
-  "kollagen":          { name: "Kollagen",               emoji: "🦴", tagline: "Gelenke, Haut, Sehnen & Knorpel",                kategorie: "gelenke",      prioritaet: "empfohlen", beschreibung: "Kollagen macht 30% aller Körperproteine aus. Hydrolysiertes Kollagen wird am besten aufgenommen.\n\n💊 Einnahme:\n10–15 g vor dem Training in warmem Wasser, immer mit 200–500 mg Vitamin C.\n\n📌 Beispiel:\nWenn du Sehnenschmerzen oder Gelenkprobleme hast und kein Vitamin C dazu nimmst." },
-  "curcumin":          { name: "Curcumin",               emoji: "🌱", tagline: "Entzündungshemmung & Gelenk-Recovery",            kategorie: "gelenke",      prioritaet: "empfohlen", beschreibung: "Curcumin hemmt Entzündungsprozesse. BCM-95 oder Phytosom-Formen haben bis zu 29-fach bessere Absorption.\n\n💊 Einnahme:\n500–1.000 mg zu einer fetthaltigen Mahlzeit. Ohne Fett kaum wirksam.\n\n📌 Beispiel:\nWenn du nach schwerem Training starke Muskelkater und Gelenkschmerzen hast." },
-  "glucosamin_chond":  { name: "Glucosamin + Chondroitin", emoji: "🦵", tagline: "Knorpelaufbau, Gelenkschutz & Schmerz",        kategorie: "gelenke",      prioritaet: "empfohlen", beschreibung: "Glucosamin und Chondroitin sind Bausteine des Gelenkknorpels.\n\n💊 Einnahme:\n1.500 mg Glucosamin + 1.200 mg Chondroitin täglich zum Frühstück. Mindestens 3 Monate durchhalten.\n\n📌 Beispiel:\nWenn du beim Laufen oder Kniebeugen Knieschmerzen hast und über 35 bist." },
-  "msm":               { name: "MSM",                   emoji: "🌊", tagline: "Entzündungshemmung, Gelenke & Schwefel",          kategorie: "gelenke",      prioritaet: "optional",  beschreibung: "MSM liefert organischen Schwefel für Kollagensynthese und Gelenke.\n\n💊 Einnahme:\n1.000–3.000 mg täglich aufgeteilt auf 2 Mahlzeiten. Langsam einschleichen.\n\n📌 Beispiel:\nWenn du bereits Kollagen und Glucosamin nimmst aber noch keine optimale Wirkung spürst." },
-  "grüner_tee_egcg":   { name: "Grüner Tee (EGCG)",     emoji: "🍵", tagline: "Fettverbrennung, Thermogenese & Antioxidans",     kategorie: "gewicht",      prioritaet: "empfohlen", beschreibung: "EGCG ist das wirksamste Polyphenol aus grünem Tee. Erhöht die Thermogenese und aktiviert den Fettstoffwechsel.\n\n💊 Einnahme:\n400–800 mg morgens nüchtern oder vor dem Training. Nicht mit Milch.\n\n📌 Beispiel:\nWenn du in einer Diätphase bist und einen natürlichen Booster ohne starkes Koffein suchst." },
-  "cla":               { name: "CLA",                   emoji: "🔶", tagline: "Körperfettanteil, Muskelmasse & Body-Recomp",     kategorie: "gewicht",      prioritaet: "optional",  beschreibung: "CLA reduziert Körperfett und unterstützt Muskelerhalt. Wirkung ist moderat aber kontinuierlich.\n\n💊 Einnahme:\n3–6 g täglich aufgeteilt auf 3 Mahlzeiten. Mindestens 12 Wochen durchhalten.\n\n📌 Beispiel:\nWenn du auf Diät bist und Muskelmasse erhalten willst." },
-};
+   ÄNDERUNGEN vs. vorheriger Version:
+   - GUIDE_DATEN entfernt – Wissen kommt jetzt aus wirkstoffe-wissen.json
+   - Detail-Render zeigt: Effektgrößen, Indikationen, Dosierung,
+     Population-spezifische Hinweise, Warnhinweise, Quellen mit Links
+============================================================ */
 
 
 // ── GUIDE ÖFFNEN ──
 function guideOeffnen() {
   var menuOv = document.getElementById('hdr-menu-overlay');
   if (menuOv) menuOv.classList.remove('offen');
+  baueGuideListe();
   zeige('s-guide');
 }
 
-// ── GUIDE ZURÜCK (zur Startseite) ──
+// ── GUIDE ZURÜCK ──
 function guideZurueck() {
   zeige('s-start');
 }
 
+
+// ── LISTE AUFBAUEN ──
+// Nutzt WIRKSTOFFE_WISSEN (geladen aus wirkstoffe-wissen.json)
+function baueGuideListe() {
+  var container = document.getElementById('guide-liste');
+  if (!container) return;
+
+  // Wenn noch keine Daten geladen: Hinweis
+  if (!WIRKSTOFFE_WISSEN || Object.keys(WIRKSTOFFE_WISSEN).length === 0) {
+    container.innerHTML = '<div style="padding:24px;text-align:center;color:rgba(255,255,255,0.4);">Wissensbasis wird geladen…</div>';
+    return;
+  }
+
+  // Nach Kategorie gruppieren
+  var kategorien = {
+    performance:   { label: 'Performance & Muskelaufbau', emoji: '💪', items: [] },
+    gesundheit:    { label: 'Gesundheit & Vorbeugung',    emoji: '🛡️', items: [] },
+    regeneration:  { label: 'Regeneration',               emoji: '🌙', items: [] },
+    wellbeing:     { label: 'Wellbeing & Mental',         emoji: '🧠', items: [] }
+  };
+
+  Object.keys(WIRKSTOFFE_WISSEN).forEach(function (id) {
+    if (id === '_meta') return;  // Meta-Eintrag überspringen
+    var w   = WIRKSTOFFE_WISSEN[id];
+    var kat = kategorien[w.kategorie] || kategorien.gesundheit;
+    kat.items.push({ id: id, daten: w });
+  });
+
+  // HTML aufbauen
+  var html = '';
+  Object.keys(kategorien).forEach(function (key) {
+    var kat = kategorien[key];
+    if (kat.items.length === 0) return;
+
+    html += '<div class="guide-kat">';
+    html +=   '<div class="guide-kat-header">';
+    html +=     '<span class="guide-kat-emoji">' + kat.emoji + '</span>';
+    html +=     '<span class="guide-kat-label">' + kat.label + '</span>';
+    html +=   '</div>';
+
+    kat.items.forEach(function (item) {
+      var w        = item.daten;
+      var evidenz  = w.evidenz || {};
+      var prioColor = farbeFuerEvidenz(evidenz.level);
+
+      html += '<div class="guide-item" onclick="guideOeffneDetail(\'' + item.id + '\')">';
+      html +=   '<div class="guide-item-emoji">' + (w.ikon || '💊') + '</div>';
+      html +=   '<div class="guide-item-info">';
+      html +=     '<div class="guide-item-name">' + w.name + '</div>';
+      html +=     '<div class="guide-item-tagline">' + (w.kurz_beschreibung || '') + '</div>';
+      html +=   '</div>';
+      html +=   '<div class="guide-item-prio" style="color:' + prioColor + ';">' +
+                  'Evidenz ' + (evidenz.level || '?') +
+                '</div>';
+      html +=   '<div class="guide-item-arrow">›</div>';
+      html += '</div>';
+    });
+
+    html += '</div>';
+  });
+
+  container.innerHTML = html;
+}
+
+
 // ── DETAIL ÖFFNEN ──
 function guideOeffneDetail(id) {
-  var w = GUIDE_DATEN[id];
-  if (!w) return;
+  var w = WIRKSTOFFE_WISSEN && WIRKSTOFFE_WISSEN[id];
+  if (!w) {
+    console.warn('Wirkstoff nicht gefunden:', id);
+    return;
+  }
 
-  document.getElementById('guide-detail-emoji').textContent        = w.emoji;
-  document.getElementById('guide-detail-name').textContent         = w.name;
-  document.getElementById('guide-detail-tagline').textContent      = w.tagline;
-  document.getElementById('guide-detail-beschreibung').textContent = w.beschreibung;
+  var detailEl = document.getElementById('guide-detail-inner');
+  if (!detailEl) return;
 
-  var prioText  = { essential: 'Essentiell', empfohlen: 'Empfohlen', optional: 'Optional' };
-  var prioFarbe = { essential: '#FF6B00',    empfohlen: '#10B981',    optional: '#6B7280' };
+  // ── HTML aufbauen ──
+  var html = '<button class="guide-detail-back" onclick="guideDetailZurueck()">← Zurück zur Liste</button>';
 
-  var prioEl = document.getElementById('guide-detail-prio');
-  prioEl.textContent        = prioText[w.prioritaet]  || w.prioritaet;
-  prioEl.style.color        = prioFarbe[w.prioritaet] || '#6B7280';
-  prioEl.style.background   = w.prioritaet === 'essential' ? 'rgba(255,107,0,0.15)'   :
-                               w.prioritaet === 'empfohlen' ? 'rgba(16,185,129,0.15)' :
-                               'rgba(107,114,128,0.15)';
-  prioEl.style.borderColor  = prioFarbe[w.prioritaet] || '#6B7280';
+  // Header
+  html += '<div class="guide-detail-emoji">' + (w.ikon || '💊') + '</div>';
+  html += '<h2 class="guide-detail-name">' + w.name + '</h2>';
+  html += '<div class="guide-detail-tagline">' + (w.kurz_beschreibung || '') + '</div>';
 
+  // Evidenz-Badge
+  var ev = w.evidenz || {};
+  var evColor = farbeFuerEvidenz(ev.level);
+  html += '<div class="gd-evidenz-badge" style="background:' + evColor + '20;border-color:' + evColor + '50;color:' + evColor + ';">';
+  html +=   '<span class="gd-evidenz-level">Evidenz Level ' + (ev.level || '?') + '</span>';
+  html +=   '<span class="gd-evidenz-sub">' + evidenzLabel(ev.level) + '</span>';
+  html += '</div>';
+
+  // ── Effektgrößen ──
+  if (ev.effekt_groesse && ev.effekt_groesse.length) {
+    html += '<div class="gd-sektion">';
+    html +=   '<div class="gd-sektion-titel">📊 Wissenschaftlich belegte Effekte</div>';
+    ev.effekt_groesse.forEach(function (eff) {
+      html += '<div class="gd-effekt">';
+      html +=   '<div class="gd-effekt-wert">' + eff.wert + ' <span class="gd-effekt-einheit">' + (eff.einheit || '') + '</span></div>';
+      html +=   '<div class="gd-effekt-kontext">' + eff.kontext + '</div>';
+      if (eff.quelle) html += '<div class="gd-effekt-quelle">' + eff.quelle + '</div>';
+      html += '</div>';
+    });
+    if (ev.studien_anzahl) {
+      html += '<div class="gd-studien-anzahl">Basis: ' + ev.studien_anzahl + '+ wissenschaftliche Studien</div>';
+    }
+    html += '</div>';
+  }
+
+  // ── Indikationen ──
+  if (w.indikationen && w.indikationen.length) {
+    html += '<div class="gd-sektion">';
+    html +=   '<div class="gd-sektion-titel">🎯 Wofür ist es besonders gut?</div>';
+    // Nach Stärke sortieren
+    var indSorted = w.indikationen.slice().sort(function (a, b) { return (b.staerke || 0) - (a.staerke || 0); });
+    indSorted.forEach(function (ind) {
+      var staerkePct = Math.round((ind.staerke || 0) * 100);
+      html += '<div class="gd-indikation">';
+      html +=   '<div class="gd-ind-zeile">';
+      html +=     '<span class="gd-ind-ziel">' + zielLabel(ind.ziel) + '</span>';
+      html +=     '<div class="gd-ind-bar"><div class="gd-ind-bar-fill" style="width:' + staerkePct + '%;"></div></div>';
+      html +=     '<span class="gd-ind-pct">' + staerkePct + '%</span>';
+      html +=   '</div>';
+      if (ind.kommentar) {
+        html +=   '<div class="gd-ind-kommentar">' + ind.kommentar + '</div>';
+      }
+      html += '</div>';
+    });
+    html += '</div>';
+  }
+
+  // ── Dosierung ──
+  if (w.dosierung) {
+    var d = w.dosierung;
+    html += '<div class="gd-sektion">';
+    html +=   '<div class="gd-sektion-titel">💊 Empfohlene Dosierung</div>';
+    html +=   '<div class="gd-dosis-box">';
+    html +=     '<div class="gd-dosis-haupt">' + (d.standard || '–') + '</div>';
+    if (d.timing) html += '<div class="gd-dosis-timing"><strong>Timing:</strong> ' + d.timing + '</div>';
+    if (d.loading_optional) {
+      html += '<div class="gd-dosis-loading">';
+      html +=   '<div class="gd-dosis-loading-titel">⚡ Optional: Loading-Phase</div>';
+      html +=   '<div>' + d.loading_optional.dosierung + ' → danach ' + d.loading_optional.danach + '</div>';
+      if (d.loading_optional.kommentar) {
+        html += '<div class="gd-dosis-loading-hint">' + d.loading_optional.kommentar + '</div>';
+      }
+      html += '</div>';
+    }
+    if (d.quelle) html += '<div class="gd-dosis-quelle">Quelle: ' + d.quelle + '</div>';
+    html +=   '</div>';
+    html += '</div>';
+  }
+
+  // ── Population-spezifisch ──
+  if (w.population_spezifisch) {
+    var pops = w.population_spezifisch;
+    var popKeys = Object.keys(pops);
+    if (popKeys.length > 0) {
+      html += '<div class="gd-sektion">';
+      html +=   '<div class="gd-sektion-titel">👥 Spezielle Hinweise für Zielgruppen</div>';
+      popKeys.forEach(function (key) {
+        var pop = pops[key];
+        if (!pop.relevant) return;
+        html += '<div class="gd-pop">';
+        html +=   '<div class="gd-pop-titel">' + popLabel(key) + '</div>';
+        html +=   '<div class="gd-pop-text">' + pop.kommentar + '</div>';
+        if (pop.quelle) html += '<div class="gd-pop-quelle">' + pop.quelle + '</div>';
+        html += '</div>';
+      });
+      html += '</div>';
+    }
+  }
+
+  // ── Kontraindikationen ──
+  if (w.kontraindikationen && w.kontraindikationen.length) {
+    html += '<div class="gd-sektion gd-sektion-warn">';
+    html +=   '<div class="gd-sektion-titel">⚠️ Vorsicht / Nicht geeignet bei</div>';
+    w.kontraindikationen.forEach(function (k) {
+      html += '<div class="gd-warn">';
+      html +=   '<div class="gd-warn-titel">' + kontraLabel(k.wert) + '</div>';
+      html +=   '<div class="gd-warn-text">' + k.hinweis + '</div>';
+      html += '</div>';
+    });
+    html += '</div>';
+  }
+
+  // ── Warnhinweise ──
+  if (w.warnhinweise && w.warnhinweise.length) {
+    html += '<div class="gd-sektion">';
+    html +=   '<div class="gd-sektion-titel">💡 Wichtig zu wissen</div>';
+    html +=   '<ul class="gd-hinweise-liste">';
+    w.warnhinweise.forEach(function (h) {
+      html += '<li>' + h + '</li>';
+    });
+    html +=   '</ul>';
+    html += '</div>';
+  }
+
+  // ── Quellen ──
+  if (w.quellen && w.quellen.length) {
+    html += '<div class="gd-sektion">';
+    html +=   '<div class="gd-sektion-titel">📚 Wissenschaftliche Quellen</div>';
+    html +=   '<div class="gd-quellen-hint">Alle Aussagen basieren auf den folgenden publizierten Studien:</div>';
+    w.quellen.forEach(function (q) {
+      html += '<a href="' + q.url + '" target="_blank" rel="noopener" class="gd-quelle">';
+      html +=   '<div class="gd-quelle-titel">' + q.titel + '</div>';
+      html +=   '<div class="gd-quelle-meta">';
+      html +=     '<span>' + (q.autoren || '–') + '</span>';
+      html +=     '<span class="gd-quelle-jahr">' + (q.jahr || '?') + '</span>';
+      html +=     '<span class="gd-quelle-typ">' + typLabel(q.typ) + '</span>';
+      html +=   '</div>';
+      html += '</a>';
+    });
+    html += '</div>';
+  }
+
+  // Disclaimer
+  html += '<div class="gd-disclaimer">';
+  html +=   'Diese Informationen ersetzen keine medizinische Beratung. ';
+  html +=   'Bei Vorerkrankungen, Schwangerschaft oder Medikamenteneinnahme bitte einen Arzt konsultieren.';
+  html += '</div>';
+
+  detailEl.innerHTML = html;
   document.getElementById('guide-detail').classList.add('sichtbar');
 }
 
+
 // ── DETAIL SCHLIESSEN ──
 function guideDetailZurueck() {
-  document.getElementById('guide-detail').classList.remove('sichtbar');
+  var d = document.getElementById('guide-detail');
+  if (d) d.classList.remove('sichtbar');
+}
+
+
+// ── LABEL-HELPERS ──
+
+function farbeFuerEvidenz(level) {
+  if (level === 'A') return '#10B981';  // Grün – sehr stark belegt
+  if (level === 'B') return '#3B82F6';  // Blau – gut belegt
+  if (level === 'C') return '#F59E0B';  // Gelb – moderate Evidenz
+  if (level === 'D') return '#EF4444';  // Rot – schwach belegt
+  return '#6B7280';                      // Grau – unbekannt
+}
+
+function evidenzLabel(level) {
+  if (level === 'A') return 'Sehr stark wissenschaftlich belegt';
+  if (level === 'B') return 'Gut belegt durch Meta-Analysen';
+  if (level === 'C') return 'Moderate Evidenz – einzelne RCTs';
+  if (level === 'D') return 'Schwache Evidenz – Vorsicht';
+  return 'Evidenz wird noch geprüft';
+}
+
+function zielLabel(ziel) {
+  var labels = {
+    'muskelaufbau':           '💪 Muskelaufbau',
+    'kraftsteigerung':        '⚡ Kraftsteigerung',
+    'regeneration':           '🌙 Regeneration',
+    'knochengesundheit_frauen':'🦴 Knochengesundheit (Frauen)',
+    'sarkopenie_praevention': '🛡️ Muskelerhalt im Alter',
+    'kognition_alt':          '🧠 Kognition (Ältere)',
+    'ausdauer_hochintensiv':  '🏃 Ausdauer (hochintensiv)',
+    'fettabbau':              '🔥 Fettabbau',
+    'immunsystem':            '🦠 Immunsystem',
+    'schlaf':                 '😴 Schlafqualität',
+    'energie':                '⚡ Energie',
+    'gesundheit':             '❤️ Allgemeine Gesundheit',
+  };
+  return labels[ziel] || ziel;
+}
+
+function popLabel(key) {
+  var labels = {
+    'frauen':              '👩 Frauen',
+    'maenner':             '👨 Männer',
+    'senioren_50plus':     '👴 Senioren (50+)',
+    'vegetarier_veganer':  '🌱 Vegetarier & Veganer',
+    'schwangerschaft':     '🤰 Schwangerschaft',
+    'leistungssportler':   '🏆 Leistungssportler',
+  };
+  return labels[key] || key;
+}
+
+function kontraLabel(wert) {
+  var labels = {
+    'niereninsuffizienz':   'Nierenerkrankung',
+    'schwangerschaft':      'Schwangerschaft',
+    'blutverduenner':       'Blutverdünner',
+    'schilddruese':         'Schilddrüsen-Medikamente',
+    'antidepressiva':       'Antidepressiva',
+    'bluthochdruck':        'Bluthochdruck-Medikamente',
+    'diabetes':             'Diabetes',
+  };
+  return labels[wert] || wert;
+}
+
+function typLabel(typ) {
+  var labels = {
+    'meta_analyse':    'Meta-Analyse',
+    'systematic_review':'Systematic Review',
+    'position_stand':  'Position Stand',
+    'rct':             'RCT',
+    'review':          'Review',
+  };
+  return labels[typ] || typ;
 }
