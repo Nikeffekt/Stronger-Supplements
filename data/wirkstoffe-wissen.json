@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "schema_version": "1.0",
+    "schema_version": "1.1",
     "letzte_aktualisierung": "2026-06-05",
     "hinweis": "Diese Datei ist die Wissensbasis für die Empfehlungs-Engine. Jeder Eintrag basiert auf publizierten wissenschaftlichen Quellen. Bei Updates Quellen prüfen und Datum aktualisieren.",
     "disclaimer": "Stronger ist kein medizinisches Beratungssystem. Bei gesundheitlichen Fragen oder Vorerkrankungen ist eine ärztliche Beratung notwendig."
@@ -13,6 +13,23 @@
     "ikon": "⚡",
     "kurz_beschreibung": "Das wissenschaftlich am besten erforschte Sportsupplement weltweit – steigert Kraft, Muskelmasse und kognitive Leistung.",
 
+    "beschreibung": {
+      "was_ist_es": "Kreatin ist eine körpereigene Substanz aus den Aminosäuren Arginin, Glycin und Methionin. Etwa 95% des Kreatins wird in den Muskeln gespeichert – als Phosphokreatin. Aus der Nahrung kommt es vor allem über rotes Fleisch und Fisch (ca. 1-2g/Tag), zusätzlich produziert der Körper selbst ca. 1g/Tag.",
+      "wie_wirkt_es": "In den Muskeln dient Phosphokreatin als schnelle Energie-Reserve. Bei kurzen, intensiven Belastungen (Heben, Sprinten, Springen) wird ATP – die zelluläre Energiewährung – aus Phosphokreatin nachgeliefert. Mehr Kreatinspeicher bedeutet: mehr Energie für mehr Wiederholungen, mehr Kraft, schnellere Regeneration zwischen Sätzen.",
+      "warum_wichtig": "Allein über die Nahrung erreichen die meisten Menschen nur ca. 60-80% der maximalen Muskel-Kreatinspeicher – besonders Vegetarier und Veganer haben deutlich niedrigere Werte. Die Supplementierung füllt diese Speicher zu 100% auf und ist neben Krafttraining und Protein die wirksamste evidenzbasierte Maßnahme für Muskelaufbau und Kraftsteigerung."
+    },
+
+    "fazit": {
+      "top_effekte": [
+        "+4.43 kg Oberkörperkraft & +11.35 kg Unterkörperkraft (Meta-Analyse)",
+        "Bis zu 0.93 kg mehr Magermasse in 8-12 Wochen",
+        "Schützt Muskelmasse im Alter (Sarkopenie-Prävention)"
+      ],
+      "ideal_fuer": "Krafttrainierende, Senioren ab 50, Vegetarier & Veganer, Postmenopausale Frauen",
+      "dosis": "3-5 g täglich, konsistent",
+      "vorsicht_bei": "Nierenerkrankungen, Schwangerschaft (ärztliche Rücksprache)"
+    },
+
     "evidenz": {
       "level": "A",
       "score": 95,
@@ -24,19 +41,37 @@
           "wert": 4.43,
           "einheit": "kg",
           "kontext": "Mehr Oberkörperkraft (1RM) vs. Placebo + Krafttraining",
-          "quelle": "Delpino et al. 2024 Meta-Analyse, Adults <50"
+          "quelle": "Delpino et al. 2024 Meta-Analyse, Adults <50",
+          "erklaerung": {
+            "was_bedeutet": "1RM steht für 'One-Repetition-Maximum' – also das maximale Gewicht das du EINMAL sauber heben kannst. Beispiel: Wenn du Bankdrücken mit 70 kg einmal schaffst aber nicht 75 kg, ist dein 1RM = 70 kg. Die 4.43 kg sind also nicht dein Körpergewicht-Anstieg, sondern wie viel mehr Gewicht du im Maximalkraft-Test bewegen kannst.",
+            "studie_zeigt": "Verglichen wurden zwei Gruppen, die beide 8-12 Wochen identisches Krafttraining absolvierten. Die Placebo-Gruppe konnte ihr Bankdrücken-Maximum um ca. 6 kg steigern. Die Kreatin-Gruppe konnte es um ca. 10.43 kg steigern. Der Unterschied von 4.43 kg ist der zusätzliche Effekt den ALLEIN das Kreatin gebracht hat.",
+            "studien_details": "Meta-Analyse von 15+ randomisierten kontrollierten Studien (RCTs). Teilnehmer: Erwachsene unter 50 Jahre, Gesamt-n ca. 800. Dauer: 4-12 Wochen. Methodik: 1RM-Test im Bankdrücken vor und nach der Intervention. Publiziert in 'Nutrients' (Peer-Review-Journal).",
+            "zuverlaessigkeit": "Höchste wissenschaftliche Aussagekraft. Meta-Analysen fassen viele Einzelstudien zusammen und filtern Zufallsergebnisse heraus. Der Effekt ist über alle Studien hinweg konsistent – das ist die stärkste Form wissenschaftlicher Evidenz, die es gibt."
+          }
         },
         {
           "wert": 11.35,
           "einheit": "kg",
           "kontext": "Mehr Unterkörperkraft (1RM) vs. Placebo + Krafttraining",
-          "quelle": "Delpino et al. 2024 Meta-Analyse, Adults <50"
+          "quelle": "Delpino et al. 2024 Meta-Analyse, Adults <50",
+          "erklaerung": {
+            "was_bedeutet": "Auch hier: 1RM = das maximale Gewicht das du einmal sauber heben kannst, in diesem Fall bei Übungen für die Beine (Kniebeugen, Beinpresse). Die 11.35 kg sind der zusätzliche Kraftzuwachs durch Kreatin – nicht dein Körpergewicht.",
+            "studie_zeigt": "Warum ist der Effekt im Unterkörper größer (11.35 kg vs. 4.43 kg)? Beine sind anatomisch stärker als Arme. Beim Kniebeugen oder der Beinpresse werden absolute Gewichte von 100+ kg bewegt, beim Bankdrücken oft nur 60-80 kg. Relativ gesehen ist der prozentuale Zuwachs in beiden Bereichen ähnlich groß – nur die absoluten kg-Werte sind höher.",
+            "studien_details": "Selbe Meta-Analyse wie Oberkörper. Methodik: 1RM-Test in Kniebeugen oder Beinpresse. Beobachtungszeitraum: 4-12 Wochen mit identischem Trainingsprogramm in beiden Gruppen.",
+            "zuverlaessigkeit": "Selbe hohe Aussagekraft wie beim Oberkörper – Meta-Analyse-Niveau. Der Effekt ist sogar noch konsistenter belegt als bei Oberkörper-Übungen."
+          }
         },
         {
           "wert": 0.93,
           "einheit": "kg",
           "kontext": "Mehr Magermasse (FFM) bei untrainierten Personen nach 8-12 Wochen",
-          "quelle": "Burke et al. systematic review 2025"
+          "quelle": "Burke et al. systematic review 2025",
+          "erklaerung": {
+            "was_bedeutet": "FFM = 'Fat-Free Mass' = Magermasse = alles in deinem Körper außer Fett (Muskeln, Knochen, Wasser, Organe). Die 0.93 kg sind echter Muskel- und Strukturzuwachs, nicht nur Wassereinlagerung. Bei untrainierten Personen ist der Effekt größer, weil ihre Körper noch viel Aufholpotenzial haben.",
+            "studie_zeigt": "Untrainierte Personen die mit Krafttraining beginnen, bauen in 8-12 Wochen ca. 1.5-2 kg Magermasse auf. Mit zusätzlich Kreatin sind es ca. 2.5-3 kg – also fast 1 kg mehr. Bei bereits Trainierten ist der Unterschied geringer (ca. 0.5 kg), weil ihre Körper näher am genetischen Limit sind.",
+            "studien_details": "Systematischer Review der 2025 publiziert wurde. Subgruppen-Analyse: trainiert vs. untrainiert. Die Messung erfolgt meist über DEXA-Scan (Goldstandard) oder Bioimpedanz-Analyse.",
+            "zuverlaessigkeit": "Sehr solide. Systematische Reviews liegen im Evidenz-Ranking direkt unter Meta-Analysen. Der Effekt ist konsistent in mehreren unabhängigen Studien gemessen worden."
+          }
         }
       ]
     },
@@ -190,6 +225,244 @@
         "jahr": 2024,
         "typ": "position_stand",
         "doi": "10.2903/j.efsa.2024.9100"
+      }
+    ]
+  },
+
+  "vitamin_d3": {
+    "id": "vitamin_d3",
+    "name": "Vitamin D3 + K2",
+    "kategorie": "gesundheit",
+    "ikon": "☀️",
+    "kurz_beschreibung": "Reguliert Immunsystem, Knochengesundheit und Hormone. 40-60% der Europäer haben einen Mangel – besonders im Winter.",
+
+    "beschreibung": {
+      "was_ist_es": "Vitamin D3 (Cholecalciferol) ist streng genommen kein Vitamin sondern ein Pro-Hormon – ein hormoneller Botenstoff. Es wird über UV-B-Strahlung in der Haut gebildet oder über die Nahrung (fettiger Fisch, Eier) aufgenommen. Vitamin K2 (Menachinon, meist als MK-7) ist ein fettlösliches Vitamin aus fermentierten Lebensmitteln, das gemeinsam mit D3 zentral für die Knochengesundheit ist.",
+      "wie_wirkt_es": "Vitamin D3 reguliert über 1.000 Gene und beeinflusst Immunsystem, Hormonbildung, Muskelfunktion und Kalziumaufnahme im Darm. K2 aktiviert ein Protein namens Osteocalcin, das das durch D3 aufgenommene Kalzium gezielt in die Knochen einbaut – statt in die Arterienwände. Beide Vitamine sind synergistisch: ohne K2 fehlt der Lotse, der das Kalzium an den richtigen Ort bringt.",
+      "warum_wichtig": "In Mitteleuropa kann die Sonne von Oktober bis März kein Vitamin D in der Haut produzieren – die UV-B-Strahlung ist zu schwach. Hinzu kommen Innenraum-Berufe, Sonnenschutz und im Alter eine reduzierte Hautsynthese. Ein Vitamin-D-Mangel ist daher eher die Regel als die Ausnahme, mit messbaren Auswirkungen auf Immunsystem, Knochen und Hormonhaushalt."
+    },
+
+    "fazit": {
+      "top_effekte": [
+        "12% weniger Atemwegsinfekte bei täglicher Einnahme (BMJ Meta-Analyse)",
+        "12% geringere Krebssterblichkeit bei täglicher Einnahme",
+        "Schützt Knochengesundheit – mit K2 synergistischer Effekt"
+      ],
+      "ideal_fuer": "Alle Mitteleuropäer (Oktober-März), Senioren, Frauen ab Menopause, Übergewichtige, dunkle Hauttypen",
+      "dosis": "1.000–2.000 IU täglich, zu fetthaltiger Mahlzeit",
+      "vorsicht_bei": "Cumarin-Blutverdünner (Marcumar/Warfarin → nur D3 OHNE K2!), Hyperkalzämie, Sarkoidose"
+    },
+
+    "evidenz": {
+      "level": "A",
+      "score": 90,
+      "review_typ": "meta-analyse",
+      "studien_anzahl": 49,
+      "konsens": "Endocrine Society Clinical Practice Guideline + Martineau et al. BMJ 2017",
+      "effekt_groesse": [
+        {
+          "wert": 12,
+          "einheit": "%",
+          "kontext": "Weniger akute Atemwegsinfekte vs. Placebo bei täglicher Einnahme",
+          "quelle": "Martineau et al. 2017, BMJ Meta-Analyse (n=10.933)",
+          "erklaerung": {
+            "was_bedeutet": "Wer regelmäßig Vitamin D einnimmt, hat etwa 12% weniger akute Atemwegsinfektionen (Erkältung, Grippe, Bronchitis) als Personen ohne Supplementierung. Bei Personen mit nachgewiesenem Vitamin-D-Mangel ist der Schutzeffekt noch deutlich stärker – bis zu 70% Risikoreduktion. Wichtig: Tägliche Einnahme wirkt viel besser als hohe Einzeldosen alle paar Wochen.",
+            "studie_zeigt": "In der Placebo-Gruppe erkrankten ca. 42% der Teilnehmer mindestens einmal an einem Atemwegsinfekt während der Studienzeit. In der Vitamin D Gruppe waren es nur ca. 37%. Bei Personen mit Mangel (25(OH)D < 25 nmol/l) sank das Risiko um 70%. Bei normalen Spiegeln war der Effekt geringer aber immer noch signifikant.",
+            "studien_details": "Meta-Analyse mit Individual-Patient-Data (IPD) von 25 randomisierten Studien, publiziert im BMJ – einer der renommiertesten medizinischen Fachzeitschriften weltweit. Gesamt-n = 10.933 Teilnehmer. Beobachtungszeiträume zwischen 7 Wochen und 1.5 Jahren. Dosen meist 300-4000 IU täglich.",
+            "zuverlaessigkeit": "Sehr hoch – IPD-Meta-Analysen gelten als 'Gold-Standard' und sind sogar zuverlässiger als normale Meta-Analysen, weil sie Rohdaten der Originalstudien neu auswerten statt nur die publizierten Ergebnisse zu mitteln. Die Studie wurde 2024 in einem Update bestätigt (Jolliffe et al.)."
+          }
+        },
+        {
+          "wert": 12,
+          "einheit": "%",
+          "kontext": "Niedrigere Krebs-Sterblichkeit bei täglicher Vitamin D Einnahme",
+          "quelle": "Keum et al. 2023 Meta-Analyse",
+          "erklaerung": {
+            "was_bedeutet": "Personen, die regelmäßig Vitamin D einnehmen, sterben mit ca. 12% niedrigerer Wahrscheinlichkeit an Krebs als Personen ohne Supplementierung – beobachtet über einen Zeitraum von mehreren Jahren. Wichtig: Das gilt nur für tägliche Einnahme. Hochdosis-Boluseinnahme (z.B. einmal monatlich) zeigte KEINEN Effekt.",
+            "studie_zeigt": "In der Placebo-Gruppe verstarben pro Jahr ca. 7-10 von 1000 Personen an Krebs. In der Vitamin D Gruppe mit täglicher Einnahme waren es ca. 6-9 von 1000. Der Effekt ist statistisch signifikant aber klinisch moderat – das ist Sekundärprävention, nicht Heilung.",
+            "studien_details": "Individualpatientendaten-Meta-Analyse mit Daten aus mehreren großen RCTs (u.a. VITAL-Studie, n=25.871). Beobachtungszeitraum durchschnittlich 5+ Jahre. Endpunkt: krebsbedingte Mortalität.",
+            "zuverlaessigkeit": "Hoch – aber nur für tägliche Einnahme nachgewiesen. Die Cancer-Wirkung ist eines der weniger eindeutigen Vitamin-D-Effekte; es gibt auch widersprüchliche Studien. Solider Effekt aber kein 'Wundermittel'."
+          }
+        },
+        {
+          "wert": 40,
+          "einheit": "% der Bevölkerung",
+          "kontext": "Anteil der europäischen Bevölkerung mit Vitamin-D-Spiegel unter 50 nmol/L (Mangelgrenze)",
+          "quelle": "Cashman et al. 2016 + Rupprecht et al. 2023 Meta-Analyse",
+          "erklaerung": {
+            "was_bedeutet": "In Europa haben 4 von 10 Erwachsenen einen Vitamin-D-Spiegel unter dem als 'ausreichend' definierten Wert von 50 nmol/L. In Wintermonaten (Oktober-März) ist der Anteil noch höher, weil die Sonne in unseren Breiten zu flach steht um Vitamin D in der Haut zu produzieren. Vitamin-D-Mangel ist damit kein 'Nische'-Problem sondern weit verbreitet.",
+            "studie_zeigt": "In repräsentativen Bevölkerungsstichproben aus mehreren europäischen Ländern (Großbritannien, Deutschland, Spanien, Polen u.a.) wurden 25(OH)D-Spiegel gemessen. Ergebnis: Mittelwert oft bei nur 30-40 nmol/L, also im Mangelbereich. Risikogruppen: ältere Menschen, Innenraum-Arbeiter, dunkle Hauttypen, Menschen mit Übergewicht.",
+            "studien_details": "Mehrere groß angelegte Bevölkerungsstudien zusammengefasst. Cashman 2016 deckte 14 europäische Länder ab. Rupprecht 2023 fasste 49 europäische Studien mit insgesamt 7320 Personen zusammen. Methodik: Blutmessung von 25(OH)D, dem Standard-Marker für Vitamin-D-Status.",
+            "zuverlaessigkeit": "Sehr hoch. Repräsentative Bevölkerungsstichproben sind der Gold-Standard für epidemiologische Aussagen. Die Zahlen sind konsistent in mehreren unabhängigen Studien gemessen worden."
+          }
+        }
+      ]
+    },
+
+    "indikationen": [
+      {
+        "ziel": "immunsystem",
+        "staerke": 0.85,
+        "kommentar": "Reduziert Risiko akuter Atemwegsinfekte signifikant – besonders bei Mangel. Meta-Analyse Martineau 2017, BMJ"
+      },
+      {
+        "ziel": "knochengesundheit",
+        "staerke": 0.9,
+        "kommentar": "Essentiell für Kalziumaufnahme. Bei Senioren reduziert Vitamin D + Kalzium das Hüftfraktur-Risiko um ca. 16% (Cochrane Review)"
+      },
+      {
+        "ziel": "knochengesundheit_frauen",
+        "staerke": 0.85,
+        "kommentar": "Kombination mit K2 zeigt synergistischen Effekt auf Knochendichte bei postmenopausalen Frauen mit Osteoporose"
+      },
+      {
+        "ziel": "muskelfunktion_senioren",
+        "staerke": 0.7,
+        "kommentar": "Reduziert Sturzrisiko bei Senioren ≥65 Jahre um ca. 14% – wirkt über Muskelfunktion und Reaktionszeit"
+      },
+      {
+        "ziel": "stimmung",
+        "staerke": 0.4,
+        "kommentar": "Vorsichtige Evidenz für depressive Symptome – Effekt vorhanden aber klein und nicht konsistent in allen Studien"
+      },
+      {
+        "ziel": "gesundheit",
+        "staerke": 0.8,
+        "kommentar": "Grundbaustein für Hormone und Immunsystem. Bei Mangel sind die Effekte einer Supplementierung deutlich größer als bei ausreichendem Spiegel"
+      }
+    ],
+
+    "kontraindikationen": [
+      {
+        "art": "medikament",
+        "wert": "blutverduenner",
+        "schwere": "vorsichtig_k2",
+        "hinweis": "WICHTIG: Bei Einnahme von Cumarin-basierten Blutverdünnern (Marcumar, Warfarin) NUR D3 OHNE K2 einnehmen. K2 ist ein Gegenspieler dieser Medikamente. DOAKs (z.B. Eliquis) sind nicht betroffen. Im Zweifel: Arzt fragen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "hyperkalzaemie",
+        "schwere": "hart",
+        "hinweis": "Bei bekanntem zu hohem Kalziumspiegel im Blut keine Vitamin-D-Supplementation ohne ärztliche Begleitung – Vitamin D erhöht die Kalziumaufnahme"
+      },
+      {
+        "art": "medizinisch",
+        "wert": "sarkoidose",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei Sarkoidose und einigen Granulom-Erkrankungen ist Vorsicht geboten – diese Krankheiten beeinflussen den Vitamin-D-Stoffwechsel"
+      }
+    ],
+
+    "dosierung": {
+      "standard": "1.000 – 2.000 IU täglich",
+      "bereich": { "min": 1000, "max": 2000, "einheit": "IU" },
+      "obergrenze": "4.000 IU täglich (Tolerable Upper Intake Level laut EU/USA)",
+      "timing": "Morgens oder mittags zu einer fetthaltigen Mahlzeit (Vitamin D ist fettlöslich). Bei K2-Kombination: spielt keine Rolle.",
+      "quelle": "Endocrine Society Clinical Practice Guideline (Holick et al. 2011, J Clin Endocrinol Metab) + EU SCF"
+    },
+
+    "population_spezifisch": {
+      "senioren_50plus": {
+        "relevant": true,
+        "staerke": 0.95,
+        "kommentar": "Besonders wichtig: Vitamin-D-Produktion in der Haut sinkt mit dem Alter um bis zu 50%. Zusätzlich oft weniger Sonnenexposition. Wirkt nachweislich auf Sturzprävention und Knochengesundheit.",
+        "quelle": "Endocrine Society 2011 Guideline"
+      },
+      "frauen": {
+        "relevant": true,
+        "kommentar": "Frauen haben höheres Osteoporoserisiko – Vitamin D + K2 ist besonders relevant ab der Menopause."
+      },
+      "menschen_mit_uebergewicht": {
+        "relevant": true,
+        "staerke": 0.8,
+        "kommentar": "Bei BMI ≥30 wird Vitamin D im Fettgewebe 'eingefangen' und ist weniger biologisch verfügbar. Dosis kann höher liegen (ca. 1500-4000 IU täglich)."
+      },
+      "dunkle_hauttypen": {
+        "relevant": true,
+        "staerke": 0.85,
+        "kommentar": "Dunkles Hautpigment (Melanin) reduziert die Vitamin-D-Produktion in der Haut um bis zu 90%. Personen mit dunkler Haut sollten in nördlichen Breitengraden grundsätzlich supplementieren."
+      },
+      "schwangerschaft": {
+        "relevant": true,
+        "kommentar": "Vitamin D ist essentiell für die Knochen- und Immunentwicklung des Kindes. Empfehlung: 1000-2000 IU täglich nach ärztlicher Rücksprache."
+      }
+    },
+
+    "warnhinweise": [
+      "Vitamin D wird im Fettgewebe gespeichert – Überdosierung baut sich langsam ab. Maximalwert von 4.000 IU täglich nicht ohne Bluttest überschreiten",
+      "Hochdosis-Einzelgaben (z.B. 50.000 IU einmal monatlich) sind WENIGER wirksam als tägliche Standarddosen und können sogar das Sturzrisiko erhöhen",
+      "Vitamin D ohne K2: K2 sorgt dafür dass das durch D3 aufgenommene Kalzium in die Knochen geht statt in Arterien. Bei dauerhafter Supplementierung wird die Kombination empfohlen – AUSSER bei Cumarin-Blutverdünnern",
+      "Optimaler Blutspiegel (25-OH-D): 75-125 nmol/L (30-50 ng/mL). Bei Mangel macht ein Bluttest vor Therapiestart Sinn"
+    ],
+
+    "quellen": [
+      {
+        "titel": "Evaluation, Treatment, and Prevention of Vitamin D Deficiency: an Endocrine Society Clinical Practice Guideline",
+        "autoren": "Holick MF, Binkley NC, Bischoff-Ferrari HA, et al.",
+        "url": "https://academic.oup.com/jcem/article/96/7/1911/2833671",
+        "jahr": 2011,
+        "typ": "position_stand",
+        "doi": "10.1210/jc.2011-0385"
+      },
+      {
+        "titel": "Vitamin D supplementation to prevent acute respiratory tract infections: systematic review and meta-analysis of individual participant data",
+        "autoren": "Martineau AR, Jolliffe DA, Hooper RL, et al.",
+        "url": "https://www.bmj.com/content/356/bmj.i6583",
+        "jahr": 2017,
+        "typ": "meta_analyse",
+        "doi": "10.1136/bmj.i6583"
+      },
+      {
+        "titel": "Vitamin D supplementation to prevent acute respiratory infections: systematic review and meta-analysis of stratified aggregate data",
+        "autoren": "Jolliffe DA, Camargo CA Jr, Sluyter JD, et al.",
+        "url": "https://www.thelancet.com/journals/landia/article/PIIS2213-8587(24)00348-6/fulltext",
+        "jahr": 2024,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Efficacy of vitamin D3 supplementation on cancer mortality: Systematic review and individual patient data meta-analysis of randomised controlled trials",
+        "autoren": "Keum N, et al.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S156816372300082X",
+        "jahr": 2023,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Meta-Analysis of European Clinical Trials Characterizing the Healthy-Adult Serum 25-hydroxyvitamin D Response to Vitamin D Supplementation",
+        "autoren": "Rupprecht M, Wagenpfeil S, Schöpe J, et al.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10537880/",
+        "jahr": 2023,
+        "typ": "meta_analyse",
+        "doi": "10.3390/nu15183986"
+      },
+      {
+        "titel": "Vitamin D deficiency 2.0: an update on the current status worldwide",
+        "autoren": "Amrein K, Scherkl M, Hoffmann M, et al.",
+        "url": "https://www.nature.com/articles/s41430-020-0558-y",
+        "jahr": 2020,
+        "typ": "review",
+        "doi": "10.1038/s41430-020-0558-y"
+      },
+      {
+        "titel": "Vitamin D supplementation: upper limit for safety revisited?",
+        "autoren": "Rizzoli R",
+        "url": "https://link.springer.com/article/10.1007/s40520-020-01678-x",
+        "jahr": 2020,
+        "typ": "review",
+        "doi": "10.1007/s40520-020-01678-x"
+      },
+      {
+        "titel": "Efficacy of vitamin K2 in the prevention and treatment of postmenopausal osteoporosis: A systematic review and meta-analysis",
+        "autoren": "Ma ML, Ma ZJ, He YL, et al.",
+        "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.979649/full",
+        "jahr": 2022,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Vitamin D – Health Professional Fact Sheet",
+        "autoren": "NIH Office of Dietary Supplements",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
+        "jahr": 2024,
+        "typ": "position_stand"
       }
     ]
   }

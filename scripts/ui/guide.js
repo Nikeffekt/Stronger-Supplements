@@ -118,15 +118,119 @@ function guideOeffneDetail(id) {
   html +=   '<span class="gd-evidenz-sub">' + evidenzLabel(ev.level) + '</span>';
   html += '</div>';
 
+  // ── Über diesen Nährstoff (Beschreibung) ──
+  if (w.beschreibung) {
+    var b = w.beschreibung;
+    html += '<div class="gd-sektion">';
+    html +=   '<div class="gd-sektion-titel">📖 Über diesen Nährstoff</div>';
+    if (b.was_ist_es) {
+      html += '<div class="gd-besch-block">';
+      html +=   '<div class="gd-besch-titel">Was ist es?</div>';
+      html +=   '<div class="gd-besch-text">' + b.was_ist_es + '</div>';
+      html += '</div>';
+    }
+    if (b.wie_wirkt_es) {
+      html += '<div class="gd-besch-block">';
+      html +=   '<div class="gd-besch-titel">Wie wirkt es?</div>';
+      html +=   '<div class="gd-besch-text">' + b.wie_wirkt_es + '</div>';
+      html += '</div>';
+    }
+    if (b.warum_wichtig) {
+      html += '<div class="gd-besch-block">';
+      html +=   '<div class="gd-besch-titel">Warum supplementieren?</div>';
+      html +=   '<div class="gd-besch-text">' + b.warum_wichtig + '</div>';
+      html += '</div>';
+    }
+    html += '</div>';
+  }
+
+  // ── Fazit / Auf einen Blick ──
+  if (w.fazit) {
+    var f = w.fazit;
+    html += '<div class="gd-fazit">';
+    html +=   '<div class="gd-fazit-titel">🎯 Auf einen Blick</div>';
+    if (f.top_effekte && f.top_effekte.length) {
+      html += '<div class="gd-fazit-zeile">';
+      html +=   '<div class="gd-fazit-label">Top-Effekte</div>';
+      html +=   '<ul class="gd-fazit-liste">';
+      f.top_effekte.forEach(function (e) { html += '<li>' + e + '</li>'; });
+      html +=   '</ul>';
+      html += '</div>';
+    }
+    if (f.ideal_fuer) {
+      html += '<div class="gd-fazit-zeile">';
+      html +=   '<div class="gd-fazit-label">Ideal für</div>';
+      html +=   '<div class="gd-fazit-text">' + f.ideal_fuer + '</div>';
+      html += '</div>';
+    }
+    if (f.dosis) {
+      html += '<div class="gd-fazit-zeile">';
+      html +=   '<div class="gd-fazit-label">Dosis</div>';
+      html +=   '<div class="gd-fazit-text gd-fazit-dosis">' + f.dosis + '</div>';
+      html += '</div>';
+    }
+    if (f.vorsicht_bei) {
+      html += '<div class="gd-fazit-zeile gd-fazit-warn">';
+      html +=   '<div class="gd-fazit-label">⚠️ Vorsicht bei</div>';
+      html +=   '<div class="gd-fazit-text">' + f.vorsicht_bei + '</div>';
+      html += '</div>';
+    }
+    html += '</div>';
+  }
+
   // ── Effektgrößen ──
   if (ev.effekt_groesse && ev.effekt_groesse.length) {
     html += '<div class="gd-sektion">';
     html +=   '<div class="gd-sektion-titel">📊 Wissenschaftlich belegte Effekte</div>';
-    ev.effekt_groesse.forEach(function (eff) {
-      html += '<div class="gd-effekt">';
+    ev.effekt_groesse.forEach(function (eff, idx) {
+      var effId        = id + '-eff-' + idx;
+      var hatErklaerung = !!eff.erklaerung;
+
+      // Die ganze Box ist klickbar wenn Erklärung vorhanden
+      html += '<div class="gd-effekt' + (hatErklaerung ? ' gd-effekt-klickbar' : '') + '"' +
+              (hatErklaerung ? ' onclick="gdToggleErklaerung(\'' + effId + '\', this)"' : '') + '>';
       html +=   '<div class="gd-effekt-wert">' + eff.wert + ' <span class="gd-effekt-einheit">' + (eff.einheit || '') + '</span></div>';
       html +=   '<div class="gd-effekt-kontext">' + eff.kontext + '</div>';
       if (eff.quelle) html += '<div class="gd-effekt-quelle">' + eff.quelle + '</div>';
+
+      // Dezenter Hinweis dass es klickbar ist
+      if (hatErklaerung) {
+        html += '<div class="gd-effekt-hint">';
+        html +=   '<span class="gd-effekt-hint-icon">▼</span>';
+        html +=   '<span>Tippen für Details</span>';
+        html += '</div>';
+      }
+
+      // ── Aufklappbares Panel ──
+      if (hatErklaerung) {
+        html += '<div class="gd-erklaerung" id="' + effId + '" onclick="event.stopPropagation()">';
+        if (eff.erklaerung.was_bedeutet) {
+          html += '<div class="gd-erkl-block">';
+          html +=   '<div class="gd-erkl-titel">📌 Was bedeutet die Zahl?</div>';
+          html +=   '<div class="gd-erkl-text">' + eff.erklaerung.was_bedeutet + '</div>';
+          html += '</div>';
+        }
+        if (eff.erklaerung.studie_zeigt) {
+          html += '<div class="gd-erkl-block">';
+          html +=   '<div class="gd-erkl-titel">📌 Was zeigt die Studie konkret?</div>';
+          html +=   '<div class="gd-erkl-text">' + eff.erklaerung.studie_zeigt + '</div>';
+          html += '</div>';
+        }
+        if (eff.erklaerung.studien_details) {
+          html += '<div class="gd-erkl-block">';
+          html +=   '<div class="gd-erkl-titel">📌 Studiendetails</div>';
+          html +=   '<div class="gd-erkl-text">' + eff.erklaerung.studien_details + '</div>';
+          html += '</div>';
+        }
+        if (eff.erklaerung.zuverlaessigkeit) {
+          html += '<div class="gd-erkl-block">';
+          html +=   '<div class="gd-erkl-titel">📌 Wie zuverlässig ist das?</div>';
+          html +=   '<div class="gd-erkl-text">' + eff.erklaerung.zuverlaessigkeit + '</div>';
+          html += '</div>';
+        }
+        html += '</div>';
+      }
+
       html += '</div>';
     });
     if (ev.studien_anzahl) {
@@ -330,4 +434,18 @@ function typLabel(typ) {
     'review':          'Review',
   };
   return labels[typ] || typ;
+}
+
+
+// ── ERKLÄRUNGS-PANEL AUFKLAPPEN/SCHLIESSEN ──
+// box = das geklickte .gd-effekt Element (wird automatisch von onclick übergeben)
+function gdToggleErklaerung(effId, box) {
+  var panel = document.getElementById(effId);
+  if (!panel) return;
+
+  var offen = panel.classList.contains('gd-erkl-offen');
+  panel.classList.toggle('gd-erkl-offen', !offen);
+
+  // Box-State umschalten (für Hint-Icon-Rotation und Background)
+  if (box) box.classList.toggle('gd-effekt-offen', !offen);
 }

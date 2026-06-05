@@ -34,6 +34,118 @@
 }
 
 
+/* ══ BESCHREIBUNG (Über diesen Nährstoff) ══════════════════════════════ */
+.gd-besch-block {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gd-besch-block:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.gd-besch-titel {
+  font-family: var(--font-d);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--orange-l);
+  margin-bottom: 8px;
+}
+
+.gd-besch-text {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.7;
+}
+
+
+/* ══ FAZIT / AUF EINEN BLICK ═══════════════════════════════════════════ */
+.gd-fazit {
+  background: linear-gradient(135deg, var(--orange-bg-soft), rgba(255, 255, 255, 0.02));
+  border: 1px solid var(--orange-border-s);
+  border-radius: var(--r);
+  padding: 18px;
+  margin-bottom: 28px;
+}
+
+.gd-fazit-titel {
+  font-family: var(--font-d);
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--orange-l);
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--orange-border-s);
+}
+
+.gd-fazit-zeile {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.gd-fazit-zeile:last-child {
+  border-bottom: none;
+}
+
+.gd-fazit-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.gd-fazit-text {
+  font-size: 13px;
+  color: #fff;
+  line-height: 1.55;
+}
+
+.gd-fazit-dosis {
+  font-family: var(--font-m);
+  font-weight: 600;
+  color: var(--orange-l);
+}
+
+.gd-fazit-liste {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0 0;
+}
+
+.gd-fazit-liste li {
+  position: relative;
+  padding: 4px 0 4px 18px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+}
+
+.gd-fazit-liste li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 4px;
+  color: var(--orange-l);
+  font-weight: 700;
+}
+
+/* Warnzeile mit anderer Akzentfarbe */
+.gd-fazit-warn .gd-fazit-label {
+  color: rgba(239, 68, 68, 0.9);
+}
+
+
 /* ── Sektion-Wrapper ── */
 .gd-sektion {
   margin-bottom: 28px;
@@ -105,6 +217,104 @@
   padding: 8px;
   background: rgba(255, 255, 255, 0.02);
   border-radius: var(--r-sm);
+}
+
+
+/* ── KLICKBARE EFFEKT-BOX ──
+   Die gesamte Box ist klickbar wenn eine Erklärung vorhanden ist.
+   Visueller Hinweis: dezenter Border-Wechsel und "Tippen für Details"-Zeile. */
+.gd-effekt-klickbar {
+  cursor: pointer;
+  position: relative;
+  transition: border-color var(--t-fast), background var(--t-fast);
+}
+
+.gd-effekt-klickbar:hover,
+.gd-effekt-klickbar:active {
+  border-color: var(--orange-border-s);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.gd-effekt-klickbar.gd-effekt-offen {
+  border-color: var(--orange-border);
+  background: var(--orange-bg-soft);
+}
+
+/* Dezenter Hinweis am Box-Ende dass es klickbar ist */
+.gd-effekt-hint {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 11px;
+  color: var(--orange-l);
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  opacity: 0.7;
+  transition: opacity var(--t-fast);
+}
+
+.gd-effekt-klickbar:hover .gd-effekt-hint {
+  opacity: 1;
+}
+
+.gd-effekt-hint-icon {
+  display: inline-block;
+  transition: transform var(--t-base);
+  font-size: 9px;
+}
+
+.gd-effekt-offen .gd-effekt-hint-icon {
+  transform: rotate(180deg);
+}
+
+.gd-effekt-offen .gd-effekt-hint {
+  opacity: 1;
+}
+
+
+/* ── AUFKLAPPBARES ERKLÄRUNGS-PANEL ── */
+.gd-erklaerung {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 0;
+  transition: max-height var(--t-slow), opacity var(--t-base), margin-top var(--t-base);
+}
+
+.gd-erklaerung.gd-erkl-offen {
+  max-height: 2000px;  /* genug Platz für Inhalt */
+  opacity: 1;
+  margin-top: 8px;
+}
+
+/* Block pro Sub-Sektion */
+.gd-erkl-block {
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 2px solid var(--orange-border);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+}
+
+.gd-erkl-block:last-child {
+  margin-bottom: 0;
+}
+
+.gd-erkl-titel {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--orange-l);
+  margin-bottom: 6px;
+  letter-spacing: 0.3px;
+}
+
+.gd-erkl-text {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.65;
 }
 
 
