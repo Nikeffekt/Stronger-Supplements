@@ -1,24 +1,21 @@
 {
   "_meta": {
-    "schema_version": "1.1",
-    "letzte_aktualisierung": "2026-06-05",
+    "schema_version": "1.2",
+    "letzte_aktualisierung": "2026-06-06",
     "hinweis": "Diese Datei ist die Wissensbasis für die Empfehlungs-Engine. Jeder Eintrag basiert auf publizierten wissenschaftlichen Quellen. Bei Updates Quellen prüfen und Datum aktualisieren.",
     "disclaimer": "Stronger ist kein medizinisches Beratungssystem. Bei gesundheitlichen Fragen oder Vorerkrankungen ist eine ärztliche Beratung notwendig."
   },
-
   "kreatin": {
     "id": "kreatin",
     "name": "Kreatin Monohydrat",
     "kategorie": "performance",
     "ikon": "⚡",
     "kurz_beschreibung": "Das wissenschaftlich am besten erforschte Sportsupplement weltweit – steigert Kraft, Muskelmasse und kognitive Leistung.",
-
     "beschreibung": {
       "was_ist_es": "Kreatin ist eine körpereigene Substanz aus den Aminosäuren Arginin, Glycin und Methionin. Etwa 95% des Kreatins wird in den Muskeln gespeichert – als Phosphokreatin. Aus der Nahrung kommt es vor allem über rotes Fleisch und Fisch (ca. 1-2g/Tag), zusätzlich produziert der Körper selbst ca. 1g/Tag.",
       "wie_wirkt_es": "In den Muskeln dient Phosphokreatin als schnelle Energie-Reserve. Bei kurzen, intensiven Belastungen (Heben, Sprinten, Springen) wird ATP – die zelluläre Energiewährung – aus Phosphokreatin nachgeliefert. Mehr Kreatinspeicher bedeutet: mehr Energie für mehr Wiederholungen, mehr Kraft, schnellere Regeneration zwischen Sätzen.",
       "warum_wichtig": "Allein über die Nahrung erreichen die meisten Menschen nur ca. 60-80% der maximalen Muskel-Kreatinspeicher – besonders Vegetarier und Veganer haben deutlich niedrigere Werte. Die Supplementierung füllt diese Speicher zu 100% auf und ist neben Krafttraining und Protein die wirksamste evidenzbasierte Maßnahme für Muskelaufbau und Kraftsteigerung."
     },
-
     "fazit": {
       "top_effekte": [
         "+4.43 kg Oberkörperkraft & +11.35 kg Unterkörperkraft (Meta-Analyse)",
@@ -27,9 +24,14 @@
       ],
       "ideal_fuer": "Krafttrainierende, Senioren ab 50, Vegetarier & Veganer, Postmenopausale Frauen",
       "dosis": "3-5 g täglich, konsistent",
-      "vorsicht_bei": "Nierenerkrankungen, Schwangerschaft (ärztliche Rücksprache)"
+      "vorsicht_bei": "Nierenerkrankungen, Schwangerschaft (ärztliche Rücksprache)",
+      "mythen": [
+        "„Kreatin schädigt die Nieren“ – bei gesunden Nieren in Studien bis zu 5 Jahren kein Hinweis auf Schäden (ISSN 2017). Nur bei vorbestehender Nierenerkrankung ärztlich abklären.",
+        "„Loading-Phase ist Pflicht“ – falsch. Sie sättigt die Speicher nur 1-2 Wochen schneller; 3-5 g täglich erreichen dasselbe Niveau.",
+        "„Teure Spezialformen (HCl, Kre-Alkalyn, Ethyl-Ester) wirken besser“ – kein belegter Vorteil gegenüber simplem Monohydrat, dem einzigen gut erforschten Standard.",
+        "„Kreatin macht aufgeschwemmt/fett“ – die Gewichtszunahme ist intrazelluläres Wasser im Muskel, kein Körperfett."
+      ]
     },
-
     "evidenz": {
       "level": "A",
       "score": 95,
@@ -75,7 +77,6 @@
         }
       ]
     },
-
     "indikationen": [
       {
         "ziel": "muskelaufbau",
@@ -113,7 +114,6 @@
         "kommentar": "Wingate-Test: +47.81 Watt Spitzenleistung. Wirkt v.a. bei kurzen, intensiven Belastungen (<30s)"
       }
     ],
-
     "kontraindikationen": [
       {
         "art": "medikament",
@@ -128,10 +128,13 @@
         "hinweis": "Datenlage in Schwangerschaft unzureichend – nur nach ärztlicher Rücksprache"
       }
     ],
-
     "dosierung": {
       "standard": "3-5 g täglich",
-      "bereich": { "min": 3, "max": 5, "einheit": "g" },
+      "bereich": {
+        "min": 3,
+        "max": 5,
+        "einheit": "g"
+      },
       "loading_optional": {
         "dosierung": "20 g/Tag aufgeteilt in 4×5 g für 5-7 Tage",
         "danach": "3-5 g täglich",
@@ -140,7 +143,6 @@
       "timing": "Konsistent täglich, Tageszeit unwichtig. Mit Kohlenhydraten leicht bessere Aufnahme.",
       "quelle": "ISSN Position Stand 2017 (Kreider et al.) + NIH Office of Dietary Supplements"
     },
-
     "population_spezifisch": {
       "frauen": {
         "relevant": true,
@@ -159,20 +161,18 @@
         "kommentar": "Vegetarier und Veganer haben deutlich niedrigere Muskel-Kreatinspeicher (Fleisch/Fisch ist Haupt-Nahrungsquelle). Profitieren überproportional von Supplementierung."
       }
     },
-
     "warnhinweise": [
       "Serum-Kreatinin kann leicht ansteigen ohne dass eine Nierenschädigung vorliegt – das ist ein Messartefakt (mehr Kreatin → mehr Kreatinin-Abbau)",
       "Bei Loading-Phase können kurzfristig leichte Magenbeschwerden auftreten",
       "Ausreichend Wasser trinken (Kreatin bindet Wasser im Muskel)"
     ],
-
     "quellen": [
       {
         "titel": "International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine",
         "autoren": "Kreider RB, Kalman DS, Antonio J, et al.",
         "url": "https://pubmed.ncbi.nlm.nih.gov/28615996/",
         "jahr": 2017,
-        "typ": "position_stand",
+        "typ": "position-stand",
         "doi": "10.1186/s12970-017-0173-z"
       },
       {
@@ -180,14 +180,14 @@
         "autoren": "Delpino FM, et al.",
         "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11547435/",
         "jahr": 2024,
-        "typ": "meta_analyse"
+        "typ": "meta-analyse"
       },
       {
         "titel": "Impact of creatine supplementation and exercise training in older adults: a systematic review and meta-analysis",
         "autoren": "Sharifian G, et al.",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12506341/",
         "jahr": 2024,
-        "typ": "meta_analyse",
+        "typ": "meta-analyse",
         "doi": "10.1186/s11556-025-00384-9"
       },
       {
@@ -209,7 +209,7 @@
         "autoren": "Kabiri Naeini E, et al.",
         "url": "https://bmcnephrol.biomedcentral.com/articles/10.1186/s12882-025-04344-4",
         "jahr": 2025,
-        "typ": "meta_analyse"
+        "typ": "meta-analyse"
       },
       {
         "titel": "Common questions and misconceptions about creatine supplementation",
@@ -223,25 +223,22 @@
         "autoren": "EFSA Panel on Nutrition, Novel Foods and Food Allergens",
         "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2024.9100",
         "jahr": 2024,
-        "typ": "position_stand",
+        "typ": "position-stand",
         "doi": "10.2903/j.efsa.2024.9100"
       }
     ]
   },
-
   "vitamin_d3": {
     "id": "vitamin_d3",
     "name": "Vitamin D3 + K2",
     "kategorie": "gesundheit",
     "ikon": "☀️",
     "kurz_beschreibung": "Reguliert Immunsystem, Knochengesundheit und Hormone. 40-60% der Europäer haben einen Mangel – besonders im Winter.",
-
     "beschreibung": {
       "was_ist_es": "Vitamin D3 (Cholecalciferol) ist streng genommen kein Vitamin sondern ein Pro-Hormon – ein hormoneller Botenstoff. Es wird über UV-B-Strahlung in der Haut gebildet oder über die Nahrung (fettiger Fisch, Eier) aufgenommen. Vitamin K2 (Menachinon, meist als MK-7) ist ein fettlösliches Vitamin aus fermentierten Lebensmitteln, das gemeinsam mit D3 zentral für die Knochengesundheit ist.",
       "wie_wirkt_es": "Vitamin D3 reguliert über 1.000 Gene und beeinflusst Immunsystem, Hormonbildung, Muskelfunktion und Kalziumaufnahme im Darm. K2 aktiviert ein Protein namens Osteocalcin, das das durch D3 aufgenommene Kalzium gezielt in die Knochen einbaut – statt in die Arterienwände. Beide Vitamine sind synergistisch: ohne K2 fehlt der Lotse, der das Kalzium an den richtigen Ort bringt.",
       "warum_wichtig": "In Mitteleuropa kann die Sonne von Oktober bis März kein Vitamin D in der Haut produzieren – die UV-B-Strahlung ist zu schwach. Hinzu kommen Innenraum-Berufe, Sonnenschutz und im Alter eine reduzierte Hautsynthese. Ein Vitamin-D-Mangel ist daher eher die Regel als die Ausnahme, mit messbaren Auswirkungen auf Immunsystem, Knochen und Hormonhaushalt."
     },
-
     "fazit": {
       "top_effekte": [
         "12% weniger Atemwegsinfekte bei täglicher Einnahme (BMJ Meta-Analyse)",
@@ -250,9 +247,14 @@
       ],
       "ideal_fuer": "Alle Mitteleuropäer (Oktober-März), Senioren, Frauen ab Menopause, Übergewichtige, dunkle Hauttypen",
       "dosis": "1.000–2.000 IU täglich, zu fetthaltiger Mahlzeit",
-      "vorsicht_bei": "Cumarin-Blutverdünner (Marcumar/Warfarin → nur D3 OHNE K2!), Hyperkalzämie, Sarkoidose"
+      "vorsicht_bei": "Cumarin-Blutverdünner (Marcumar/Warfarin → nur D3 OHNE K2!), Hyperkalzämie, Sarkoidose",
+      "mythen": [
+        "„Je höher die Dosis, desto besser“ – falsch. Oberhalb des Normbereichs kein Zusatznutzen; sehr hohe Boli können das Sturzrisiko sogar erhöhen.",
+        "„Hochdosis-Einzelgaben (z.B. 50.000 IU monatlich) sind gleichwertig“ – tägliche Einnahme wirkt nachweislich besser.",
+        "„Vitamin D ersetzt Sonnenlicht und Lebensstil“ – es korrigiert einen Mangel, ist aber kein Allheilmittel; viele Effekte zeigen sich nur bei tatsächlichem Mangel.",
+        "„Jeder braucht zwingend K2 dazu“ – sinnvoll bei dauerhafter Supplementierung, aber bei Cumarin-Blutverdünnern kontraproduktiv. Kein pauschales Muss."
+      ]
     },
-
     "evidenz": {
       "level": "A",
       "score": 90,
@@ -298,7 +300,6 @@
         }
       ]
     },
-
     "indikationen": [
       {
         "ziel": "immunsystem",
@@ -331,7 +332,6 @@
         "kommentar": "Grundbaustein für Hormone und Immunsystem. Bei Mangel sind die Effekte einer Supplementierung deutlich größer als bei ausreichendem Spiegel"
       }
     ],
-
     "kontraindikationen": [
       {
         "art": "medikament",
@@ -352,15 +352,17 @@
         "hinweis": "Bei Sarkoidose und einigen Granulom-Erkrankungen ist Vorsicht geboten – diese Krankheiten beeinflussen den Vitamin-D-Stoffwechsel"
       }
     ],
-
     "dosierung": {
       "standard": "1.000 – 2.000 IU täglich",
-      "bereich": { "min": 1000, "max": 2000, "einheit": "IU" },
+      "bereich": {
+        "min": 1000,
+        "max": 2000,
+        "einheit": "IU"
+      },
       "obergrenze": "4.000 IU täglich (Tolerable Upper Intake Level laut EU/USA)",
       "timing": "Morgens oder mittags zu einer fetthaltigen Mahlzeit (Vitamin D ist fettlöslich). Bei K2-Kombination: spielt keine Rolle.",
       "quelle": "Endocrine Society Clinical Practice Guideline (Holick et al. 2011, J Clin Endocrinol Metab) + EU SCF"
     },
-
     "population_spezifisch": {
       "senioren_50plus": {
         "relevant": true,
@@ -387,21 +389,19 @@
         "kommentar": "Vitamin D ist essentiell für die Knochen- und Immunentwicklung des Kindes. Empfehlung: 1000-2000 IU täglich nach ärztlicher Rücksprache."
       }
     },
-
     "warnhinweise": [
       "Vitamin D wird im Fettgewebe gespeichert – Überdosierung baut sich langsam ab. Maximalwert von 4.000 IU täglich nicht ohne Bluttest überschreiten",
       "Hochdosis-Einzelgaben (z.B. 50.000 IU einmal monatlich) sind WENIGER wirksam als tägliche Standarddosen und können sogar das Sturzrisiko erhöhen",
       "Vitamin D ohne K2: K2 sorgt dafür dass das durch D3 aufgenommene Kalzium in die Knochen geht statt in Arterien. Bei dauerhafter Supplementierung wird die Kombination empfohlen – AUSSER bei Cumarin-Blutverdünnern",
       "Optimaler Blutspiegel (25-OH-D): 75-125 nmol/L (30-50 ng/mL). Bei Mangel macht ein Bluttest vor Therapiestart Sinn"
     ],
-
     "quellen": [
       {
         "titel": "Evaluation, Treatment, and Prevention of Vitamin D Deficiency: an Endocrine Society Clinical Practice Guideline",
         "autoren": "Holick MF, Binkley NC, Bischoff-Ferrari HA, et al.",
         "url": "https://academic.oup.com/jcem/article/96/7/1911/2833671",
         "jahr": 2011,
-        "typ": "position_stand",
+        "typ": "position-stand",
         "doi": "10.1210/jc.2011-0385"
       },
       {
@@ -409,7 +409,7 @@
         "autoren": "Martineau AR, Jolliffe DA, Hooper RL, et al.",
         "url": "https://www.bmj.com/content/356/bmj.i6583",
         "jahr": 2017,
-        "typ": "meta_analyse",
+        "typ": "meta-analyse",
         "doi": "10.1136/bmj.i6583"
       },
       {
@@ -417,21 +417,21 @@
         "autoren": "Jolliffe DA, Camargo CA Jr, Sluyter JD, et al.",
         "url": "https://www.thelancet.com/journals/landia/article/PIIS2213-8587(24)00348-6/fulltext",
         "jahr": 2024,
-        "typ": "meta_analyse"
+        "typ": "meta-analyse"
       },
       {
         "titel": "Efficacy of vitamin D3 supplementation on cancer mortality: Systematic review and individual patient data meta-analysis of randomised controlled trials",
         "autoren": "Keum N, et al.",
         "url": "https://www.sciencedirect.com/science/article/abs/pii/S156816372300082X",
         "jahr": 2023,
-        "typ": "meta_analyse"
+        "typ": "meta-analyse"
       },
       {
         "titel": "Meta-Analysis of European Clinical Trials Characterizing the Healthy-Adult Serum 25-hydroxyvitamin D Response to Vitamin D Supplementation",
         "autoren": "Rupprecht M, Wagenpfeil S, Schöpe J, et al.",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10537880/",
         "jahr": 2023,
-        "typ": "meta_analyse",
+        "typ": "meta-analyse",
         "doi": "10.3390/nu15183986"
       },
       {
@@ -455,14 +455,460 @@
         "autoren": "Ma ML, Ma ZJ, He YL, et al.",
         "url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2022.979649/full",
         "jahr": 2022,
-        "typ": "meta_analyse"
+        "typ": "meta-analyse"
       },
       {
         "titel": "Vitamin D – Health Professional Fact Sheet",
         "autoren": "NIH Office of Dietary Supplements",
         "url": "https://ods.od.nih.gov/factsheets/VitaminD-HealthProfessional/",
         "jahr": 2024,
-        "typ": "position_stand"
+        "typ": "position-stand"
+      }
+    ]
+  },
+  "omega3": {
+    "id": "omega3",
+    "name": "Omega-3 (EPA/DHA)",
+    "kategorie": "gesundheit",
+    "ikon": "🐟",
+    "kurz_beschreibung": "Marine Fettsäuren EPA & DHA – senken Triglyceride, wirken entzündungshemmend und unterstützen Herz, Gehirn und Gelenke. Die meisten Menschen nehmen zu wenig auf.",
+    "beschreibung": {
+      "was_ist_es": "Omega-3-Fettsäuren sind mehrfach ungesättigte Fettsäuren, die der Körper nicht selbst herstellen kann (essentiell). Die biologisch wirksamsten Formen sind die langkettigen marinen Fettsäuren EPA (Eicosapentaensäure) und DHA (Docosahexaensäure) aus fettem Fisch (Lachs, Makrele, Sardine) und Algen. Die pflanzliche Vorstufe ALA (aus Lein, Chia, Walnuss) wird im Körper nur zu wenigen Prozent in EPA/DHA umgewandelt und ist daher kein gleichwertiger Ersatz.",
+      "wie_wirkt_es": "EPA und DHA werden in die Zellmembranen eingebaut und beeinflussen von dort aus zahlreiche Prozesse: Sie senken die Triglyceride in der Leber, dienen als Ausgangsstoff für entzündungsauflösende Botenstoffe (Resolvine, Protectine) statt entzündungsfördernder, stabilisieren Herzrhythmus und Gefäßfunktion und sind ein zentraler Strukturbaustein von Gehirn und Netzhaut (DHA macht einen großen Teil der grauen Substanz aus).",
+      "warum_wichtig": "Die westliche Ernährung liefert reichlich Omega-6, aber wenig Omega-3 – das Verhältnis ist stark zugunsten entzündungsfördernder Fettsäuren verschoben. Wer nicht regelmäßig fetten Fisch isst (mind. 1–2 Portionen/Woche), erreicht die empfohlene EPA/DHA-Zufuhr meist nicht. Ein niedriger Omega-3-Index ist mit höherem Herz-Kreislauf-Risiko assoziiert."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Senkt Triglyceride dosisabhängig um ca. 15–30 % (Dose-Response-Meta-Analyse, JAHA 2023)",
+        "Reduziert kardiovaskuläre Ereignisse moderat – EPA-Formulierungen am stärksten (38-RCT-Meta-Analyse)",
+        "Lindert Entzündung & Krankheitsaktivität bei rheumatoider Arthritis (weniger Morgensteifigkeit, geringerer NSAR-Bedarf)"
+      ],
+      "ideal_fuer": "Menschen mit wenig Fischkonsum, erhöhten Triglyceriden, entzündlichen Gelenkerkrankungen, Vegetarier/Veganer (Algenöl), Schwangere/Stillende (DHA)",
+      "dosis": "250–500 mg EPA+DHA täglich als Basis; 1–2 g bei erhöhtem Bedarf, zu einer Mahlzeit",
+      "vorsicht_bei": "Blutverdünner & Gerinnungshemmer, geplante Operationen, bekanntes Vorhofflimmern bzw. hohes Herz-Kreislauf-Risiko (Hochdosis >1,5 g/Tag), Ibrutinib-Therapie",
+      "mythen": [
+        "„Pflanzliches Omega-3 (Leinöl, Chia) ersetzt Fischöl“ – falsch. Die Umwandlung von ALA in EPA/DHA liegt nur bei wenigen Prozent; für relevante EPA/DHA-Spiegel braucht es Fisch- oder Algenöl.",
+        "„Viel hilft viel“ – falsch. Hochdosis >1,5 g/Tag bringt bei Gesunden kaum Zusatznutzen, erhöht aber bei Herz-Risiko-Patienten das Vorhofflimmern-Risiko.",
+        "„Omega-3 senkt zuverlässig das Herzinfarkt-Risiko bei jedem“ – überzogen. Große Studien (VITAL, ASCEND) zeigten bei Allgemeinbevölkerung nur geringe bis keine Effekte; klare Vorteile vor allem bei hohen Triglyceriden/EPA-Hochdosis (REDUCE-IT).",
+        "„Mehr Omega-3-Index = automatisch gesünder“ – der Index ist ein nützlicher Marker, aber kein Garant; Ernährung und Lebensstil als Ganzes zählen."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 78,
+      "review_typ": "meta-analyse",
+      "studien_anzahl": 90,
+      "konsens": "Mehrere Dose-Response-Meta-Analysen (JAHA 2023, Lancet eClinMed 2021) + EFSA-Bewertung",
+      "effekt_groesse": [
+        {
+          "wert": 22,
+          "einheit": "%",
+          "kontext": "Mittlere Triglycerid-Senkung (dosisabhängig ca. 15–30 %) vs. Placebo",
+          "quelle": "Wang et al. 2023, JAHA Dose-Response-Meta-Analyse",
+          "erklaerung": {
+            "was_bedeutet": "Omega-3 senkt die Triglyceride – ein Blutfettwert, der bei erhöhten Werten das Herz-Kreislauf-Risiko steigert. Die Senkung ist dosisabhängig: je höher die EPA/DHA-Dosis, desto stärker der Effekt, typischerweise im Bereich 15–30 %. Wichtig: Der Effekt ist bei Menschen mit hohen Ausgangswerten am größten, bei normalen Triglyceriden eher klein.",
+            "studie_zeigt": "In der dosisabhängigen Auswertung sank der Triglyceridspiegel mit steigender Omega-3-Dosis kontinuierlich. Gleichzeitig kann das 'schlechte' LDL-Cholesterin bei DHA leicht ansteigen – weshalb der Gesamteffekt auf die Blutfette differenziert betrachtet werden muss.",
+            "studien_details": "Kontinuierliche Dose-Response-Meta-Analyse randomisierter kontrollierter Studien mit 1-stage-Spline-Modell, publiziert im Journal of the American Heart Association (JAHA), 2023. Untersucht wurden Triglyceride, LDL-C, HDL-C, non-HDL-C und ApoB in der Allgemeinbevölkerung und Untergruppen.",
+            "zuverlaessigkeit": "Hoch – Dose-Response-Meta-Analysen erlauben präzisere Aussagen als einfache Mittelwert-Vergleiche, weil sie den Zusammenhang über den gesamten Dosisbereich modellieren. Die Triglycerid-Senkung gehört zu den am besten belegten Omega-3-Effekten."
+          }
+        },
+        {
+          "wert": -0.28,
+          "einheit": "cohen_d",
+          "kontext": "Verbesserung depressiver Symptome (kleiner Effekt), EPA-dominante Formeln wirksamer",
+          "quelle": "Bai et al. 2018, Meta-Analyse 26 RCTs (n=2160)",
+          "erklaerung": {
+            "was_bedeutet": "Bei Menschen mit depressiven Symptomen verbesserte Omega-3 die Stimmung im Mittel leicht (standardisierte Effektgröße ca. -0.28, ein kleiner bis moderater Effekt). Entscheidend ist die Zusammensetzung: Präparate mit hohem EPA-Anteil (≥60 %) bei einer Dosis bis ca. 1 g/Tag zeigten Nutzen, reine DHA-Präparate nicht.",
+            "studie_zeigt": "Über 26 doppelblinde, placebokontrollierte Studien hinweg war der Gesamteffekt auf depressive Symptome statistisch signifikant (P=0.004). EPA-reine und EPA-betonte Formulierungen wirkten am deutlichsten, DHA-betonte kaum. Das ist ergänzende Evidenz – kein Ersatz für eine Depressionsbehandlung.",
+            "studien_details": "Meta-Analyse doppelblinder RCTs, systematische Suche in PubMed und EMBASE, 2160 Teilnehmer. Auswertung mit Fixed-/Random-Effects-Modellen, Sensitivitätsanalyse und Funnel-Plot zur Prüfung auf Publikationsbias.",
+            "zuverlaessigkeit": "Moderat – der Effekt ist real, aber klein und je nach Formulierung unterschiedlich. Omega-3 ist hier eine mögliche Ergänzung, kein eigenständiges Antidepressivum. Bei Depression gehört die Behandlung in ärztliche/therapeutische Hände."
+          }
+        },
+        {
+          "wert": 24,
+          "einheit": "% (relatives Risiko)",
+          "kontext": "Erhöhtes Vorhofflimmern-Risiko unter pharmakologischer Omega-3-Hochdosis (Sicherheitsbefund)",
+          "quelle": "Gencer et al. 2021, Circulation Meta-Analyse (n=83.112) + Update 2025 (34 RCTs, n=114.326)",
+          "erklaerung": {
+            "was_bedeutet": "Das ist ein Sicherheits- und kein Wirksamkeitsbefund: Hohe Dosen verschreibungspflichtiger Omega-3-Präparate erhöhten in Studien das Risiko für Vorhofflimmern (eine Herzrhythmusstörung). Das Risiko ist dosisabhängig und betrifft vor allem hohe Dosen (>1,5 g/Tag) bei Menschen mit hohem Herz-Kreislauf-Risiko. Der absolute Anstieg ist klein (etwa 1 %).",
+            "studie_zeigt": "In der gepoolten Auswertung stieg das relative Vorhofflimmern-Risiko um ca. 24 %. Eine aktualisierte Meta-Analyse 2025 (34 RCTs, 114.326 Personen) zeigte: Nur die Kombination aus hohem Herz-Risiko UND Hochdosis (>1,5 g/Tag) ergab ein statistisch signifikant erhöhtes Risiko (Odds Ratio 1,48). Niedrige Dosen (~1 g/Tag oder weniger) waren weitgehend unauffällig.",
+            "studien_details": "Mehrere große Meta-Analysen randomisierter Outcome-Studien, u.a. publiziert in Circulation (2021) und als Update auf medRxiv (2025). Eingeschlossen wurden Studien mit pharmakologischen EPA/DHA-Dosen, Mindestlaufzeit 12 Monate, Patienten mit vorbestehendem Vorhofflimmern ausgeschlossen.",
+            "zuverlaessigkeit": "Hoch für die Aussage 'Hochdosis bei Herz-Risiko erhöht das AF-Risiko'. Wichtig fürs Verständnis: Marines Omega-3 aus der Ernährung (Fisch) ist im Gegenteil mit niedrigerem AF-Risiko assoziiert – das Risiko betrifft hohe Supplement-/Arzneidosen, nicht moderate Mengen."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "herzgesundheit",
+        "staerke": 0.7,
+        "kommentar": "Senkt Triglyceride und reduziert kardiovaskuläre Ereignisse moderat. Stärkster Nutzen bei erhöhten Triglyceriden und EPA-Hochdosis (REDUCE-IT). Bei Allgemeinbevölkerung kleinerer Effekt (VITAL, ASCEND)."
+      },
+      {
+        "ziel": "entzuendung",
+        "staerke": 0.65,
+        "kommentar": "Reduziert entzündliche Marker und Krankheitsaktivität bei rheumatoider Arthritis – weniger Morgensteifigkeit und NSAR-Bedarf (18-RCT-Meta-Analyse 2024)."
+      },
+      {
+        "ziel": "gelenkgesundheit",
+        "staerke": 0.6,
+        "kommentar": "Bei entzündlichen Gelenkerkrankungen klinisch relevante Linderung; bei reiner Arthrose schwächere Evidenz."
+      },
+      {
+        "ziel": "gehirn_kognition",
+        "staerke": 0.4,
+        "kommentar": "DHA ist Strukturbaustein des Gehirns; Evidenz für kognitiven Schutz im Alter gemischt. Klarer Nutzen v.a. bei niedrigem Ausgangsstatus."
+      },
+      {
+        "ziel": "stimmung",
+        "staerke": 0.4,
+        "kommentar": "Kleiner Effekt auf depressive Symptome, EPA-betonte Formeln wirksamer. Ergänzend, kein Ersatz für Therapie."
+      },
+      {
+        "ziel": "gesundheit",
+        "staerke": 0.7,
+        "kommentar": "Essentielle Fettsäure, die viele über die Ernährung zu wenig aufnehmen. Solider Grundbaustein bei geringem Fischkonsum."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medikament",
+        "wert": "blutverduenner",
+        "schwere": "vorsichtig",
+        "hinweis": "Omega-3 kann die Blutgerinnung leicht hemmen. Bei Einnahme von Gerinnungshemmern (z.B. Warfarin, ASS, DOAKs) oder vor Operationen ärztlich abklären. Hinweis: In klinischen Studien wurde trotz theoretischer Bedenken meist KEIN erhöhtes Blutungsrisiko nachgewiesen – Vorsicht bleibt aber sinnvoll."
+      },
+      {
+        "art": "medikament",
+        "wert": "ibrutinib",
+        "schwere": "hart",
+        "hinweis": "Unter Ibrutinib (Krebstherapie) sollten Fischöl-Präparate wegen erhöhtem Nasenbluten-Risiko gemieden werden."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "vorhofflimmern_hochrisiko",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei bekanntem Vorhofflimmern oder hohem Herz-Kreislauf-Risiko keine Hochdosis (>1,5 g/Tag) ohne ärztliche Begleitung – Hochdosis erhöht in dieser Gruppe das Vorhofflimmern-Risiko."
+      }
+    ],
+    "dosierung": {
+      "standard": "250–500 mg EPA+DHA täglich (Basisbedarf)",
+      "bereich": {
+        "min": 250,
+        "max": 2000,
+        "einheit": "mg EPA+DHA"
+      },
+      "obergrenze": "Bis 5 g/Tag EPA+DHA laut EFSA für Erwachsene ohne Sicherheitsbedenken; >3 g/Tag nur unter ärztlicher Begleitung. DHA allein: konservativer EFSA-Safe-Level 1 g/Tag (2026).",
+      "timing": "Zu einer fetthaltigen Mahlzeit (EPA/DHA sind fettlöslich – verbessert die Aufnahme). Tageszeit unwichtig. Bei erhöhten Triglyceriden 1–2 g/Tag, therapeutisch 2–4 g/Tag nur ärztlich.",
+      "quelle": "EFSA (250–500 mg EPA+DHA Basis; Safe-Level-Bewertung 2024/2026) + American Heart Association"
+    },
+    "population_spezifisch": {
+      "schwangerschaft": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "DHA ist wichtig für die Gehirn- und Augenentwicklung des Kindes. Empfehlung meist 200–300 mg DHA zusätzlich täglich. Auf schadstoffarme Quellen (Algenöl oder geprüftes Fischöl) achten.",
+        "quelle": "EFSA + Leitlinien zur Schwangerenernährung"
+      },
+      "vegetarier_veganer": {
+        "relevant": true,
+        "staerke": 0.85,
+        "kommentar": "Pflanzliche ALA-Quellen (Lein, Chia) werden kaum in EPA/DHA umgewandelt. Algenöl liefert EPA/DHA direkt und ist die vegane Wahl der Wahl."
+      },
+      "senioren_50plus": {
+        "relevant": true,
+        "staerke": 0.5,
+        "kommentar": "Potenzieller Nutzen für Herz, Gelenke und kognitive Funktion; gleichzeitig auf Hochdosis-Risiko (Vorhofflimmern) bei Herz-Risiko-Patienten achten."
+      },
+      "menschen_mit_hohen_triglyceriden": {
+        "relevant": true,
+        "staerke": 0.8,
+        "kommentar": "Stärkster Wirksamkeitsbereich: 1–4 g/Tag senken Triglyceride deutlich. Höhere therapeutische Dosen nur unter ärztlicher Kontrolle."
+      }
+    },
+    "warnhinweise": [
+      "Qualität ist entscheidend: Auf Reinheit (Schwermetalle, geprüfte Schadstoffwerte) und Oxidationsstabilität (Frische, TOTOX-Wert) achten – ranziges Fischöl ist kontraproduktiv.",
+      "Triglycerid-Form und Ethylester unterscheiden sich in der Bioverfügbarkeit; die Triglycerid-(rTG-)Form gilt als besser aufnehmbar und magenfreundlicher.",
+      "Hohe Dosen (>1,5 g/Tag) können bei Menschen mit hohem Herz-Kreislauf-Risiko das Vorhofflimmern-Risiko erhöhen – nicht ohne Grund hochdosieren.",
+      "Häufigste Nebenwirkung sind milde Magen-Darm-Beschwerden und 'Fisch-Aufstoßen' – mit der Mahlzeit eingenommen oder als gekühlte Kapsel meist vermeidbar.",
+      "Der Omega-3-Index (Anteil EPA+DHA in den roten Blutkörperchen) lässt sich messen; ein Zielwert von ca. 8–11 % gilt als günstig."
+    ],
+    "quellen": [
+      {
+        "titel": "Association Between Omega-3 Fatty Acid Intake and Dyslipidemia: A Continuous Dose-Response Meta-Analysis of Randomized Controlled Trials",
+        "autoren": "Wang T, Zhang X, Zhou N, et al.",
+        "url": "https://www.ahajournals.org/doi/10.1161/JAHA.123.029512",
+        "jahr": 2023,
+        "typ": "meta-analyse",
+        "doi": "10.1161/JAHA.123.029512"
+      },
+      {
+        "titel": "Effect of omega-3 fatty acids on cardiovascular outcomes: A systematic review and meta-analysis",
+        "autoren": "Khan SU, Lone AN, Khan MS, et al.",
+        "url": "https://www.thelancet.com/journals/eclinm/article/piis2589-5370(21)00277-7/fulltext",
+        "jahr": 2021,
+        "typ": "meta-analyse"
+      },
+      {
+        "titel": "Effect of Long-Term Marine omega-3 Fatty Acids Supplementation on the Risk of Atrial Fibrillation in Randomized Controlled Trials of Cardiovascular Outcomes: A Systematic Review and Meta-Analysis",
+        "autoren": "Gencer B, Djousse L, Al-Ramady OT, et al.",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.121.055654",
+        "jahr": 2021,
+        "typ": "meta-analyse",
+        "doi": "10.1161/CIRCULATIONAHA.121.055654"
+      },
+      {
+        "titel": "Effects of Omega-3 Fatty Acid Treatment on Risk for Atrial Fibrillation: An Updated Meta-Analysis of 34 Trials including 114,326 Individuals",
+        "autoren": "O'Keefe JH, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12723971/",
+        "jahr": 2025,
+        "typ": "meta-analyse"
+      },
+      {
+        "titel": "Effects of omega-3 supplementation on lipid metabolism, inflammation, and disease activity in rheumatoid arthritis: a meta-analysis of randomized controlled trials",
+        "autoren": "Liu X, et al.",
+        "url": "https://link.springer.com/article/10.1007/s10067-024-07040-0",
+        "jahr": 2024,
+        "typ": "meta-analyse",
+        "doi": "10.1007/s10067-024-07040-0"
+      },
+      {
+        "titel": "Efficacy of omega-3 PUFAs in depression: A meta-analysis",
+        "autoren": "Bai ZG, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6683166/",
+        "jahr": 2018,
+        "typ": "meta-analyse"
+      },
+      {
+        "titel": "Scientific Opinion on the tolerable upper intake level for supplemental docosahexaenoic acid (DHA)",
+        "autoren": "EFSA Panel on Nutrition, Novel Foods and Food Allergens",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12802091/",
+        "jahr": 2025,
+        "typ": "position-stand"
+      },
+      {
+        "titel": "Omega-3 Fatty Acids - Health Professional Fact Sheet",
+        "autoren": "NIH Office of Dietary Supplements",
+        "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+        "jahr": 2024,
+        "typ": "position-stand"
+      }
+    ]
+  },
+  "magnesium": {
+    "id": "magnesium",
+    "name": "Magnesium (Bisglycinat)",
+    "kategorie": "gesundheit",
+    "ikon": "🟢",
+    "kurz_beschreibung": "An über 300 Enzymreaktionen beteiligt – wichtig für Muskeln, Nerven, Blutdruck und Energiestoffwechsel. Ein Teil der Bevölkerung nimmt zu wenig auf.",
+    "beschreibung": {
+      "was_ist_es": "Magnesium ist ein essentieller Mineralstoff und Cofaktor für mehr als 300 Enzymreaktionen im Körper – darunter Energieproduktion (ATP), Muskelkontraktion, Nervenfunktion und DNA-Synthese. Es kommt natürlich in Nüssen, Samen, Vollkorn, Hülsenfrüchten und grünem Blattgemüse vor. Als Supplement gibt es viele Salzformen, die sich stark in der Aufnahme unterscheiden.",
+      "wie_wirkt_es": "Magnesium reguliert als Gegenspieler von Kalzium die Muskel- und Nervenerregbarkeit: Es dämpft Übererregung, entspannt Muskulatur und stabilisiert die Reizweiterleitung. Im Energiestoffwechsel ist es für die Nutzung von ATP – dem zellulären Energieträger – unverzichtbar. Außerdem beeinflusst es Gefäßspannung (Blutdruck) und die Insulinwirkung.",
+      "warum_wichtig": "Ein relevanter Teil der Bevölkerung erreicht die empfohlene Magnesiumzufuhr über die Ernährung nicht, da verarbeitete Lebensmittel wenig liefern. Sportler verlieren zusätzlich Magnesium über den Schweiß. Ein Mangel kann sich unspezifisch äußern – etwa durch Muskelkrämpfe, Müdigkeit, Reizbarkeit oder Schlafprobleme. Der Effekt einer Supplementierung ist bei tatsächlichem Mangel am größten."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Senkt den Blutdruck moderat (ca. -2,8 mmHg systolisch) – deutlich stärker bei Bluthochdruck oder Mangel",
+        "Verbessert den Blutzucker bei Typ-2-Diabetes (niedrigerer Nüchternglukosewert), besonders bei Magnesiummangel",
+        "Unterstützt Muskelfunktion & Krampfneigung bei nachgewiesenem Mangel"
+      ],
+      "ideal_fuer": "Menschen mit geringer Zufuhr, Sportler (Schweißverlust), Bluthochdruck, Typ-2-Diabetes/Insulinresistenz, ältere Personen, Schwangere mit Wadenkrämpfen",
+      "dosis": "300–400 mg elementares Magnesium täglich, idealerweise abends, gut verträgliche Form (Bisglycinat)",
+      "vorsicht_bei": "Niereninsuffizienz, bestimmte Antibiotika & Schilddrüsenhormone (zeitlicher Abstand nötig), sehr hohe Dosen (Durchfall)",
+      "mythen": [
+        "„Magnesium hilft jedem gegen Muskelkrämpfe“ – überzogen. Klarer Nutzen vor allem bei Mangel; bei nächtlichen Krämpfen ohne Mangel ist die Evidenz schwach.",
+        "„Magnesium ist ein zuverlässiges Schlafmittel“ – die Schlaf-Evidenz ist schwach (kleine Effekte, niedrige Studienqualität). Es kann bei Mangel helfen, ist aber kein Schlafmittel.",
+        "„Mehr ist besser“ – falsch. Über der Supplement-Obergrenze (ca. 350 mg elementar) drohen vor allem Durchfall; der Körper scheidet Überschuss aus.",
+        "„Magnesiumoxid ist genauso gut und billiger“ – Oxid hat eine schlechte Bioverfügbarkeit. Organische Formen (Bisglycinat, Citrat, Malat) werden deutlich besser aufgenommen."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 74,
+      "review_typ": "meta-analyse",
+      "studien_anzahl": 60,
+      "konsens": "Mehrere Meta-Analysen (Blutdruck, Typ-2-Diabetes) + NIH ODS / EFSA-Referenzwerte",
+      "effekt_groesse": [
+        {
+          "wert": -2.81,
+          "einheit": "mmHg",
+          "kontext": "Senkung des systolischen Blutdrucks vs. Placebo (stärker bei Hypertonie/Mangel)",
+          "quelle": "Meta-Analyse RCTs, PubMed 2024 (median 365 mg, 12 Wochen)",
+          "erklaerung": {
+            "was_bedeutet": "Magnesium senkt den oberen (systolischen) Blutdruck im Mittel um etwa 2,8 mmHg und den unteren (diastolischen) um etwa 2,0 mmHg. Das ist für sich genommen ein moderater Effekt. Entscheidend: Bei Menschen mit Bluthochdruck (besonders unter Blutdruckmedikamenten) oder Magnesiummangel ist der Effekt deutlich größer – bis zu -7,7 mmHg systolisch.",
+            "studie_zeigt": "Über die eingeschlossenen Studien hinweg sank der systolische Blutdruck signifikant. Bei Menschen mit normalem Blutdruck wurde die statistische Signifikanz dagegen nicht erreicht – Magnesium 'normalisiert' eher, als dass es bei Gesunden den Druck weiter senkt.",
+            "studien_details": "Systematische Übersicht und Meta-Analyse randomisierter kontrollierter Studien. Eingesetzte Dosen 82–637 mg elementares Magnesium (Median 365 mg), mediane Interventionsdauer 12 Wochen, Random-Effects-Modell.",
+            "zuverlaessigkeit": "Hoch für die Aussage 'moderate Senkung, stärker bei Hypertonie/Mangel'. Der Effekt ist konsistent über mehrere Meta-Analysen, aber klinisch moderat – Magnesium ersetzt keine Blutdruckmedikation."
+          }
+        },
+        {
+          "wert": -0.58,
+          "einheit": "mmol/L",
+          "kontext": "Senkung des Nüchternblutzuckers bei Typ-2-Diabetes (HbA1c nur minimal)",
+          "quelle": "Al Maqrashi et al. 2025, Meta-Analyse 23 RCTs (n=1.345)",
+          "erklaerung": {
+            "was_bedeutet": "Bei Menschen mit Typ-2-Diabetes senkte Magnesium den Nüchternblutzucker messbar. Auf den Langzeitwert HbA1c (Blutzuckergedächtnis der letzten ~3 Monate) war der Effekt dagegen nur minimal. Der Nutzen war am größten bei Personen mit Magnesiummangel, über 65 Jahren und bei längerer Einnahme.",
+            "studie_zeigt": "Magnesium erhöhte erwartungsgemäß den Serum-Magnesiumspiegel und senkte den Nüchternblutzucker (WMD -0,58 mmol/L). Der HbA1c-Effekt war klein und statistisch grenzwertig. Begleitend zeigten sich günstige Tendenzen bei Blutfetten und diastolischem Blutdruck.",
+            "studien_details": "Systematische Übersicht und Meta-Analyse von 23 randomisierten kontrollierten Studien mit 1.345 Teilnehmern, Subgruppenanalysen nach Alter, Dauer und Magnesiumform.",
+            "zuverlaessigkeit": "Moderat bis hoch – konsistenter Effekt auf den Nüchternblutzucker, aber begrenzte Wirkung auf den wichtigeren Langzeitwert HbA1c. Magnesium ist eine sinnvolle Ergänzung, kein Diabetes-Medikament."
+          }
+        },
+        {
+          "wert": 0.2,
+          "einheit": "cohen_d",
+          "kontext": "Verbesserung der Schlafqualität bei schlechtem Schlaf (kleiner Effekt)",
+          "quelle": "Schuster et al. 2025, RCT Bisglycinat (n=155) + Mah et al. 2021 Meta-Analyse",
+          "erklaerung": {
+            "was_bedeutet": "Magnesium wird oft als Schlafmittel beworben – die Studienlage ist aber schwächer als der Hype. In einer aktuellen Studie mit Bisglycinat verbesserte sich der Insomnie-Score zwar signifikant gegenüber Placebo, der Effekt war jedoch klein (Cohen's d ≈ 0,2). Am ehesten profitieren Menschen mit niedriger Magnesiumzufuhr.",
+            "studie_zeigt": "Im RCT sank der Insomnia Severity Index unter Magnesium-Bisglycinat (250 mg) stärker als unter Placebo, mit den größten Verbesserungen in den ersten zwei Wochen. Eine ältere Meta-Analyse aus 3 kleinen Studien fand nur eine geringe, statistisch nicht eindeutige Verkürzung der Einschlafzeit und stufte die Evidenzqualität (GRADE) als niedrig ein.",
+            "studien_details": "Randomisierte, doppelblinde, placebokontrollierte Studie mit 155 Erwachsenen (Schuster 2025) plus systematische Meta-Analyse von 3 RCTs mit 151 älteren Erwachsenen (Mah 2021), Bewertung per RoB 2.0 und GRADE.",
+            "zuverlaessigkeit": "Niedrig bis moderat – die Effekte sind klein und die Studienbasis dünn. Ehrlich eingeordnet: Magnesium kann bei Mangel den Schlaf etwas unterstützen, ist aber kein verlässliches Schlafmittel."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "blutdruck",
+        "staerke": 0.65,
+        "kommentar": "Moderate Senkung des systolischen Blutdrucks, deutlich stärker bei Hypertonie und Magnesiummangel. Konsistent über mehrere Meta-Analysen."
+      },
+      {
+        "ziel": "blutzucker_diabetes",
+        "staerke": 0.6,
+        "kommentar": "Senkt Nüchternblutzucker bei Typ-2-Diabetes, besonders bei Mangel; HbA1c-Effekt klein. Ergänzend zur Therapie."
+      },
+      {
+        "ziel": "muskelfunktion",
+        "staerke": 0.55,
+        "kommentar": "Bei nachgewiesenem Mangel relevant für Muskelkontraktion und Krampfneigung; bei ausreichender Versorgung schwächere Evidenz."
+      },
+      {
+        "ziel": "schlaf",
+        "staerke": 0.35,
+        "kommentar": "Kleiner Effekt auf Schlafqualität, vor allem bei niedriger Zufuhr. Evidenz schwach – kein Schlafmittel."
+      },
+      {
+        "ziel": "ausdauer",
+        "staerke": 0.4,
+        "kommentar": "Für Sportler relevant wegen erhöhtem Schweißverlust; Leistungssteigerung bei bereits ausreichender Versorgung nicht belegt."
+      },
+      {
+        "ziel": "gesundheit",
+        "staerke": 0.7,
+        "kommentar": "Essentieller Mineralstoff, den ein Teil der Bevölkerung zu wenig aufnimmt. Solider Grundbaustein, Nutzen am größten bei Mangel."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medizinisch",
+        "wert": "niereninsuffizienz",
+        "schwere": "hart",
+        "hinweis": "Bei eingeschränkter Nierenfunktion kann Magnesium nicht ausreichend ausgeschieden werden – Gefahr der Überladung (Hypermagnesiämie). Supplementierung nur unter ärztlicher Kontrolle."
+      },
+      {
+        "art": "medikament",
+        "wert": "antibiotika_schilddruese",
+        "schwere": "vorsichtig",
+        "hinweis": "Magnesium kann die Aufnahme bestimmter Medikamente verringern (z.B. Tetracyclin-/Chinolon-Antibiotika, Bisphosphonate, Schilddrüsenhormone wie L-Thyroxin). Zeitlichen Abstand von mehreren Stunden einhalten."
+      },
+      {
+        "art": "dosis",
+        "wert": "hohe_dosis_durchfall",
+        "schwere": "vorsichtig",
+        "hinweis": "Dosen über ca. 350 mg elementares Magnesium aus Supplementen können abführend wirken (osmotischer Durchfall). Aufteilen auf mehrere Gaben und zu den Mahlzeiten einnehmen mildert das."
+      }
+    ],
+    "dosierung": {
+      "standard": "300–400 mg elementares Magnesium täglich",
+      "bereich": {
+        "min": 300,
+        "max": 400,
+        "einheit": "mg"
+      },
+      "obergrenze": "Tolerable Upper Intake Level für Supplemente: 350 mg/Tag (USA/NIH), 250 mg/Tag (EFSA) – gilt nur für Supplemente, nicht für Magnesium aus Lebensmitteln. RDA gesamt: 310–420 mg/Tag.",
+      "timing": "Idealerweise abends (wirkt entspannend) und zu einer Mahlzeit. Höhere Mengen auf mehrere Gaben aufteilen. Nicht gleichzeitig mit hohen Kalziumdosen oder den genannten Medikamenten einnehmen.",
+      "quelle": "NIH Office of Dietary Supplements + EFSA Referenzwerte + Blutdruck-/Diabetes-Meta-Analysen"
+    },
+    "population_spezifisch": {
+      "sportler": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "Erhöhter Verlust über Schweiß. Eine ausreichende Versorgung unterstützt Muskelfunktion und Regeneration; eine Leistungssteigerung über den Bedarf hinaus ist nicht belegt."
+      },
+      "senioren_50plus": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "Häufig geringere Zufuhr und Aufnahme sowie mehr Medikamente, die den Magnesiumhaushalt beeinflussen. Nutzen für Blutdruck und Blutzucker in dieser Gruppe größer."
+      },
+      "schwangerschaft": {
+        "relevant": true,
+        "staerke": 0.5,
+        "kommentar": "Wird häufig bei Wadenkrämpfen in der Schwangerschaft eingesetzt; Evidenz gemischt. Einnahme nach ärztlicher Rücksprache."
+      },
+      "menschen_mit_diabetes": {
+        "relevant": true,
+        "staerke": 0.65,
+        "kommentar": "Typ-2-Diabetiker haben oft niedrigere Magnesiumspiegel. Supplementierung verbessert Nüchternblutzucker, besonders bei nachgewiesenem Mangel."
+      }
+    },
+    "warnhinweise": [
+      "Form ist entscheidend: Bisglycinat, Citrat und Malat werden gut aufgenommen und sind magenfreundlich; Magnesiumoxid ist billig, aber schlecht bioverfügbar und wirkt eher abführend.",
+      "Achte auf den Gehalt an ELEMENTAREM Magnesium auf dem Etikett – nicht auf das Gesamtgewicht der Verbindung. Bisglycinat enthält z.B. nur einen kleinen Anteil elementares Magnesium.",
+      "Häufigste Nebenwirkung bei Überdosierung ist weicher Stuhl/Durchfall. Bei guter Nierenfunktion ist eine ernsthafte Überladung selten.",
+      "Magnesium kann die Aufnahme bestimmter Medikamente stören – immer mit zeitlichem Abstand einnehmen.",
+      "Ein Magnesiummangel lässt sich im Serum nur eingeschränkt erkennen, da der Großteil intrazellulär gespeichert ist. Symptome und Ernährung mitbeurteilen."
+    ],
+    "quellen": [
+      {
+        "titel": "Magnesium Supplementation and Blood Pressure: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+        "autoren": "Various (PubMed 41000008)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41000008/",
+        "jahr": 2024,
+        "typ": "meta-analyse"
+      },
+      {
+        "titel": "Effect of Magnesium Supplements on Improving Glucose Control, Blood Pressure and Lipid Profile in Patients With Type 2 Diabetes Mellitus: A systematic review and meta-analysis",
+        "autoren": "Al Maqrashi N, Al Busaidi S, Al-Rasbi S, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12244252/",
+        "jahr": 2025,
+        "typ": "meta-analyse",
+        "doi": "10.18295/2075-0528.2848"
+      },
+      {
+        "titel": "Effect of magnesium supplementation on type 2 diabetes associated cardiovascular risk factors: a systematic review and meta-analysis",
+        "autoren": "Verma H, Garg R",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28150351/",
+        "jahr": 2017,
+        "typ": "meta-analyse"
+      },
+      {
+        "titel": "Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial",
+        "autoren": "Schuster J, Cycelskij I, Lopresti A, Hahn A",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12412596/",
+        "jahr": 2025,
+        "typ": "rct",
+        "doi": "10.2147/NSS.S524348"
+      },
+      {
+        "titel": "Oral magnesium supplementation for insomnia in older adults: a Systematic Review & Meta-Analysis",
+        "autoren": "Mah J, Pitre T",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8053283/",
+        "jahr": 2021,
+        "typ": "meta-analyse",
+        "doi": "10.1186/s12906-021-03297-z"
+      },
+      {
+        "titel": "Perspective: Call for Re-evaluation of the Tolerable Upper Intake Level for Magnesium Supplementation in Adults",
+        "autoren": "Costello RB, Rosanoff A, et al.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2161831323013352",
+        "jahr": 2023,
+        "typ": "review"
+      },
+      {
+        "titel": "Magnesium - Health Professional Fact Sheet",
+        "autoren": "NIH Office of Dietary Supplements",
+        "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+        "jahr": 2024,
+        "typ": "position-stand"
       }
     ]
   }

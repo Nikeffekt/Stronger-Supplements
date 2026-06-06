@@ -163,7 +163,28 @@ function guideOeffneDetail(id) {
       html +=   '<div class="gd-fazit-text">' + f.ideal_fuer + '</div>';
       html += '</div>';
     }
-    if (f.dosis) {
+    // Vollständige Dosierung: bevorzugt w.dosierung (Detail-Objekt),
+    // Fallback auf das alte Kurzfeld f.dosis
+    if (w.dosierung) {
+      var fd = w.dosierung;
+      html += '<div class="gd-fazit-zeile">';
+      html +=   '<div class="gd-fazit-label">Empfohlene Dosierung</div>';
+      html +=   '<div class="gd-dosis-box">';
+      html +=     '<div class="gd-dosis-haupt">' + (fd.standard || '–') + '</div>';
+      if (fd.timing) html += '<div class="gd-dosis-timing"><strong>Timing:</strong> ' + fd.timing + '</div>';
+      if (fd.loading_optional) {
+        html += '<div class="gd-dosis-loading">';
+        html +=   '<div class="gd-dosis-loading-titel">⚡ Optional: Loading-Phase</div>';
+        html +=   '<div>' + fd.loading_optional.dosierung + ' → danach ' + fd.loading_optional.danach + '</div>';
+        if (fd.loading_optional.kommentar) {
+          html += '<div class="gd-dosis-loading-hint">' + fd.loading_optional.kommentar + '</div>';
+        }
+        html += '</div>';
+      }
+      if (fd.quelle) html += '<div class="gd-dosis-quelle">Quelle: ' + fd.quelle + '</div>';
+      html +=   '</div>';
+      html += '</div>';
+    } else if (f.dosis) {
       html += '<div class="gd-fazit-zeile">';
       html +=   '<div class="gd-fazit-label">Dosis</div>';
       html +=   '<div class="gd-fazit-text gd-fazit-dosis">' + f.dosis + '</div>';
@@ -173,6 +194,15 @@ function guideOeffneDetail(id) {
       html += '<div class="gd-fazit-zeile gd-fazit-warn">';
       html +=   '<div class="gd-fazit-label">⚠️ Vorsicht bei</div>';
       html +=   '<div class="gd-fazit-text">' + f.vorsicht_bei + '</div>';
+      html += '</div>';
+    }
+    // ── Marketing-Mythen / Überschätzt ──
+    if (f.mythen && f.mythen.length) {
+      html += '<div class="gd-fazit-zeile gd-fazit-mythen">';
+      html +=   '<div class="gd-fazit-label">🧐 Ehrlich gesagt (überschätzt / Mythen)</div>';
+      html +=   '<ul class="gd-fazit-liste">';
+      f.mythen.forEach(function (e) { html += '<li>' + e + '</li>'; });
+      html +=   '</ul>';
       html += '</div>';
     }
     html += '</div>';
@@ -261,27 +291,8 @@ function guideOeffneDetail(id) {
     html += '</div>';
   }
 
-  // ── Dosierung ──
-  if (w.dosierung) {
-    var d = w.dosierung;
-    html += '<div class="gd-sektion">';
-    html +=   '<div class="gd-sektion-titel">💊 Empfohlene Dosierung</div>';
-    html +=   '<div class="gd-dosis-box">';
-    html +=     '<div class="gd-dosis-haupt">' + (d.standard || '–') + '</div>';
-    if (d.timing) html += '<div class="gd-dosis-timing"><strong>Timing:</strong> ' + d.timing + '</div>';
-    if (d.loading_optional) {
-      html += '<div class="gd-dosis-loading">';
-      html +=   '<div class="gd-dosis-loading-titel">⚡ Optional: Loading-Phase</div>';
-      html +=   '<div>' + d.loading_optional.dosierung + ' → danach ' + d.loading_optional.danach + '</div>';
-      if (d.loading_optional.kommentar) {
-        html += '<div class="gd-dosis-loading-hint">' + d.loading_optional.kommentar + '</div>';
-      }
-      html += '</div>';
-    }
-    if (d.quelle) html += '<div class="gd-dosis-quelle">Quelle: ' + d.quelle + '</div>';
-    html +=   '</div>';
-    html += '</div>';
-  }
+  // ── Dosierung: jetzt vollständig in "Auf einen Blick" integriert ──
+  // (Der frühere separate Dosierungsblock wurde nach oben in die Fazit-Box verschoben.)
 
   // ── Population-spezifisch ──
   if (w.population_spezifisch) {

@@ -45,11 +45,19 @@
   kontraindikationen  → harte Ausschlusskriterien (Safety First!)
                         Liste von { art, wert, schwere, hinweis }
 
-  dosierung           → empfohlene Dosis mit Quelle
+  dosierung           → empfohlene Dosis mit Quelle (NUR hier pflegen!
+                        NICHT zusätzlich unter fazit.dosierung – das Frontend
+                        liest w.dosierung. Doppelte Haltung vermeiden.)
     standard          → "3-5 g täglich"
     bereich           → { min: 3, max: 5, einheit: "g" } (für Berechnungen)
     timing            → "konsistent täglich, Tageszeit egal"
     quelle            → kurzer Quellenverweis
+
+  fazit.mythen        → NEU (ab v1.2): Liste ehrlicher Einordnungen –
+                        was wird bei diesem Wirkstoff überschätzt oder als
+                        Marketingmythos verbreitet? Format: Array von Strings.
+                        Wird in "Auf einen Blick" gerendert.
+                        Beispiel: ["„Loading-Phase ist Pflicht" – falsch, ..."]
 
   population_spezifisch → besondere Empfehlungen für Subgruppen
                           (z.B. Frauen, Senioren, Vegetarier, Schwangere)
@@ -58,6 +66,10 @@
 
   quellen             → Vollständige Quellenangaben
                         Liste von { titel, autoren, url, jahr, typ, doi }
+                        ERLAUBTE typ-Werte (einheitlich mit Bindestrich!):
+                        "meta-analyse" | "systematic-review" |
+                        "position-stand" | "rct" | "review"
+                        (NICHT mit Unterstrich – seit v1.2 normiert)
 
 ================================================================================
   EVIDENZ-LEVEL: BEDEUTUNG
