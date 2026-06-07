@@ -1,0 +1,198 @@
+{
+  "id": "beta_alanin",
+  "name": "Beta-Alanin",
+  "kategorie": "performance",
+  "ikon": "⚡",
+  "kurz_beschreibung": "Aminosäure, die als Vorstufe von Carnosin den Muskel gegen Übersäuerung puffert. Verbessert die Leistung bei intensiven Belastungen von 1–4 Minuten – mit kleinem, aber gut belegtem Effekt.",
+  "beschreibung": {
+    "was_ist_es": "Beta-Alanin ist eine nicht-essentielle Aminosäure, die der Körper selbst bildet und die in Fleisch und Fisch vorkommt. Sie ist der geschwindigkeitsbestimmende Baustein für Carnosin – ein Dipeptid, das in hoher Konzentration in den Muskeln gespeichert wird. Durch eine Supplementierung lässt sich der Carnosingehalt der Muskulatur deutlich erhöhen.",
+    "wie_wirkt_es": "Bei intensiver Belastung sammeln sich Wasserstoff-Ionen im Muskel an und senken den pH-Wert (Übersäuerung) – das trägt zur Ermüdung bei. Carnosin wirkt als intrazellulärer Säurepuffer und verzögert diesen pH-Abfall. Mehr Carnosin bedeutet also: Die Muskulatur kann eine intensive Belastung etwas länger aufrechterhalten, bevor die Ermüdung einsetzt.",
+    "warum_wichtig": "Der körpereigene Carnosingehalt ist begrenzt, und Plasma-Beta-Alanin ist der limitierende Faktor für die Carnosin-Produktion. Über die Ernährung allein lässt sich der Muskelspeicher kaum nennenswert steigern. Für Sportler in genau dem richtigen Belastungsfenster (hochintensiv, 1–4 Minuten) ist Beta-Alanin daher eines der wenigen Performance-Supplemente mit belastbarer Evidenz – mit realistisch kleinem Effekt."
+  },
+  "fazit": {
+    "top_effekte": [
+      "Verbessert die Leistung bei hochintensiven Belastungen von 1–4 Minuten um im Median ca. 2–3 %",
+      "Erhöht den Muskel-Carnosingehalt um 30–64 % (Säurepuffer) nach 4 Wochen",
+      "Verzögert die neuromuskuläre Ermüdung – besonders ausgeprägt bei älteren Personen"
+    ],
+    "ideal_fuer": "Sportler in hochintensiven Disziplinen von ca. 1–10 Min (Mittelstrecke, Rudern, Schwimmen, Kampfsport, CrossFit), Personen mit wiederholten intensiven Belastungen",
+    "dosis": "4–6 g täglich über mind. 4 Wochen; auf mehrere Portionen à 1,6 g aufgeteilt (gegen Kribbeln)",
+    "vorsicht_bei": "Parästhesie (harmloses Hautkribbeln) bei hoher Einzeldosis; sonst in gesunden Populationen gut verträglich",
+    "mythen": [
+      "„Beta-Alanin wirkt sofort wie ein Pre-Workout“ – falsch. Es ist kein Stimulans und wirkt nicht akut. Der Effekt entsteht erst durch wochenlange Auffüllung der Carnosinspeicher.",
+      "„Das Kribbeln zeigt, dass es wirkt“ – falsch. Die Parästhesie ist nur eine Reizung von Hautnervenrezeptoren und hat nichts mit der Wirksamkeit zu tun.",
+      "„Beta-Alanin macht generell stärker und ausdauernder“ – überzogen. Der Nutzen ist eng begrenzt auf hochintensive Belastungen von 1–4 Min; bei <60 s oder reinem Maximalkraft-/Langausdauertraining bringt es kaum etwas.",
+      "„Je mehr, desto besser“ – falsch. Was zählt, ist die kumulative Dosis über Wochen; eine höhere Tagesdosis beschleunigt das Auffüllen kaum und verstärkt nur das Kribbeln."
+    ]
+  },
+  "evidenz": {
+    "level": "B",
+    "score": 78,
+    "review_typ": "meta-analyse",
+    "studien_anzahl": 40,
+    "konsens": "ISSN Position Stand 2015 + mehrere Meta-Analysen (Hobson 2012, Saunders 2017, IJSNEM 2024)",
+    "effekt_groesse": [
+      {
+        "wert": 2.85,
+        "einheit": "%",
+        "kontext": "Median-Leistungsverbesserung, am deutlichsten bei Belastungen von 60–240 Sekunden",
+        "quelle": "Hobson et al. 2012, Meta-Analyse (Amino Acids)",
+        "erklaerung": {
+          "was_bedeutet": "Beta-Alanin verbesserte die Leistung über viele Studien hinweg im Mittel um etwa 2,85 %. Das klingt nach wenig, kann aber bei einem knappen Wettkampf über wenige Minuten den Unterschied von einigen Sekunden oder Wiederholungen ausmachen. Entscheidend ist das Belastungsfenster: Der klarste Nutzen zeigt sich bei Anstrengungen von 1 bis 4 Minuten; unter 60 Sekunden gibt es keinen relevanten Effekt.",
+          "studie_zeigt": "Die Meta-Analyse fand eine mediane Verbesserung von 2,85 % bei Beta-Alanin gegenüber Placebo. Der Effekt war an die Belastungsdauer gebunden – er trat dort auf, wo die muskuläre Übersäuerung tatsächlich der begrenzende Faktor ist, und verschwand bei sehr kurzen oder sehr langen Belastungen.",
+          "studien_details": "Meta-Analyse zahlreicher placebokontrollierter Studien, publiziert in Amino Acids 2012 (Hobson et al.). Mediane Beta-Alanin-Gesamtaufnahme ca. 179 g pro Intervention. Die Effekte auf 'Kapazität' waren tendenziell größer als auf 'Performance'.",
+          "zuverlaessigkeit": "Hoch für die Grundaussage, moderat für den exakten Prozentwert. Über mehrere Meta-Analysen konsistent; bei Elite-Athleten fällt der Effekt kleiner aus (~0,5–1 %) als bei Freizeitsportlern (~2–3 %)."
+        }
+      },
+      {
+        "wert": 64,
+        "einheit": "% (Carnosin-Anstieg)",
+        "kontext": "Erhöhung des Muskel-Carnosingehalts nach 4 Wochen bei 4–6 g/Tag",
+        "quelle": "ISSN Position Stand 2015 (Trexler et al.) + Saunders Emax-Meta 2020",
+        "erklaerung": {
+          "was_bedeutet": "Das ist der Mechanismus hinter der Wirkung: Beta-Alanin füllt die Carnosinspeicher im Muskel auf. Nach vier Wochen mit 4–6 g täglich stieg der Carnosingehalt um bis zu 64 %, nach zehn Wochen sogar bis zu 80 %. Mehr Carnosin bedeutet mehr Pufferkapazität gegen die belastungsbedingte Übersäuerung.",
+          "studie_zeigt": "Die Carnosin-Antwort ist dosis- und vor allem zeitabhängig: Die kumulative Gesamtdosis bestimmt den Anstieg, nicht das Timing einzelner Portionen. Eine Bayesianische Dosis-Wirkungs-Meta-Analyse schätzte den maximalen Effekt (Emax) und die für 50 % nötige Gesamtdosis (ED50 ca. 377 g).",
+          "studien_details": "Zusammenfassung des ISSN Position Stand (JISSN 2015) und der Emax-Modell-Meta-Analyse von Saunders et al. (Frontiers in Physiology 2020), die alle publizierten Aggregatdaten zur Carnosin-Antwort einbezog.",
+          "zuverlaessigkeit": "Sehr hoch – dass Beta-Alanin den Muskel-Carnosingehalt erhöht, ist einer der am besten reproduzierten Befunde der Sporternährung."
+        }
+      },
+      {
+        "wert": 1.6,
+        "einheit": "g (Einzeldosis gegen Parästhesie)",
+        "kontext": "Aufteilung auf Portionen à 1,6 g vermeidet das Hautkribbeln (Sicherheits-/Verträglichkeitsbefund)",
+        "quelle": "ISSN Position Stand 2015 (Trexler et al.)",
+        "erklaerung": {
+          "was_bedeutet": "Das ist ein Verträglichkeitsbefund: Die einzige häufig berichtete Nebenwirkung von Beta-Alanin ist die Parästhesie – ein harmloses Kribbeln/Prickeln auf der Haut, das 10–20 Minuten nach einer größeren Einzeldosis auftritt und innerhalb einer Stunde wieder abklingt. Es lässt sich vermeiden, indem man die Tagesmenge auf kleinere Portionen (je 1,6 g) aufteilt oder ein Sustained-Release-Präparat nutzt.",
+          "studie_zeigt": "Laut ISSN ist Beta-Alanin in gesunden Populationen bei empfohlener Dosierung sicher; die Parästhesie ist die einzige regelmäßig berichtete Nebenwirkung und ohne gesundheitliche Bedeutung. Sie entsteht durch Aktivierung bestimmter Hautnervenrezeptoren, nicht durch eine allergische Reaktion.",
+          "studien_details": "International Society of Sports Nutrition Position Stand: Beta-Alanine, Journal of the International Society of Sports Nutrition 2015 (Trexler ET, Smith-Ryan AE, Stout JR, et al.), umfassende Literaturübersicht bis März 2015.",
+          "zuverlaessigkeit": "Hoch – die Parästhesie und ihre Vermeidung durch Dosisaufteilung sind gut dokumentiert. Langzeitdaten über viele Monate/Jahre sind begrenzt, kurzfristig gilt Beta-Alanin als sicher."
+        }
+      }
+    ]
+  },
+  "indikationen": [
+    {
+      "ziel": "ausdauer",
+      "staerke": 0.6,
+      "kommentar": "Belegter Nutzen bei hochintensiven Belastungen von 1–4 (bis 10) Min, wo muskuläre Übersäuerung limitiert. Kein Effekt bei reinem Langstrecken-Ausdauersport >25 Min."
+    },
+    {
+      "ziel": "hochintensiv_intervall",
+      "staerke": 0.65,
+      "kommentar": "Stärkster Anwendungsbereich: wiederholte intensive Intervalle, Mittelstrecke, Rudern, Schwimmen, Kampfsport, CrossFit."
+    },
+    {
+      "ziel": "kraft",
+      "staerke": 0.35,
+      "kommentar": "Für reine Maximalkraft schwache Evidenz; eher relevant bei höheren Wiederholungszahlen mit Ermüdungskomponente."
+    },
+    {
+      "ziel": "muskelausdauer",
+      "staerke": 0.55,
+      "kommentar": "Verzögert neuromuskuläre Ermüdung, mehr Wiederholungen vor dem Versagen bei intensiven Sätzen möglich."
+    },
+    {
+      "ziel": "leistung_alter",
+      "staerke": 0.5,
+      "kommentar": "Ermüdungsverzögerung ist bei älteren Personen besonders ausgeprägt (niedrigerer Ausgangs-Carnosingehalt)."
+    }
+  ],
+  "kontraindikationen": [
+    {
+      "art": "nebenwirkung",
+      "wert": "paraesthesie",
+      "schwere": "vorsichtig",
+      "hinweis": "Hohe Einzeldosen (>0,8–1,0 g) lösen oft ein harmloses Hautkribbeln (Parästhesie) aus. Kein Grund zur Sorge – durch Aufteilung in Portionen à 1,6 g oder ein Sustained-Release-Präparat vermeidbar."
+    },
+    {
+      "art": "datenlage",
+      "wert": "langzeit_unklar",
+      "schwere": "vorsichtig",
+      "hinweis": "Die Sicherheit über sehr lange Zeiträume (viele Monate bis Jahre) ist nicht umfassend untersucht. Kurz- bis mittelfristig gilt Beta-Alanin in empfohlener Dosis als sicher."
+    }
+  ],
+  "dosierung": {
+    "standard": "4–6 g täglich über mindestens 4 Wochen",
+    "bereich": {
+      "min": 4,
+      "max": 6,
+      "einheit": "g"
+    },
+    "obergrenze": "Keine etablierte toxische Grenze; übliche Studiendosen 4–6,4 g/Tag. Entscheidend ist die kumulative Gesamtdosis über Wochen, nicht eine möglichst hohe Tagesmenge.",
+    "timing": "Tageszeit und Trainingsnähe sind unwichtig (kein Akuteffekt). Auf 2–4 Portionen à ~1,6 g aufteilen, idealerweise zu Mahlzeiten – das vermeidet das Kribbeln und kann die Carnosin-Aufnahme verbessern. Nach 4 Wochen ist der Speicher weitgehend gefüllt; eine Erhaltungsdosis hält ihn aufrecht.",
+    "quelle": "ISSN Position Stand 2015 (Trexler et al.) + IJSNEM Meta-Analyse 2024"
+  },
+  "population_spezifisch": {
+    "kraftsportler": {
+      "relevant": true,
+      "staerke": 0.5,
+      "kommentar": "Nutzen vor allem bei ermüdungslastigen Sätzen/höheren Wiederholungen, weniger bei reiner Maximalkraft."
+    },
+    "ausdauersportler_hochintensiv": {
+      "relevant": true,
+      "staerke": 0.65,
+      "kommentar": "Hauptzielgruppe: Disziplinen mit 1–10 Min hoher Intensität (Mittelstrecke, Rudern, Schwimmen)."
+    },
+    "senioren_50plus": {
+      "relevant": true,
+      "staerke": 0.5,
+      "kommentar": "Ermüdungsverzögernde Wirkung in dieser Gruppe besonders ausgeprägt; niedrigerer Ausgangs-Carnosingehalt."
+    },
+    "frauen": {
+      "relevant": true,
+      "staerke": 0.45,
+      "kommentar": "Wirkmechanismus identisch; viele Studien wurden an Männern durchgeführt, daher etwas weniger frauenspezifische Daten."
+    }
+  },
+  "warnhinweise": [
+    "Beta-Alanin ist kein Stimulans und wirkt nicht akut – es wirkt nur durch die über Wochen aufgefüllten Carnosinspeicher. Wer einen Pre-Workout-Kick sucht, ist hier falsch.",
+    "Das Hautkribbeln (Parästhesie) ist harmlos und kein Wirksamkeitssignal. Bei Aufteilung auf kleine Portionen (1,6 g) oder Sustained-Release tritt es kaum auf.",
+    "Der Nutzen ist eng auf hochintensive Belastungen von 1–4 Min begrenzt. Für Maximalkraft, sehr kurze Sprints (<60 s) oder lange Ausdauer (>25 Min) ist er gering bis nicht vorhanden.",
+    "Realistische Erwartung: Der Effekt liegt im Bereich weniger Prozent und ist bei Freizeitsportlern größer als bei Elite-Athleten.",
+    "Geduld nötig: Erste relevante Effekte nach etwa 2–4 Wochen, da sich die Carnosinspeicher erst aufbauen müssen.",
+    "Auf geprüfte Produktqualität achten (Reinheit, ggf. Dopingprüfung im Leistungssport)."
+  ],
+  "quellen": [
+    {
+      "titel": "International society of sports nutrition position stand: Beta-Alanine",
+      "autoren": "Trexler ET, Smith-Ryan AE, Stout JR, Hoffman JR, Wilborn CD, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4501114/",
+      "jahr": 2015,
+      "typ": "position-stand",
+      "doi": "10.1186/s12970-015-0090-y"
+    },
+    {
+      "titel": "Effects of beta-alanine supplementation on exercise performance: a meta-analysis",
+      "autoren": "Hobson RM, Saunders B, Ball G, Harris RC, Sale C",
+      "url": "https://link.springer.com/article/10.1007/s00726-011-1200-z",
+      "jahr": 2012,
+      "typ": "meta-analyse",
+      "doi": "10.1007/s00726-011-1200-z"
+    },
+    {
+      "titel": "Effect of Beta-Alanine Supplementation on Maximal Intensity Exercise in Trained Young Male Individuals: A Systematic Review and Meta-Analysis",
+      "autoren": "Various",
+      "url": "https://journals.humankinetics.com/view/journals/ijsnem/34/6/article-p397.xml",
+      "jahr": 2024,
+      "typ": "meta-analyse"
+    },
+    {
+      "titel": "The Muscle Carnosine Response to Beta-Alanine Supplementation: A Systematic Review With Bayesian Individual and Aggregate Data E-Max Model and Meta-Analysis",
+      "autoren": "Saunders B, et al.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7456894/",
+      "jahr": 2020,
+      "typ": "meta-analyse",
+      "doi": "10.3389/fphys.2020.00913"
+    },
+    {
+      "titel": "Dosing strategies for beta-alanine supplementation in strength and power performance: a systematic review",
+      "autoren": "Various",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/15502783.2025.2566368",
+      "jahr": 2025,
+      "typ": "systematic-review"
+    }
+  ],
+  "inhalt": [
+    "beta_alanin"
+  ]
+}

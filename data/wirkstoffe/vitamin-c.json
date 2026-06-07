@@ -1,0 +1,202 @@
+{
+  "id": "vitamin_c",
+  "name": "Vitamin C (Ascorbinsäure)",
+  "kategorie": "gesundheit",
+  "ikon": "🍊",
+  "kurz_beschreibung": "Essentielles Antioxidans für Immunsystem, Kollagenbildung und Eisenaufnahme. Gegen Erkältungen wird es massiv überschätzt – ein echter Mangel ist in westlichen Ländern aber selten.",
+  "beschreibung": {
+    "was_ist_es": "Vitamin C (Ascorbinsäure) ist ein wasserlösliches, essentielles Vitamin, das der Mensch – anders als die meisten Tiere – nicht selbst herstellen kann. Es kommt reichlich in Obst und Gemüse vor (Paprika, Zitrusfrüchte, Beeren, Brokkoli, Kohl). Ein schwerer, langanhaltender Mangel führt zur klassischen Mangelkrankheit Skorbut, die heute aber sehr selten ist.",
+    "wie_wirkt_es": "Vitamin C ist ein wichtiges Antioxidans und Cofaktor für zahlreiche Enzyme. Es ist unentbehrlich für die Kollagenbildung (Haut, Gefäße, Bindegewebe, Wundheilung), unterstützt die normale Funktion von Immunzellen und verbessert die Aufnahme von pflanzlichem (Nicht-Häm-)Eisen aus dem Darm deutlich. Die Aufnahme im Darm ist begrenzt: Der Plasmaspiegel erreicht bei 200–400 mg/Tag ein Plateau, und ab etwa 1.000 mg sinkt der aufgenommene Anteil unter 50 %.",
+    "warum_wichtig": "Vitamin C ist für viele Körperfunktionen nötig, ein echter Mangel ist bei normaler Ernährung in westlichen Ländern aber selten – Obst und Gemüse decken den Bedarf meist problemlos (laut Ernährungserhebungen erreichen die meisten Nichtraucher die empfohlene Menge). Die populäre Vorstellung, dass Megadosen Erkältungen verhindern, ist wissenschaftlich nicht haltbar. Sinnvoll ist Vitamin C vor allem zur Deckung des Grundbedarfs und in einigen Sondersituationen (sehr geringe Zufuhr, Rauchen, extreme körperliche Belastung)."
+  },
+  "fazit": {
+    "top_effekte": [
+      "Verkürzt bei regelmäßiger (vorbeugender) Einnahme die Erkältungsdauer leicht (Erwachsene ~8 %, Kinder ~14 %)",
+      "Halbiert das Erkältungsrisiko bei extremer körperlicher Belastung (Marathon, Kälte, Soldaten)",
+      "Unverzichtbar für Kollagenbildung, Immunfunktion und die Aufnahme von pflanzlichem Eisen"
+    ],
+    "ideal_fuer": "Menschen mit geringer Obst-/Gemüsezufuhr, Raucher (erhöhter Bedarf), Personen unter extremer körperlicher Belastung, zur Verbesserung der Eisenaufnahme bei pflanzlicher Ernährung",
+    "dosis": "Grundbedarf über Ernährung; Supplement meist 100–200 mg/Tag ausreichend, Obergrenze 2.000 mg",
+    "vorsicht_bei": "Nierensteine/Nierenerkrankung (Oxalat), G6PD-Mangel, Hämochromatose, Megadosen (Durchfall), Verfälschung von Blutzucker-/Stuhltests",
+    "mythen": [
+      "„Hochdosiertes Vitamin C verhindert Erkältungen“ – falsch. In der Allgemeinbevölkerung senkt regelmäßige Einnahme das Erkältungs-RISIKO nicht (relatives Risiko 0,97); sie verkürzt die Dauer nur geringfügig. Routinemäßige Megadosen-Prophylaxe ist nicht gerechtfertigt.",
+      "„Wenn die Erkältung da ist, hilft eine große Dosis Vitamin C“ – kaum. Erst bei Symptombeginn eingenommen, zeigt Vitamin C in Studien keinen konsistenten Nutzen auf Dauer oder Schwere.",
+      "„Viel hilft viel“ – falsch. Der Plasmaspiegel ist bei 200–400 mg gesättigt; ab ~1.000 mg sinkt die Aufnahme unter 50 %, der Rest wird ausgeschieden. Über 2.000 mg drohen Durchfall und bei Veranlagung Nierensteine.",
+      "„Vitamin C aus Supplementen ist besser als aus Obst/Gemüse“ – falsch. Die Nahrungsquelle ist mindestens gleichwertig, wird langsamer aufgenommen und liefert zusätzlich Ballaststoffe und sekundäre Pflanzenstoffe."
+    ]
+  },
+  "evidenz": {
+    "level": "B",
+    "score": 75,
+    "review_typ": "meta-analyse",
+    "studien_anzahl": 50,
+    "konsens": "Umfangreicher Cochrane-Review (Hemilä & Chalker 2013, 29+31 Vergleiche) + NIH/IOM-Referenzwerte",
+    "effekt_groesse": [
+      {
+        "wert": 8,
+        "einheit": "% (Erkältungsdauer)",
+        "kontext": "Verkürzung der Erkältungsdauer bei REGELMÄSSIGER Einnahme (Erwachsene; Kinder ~14 %)",
+        "quelle": "Cochrane Review CD000980.pub4 (Hemilä & Chalker 2013), 31 Vergleiche / 9.745 Episoden",
+        "erklaerung": {
+          "was_bedeutet": "Wer dauerhaft (also vorbeugend, nicht erst bei Erkältung) regelmäßig Vitamin C einnimmt, hatte in Studien geringfügig kürzere Erkältungen: bei Erwachsenen etwa 8 %, bei Kindern etwa 14 % weniger Krankheitsdauer. Das ist ein kleiner Effekt – aus einer 7-Tage-Erkältung werden vielleicht ein paar Stunden weniger. Die HÄUFIGKEIT von Erkältungen wird dagegen nicht gesenkt.",
+          "studie_zeigt": "Über 31 Vergleiche mit 9.745 Erkältungsepisoden hinweg verkürzte regelmäßiges Vitamin C (≥0,2 g/Tag) die Dauer signifikant um 8 % bei Erwachsenen (95%-KI 3–12 %) und 14 % bei Kindern (95%-KI 7–21 %). Bei Kindern verkürzten 1–2 g/Tag die Erkältung sogar um 18 %. Auf die Erkältungshäufigkeit in der Allgemeinbevölkerung gab es keinen Effekt.",
+          "studien_details": "Cochrane Systematic Review 'Vitamin C for preventing and treating the common cold' (Hemilä & Chalker, Cochrane Database Syst Rev 2013, CD000980.pub4); nur placebokontrollierte Studien mit ≥0,2 g/Tag, Auswertung von Inzidenz, Dauer und Schwere.",
+          "zuverlaessigkeit": "Hoch – eine der umfangreichsten Evidenzbasen überhaupt. Die Aussage 'kleiner, konsistenter Effekt auf Dauer, keiner auf Häufigkeit' ist sehr gut abgesichert; die klinische Bedeutung des kleinen Dauereffekts ist begrenzt."
+        }
+      },
+      {
+        "wert": 0.48,
+        "einheit": "relatives Risiko (RR)",
+        "kontext": "Halbierung des Erkältungsrisikos bei Personen unter extremer körperlicher Belastung",
+        "quelle": "Cochrane Review CD000980.pub4, Subgruppe (598 Marathonläufer, Skifahrer, Soldaten)",
+        "erklaerung": {
+          "was_bedeutet": "Das ist die wichtige Ausnahme: Bei Menschen unter extremer körperlicher und/oder Kältebelastung – Marathonläufer, Skifahrer, Soldaten bei subarktischen Übungen – halbierte regelmäßiges Vitamin C das Risiko, überhaupt eine Erkältung zu bekommen. Das relative Risiko lag bei 0,48, also rund 52 % weniger Erkältungen. Für diese spezielle Gruppe ist eine Supplementierung tatsächlich begründbar.",
+          "studie_zeigt": "In fünf Studien mit insgesamt 598 Personen unter kurzer, extremer Belastung sank das relative Risiko auf 0,48 (95%-KI 0,35–0,64). Dieser deutliche Schutzeffekt steht in klarem Gegensatz zur Allgemeinbevölkerung, wo das relative Risiko bei 0,97 lag (kein Effekt).",
+          "studien_details": "Subgruppenanalyse des Cochrane Reviews CD000980.pub4; gepooltes RR 0,48 über 5 Studien mit Marathonläufern, Skifahrern und Soldaten. Studien mit langfristiger (nicht extremer) Belastung zeigten keinen solchen Effekt.",
+          "zuverlaessigkeit": "Hoch für diese spezielle Gruppe. Wichtig: Der Effekt lässt sich NICHT auf den normalen Alltag übertragen – er gilt nur für kurze Phasen extremer, anhaltender körperlicher oder Kältebelastung."
+        }
+      },
+      {
+        "wert": 2000,
+        "einheit": "mg/Tag (Obergrenze)",
+        "kontext": "Tolerable Upper Intake Level – darüber Durchfall und Nierenstein-Risiko bei Veranlagung (Sicherheitsbefund)",
+        "quelle": "NIH Office of Dietary Supplements + IOM Dietary Reference Intakes",
+        "erklaerung": {
+          "was_bedeutet": "Vitamin C gilt als wenig giftig, weil Überschuss über den Urin ausgeschieden wird. Trotzdem gibt es eine Obergrenze von 2.000 mg/Tag für Erwachsene: Darüber drohen vor allem Magen-Darm-Beschwerden und Durchfall (das nicht aufgenommene Vitamin zieht osmotisch Wasser in den Darm). Bei entsprechender Veranlagung steigt zudem das Risiko für Nierensteine über vermehrtes Oxalat im Urin.",
+          "studie_zeigt": "Die Aufnahme sinkt ab ~1.000 mg unter 50 %, der Plasmaspiegel ist bei 200–400 mg gesättigt. Häufigste Nebenwirkungen hoher Dosen sind Durchfall, Übelkeit und Bauchkrämpfe. Das Nierenstein-Risiko betrifft vor allem Menschen mit vorbestehender Hyperoxalurie/Steinanamnese. Bei G6PD-Mangel können sehr hohe Dosen eine Hämolyse auslösen, bei Hämochromatose die Eisenüberladung verstärken.",
+          "studien_details": "NIH Office of Dietary Supplements Fact Sheet (Vitamin C, 2024) und IOM Dietary Reference Intakes für Vitamin C (NBK225480); UL altersabhängig 400–2.000 mg, Erwachsene 2.000 mg.",
+          "zuverlaessigkeit": "Hoch – die Obergrenze und die Hauptnebenwirkung (osmotischer Durchfall) sind gut etabliert. Der Oxalat-/Nierenstein-Zusammenhang ist am klarsten bei vorbelasteten Personen; bei Gesunden ist das Risiko gering."
+        }
+      }
+    ]
+  },
+  "indikationen": [
+    {
+      "ziel": "immunsystem",
+      "staerke": 0.45,
+      "kommentar": "Notwendig für die Immunfunktion; verkürzt die Erkältungsdauer leicht, verhindert Erkältungen in der Allgemeinbevölkerung aber nicht. Deutlicher Präventionsnutzen nur bei extremer körperlicher Belastung."
+    },
+    {
+      "ziel": "kollagen_haut_wundheilung",
+      "staerke": 0.6,
+      "kommentar": "Unverzichtbarer Cofaktor der Kollagenbildung – wichtig für Haut, Bindegewebe, Gefäße und Wundheilung. Ein Mangel beeinträchtigt diese Prozesse direkt (Extremform: Skorbut)."
+    },
+    {
+      "ziel": "eisenaufnahme",
+      "staerke": 0.6,
+      "kommentar": "Verbessert die Aufnahme von pflanzlichem (Nicht-Häm-)Eisen deutlich – relevant bei vegetarischer/veganer Ernährung und Eisenmangel, wenn zur eisenreichen Mahlzeit eingenommen."
+    },
+    {
+      "ziel": "antioxidativ",
+      "staerke": 0.4,
+      "kommentar": "Wirkt als Antioxidans; ein klarer Zusatznutzen durch Supplemente bei bereits guter Versorgung ist nicht belegt. In sehr hohen Dosen mit Eisen sogar pro-oxidativ möglich."
+    },
+    {
+      "ziel": "gesundheit",
+      "staerke": 0.55,
+      "kommentar": "Essentielles Vitamin; bei ausgewogener Ernährung selten ein Mangel. Supplementierung v.a. bei geringer Zufuhr oder Rauchen sinnvoll."
+    }
+  ],
+  "kontraindikationen": [
+    {
+      "art": "medizinisch",
+      "wert": "nierensteine_niere",
+      "schwere": "vorsichtig",
+      "hinweis": "Hohe Dosen erhöhen das Oxalat im Urin und damit das Nierenstein-Risiko – besonders bei vorbestehender Nierenerkrankung oder Steinanamnese. Bei Risiko unter 500–1.000 mg/Tag bleiben, Dosen aufteilen und ausreichend trinken."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "g6pd_mangel",
+      "schwere": "hart",
+      "hinweis": "Bei G6PD-Mangel (erblicher Enzymdefekt) können sehr hohe Vitamin-C-Dosen eine hämolytische Anämie (Zerfall roter Blutkörperchen) auslösen. Hochdosen vermeiden."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "haemochromatose",
+      "schwere": "vorsichtig",
+      "hinweis": "Vitamin C steigert die Eisenaufnahme. Bei Hämochromatose (erbliche Eisenüberladung) können hohe Dosen die Eisenspeicher gefährlich erhöhen – nur nach ärztlicher Rücksprache."
+    },
+    {
+      "art": "diagnostik",
+      "wert": "labortests",
+      "schwere": "vorsichtig",
+      "hinweis": "Hohe Vitamin-C-Spiegel können Blutzuckermessungen (Glukometer) und Stuhltests auf verborgenes Blut verfälschen. Vor Laboruntersuchungen das medizinische Personal informieren."
+    }
+  ],
+  "dosierung": {
+    "standard": "100–200 mg täglich (Supplement, falls über die Ernährung nicht gedeckt)",
+    "bereich": {
+      "min": 100,
+      "max": 1000,
+      "einheit": "mg"
+    },
+    "obergrenze": "Tolerable Upper Intake Level: 2.000 mg/Tag (Erwachsene). RDA: Männer 90 mg, Frauen 75 mg, Schwangere 85 mg, Stillende 120 mg, Raucher +35 mg. Plasma-Plateau bei 200–400 mg; Aufnahme sinkt ab ~1.000 mg unter 50 %.",
+    "timing": "Tageszeit unwichtig (Studien zeigen keinen Unterschied); zu einer Mahlzeit zur besseren Verträglichkeit. Zur Verbesserung der Eisenaufnahme gezielt zusammen mit eisenreichen (pflanzlichen) Mahlzeiten. Höhere Mengen auf 2 Gaben aufteilen (z.B. 2×200 mg), da die Aufnahme dosislimitiert ist.",
+    "quelle": "NIH Office of Dietary Supplements + IOM Dietary Reference Intakes"
+  },
+  "population_spezifisch": {
+    "raucher": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "Rauchen erhöht den oxidativen Stress und den Vitamin-C-Umsatz – die RDA liegt 35 mg höher als bei Nichtrauchern. Raucher haben nachweislich niedrigere Plasmaspiegel."
+    },
+    "extreme_belastung": {
+      "relevant": true,
+      "staerke": 0.65,
+      "kommentar": "Bei Marathon, Kälteexposition oder militärischer Belastung halbiert regelmäßiges Vitamin C das Erkältungsrisiko (RR 0,48) – einzige gut belegte Präventionsgruppe."
+    },
+    "vegetarier_veganer": {
+      "relevant": true,
+      "staerke": 0.55,
+      "kommentar": "Verbessert die Aufnahme von pflanzlichem Eisen deutlich – sinnvoll zu eisenreichen Mahlzeiten bei Eisenmangelrisiko."
+    },
+    "geringe_obst_gemuese_zufuhr": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "Wer wenig Obst und Gemüse isst, profitiert am ehesten von einer moderaten Supplementierung zur Deckung des Grundbedarfs."
+    }
+  },
+  "warnhinweise": [
+    "Megadosen verhindern keine Erkältungen – dieser populäre Glaube (geprägt durch Linus Pauling in den 1970ern) ist durch große Meta-Analysen widerlegt.",
+    "Mehr ist nicht besser: Der Plasmaspiegel ist bei 200–400 mg gesättigt; ab ~1.000 mg sinkt die Aufnahme stark, über 2.000 mg drohen Durchfall und bei Veranlagung Nierensteine.",
+    "Die beste Vitamin-C-Quelle ist Obst und Gemüse – Supplemente sind nur bei geringer Zufuhr, Rauchen oder in Sondersituationen nötig.",
+    "Bei Nierensteinen, Nierenerkrankung, G6PD-Mangel oder Hämochromatose keine hohen Dosen ohne ärztliche Rücksprache.",
+    "Vitamin C kann Labortests (Blutzucker, Stuhlblut) verfälschen – vor Untersuchungen erwähnen.",
+    "Zur Verbesserung der Eisenaufnahme gezielt mit (pflanzlichen) eisenreichen Mahlzeiten kombinieren; in sehr hohen Dosen zusammen mit Eisen kann Vitamin C aber pro-oxidativ wirken."
+  ],
+  "quellen": [
+    {
+      "titel": "Vitamin C for preventing and treating the common cold",
+      "autoren": "Hemilä H, Chalker E",
+      "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD000980.pub4/full",
+      "jahr": 2013,
+      "typ": "meta-analyse",
+      "doi": "10.1002/14651858.CD000980.pub4"
+    },
+    {
+      "titel": "Vitamin C for Preventing and Treating the Common Cold (Overview of three meta-analyses)",
+      "autoren": "Douglas RM, Hemilä H",
+      "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020168",
+      "jahr": 2005,
+      "typ": "meta-analyse",
+      "doi": "10.1371/journal.pmed.0020168"
+    },
+    {
+      "titel": "Vitamin C - Health Professional Fact Sheet",
+      "autoren": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/",
+      "jahr": 2024,
+      "typ": "position-stand"
+    },
+    {
+      "titel": "Dietary Reference Intakes for Vitamin C, Vitamin E, Selenium, and Carotenoids (Vitamin C)",
+      "autoren": "Institute of Medicine (US) Panel on Dietary Antioxidants",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK225480/",
+      "jahr": 2000,
+      "typ": "position-stand"
+    }
+  ],
+  "inhalt": [
+    "vitamin_c"
+  ]
+}

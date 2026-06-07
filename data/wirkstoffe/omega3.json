@@ -1,0 +1,230 @@
+{
+  "id": "omega3",
+  "name": "Omega-3 (EPA/DHA)",
+  "kategorie": "gesundheit",
+  "ikon": "🐟",
+  "kurz_beschreibung": "Marine Fettsäuren EPA & DHA – senken Triglyceride, wirken entzündungshemmend und unterstützen Herz, Gehirn und Gelenke. Die meisten Menschen nehmen zu wenig auf.",
+  "beschreibung": {
+    "was_ist_es": "Omega-3-Fettsäuren sind mehrfach ungesättigte Fettsäuren, die der Körper nicht selbst herstellen kann (essentiell). Die biologisch wirksamsten Formen sind die langkettigen marinen Fettsäuren EPA (Eicosapentaensäure) und DHA (Docosahexaensäure) aus fettem Fisch (Lachs, Makrele, Sardine) und Algen. Die pflanzliche Vorstufe ALA (aus Lein, Chia, Walnuss) wird im Körper nur zu wenigen Prozent in EPA/DHA umgewandelt und ist daher kein gleichwertiger Ersatz.",
+    "wie_wirkt_es": "EPA und DHA werden in die Zellmembranen eingebaut und beeinflussen von dort aus zahlreiche Prozesse: Sie senken die Triglyceride in der Leber, dienen als Ausgangsstoff für entzündungsauflösende Botenstoffe (Resolvine, Protectine) statt entzündungsfördernder, stabilisieren Herzrhythmus und Gefäßfunktion und sind ein zentraler Strukturbaustein von Gehirn und Netzhaut (DHA macht einen großen Teil der grauen Substanz aus).",
+    "warum_wichtig": "Die westliche Ernährung liefert reichlich Omega-6, aber wenig Omega-3 – das Verhältnis ist stark zugunsten entzündungsfördernder Fettsäuren verschoben. Wer nicht regelmäßig fetten Fisch isst (mind. 1–2 Portionen/Woche), erreicht die empfohlene EPA/DHA-Zufuhr meist nicht. Ein niedriger Omega-3-Index ist mit höherem Herz-Kreislauf-Risiko assoziiert."
+  },
+  "fazit": {
+    "top_effekte": [
+      "Senkt Triglyceride dosisabhängig um ca. 15–30 % (Dose-Response-Meta-Analyse, JAHA 2023)",
+      "Reduziert kardiovaskuläre Ereignisse moderat – EPA-Formulierungen am stärksten (38-RCT-Meta-Analyse)",
+      "Lindert Entzündung & Krankheitsaktivität bei rheumatoider Arthritis (weniger Morgensteifigkeit, geringerer NSAR-Bedarf)"
+    ],
+    "ideal_fuer": "Menschen mit wenig Fischkonsum, erhöhten Triglyceriden, entzündlichen Gelenkerkrankungen, Vegetarier/Veganer (Algenöl), Schwangere/Stillende (DHA)",
+    "dosis": "250–500 mg EPA+DHA täglich als Basis; 1–2 g bei erhöhtem Bedarf, zu einer Mahlzeit",
+    "vorsicht_bei": "Blutverdünner & Gerinnungshemmer, geplante Operationen, bekanntes Vorhofflimmern bzw. hohes Herz-Kreislauf-Risiko (Hochdosis >1,5 g/Tag), Ibrutinib-Therapie",
+    "mythen": [
+      "„Pflanzliches Omega-3 (Leinöl, Chia) ersetzt Fischöl“ – falsch. Die Umwandlung von ALA in EPA/DHA liegt nur bei wenigen Prozent; für relevante EPA/DHA-Spiegel braucht es Fisch- oder Algenöl.",
+      "„Viel hilft viel“ – falsch. Hochdosis >1,5 g/Tag bringt bei Gesunden kaum Zusatznutzen, erhöht aber bei Herz-Risiko-Patienten das Vorhofflimmern-Risiko.",
+      "„Omega-3 senkt zuverlässig das Herzinfarkt-Risiko bei jedem“ – überzogen. Große Studien (VITAL, ASCEND) zeigten bei Allgemeinbevölkerung nur geringe bis keine Effekte; klare Vorteile vor allem bei hohen Triglyceriden/EPA-Hochdosis (REDUCE-IT).",
+      "„Mehr Omega-3-Index = automatisch gesünder“ – der Index ist ein nützlicher Marker, aber kein Garant; Ernährung und Lebensstil als Ganzes zählen."
+    ]
+  },
+  "evidenz": {
+    "level": "B",
+    "score": 78,
+    "review_typ": "meta-analyse",
+    "studien_anzahl": 90,
+    "konsens": "Mehrere Dose-Response-Meta-Analysen (JAHA 2023, Lancet eClinMed 2021) + EFSA-Bewertung",
+    "effekt_groesse": [
+      {
+        "wert": 22,
+        "einheit": "%",
+        "kontext": "Mittlere Triglycerid-Senkung (dosisabhängig ca. 15–30 %) vs. Placebo",
+        "quelle": "Wang et al. 2023, JAHA Dose-Response-Meta-Analyse",
+        "erklaerung": {
+          "was_bedeutet": "Omega-3 senkt die Triglyceride – ein Blutfettwert, der bei erhöhten Werten das Herz-Kreislauf-Risiko steigert. Die Senkung ist dosisabhängig: je höher die EPA/DHA-Dosis, desto stärker der Effekt, typischerweise im Bereich 15–30 %. Wichtig: Der Effekt ist bei Menschen mit hohen Ausgangswerten am größten, bei normalen Triglyceriden eher klein.",
+          "studie_zeigt": "In der dosisabhängigen Auswertung sank der Triglyceridspiegel mit steigender Omega-3-Dosis kontinuierlich. Gleichzeitig kann das 'schlechte' LDL-Cholesterin bei DHA leicht ansteigen – weshalb der Gesamteffekt auf die Blutfette differenziert betrachtet werden muss.",
+          "studien_details": "Kontinuierliche Dose-Response-Meta-Analyse randomisierter kontrollierter Studien mit 1-stage-Spline-Modell, publiziert im Journal of the American Heart Association (JAHA), 2023. Untersucht wurden Triglyceride, LDL-C, HDL-C, non-HDL-C und ApoB in der Allgemeinbevölkerung und Untergruppen.",
+          "zuverlaessigkeit": "Hoch – Dose-Response-Meta-Analysen erlauben präzisere Aussagen als einfache Mittelwert-Vergleiche, weil sie den Zusammenhang über den gesamten Dosisbereich modellieren. Die Triglycerid-Senkung gehört zu den am besten belegten Omega-3-Effekten."
+        }
+      },
+      {
+        "wert": -0.28,
+        "einheit": "cohen_d",
+        "kontext": "Verbesserung depressiver Symptome (kleiner Effekt), EPA-dominante Formeln wirksamer",
+        "quelle": "Bai et al. 2018, Meta-Analyse 26 RCTs (n=2160)",
+        "erklaerung": {
+          "was_bedeutet": "Bei Menschen mit depressiven Symptomen verbesserte Omega-3 die Stimmung im Mittel leicht (standardisierte Effektgröße ca. -0.28, ein kleiner bis moderater Effekt). Entscheidend ist die Zusammensetzung: Präparate mit hohem EPA-Anteil (≥60 %) bei einer Dosis bis ca. 1 g/Tag zeigten Nutzen, reine DHA-Präparate nicht.",
+          "studie_zeigt": "Über 26 doppelblinde, placebokontrollierte Studien hinweg war der Gesamteffekt auf depressive Symptome statistisch signifikant (P=0.004). EPA-reine und EPA-betonte Formulierungen wirkten am deutlichsten, DHA-betonte kaum. Das ist ergänzende Evidenz – kein Ersatz für eine Depressionsbehandlung.",
+          "studien_details": "Meta-Analyse doppelblinder RCTs, systematische Suche in PubMed und EMBASE, 2160 Teilnehmer. Auswertung mit Fixed-/Random-Effects-Modellen, Sensitivitätsanalyse und Funnel-Plot zur Prüfung auf Publikationsbias.",
+          "zuverlaessigkeit": "Moderat – der Effekt ist real, aber klein und je nach Formulierung unterschiedlich. Omega-3 ist hier eine mögliche Ergänzung, kein eigenständiges Antidepressivum. Bei Depression gehört die Behandlung in ärztliche/therapeutische Hände."
+        }
+      },
+      {
+        "wert": 24,
+        "einheit": "% (relatives Risiko)",
+        "kontext": "Erhöhtes Vorhofflimmern-Risiko unter pharmakologischer Omega-3-Hochdosis (Sicherheitsbefund)",
+        "quelle": "Gencer et al. 2021, Circulation Meta-Analyse (n=83.112) + Update 2025 (34 RCTs, n=114.326)",
+        "erklaerung": {
+          "was_bedeutet": "Das ist ein Sicherheits- und kein Wirksamkeitsbefund: Hohe Dosen verschreibungspflichtiger Omega-3-Präparate erhöhten in Studien das Risiko für Vorhofflimmern (eine Herzrhythmusstörung). Das Risiko ist dosisabhängig und betrifft vor allem hohe Dosen (>1,5 g/Tag) bei Menschen mit hohem Herz-Kreislauf-Risiko. Der absolute Anstieg ist klein (etwa 1 %).",
+          "studie_zeigt": "In der gepoolten Auswertung stieg das relative Vorhofflimmern-Risiko um ca. 24 %. Eine aktualisierte Meta-Analyse 2025 (34 RCTs, 114.326 Personen) zeigte: Nur die Kombination aus hohem Herz-Risiko UND Hochdosis (>1,5 g/Tag) ergab ein statistisch signifikant erhöhtes Risiko (Odds Ratio 1,48). Niedrige Dosen (~1 g/Tag oder weniger) waren weitgehend unauffällig.",
+          "studien_details": "Mehrere große Meta-Analysen randomisierter Outcome-Studien, u.a. publiziert in Circulation (2021) und als Update auf medRxiv (2025). Eingeschlossen wurden Studien mit pharmakologischen EPA/DHA-Dosen, Mindestlaufzeit 12 Monate, Patienten mit vorbestehendem Vorhofflimmern ausgeschlossen.",
+          "zuverlaessigkeit": "Hoch für die Aussage 'Hochdosis bei Herz-Risiko erhöht das AF-Risiko'. Wichtig fürs Verständnis: Marines Omega-3 aus der Ernährung (Fisch) ist im Gegenteil mit niedrigerem AF-Risiko assoziiert – das Risiko betrifft hohe Supplement-/Arzneidosen, nicht moderate Mengen."
+        }
+      }
+    ]
+  },
+  "indikationen": [
+    {
+      "ziel": "herzgesundheit",
+      "staerke": 0.7,
+      "kommentar": "Senkt Triglyceride und reduziert kardiovaskuläre Ereignisse moderat. Stärkster Nutzen bei erhöhten Triglyceriden und EPA-Hochdosis (REDUCE-IT). Bei Allgemeinbevölkerung kleinerer Effekt (VITAL, ASCEND)."
+    },
+    {
+      "ziel": "entzuendung",
+      "staerke": 0.65,
+      "kommentar": "Reduziert entzündliche Marker und Krankheitsaktivität bei rheumatoider Arthritis – weniger Morgensteifigkeit und NSAR-Bedarf (18-RCT-Meta-Analyse 2024)."
+    },
+    {
+      "ziel": "gelenkgesundheit",
+      "staerke": 0.6,
+      "kommentar": "Bei entzündlichen Gelenkerkrankungen klinisch relevante Linderung; bei reiner Arthrose schwächere Evidenz."
+    },
+    {
+      "ziel": "gehirn_kognition",
+      "staerke": 0.4,
+      "kommentar": "DHA ist Strukturbaustein des Gehirns; Evidenz für kognitiven Schutz im Alter gemischt. Klarer Nutzen v.a. bei niedrigem Ausgangsstatus."
+    },
+    {
+      "ziel": "stimmung",
+      "staerke": 0.4,
+      "kommentar": "Kleiner Effekt auf depressive Symptome, EPA-betonte Formeln wirksamer. Ergänzend, kein Ersatz für Therapie."
+    },
+    {
+      "ziel": "gesundheit",
+      "staerke": 0.7,
+      "kommentar": "Essentielle Fettsäure, die viele über die Ernährung zu wenig aufnehmen. Solider Grundbaustein bei geringem Fischkonsum."
+    }
+  ],
+  "kontraindikationen": [
+    {
+      "art": "medikament",
+      "wert": "blutverduenner",
+      "schwere": "vorsichtig",
+      "hinweis": "Omega-3 kann die Blutgerinnung leicht hemmen. Bei Einnahme von Gerinnungshemmern (z.B. Warfarin, ASS, DOAKs) oder vor Operationen ärztlich abklären. Hinweis: In klinischen Studien wurde trotz theoretischer Bedenken meist KEIN erhöhtes Blutungsrisiko nachgewiesen – Vorsicht bleibt aber sinnvoll."
+    },
+    {
+      "art": "medikament",
+      "wert": "ibrutinib",
+      "schwere": "hart",
+      "hinweis": "Unter Ibrutinib (Krebstherapie) sollten Fischöl-Präparate wegen erhöhtem Nasenbluten-Risiko gemieden werden."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "vorhofflimmern_hochrisiko",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei bekanntem Vorhofflimmern oder hohem Herz-Kreislauf-Risiko keine Hochdosis (>1,5 g/Tag) ohne ärztliche Begleitung – Hochdosis erhöht in dieser Gruppe das Vorhofflimmern-Risiko."
+    }
+  ],
+  "dosierung": {
+    "standard": "250–500 mg EPA+DHA täglich (Basisbedarf)",
+    "bereich": {
+      "min": 250,
+      "max": 2000,
+      "einheit": "mg EPA+DHA"
+    },
+    "obergrenze": "Bis 5 g/Tag EPA+DHA laut EFSA für Erwachsene ohne Sicherheitsbedenken; >3 g/Tag nur unter ärztlicher Begleitung. DHA allein: konservativer EFSA-Safe-Level 1 g/Tag (2026).",
+    "timing": "Zu einer fetthaltigen Mahlzeit (EPA/DHA sind fettlöslich – verbessert die Aufnahme). Tageszeit unwichtig. Bei erhöhten Triglyceriden 1–2 g/Tag, therapeutisch 2–4 g/Tag nur ärztlich.",
+    "quelle": "EFSA (250–500 mg EPA+DHA Basis; Safe-Level-Bewertung 2024/2026) + American Heart Association"
+  },
+  "population_spezifisch": {
+    "schwangerschaft": {
+      "relevant": true,
+      "staerke": 0.7,
+      "kommentar": "DHA ist wichtig für die Gehirn- und Augenentwicklung des Kindes. Empfehlung meist 200–300 mg DHA zusätzlich täglich. Auf schadstoffarme Quellen (Algenöl oder geprüftes Fischöl) achten.",
+      "quelle": "EFSA + Leitlinien zur Schwangerenernährung"
+    },
+    "vegetarier_veganer": {
+      "relevant": true,
+      "staerke": 0.85,
+      "kommentar": "Pflanzliche ALA-Quellen (Lein, Chia) werden kaum in EPA/DHA umgewandelt. Algenöl liefert EPA/DHA direkt und ist die vegane Wahl der Wahl."
+    },
+    "senioren_50plus": {
+      "relevant": true,
+      "staerke": 0.5,
+      "kommentar": "Potenzieller Nutzen für Herz, Gelenke und kognitive Funktion; gleichzeitig auf Hochdosis-Risiko (Vorhofflimmern) bei Herz-Risiko-Patienten achten."
+    },
+    "menschen_mit_hohen_triglyceriden": {
+      "relevant": true,
+      "staerke": 0.8,
+      "kommentar": "Stärkster Wirksamkeitsbereich: 1–4 g/Tag senken Triglyceride deutlich. Höhere therapeutische Dosen nur unter ärztlicher Kontrolle."
+    }
+  },
+  "warnhinweise": [
+    "Qualität ist entscheidend: Auf Reinheit (Schwermetalle, geprüfte Schadstoffwerte) und Oxidationsstabilität (Frische, TOTOX-Wert) achten – ranziges Fischöl ist kontraproduktiv.",
+    "Triglycerid-Form und Ethylester unterscheiden sich in der Bioverfügbarkeit; die Triglycerid-(rTG-)Form gilt als besser aufnehmbar und magenfreundlicher.",
+    "Hohe Dosen (>1,5 g/Tag) können bei Menschen mit hohem Herz-Kreislauf-Risiko das Vorhofflimmern-Risiko erhöhen – nicht ohne Grund hochdosieren.",
+    "Häufigste Nebenwirkung sind milde Magen-Darm-Beschwerden und 'Fisch-Aufstoßen' – mit der Mahlzeit eingenommen oder als gekühlte Kapsel meist vermeidbar.",
+    "Der Omega-3-Index (Anteil EPA+DHA in den roten Blutkörperchen) lässt sich messen; ein Zielwert von ca. 8–11 % gilt als günstig."
+  ],
+  "quellen": [
+    {
+      "titel": "Association Between Omega-3 Fatty Acid Intake and Dyslipidemia: A Continuous Dose-Response Meta-Analysis of Randomized Controlled Trials",
+      "autoren": "Wang T, Zhang X, Zhou N, et al.",
+      "url": "https://www.ahajournals.org/doi/10.1161/JAHA.123.029512",
+      "jahr": 2023,
+      "typ": "meta-analyse",
+      "doi": "10.1161/JAHA.123.029512"
+    },
+    {
+      "titel": "Effect of omega-3 fatty acids on cardiovascular outcomes: A systematic review and meta-analysis",
+      "autoren": "Khan SU, Lone AN, Khan MS, et al.",
+      "url": "https://www.thelancet.com/journals/eclinm/article/piis2589-5370(21)00277-7/fulltext",
+      "jahr": 2021,
+      "typ": "meta-analyse"
+    },
+    {
+      "titel": "Effect of Long-Term Marine omega-3 Fatty Acids Supplementation on the Risk of Atrial Fibrillation in Randomized Controlled Trials of Cardiovascular Outcomes: A Systematic Review and Meta-Analysis",
+      "autoren": "Gencer B, Djousse L, Al-Ramady OT, et al.",
+      "url": "https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.121.055654",
+      "jahr": 2021,
+      "typ": "meta-analyse",
+      "doi": "10.1161/CIRCULATIONAHA.121.055654"
+    },
+    {
+      "titel": "Effects of Omega-3 Fatty Acid Treatment on Risk for Atrial Fibrillation: An Updated Meta-Analysis of 34 Trials including 114,326 Individuals",
+      "autoren": "O'Keefe JH, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12723971/",
+      "jahr": 2025,
+      "typ": "meta-analyse"
+    },
+    {
+      "titel": "Effects of omega-3 supplementation on lipid metabolism, inflammation, and disease activity in rheumatoid arthritis: a meta-analysis of randomized controlled trials",
+      "autoren": "Liu X, et al.",
+      "url": "https://link.springer.com/article/10.1007/s10067-024-07040-0",
+      "jahr": 2024,
+      "typ": "meta-analyse",
+      "doi": "10.1007/s10067-024-07040-0"
+    },
+    {
+      "titel": "Efficacy of omega-3 PUFAs in depression: A meta-analysis",
+      "autoren": "Bai ZG, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6683166/",
+      "jahr": 2018,
+      "typ": "meta-analyse"
+    },
+    {
+      "titel": "Scientific Opinion on the tolerable upper intake level for supplemental docosahexaenoic acid (DHA)",
+      "autoren": "EFSA Panel on Nutrition, Novel Foods and Food Allergens",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12802091/",
+      "jahr": 2025,
+      "typ": "position-stand"
+    },
+    {
+      "titel": "Omega-3 Fatty Acids - Health Professional Fact Sheet",
+      "autoren": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Omega3FattyAcids-HealthProfessional/",
+      "jahr": 2024,
+      "typ": "position-stand"
+    }
+  ],
+  "inhalt": [
+    "omega3"
+  ]
+}

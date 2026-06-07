@@ -1,0 +1,197 @@
+{
+  "id": "eaas",
+  "name": "EAAs (Essentielle Aminosäuren)",
+  "kategorie": "muskelaufbau",
+  "ikon": "🧬",
+  "kurz_beschreibung": "Die neun Aminosäuren, die der Körper nicht selbst bilden kann – der eigentliche Baustoff für Muskelprotein. Sinnvoll bei niedriger Proteinzufuhr, im Alter oder in der Diät; bei ausreichend Protein meist überflüssig.",
+  "beschreibung": {
+    "was_ist_es": "Essentielle Aminosäuren (EAAs) sind die neun Aminosäuren, die der Körper nicht selbst herstellen kann und über die Nahrung aufnehmen muss: Leucin, Isoleucin, Valin (die drei BCAAs), Lysin, Methionin, Phenylalanin, Threonin, Tryptophan und Histidin. Sie sind die unverzichtbaren Bausteine für den Aufbau von Muskelprotein. Als Supplement gibt es sie in freier Form (Pulver), die schnell aufgenommen wird.",
+    "wie_wirkt_es": "Freie EAAs lassen die Aminosäure-Konzentration im Blut rasch ansteigen und stimulieren dadurch die Muskelproteinsynthese (MPS) – den Prozess des Muskelaufbaus. Leucin wirkt dabei als 'Auslöser', aber für eine vollständige Protein-Synthese werden alle neun EAAs als Material benötigt. Genau das ist der Grund, warum reine BCAAs (nur drei der neun) den Muskelaufbau nicht voll aufrechterhalten können.",
+    "warum_wichtig": "Der entscheidende Punkt für eine ehrliche Einordnung: EAAs sind der wirksame Anteil jedes hochwertigen Proteins. Wer genug Protein isst (für Trainierende ca. 1,6–2,2 g/kg), nimmt automatisch reichlich EAAs auf – ein zusätzliches EAA-Supplement bringt dann kaum Vorteil. Sinnvoll werden freie EAAs vor allem dort, wo die Proteinzufuhr niedrig ist, die Muskeln schlechter ansprechen (Alter) oder ein Kaloriendefizit besteht. Als Werkzeug für bestimmte Situationen nützlich, als Pflicht-Supplement für jeden überschätzt."
+  },
+  "fazit": {
+    "top_effekte": [
+      "Stimulieren die Muskelproteinsynthese – freie EAAs sogar etwas stärker als die gleiche Menge intaktes Protein",
+      "Bereits kleine Mengen (1,5–3 g) lösen MPS aus; Sättigung bei ca. 15–18 g",
+      "Besonders nützlich bei niedriger Proteinzufuhr, im Alter (anabole Resistenz) und im Kaloriendefizit"
+    ],
+    "ideal_fuer": "Ältere mit anaboler Resistenz, Menschen mit niedriger Proteinzufuhr, Diätphasen (Kaloriendefizit), Veganer/Vegetarier, Situationen ohne Zugang zu einer Proteinmahlzeit",
+    "dosis": "Ca. 6–15 g freie EAAs pro Portion (mit hohem Leucinanteil); Plateau bei 15–18 g",
+    "vorsicht_bei": "Gut verträglich; bei ausreichender Proteinzufuhr meist überflüssig (Geldverschwendung), Phenylketonurie (Phenylalanin)",
+    "mythen": [
+      "„EAAs sind ein Muss für den Muskelaufbau“ – überzogen. Wer genug Protein isst (1,6–2,2 g/kg), nimmt bereits reichlich EAAs auf; ein Zusatzsupplement bringt dann kaum Vorteil.",
+      "„BCAAs reichen aus / sind dasselbe“ – falsch. BCAAs sind nur 3 der 9 EAAs. Ohne die übrigen 6 kann die Muskelproteinsynthese nicht vollständig ablaufen; die BCAA-Anabolik-Behauptung gilt als nicht belegt (Wolfe 2017).",
+      "„EAAs bauen auch ohne Training Muskeln auf“ – nur eingeschränkt. Bei gesunden, aktiven Menschen ist Training der Haupttreiber; ohne Training zeigen EAAs v.a. bei anabol-resistenten Gruppen (Ältere) funktionelle Effekte.",
+      "„Mehr EAAs = mehr Muskeln“ – falsch. Die MPS-Stimulation plateaut bei ~15–18 g pro Portion; darüber gibt es keinen zusätzlichen Nutzen."
+    ]
+  },
+  "evidenz": {
+    "level": "B",
+    "score": 72,
+    "review_typ": "position-stand",
+    "studien_anzahl": 40,
+    "konsens": "ISSN Position Stand EAA 2023 + Hypertrophie-Review 2025 (46 Studien); gut belegter akuter MPS-Effekt, begrenzter Zusatznutzen bei ausreichender Proteinzufuhr",
+    "effekt_groesse": [
+      {
+        "wert": 3,
+        "einheit": "g (Schwellendosis)",
+        "kontext": "Bereits 1,5–3 g freie EAAs lösen eine messbare Muskelproteinsynthese aus; Plateau bei 15–18 g",
+        "quelle": "ISSN Position Stand EAA 2023 (Ferrando, Wolfe et al.)",
+        "erklaerung": {
+          "was_bedeutet": "EAAs sind erstaunlich potent darin, den Muskelaufbau-Prozess (Muskelproteinsynthese, MPS) anzustoßen: Schon kleine Mengen von 1,5 bis 3 Gramm in freier Form reichen aus, um die MPS messbar zu steigern. Der Effekt steigt mit der Dosis, erreicht aber bei etwa 15–18 g ein Plateau – mehr bringt dann keinen zusätzlichen Aufbau.",
+          "studie_zeigt": "Laut der offiziellen Position der International Society of Sports Nutrition (ISSN) stimulieren freie EAAs die MPS schon bei kleinen Dosen, und – wichtig – die Stimulation benötigt KEINE nicht-essentiellen Aminosäuren. Freie EAAs regen die MPS sogar stärker an als die gleiche Menge intakten Proteins, weil sie schneller und vollständiger verfügbar sind.",
+          "studien_details": "International Society of Sports Nutrition Position Stand: Essential Amino Acid Supplementation (Journal of the International Society of Sports Nutrition, 2023), umfassende Auswertung der Studienlage zu Dosis, Leucinanteil und MPS.",
+          "zuverlaessigkeit": "Hoch für den akuten MPS-Effekt – das ist über viele Stable-Isotope-Studien hinweg sehr gut belegt. Wichtige Einordnung: Ein akut erhöhter MPS-Wert bedeutet nicht automatisch proportional mehr langfristigen Muskelaufbau."
+        }
+      },
+      {
+        "wert": 1.6,
+        "einheit": "g/kg/Tag (Nutzen-Schwelle)",
+        "kontext": "Zusatznutzen v.a. UNTER ~1,6 g/kg Proteinzufuhr; oberhalb ~2,0 g/kg kein Effekt mehr (ehrliche Einordnung)",
+        "quelle": "Hypertrophie-Review 2025 (46 Studien, PMC12655760)",
+        "erklaerung": {
+          "was_bedeutet": "Das ist der ehrlichste und wichtigste Punkt: Der Zusatznutzen von Protein/EAA-Supplementen zeigt sich vor allem dann, wenn die tägliche Proteinzufuhr unter etwa 1,6 g pro kg Körpergewicht liegt oder pro Mahlzeit weniger als 2–3 g Leucin geliefert werden. Sobald die Zufuhr über ~2,0 g/kg liegt, verschwindet der Effekt – die Speicher sind dann schon 'gesättigt'. Praktisch: Wer ohnehin viel Protein isst, braucht keine EAAs.",
+          "studie_zeigt": "Über 46 ausgewertete Studien hinweg zeigten Protein/EAA konsistente Vorteile nur bei niedriger Zufuhr oder geringem Leucin pro Mahlzeit. Die Effekte erreichten ein Plateau, sobald die Gesamtzufuhr ~2,0 g/kg/Tag überstieg. EAAs sind damit ein Lückenfüller, kein universeller Wachstumsverstärker.",
+          "studien_details": "Mechanismus- und morphologiebasierte Übersichtsarbeit zu Supplementen für Muskelhypertrophie (2025), die 46 Studien zu Protein/EAA, Kreatin, HMB und weiteren auswertete und Schwellen- bzw. Plateau-Effekte herausarbeitete.",
+          "zuverlaessigkeit": "Hoch – der Schwellen-/Plateau-Effekt ist konsistent mit der Whey-Evidenz (gleiches Prinzip wie bei der Gesamtproteinmenge). Diese Einordnung schützt vor unnötigen Ausgaben."
+        }
+      },
+      {
+        "wert": 0,
+        "einheit": "kein voller MPS-Effekt durch BCAAs allein (Abgrenzung)",
+        "kontext": "BCAAs (3 der 9 EAAs) können die Muskelproteinsynthese nicht voll aufrechterhalten – EAAs schon",
+        "quelle": "Wolfe 2017 (JISSN) + ISSN Position Stand EAA 2023",
+        "erklaerung": {
+          "was_bedeutet": "Das grenzt EAAs klar von den populäreren BCAAs ab: BCAAs enthalten nur drei der neun essentiellen Aminosäuren (Leucin, Isoleucin, Valin). Leucin 'zündet' zwar die Muskelproteinsynthese, aber ohne die übrigen sechs EAAs fehlt dem Körper das Baumaterial, um neue Muskelproteine fertigzustellen. Die Synthese wird dann durch verstärkten Eiweißabbau begrenzt – unterm Strich kein echter Netto-Aufbau.",
+          "studie_zeigt": "Eine vielzitierte Analyse (Wolfe 2017) kam zum Schluss, dass die Behauptung, BCAAs allein stimulierten beim Menschen den Muskelaufbau, nicht gerechtfertigt sei. Der ISSN Position Stand bestätigt: Compositions mit ALLEN EAAs bringen deutlich mehr als einzelne Aminosäuren oder BCAAs.",
+          "studien_details": "Wolfe RR, 'Branched-chain amino acids and muscle protein synthesis in humans: myth or reality?' (JISSN 2017) sowie ISSN Position Stand EAA 2023; gestützt auf Stable-Isotope-Messungen der Netto-Proteinbilanz.",
+          "zuverlaessigkeit": "Hoch – die Überlegenheit kompletter EAAs gegenüber BCAAs ist gut belegt. Praktische Konsequenz: Wer schon Aminosäuren supplementieren will, sollte EAAs statt BCAAs wählen."
+        }
+      }
+    ]
+  },
+  "indikationen": [
+    {
+      "ziel": "muskelaufbau",
+      "staerke": 0.55,
+      "kommentar": "Stimulieren MPS zuverlässig; relevanter Zusatznutzen aber v.a. bei niedriger Proteinzufuhr. Bei ausreichend Protein kaum Vorteil gegenüber normaler Ernährung."
+    },
+    {
+      "ziel": "muskelerhalt_diaet",
+      "staerke": 0.6,
+      "kommentar": "Im Kaloriendefizit steigt der EAA-Bedarf; freie EAAs können helfen, die anabole Sensitivität und Muskelmasse zu erhalten."
+    },
+    {
+      "ziel": "alter_sarkopenie",
+      "staerke": 0.65,
+      "kommentar": "Bei anaboler Resistenz im Alter sinnvoll – ein höherer Leucinanteil ist nötig, um die MPS auszulösen. Funktioneller Nutzen teils auch ohne Training."
+    },
+    {
+      "ziel": "regeneration",
+      "staerke": 0.4,
+      "kommentar": "Können die Erholung unterstützen; bei ausreichender Gesamtproteinzufuhr ist der Zusatzeffekt begrenzt."
+    },
+    {
+      "ziel": "vegan_proteinqualitaet",
+      "staerke": 0.5,
+      "kommentar": "Bei pflanzlicher Ernährung mit teils unvollständigem Aminosäureprofil können EAAs gezielt Lücken füllen."
+    }
+  ],
+  "kontraindikationen": [
+    {
+      "art": "medizinisch",
+      "wert": "phenylketonurie",
+      "schwere": "hart",
+      "hinweis": "EAA-Präparate enthalten Phenylalanin. Bei Phenylketonurie (PKU, angeborene Stoffwechselstörung) sind sie kontraindiziert."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "nieren_lebererkrankung",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei fortgeschrittener Nieren- oder Lebererkrankung muss die Aminosäure-/Proteinzufuhr ärztlich gesteuert werden. Nicht in Eigenregie hochdosieren."
+    },
+    {
+      "art": "nutzen",
+      "wert": "ausreichende_proteinzufuhr",
+      "schwere": "vorsichtig",
+      "hinweis": "Keine gesundheitliche Gefahr, aber: Bei bereits ausreichender Proteinzufuhr (≥1,6 g/kg) ist der Zusatznutzen minimal – das Geld ist meist besser in normale Proteinquellen investiert."
+    }
+  ],
+  "dosierung": {
+    "standard": "6–15 g freie EAAs pro Portion (mit hohem Leucinanteil)",
+    "bereich": {
+      "min": 6,
+      "max": 15,
+      "einheit": "g"
+    },
+    "obergrenze": "Die MPS-Stimulation plateaut bei ca. 15–18 g pro Portion; höhere Mengen bringen keinen Zusatznutzen. Die sichere Obergrenze für EAAs ist laut ISSN großzügig und wird durch übliche Supplementmengen bei Weitem nicht erreicht.",
+    "timing": "Rund ums Training oder zwischen den Mahlzeiten, wenn keine Proteinmahlzeit verfügbar ist. Bei Älteren auf ausreichend Leucin (ca. 2,5–3 g) pro Portion achten. Wichtig: Die Gesamtproteinzufuhr über den Tag ist der entscheidende Hebel – EAAs sind nur ergänzend.",
+    "quelle": "ISSN Position Stand EAA 2023 + Hypertrophie-Review 2025"
+  },
+  "population_spezifisch": {
+    "senioren_50plus": {
+      "relevant": true,
+      "staerke": 0.65,
+      "kommentar": "Hauptzielgruppe: anabole Resistenz erfordert mehr Leucin/EAAs pro Portion, um die MPS auszulösen. Funktioneller Nutzen auch bei begrenztem Training."
+    },
+    "diaet_kaloriendefizit": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "Im Defizit steigt der EAA-Bedarf; gezielte EAA-Zufuhr hilft, Muskelmasse zu schützen."
+    },
+    "vegetarier_veganer": {
+      "relevant": true,
+      "staerke": 0.5,
+      "kommentar": "Können bei pflanzlicher Ernährung Aminosäure-Lücken füllen; oft genügt aber schon eine clevere Kombination pflanzlicher Proteinquellen."
+    },
+    "freizeitsportler_ausreichend_protein": {
+      "relevant": true,
+      "staerke": 0.25,
+      "kommentar": "Bei guter Proteinzufuhr meist überflüssig – das Geld ist besser in Gesamtprotein (z.B. Whey oder Lebensmittel) investiert."
+    }
+  },
+  "warnhinweise": [
+    "EAAs sind der wirksame Anteil jedes hochwertigen Proteins – bei ausreichender Proteinzufuhr (≥1,6 g/kg) bringen sie kaum Zusatznutzen und sind oft Geldverschwendung.",
+    "EAAs sind den populäreren BCAAs überlegen: BCAAs allein (3 von 9 EAAs) können den Muskelaufbau nicht voll aufrechterhalten.",
+    "Mehr ist nicht besser: Die Muskelproteinsynthese plateaut bei ~15–18 g pro Portion.",
+    "Echter Nutzen vor allem in Sondersituationen: hohes Alter (anabole Resistenz), Kaloriendefizit, niedrige oder pflanzliche Proteinzufuhr, keine Proteinmahlzeit verfügbar.",
+    "Bei Phenylketonurie wegen des Phenylalanin-Gehalts kontraindiziert; bei Nieren-/Lebererkrankung ärztlich abklären.",
+    "Ein akut erhöhter MPS-Wert ist nicht gleichbedeutend mit proportional mehr langfristigem Muskelaufbau – Training und Gesamtproteinzufuhr bleiben entscheidend."
+  ],
+  "quellen": [
+    {
+      "titel": "International Society of Sports Nutrition Position Stand: Effects of essential amino acid supplementation on exercise and performance",
+      "autoren": "Ferrando AA, Wolfe RR, Hirsch KR, et al.",
+      "url": "https://www.tandfonline.com/doi/full/10.1080/15502783.2023.2263409",
+      "jahr": 2023,
+      "typ": "position-stand",
+      "doi": "10.1080/15502783.2023.2263409"
+    },
+    {
+      "titel": "Nutritional Supplements for Muscle Hypertrophy: Mechanisms and Morphology-Focused Evidence",
+      "autoren": "Various",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12655760/",
+      "jahr": 2025,
+      "typ": "systematic-review"
+    },
+    {
+      "titel": "Branched-chain amino acids and muscle protein synthesis in humans: myth or reality?",
+      "autoren": "Wolfe RR",
+      "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0184-9",
+      "jahr": 2017,
+      "typ": "review",
+      "doi": "10.1186/s12970-017-0184-9"
+    },
+    {
+      "titel": "Anabolic response to essential amino acid plus whey protein composition is greater than whey protein alone in young healthy adults",
+      "autoren": "Park S, Church DD, Azhar G, et al.",
+      "url": "https://link.springer.com/article/10.1186/s12970-020-0340-5",
+      "jahr": 2020,
+      "typ": "rct",
+      "doi": "10.1186/s12970-020-0340-5"
+    }
+  ],
+  "inhalt": [
+    "eaas"
+  ]
+}

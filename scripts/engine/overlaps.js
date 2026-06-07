@@ -2,16 +2,27 @@
    engine/overlaps.js
    Entfernt redundante Supplements wenn Wirkstoffe bereits
    anderweitig abgedeckt sind (z. B. ZMA, wenn Mg + Zink schon drin)
-   Ausgelagert aus app.js
 
    Abhängigkeiten:
-   - Globale Variable INHALT (aus data/wirkstoff-inhalte.js)
+   - Globale Variable WIRKSTOFFE_WISSEN (aus data/wirkstoffe-wissen.json)
+     Genauer: WIRKSTOFFE_WISSEN[id].inhalt – Array der enthaltenen Wirkstoffe
    Genutzt von: engine/empfehlungen.js → berechneEmpfehlungen()
+
+   Hinweis: Die alte INHALT-Variable wurde abgelöst. Das inhalt-Feld
+   ist jetzt direkt in der wirkstoffe-wissen.json bei jedem Wirkstoff.
 
    Fixes:
    - Bug #1: ID-Duplikat-Check verhindert doppelte Wirkstoffe
    - Bug #3: Geschützte IDs werden nie durch Multivitamin verdrängt
 ============================================================ */
+
+// ── HELFER: Inhalt eines Wirkstoffs aus der Wissensbasis lesen ──
+// Fallback: leeres Array (wenn Wirkstoff nicht in Wissensbasis)
+function getInhalt(wirkstoffId) {
+  if (typeof WIRKSTOFFE_WISSEN === 'undefined') return [];
+  var w = WIRKSTOFFE_WISSEN[wirkstoffId];
+  return (w && w.inhalt) ? w.inhalt : [];
+}
 
 // ── OVERLAP-AUFLÖSUNG ──
 function loesOverlaps(emps) {
@@ -25,7 +36,6 @@ function loesOverlaps(emps) {
   for (var k = 0; k < emps.length; k++) {
     var id = emps[k].id;
     if (gesehenIds[id] !== undefined) {
-      // ID bereits vorhanden – schwächere Prio raus
       var bestehendeIdx = gesehenIds[id];
       if (prio[emps[k].prioritaet] < prio[emps[bestehendeIdx].prioritaet]) {
         del[emps[bestehendeIdx].id + '_idx_' + bestehendeIdx] = 'Doppelter Wirkstoff – stärkere Variante behalten';
@@ -37,11 +47,10 @@ function loesOverlaps(emps) {
       gesehenIds[id] = k;
     }
   }
-  // Duplikate aus emps filtern (Index-basiert da gleiche ID mehrfach vorkommen kann)
   emps = emps.filter(function(e, idx) {
     return !del[e.id + '_idx_' + idx];
   });
-  del = {}; // Reset für weiteren Verlauf
+  del = {};
 
   // ── Spezifische Kombinations-Regeln ──
 
@@ -67,8 +76,6 @@ function loesOverlaps(emps) {
   // ── Bug #3 Fix: Geschützte IDs ──
   // Diese Wirkstoffe haben therapeutische Relevanz in Einzeldosierung
   // und dürfen NICHT durch Multivitamin-Overlap aus dem Stack fliegen.
-  // Hintergrund: Multivitamin enthält z. B. Eisen und B12, aber oft in zu
-  // niedriger Dosis um einen Mangel zu beheben.
   var geschuetzt = ['eisen', 'vitamin_b12', 'vitamin_d3'];
 
   // ── Allgemeine Wirkstoff-Überschneidungen prüfen ──
@@ -79,14 +86,13 @@ function loesOverlaps(emps) {
     if (del[emps[i].id]) continue;
     for (var j = i + 1; j < emps.length; j++) {
       if (del[emps[j].id]) continue;
-      var s1 = INHALT[emps[i].id] || [];
-      var s2 = INHALT[emps[j].id] || [];
+      var s1 = getInhalt(emps[i].id);
+      var s2 = getInhalt(emps[j].id);
       for (var a = 0; a < s1.length; a++) {
         if (skip.indexOf(s1[a]) >= 0) continue;
         for (var b = 0; b < s2.length; b++) {
           if (skip.indexOf(s2[b]) >= 0) continue;
           if (s1[a] === s2[b]) {
-            // Bug #3: Geschützte Wirkstoffe werden nie durch Multivitamin verdrängt
             var iMulti = emps[i].id === 'multivitamin';
             var jMulti = emps[j].id === 'multivitamin';
             if (iMulti && geschuetzt.indexOf(emps[j].id) >= 0) continue;

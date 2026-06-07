@@ -1,0 +1,211 @@
+{
+  "id": "whey_protein",
+  "name": "Whey Protein (Molkenprotein)",
+  "kategorie": "muskelaufbau",
+  "ikon": "🥛",
+  "kurz_beschreibung": "Schnell verdauliches, hochwertiges Protein aus Milch mit hohem Leucin-Anteil. Der praktischste Weg, die Proteinzufuhr für Muskelaufbau und Erhalt zu decken – aber kein Pflichtprodukt.",
+  "beschreibung": {
+    "was_ist_es": "Whey (Molkenprotein) ist ein vollständiges Protein, das bei der Käseherstellung als Nebenprodukt anfällt. Es enthält alle essentiellen Aminosäuren in günstigem Verhältnis und besonders viel Leucin – die Aminosäure, die den Muskelaufbau-Schalter (mTOR) am stärksten anstößt. Es gibt drei Hauptformen: Konzentrat (günstig, etwas Laktose/Fett), Isolat (höherer Proteinanteil, kaum Laktose) und Hydrolysat (vorverdaut, schnellste Aufnahme).",
+    "wie_wirkt_es": "Nach der Einnahme wird Whey schnell verdaut und überflutet das Blut zügig mit Aminosäuren. Dieser rasche Anstieg – vor allem von Leucin – maximiert kurzfristig die Muskelproteinsynthese (MPS). Über den Tag summiert sich das mit Training zu mehr Muskelaufbau bzw. besserem Muskelerhalt. Entscheidend ist aber die GESAMTE Proteinmenge pro Tag, nicht die einzelne Portion.",
+    "warum_wichtig": "Muskelaufbau und -erhalt brauchen eine ausreichende Proteinzufuhr (für Trainierende ca. 1,6–2,2 g/kg Körpergewicht täglich). Über normale Mahlzeiten ist das machbar, aber nicht immer praktisch. Whey ist schlicht ein bequemes, kostengünstiges und sehr hochwertiges Mittel, um diese Zielmenge zu erreichen – ein Werkzeug, kein Wundermittel. Wer seinen Bedarf über Essen deckt, braucht es nicht zwingend."
+  },
+  "fazit": {
+    "top_effekte": [
+      "+0,30 kg zusätzliche fettfreie Masse durch Protein-Supplementierung beim Krafttraining (Meta-Analyse, 49 Studien)",
+      "Steigert Kraftzuwächse beim Krafttraining (Effekt kleiner und variabler als bei Muskelmasse)",
+      "Höchste Proteinqualität (Leucin/DIAAS) – maximiert die akute Muskelproteinsynthese"
+    ],
+    "ideal_fuer": "Krafttrainierende, Menschen mit erhöhtem Proteinbedarf, Personen mit wenig Zeit für proteinreiche Mahlzeiten, Senioren (Sarkopenie-Prävention), Diätphasen (Muskelerhalt)",
+    "dosis": "20–40 g pro Portion (ca. 0,25 g/kg); Tagesgesamt-Protein 1,6–2,2 g/kg ist entscheidend",
+    "vorsicht_bei": "Laktoseintoleranz (Isolat wählen), Milcheiweißallergie, bestehende Nierenerkrankung (ärztliche Rücksprache)",
+    "mythen": [
+      "„Ohne Whey kein Muskelaufbau“ – falsch. Whey ist nur eine bequeme Proteinquelle. Wer die Gesamtmenge über Essen erreicht, baut genauso Muskeln auf.",
+      "„Das anabole Fenster: Protein muss direkt nach dem Training rein“ – überholt. Der anabole Effekt des Trainings hält über 24 h an; die Tagesgesamtmenge zählt weit mehr als das exakte Timing.",
+      "„Mehr Protein = mehr Muskeln“ – falsch. Oberhalb von ca. 1,6–2,2 g/kg bringt mehr Protein kaum zusätzlichen Muskelaufbau; der Überschuss wird verstoffwechselt.",
+      "„Whey schädigt die Nieren“ – bei gesunden Nieren in Meta-Analysen kein nachteiliger Effekt hoher Proteinzufuhr. Nur bei vorbestehender Nierenerkrankung ist Vorsicht geboten.",
+      "„Pflanzenprotein ist zum Muskelaufbau klar unterlegen“ – nur teilweise. Akut stimuliert Whey die MPS stärker, doch in Langzeitstudien gleichen sich die Muskelzuwächse bei ausreichender Gesamtproteinmenge weitgehend an."
+    ]
+  },
+  "evidenz": {
+    "level": "A",
+    "score": 90,
+    "review_typ": "meta-analyse",
+    "studien_anzahl": 49,
+    "konsens": "Große Meta-Analyse (Morton et al. 2018, BJSM) + ISSN Position Stand + zahlreiche RCTs",
+    "effekt_groesse": [
+      {
+        "wert": 0.3,
+        "einheit": "kg",
+        "kontext": "Zusätzliche fettfreie Masse durch Protein-Supplementierung vs. Placebo beim Krafttraining",
+        "quelle": "Morton et al. 2018, BJSM Meta-Analyse (49 RCTs, n=1.863)",
+        "erklaerung": {
+          "was_bedeutet": "Wer zum Krafttraining zusätzlich Protein supplementiert, baute in Studien im Mittel etwa 0,30 kg mehr fettfreie Masse (Muskelmasse) auf als die Placebogruppe. Das klingt nach wenig, ist aber ein echter, zusätzlicher Effekt OBEN DRAUF auf das Training – und summiert sich über längere Zeiträume. Wichtig: Der Nutzen ist am größten, wenn die Grundzufuhr vorher zu niedrig war.",
+          "studie_zeigt": "Die Protein-Supplementierung steigerte sowohl Muskelmasse als auch Kraft signifikant gegenüber Placebo. Der Effekt auf die Muskelmasse war konsistenter als der auf die Kraft. Die Wirkung nahm mit steigendem Alter ab und mit zunehmender Trainingserfahrung zu.",
+          "studien_details": "PRISMA-konforme systematische Übersicht und Meta-Regression von 49 randomisierten kontrollierten Studien mit 1.863 Teilnehmern, publiziert im British Journal of Sports Medicine 2018 (DOI 10.1136/bjsports-2017-097608). Primärer Endpunkt: Veränderung der fettfreien Masse (DXA).",
+          "zuverlaessigkeit": "Sehr hoch – größte Meta-Analyse ihrer Art, methodisch streng. Anmerkung zur Transparenz: Der Seniorautor erhielt Forschungsförderung u.a. vom US National Dairy Council; die Ergebnisse decken sich jedoch mit der breiten übrigen Literatur."
+        }
+      },
+      {
+        "wert": 1.62,
+        "einheit": "g/kg/Tag",
+        "kontext": "Breakpoint, ab dem mehr Protein kaum zusätzlichen Muskelaufbau bringt (Plateau)",
+        "quelle": "Morton et al. 2018 (95%-KI 1,03–2,20)",
+        "erklaerung": {
+          "was_bedeutet": "Die Analyse fand einen 'Sättigungspunkt' bei etwa 1,62 g Protein pro kg Körpergewicht pro Tag: Darüber hinaus brachte mehr Protein im Mittel keinen zusätzlichen Muskelaufbau. Praktisch heißt das: Ein 80-kg-Mensch braucht selten mehr als ~130 g Protein/Tag für den Muskelaufbau.",
+          "studie_zeigt": "Der Breakpoint lag bei 1,62 g/kg/Tag, allerdings mit einem breiten Vertrauensbereich von 1,03 bis 2,20 g/kg. Genau dieser weite Bereich ist Grund für die laufende Fachdebatte: Manche Forscher argumentieren, der wahre Sättigungspunkt könnte höher liegen, weshalb Fachgesellschaften vorsichtshalber 1,6–2,2 g/kg empfehlen – mit Reserve nach oben, besonders in Diätphasen.",
+          "studien_details": "Zwei-Segment-Regression (Breakpoint-Analyse) zwischen täglicher Gesamtproteinzufuhr und Veränderung der fettfreien Masse, 42 Studienarme, Proteinzufuhr 0,9–2,4 g/kg/Tag.",
+          "zuverlaessigkeit": "Hoch für die Grundaussage 'es gibt diminishing returns', moderat für den exakten Wert. Wegen des breiten Konfidenzintervalls sollte 1,62 g/kg als Orientierung, nicht als harte Obergrenze gelten."
+        }
+      },
+      {
+        "wert": 0,
+        "einheit": "kein Effekt (GFR)",
+        "kontext": "Einfluss hoher Proteinzufuhr auf die Nierenfunktion bei Gesunden (Sicherheitsbefund)",
+        "quelle": "Devries et al. 2018, Meta-Analyse 28 RCTs (n=1.358)",
+        "erklaerung": {
+          "was_bedeutet": "Das ist ein Sicherheitsbefund, der einen verbreiteten Mythos entkräftet: Eine hohe Proteinzufuhr schadet der Nierenfunktion gesunder Menschen nicht. Zwar steigt die Filtrationsrate (GFR) kurzfristig leicht an – das ist aber eine normale Anpassung, kein Schaden. Die Veränderung der Nierenfunktion unterschied sich zwischen Hoch- und Normalprotein-Gruppen nicht.",
+          "studie_zeigt": "Beim Vergleich der GFR-VERÄNDERUNG über die Studiendauer hatte die Proteinmenge keinen Effekt. Hohe Zufuhr (≥1,5 g/kg bzw. ≥100 g/Tag) beeinflusste die Nierenfunktion bei nierengesunden Erwachsenen nicht nachteilig.",
+          "studien_details": "Systematische Übersicht und Meta-Analyse von 28 RCTs mit 1.358 Teilnehmern ohne Nierenerkrankung, publiziert im Journal of Nutrition 2018. Endpunkt: glomeruläre Filtrationsrate (GFR).",
+          "zuverlaessigkeit": "Hoch für nierengesunde Personen. WICHTIGE Einschränkung: Bei VORBESTEHENDER Nierenerkrankung gilt das nicht – dort kann hohe Proteinzufuhr die Funktion verschlechtern. Im Zweifel ärztlich abklären."
+        }
+      }
+    ]
+  },
+  "indikationen": [
+    {
+      "ziel": "muskelaufbau",
+      "staerke": 0.9,
+      "kommentar": "Sehr gut belegt: Protein-Supplementierung steigert Muskelmasse und Kraft beim Krafttraining. Whey ist wegen Leucingehalt und schneller Aufnahme eine optimale Quelle."
+    },
+    {
+      "ziel": "kraft",
+      "staerke": 0.7,
+      "kommentar": "Verbessert Kraftzuwächse, Effekt etwas kleiner und variabler als bei der Muskelmasse."
+    },
+    {
+      "ziel": "muskelerhalt_diaet",
+      "staerke": 0.8,
+      "kommentar": "In Kaloriendefizit-Phasen hilft eine hohe Proteinzufuhr, Muskelmasse zu erhalten. Whey erleichtert das Erreichen der Zielmenge."
+    },
+    {
+      "ziel": "gewichtsmanagement",
+      "staerke": 0.55,
+      "kommentar": "Protein sättigt stärker als Kohlenhydrate/Fett und kann so die Kalorienkontrolle unterstützen."
+    },
+    {
+      "ziel": "alter_sarkopenie",
+      "staerke": 0.65,
+      "kommentar": "Im Alter steigt der Proteinbedarf und die 'anabole Resistenz'. Hochwertiges Protein plus Training wirkt der altersbedingten Muskelabnahme entgegen."
+    }
+  ],
+  "kontraindikationen": [
+    {
+      "art": "medizinisch",
+      "wert": "milcheiweissallergie",
+      "schwere": "hart",
+      "hinweis": "Whey stammt aus Milch. Bei echter Milcheiweißallergie ist es zu meiden – auf pflanzliche Proteine (Soja, Erbse, Reis-Blend) ausweichen."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "laktoseintoleranz",
+      "schwere": "vorsichtig",
+      "hinweis": "Whey-Konzentrat enthält Laktose und kann Verdauungsbeschwerden auslösen. Isolat oder Hydrolysat ist nahezu laktosefrei und meist gut verträglich."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "nierenerkrankung",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei VORBESTEHENDER Nierenerkrankung sollte die Proteinzufuhr ärztlich gesteuert werden. Bei gesunden Nieren ist hohe Proteinzufuhr unbedenklich."
+    }
+  ],
+  "dosierung": {
+    "standard": "20–40 g pro Portion (ca. 0,25 g/kg Körpergewicht)",
+    "bereich": {
+      "min": 20,
+      "max": 40,
+      "einheit": "g pro Portion"
+    },
+    "obergrenze": "Kein toxisches Limit für Protein bei Gesunden. Sinnvolle Gesamtzufuhr 1,6–2,2 g/kg/Tag; in Diätphasen bis ca. 2,4 g/kg. Mehr bringt für den Muskelaufbau kaum Zusatznutzen.",
+    "timing": "Über den Tag auf 3–4 Portionen verteilen (alle 3–4 h), je 20–40 g mit 700–3000 mg Leucin. Pre- oder Post-Workout ist gleichwertig – das exakte Timing ist zweitrangig gegenüber der Tagesgesamtmenge.",
+    "quelle": "ISSN Position Stand (Jäger et al. 2017) + Morton et al. 2018 (BJSM)"
+  },
+  "population_spezifisch": {
+    "anfaenger": {
+      "relevant": true,
+      "staerke": 0.75,
+      "kommentar": "Profitieren besonders, da Protein-Supplementierung bei Trainingseinsteigern und vorher niedriger Zufuhr den größten relativen Nutzen zeigt."
+    },
+    "senioren_50plus": {
+      "relevant": true,
+      "staerke": 0.7,
+      "kommentar": "Erhöhter Proteinbedarf und anabole Resistenz im Alter. Eine etwas höhere Leucin-/Proteinmenge pro Mahlzeit hilft, die Muskelproteinsynthese auszulösen (Sarkopenie-Prävention)."
+    },
+    "vegetarier_veganer": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "Whey ist nicht vegan. Pflanzliche Alternativen (Soja, oder Erbse-Reis-Blends, ggf. mit Leucin) erreichen bei ausreichender Gesamtmenge vergleichbare Langzeit-Effekte."
+    },
+    "frauen": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "Gleiche Prinzipien wie bei Männern; Proteinbedarf richtet sich nach Körpergewicht und Trainingsziel, nicht nach Geschlecht."
+    }
+  },
+  "warnhinweise": [
+    "Whey ist ein Lebensmittel, kein Wundermittel: Es ersetzt weder Training noch eine ausreichende Gesamternährung – es macht das Erreichen der Proteinzielmenge nur bequemer.",
+    "Form nach Bedarf wählen: Konzentrat ist günstig (etwas Laktose/Fett), Isolat ist proteinreicher und nahezu laktosefrei, Hydrolysat wird am schnellsten aufgenommen (teurer, selten nötig).",
+    "Auf Qualität achten: Produkte mit unabhängiger Schadstoff-/Dopingprüfung (z.B. auf Schwermetalle) bevorzugen; Proteinpulver kann je nach Herkunft belastet sein.",
+    "Die Tagesgesamtmenge an Protein ist der wichtigste Hebel – nicht das Timing, die Marke oder die Spezialform.",
+    "Bei Verdauungsbeschwerden mit Konzentrat auf Isolat wechseln oder die Portionsgröße reduzieren."
+  ],
+  "quellen": [
+    {
+      "titel": "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults",
+      "autoren": "Morton RW, Murphy KT, McKellar SR, Schoenfeld BJ, et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28698222/",
+      "jahr": 2018,
+      "typ": "meta-analyse",
+      "doi": "10.1136/bjsports-2017-097608"
+    },
+    {
+      "titel": "International Society of Sports Nutrition Position Stand: protein and exercise",
+      "autoren": "Jäger R, Kerksick CM, Campbell BI, et al.",
+      "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8",
+      "jahr": 2017,
+      "typ": "position-stand",
+      "doi": "10.1186/s12970-017-0177-8"
+    },
+    {
+      "titel": "Changes in Kidney Function Do Not Differ between Healthy Adults Consuming Higher- Compared with Lower- or Normal-Protein Diets: A Systematic Review and Meta-Analysis",
+      "autoren": "Devries MC, Sithamparapillai A, Brimble KS, et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30383278/",
+      "jahr": 2018,
+      "typ": "meta-analyse"
+    },
+    {
+      "titel": "Effect of Plant Versus Animal Protein on Muscle Mass, Strength, Physical Performance, and Sarcopenia: A Systematic Review and Meta-analysis of Randomized Controlled Trials",
+      "autoren": "Nichele S, et al.",
+      "url": "https://academic.oup.com/nutritionreviews/article/83/7/e1581/7954494",
+      "jahr": 2025,
+      "typ": "meta-analyse"
+    },
+    {
+      "titel": "Whey protein supplementation and muscle mass: current perspectives",
+      "autoren": "Naclerio F, Larumbe-Zabala E, et al.",
+      "url": "https://www.tandfonline.com/doi/full/10.2147/NDS.S166195",
+      "jahr": 2019,
+      "typ": "review"
+    },
+    {
+      "titel": "Muscle Protein Synthesis in Response to Plant-Based Protein Isolates With and Without Added Leucine Versus Whey Protein in Young Men and Women",
+      "autoren": "Lim C, Janssen TAH, Currier BS, Phillips SM, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11153912/",
+      "jahr": 2024,
+      "typ": "rct",
+      "doi": "10.1016/j.cdnut.2024.103769"
+    }
+  ],
+  "inhalt": [
+    "protein"
+  ]
+}

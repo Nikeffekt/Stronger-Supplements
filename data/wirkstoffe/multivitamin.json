@@ -1,0 +1,204 @@
+{
+  "id": "multivitamin",
+  "name": "Multivitamin",
+  "kategorie": "gesundheit",
+  "ikon": "💊",
+  "kurz_beschreibung": "Die meistverkaufte Supplement-Kategorie – und eine der am meisten überschätzten. Für gesunde, gut ernährte Menschen kaum belegter Nutzen; sinnvoll vor allem bei nachgewiesenen Mängeln oder in Risikogruppen.",
+  "beschreibung": {
+    "was_ist_es": "Ein Multivitamin (genauer: Multivitamin-Mineralstoff-Präparat, MVM) ist eine Kombination aus typischerweise 20+ Vitaminen und Mineralstoffen in einer Tablette oder Kapsel. Die Zusammensetzung variiert stark zwischen Produkten. Es wird als 'Ernährungsversicherung' vermarktet – die Idee, eventuelle Lücken in der Ernährung pauschal abzudecken.",
+    "wie_wirkt_es": "Ein Multivitamin liefert kleine bis moderate Mengen vieler Mikronährstoffe gleichzeitig. Bei einem tatsächlichen Mangel (oder erhöhtem Bedarf) kann es diesen ausgleichen und die davon abhängigen Körperfunktionen normalisieren. Bei bereits ausreichender Versorgung gibt es jedoch keinen Mechanismus, über den 'mehr' Mikronährstoffe die Gesundheit weiter verbessern würden – überschüssige wasserlösliche Vitamine werden ausgeschieden, fettlösliche können sich anreichern.",
+    "warum_wichtig": "Multivitamine sind die meistgekaufte Supplement-Kategorie und werden mit Gesundheits- und Langlebigkeitsversprechen beworben. Die ehrliche Einordnung ist hier zentral: Große, hochwertige Studien finden bei gesunden, gut ernährten Erwachsenen kaum einen Nutzen für Lebensdauer, Herz oder Krebs. Sinnvoll sind Multivitamine vor allem gezielt – bei nachgewiesenen Mängeln, bestimmten Lebensphasen oder Risikogruppen. Als Ersatz für eine gute Ernährung taugen sie nicht."
+  },
+  "fazit": {
+    "top_effekte": [
+      "Gleichen Mikronährstoff-Lücken bei Mangel oder erhöhtem Bedarf zuverlässig aus",
+      "Möglicher kleiner Nutzen für das Gedächtnis bei Älteren (COSMOS-Studien – aber umstritten)",
+      "Bei gesunden, gut ernährten Erwachsenen: kein belegter Nutzen für Lebensdauer, Herz oder Krebs"
+    ],
+    "ideal_fuer": "Menschen mit nachgewiesenen Mängeln, einseitiger Ernährung, Risikogruppen (Ältere, Schwangere, nach Magen-OP, bestimmte Erkrankungen/Medikamente), Phasen geringer Nahrungsaufnahme",
+    "dosis": "1 Tablette täglich nach Bedarf; auf moderate Dosierungen und KEIN Beta-Carotin (Raucher) achten",
+    "vorsicht_bei": "Raucher (Beta-Carotin → Lungenkrebsrisiko), Überdosierung fettlöslicher Vitamine (A, E), als Ersatz für gesunde Ernährung ungeeignet",
+    "mythen": [
+      "„Ein Multivitamin ist eine Lebensversicherung / lässt dich länger leben“ – falsch. Die bisher größte Analyse (390.000 Erwachsene, 20 Jahre) fand KEINE niedrigere Sterblichkeit – eher das Gegenteil.",
+      "„Mehr Mikronährstoffe sind immer besser“ – falsch. Ohne Mangel bringt zusätzliche Zufuhr keinen Vorteil; manche Bestandteile (Beta-Carotin, hohe Vitamin-A-/E-Dosen) können sogar schaden.",
+      "„Ein Multivitamin gleicht eine schlechte Ernährung aus“ – falsch. Es liefert isolierte Nährstoffe, aber nicht die Ballaststoffe, sekundären Pflanzenstoffe und das Zusammenspiel echter Lebensmittel.",
+      "„Es schadet ja nicht, also nehme ich es vorsorglich“ – meist überflüssig und nicht völlig risikofrei (z.B. Beta-Carotin bei Rauchern). Gezielt bei Bedarf schlägt pauschal für alle."
+    ]
+  },
+  "evidenz": {
+    "level": "C",
+    "score": 45,
+    "review_typ": "meta-analyse",
+    "studien_anzahl": 90,
+    "konsens": "USPSTF 2022 (84 RCTs): unzureichende Evidenz für Prävention; NIH/NCI 2024 (390.000 Personen): kein Mortalitätsvorteil. Kognitionssignal (COSMOS) positiv, aber umstritten.",
+    "effekt_groesse": [
+      {
+        "wert": 0,
+        "einheit": "kein Mortalitätsvorteil",
+        "kontext": "Tägliche Multivitamin-Einnahme senkt bei gesunden Erwachsenen die Sterblichkeit nicht (großer Sicherheits-/Nutzen-Befund)",
+        "quelle": "NIH/NCI 2024, JAMA Network Open (n=390.124, >20 Jahre)",
+        "erklaerung": {
+          "was_bedeutet": "Das ist der ernüchternde Kernbefund: In der bislang größten und längsten Auswertung – fast 400.000 gesunde US-Erwachsene über mehr als 20 Jahre – hatten regelmäßige Multivitamin-Nutzer KEIN geringeres Sterberisiko als Nicht-Nutzer. Die verbreitete Vorstellung vom Multivitamin als 'Lebensverlängerer' wird damit nicht gestützt.",
+          "studie_zeigt": "Es gab keinen Überlebensvorteil; in der frühen Phase zeigte sich sogar ein leicht (4 %) höheres Sterberisiko bei Multivitamin-Nutzern. Die Forscher führen das am ehesten auf statistische Verzerrungen zurück (z.B. dass kränkere Menschen häufiger zu Multivitaminen greifen), nicht auf einen echten Schaden. Klare Botschaft: kein Langlebigkeitsnutzen für Gesunde.",
+          "studien_details": "Gepoolte Analyse von drei großen prospektiven US-Kohorten mit 390.124 generell gesunden Erwachsenen, über 20 Jahre nachverfolgt (National Cancer Institute / NIH, JAMA Network Open 2024), adjustiert für Lebensstil- und demografische Faktoren.",
+          "zuverlaessigkeit": "Sehr hoch – enorme Stichprobe, lange Nachbeobachtung, sorgfältige Bias-Kontrolle. Deckt sich mit der USPSTF-Bewertung von 2022 (unzureichende Evidenz für einen Nutzen)."
+        }
+      },
+      {
+        "wert": 1.8,
+        "einheit": "Jahre (verlangsamtes kognitives Altern)",
+        "kontext": "Möglicher Gedächtnis-/Kognitionsnutzen bei Älteren – einziges positives Signal, aber umstritten",
+        "quelle": "COSMOS-Mind & COSMOS-Web 2023 (RCTs, >3.500 bzw. 2.262 Ältere)",
+        "erklaerung": {
+          "was_bedeutet": "Das ist der einzige Bereich mit positiven Studiendaten: In den COSMOS-Studien schnitten Ältere (ab 60–65 Jahren), die drei Jahre lang täglich ein Multivitamin nahmen, bei Gedächtnis- und Denktests besser ab als die Placebogruppe. Die Forscher schätzten den Effekt auf ein um rund 60 % verlangsamtes kognitives Altern, was etwa 1,8 Jahren über die Studiendauer entspricht (eine Teilstudie nannte sogar 3,1 Jahre).",
+          "studie_zeigt": "Mehrere COSMOS-Teilstudien zeigten konsistent eine Gedächtnisverbesserung. ABER: Frühere große Studien (Age-Related Eye Disease Study, Women's Health Study, PREADViSE) fanden KEINEN kognitiven Nutzen einzelner Vitamine, und Kritiker vermuten, dass der COSMOS-Effekt teils auf der Korrektur unentdeckter Mängel beruht. Der Effekt gilt als vielversprechend, aber noch bestätigungsbedürftig.",
+          "studien_details": "COSMOS-Mind (n=2.262, Alzheimer's & Dementia 2023) und COSMOS-Web (n=3.562, Am J Clin Nutr 2023), randomisierte, placebokontrollierte Teilstudien der COcoa Supplement and Multivitamin Outcomes Study mit jährlichen bzw. webbasierten kognitiven Tests.",
+          "zuverlaessigkeit": "Moderat – mehrere RCTs in dieselbe Richtung, aber im Widerspruch zu älteren Studien und mit der offenen Frage, ob es Mangelkorrektur oder echter Zusatznutzen ist. Von den Autoren selbst als bestätigungsbedürftig eingestuft."
+        }
+      },
+      {
+        "wert": 1.2,
+        "einheit": "Odds Ratio (Lungenkrebs durch Beta-Carotin)",
+        "kontext": "Bestimmte Bestandteile können schaden: Beta-Carotin erhöht bei Risikogruppen das Lungenkrebsrisiko (Sicherheitsbefund)",
+        "quelle": "USPSTF/JAMA 2022, Meta-Analyse (Beta-Carotin: 4 RCTs, n=94.830)",
+        "erklaerung": {
+          "was_bedeutet": "Das ist der wichtigste Sicherheitsbefund: 'Viele Vitamine' ist nicht automatisch harmlos. Beta-Carotin (eine Vitamin-A-Vorstufe, in manchen Präparaten enthalten) erhöhte in Studien das Lungenkrebsrisiko deutlich – besonders bei Rauchern und Asbest-Exponierten (Odds Ratio 1,20) – und auch die kardiovaskuläre Sterblichkeit (OR 1,10). Deshalb rät die USPSTF aktiv von Beta-Carotin zur Prävention ab.",
+          "studie_zeigt": "Die USPSTF kam mit moderater Sicherheit zum Schluss, dass die Schäden von Beta-Carotin den Nutzen überwiegen und dass Vitamin E keinen Netto-Nutzen bringt. Für Multivitamine insgesamt war die Evidenz 'unzureichend'. Eine kleine Senkung der Krebsinzidenz (OR 0,93) wurde zwar beobachtet, aber mit erheblichen Einschränkungen.",
+          "studien_details": "Systematische Evidenzübersicht für die US Preventive Services Task Force (JAMA 2022), 84 Studien mit insgesamt 739.803 Teilnehmern; Beta-Carotin-Analyse über 4 RCTs (n=94.830), CVD-Mortalität über 5 RCTs (n=94.506).",
+          "zuverlaessigkeit": "Sehr hoch für den Beta-Carotin-Schaden – konsistent über mehrere große RCTs und Grundlage offizieller Empfehlungen. Praktische Konsequenz: Raucher sollten Beta-Carotin-haltige Präparate meiden."
+        }
+      }
+    ]
+  },
+  "indikationen": [
+    {
+      "ziel": "mangelausgleich",
+      "staerke": 0.7,
+      "kommentar": "Sinnvoll bei nachgewiesenen Mängeln oder erhöhtem Bedarf. Gezielte Einzelsupplemente sind oft passender als ein pauschales Kombipräparat."
+    },
+    {
+      "ziel": "kognition_alter",
+      "staerke": 0.4,
+      "kommentar": "Positives, aber umstrittenes Signal aus den COSMOS-Studien für Ältere. Vielversprechend, noch bestätigungsbedürftig."
+    },
+    {
+      "ziel": "allgemeine_praevention",
+      "staerke": 0.2,
+      "kommentar": "Für Lebensdauer, Herz-Kreislauf und Krebs bei gesunden Erwachsenen kein belegter Nutzen (USPSTF, NIH/NCI)."
+    },
+    {
+      "ziel": "energie_wohlbefinden",
+      "staerke": 0.3,
+      "kommentar": "Subjektiv oft berichtet, objektiv nur bei Mangel begründbar. Bei guter Versorgung kein nachweisbarer Effekt."
+    },
+    {
+      "ziel": "gesundheit",
+      "staerke": 0.4,
+      "kommentar": "Als 'Sicherheitsnetz' bei unsicherer Ernährung vertretbar, aber kein Ersatz für echte Lebensmittel und kein universeller Gesundheitsgewinn."
+    }
+  ],
+  "kontraindikationen": [
+    {
+      "art": "medizinisch",
+      "wert": "raucher_beta_carotin",
+      "schwere": "hart",
+      "hinweis": "Raucher und Asbest-Exponierte sollten Beta-Carotin-haltige Präparate meiden – es erhöht das Lungenkrebsrisiko. Auf die Inhaltsstoffliste achten."
+    },
+    {
+      "art": "dosis",
+      "wert": "fettloesliche_ueberdosis",
+      "schwere": "vorsichtig",
+      "hinweis": "Fettlösliche Vitamine (A, E, teils D) können sich anreichern. Mehrere Präparate gleichzeitig oder hochdosierte Produkte können zu Überdosierung führen – Dosierungen addieren."
+    },
+    {
+      "art": "erwartung",
+      "wert": "kein_ernaehrungsersatz",
+      "schwere": "vorsichtig",
+      "hinweis": "Ein Multivitamin ersetzt keine ausgewogene Ernährung. Bei gesunden, gut ernährten Menschen ist der Nutzen minimal – das Geld ist meist besser in gute Lebensmittel investiert."
+    }
+  ],
+  "dosierung": {
+    "standard": "1 Tablette/Kapsel täglich (bedarfsorientiert)",
+    "bereich": {
+      "min": 1,
+      "max": 1,
+      "einheit": "Tablette/Tag"
+    },
+    "obergrenze": "Auf moderate Dosierungen achten (nahe 100 % des Tagesbedarfs, nicht ein Vielfaches). Beta-Carotin meiden (v.a. Raucher); fettlösliche Vitamine A und E nicht hochdosiert. Mehrere Präparate nicht unkontrolliert kombinieren.",
+    "timing": "Zu einer Mahlzeit (verbessert die Aufnahme fettlöslicher Vitamine, schont den Magen). Tageszeit unwichtig. Wichtiger als das Timing ist die grundsätzliche Frage, ob ein Multivitamin im individuellen Fall überhaupt nötig ist.",
+    "quelle": "USPSTF/JAMA 2022 + NIH Office of Dietary Supplements"
+  },
+  "population_spezifisch": {
+    "senioren_50plus": {
+      "relevant": true,
+      "staerke": 0.55,
+      "kommentar": "Höheres Risiko für Mikronährstoffmängel (Aufnahme, Appetit, Medikamente); zudem das positive Kognitionssignal aus COSMOS. Am ehesten begründete Zielgruppe."
+    },
+    "schwangerschaft": {
+      "relevant": true,
+      "staerke": 0.7,
+      "kommentar": "Spezielle Prä-/Schwangerschaftspräparate (v.a. Folsäure, Eisen, Jod) sind sinnvoll und empfohlen – aber gezielt, nicht als beliebiges Multivitamin."
+    },
+    "einseitige_ernaehrung_risikogruppen": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "Bei stark eingeschränkter Ernährung, nach Magen-OP oder bei bestimmten Erkrankungen/Medikamenten kann ein Multivitamin Lücken schließen."
+    },
+    "gesunde_gut_ernaehrte": {
+      "relevant": true,
+      "staerke": 0.15,
+      "kommentar": "Kein belegter Nutzen für Lebensdauer/Herz/Krebs. Geld meist besser in gute Ernährung investiert."
+    }
+  },
+  "warnhinweise": [
+    "Ein Multivitamin ist kein Langlebigkeits- oder Allheilmittel: Die größte Studie (390.000 Personen, 20 Jahre) fand keinen Überlebensvorteil.",
+    "'Pflanzlich/natürlich' bzw. 'viele Vitamine' heißt nicht harmlos: Beta-Carotin erhöht bei Rauchern das Lungenkrebsrisiko, hohe A-/E-Dosen können schaden.",
+    "Es ersetzt keine gute Ernährung – echte Lebensmittel liefern Ballaststoffe und sekundäre Pflanzenstoffe, die keine Pille nachbilden kann.",
+    "Gezielt schlägt pauschal: Bei einem konkreten Mangel ist ein Einzelpräparat (z.B. Vitamin D, B12, Eisen) meist sinnvoller als ein Kombiprodukt.",
+    "Dosierungen addieren sich: Wer mehrere Präparate kombiniert, riskiert Überdosierungen einzelner Bestandteile.",
+    "Das einzige vielversprechende Signal (Kognition bei Älteren) ist noch nicht bestätigt – keine überzogenen Erwartungen."
+  ],
+  "quellen": [
+    {
+      "titel": "Vitamin, Mineral, and Multivitamin Supplementation to Prevent Cardiovascular Disease and Cancer: US Preventive Services Task Force Recommendation Statement",
+      "autoren": "US Preventive Services Task Force; Mangione CM, Barry MJ, et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35727271/",
+      "jahr": 2022,
+      "typ": "position-stand",
+      "doi": "10.1001/jama.2022.8970"
+    },
+    {
+      "titel": "Multivitamin Use and Mortality Risk in 3 Prospective US Cohorts",
+      "autoren": "Loftfield E, O'Connell CP, Abnet CC, et al. (NIH/NCI)",
+      "url": "https://www.cancer.gov/news-events/press-releases/2024/multivitamins-do-not-lower-risk-of-death",
+      "jahr": 2024,
+      "typ": "meta-analyse",
+      "doi": "10.1001/jamanetworkopen.2024.18729"
+    },
+    {
+      "titel": "Multivitamin Supplementation Improves Memory in Older Adults: A Randomized Clinical Trial (COSMOS-Web)",
+      "autoren": "Yeung LK, Alschuler DM, Wall M, et al.",
+      "url": "https://ajcn.nutrition.org/article/S0002-9165(23)66342-7/fulltext",
+      "jahr": 2023,
+      "typ": "rct",
+      "doi": "10.1016/j.ajcnut.2023.05.011"
+    },
+    {
+      "titel": "Impact of multivitamin-mineral and cocoa extract on incidence of mild cognitive impairment and dementia (COSMOS-Mind)",
+      "autoren": "Sachs BC, Williams BJ, et al.",
+      "url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.13078",
+      "jahr": 2023,
+      "typ": "rct",
+      "doi": "10.1002/alz.13078"
+    }
+  ],
+  "inhalt": [
+    "vitamin_c",
+    "zink",
+    "vitamin_d3",
+    "vitamin_b12",
+    "eisen",
+    "magnesium_trace",
+    "multivitamin"
+  ]
+}

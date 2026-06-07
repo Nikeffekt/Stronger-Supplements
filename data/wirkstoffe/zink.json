@@ -1,0 +1,207 @@
+{
+  "id": "zink",
+  "name": "Zink (Bisglycinat / Citrat)",
+  "kategorie": "gesundheit",
+  "ikon": "⚪",
+  "kurz_beschreibung": "Essentielles Spurenelement für Immunsystem, Wundheilung, Hormone und über 300 Enzyme. Sinnvoll bei Mangel oder erhöhtem Bedarf – aber mit klarer Obergrenze.",
+  "beschreibung": {
+    "was_ist_es": "Zink ist ein essentielles Spurenelement und Cofaktor für über 300 Enzyme. Es ist unverzichtbar für Immunfunktion, Wundheilung, Zellteilung, DNA-Synthese, Geschmacks-/Geruchssinn und die Hormonproduktion (u.a. Testosteron). Der Körper hat keinen großen Zinkspeicher, daher ist eine regelmäßige Zufuhr nötig. Gute Quellen sind Austern, rotes Fleisch, Schalentiere, Hülsenfrüchte und Kerne.",
+    "wie_wirkt_es": "Zink stabilisiert Enzyme und Proteine (sogenannte 'Zinkfinger') und steuert damit zahllose Stoffwechselprozesse. Im Immunsystem ist es für die Funktion und Reifung von Abwehrzellen nötig. Bei Erkältungen wird vermutet, dass Zink aus Lutschtabletten lokal im Rachen die Vermehrung von Erkältungsviren hemmt – daher wirken nur Lutschtabletten, nicht geschluckte Kapseln, gegen Erkältungssymptome.",
+    "warum_wichtig": "Ein Zinkmangel ist weltweit verbreitet, besonders bei vegetarischer/veganer Ernährung (Phytate aus Pflanzen hemmen die Aufnahme), bei Sportlern (Schweißverlust), älteren Menschen (schlechtere Aufnahme) und bei Magen-Darm-Erkrankungen. Mangelsymptome sind u.a. erhöhte Infektanfälligkeit, schlechte Wundheilung, Haarausfall und Geschmacksstörungen. Der Nutzen einer Supplementierung ist – wie bei den meisten Mineralstoffen – bei tatsächlichem Mangel am größten."
+  },
+  "fazit": {
+    "top_effekte": [
+      "Verkürzt die Dauer von Erkältungen um ca. 33 % – aber NUR als hochdosierte Lutschtablette ab Symptombeginn",
+      "Korrigiert Mangelsymptome: stärkt Immunfunktion und Wundheilung bei nachgewiesenem Zinkmangel",
+      "Hebt niedrige Testosteronwerte bei zinkdefizitären Männern – nicht bei bereits ausreichend Versorgten"
+    ],
+    "ideal_fuer": "Menschen mit Mangelrisiko (Vegetarier/Veganer, Sportler, Senioren), bei akuter Erkältung (Lutschtablette), erhöhtem Bedarf (Wundheilung, Schwangerschaft)",
+    "dosis": "Täglich 10–25 mg elementar zum Bedarfsausgleich; bei Erkältung 75–100 mg/Tag als Lutschtablette, kurzzeitig",
+    "vorsicht_bei": "Dauerhafte Hochdosis (Kupfermangel-Risiko), Einnahme bestimmter Antibiotika (Abstand nötig), Obergrenze 40 mg/Tag dauerhaft",
+    "mythen": [
+      "„Zink steigert generell das Testosteron / wirkt wie ein Booster“ – falsch. Ein Anstieg zeigt sich nur bei MANGEL; bei ausreichend versorgten Männern bleibt der Testosteronspiegel unverändert.",
+      "„Jedes Zinkpräparat hilft gegen Erkältung“ – falsch. Nur hochdosierte LUTSCHTABLETTEN (>75 mg/Tag elementar) wirken, weil sie lokal im Rachen freigesetzt werden. Geschluckte Kapseln zeigen diesen Effekt nicht.",
+      "„Mehr Zink = stärkeres Immunsystem“ – falsch. Über der Obergrenze (40 mg/Tag) kann Zink das Immunsystem sogar schwächen und einen Kupfermangel auslösen.",
+      "„Zink kann man bedenkenlos dauerhaft hochdosieren“ – nein. Dauerhafte Hochdosis stört die Kupferaufnahme und kann zu Anämie und neurologischen Problemen führen."
+    ]
+  },
+  "evidenz": {
+    "level": "B",
+    "score": 76,
+    "review_typ": "meta-analyse",
+    "studien_anzahl": 40,
+    "konsens": "Mehrere Meta-Analysen zu Erkältungs-Lutschtabletten (Hemilä) + NIH ODS Referenzwerte; Cochrane 2024 zurückhaltender (methodische Debatte)",
+    "effekt_groesse": [
+      {
+        "wert": 33,
+        "einheit": "%",
+        "kontext": "Verkürzung der Erkältungsdauer durch hochdosierte Zink-Lutschtabletten (>75 mg/Tag elementar)",
+        "quelle": "Hemilä & Chalker 2017, Meta-Analyse 7 RCTs (n=575)",
+        "erklaerung": {
+          "was_bedeutet": "Wer bei beginnender Erkältung hochdosierte Zink-Lutschtabletten nimmt, verkürzte in Studien die Erkältungsdauer im Mittel um etwa ein Drittel (33 %). Entscheidend sind drei Bedingungen: hohe Dosis (>75 mg elementares Zink pro Tag), Darreichung als LUTSCHTABLETTE (nicht geschluckt) und Beginn früh ab den ersten Symptomen.",
+          "studie_zeigt": "Über sieben randomisierte, placebokontrollierte Studien hinweg war die Erkältung in den Zinkgruppen 33 % kürzer (95%-KI 21–45 %). Zinkacetat (40 %) und Zinkgluconat (28 %) wirkten ähnlich gut; ein Dosisvorteil über 100 mg/Tag hinaus war nicht erkennbar.",
+          "studien_details": "Meta-Analyse von 7 randomisierten, doppelblinden, placebokontrollierten Studien mit 575 Teilnehmern und natürlich erworbenen Erkältungen, Zinkdosen 80–207 mg/Tag, Inverse-Varianz-Random-Effects-Modell (Hemilä & Chalker, JRSM Open 2017).",
+          "zuverlaessigkeit": "Moderat bis hoch, aber umstritten: Ein Cochrane-Review 2024 kam zu zurückhaltenderen Schlüssen, was zu einer methodischen Fachdebatte führte. Die Lutschtabletten-Evidenz für Erwachsene gilt unter den genannten Bedingungen als solide, der Effekt ist aber nicht garantiert."
+        }
+      },
+      {
+        "wert": 0,
+        "einheit": "kein Effekt ohne Mangel",
+        "kontext": "Testosteron steigt durch Zink nur bei vorbestehendem Mangel, nicht bei ausreichender Versorgung",
+        "quelle": "Te et al. 2022, systematischer Review (38 Arbeiten)",
+        "erklaerung": {
+          "was_bedeutet": "Zink wird oft als 'Testosteron-Booster' beworben. Die Wahrheit ist differenzierter: Ein Zinkmangel senkt den Testosteronspiegel, und die Korrektur dieses Mangels hebt ihn wieder an. Bei Männern mit normalem Zinkstatus bewirkt zusätzliches Zink dagegen KEINE weitere Steigerung. Zink 'optimiert' also nur, was durch Mangel gestört war.",
+          "studie_zeigt": "Der systematische Review zeigte konsistent: Zinkmangel reduziert Testosteron, Zinksupplementierung verbessert es – aber der Effekt hängt vom Ausgangszinkspiegel ab. Je niedriger Zink und Testosteron zu Beginn, desto größer der Effekt; bei Normalwerten kein relevanter Anstieg.",
+          "studien_details": "Systematischer Review aus 38 Arbeiten (8 klinische, 30 tierexperimentelle Studien); Suche nach Testosteron/Androgen kombiniert mit Zink/Zinkmangel/Zinksupplementierung. Die klinische Evidenzbasis ist begrenzt.",
+          "zuverlaessigkeit": "Moderat – die Mangel-Korrektur ist gut plausibel und konsistent, aber die Zahl hochwertiger klinischer Studien ist klein. Klare Botschaft: Zink ist kein Testosteron-Booster für Gesunde, sondern eine Mangel-Korrektur."
+        }
+      },
+      {
+        "wert": 40,
+        "einheit": "mg/Tag (Obergrenze)",
+        "kontext": "Tolerable Upper Intake Level – darüber droht Kupfermangel (Sicherheitsbefund)",
+        "quelle": "NIH Office of Dietary Supplements + Adverse-Effects-Meta-Analyse 2022",
+        "erklaerung": {
+          "was_bedeutet": "Das ist ein Sicherheitswert: Die dauerhafte Obergrenze für Zink liegt bei 40 mg pro Tag (Erwachsene). Zink und Kupfer konkurrieren im Darm um dieselben Aufnahmewege – dauerhaft zu viel Zink verdrängt die Kupferaufnahme und kann einen Kupfermangel auslösen, der sich als Blutarmut (Anämie) und neurologische Störungen äußern kann.",
+          "studie_zeigt": "Studien zeigen, dass Zinksupplementierung den Kupfer- und Ferritinspiegel senken kann. Hohe Akutdosen (wie bei Erkältungs-Lutschtabletten) sind kurzzeitig vertretbar, dürfen aber nicht zur Dauerlösung werden. Symptome einer Überdosierung sind außerdem Übelkeit und Magenbeschwerden.",
+          "studien_details": "Referenzwert des US-amerikanischen Institute of Medicine / NIH ODS; gestützt durch eine systematische Übersicht und Meta-Analyse zu unerwünschten Wirkungen von Zink (39 Studien in der Meta-Analyse, Effekte u.a. auf Serumkupfer und Ferritin).",
+          "zuverlaessigkeit": "Hoch – der Kupfer-Antagonismus ist gut belegt und der Grund für die festgelegte Obergrenze. Hochdosis nur kurzzeitig und gezielt, nicht dauerhaft."
+        }
+      }
+    ]
+  },
+  "indikationen": [
+    {
+      "ziel": "immunsystem",
+      "staerke": 0.65,
+      "kommentar": "Wichtig für die Immunfunktion; klarer Nutzen bei Mangel. Gegen Erkältungen wirken nur hochdosierte Lutschtabletten ab Symptombeginn."
+    },
+    {
+      "ziel": "erkaeltung_akut",
+      "staerke": 0.6,
+      "kommentar": "Hochdosierte Lutschtabletten (>75 mg/Tag elementar) verkürzen die Erkältungsdauer um ca. 33 %. Nur als Lutschtablette, nicht geschluckt, und früh begonnen."
+    },
+    {
+      "ziel": "hormonhaushalt",
+      "staerke": 0.45,
+      "kommentar": "Hebt Testosteron nur bei zinkdefizitären Männern; bei ausreichender Versorgung kein Effekt. Kein Booster für Gesunde."
+    },
+    {
+      "ziel": "wundheilung_haut",
+      "staerke": 0.5,
+      "kommentar": "Notwendig für Zellteilung und Gewebereparatur; relevant bei Mangel und schlechter Wundheilung."
+    },
+    {
+      "ziel": "gesundheit",
+      "staerke": 0.65,
+      "kommentar": "Essentielles Spurenelement mit verbreitetem Mangelrisiko, besonders bei pflanzenbasierter Ernährung. Solider Grundbaustein bei erhöhtem Bedarf."
+    }
+  ],
+  "kontraindikationen": [
+    {
+      "art": "dosis",
+      "wert": "dauerhafte_hochdosis_kupfermangel",
+      "schwere": "hart",
+      "hinweis": "Dauerhafte Zufuhr über 40 mg/Tag stört die Kupferaufnahme und kann einen Kupfermangel mit Anämie und neurologischen Störungen verursachen. Hochdosis (z.B. bei Erkältung) nur kurzzeitig."
+    },
+    {
+      "art": "medikament",
+      "wert": "antibiotika_kupfer",
+      "schwere": "vorsichtig",
+      "hinweis": "Zink kann die Aufnahme bestimmter Antibiotika (Tetracycline, Chinolone) und umgekehrt verringern. Mehrere Stunden Abstand einhalten. Bei langfristiger Einnahme ggf. Kupfer ergänzen."
+    },
+    {
+      "art": "einnahme",
+      "wert": "nuechtern_uebelkeit",
+      "schwere": "vorsichtig",
+      "hinweis": "Auf nüchternen Magen kann Zink Übelkeit auslösen. Am besten zu einer Mahlzeit einnehmen (nicht gleichzeitig mit sehr ballaststoff-/phytatreichen Mahlzeiten, die die Aufnahme hemmen)."
+    }
+  ],
+  "dosierung": {
+    "standard": "10–25 mg elementares Zink täglich (Bedarfsausgleich)",
+    "bereich": {
+      "min": 10,
+      "max": 25,
+      "einheit": "mg"
+    },
+    "obergrenze": "Tolerable Upper Intake Level: 40 mg/Tag (Erwachsene, dauerhaft). RDA: Männer 11 mg, Frauen 8 mg. Erkältungs-Lutschtabletten 75–100 mg/Tag nur kurzzeitig (wenige Tage).",
+    "timing": "Zum Bedarfsausgleich zu einer Mahlzeit (bessere Verträglichkeit), aber nicht zeitgleich mit hohen Kalzium-/Eisendosen oder phytatreichen Speisen. Bei Erkältung: Lutschtablette alle paar Stunden ab den ersten Symptomen, über den Tag verteilt.",
+    "quelle": "NIH Office of Dietary Supplements + Hemilä Meta-Analysen (Erkältung)"
+  },
+  "population_spezifisch": {
+    "vegetarier_veganer": {
+      "relevant": true,
+      "staerke": 0.8,
+      "kommentar": "Phytate aus pflanzlichen Lebensmitteln hemmen die Zinkaufnahme deutlich. Erhöhtes Mangelrisiko – auf ausreichende Zufuhr achten, ggf. supplementieren."
+    },
+    "sportler": {
+      "relevant": true,
+      "staerke": 0.55,
+      "kommentar": "Erhöhter Verlust über Schweiß und höherer Umsatz. Ausreichende Versorgung unterstützt Immunfunktion und Regeneration; kein Leistungsbooster bei guter Versorgung."
+    },
+    "senioren_50plus": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "Schlechtere Aufnahme und häufig geringere Zufuhr. Zinkmangel im Alter kann Immunfunktion und Testosteron beeinträchtigen."
+    },
+    "schwangerschaft": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "Erhöhter Bedarf für Wachstum und Zellteilung des Kindes. Supplementierung im Rahmen der Empfehlungen, nicht überdosieren."
+    },
+    "maenner": {
+      "relevant": true,
+      "staerke": 0.45,
+      "kommentar": "Bei nachgewiesenem Zinkmangel kann eine Korrektur den Testosteronspiegel normalisieren – bei ausreichender Versorgung kein Zusatznutzen."
+    }
+  },
+  "warnhinweise": [
+    "Form ist wichtig: Zinkbisglycinat, -citrat und -picolinat werden gut aufgenommen; Zinkoxid ist günstig, aber schlechter bioverfügbar.",
+    "Achte auf den Gehalt an ELEMENTAREM Zink auf dem Etikett – nicht auf das Gesamtgewicht der Verbindung.",
+    "Die Obergrenze von 40 mg/Tag gilt für die Dauereinnahme. Hochdosierte Erkältungs-Lutschtabletten sind eine kurzzeitige Ausnahme, kein Dauerregime.",
+    "Bei längerer Einnahme über ~25 mg/Tag sollte die Kupferversorgung im Blick behalten werden (Zink-Kupfer-Balance).",
+    "Zink auf nüchternen Magen kann Übelkeit auslösen – mit einer Mahlzeit einnehmen, aber Abstand zu phytatreichen Speisen, Kalzium und Eisen halten."
+  ],
+  "quellen": [
+    {
+      "titel": "Zinc lozenges and the common cold: a meta-analysis comparing zinc acetate and zinc gluconate, and the role of zinc dosage",
+      "autoren": "Hemilä H",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5418896/",
+      "jahr": 2017,
+      "typ": "meta-analyse",
+      "doi": "10.1177/2054270417694291"
+    },
+    {
+      "titel": "The effectiveness of high dose zinc acetate lozenges on various common cold symptoms: a meta-analysis",
+      "autoren": "Hemilä H, Chalker E",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4359576/",
+      "jahr": 2015,
+      "typ": "meta-analyse",
+      "doi": "10.1186/s12875-015-0237-6"
+    },
+    {
+      "titel": "Correlation between serum zinc and testosterone: A systematic review",
+      "autoren": "Te L, Liu J, et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36577241/",
+      "jahr": 2022,
+      "typ": "review"
+    },
+    {
+      "titel": "Adverse Effects of Excessive Zinc Intake: A Systematic Review and Meta-Analysis",
+      "autoren": "Various",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9776731/",
+      "jahr": 2022,
+      "typ": "meta-analyse"
+    },
+    {
+      "titel": "Zinc - Health Professional Fact Sheet",
+      "autoren": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+      "jahr": 2024,
+      "typ": "position-stand"
+    }
+  ],
+  "inhalt": [
+    "zink"
+  ]
+}

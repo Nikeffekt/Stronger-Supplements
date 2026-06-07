@@ -1,21 +1,24 @@
 /* ============================================================
    scripts/data/produkte-loader.js
-   Lädt alle drei Daten-JSONs parallel und befüllt den globalen State
+   Lädt produkte.json + wirkstoffe-wissen.json parallel und befüllt globale State
 
    Geladene Dateien:
-   - data/produkte.json              → DB
-   - data/wirkstoff-erklaerungen.json → ERKLAERUNG
-   - data/wirkstoff-inhalte.json      → INHALT
+   - data/produkte.json          → DB
+   - data/wirkstoffe-wissen.json → WIRKSTOFFE_WISSEN
+
+   ÄNDERUNG vs. vorheriger Version:
+   - Alte Dateien (wirkstoff-erklaerungen.json + wirkstoff-inhalte.json)
+     werden nicht mehr geladen. Diese Daten sind jetzt in wirkstoffe-wissen.json
+     enthalten (Felder: kurz_beschreibung und inhalt).
 
    Abhängigkeiten:
-   - scripts/state.js           (DB, ERKLAERUNG, INHALT)
+   - scripts/state.js           (DB, WIRKSTOFFE_WISSEN)
    - scripts/data/konstanten.js (JSON_KEY_MAP, SEGMENT_MAP, WIRKSTOFF_FILTER)
    Wird genutzt von: scripts/main.js → ladeProdukte()
 ============================================================ */
 
 // ── HILFSFUNKTIONEN ──
 
-// Bereinigt Preis-Strings (z. B. "29,90 €" → "29,90")
 function preisBereinigen(preisStr) {
   if (!preisStr) return '0,00';
   var m = preisStr.match(/(\d+[,\.]\d+)/);
@@ -24,13 +27,11 @@ function preisBereinigen(preisStr) {
   return m2 ? m2[1] + ',00' : '0,00';
 }
 
-// Bereinigt Rating-Strings (z. B. "4,8 ★" → "4.8 ★")
 function ratingBereinigen(ratingStr) {
   if (!ratingStr) return '4.5 ★';
   return ratingStr.replace(',', '.');
 }
 
-// Extrahiert bis zu 3 Tags aus einem Anbieter-Objekt
 function tagsAusAnbieter(anbieter) {
   var tags = [];
   if (anbieter.trigger) {
@@ -44,7 +45,6 @@ function tagsAusAnbieter(anbieter) {
   return tags.slice(0, 3);
 }
 
-// Bestimmt das interne Segment aus der marktposition eines Anbieters
 function segmentAusAnbieter(anbieter) {
   var mp = anbieter.marktposition || '';
   if (SEGMENT_MAP[mp]) return SEGMENT_MAP[mp];
@@ -55,7 +55,6 @@ function segmentAusAnbieter(anbieter) {
   return 'other';
 }
 
-// Wandelt einen Anbieter-Eintrag in ein App-Produkt-Objekt um
 function anbieterZuProdukt(anbieter, appKey) {
   return {
     marke:   anbieter.name    || '–',
@@ -98,21 +97,10 @@ function bauDB(jsonDaten) {
 
 
 // ── ALLE DATEN PARALLEL LADEN ──
-// Lädt produkte.json, wirkstoff-erklaerungen.json, wirkstoff-inhalte.json
-// und wirkstoffe-wissen.json gleichzeitig mit Promise.all – schneller als sequenziell.
-// Fallback: Leere Objekte damit die App nicht abstürzt.
 function ladeProdukte() {
   Promise.all([
     fetch('data/produkte.json').then(function (r) {
       if (!r.ok) throw new Error('produkte.json: HTTP ' + r.status);
-      return r.json();
-    }),
-    fetch('data/wirkstoff-erklaerungen.json').then(function (r) {
-      if (!r.ok) throw new Error('wirkstoff-erklaerungen.json: HTTP ' + r.status);
-      return r.json();
-    }),
-    fetch('data/wirkstoff-inhalte.json').then(function (r) {
-      if (!r.ok) throw new Error('wirkstoff-inhalte.json: HTTP ' + r.status);
       return r.json();
     }),
     fetch('data/wirkstoffe-wissen.json').then(function (r) {
@@ -121,23 +109,23 @@ function ladeProdukte() {
     })
   ])
   .then(function (ergebnisse) {
-    var produkteDaten   = ergebnisse[0];
-    var erklaerungDaten = ergebnisse[1];
-    var inhaltDaten     = ergebnisse[2];
-    var wissenDaten     = ergebnisse[3];
+    var produkteDaten = ergebnisse[0];
+    var wissenDaten   = ergebnisse[1];
 
     // Globale Variablen befüllen
     bauDB(produkteDaten);
-    Object.keys(erklaerungDaten).forEach(function (k) { ERKLAERUNG[k] = erklaerungDaten[k]; });
-    Object.keys(inhaltDaten).forEach(function (k)     { INHALT[k]     = inhaltDaten[k]; });
-    Object.keys(wissenDaten).forEach(function (k)     { WIRKSTOFFE_WISSEN[k] = wissenDaten[k]; });
+    Object.keys(wissenDaten).forEach(function (k) {
+      WIRKSTOFFE_WISSEN[k] = wissenDaten[k];
+    });
 
-    console.log('✅ Erklärungen geladen: '  + Object.keys(ERKLAERUNG).length        + ' Einträge');
-    console.log('✅ Inhalte geladen: '      + Object.keys(INHALT).length            + ' Einträge');
-    console.log('✅ Wissensbasis geladen: ' + (Object.keys(WIRKSTOFFE_WISSEN).length - 1) + ' Wirkstoffe');
+    // _meta nicht in Wirkstoff-Anzahl mitzählen
+    var anzahl = Object.keys(WIRKSTOFFE_WISSEN).filter(function (k) {
+      return k !== '_meta';
+    }).length;
+    console.log('✅ Wissensbasis geladen: ' + anzahl + ' Wirkstoffe');
   })
   .catch(function (err) {
     console.warn('Fehler beim Laden der Daten:', err);
-    console.warn('Stelle sicher dass alle JSON-Dateien im data/-Ordner liegen.');
+    console.warn('Stelle sicher dass produkte.json und wirkstoffe-wissen.json im data/-Ordner liegen.');
   });
 }

@@ -1,0 +1,208 @@
+{
+  "id": "koffein",
+  "name": "Koffein",
+  "kategorie": "performance",
+  "ikon": "☕",
+  "kurz_beschreibung": "Das am besten belegte Leistungs-Supplement überhaupt. Verbessert Ausdauer, Kraft und Konzentration zuverlässig – aber Dosis, Timing und die eigene Genetik entscheiden über Nutzen und Nebenwirkungen.",
+  "beschreibung": {
+    "was_ist_es": "Koffein (1,3,7-Trimethylxanthin) ist ein natürlich vorkommendes Stimulans aus Kaffee, Tee, Kakao und Guarana. Als Supplement gibt es es in wasserfreier Form (Kapseln, Tabletten, Pulver), die etwas zuverlässiger und schneller wirkt als Kaffee. Es ist eines der am gründlichsten erforschten Substanzen der Sporternährung.",
+    "wie_wirkt_es": "Koffein blockiert im Gehirn die Adenosin-Rezeptoren – Adenosin ist der Botenstoff, der Müdigkeit signalisiert. Dadurch sinkt das wahrgenommene Anstrengungs- und Müdigkeitsempfinden, die Wachheit steigt. Zusätzlich verbessert es die neuromuskuläre Funktion und die Schmerztoleranz. Das Ergebnis: Man kann härter und länger trainieren, bevor sich Erschöpfung anfühlt.",
+    "warum_wichtig": "Anders als die meisten Supplements wirkt Koffein akut, zuverlässig und über fast alle Sportarten hinweg – von Ausdauer über Sprint bis Kraft. Gleichzeitig ist es kein 'Gratis'-Effekt: Die optimale Dosis hängt vom Körpergewicht ab, die Wirkung von der individuellen Genetik (manche Menschen bauen Koffein schnell ab, andere langsam), und zu viel oder zu spät stört Schlaf und kann Angst/Herzklopfen auslösen. Richtig dosiert ist es das wirksamste legale Leistungsmittel – falsch eingesetzt ein Schlafräuber."
+  },
+  "fazit": {
+    "top_effekte": [
+      "Verbessert die Ausdauerleistung zuverlässig um ca. 2–4 % (am konsistentesten belegter Effekt)",
+      "Steigert Kraft, Power, Sprung- und Sprintleistung (kleine bis moderate Effekte)",
+      "Erhöht Wachheit, Konzentration und Schmerztoleranz – auch bei Schlafmangel"
+    ],
+    "ideal_fuer": "Ausdauer- und Kraftsportler, Wettkampfsituationen, Phasen mit Müdigkeit/Schlafmangel, kognitive Leistungsanforderungen",
+    "dosis": "3–6 mg/kg Körpergewicht, ca. 60 min vor der Belastung; Tageslimit ~400 mg",
+    "vorsicht_bei": "Schlafstörungen, Angststörungen, Herzrhythmusstörungen/Bluthochdruck, Schwangerschaft (≤200 mg), langsame Metabolisierer (Genetik), bestimmte Medikamente",
+    "mythen": [
+      "„Viel hilft viel“ – falsch. Oberhalb von ~6 mg/kg (bzw. ≥9 mg/kg) gibt es keinen Zusatznutzen, aber deutlich mehr Nebenwirkungen.",
+      "„Gewohnheitstrinker haben keinen Leistungsvorteil mehr“ – überzogen. Die Toleranz betrifft v.a. die subjektiven Effekte; ein ergogener Effekt bleibt meist erhalten, auch bei regelmäßigem Konsum.",
+      "„Koffein entwässert und schadet der Hydration im Sport“ – überholt. In moderaten Dosen ist der harntreibende Effekt gering und bei Gewöhnten kaum relevant.",
+      "„Koffein wirkt bei jedem gleich“ – falsch. Genetische Unterschiede (v.a. das Enzym CYP1A2) führen zu bis zu 40-fach unterschiedlicher Abbaugeschwindigkeit; manche reagieren mit Angst/Schlafproblemen, andere kaum."
+    ]
+  },
+  "evidenz": {
+    "level": "A",
+    "score": 92,
+    "review_typ": "position-stand",
+    "studien_anzahl": 100,
+    "konsens": "ISSN Position Stand 2021 + zahlreiche Meta-Analysen; einer der best-belegten ergogenen Wirkstoffe überhaupt",
+    "effekt_groesse": [
+      {
+        "wert": 2.9,
+        "einheit": "% (mittlere Leistungssteigerung)",
+        "kontext": "Verbesserung der Ausdauer-/Zeitfahrleistung bei 3–6 mg/kg (Effektgröße ~0,22)",
+        "quelle": "ISSN Position Stand 2021 (Guest et al.) + Endurance-Meta-Analyse (46 Studien)",
+        "erklaerung": {
+          "was_bedeutet": "Koffein verbessert die Ausdauerleistung im Mittel um etwa 2–4 % (in einer Meta-Analyse 2,9 % mehr mittlere Leistung, 2,3 % schnellere Zeitfahrzeit). Das klingt klein, ist im Wettkampf aber oft entscheidend – bei einem 40-Minuten-Rennen sind 2–3 % rund eine Minute. Die Ausdauer ist der Bereich mit dem konsistentesten und größten Koffein-Effekt.",
+          "studie_zeigt": "Eine Meta-Analyse von 46 placebokontrollierten Studien fand bei moderaten Dosen (3–6 mg/kg) eine signifikante mittlere Leistungssteigerung von 2,9 ± 2,2 % und eine kleine Effektgröße (Cohen's d ≈ 0,22). Der Effekt ist gut reproduzierbar, variiert aber zwischen Personen.",
+          "studien_details": "International Society of Sports Nutrition Position Stand: Caffeine and Exercise Performance (Guest et al., JISSN 2021, DOI 10.1186/s12970-020-00383-4), gestützt auf eine Meta-Analyse von 46 RCTs zur Ausdauerleistung.",
+          "zuverlaessigkeit": "Sehr hoch – Koffein gehört zu den am gründlichsten erforschten Wirkstoffen der Sporternährung. Der Ausdauereffekt ist über Dutzende Studien hinweg konsistent."
+        }
+      },
+      {
+        "wert": 6,
+        "einheit": "mg/kg (Dosis-Obergrenze des Nutzens)",
+        "kontext": "Wirksamer Bereich 3–6 mg/kg; ab ~9 mg/kg kein Zusatznutzen, aber mehr Nebenwirkungen",
+        "quelle": "ISSN Position Stand 2021 + Minimaldosis-Meta-Analyse 2022",
+        "erklaerung": {
+          "was_bedeutet": "Es gibt ein klares Dosis-Fenster: 3–6 mg pro kg Körpergewicht (bei 80 kg also 240–480 mg) sind zuverlässig leistungssteigernd. Schon ~2 mg/kg können wirken. Höhere Dosen (ab ~9 mg/kg) bringen KEINEN zusätzlichen Leistungsgewinn, erhöhen aber deutlich das Risiko für Herzrasen, Zittern, Angst und Schlafstörungen. Mehr ist hier also nicht besser, sondern schlechter.",
+          "studie_zeigt": "Der ISSN Position Stand bestätigt 3–6 mg/kg als wirksamen Bereich und ≥9 mg/kg als nutzlos-mit-mehr-Nebenwirkungen. Eine Meta-Analyse 2022 zeigte zudem, dass schon sehr niedrige Dosen (0,9–2 mg/kg) kleine ergogene Effekte auf Kraft und Muskelausdauer haben können.",
+          "studien_details": "ISSN Position Stand 2021 (Guest et al.) sowie eine meta-analytische Untersuchung der Minimaldosis bei Krafttraining (2022, 12 Studien, 0,9–2 mg/kg).",
+          "zuverlaessigkeit": "Hoch – das Dosis-Wirkungs-Fenster und das Fehlen eines Hochdosis-Vorteils sind gut etabliert und praktisch sehr relevant."
+        }
+      },
+      {
+        "wert": 400,
+        "einheit": "mg/Tag (Sicherheitsgrenze)",
+        "kontext": "EFSA-Safe-Level: 400 mg/Tag, Einzeldosis 200 mg; Schwangere ≤200 mg (Sicherheitsbefund)",
+        "quelle": "EFSA Scientific Opinion on Caffeine 2015",
+        "erklaerung": {
+          "was_bedeutet": "Die europäische Behörde EFSA hat klare Sicherheitsgrenzen festgelegt: Für gesunde Erwachsene gelten bis zu 400 mg Koffein pro Tag (ca. 4–5 Tassen Kaffee) und Einzeldosen bis 200 mg als unbedenklich. Für Schwangere und Stillende gilt eine niedrigere Grenze von 200 mg/Tag. Wichtig fürs Training: Schon 100 mg nah an der Schlafenszeit können das Einschlafen verzögern und den Schlaf verkürzen.",
+          "studie_zeigt": "Die EFSA wertete über 300 Studien aus. Ergebnis: Bis 400 mg/Tag keine Sicherheitsbedenken für gesunde Erwachsene (auch bei intensivem Sport); 200 mg Einzeldosis unbedenklich, auch <2 h vor Belastung. Über 500 mg in einer Einzeldosis können Angst, Herzrasen und Zittern auslösen.",
+          "studien_details": "EFSA Scientific Opinion on the Safety of Caffeine (EFSA Journal 2015, DOI 10.2903/j.efsa.2015.4102), umfassende Risikobewertung für die allgemeine gesunde Bevölkerung und Untergruppen.",
+          "zuverlaessigkeit": "Sehr hoch – behördliche Risikobewertung auf breiter Datenbasis. Individuelle Verträglichkeit variiert aber stark (siehe Genetik/CYP1A2)."
+        }
+      }
+    ]
+  },
+  "indikationen": [
+    {
+      "ziel": "ausdauer",
+      "staerke": 0.85,
+      "kommentar": "Stärkster und konsistentester Effekt: +2–4 % Ausdauerleistung bei 3–6 mg/kg. Besonders gut belegt für Zeitfahr-/Dauerbelastungen."
+    },
+    {
+      "ziel": "kraft",
+      "staerke": 0.55,
+      "kommentar": "Kleine bis moderate Steigerung von Maximalkraft und Power; etwas variabler als der Ausdauereffekt."
+    },
+    {
+      "ziel": "sprint_power",
+      "staerke": 0.6,
+      "kommentar": "Verbessert Sprint-, Sprung- und Wurfleistung sowie schnelle Bewegungsgeschwindigkeit."
+    },
+    {
+      "ziel": "kognition_wachheit",
+      "staerke": 0.8,
+      "kommentar": "Steigert Aufmerksamkeit, Vigilanz und Reaktionsfähigkeit zuverlässig – auch bei Schlafmangel. Effekt ab ~75 mg."
+    },
+    {
+      "ziel": "muskelausdauer",
+      "staerke": 0.55,
+      "kommentar": "Verzögert die Ermüdung bei wiederholten Belastungen; Effekte über Studien hinweg etwas uneinheitlich."
+    }
+  ],
+  "kontraindikationen": [
+    {
+      "art": "medizinisch",
+      "wert": "herzrhythmus_blutdruck",
+      "schwere": "hart",
+      "hinweis": "Bei Herzrhythmusstörungen, schwer einstellbarem Bluthochdruck oder bestimmten Herzerkrankungen kann Koffein gefährlich sein. Vor regelmäßiger Hochdosis-Nutzung ärztlich abklären."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "angststoerung_schlaf",
+      "schwere": "vorsichtig",
+      "hinweis": "Koffein kann Angst, Unruhe und Herzklopfen verstärken und den Schlaf empfindlich stören. Bei Angststörungen oder Schlafproblemen niedrig dosieren und nicht am Nachmittag/Abend einnehmen."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "schwangerschaft_stillzeit",
+      "schwere": "vorsichtig",
+      "hinweis": "In Schwangerschaft und Stillzeit auf maximal 200 mg/Tag aus ALLEN Quellen begrenzen – der Fötus baut Koffein nur langsam ab."
+    },
+    {
+      "art": "genetik",
+      "wert": "langsame_metabolisierer",
+      "schwere": "vorsichtig",
+      "hinweis": "Das Enzym CYP1A2 bestimmt, wie schnell Koffein abgebaut wird – die Clearance variiert bis zu 40-fach. Langsame Metabolisierer (CYP1A2 C/C) reagieren stärker mit Nebenwirkungen und sollten geringer dosieren."
+    },
+    {
+      "art": "medikament",
+      "wert": "wechselwirkungen",
+      "schwere": "vorsichtig",
+      "hinweis": "Bestimmte Medikamente (einige Antibiotika wie Ciprofloxacin, orale Kontrazeptiva) verlangsamen den Koffeinabbau und verstärken die Wirkung. Bei Kombination Dosis reduzieren."
+    }
+  ],
+  "dosierung": {
+    "standard": "3–6 mg/kg Körpergewicht ca. 60 min vor der Belastung",
+    "bereich": {
+      "min": 3,
+      "max": 6,
+      "einheit": "mg/kg"
+    },
+    "obergrenze": "EFSA-Safe-Level: 400 mg/Tag (Einzeldosis 200 mg) für gesunde Erwachsene; Schwangere/Stillende ≤200 mg/Tag. Sport-Dosen ≥9 mg/kg bringen keinen Zusatznutzen, nur mehr Nebenwirkungen.",
+    "timing": "Wasserfreies Koffein (Kapsel/Tablette) ca. 60 min vor der Belastung; aus Kaffee etwas variabler. Nicht innerhalb von ~6–8 h vor dem Schlafengehen, da Koffein den Schlaf nachweislich stört. Bei Gewohnheitskonsum bleibt der Leistungseffekt meist erhalten.",
+    "quelle": "ISSN Position Stand 2021 (Guest et al.) + EFSA Scientific Opinion 2015"
+  },
+  "population_spezifisch": {
+    "ausdauersportler": {
+      "relevant": true,
+      "staerke": 0.85,
+      "kommentar": "Hauptzielgruppe: konsistenter +2–4 %-Effekt auf die Ausdauerleistung, auch in Hitze und Höhe gut belegt."
+    },
+    "kraftsportler": {
+      "relevant": true,
+      "staerke": 0.55,
+      "kommentar": "Moderate Effekte auf Kraft/Power; nützlich als Pre-Workout, auf Schlaf-Timing achten."
+    },
+    "schwangere_stillende": {
+      "relevant": true,
+      "staerke": 0.2,
+      "kommentar": "Strikte Begrenzung auf ≤200 mg/Tag aus allen Quellen; verlangsamter fötaler Koffeinabbau."
+    },
+    "schlafsensible_aengstliche": {
+      "relevant": true,
+      "staerke": 0.3,
+      "kommentar": "Genetisch bedingt (ADORA2A/CYP1A2) reagieren manche stark mit Angst und Schlafstörungen – niedrig dosieren, früh am Tag."
+    }
+  },
+  "warnhinweise": [
+    "Mehr ist nicht besser: Der Nutzen plateaut bei ~6 mg/kg; höhere Dosen bringen nur Nebenwirkungen (Herzrasen, Zittern, Angst, Schlafstörungen).",
+    "Timing ist entscheidend: Koffein am Nachmittag/Abend stört nachweislich den Schlaf – und schlechter Schlaf untergräbt jeden Leistungsvorteil.",
+    "Individuelle Genetik (CYP1A2) bestimmt Abbau und Verträglichkeit – die Clearance variiert bis zu 40-fach. Eigene Reaktion beobachten und Dosis anpassen.",
+    "Reines Koffeinpulver ist gefährlich: Schon kleine Mengenfehler können toxisch sein. Auf abgemessene Kapseln/Tabletten setzen, nicht auf loses Pulver.",
+    "EFSA-Grenze beachten: max. 400 mg/Tag (Schwangere/Stillende 200 mg) aus ALLEN Quellen – Kaffee, Tee, Energydrinks und Supplemente zusammenzählen.",
+    "Bei Herzerkrankungen, Bluthochdruck oder Angststörungen vor regelmäßiger Nutzung ärztlich abklären."
+  ],
+  "quellen": [
+    {
+      "titel": "International Society of Sports Nutrition Position Stand: Caffeine and Exercise Performance",
+      "autoren": "Guest NS, VanDusseldorp TA, Nelson MT, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7777221/",
+      "jahr": 2021,
+      "typ": "position-stand",
+      "doi": "10.1186/s12970-020-00383-4"
+    },
+    {
+      "titel": "Scientific Opinion on the Safety of Caffeine",
+      "autoren": "EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA)",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4102",
+      "jahr": 2015,
+      "typ": "position-stand",
+      "doi": "10.2903/j.efsa.2015.4102"
+    },
+    {
+      "titel": "Exploring the minimum ergogenic dose of caffeine on resistance exercise performance: A meta-analytic approach",
+      "autoren": "Various",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S089990072200017X",
+      "jahr": 2022,
+      "typ": "meta-analyse"
+    },
+    {
+      "titel": "Effects of acute caffeine intake on muscular power during resistance exercise: a systematic review and meta-analysis",
+      "autoren": "Various",
+      "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1686283/full",
+      "jahr": 2025,
+      "typ": "meta-analyse"
+    }
+  ],
+  "inhalt": [
+    "koffein"
+  ]
+}

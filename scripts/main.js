@@ -6,24 +6,22 @@
    1. state.js
    2. navigation.js
    3. data/konstanten.js
-   4. data/wirkstoff-erklaerungen.js
-   5. data/wirkstoff-inhalte.js
-   6. data/produkte-loader.js
-   7. engine/overlaps.js
-   8. engine/empfehlungen.js
-   9. engine/personalisierung.js
-   10. ui/toast.js
-   11. ui/reset.js
-   12. ui/banner.js
-   13. ui/header.js
-   14. ui/start-modal.js
-   15. ui/shop.js
-   16. ui/guide.js
-   17. ui/profil.js
-   18. quiz/quiz.js
-   19. chat/ki-system-prompt.js
-   20. chat/ki-chat.js
-   21. main.js  ← dieses File
+   4. data/produkte-loader.js (lädt produkte.json + wirkstoffe-wissen.json)
+   5. engine/overlaps.js
+   6. engine/empfehlungen.js
+   7. engine/personalisierung.js
+   8. ui/toast.js
+   9. ui/reset.js
+   10. ui/banner.js
+   11. ui/header.js
+   12. ui/start-modal.js
+   13. ui/shop.js
+   14. ui/guide.js
+   15. ui/profil.js
+   16. quiz/quiz.js
+   17. chat/ki-system-prompt.js
+   18. chat/ki-chat.js
+   19. main.js  ← dieses File
 ============================================================ */
 
 document.addEventListener('DOMContentLoaded', function () {

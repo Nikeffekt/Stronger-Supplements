@@ -1,0 +1,223 @@
+{
+  "id": "ashwagandha",
+  "name": "Ashwagandha (Withania somnifera)",
+  "kategorie": "gesundheit",
+  "ikon": "🌿",
+  "kurz_beschreibung": "Adaptogene Heilpflanze aus dem Ayurveda. Kann Stress, Angst und Cortisol senken – die Evidenz ist vielversprechend, aber uneinheitlich, und es gibt ernstzunehmende Sicherheitsfragen (Leber, Schilddrüse, Schwangerschaft).",
+  "beschreibung": {
+    "was_ist_es": "Ashwagandha (Withania somnifera, 'Schlafbeere') ist eine Heilpflanze aus der ayurvedischen Medizin und gilt als 'Adaptogen' – ein Stoff, der dem Körper helfen soll, sich an Stress anzupassen. Verwendet wird meist ein standardisierter Wurzelextrakt; die wirksamen Inhaltsstoffe sind die sogenannten Withanolide. Qualität und Wirkstoffgehalt schwanken zwischen Produkten erheblich.",
+    "wie_wirkt_es": "Die Withanolide beeinflussen vermutlich die Stressachse (Hypothalamus-Hypophysen-Nebennieren-Achse) und dämpfen die Ausschüttung des Stresshormons Cortisol. Außerdem werden GABA-ähnliche, beruhigende Effekte im Nervensystem diskutiert. Die genauen Mechanismen sind noch nicht abschließend geklärt.",
+    "warum_wichtig": "Chronischer Stress ist weit verbreitet und mit zahlreichen Gesundheitsproblemen verbunden. Ashwagandha ist eines der wenigen pflanzlichen Mittel mit zumindest moderater Studienbasis für Stress- und Angstlinderung. Wichtig ist eine realistische Erwartung: Es ist eine mögliche Ergänzung zu Stressmanagement, Schlaf und Bewegung – kein Ersatz für die Behandlung von Angststörungen oder Depression und nicht für jeden geeignet."
+  },
+  "fazit": {
+    "top_effekte": [
+      "Senkt den Cortisolspiegel (Stresshormon) signifikant gegenüber Placebo",
+      "Reduziert Angstsymptome (Hamilton-Angstskala) bei chronisch gestressten Erwachsenen",
+      "Kann die wahrgenommene Stressbelastung verringern – hier ist die Evidenz allerdings uneinheitlich"
+    ],
+    "ideal_fuer": "Erwachsene mit chronischem Stress oder leichter Anspannung, die eine pflanzliche Ergänzung suchen – nach Ausschluss von Kontraindikationen (Schilddrüse, Leber, Schwangerschaft)",
+    "dosis": "300–600 mg standardisierter Wurzelextrakt (≥5 % Withanolide) täglich, kurweise über 8–12 Wochen",
+    "vorsicht_bei": "Schwangerschaft/Stillzeit (kontraindiziert), Schilddrüsenerkrankungen, Lebererkrankungen, hormonsensitivem Prostatakrebs, Autoimmunerkrankungen, vor Operationen, bei Sedativa/Schilddrüsen-/Diabetes-Medikamenten",
+    "mythen": [
+      "„Ashwagandha ist ein harmloses Naturprodukt ohne Risiken“ – falsch. Es gibt dokumentierte, wenn auch seltene Fälle von Leberschäden, sowie Effekte auf die Schilddrüse. 'Pflanzlich' heißt nicht automatisch 'ungefährlich'.",
+      "„Es wirkt sofort“ – nein. Erste Effekte zeigen sich nach ~2 Wochen, das Maximum erst nach 8–12 Wochen regelmäßiger Einnahme.",
+      "„Ashwagandha ist ein potenter Testosteron-Booster“ – überzogen. Es gibt schwache Hinweise auf einen Anstieg, vor allem bei gestressten Männern; als Booster für Gesunde ist die Evidenz dünn.",
+      "„Man kann es dauerhaft bedenkenlos nehmen“ – unklar. Studien belegen Verträglichkeit nur für etwa 3 Monate; die Langzeitsicherheit über Monate bis Jahre ist nicht untersucht."
+    ]
+  },
+  "evidenz": {
+    "level": "B",
+    "score": 68,
+    "review_typ": "meta-analyse",
+    "studien_anzahl": 15,
+    "konsens": "Mehrere Meta-Analysen zeigen Cortisol-/Angstsenkung (BJPsych Open 2025, ScienceDirect 2024); eine Meta-Analyse 2025 findet jedoch keinen Effekt auf wahrgenommenen Stress – die Evidenz ist uneinheitlich",
+    "effekt_groesse": [
+      {
+        "wert": -2.4,
+        "einheit": "Standardisierte Mittelwertdifferenz (Cortisol)",
+        "kontext": "Senkung des morgendlichen Cortisolspiegels vs. Placebo",
+        "quelle": "BJPsych Open 2025, Meta-Analyse 15 RCTs (n=873)",
+        "erklaerung": {
+          "was_bedeutet": "Cortisol ist das wichtigste körpereigene Stresshormon. Ashwagandha senkte in Studien den morgendlichen Cortisolspiegel deutlich gegenüber Placebo. Das ist ein objektiver, im Blut messbarer Effekt – ein Hinweis darauf, dass die Pflanze tatsächlich in die Stressphysiologie eingreift und nicht nur subjektiv wirkt.",
+          "studie_zeigt": "Über 15 randomisierte Studien hinweg war die Cortisolsenkung statistisch hochsignifikant (etwa -2,4 standardisierte Einheiten, p<0,0001), am deutlichsten nach 8 Wochen Einnahme. Auch Angst (Hamilton-Skala) und wahrgenommener Stress sanken in dieser Auswertung. Die Lebensqualität verbesserte sich allerdings nicht signifikant.",
+          "studien_details": "Systematische Übersicht und Meta-Analyse von 15 RCTs mit 873 Teilnehmern, publiziert in BJPsych Open 2025. Analyse mit R/metafor, Outcomes über validierte Skalen (PSS, HAM-A) und Cortisol-Serumspiegel.",
+          "zuverlaessigkeit": "Moderat – der Cortisol-Effekt ist über mehrere Meta-Analysen konsistent. Einschränkungen: heterogene Extrakte, Dosen und Studiendauern, teils kleine Stichproben und mögliche Industrienähe einzelner Studien."
+        }
+      },
+      {
+        "wert": 0,
+        "einheit": "kein signifikanter Effekt (wahrgenommener Stress)",
+        "kontext": "Widersprüchlicher Befund: eine Meta-Analyse findet trotz Cortisol-Senkung keinen Effekt auf den subjektiv empfundenen Stress",
+        "quelle": "Albalawi 2025, systematischer Review & Meta-Analyse",
+        "erklaerung": {
+          "was_bedeutet": "Dieser Befund ist bewusst als Gegengewicht aufgeführt, um die Evidenz ehrlich abzubilden. Eine Meta-Analyse von 2025 bestätigte zwar die Cortisol-Senkung, fand aber KEINEN statistisch signifikanten Effekt auf den über die Perceived Stress Scale (PSS) gemessenen, subjektiv empfundenen Stress. Das heißt: Der messbare Hormoneffekt übersetzt sich nicht in jeder Studie in ein spürbar besseres Stressempfinden.",
+          "studie_zeigt": "Die Autoren kamen zum Schluss, dass die Wirksamkeit von Ashwagandha auf den wahrgenommenen Stress inkonsistent ist, während der biologische Marker Cortisol zuverlässiger reagiert. Sie betonten die uneinheitliche Studienlage und methodische Schwächen.",
+          "studien_details": "PRISMA-konforme systematische Übersicht und Meta-Analyse randomisierter kontrollierter Studien zu Cortisol und Perceived Stress Scale, publiziert 2025 (SAGE/Nutrition and Health).",
+          "zuverlaessigkeit": "Diese Diskrepanz ist selbst ein wichtiges Ergebnis: Sie zeigt, dass die Datenlage uneinheitlich ist. Wer Ashwagandha probiert, sollte einen Effekt nicht als garantiert ansehen."
+        }
+      },
+      {
+        "wert": 3,
+        "einheit": "Monate (Sicherheitsgrenze)",
+        "kontext": "Belegte Verträglichkeit nur bis ~3 Monate; seltene Leberschäden dokumentiert (Sicherheitsbefund)",
+        "quelle": "NIH ODS + LiverTox (NIDDK) + Merck Manual",
+        "erklaerung": {
+          "was_bedeutet": "Das ist ein Sicherheitsbefund: In klinischen Studien war Ashwagandha über etwa 3 Monate gut verträglich – darüber hinaus ist die Sicherheit NICHT untersucht. Wichtiger noch: Es gibt mehrere dokumentierte Fälle von akuten Leberschäden (teils mit Gelbsucht), die per standardisiertem Verfahren (RUCAM) mit Ashwagandha in Verbindung gebracht wurden.",
+          "studie_zeigt": "Fachquellen (NIH Office of Dietary Supplements, LiverTox-Datenbank, Merck Manual, britische FSA) führen als mögliche Risiken auf: Leberschäden, Beeinflussung der Schilddrüsenhormone, abortive Wirkung in der Schwangerschaft sowie Wechselwirkungen mit Sedativa, Schilddrüsen-, Diabetes- und Blutdruckmedikamenten. Häufige milde Nebenwirkungen sind Magen-Darm-Beschwerden und Schläfrigkeit.",
+          "studien_details": "Zusammenfassung mehrerer behördlicher und klinischer Sicherheitsquellen: NIH ODS Fact Sheet (2024), LiverTox/NIDDK (Update 2024), Merck Manual Professional, FSA/COT-Sicherheitsbewertung 2025, RUCAM-Fallserien.",
+          "zuverlaessigkeit": "Hoch für die Aussage 'seltene, aber reale Risiken'. Leberschäden sind selten, aber gut dokumentiert; bei Symptomen (dunkler Urin, Gelbsucht, Übelkeit) sofort absetzen und ärztlich abklären. Bei Schilddrüsenerkrankung, Schwangerschaft oder Lebererkrankung nicht ohne ärztliche Rücksprache einnehmen."
+        }
+      }
+    ]
+  },
+  "indikationen": [
+    {
+      "ziel": "stress",
+      "staerke": 0.6,
+      "kommentar": "Senkt Cortisol zuverlässig; der Effekt auf das subjektive Stressempfinden ist in Studien uneinheitlich. Am besten belegt bei chronisch gestressten Erwachsenen über 8+ Wochen."
+    },
+    {
+      "ziel": "angst",
+      "staerke": 0.55,
+      "kommentar": "Reduziert Angstsymptome (HAM-A) gegenüber Placebo. Ergänzend, kein Ersatz für die Behandlung einer Angststörung."
+    },
+    {
+      "ziel": "schlaf",
+      "staerke": 0.45,
+      "kommentar": "Kann den Schlaf verbessern, vor allem bei stressbedingten Schlafproblemen. Evidenz schwächer als für Cortisol/Angst."
+    },
+    {
+      "ziel": "hormonhaushalt",
+      "staerke": 0.35,
+      "kommentar": "Schwache Hinweise auf Testosteronanstieg bei gestressten Männern; kein verlässlicher Booster. Bei hormonsensitivem Prostatakrebs zu meiden."
+    },
+    {
+      "ziel": "regeneration",
+      "staerke": 0.35,
+      "kommentar": "Im Sportkontext werden Erholung und reduzierter Stress diskutiert; Evidenz begrenzt und uneinheitlich."
+    }
+  ],
+  "kontraindikationen": [
+    {
+      "art": "medizinisch",
+      "wert": "schwangerschaft_stillzeit",
+      "schwere": "hart",
+      "hinweis": "In Schwangerschaft und Stillzeit kontraindiziert – möglicher abortiver (wehenauslösender) Effekt und fehlende Sicherheitsdaten. Nicht einnehmen."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "schilddruese",
+      "schwere": "hart",
+      "hinweis": "Kann Schilddrüsenhormone (T3/T4) erhöhen. Bei Schilddrüsenerkrankungen (v.a. Überfunktion) oder Einnahme von Schilddrüsenmedikamenten nur nach ärztlicher Rücksprache."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "lebererkrankung",
+      "schwere": "hart",
+      "hinweis": "Seltene, aber dokumentierte Fälle von Leberschäden. Bei bestehender Lebererkrankung oder gleichzeitiger Einnahme leberbelastender Medikamente meiden. Bei Gelbsucht/dunklem Urin sofort absetzen und Arzt aufsuchen."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "prostatakrebs_autoimmun",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei hormonsensitivem Prostatakrebs und bei Autoimmunerkrankungen wegen möglicher Hormon- bzw. Immunmodulation ärztlich abklären. Vor Operationen wegen sedierender Wirkung absetzen."
+    },
+    {
+      "art": "medikament",
+      "wert": "sedativa_diabetes_blutdruck",
+      "schwere": "vorsichtig",
+      "hinweis": "Kann die Wirkung von Beruhigungsmitteln, Antiepileptika, Diabetes- und Blutdruckmedikamenten sowie Immunsuppressiva verstärken oder verändern. Vor Kombination ärztlich abklären."
+    }
+  ],
+  "dosierung": {
+    "standard": "300–600 mg standardisierter Wurzelextrakt täglich",
+    "bereich": {
+      "min": 300,
+      "max": 600,
+      "einheit": "mg"
+    },
+    "obergrenze": "Belegte Verträglichkeit nur bis etwa 3 Monate; Langzeitsicherheit unbekannt. Standardisierung auf ≥5 % Withanolide; reine Wurzelextrakte bevorzugen.",
+    "timing": "Einmal täglich, oft abends (leicht sedierende Wirkung). Wirkung baut sich über Wochen auf: erste Effekte nach ~2 Wochen, Maximum nach 8–12 Wochen. Kurweise statt dauerhaft einnehmen.",
+    "quelle": "Klinische RCTs (z.B. Shoden 240 mg, KSM-66 300–600 mg) + NIH Office of Dietary Supplements"
+  },
+  "population_spezifisch": {
+    "chronisch_gestresste": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "Hauptzielgruppe der Studien. Effekte auf Cortisol und Angst am ehesten hier nachweisbar, nach Ausschluss von Kontraindikationen."
+    },
+    "schwangere_stillende": {
+      "relevant": true,
+      "staerke": 0.0,
+      "kommentar": "KONTRAINDIZIERT – möglicher abortiver Effekt, keine Sicherheitsdaten. Nicht einnehmen."
+    },
+    "menschen_mit_schilddruesenerkrankung": {
+      "relevant": true,
+      "staerke": 0.0,
+      "kommentar": "Vorsicht – kann Schilddrüsenhormone erhöhen. Nur nach ärztlicher Rücksprache, engmaschige Kontrolle."
+    },
+    "sportler": {
+      "relevant": true,
+      "staerke": 0.35,
+      "kommentar": "Diskutiert für Stressreduktion und Regeneration; Evidenz begrenzt. Auf geprüfte Produktqualität achten (Verunreinigungen möglich)."
+    }
+  },
+  "warnhinweise": [
+    "'Pflanzlich' bedeutet nicht 'risikofrei': Es gibt seltene, aber dokumentierte Fälle von Leberschäden. Bei Übelkeit, dunklem Urin oder Gelbsucht sofort absetzen und ärztlich abklären.",
+    "In Schwangerschaft und Stillzeit nicht einnehmen (möglicher abortiver Effekt).",
+    "Bei Schilddrüsenerkrankungen Vorsicht – Ashwagandha kann die Schilddrüsenhormone erhöhen.",
+    "Produktqualität schwankt stark: Auf standardisierte Wurzelextrakte (≥5 % Withanolide) und unabhängige Schadstoffprüfung achten; Wurzel-Blatt-Kombinationen sind weniger gut untersucht.",
+    "Langzeitsicherheit über 3 Monate hinaus ist nicht belegt – kurweise einnehmen und Pausen machen.",
+    "Wechselwirkungen mit Sedativa, Schilddrüsen-, Diabetes- und Blutdruckmedikamenten sowie Immunsuppressiva möglich – vor Kombination ärztlich abklären.",
+    "Bei diagnostizierter Angststörung oder Depression ersetzt Ashwagandha keine fachärztliche Behandlung."
+  ],
+  "quellen": [
+    {
+      "titel": "Effects of Ashwagandha Supplements on Cortisol, Stress, and Anxiety Levels in Adults: A Systematic Review and Meta-Analysis",
+      "autoren": "Various",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12242034/",
+      "jahr": 2025,
+      "typ": "meta-analyse"
+    },
+    {
+      "titel": "Effects of Ashwagandha (Withania Somnifera) on stress and anxiety: A systematic review and meta-analysis",
+      "autoren": "Various",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1550830724001691",
+      "jahr": 2024,
+      "typ": "meta-analyse"
+    },
+    {
+      "titel": "Dual impact of Ashwagandha: Significant cortisol reduction but no effects on perceived stress – A systematic review and meta-analysis",
+      "autoren": "Albalawi AA, et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40746175/",
+      "jahr": 2025,
+      "typ": "meta-analyse",
+      "doi": "10.1177/02601060251363647"
+    },
+    {
+      "titel": "An investigation into the stress-relieving and pharmacological actions of an ashwagandha (Withania somnifera) extract: A randomized, double-blind, placebo-controlled study",
+      "autoren": "Lopresti AL, Smith SJ, Malvi H, Kodgule R",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6750292/",
+      "jahr": 2019,
+      "typ": "rct",
+      "doi": "10.1097/MD.0000000000017186"
+    },
+    {
+      "titel": "Ashwagandha - LiverTox: Clinical and Research Information on Drug-Induced Liver Injury",
+      "autoren": "NIDDK",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK548536/",
+      "jahr": 2024,
+      "typ": "review"
+    },
+    {
+      "titel": "Ashwagandha: Is it helpful for stress, anxiety, or sleep? - Health Professional Fact Sheet",
+      "autoren": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Ashwagandha-HealthProfessional/",
+      "jahr": 2024,
+      "typ": "position-stand"
+    }
+  ],
+  "inhalt": [
+    "ashwagandha"
+  ]
+}

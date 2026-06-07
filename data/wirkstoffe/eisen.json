@@ -1,0 +1,213 @@
+{
+  "id": "eisen",
+  "name": "Eisen",
+  "kategorie": "gesundheit",
+  "ikon": "🩸",
+  "kurz_beschreibung": "Essentielles Spurenelement für Sauerstofftransport und Energie. Mangel ist weltweit die häufigste Nährstoffunterversorgung – aber Eisen sollte man nur bei nachgewiesenem Bedarf supplementieren, nie blind.",
+  "beschreibung": {
+    "was_ist_es": "Eisen ist ein essentielles Spurenelement und zentraler Bestandteil von Hämoglobin (dem roten Blutfarbstoff) und Myoglobin. Es transportiert Sauerstoff im Blut und in den Muskeln und ist an der Energiegewinnung beteiligt. In der Nahrung kommt es als gut verfügbares Häm-Eisen (Fleisch, Fisch) und als schlechter verwertbares Nicht-Häm-Eisen (Pflanzen) vor. Als Supplement gibt es verschiedene Salze (z.B. Eisensulfat, -bisglycinat).",
+    "wie_wirkt_es": "Eisen ermöglicht den Sauerstofftransport von der Lunge zu allen Geweben. Fehlt Eisen, kann der Körper nicht genug funktionsfähige rote Blutkörperchen bilden – die Folge ist eine Eisenmangelanämie mit Müdigkeit, Leistungsabfall, Blässe und Kurzatmigkeit. Die Aufnahme im Darm wird über das Hormon Hepcidin streng reguliert: Nach einer Eisendosis steigt Hepcidin und blockiert die Aufnahme weiterer Dosen für etwa 24 Stunden – ein Mechanismus, der die optimale Einnahmestrategie bestimmt.",
+    "warum_wichtig": "Eisenmangel ist der häufigste Nährstoffmangel weltweit und betrifft besonders menstruierende Frauen, Schwangere, Veganer/Vegetarier (Nicht-Häm-Eisen) und Ausdauersportler (Verluste über Schweiß, Fußsohlen-Hämolyse, Magen-Darm). Gleichzeitig ist Eisen eines der wenigen Supplemente, bei denen ZUVIEL ernsthaft gefährlich ist – der Körper kann überschüssiges Eisen nicht aktiv ausscheiden. Deshalb gilt die eiserne Regel: Eisen nur bei nachgewiesenem Mangel (Bluttest) supplementieren, nie vorsorglich ins Blaue hinein."
+  },
+  "fazit": {
+    "top_effekte": [
+      "Behebt Eisenmangel und -anämie: mehr Energie, weniger Müdigkeit, bessere Leistungsfähigkeit",
+      "Verbessert bei Sportlerinnen mit niedrigen Speichern die Ausdauerleistung (bei Mangel um 2–20 %)",
+      "Alternate-Day-Dosierung erhöht die Aufnahme um ca. 34 % und reduziert Nebenwirkungen"
+    ],
+    "ideal_fuer": "Menstruierende Frauen, Schwangere, Veganer/Vegetarier, Ausdauersportler, Menschen mit nachgewiesenem Mangel (niedriges Ferritin)",
+    "dosis": "Nur bei Mangel: 40–100 mg elementares Eisen, am besten jeden 2. Tag morgens nüchtern",
+    "vorsicht_bei": "OHNE Bluttest nicht supplementieren! Hämochromatose, Kinder (Vergiftungsgefahr), Magen-Darm-Nebenwirkungen, Obergrenze 45 mg/Tag",
+    "mythen": [
+      "„Eisen gibt jedem mehr Energie“ – falsch. Mehr Energie entsteht nur bei tatsächlichem Mangel. Ohne Mangel bringt Eisen nichts und kann bei Überladung sogar schaden.",
+      "„Man kann Eisen vorsorglich nehmen, schadet ja nicht“ – gefährlich falsch. Der Körper kann Eisen nicht aktiv ausscheiden; bei Hämochromatose (ca. 1 von 200) oder Überdosierung drohen Organschäden. Nie ohne Bluttest.",
+      "„Täglich (oder zweimal täglich) ist am effektivsten“ – überholt. Hohe/häufige Dosen treiben das Hormon Hepcidin hoch und blockieren die Aufnahme; jeden zweiten Tag wird mehr aufgenommen und besser vertragen.",
+      "„Eisen am besten zum Essen, das ist schonender“ – teils kontraproduktiv. Kaffee, Tee, Milch und Vollkorn hemmen die Aufnahme stark; nüchtern mit etwas Vitamin C ist effektiver (Verträglichkeit abwägen)."
+    ]
+  },
+  "evidenz": {
+    "level": "A",
+    "score": 88,
+    "review_typ": "meta-analyse",
+    "studien_anzahl": 60,
+    "konsens": "Gut etabliert: NIH/IOM-Referenzwerte + Meta-Analysen zu Anämie, Sportleistung und Dosierungsstrategie (Stoffel et al.)",
+    "effekt_groesse": [
+      {
+        "wert": 34,
+        "einheit": "% (höhere Eisenaufnahme)",
+        "kontext": "Alternate-Day-Dosierung (jeden 2. Tag) erhöht die fraktionelle Aufnahme vs. tägliche Gabe",
+        "quelle": "Stoffel et al. 2020, Haematologica + ScienceDirect-RCT 2023",
+        "erklaerung": {
+          "was_bedeutet": "Das ist die wichtigste moderne Erkenntnis zur Eisen-Einnahme: Nimmt man Eisen nur jeden zweiten Tag statt täglich, wird ein deutlich größerer Anteil jeder Dosis aufgenommen (in Studien rund 34 % mehr). Der Grund ist das Hormon Hepcidin: Nach einer Eisendosis steigt es an und blockiert die Aufnahme für etwa 24 Stunden. Wartet man 48 Stunden, ist Hepcidin wieder niedrig und der Darm nimmt mehr auf.",
+          "studie_zeigt": "Über 14 Dosen verteilt ergab die Alternate-Day-Gabe eine etwa 34 % höhere fraktionelle Eisenaufnahme als die tägliche Gabe. Eine RCT 2023 bestätigte zudem: jeden zweiten Tag führte zu weniger Eisenmangel nach 6 Monaten UND deutlich weniger Magen-Darm-Nebenwirkungen bei gleicher Gesamtdosis.",
+          "studien_details": "Stable-Isotope-Studien von Stoffel/Moretti et al. (u.a. Haematologica 2020) an eisendefizienten Frauen mit und ohne Anämie sowie eine doppelblinde RCT mit 150 Frauen (ScienceDirect 2023). Gemessen wurde die fraktionelle Eisenaufnahme (FIA) und der Hepcidinspiegel.",
+          "zuverlaessigkeit": "Hoch – mechanistisch (Hepcidin) gut erklärt und in mehreren Studien reproduziert. Praxisrelevant: bessere Aufnahme bei weniger Nebenwirkungen."
+        }
+      },
+      {
+        "wert": 4,
+        "einheit": "% (Leistungsverlust durch Mangel)",
+        "kontext": "Niedrige Eisenspeicher senken die Ausdauerleistung; Supplementierung bei Mangel verbessert sie",
+        "quelle": "Systematischer Review elite Athletinnen 2023 + Keller et al. 2024",
+        "erklaerung": {
+          "was_bedeutet": "Eisenmangel bremst die Leistung, lange bevor eine echte Anämie vorliegt: Schon niedrige Eisenspeicher (Ferritin unter ~50 ng/ml) sind bei Sportlerinnen mit Müdigkeit und einer um etwa 3–4 % verringerten Ausdauerkapazität verbunden. Wird der Mangel durch Supplementierung behoben, verbessert sich die Leistung wieder – je nach Ausgangslage um 2 bis 20 %. Bei Menschen OHNE Mangel bringt Eisen dagegen keinen Leistungsgewinn.",
+          "studie_zeigt": "Ein systematischer Review zu Elite-Athletinnen (2023) berichtete einen Leistungsabfall von 3–4 % bei niedrigen Eisenspeichern und eine Verbesserung von 2–20 % unter ~100 mg/Tag elementarem Eisen. Eine Analyse von 1.190 Wettkampfsportlern (Keller 2024) fand bei knapp 20 % einen Eisenmangel (Frauen 36,9 %, Männer 10,6 %), mit halbierter Chance, den VO2max-Zielwert zu erreichen.",
+          "studien_details": "Systematischer Review zu Eisenstatus und Ausdauerleistung bei Athletinnen (2023) sowie Querschnittsanalyse von 1.190 Wettkampfsportlern (Keller et al., Nutrition 2024).",
+          "zuverlaessigkeit": "Hoch für die Aussage 'Mangel mindert Leistung, Korrektur hilft'. Die genaue Größenordnung variiert je nach Ausgangs-Ferritin und Sportart."
+        }
+      },
+      {
+        "wert": 45,
+        "einheit": "mg/Tag (Obergrenze)",
+        "kontext": "Tolerable Upper Intake Level; Eisen kann nicht aktiv ausgeschieden werden – Überladung ist gefährlich (Sicherheitsbefund)",
+        "quelle": "NIH ODS / IOM + StatPearls Iron Overload",
+        "erklaerung": {
+          "was_bedeutet": "Das ist der zentrale Sicherheitsbefund und der Grund, warum Eisen ein Sonderfall ist: Der Körper hat KEINEN aktiven Weg, überschüssiges Eisen wieder loszuwerden. Die Obergrenze liegt bei 45 mg/Tag (bezogen auf Magen-Darm-Nebenwirkungen). Bei der Erbkrankheit Hämochromatose (etwa 1 von 200 in der weißen Bevölkerung) oder bei Überdosierung lagert sich Eisen in Organen ein und schädigt Leber, Herz und Bauchspeicheldrüse.",
+          "studie_zeigt": "Quellen (NIH ODS, StatPearls) belegen: Chronische Eisenüberladung führt unbehandelt zu Leberzirrhose, Herzschäden und Diabetes. Akute Überdosierung ist besonders bei Kindern lebensgefährlich – Dosen von 200–250 mg elementarem Eisen pro kg Körpergewicht können tödlich sein, weshalb Präparate kindersicher verpackt sein müssen.",
+          "studien_details": "NIH Office of Dietary Supplements Iron Fact Sheet, IOM Dietary Reference Intakes (UL 45 mg) und StatPearls 'Iron Overload and Toxicity' (2025); Hämochromatose-Prävalenz und HFE-Genetik (C282Y).",
+          "zuverlaessigkeit": "Sehr hoch – die fehlende Ausscheidung und die Toxizität sind medizinisch gut etabliert. Daraus folgt die klare Regel: Eisen nur bei nachgewiesenem Mangel und idealerweise ärztlich begleitet."
+        }
+      }
+    ]
+  },
+  "indikationen": [
+    {
+      "ziel": "eisenmangel_anaemie",
+      "staerke": 0.95,
+      "kommentar": "Kernindikation: behebt Eisenmangel und Eisenmangelanämie zuverlässig. Voraussetzung ist ein nachgewiesener Mangel (Ferritin/Blutbild)."
+    },
+    {
+      "ziel": "energie_muedigkeit",
+      "staerke": 0.7,
+      "kommentar": "Bessert Müdigkeit und Erschöpfung – aber nur bei tatsächlich niedrigen Eisenspeichern (auch ohne manifeste Anämie). Ohne Mangel kein Effekt."
+    },
+    {
+      "ziel": "ausdauer",
+      "staerke": 0.6,
+      "kommentar": "Bei Sportlern mit Mangel verbessert die Korrektur die Ausdauerleistung deutlich; bei normalen Speichern kein Leistungsgewinn."
+    },
+    {
+      "ziel": "schwangerschaft",
+      "staerke": 0.75,
+      "kommentar": "Erhöhter Bedarf (RDA 27 mg); Mangel gefährdet Mutter und Kind. Supplementierung meist ärztlich begleitet."
+    },
+    {
+      "ziel": "kognition_konzentration",
+      "staerke": 0.45,
+      "kommentar": "Eisenmangel kann Konzentration und kognitive Leistung beeinträchtigen; Korrektur hilft bei Mangel."
+    }
+  ],
+  "kontraindikationen": [
+    {
+      "art": "diagnostik",
+      "wert": "kein_bluttest",
+      "schwere": "hart",
+      "hinweis": "Eisen NICHT ohne nachgewiesenen Mangel (Ferritin/Blutbild) supplementieren. Vorsorgliche Einnahme ohne Bluttest kann bei unerkannter Hämochromatose oder Überladung schaden – der Körper kann Eisen nicht aktiv ausscheiden."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "haemochromatose",
+      "schwere": "hart",
+      "hinweis": "Bei Hämochromatose (erbliche Eisenüberladung, ca. 1 von 200) sind Eisen- UND Vitamin-C-Supplemente kontraindiziert. Behandlung erfolgt durch Aderlass."
+    },
+    {
+      "art": "sicherheit",
+      "wert": "kinder_vergiftung",
+      "schwere": "hart",
+      "hinweis": "Eisenpräparate sind eine häufige Ursache tödlicher Vergiftungen bei Kindern. Kindersicher und außer Reichweite aufbewahren; 200–250 mg/kg können tödlich sein."
+    },
+    {
+      "art": "nebenwirkung",
+      "wert": "magen_darm",
+      "schwere": "vorsichtig",
+      "hinweis": "Orales Eisen verursacht häufig Verstopfung, Übelkeit und Magenschmerzen. Niedrigere Dosen, jeden 2. Tag und Eisenbisglycinat verbessern die Verträglichkeit."
+    }
+  ],
+  "dosierung": {
+    "standard": "Bei Mangel 40–100 mg elementares Eisen, jeden 2. Tag morgens nüchtern",
+    "bereich": {
+      "min": 40,
+      "max": 100,
+      "einheit": "mg"
+    },
+    "obergrenze": "Tolerable Upper Intake Level: 45 mg/Tag (Erwachsene). RDA: Männer 8 mg, menstruierende Frauen 18 mg, Schwangere 27 mg, Frauen ab 51 J. 8 mg; Vegetarier ca. 1,8× RDA. Therapeutische Dosen bei Anämie nur ärztlich begleitet.",
+    "timing": "Morgens nüchtern (Hepcidin niedrig = beste Aufnahme), mit etwas Vitamin C. NICHT zusammen mit Kaffee, Tee, Milch/Kalzium oder Vollkorn (hemmen die Aufnahme). Jeden 2. Tag statt täglich verbessert Aufnahme und Verträglichkeit. Speicher füllen sich langsam – Kontrolle des Ferritins nach ca. 8–12 Wochen.",
+    "quelle": "NIH Office of Dietary Supplements + Stoffel et al. (Dosierungsstrategie)"
+  },
+  "population_spezifisch": {
+    "menstruierende_frauen": {
+      "relevant": true,
+      "staerke": 0.85,
+      "kommentar": "Höchstes Mangelrisiko durch Menstruationsverluste (RDA 18 mg). Bei Müdigkeit Ferritin prüfen lassen."
+    },
+    "vegetarier_veganer": {
+      "relevant": true,
+      "staerke": 0.75,
+      "kommentar": "Nur Nicht-Häm-Eisen mit geringerer Bioverfügbarkeit; Bedarf ca. 1,8× RDA. Kombination mit Vitamin C verbessert die Aufnahme."
+    },
+    "ausdauersportler": {
+      "relevant": true,
+      "staerke": 0.7,
+      "kommentar": "Erhöhtes Risiko (Schweiß, Fußsohlen-Hämolyse, GI-Verluste); knapp 20 % der Wettkampfsportler betroffen, Frauen deutlich häufiger. Leistungsrelevant."
+    },
+    "schwangere": {
+      "relevant": true,
+      "staerke": 0.8,
+      "kommentar": "Stark erhöhter Bedarf (RDA 27 mg); Supplementierung meist Teil der Schwangerenvorsorge, ärztlich begleitet."
+    },
+    "maenner_postmenopausale_frauen": {
+      "relevant": true,
+      "staerke": 0.2,
+      "kommentar": "Niedriges Mangelrisiko und niedrigere RDA (8 mg). Supplementierung nur bei nachgewiesenem Mangel – sonst Überladungsrisiko."
+    }
+  },
+  "warnhinweise": [
+    "Die wichtigste Regel: Eisen nur bei nachgewiesenem Mangel (Bluttest mit Ferritin) supplementieren – niemals vorsorglich ins Blaue.",
+    "Der Körper kann überschüssiges Eisen nicht aktiv ausscheiden; Überladung schädigt Leber, Herz und Bauchspeicheldrüse.",
+    "Eisenpräparate kindersicher und außer Reichweite aufbewahren – sie sind eine häufige Ursache tödlicher Vergiftungen bei Kindern.",
+    "Jeden 2. Tag statt täglich einnehmen: bessere Aufnahme (Hepcidin-Effekt) und weniger Magen-Darm-Beschwerden.",
+    "Aufnahme-Hemmer meiden: Kaffee, Tee, Milch/Kalzium und Vollkorn nicht zeitgleich; Vitamin C fördert die Aufnahme.",
+    "Bei anhaltender Müdigkeit erst Ursache abklären lassen – nicht jeder Erschöpfungszustand ist ein Eisenmangel, und 'high Ferritin' kann auch Entzündung oder Überladung bedeuten."
+  ],
+  "quellen": [
+    {
+      "titel": "Iron - Health Professional Fact Sheet",
+      "autoren": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+      "jahr": 2024,
+      "typ": "position-stand"
+    },
+    {
+      "titel": "Iron absorption from supplements is greater with alternate day than with consecutive day dosing in iron-deficient anemic women",
+      "autoren": "Stoffel NU, Zeder C, Brittenham GM, Moretti D, Zimmermann MB",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7193469/",
+      "jahr": 2020,
+      "typ": "rct",
+      "doi": "10.3324/haematol.2019.220830"
+    },
+    {
+      "titel": "Alternate day versus consecutive day oral iron supplementation in iron-depleted women: a randomized double-blind placebo-controlled study",
+      "autoren": "Various",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2589537023004637",
+      "jahr": 2023,
+      "typ": "rct"
+    },
+    {
+      "titel": "Iron Overload and Toxicity",
+      "autoren": "StatPearls (NCBI Bookshelf)",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK526131/",
+      "jahr": 2025,
+      "typ": "review"
+    },
+    {
+      "titel": "Iron status and endurance performance in female athletes: a systematic review",
+      "autoren": "Various",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "jahr": 2023,
+      "typ": "systematic-review"
+    }
+  ],
+  "inhalt": [
+    "eisen"
+  ]
+}

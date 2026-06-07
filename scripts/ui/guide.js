@@ -339,6 +339,32 @@ function guideOeffneDetail(id) {
     html += '</div>';
   }
 
+  // ── Mythen & Missverständnisse ──
+  // Liest w.fazit.mythen – Array von Strings im Format:
+  //   „Mythos-Aussage" – Aufklärung dazu
+  if (w.fazit && w.fazit.mythen && w.fazit.mythen.length) {
+    html += '<div class="gd-sektion">';
+    html +=   '<div class="gd-sektion-titel">🤔 Häufige Mythen & Missverständnisse</div>';
+    w.fazit.mythen.forEach(function (mythosText) {
+      // Mythos und Aufklärung trennen am " – " (en-dash mit Leerzeichen)
+      // Fallback: gesamter Text als Mythos, keine Aufklärung
+      var teile = mythosText.split(/\s[–-]\s/);
+      var mythos    = teile[0] || mythosText;
+      var aufklaerung = teile.slice(1).join(' – ');
+
+      html += '<div class="gd-mythos">';
+      html +=   '<div class="gd-mythos-icon">✗</div>';
+      html +=   '<div class="gd-mythos-content">';
+      html +=     '<div class="gd-mythos-aussage">' + mythos + '</div>';
+      if (aufklaerung) {
+        html +=   '<div class="gd-mythos-aufklaerung">' + aufklaerung + '</div>';
+      }
+      html +=   '</div>';
+      html += '</div>';
+    });
+    html += '</div>';
+  }
+
   // ── Quellen ──
   if (w.quellen && w.quellen.length) {
     html += '<div class="gd-sektion">';

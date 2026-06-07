@@ -32,7 +32,9 @@ var gewaehlteAlts    = {};  // { suppId: altIndex } – gewählte Alternative je
 var aktivTab = 'essential';  // Aktiver Tab im Shop
 
 // ── DATEN-CACHE ──
-// Werden durch produkte-loader.js aus den JSON-Dateien befüllt
-var ERKLAERUNG        = {};  // { wirkstoffId: 'Beschreibungstext' }
-var INHALT            = {};  // { wirkstoffId: ['wirkstoff1', 'wirkstoff2'] }
-var WIRKSTOFFE_WISSEN = {};  // { wirkstoffId: {name, evidenz, indikationen, ...} }
+// Wird durch produkte-loader.js aus wirkstoffe-wissen.json befüllt.
+// Single Source of Truth für alle Wirkstoff-Daten:
+//   - kurz_beschreibung für Popups
+//   - inhalt Array für Overlap-Erkennung
+//   - alle wissenschaftlichen Daten (evidenz, indikationen, mythen etc.)
+var WIRKSTOFFE_WISSEN = {};

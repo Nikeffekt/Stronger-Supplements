@@ -1,0 +1,195 @@
+{
+  "id": "vitamin_b12",
+  "name": "Vitamin B12 (Cobalamin)",
+  "kategorie": "gesundheit",
+  "ikon": "🔴",
+  "kurz_beschreibung": "Essentielles Vitamin für Blutbildung, Nerven und DNA-Synthese. Praktisch nur in tierischen Lebensmitteln – für Veganer/Vegetarier ein absolutes Muss, ebenso oft im Alter.",
+  "beschreibung": {
+    "was_ist_es": "Vitamin B12 (Cobalamin) ist ein wasserlösliches Vitamin, das den Mineralstoff Kobalt enthält. Es kommt natürlich praktisch ausschließlich in tierischen Lebensmitteln vor (Fleisch, Fisch, Eier, Milchprodukte). In Supplementen liegt es meist als Cyanocobalamin (stabil, gut erforscht) oder Methylcobalamin (aktive Form) vor.",
+    "wie_wirkt_es": "B12 ist Cofaktor für zwei zentrale Enzyme: Es ist nötig für die Bildung roter Blutkörperchen, die DNA-Synthese und die Funktion des Nervensystems (Aufbau der Myelinscheiden). Ein Mangel stört diese Prozesse – die Folge sind u.a. eine spezielle Blutarmut (megaloblastäre Anämie) und neurologische Schäden, die bei langem Bestehen teils irreversibel sind.",
+    "warum_wichtig": "Der Körper kann B12 nicht selbst herstellen und ist auf Zufuhr angewiesen. Veganer und weitgehend pflanzlich Essende entwickeln ohne Supplementierung früher oder später zwangsläufig einen Mangel. Auch ältere Menschen sind gefährdet, weil die Aufnahme im Magen-Darm-Trakt mit dem Alter nachlässt (weniger Magensäure und Intrinsic Factor). Die Speicher reichen lange – ein Mangel zeigt sich oft erst nach Jahren, dann aber ernst."
+  },
+  "fazit": {
+    "top_effekte": [
+      "Verhindert und behebt B12-Mangel mit seinen Folgen (Anämie, Nervenschäden, Erschöpfung)",
+      "Unverzichtbar für Veganer/Vegetarier – ohne Supplementierung ist ein Mangel praktisch unvermeidlich",
+      "Korrigiert bei Älteren häufige Aufnahmestörungen (auch hochdosiert oral, ohne Spritze)"
+    ],
+    "ideal_fuer": "Veganer & Vegetarier (Pflicht), Menschen über 50, Personen mit Magen-Darm-Erkrankungen oder nach Magen-OP, Schwangere/Stillende mit pflanzlicher Ernährung, Metformin-Einnahme",
+    "dosis": "Vegan/Erhalt: 25–100 µg täglich oder 1.000 µg 2×/Woche; Mangel: 1.000 µg täglich",
+    "vorsicht_bei": "Sehr sicher (wasserlöslich); 'normaler' Serumwert schließt funktionellen Mangel nicht aus (MMA messen)",
+    "mythen": [
+      "„B12 gibt jedem mehr Energie“ – falsch. Energie-Effekte treten nur bei tatsächlichem MANGEL auf. Wer ausreichend versorgt ist, spürt von zusätzlichem B12 nichts.",
+      "„Methylcobalamin ist klar besser als Cyanocobalamin“ – überzogen. Bei Gesunden gibt es keinen belegten Vorteil; Cyanocobalamin ist günstig, stabil und wird von Vegan-Ernährungsexperten ausdrücklich empfohlen.",
+      "„Ein Mangel kann nur per Spritze behandelt werden“ – falsch. Hochdosiertes orales B12 (1.000–2.000 µg/Tag) ist meist genauso wirksam, sogar bei gestörter Aufnahme, da ein kleiner Teil passiv aufgenommen wird.",
+      "„Ein normaler B12-Blutwert bedeutet, dass alles in Ordnung ist“ – nicht unbedingt. Der Serumwert kann normal sein, während die Zellen unterversorgt sind. Aussagekräftiger sind Marker wie Methylmalonsäure (MMA)."
+    ]
+  },
+  "evidenz": {
+    "level": "A",
+    "score": 88,
+    "review_typ": "review",
+    "studien_anzahl": 50,
+    "konsens": "Etabliertes essentielles Vitamin; Referenzwerte von NIH/IOM und EFSA, klare Mangel- und Therapie-Evidenz",
+    "effekt_groesse": [
+      {
+        "wert": 100,
+        "einheit": "% (Mangelprävention)",
+        "kontext": "Verhindert bei Veganern den ansonsten praktisch unvermeidlichen B12-Mangel",
+        "quelle": "VeganHealth / Vegan-Ernährungsleitlinien + NIH ODS",
+        "erklaerung": {
+          "was_bedeutet": "Das ist der zentrale, unstrittige Nutzen: Bei rein pflanzlicher Ernährung gibt es kaum natürliche B12-Quellen. Ohne Supplement oder angereicherte Lebensmittel entsteht früher oder später ein Mangel – das ist keine Frage des Ob, sondern des Wann. Eine regelmäßige Supplementierung verhindert das zuverlässig.",
+          "studie_zeigt": "Ernährungsfachgesellschaften sind sich einig: Veganer MÜSSEN B12 supplementieren. Empfohlen werden z.B. 25–100 µg täglich oder 1.000 µg zweimal pro Woche. Auch bei weitgehend pflanzlicher Ernährung ist die Zufuhr meist zu niedrig.",
+          "studien_details": "Zusammenfassung der Empfehlungen von VeganHealth (basierend auf Absorptionsdaten von Heinrich/Walsh), der Academy of Nutrition and Dietetics und des NIH Office of Dietary Supplements.",
+          "zuverlaessigkeit": "Sehr hoch – einer der am besten etablierten Punkte der gesamten Ernährungsmedizin. Hier gibt es keine seriöse Gegenposition."
+        }
+      },
+      {
+        "wert": 1,
+        "einheit": "% (passive Absorption)",
+        "kontext": "Nur ca. 1 % einer oralen Dosis wird passiv aufgenommen – Grund für die hohe Supplement-Dosierung und die Wirksamkeit oraler Hochdosis-Therapie",
+        "quelle": "Kuzminski et al. 1998 (Blood) + Berlin et al.",
+        "erklaerung": {
+          "was_bedeutet": "B12 wird normalerweise über einen aufwändigen Mechanismus mit dem 'Intrinsic Factor' im Darm aufgenommen, der begrenzt ist. Zusätzlich gibt es eine zweite, vom Intrinsic Factor unabhängige passive Aufnahme – sie macht aber nur etwa 1–2 % der Dosis aus. Genau deshalb sind Supplemente so hoch dosiert (Hunderte bis Tausende µg statt der 2,4 µg RDA): Über die passive Route kommt trotzdem genug an.",
+          "studie_zeigt": "Studien zeigten, dass orale Dosen von 1.000–2.000 µg/Tag den B12-Mangel selbst bei perniziöser Anämie (fehlender Intrinsic Factor) ausgleichen können – früher hielt man dafür zwingend Injektionen für nötig. Die passive Diffusion liefert bei hoher Dosis genug Vitamin.",
+          "studien_details": "Klassische klinische Studien (Kuzminski et al., Blood 1998; Berlin et al., Acta Medica Scandinavica 1968) zur oralen vs. parenteralen B12-Therapie; passive Absorption ~1–2 % bei Dosen ab 1 mg.",
+          "zuverlaessigkeit": "Hoch – gut belegt und praxisverändernd: Für viele Patienten sind Tabletten eine gleichwertige Alternative zur Spritze. Bei schwerer Aufnahmestörung oder akuten neurologischen Symptomen bleibt die Injektion aber Mittel der Wahl."
+        }
+      },
+      {
+        "wert": 0,
+        "einheit": "praktisch keine Toxizität",
+        "kontext": "Sehr hohe Sicherheit – wasserlöslich, kein Tolerable Upper Intake Level festgelegt (Sicherheitsbefund)",
+        "quelle": "NIH Office of Dietary Supplements + IOM",
+        "erklaerung": {
+          "was_bedeutet": "Das ist ein Sicherheitsbefund zugunsten von B12: Weil es wasserlöslich ist, scheidet der Körper einen Überschuss einfach über den Urin aus. Es wurde keine Obergrenze (UL) festgelegt, weil selbst hohe Dosen keine verlässlich nachweisbaren Schäden verursachen. Auch die Cyanid-Last aus Cyanocobalamin ist physiologisch vernachlässigbar.",
+          "studie_zeigt": "Das Institute of Medicine hat für B12 kein Tolerable Upper Intake Level definiert, da keine ausreichenden Belege für schädliche Wirkungen hoher Zufuhr aus Lebensmitteln oder Supplementen vorliegen. Sehr selten sind allergische Reaktionen, eher bei Injektionen als bei oraler Gabe.",
+          "studien_details": "NIH Office of Dietary Supplements Fact Sheet (Vitamin B12); IOM Dietary Reference Intakes. Cyanid-Berechnungen z.B. bei VeganHealth zeigen Werte weit unter der EFSA-Sicherheitsschwelle.",
+          "zuverlaessigkeit": "Sehr hoch – die geringe Toxizität von B12 ist breit anerkannt. Das macht eine vorsorgliche Supplementierung in Risikogruppen unkompliziert."
+        }
+      }
+    ]
+  },
+  "indikationen": [
+    {
+      "ziel": "mangelpraevention",
+      "staerke": 0.95,
+      "kommentar": "Kernindikation: Verhindert B12-Mangel bei Risikogruppen. Bei Veganern unverzichtbar."
+    },
+    {
+      "ziel": "blutbildung",
+      "staerke": 0.9,
+      "kommentar": "Notwendig für die Bildung roter Blutkörperchen; Mangel führt zu megaloblastärer Anämie."
+    },
+    {
+      "ziel": "nervensystem",
+      "staerke": 0.85,
+      "kommentar": "Essentiell für die Nervenfunktion; ein langer Mangel kann zu teils irreversiblen neurologischen Schäden führen."
+    },
+    {
+      "ziel": "energie_muedigkeit",
+      "staerke": 0.5,
+      "kommentar": "Bessert Erschöpfung NUR bei tatsächlichem Mangel. Bei ausreichender Versorgung kein Energie-Effekt."
+    },
+    {
+      "ziel": "gesundheit",
+      "staerke": 0.7,
+      "kommentar": "Essentielles Vitamin; gezielte Supplementierung in Risikogruppen (vegan, Alter, Malabsorption) klar sinnvoll."
+    }
+  ],
+  "kontraindikationen": [
+    {
+      "art": "diagnostik",
+      "wert": "serumwert_truegt",
+      "schwere": "vorsichtig",
+      "hinweis": "Ein normaler Serum-B12-Wert schließt einen funktionellen Mangel nicht sicher aus. Bei Verdacht zusätzlich Methylmalonsäure (MMA) und ggf. Holotranscobalamin bestimmen lassen."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "neurologische_symptome",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei bestehenden neurologischen Symptomen oder schwerer Aufnahmestörung gehört die Behandlung in ärztliche Hand (ggf. Injektionen, Ursachenabklärung). Nicht in Eigenregie 'austherapieren'."
+    },
+    {
+      "art": "wechselwirkung",
+      "wert": "folsaeure_maskierung",
+      "schwere": "vorsichtig",
+      "hinweis": "Hohe Folsäuredosen können die Blutarmut eines B12-Mangels verschleiern, während die Nervenschäden fortschreiten. Bei Supplementierung beide Werte im Blick behalten."
+    }
+  ],
+  "dosierung": {
+    "standard": "Erhalt/vegan: 25–100 µg täglich oder 1.000 µg 2×/Woche",
+    "bereich": {
+      "min": 25,
+      "max": 1000,
+      "einheit": "µg"
+    },
+    "obergrenze": "Kein Tolerable Upper Intake Level festgelegt (sehr geringe Toxizität, wasserlöslich). RDA: 2,4 µg/Tag (Erwachsene); wegen nur ~1 % passiver Absorption werden Supplemente weit höher dosiert.",
+    "timing": "Tageszeit unwichtig. Hochdosierte Einzelgaben (z.B. 1.000 µg) sättigen die intrinsic-factor-Aufnahme und nutzen zusätzlich die passive Diffusion. Bei mehreren kleinen Portionen mehrere Stunden Abstand für bessere Aufnahme. Mangel: 1.000 µg täglich über 1–3 Monate, danach Kontrolle (Serum-B12 + MMA nach 6–8 Wochen).",
+    "quelle": "NIH Office of Dietary Supplements + VeganHealth-Empfehlungen + klinische Therapiestudien"
+  },
+  "population_spezifisch": {
+    "vegetarier_veganer": {
+      "relevant": true,
+      "staerke": 0.95,
+      "kommentar": "PFLICHT – ohne Supplementierung oder angereicherte Lebensmittel ist ein Mangel praktisch unvermeidlich. Wichtigste Zielgruppe überhaupt."
+    },
+    "senioren_50plus": {
+      "relevant": true,
+      "staerke": 0.8,
+      "kommentar": "Nachlassende Magensäure und Intrinsic-Factor-Produktion verschlechtern die Aufnahme. Hochdosiertes orales B12 ist hier besonders sinnvoll."
+    },
+    "schwangerschaft": {
+      "relevant": true,
+      "staerke": 0.7,
+      "kommentar": "Erhöhter Bedarf; B12-Mangel der Mutter kann das Kind gefährden. Bei pflanzlicher Ernährung unbedingt supplementieren."
+    },
+    "metformin_nutzer": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "Das Diabetes-Medikament Metformin kann langfristig die B12-Aufnahme verringern – Spiegel regelmäßig kontrollieren."
+    }
+  },
+  "warnhinweise": [
+    "Bei rein pflanzlicher Ernährung ist B12-Supplementierung nicht optional, sondern notwendig – ein Mangel kann ernste, teils bleibende Nervenschäden verursachen.",
+    "Ein 'normaler' Serum-B12-Wert kann trügen: Bei Symptomen zusätzlich Methylmalonsäure (MMA) bestimmen lassen.",
+    "B12-Speicher reichen oft mehrere Jahre – ein Mangel entwickelt sich schleichend und wird leicht übersehen, bis Symptome auftreten.",
+    "Cyanocobalamin ist günstig, stabil und gut belegt; Methylcobalamin ist eine legitime Präferenz, aber bei Gesunden ohne nachgewiesenen Vorteil.",
+    "Hohe Folsäurezufuhr kann einen B12-Mangel im Blutbild maskieren, während Nervenschäden fortschreiten – beide Werte zusammen betrachten.",
+    "Bei ausgeprägten neurologischen Symptomen oder schwerer Malabsorption ärztlich abklären – ggf. sind Injektionen nötig."
+  ],
+  "quellen": [
+    {
+      "titel": "Vitamin B12 - Health Professional Fact Sheet",
+      "autoren": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+      "jahr": 2024,
+      "typ": "position-stand"
+    },
+    {
+      "titel": "Vitamin B12: A Comprehensive Review of Natural vs Synthetic Forms of Consumption and Supplementation",
+      "autoren": "Various",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12681447/",
+      "jahr": 2025,
+      "typ": "review"
+    },
+    {
+      "titel": "Effective treatment of cobalamin deficiency with oral cobalamin",
+      "autoren": "Kuzminski AM, Del Giacco EJ, Allen RH, Stabler SP, Lindenbaum J",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9694707/",
+      "jahr": 1998,
+      "typ": "rct",
+      "doi": "10.1182/blood.V92.4.1191"
+    },
+    {
+      "titel": "Rationale for VeganHealth's B12 Recommendations",
+      "autoren": "Norris J, Walsh S",
+      "url": "https://veganhealth.org/vitamin-b12/explanation-of-vitamin-b12-recommendations/",
+      "jahr": 2020,
+      "typ": "review"
+    }
+  ],
+  "inhalt": [
+    "vitamin_b12"
+  ]
+}

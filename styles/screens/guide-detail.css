@@ -584,3 +584,67 @@
   text-align: center;
   font-style: italic;
 }
+
+
+/* ══ MYTHEN & MISSVERSTÄNDNISSE ═══════════════════════════════════════════
+   Jeder Mythos wird als Karte dargestellt:
+   - Rotes ✗-Icon links zeigt: das ist nicht wahr
+   - Behauptete Aussage in Anführungszeichen (etwas hervorgehoben)
+   - Wissenschaftliche Aufklärung darunter (dezenter)
+═══════════════════════════════════════════════════════════════════════════ */
+.gd-mythos {
+  display: flex;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--r-sm);
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  transition: border-color var(--t-fast);
+}
+
+.gd-mythos:last-child {
+  margin-bottom: 0;
+}
+
+.gd-mythos:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Rotes ✗-Icon – signalisiert: stimmt nicht */
+.gd-mythos-icon {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(239, 68, 68, 0.12);
+  color: rgba(239, 68, 68, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 800;
+  margin-top: 1px;
+}
+
+.gd-mythos-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Die behauptete (falsche) Aussage – etwas hervorgehoben durch italic */
+.gd-mythos-aussage {
+  font-size: 13px;
+  font-weight: 600;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+
+/* Wissenschaftliche Aufklärung – dezenter aber lesbar */
+.gd-mythos-aufklaerung {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+}

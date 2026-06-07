@@ -1,0 +1,196 @@
+{
+  "id": "elektrolyte",
+  "name": "Elektrolyte (Natrium, Kalium, Magnesium)",
+  "kategorie": "performance",
+  "ikon": "💧",
+  "kurz_beschreibung": "Mineralstoffe, die Flüssigkeitshaushalt, Nerven- und Muskelfunktion steuern. Wichtig bei hohem Schweißverlust und langen Belastungen – im Alltag aber meist überschätzt.",
+  "beschreibung": {
+    "was_ist_es": "Elektrolyte sind elektrisch geladene Mineralstoffe – vor allem Natrium, Kalium, Magnesium, Calcium und Chlorid. Sie regulieren den Wasserhaushalt zwischen den Körperzellen, die Reizweiterleitung in Nerven und die Muskelkontraktion. Beim Schwitzen gehen sie verloren, allen voran Natrium.",
+    "wie_wirkt_es": "Natrium ist der wichtigste Elektrolyt für den Flüssigkeitshaushalt: Es hält Wasser im Blutkreislauf und steuert zusammen mit Kalium die Spannung an Zellmembranen, die für Nerven- und Muskelfunktion nötig ist. Bei starkem Schwitzen sinkt der Natriumbestand; wird dann viel reines Wasser getrunken, kann das Blut-Natrium verdünnt werden. Elektrolytgetränke ersetzen die verlorenen Mineralstoffe und stabilisieren so den Haushalt.",
+    "warum_wichtig": "Ein Verlust von mehr als ~2 % des Körpergewichts an Flüssigkeit beeinträchtigt körperliche und geistige Leistung. Pro Liter Schweiß gehen etwa 0,5–2 g Natrium verloren – stark individuell. Bei langen, heißen Belastungen oder bei 'salty sweatern' kann ein gezielter Elektrolytersatz sinnvoll sein. Umgekehrt ist im normalen Alltag bei ausgewogener Ernährung ein Elektrolytpräparat meist überflüssig."
+  },
+  "fazit": {
+    "top_effekte": [
+      "Erhalten den Flüssigkeitshaushalt und beugen Dehydration bei hohem Schweißverlust vor",
+      "Senken das Risiko einer belastungsbedingten Hyponatriämie (Natriummangel durch zu viel reines Wasser)",
+      "Unterstützen Nerven- und Muskelfunktion bei langen, intensiven oder heißen Belastungen"
+    ],
+    "ideal_fuer": "Ausdauer- und Hitzesportler, lange Belastungen (>1–2 h), 'salty sweater', bei Krankheit mit Flüssigkeitsverlust (Durchfall/Erbrechen)",
+    "dosis": "Bedarfsabhängig; Orientierung: 300–700 mg Natrium pro Liter Flüssigkeit bei langer Belastung",
+    "vorsicht_bei": "Bluthochdruck/Niereninsuffizienz (Natrium), Herzmedikamente (Kalium), Überhydration ohne Natrium",
+    "mythen": [
+      "„Jeder braucht ständig Elektrolytgetränke“ – falsch. Im Alltag und bei kurzen Einheiten reicht Wasser plus normale Ernährung. Gezielter Ersatz lohnt erst bei hohem Schweißverlust und langen Belastungen.",
+      "„Elektrolyte verbessern direkt die Leistung“ – überzogen. In kontrollierten Studien verbessert Natrium die Zeitfahrleistung nicht zuverlässig; der Nutzen liegt im Erhalt des Flüssigkeits-/Natriumhaushalts, nicht in einem Leistungs-Boost.",
+      "„Muskelkrämpfe kommen immer von Elektrolytmangel“ – zu einfach. Belastungskrämpfe haben oft auch neuromuskuläre Ursachen (Ermüdung); Elektrolyte helfen nicht in jedem Fall.",
+      "„Viel trinken kann nie schaden“ – falsch. Übermäßiges Trinken von reinem Wasser ohne Natrium kann zu einer gefährlichen Hyponatriämie führen, vor allem bei Events über 4 Stunden."
+    ]
+  },
+  "evidenz": {
+    "level": "B",
+    "score": 70,
+    "review_typ": "meta-analyse",
+    "studien_anzahl": 30,
+    "konsens": "Konsensus-Statements und Reviews zu Hydration/Hyponatriämie (Armstrong 2021, Knechtle 2019) + Hydrations-Meta-Analyse",
+    "effekt_groesse": [
+      {
+        "wert": 2,
+        "einheit": "% Körpergewicht (Leistungsschwelle)",
+        "kontext": "Ab ca. 2 % Flüssigkeitsverlust sinken körperliche und kognitive Leistung",
+        "quelle": "Hydrations-Konsensusliteratur (Armstrong 2021, Nutrients)",
+        "erklaerung": {
+          "was_bedeutet": "Verliert man durch Schwitzen mehr als etwa 2 % des Körpergewichts an Flüssigkeit (bei 80 kg also ~1,6 kg/Liter), lässt die Leistung messbar nach – Ausdauer, Kraft und auch die Konzentration. Elektrolyte (vor allem Natrium) helfen, die getrunkene Flüssigkeit im Körper zu halten und diesen Verlust effektiver auszugleichen als reines Wasser.",
+          "studie_zeigt": "Sowohl Dehydration als auch Überhydration verschlechtern bei moderaten bis schweren Ausprägungen die Leistung und können zu Beschwerden führen. Ein individueller Mittelweg – getrunken nach Durst, Bedingungen und persönlicher Schweißrate – ist verlässlicher als starre Trinkpläne.",
+          "studien_details": "Übersichtsarbeit und Konsensus-Empfehlungen zur Rehydration im Ausdauersport (Armstrong, Nutrients 2021) sowie weitere Reviews; Schweiß-Natrium ca. 20–80 mmol/L bzw. 0,5–2 g/L.",
+          "zuverlaessigkeit": "Hoch für die 2 %-Schwelle, die breit anerkannt ist. Die optimale Ersatzstrategie ist dagegen individuell und nicht für alle gleich."
+        }
+      },
+      {
+        "wert": 0,
+        "einheit": "kein konsistenter Leistungs-Boost",
+        "kontext": "Natriumzufuhr verbessert die Zeitfahrleistung in kontrollierten Studien nicht zuverlässig (ehrliche Einordnung)",
+        "quelle": "Systematische Reviews/Meta-Analysen zu CHO-Elektrolyt-Getränken",
+        "erklaerung": {
+          "was_bedeutet": "Hier wird oft mehr versprochen, als die Daten hergeben: Zusätzliches Natrium während des Sports steigert die Leistung in kontrollierten Zeitfahr-Tests NICHT zuverlässig. Der echte Wert liegt darin, den Flüssigkeits- und Natriumhaushalt stabil zu halten und einer Hyponatriämie vorzubeugen – besonders bei langen, heißen Events und bei Personen mit hohem Salzverlust.",
+          "studie_zeigt": "Meta-Analysen zur Hydration zeigen, dass kohlenhydrat-elektrolythaltige Getränke das Plasmavolumen während des Sports besser stützen als reines Wasser. Ein direkter, konsistenter Leistungsvorteil durch Natrium allein ließ sich aber nicht belegen.",
+          "studien_details": "Systematische Meta-Analyse zu hyper-/iso-/hypotonen Sportgetränken und deren Wirkung auf das Plasmavolumen während Dauerbelastung (Sports Medicine / PMC8803723) sowie weitere kontrollierte Studien.",
+          "zuverlaessigkeit": "Moderat – die Datenlage spricht klar gegen Elektrolyte als direkten Leistungsbooster, aber für ihren Nutzen im Flüssigkeitsmanagement. Genau diese ehrliche Unterscheidung ist wichtig."
+        }
+      },
+      {
+        "wert": 4,
+        "einheit": "Stunden (Hyponatriämie-Risikoschwelle)",
+        "kontext": "Belastungsbedingte Hyponatriämie tritt vor allem bei Events ab ~4 h und Überhydration auf (Sicherheitsbefund)",
+        "quelle": "Knechtle et al. 2019 + PM&R KnowledgeNow (EAH)",
+        "erklaerung": {
+          "was_bedeutet": "Das ist ein Sicherheitsbefund, der ein unterschätztes Risiko betrifft: die belastungsbedingte Hyponatriämie (EAH). Sie entsteht NICHT durch zu wenig, sondern durch zu viel Trinken – wenn man große Mengen reines Wasser ohne Natrium zuführt und das Blut-Natrium verdünnt. Symptome reichen von Übelkeit und Verwirrtheit bis zu lebensbedrohlichen Zuständen.",
+          "studie_zeigt": "Risikofaktoren sind Belastungen ab etwa 4 Stunden Dauer, freie Verfügbarkeit von Flüssigkeit, extreme Hitze oder Kälte und übermäßiges Trinken. Hier hilft Natriumzufuhr (über Elektrolytgetränke) tatsächlich, das Blut-Natrium zu stabilisieren – das ist der am besten begründete Anwendungsfall.",
+          "studien_details": "Narrativer Review zur belastungsbedingten Hyponatriämie (Knechtle et al. 2019) und klinische Übersicht (PM&R KnowledgeNow); EAH dokumentiert bei Marathon, Triathlon, Ultraläufen und langen Wanderungen.",
+          "zuverlaessigkeit": "Hoch – EAH ist gut dokumentiert und teils tödlich. Die Botschaft 'nicht blind viel Wasser trinken, bei langen Events Natrium ersetzen' ist klar belegt."
+        }
+      }
+    ]
+  },
+  "indikationen": [
+    {
+      "ziel": "hydration",
+      "staerke": 0.7,
+      "kommentar": "Kernnutzen: Erhalt des Flüssigkeits-/Natriumhaushalts bei hohem Schweißverlust. Natrium hält getrunkene Flüssigkeit besser im Körper als reines Wasser."
+    },
+    {
+      "ziel": "ausdauer",
+      "staerke": 0.55,
+      "kommentar": "Relevant bei langen/heißen Belastungen (>1–2 h). Kein direkter Leistungsboost, aber Schutz vor leistungsmindernder Dehydration und Hyponatriämie."
+    },
+    {
+      "ziel": "muskelfunktion",
+      "staerke": 0.45,
+      "kommentar": "Elektrolyte sind für die Muskelkontraktion nötig; Belastungskrämpfe haben aber oft auch neuromuskuläre Ursachen – Elektrolyte helfen nicht immer."
+    },
+    {
+      "ziel": "regeneration",
+      "staerke": 0.45,
+      "kommentar": "Rehydration nach dem Sport mit Natrium beschleunigt die Wiederherstellung des Flüssigkeitshaushalts."
+    },
+    {
+      "ziel": "krankheit_fluessigkeitsverlust",
+      "staerke": 0.6,
+      "kommentar": "Bei Durchfall/Erbrechen sinnvoll zur oralen Rehydration (Natrium-Glukose-Lösungen)."
+    }
+  ],
+  "kontraindikationen": [
+    {
+      "art": "medizinisch",
+      "wert": "bluthochdruck_niere",
+      "schwere": "vorsichtig",
+      "hinweis": "Hohe Natriumzufuhr kann bei Bluthochdruck oder Niereninsuffizienz problematisch sein. In diesen Fällen Natriummenge ärztlich abklären."
+    },
+    {
+      "art": "medikament",
+      "wert": "kalium_herzmedikamente",
+      "schwere": "vorsichtig",
+      "hinweis": "Kaliumpräparate können mit bestimmten Herz-/Blutdruckmedikamenten (ACE-Hemmer, Sartane, kaliumsparende Diuretika) gefährlich interagieren (Hyperkaliämie). Nicht ohne ärztliche Rücksprache zusätzlich Kalium supplementieren."
+    },
+    {
+      "art": "verhalten",
+      "wert": "ueberhydration",
+      "schwere": "hart",
+      "hinweis": "Übermäßiges Trinken von reinem Wasser ohne Natrium kann zu einer lebensgefährlichen Hyponatriämie führen. Bei langen Events nach Durst trinken und Natrium ersetzen, nicht 'auf Vorrat' literweise Wasser."
+    }
+  ],
+  "dosierung": {
+    "standard": "Bedarfsabhängig; ~300–700 mg Natrium pro Liter Flüssigkeit bei langer Belastung",
+    "bereich": {
+      "min": 300,
+      "max": 700,
+      "einheit": "mg Natrium/Liter"
+    },
+    "obergrenze": "Stark individuell – richtet sich nach Schweißrate, Dauer, Hitze und Salzverlust. Kein pauschaler Wert; bei kurzen Einheiten und im Alltag meist gar nicht nötig.",
+    "timing": "Während langer/heißer Belastungen über die Trinkflüssigkeit zuführen; nach dem Sport zur Rehydration mit Natrium. Reines Wasser bei sehr langen Events nicht im Übermaß ohne Natrium trinken. Menge an die individuelle Schweißrate anpassen.",
+    "quelle": "Hydrations-Konsensus (Armstrong 2021) + EAH-Reviews (Knechtle 2019)"
+  },
+  "population_spezifisch": {
+    "ausdauersportler": {
+      "relevant": true,
+      "staerke": 0.7,
+      "kommentar": "Hauptzielgruppe: lange/heiße Belastungen mit hohem Schweiß- und Natriumverlust. Individualisierter Ersatz sinnvoll."
+    },
+    "hitzesportler": {
+      "relevant": true,
+      "staerke": 0.7,
+      "kommentar": "Hohe Schweißraten in Hitze (bis 2 L/h) – Natriumersatz besonders relevant, Hyponatriämie-Risiko beachten."
+    },
+    "alltagssportler": {
+      "relevant": true,
+      "staerke": 0.25,
+      "kommentar": "Bei kurzen Einheiten und ausgewogener Ernährung meist überflüssig – Wasser reicht. Elektrolytprodukte sind hier oft Marketing."
+    },
+    "bei_krankheit": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "Bei Durchfall/Erbrechen sinnvoll zur oralen Rehydration; bei Kindern und Älteren auf Flüssigkeits- und Elektrolytbilanz achten."
+    }
+  },
+  "warnhinweise": [
+    "Mehr ist nicht besser: Elektrolytprodukte sind im Alltag und bei kurzen Einheiten meist überflüssig – Wasser und eine normale Ernährung genügen.",
+    "Elektrolyte sind kein direkter Leistungsbooster; ihr Nutzen liegt im Erhalt des Flüssigkeits- und Natriumhaushalts bei langen/heißen Belastungen.",
+    "Vorsicht vor Überhydration: Zu viel reines Wasser ohne Natrium kann eine gefährliche Hyponatriämie auslösen – besonders bei Events über 4 Stunden.",
+    "Der Bedarf ist hochindividuell (Schweißrate, Hitze, Salzverlust). Pauschale Trinkpläne sind weniger zuverlässig als das Trinken nach Durst plus angepasster Natriumersatz.",
+    "Bei Bluthochdruck, Nieren- oder Herzerkrankung Natrium-/Kaliummengen ärztlich abklären.",
+    "Belastungskrämpfe sind nicht immer ein Elektrolytproblem – oft spielt neuromuskuläre Ermüdung die größere Rolle."
+  ],
+  "quellen": [
+    {
+      "titel": "Rehydration during Endurance Exercise: Challenges, Research, Options, Methods",
+      "autoren": "Armstrong LE",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8001428/",
+      "jahr": 2021,
+      "typ": "review",
+      "doi": "10.3390/nu13030887"
+    },
+    {
+      "titel": "The Hydrating Effects of Hypertonic, Isotonic and Hypotonic Sports Drinks and Waters on Central Hydration During Continuous Exercise: A Systematic Meta-Analysis and Perspective",
+      "autoren": "Various",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8803723/",
+      "jahr": 2022,
+      "typ": "meta-analyse"
+    },
+    {
+      "titel": "Exercise-associated hyponatremia in endurance and ultra-endurance performance: a narrative review",
+      "autoren": "Knechtle B, et al.",
+      "url": "https://now.aapmr.org/hydration-issues-in-the-athlete-and-exercise-associated-hyponatremia/",
+      "jahr": 2019,
+      "typ": "review"
+    },
+    {
+      "titel": "Exercise-Associated Hyponatremia: Clinical Overview",
+      "autoren": "PM&R KnowledgeNow",
+      "url": "https://now.aapmr.org/hydration-issues-in-the-athlete-and-exercise-associated-hyponatremia/",
+      "jahr": 2024,
+      "typ": "review"
+    }
+  ],
+  "inhalt": [
+    "elektrolyte",
+    "magnesium_trace"
+  ]
+}

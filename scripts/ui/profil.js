@@ -3,14 +3,14 @@
    Profil Screen – Anzeige, Wirkstoff-Popup, Stack-Verwaltung
 
    Abhängigkeiten:
-   - scripts/state.js           (AW, NP, DB, meinStack)
+   - scripts/state.js           (AW, NP, DB, meinStack, WIRKSTOFFE_WISSEN)
    - scripts/navigation.js      (zeige)
    - scripts/ui/toast.js        (toast)
    - scripts/ui/reset.js        (resetApp)
    - scripts/data/konstanten.js (ALT, TRG, ERN, GES, ZIEL)
    - scripts/engine/empfehlungen.js    (berechneEmpfehlungen, dosis)
    - scripts/engine/personalisierung.js (getPersonalisierteAlts)
-   - data/wirkstoff-erklaerungen.js    (ERKLAERUNG)
+   - data/wirkstoffe-wissen.json (WIRKSTOFFE_WISSEN)
 ============================================================ */
 
 // ── AVATAR HELPER ──
@@ -191,7 +191,11 @@ function zeigeProfil() {
 function oeffneWirkstoffPopup(eid, prio, a) {
   if (!DB || !DB[eid]) return;
   var db        = DB[eid];
-  var erkl      = ERKLAERUNG[eid] || 'Wichtiger Wirkstoff für dein Profil.';
+
+  // Beschreibung aus neuer Wissensbasis lesen (mit Fallback)
+  var wissen    = (typeof WIRKSTOFFE_WISSEN !== 'undefined') ? WIRKSTOFFE_WISSEN[eid] : null;
+  var erkl      = (wissen && wissen.kurz_beschreibung) ? wissen.kurz_beschreibung : 'Wichtiger Wirkstoff für dein Profil.';
+
   var d         = dosis(eid, a);
   var prioColor = prio === 'essential' ? '#FF6B00' : prio === 'empfohlen' ? '#3B82F6' : '#10B981';
   var prioLabel = prio === 'essential' ? 'Essentiell' : prio === 'empfohlen' ? 'Empfohlen' : 'Optional';

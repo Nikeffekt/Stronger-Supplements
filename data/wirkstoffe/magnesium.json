@@ -1,0 +1,222 @@
+{
+  "id": "magnesium",
+  "name": "Magnesium (Bisglycinat)",
+  "kategorie": "gesundheit",
+  "ikon": "🟢",
+  "kurz_beschreibung": "An über 300 Enzymreaktionen beteiligt – wichtig für Muskeln, Nerven, Blutdruck und Energiestoffwechsel. Ein Teil der Bevölkerung nimmt zu wenig auf.",
+  "beschreibung": {
+    "was_ist_es": "Magnesium ist ein essentieller Mineralstoff und Cofaktor für mehr als 300 Enzymreaktionen im Körper – darunter Energieproduktion (ATP), Muskelkontraktion, Nervenfunktion und DNA-Synthese. Es kommt natürlich in Nüssen, Samen, Vollkorn, Hülsenfrüchten und grünem Blattgemüse vor. Als Supplement gibt es viele Salzformen, die sich stark in der Aufnahme unterscheiden.",
+    "wie_wirkt_es": "Magnesium reguliert als Gegenspieler von Kalzium die Muskel- und Nervenerregbarkeit: Es dämpft Übererregung, entspannt Muskulatur und stabilisiert die Reizweiterleitung. Im Energiestoffwechsel ist es für die Nutzung von ATP – dem zellulären Energieträger – unverzichtbar. Außerdem beeinflusst es Gefäßspannung (Blutdruck) und die Insulinwirkung.",
+    "warum_wichtig": "Ein relevanter Teil der Bevölkerung erreicht die empfohlene Magnesiumzufuhr über die Ernährung nicht, da verarbeitete Lebensmittel wenig liefern. Sportler verlieren zusätzlich Magnesium über den Schweiß. Ein Mangel kann sich unspezifisch äußern – etwa durch Muskelkrämpfe, Müdigkeit, Reizbarkeit oder Schlafprobleme. Der Effekt einer Supplementierung ist bei tatsächlichem Mangel am größten."
+  },
+  "fazit": {
+    "top_effekte": [
+      "Senkt den Blutdruck moderat (ca. -2,8 mmHg systolisch) – deutlich stärker bei Bluthochdruck oder Mangel",
+      "Verbessert den Blutzucker bei Typ-2-Diabetes (niedrigerer Nüchternglukosewert), besonders bei Magnesiummangel",
+      "Unterstützt Muskelfunktion & Krampfneigung bei nachgewiesenem Mangel"
+    ],
+    "ideal_fuer": "Menschen mit geringer Zufuhr, Sportler (Schweißverlust), Bluthochdruck, Typ-2-Diabetes/Insulinresistenz, ältere Personen, Schwangere mit Wadenkrämpfen",
+    "dosis": "300–400 mg elementares Magnesium täglich, idealerweise abends, gut verträgliche Form (Bisglycinat)",
+    "vorsicht_bei": "Niereninsuffizienz, bestimmte Antibiotika & Schilddrüsenhormone (zeitlicher Abstand nötig), sehr hohe Dosen (Durchfall)",
+    "mythen": [
+      "„Magnesium hilft jedem gegen Muskelkrämpfe“ – überzogen. Klarer Nutzen vor allem bei Mangel; bei nächtlichen Krämpfen ohne Mangel ist die Evidenz schwach.",
+      "„Magnesium ist ein zuverlässiges Schlafmittel“ – die Schlaf-Evidenz ist schwach (kleine Effekte, niedrige Studienqualität). Es kann bei Mangel helfen, ist aber kein Schlafmittel.",
+      "„Mehr ist besser“ – falsch. Über der Supplement-Obergrenze (ca. 350 mg elementar) drohen vor allem Durchfall; der Körper scheidet Überschuss aus.",
+      "„Magnesiumoxid ist genauso gut und billiger“ – Oxid hat eine schlechte Bioverfügbarkeit. Organische Formen (Bisglycinat, Citrat, Malat) werden deutlich besser aufgenommen."
+    ]
+  },
+  "evidenz": {
+    "level": "B",
+    "score": 74,
+    "review_typ": "meta-analyse",
+    "studien_anzahl": 60,
+    "konsens": "Mehrere Meta-Analysen (Blutdruck, Typ-2-Diabetes) + NIH ODS / EFSA-Referenzwerte",
+    "effekt_groesse": [
+      {
+        "wert": -2.81,
+        "einheit": "mmHg",
+        "kontext": "Senkung des systolischen Blutdrucks vs. Placebo (stärker bei Hypertonie/Mangel)",
+        "quelle": "Meta-Analyse RCTs, PubMed 2024 (median 365 mg, 12 Wochen)",
+        "erklaerung": {
+          "was_bedeutet": "Magnesium senkt den oberen (systolischen) Blutdruck im Mittel um etwa 2,8 mmHg und den unteren (diastolischen) um etwa 2,0 mmHg. Das ist für sich genommen ein moderater Effekt. Entscheidend: Bei Menschen mit Bluthochdruck (besonders unter Blutdruckmedikamenten) oder Magnesiummangel ist der Effekt deutlich größer – bis zu -7,7 mmHg systolisch.",
+          "studie_zeigt": "Über die eingeschlossenen Studien hinweg sank der systolische Blutdruck signifikant. Bei Menschen mit normalem Blutdruck wurde die statistische Signifikanz dagegen nicht erreicht – Magnesium 'normalisiert' eher, als dass es bei Gesunden den Druck weiter senkt.",
+          "studien_details": "Systematische Übersicht und Meta-Analyse randomisierter kontrollierter Studien. Eingesetzte Dosen 82–637 mg elementares Magnesium (Median 365 mg), mediane Interventionsdauer 12 Wochen, Random-Effects-Modell.",
+          "zuverlaessigkeit": "Hoch für die Aussage 'moderate Senkung, stärker bei Hypertonie/Mangel'. Der Effekt ist konsistent über mehrere Meta-Analysen, aber klinisch moderat – Magnesium ersetzt keine Blutdruckmedikation."
+        }
+      },
+      {
+        "wert": -0.58,
+        "einheit": "mmol/L",
+        "kontext": "Senkung des Nüchternblutzuckers bei Typ-2-Diabetes (HbA1c nur minimal)",
+        "quelle": "Al Maqrashi et al. 2025, Meta-Analyse 23 RCTs (n=1.345)",
+        "erklaerung": {
+          "was_bedeutet": "Bei Menschen mit Typ-2-Diabetes senkte Magnesium den Nüchternblutzucker messbar. Auf den Langzeitwert HbA1c (Blutzuckergedächtnis der letzten ~3 Monate) war der Effekt dagegen nur minimal. Der Nutzen war am größten bei Personen mit Magnesiummangel, über 65 Jahren und bei längerer Einnahme.",
+          "studie_zeigt": "Magnesium erhöhte erwartungsgemäß den Serum-Magnesiumspiegel und senkte den Nüchternblutzucker (WMD -0,58 mmol/L). Der HbA1c-Effekt war klein und statistisch grenzwertig. Begleitend zeigten sich günstige Tendenzen bei Blutfetten und diastolischem Blutdruck.",
+          "studien_details": "Systematische Übersicht und Meta-Analyse von 23 randomisierten kontrollierten Studien mit 1.345 Teilnehmern, Subgruppenanalysen nach Alter, Dauer und Magnesiumform.",
+          "zuverlaessigkeit": "Moderat bis hoch – konsistenter Effekt auf den Nüchternblutzucker, aber begrenzte Wirkung auf den wichtigeren Langzeitwert HbA1c. Magnesium ist eine sinnvolle Ergänzung, kein Diabetes-Medikament."
+        }
+      },
+      {
+        "wert": 0.2,
+        "einheit": "cohen_d",
+        "kontext": "Verbesserung der Schlafqualität bei schlechtem Schlaf (kleiner Effekt)",
+        "quelle": "Schuster et al. 2025, RCT Bisglycinat (n=155) + Mah et al. 2021 Meta-Analyse",
+        "erklaerung": {
+          "was_bedeutet": "Magnesium wird oft als Schlafmittel beworben – die Studienlage ist aber schwächer als der Hype. In einer aktuellen Studie mit Bisglycinat verbesserte sich der Insomnie-Score zwar signifikant gegenüber Placebo, der Effekt war jedoch klein (Cohen's d ≈ 0,2). Am ehesten profitieren Menschen mit niedriger Magnesiumzufuhr.",
+          "studie_zeigt": "Im RCT sank der Insomnia Severity Index unter Magnesium-Bisglycinat (250 mg) stärker als unter Placebo, mit den größten Verbesserungen in den ersten zwei Wochen. Eine ältere Meta-Analyse aus 3 kleinen Studien fand nur eine geringe, statistisch nicht eindeutige Verkürzung der Einschlafzeit und stufte die Evidenzqualität (GRADE) als niedrig ein.",
+          "studien_details": "Randomisierte, doppelblinde, placebokontrollierte Studie mit 155 Erwachsenen (Schuster 2025) plus systematische Meta-Analyse von 3 RCTs mit 151 älteren Erwachsenen (Mah 2021), Bewertung per RoB 2.0 und GRADE.",
+          "zuverlaessigkeit": "Niedrig bis moderat – die Effekte sind klein und die Studienbasis dünn. Ehrlich eingeordnet: Magnesium kann bei Mangel den Schlaf etwas unterstützen, ist aber kein verlässliches Schlafmittel."
+        }
+      }
+    ]
+  },
+  "indikationen": [
+    {
+      "ziel": "blutdruck",
+      "staerke": 0.65,
+      "kommentar": "Moderate Senkung des systolischen Blutdrucks, deutlich stärker bei Hypertonie und Magnesiummangel. Konsistent über mehrere Meta-Analysen."
+    },
+    {
+      "ziel": "blutzucker_diabetes",
+      "staerke": 0.6,
+      "kommentar": "Senkt Nüchternblutzucker bei Typ-2-Diabetes, besonders bei Mangel; HbA1c-Effekt klein. Ergänzend zur Therapie."
+    },
+    {
+      "ziel": "muskelfunktion",
+      "staerke": 0.55,
+      "kommentar": "Bei nachgewiesenem Mangel relevant für Muskelkontraktion und Krampfneigung; bei ausreichender Versorgung schwächere Evidenz."
+    },
+    {
+      "ziel": "schlaf",
+      "staerke": 0.35,
+      "kommentar": "Kleiner Effekt auf Schlafqualität, vor allem bei niedriger Zufuhr. Evidenz schwach – kein Schlafmittel."
+    },
+    {
+      "ziel": "ausdauer",
+      "staerke": 0.4,
+      "kommentar": "Für Sportler relevant wegen erhöhtem Schweißverlust; Leistungssteigerung bei bereits ausreichender Versorgung nicht belegt."
+    },
+    {
+      "ziel": "gesundheit",
+      "staerke": 0.7,
+      "kommentar": "Essentieller Mineralstoff, den ein Teil der Bevölkerung zu wenig aufnimmt. Solider Grundbaustein, Nutzen am größten bei Mangel."
+    }
+  ],
+  "kontraindikationen": [
+    {
+      "art": "medizinisch",
+      "wert": "niereninsuffizienz",
+      "schwere": "hart",
+      "hinweis": "Bei eingeschränkter Nierenfunktion kann Magnesium nicht ausreichend ausgeschieden werden – Gefahr der Überladung (Hypermagnesiämie). Supplementierung nur unter ärztlicher Kontrolle."
+    },
+    {
+      "art": "medikament",
+      "wert": "antibiotika_schilddruese",
+      "schwere": "vorsichtig",
+      "hinweis": "Magnesium kann die Aufnahme bestimmter Medikamente verringern (z.B. Tetracyclin-/Chinolon-Antibiotika, Bisphosphonate, Schilddrüsenhormone wie L-Thyroxin). Zeitlichen Abstand von mehreren Stunden einhalten."
+    },
+    {
+      "art": "dosis",
+      "wert": "hohe_dosis_durchfall",
+      "schwere": "vorsichtig",
+      "hinweis": "Dosen über ca. 350 mg elementares Magnesium aus Supplementen können abführend wirken (osmotischer Durchfall). Aufteilen auf mehrere Gaben und zu den Mahlzeiten einnehmen mildert das."
+    }
+  ],
+  "dosierung": {
+    "standard": "300–400 mg elementares Magnesium täglich",
+    "bereich": {
+      "min": 300,
+      "max": 400,
+      "einheit": "mg"
+    },
+    "obergrenze": "Tolerable Upper Intake Level für Supplemente: 350 mg/Tag (USA/NIH), 250 mg/Tag (EFSA) – gilt nur für Supplemente, nicht für Magnesium aus Lebensmitteln. RDA gesamt: 310–420 mg/Tag.",
+    "timing": "Idealerweise abends (wirkt entspannend) und zu einer Mahlzeit. Höhere Mengen auf mehrere Gaben aufteilen. Nicht gleichzeitig mit hohen Kalziumdosen oder den genannten Medikamenten einnehmen.",
+    "quelle": "NIH Office of Dietary Supplements + EFSA Referenzwerte + Blutdruck-/Diabetes-Meta-Analysen"
+  },
+  "population_spezifisch": {
+    "sportler": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "Erhöhter Verlust über Schweiß. Eine ausreichende Versorgung unterstützt Muskelfunktion und Regeneration; eine Leistungssteigerung über den Bedarf hinaus ist nicht belegt."
+    },
+    "senioren_50plus": {
+      "relevant": true,
+      "staerke": 0.7,
+      "kommentar": "Häufig geringere Zufuhr und Aufnahme sowie mehr Medikamente, die den Magnesiumhaushalt beeinflussen. Nutzen für Blutdruck und Blutzucker in dieser Gruppe größer."
+    },
+    "schwangerschaft": {
+      "relevant": true,
+      "staerke": 0.5,
+      "kommentar": "Wird häufig bei Wadenkrämpfen in der Schwangerschaft eingesetzt; Evidenz gemischt. Einnahme nach ärztlicher Rücksprache."
+    },
+    "menschen_mit_diabetes": {
+      "relevant": true,
+      "staerke": 0.65,
+      "kommentar": "Typ-2-Diabetiker haben oft niedrigere Magnesiumspiegel. Supplementierung verbessert Nüchternblutzucker, besonders bei nachgewiesenem Mangel."
+    }
+  },
+  "warnhinweise": [
+    "Form ist entscheidend: Bisglycinat, Citrat und Malat werden gut aufgenommen und sind magenfreundlich; Magnesiumoxid ist billig, aber schlecht bioverfügbar und wirkt eher abführend.",
+    "Achte auf den Gehalt an ELEMENTAREM Magnesium auf dem Etikett – nicht auf das Gesamtgewicht der Verbindung. Bisglycinat enthält z.B. nur einen kleinen Anteil elementares Magnesium.",
+    "Häufigste Nebenwirkung bei Überdosierung ist weicher Stuhl/Durchfall. Bei guter Nierenfunktion ist eine ernsthafte Überladung selten.",
+    "Magnesium kann die Aufnahme bestimmter Medikamente stören – immer mit zeitlichem Abstand einnehmen.",
+    "Ein Magnesiummangel lässt sich im Serum nur eingeschränkt erkennen, da der Großteil intrazellulär gespeichert ist. Symptome und Ernährung mitbeurteilen."
+  ],
+  "quellen": [
+    {
+      "titel": "Magnesium Supplementation and Blood Pressure: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+      "autoren": "Various (PubMed 41000008)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41000008/",
+      "jahr": 2024,
+      "typ": "meta-analyse"
+    },
+    {
+      "titel": "Effect of Magnesium Supplements on Improving Glucose Control, Blood Pressure and Lipid Profile in Patients With Type 2 Diabetes Mellitus: A systematic review and meta-analysis",
+      "autoren": "Al Maqrashi N, Al Busaidi S, Al-Rasbi S, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12244252/",
+      "jahr": 2025,
+      "typ": "meta-analyse",
+      "doi": "10.18295/2075-0528.2848"
+    },
+    {
+      "titel": "Effect of magnesium supplementation on type 2 diabetes associated cardiovascular risk factors: a systematic review and meta-analysis",
+      "autoren": "Verma H, Garg R",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28150351/",
+      "jahr": 2017,
+      "typ": "meta-analyse"
+    },
+    {
+      "titel": "Magnesium Bisglycinate Supplementation in Healthy Adults Reporting Poor Sleep: A Randomized, Placebo-Controlled Trial",
+      "autoren": "Schuster J, Cycelskij I, Lopresti A, Hahn A",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12412596/",
+      "jahr": 2025,
+      "typ": "rct",
+      "doi": "10.2147/NSS.S524348"
+    },
+    {
+      "titel": "Oral magnesium supplementation for insomnia in older adults: a Systematic Review & Meta-Analysis",
+      "autoren": "Mah J, Pitre T",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8053283/",
+      "jahr": 2021,
+      "typ": "meta-analyse",
+      "doi": "10.1186/s12906-021-03297-z"
+    },
+    {
+      "titel": "Perspective: Call for Re-evaluation of the Tolerable Upper Intake Level for Magnesium Supplementation in Adults",
+      "autoren": "Costello RB, Rosanoff A, et al.",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2161831323013352",
+      "jahr": 2023,
+      "typ": "review"
+    },
+    {
+      "titel": "Magnesium - Health Professional Fact Sheet",
+      "autoren": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
+      "jahr": 2024,
+      "typ": "position-stand"
+    }
+  ],
+  "inhalt": [
+    "magnesium"
+  ]
+}

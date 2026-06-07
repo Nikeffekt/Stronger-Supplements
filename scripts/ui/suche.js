@@ -2,15 +2,14 @@
    scripts/ui/suche.js
    Globale Suche – Lupe-Button im Header öffnet Dropdown
 
-   Sucht in: Wirkstoffen (GUIDE_DATEN), Erklärungen (ERKLAERUNG)
-            und Produkten (DB)
+   Sucht in: Wirkstoffen (WIRKSTOFFE_WISSEN) und Produkten (DB)
 
    Smart-Routing bei Klick auf Wirkstoff:
    - Quiz gemacht (AW befüllt)  → Profil-Popup öffnen
    - Quiz nicht gemacht         → Guide-Detail öffnen
 
    Abhängigkeiten:
-   - scripts/state.js              (AW, DB, ERKLAERUNG)
+   - scripts/state.js              (AW, DB, WIRKSTOFFE_WISSEN)
    - scripts/navigation.js         (zeige)
    - scripts/ui/guide.js           (GUIDE_DATEN, guideOeffnen, guideOeffneDetail)
    - scripts/ui/profil.js          (oeffneWirkstoffPopup, zeigeProfil)
