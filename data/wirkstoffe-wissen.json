@@ -1,7 +1,7 @@
 {
   "_meta": {
     "schema_version": "1.2",
-    "letzte_aktualisierung": "2026-06-06",
+    "letzte_aktualisierung": "2026-06-07",
     "hinweis": "Diese Datei ist die Wissensbasis für die Empfehlungs-Engine. Jeder Eintrag basiert auf publizierten wissenschaftlichen Quellen. Bei Updates Quellen prüfen und Datum aktualisieren.",
     "disclaimer": "Stronger ist kein medizinisches Beratungssystem. Bei gesundheitlichen Fragen oder Vorerkrankungen ist eine ärztliche Beratung notwendig."
   },
@@ -43,7 +43,7 @@
           "wert": 4.43,
           "einheit": "kg",
           "kontext": "Mehr Oberkörperkraft (1RM) vs. Placebo + Krafttraining",
-          "quelle": "Delpino et al. 2024 Meta-Analyse, Adults <50",
+          "quelle": "Wang et al. 2024, Nutrients Meta-Analyse (23 RCTs), Adults <50",
           "erklaerung": {
             "was_bedeutet": "1RM steht für 'One-Repetition-Maximum' – also das maximale Gewicht das du EINMAL sauber heben kannst. Beispiel: Wenn du Bankdrücken mit 70 kg einmal schaffst aber nicht 75 kg, ist dein 1RM = 70 kg. Die 4.43 kg sind also nicht dein Körpergewicht-Anstieg, sondern wie viel mehr Gewicht du im Maximalkraft-Test bewegen kannst.",
             "studie_zeigt": "Verglichen wurden zwei Gruppen, die beide 8-12 Wochen identisches Krafttraining absolvierten. Die Placebo-Gruppe konnte ihr Bankdrücken-Maximum um ca. 6 kg steigern. Die Kreatin-Gruppe konnte es um ca. 10.43 kg steigern. Der Unterschied von 4.43 kg ist der zusätzliche Effekt den ALLEIN das Kreatin gebracht hat.",
@@ -55,7 +55,7 @@
           "wert": 11.35,
           "einheit": "kg",
           "kontext": "Mehr Unterkörperkraft (1RM) vs. Placebo + Krafttraining",
-          "quelle": "Delpino et al. 2024 Meta-Analyse, Adults <50",
+          "quelle": "Wang et al. 2024, Nutrients Meta-Analyse (23 RCTs), Adults <50",
           "erklaerung": {
             "was_bedeutet": "Auch hier: 1RM = das maximale Gewicht das du einmal sauber heben kannst, in diesem Fall bei Übungen für die Beine (Kniebeugen, Beinpresse). Die 11.35 kg sind der zusätzliche Kraftzuwachs durch Kreatin – nicht dein Körpergewicht.",
             "studie_zeigt": "Warum ist der Effekt im Unterkörper größer (11.35 kg vs. 4.43 kg)? Beine sind anatomisch stärker als Arme. Beim Kniebeugen oder der Beinpresse werden absolute Gewichte von 100+ kg bewegt, beim Bankdrücken oft nur 60-80 kg. Relativ gesehen ist der prozentuale Zuwachs in beiden Bereichen ähnlich groß – nur die absoluten kg-Werte sind höher.",
@@ -177,10 +177,11 @@
       },
       {
         "titel": "Effects of Creatine Supplementation and Resistance Training on Muscle Strength Gains in Adults <50 Years of Age: A Systematic Review and Meta-Analysis",
-        "autoren": "Delpino FM, et al.",
+        "autoren": "Wang Z, Qiu B, Li R, et al.",
         "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11547435/",
         "jahr": 2024,
-        "typ": "meta-analyse"
+        "typ": "meta-analyse",
+        "doi": "10.3390/nu16213665"
       },
       {
         "titel": "Impact of creatine supplementation and exercise training in older adults: a systematic review and meta-analysis",
@@ -266,24 +267,24 @@
           "wert": 12,
           "einheit": "%",
           "kontext": "Weniger akute Atemwegsinfekte vs. Placebo bei täglicher Einnahme",
-          "quelle": "Martineau et al. 2017, BMJ Meta-Analyse (n=10.933)",
+          "quelle": "Martineau et al. 2017, BMJ IPD-Meta-Analyse (25 RCTs, n=10.933; OR 0,88)",
           "erklaerung": {
             "was_bedeutet": "Wer regelmäßig Vitamin D einnimmt, hat etwa 12% weniger akute Atemwegsinfektionen (Erkältung, Grippe, Bronchitis) als Personen ohne Supplementierung. Bei Personen mit nachgewiesenem Vitamin-D-Mangel ist der Schutzeffekt noch deutlich stärker – bis zu 70% Risikoreduktion. Wichtig: Tägliche Einnahme wirkt viel besser als hohe Einzeldosen alle paar Wochen.",
             "studie_zeigt": "In der Placebo-Gruppe erkrankten ca. 42% der Teilnehmer mindestens einmal an einem Atemwegsinfekt während der Studienzeit. In der Vitamin D Gruppe waren es nur ca. 37%. Bei Personen mit Mangel (25(OH)D < 25 nmol/l) sank das Risiko um 70%. Bei normalen Spiegeln war der Effekt geringer aber immer noch signifikant.",
-            "studien_details": "Meta-Analyse mit Individual-Patient-Data (IPD) von 25 randomisierten Studien, publiziert im BMJ – einer der renommiertesten medizinischen Fachzeitschriften weltweit. Gesamt-n = 10.933 Teilnehmer. Beobachtungszeiträume zwischen 7 Wochen und 1.5 Jahren. Dosen meist 300-4000 IU täglich.",
-            "zuverlaessigkeit": "Sehr hoch – IPD-Meta-Analysen gelten als 'Gold-Standard' und sind sogar zuverlässiger als normale Meta-Analysen, weil sie Rohdaten der Originalstudien neu auswerten statt nur die publizierten Ergebnisse zu mitteln. Die Studie wurde 2024 in einem Update bestätigt (Jolliffe et al.)."
+            "studien_details": "Meta-Analyse mit Individual-Patient-Data (IPD) von 25 randomisierten Studien, publiziert im BMJ – einer der renommiertesten medizinischen Fachzeitschriften weltweit. Gesamt-n = 10.933 Teilnehmer. Beobachtungszeiträume zwischen 7 Wochen und 1.5 Jahren. Dosen meist 300-4000 IU täglich. Eine aktualisierte Lancet Diabetes & Endocrinology Meta-Analyse (2021, aggregierte Daten) relativierte den Effekt später (CI schließt 1,00 ein).",
+            "zuverlaessigkeit": "Hoch für die Originalstudie (IPD-Meta-Analyse 2017, Gold-Standard, OR 0,88 für alle Teilnehmer; stärkster Effekt bei vorbestehendem Mangel <25 nmol/L). WICHTIGE Aktualisierung: Eine größere Lancet-Meta-Analyse 2021 mit zusätzlichen Studien fand einen ähnlich kleinen Punktschätzer, dessen 95%-Konfidenzintervall aber 1,00 einschließt – der Schutzeffekt ist also statistisch nicht mehr eindeutig und insgesamt klein. Der größte Nutzen bleibt bei Personen mit echtem Vitamin-D-Mangel."
           }
         },
         {
           "wert": 12,
           "einheit": "%",
           "kontext": "Niedrigere Krebs-Sterblichkeit bei täglicher Vitamin D Einnahme",
-          "quelle": "Keum et al. 2023 Meta-Analyse",
+          "quelle": "Keum et al. 2023, IPD-Meta-Analyse zur Krebssterblichkeit (RR ~0,88 bei täglicher Gabe)",
           "erklaerung": {
             "was_bedeutet": "Personen, die regelmäßig Vitamin D einnehmen, sterben mit ca. 12% niedrigerer Wahrscheinlichkeit an Krebs als Personen ohne Supplementierung – beobachtet über einen Zeitraum von mehreren Jahren. Wichtig: Das gilt nur für tägliche Einnahme. Hochdosis-Boluseinnahme (z.B. einmal monatlich) zeigte KEINEN Effekt.",
             "studie_zeigt": "In der Placebo-Gruppe verstarben pro Jahr ca. 7-10 von 1000 Personen an Krebs. In der Vitamin D Gruppe mit täglicher Einnahme waren es ca. 6-9 von 1000. Der Effekt ist statistisch signifikant aber klinisch moderat – das ist Sekundärprävention, nicht Heilung.",
             "studien_details": "Individualpatientendaten-Meta-Analyse mit Daten aus mehreren großen RCTs (u.a. VITAL-Studie, n=25.871). Beobachtungszeitraum durchschnittlich 5+ Jahre. Endpunkt: krebsbedingte Mortalität.",
-            "zuverlaessigkeit": "Hoch – aber nur für tägliche Einnahme nachgewiesen. Die Cancer-Wirkung ist eines der weniger eindeutigen Vitamin-D-Effekte; es gibt auch widersprüchliche Studien. Solider Effekt aber kein 'Wundermittel'."
+            "zuverlaessigkeit": "Moderat – nur für TÄGLICHE Einnahme nachgewiesen (RR ~0,88), nicht für hochdosierte Bolusgaben, und die Krebs-INZIDENZ wird nicht gesenkt (nur die Sterblichkeit). Die Datenlage ist gemischt: Eine andere Meta-Analyse (Haykal et al. 2022, 12 RCTs, 72.669 Teilnehmer) fand KEINE signifikante Senkung der Gesamt-Krebssterblichkeit (RR 0,96). Solider, aber kein eindeutiger Effekt und kein 'Wundermittel'."
           }
         },
         {
@@ -909,6 +910,2413 @@
         "url": "https://ods.od.nih.gov/factsheets/Magnesium-HealthProfessional/",
         "jahr": 2024,
         "typ": "position-stand"
+      }
+    ]
+  },
+  "whey_protein": {
+    "id": "whey_protein",
+    "name": "Whey Protein (Molkenprotein)",
+    "kategorie": "muskelaufbau",
+    "ikon": "🥛",
+    "kurz_beschreibung": "Schnell verdauliches, hochwertiges Protein aus Milch mit hohem Leucin-Anteil. Der praktischste Weg, die Proteinzufuhr für Muskelaufbau und Erhalt zu decken – aber kein Pflichtprodukt.",
+    "beschreibung": {
+      "was_ist_es": "Whey (Molkenprotein) ist ein vollständiges Protein, das bei der Käseherstellung als Nebenprodukt anfällt. Es enthält alle essentiellen Aminosäuren in günstigem Verhältnis und besonders viel Leucin – die Aminosäure, die den Muskelaufbau-Schalter (mTOR) am stärksten anstößt. Es gibt drei Hauptformen: Konzentrat (günstig, etwas Laktose/Fett), Isolat (höherer Proteinanteil, kaum Laktose) und Hydrolysat (vorverdaut, schnellste Aufnahme).",
+      "wie_wirkt_es": "Nach der Einnahme wird Whey schnell verdaut und überflutet das Blut zügig mit Aminosäuren. Dieser rasche Anstieg – vor allem von Leucin – maximiert kurzfristig die Muskelproteinsynthese (MPS). Über den Tag summiert sich das mit Training zu mehr Muskelaufbau bzw. besserem Muskelerhalt. Entscheidend ist aber die GESAMTE Proteinmenge pro Tag, nicht die einzelne Portion.",
+      "warum_wichtig": "Muskelaufbau und -erhalt brauchen eine ausreichende Proteinzufuhr (für Trainierende ca. 1,6–2,2 g/kg Körpergewicht täglich). Über normale Mahlzeiten ist das machbar, aber nicht immer praktisch. Whey ist schlicht ein bequemes, kostengünstiges und sehr hochwertiges Mittel, um diese Zielmenge zu erreichen – ein Werkzeug, kein Wundermittel. Wer seinen Bedarf über Essen deckt, braucht es nicht zwingend."
+    },
+    "fazit": {
+      "top_effekte": [
+        "+0,30 kg zusätzliche fettfreie Masse durch Protein-Supplementierung beim Krafttraining (Meta-Analyse, 49 Studien)",
+        "Steigert Kraftzuwächse beim Krafttraining (Effekt kleiner und variabler als bei Muskelmasse)",
+        "Höchste Proteinqualität (Leucin/DIAAS) – maximiert die akute Muskelproteinsynthese"
+      ],
+      "ideal_fuer": "Krafttrainierende, Menschen mit erhöhtem Proteinbedarf, Personen mit wenig Zeit für proteinreiche Mahlzeiten, Senioren (Sarkopenie-Prävention), Diätphasen (Muskelerhalt)",
+      "dosis": "20–40 g pro Portion (ca. 0,25 g/kg); Tagesgesamt-Protein 1,6–2,2 g/kg ist entscheidend",
+      "vorsicht_bei": "Laktoseintoleranz (Isolat wählen), Milcheiweißallergie, bestehende Nierenerkrankung (ärztliche Rücksprache)",
+      "mythen": [
+        "„Ohne Whey kein Muskelaufbau“ – falsch. Whey ist nur eine bequeme Proteinquelle. Wer die Gesamtmenge über Essen erreicht, baut genauso Muskeln auf.",
+        "„Das anabole Fenster: Protein muss direkt nach dem Training rein“ – überholt. Der anabole Effekt des Trainings hält über 24 h an; die Tagesgesamtmenge zählt weit mehr als das exakte Timing.",
+        "„Mehr Protein = mehr Muskeln“ – falsch. Oberhalb von ca. 1,6–2,2 g/kg bringt mehr Protein kaum zusätzlichen Muskelaufbau; der Überschuss wird verstoffwechselt.",
+        "„Whey schädigt die Nieren“ – bei gesunden Nieren in Meta-Analysen kein nachteiliger Effekt hoher Proteinzufuhr. Nur bei vorbestehender Nierenerkrankung ist Vorsicht geboten.",
+        "„Pflanzenprotein ist zum Muskelaufbau klar unterlegen“ – nur teilweise. Akut stimuliert Whey die MPS stärker, doch in Langzeitstudien gleichen sich die Muskelzuwächse bei ausreichender Gesamtproteinmenge weitgehend an."
+      ]
+    },
+    "evidenz": {
+      "level": "A",
+      "score": 90,
+      "review_typ": "meta-analyse",
+      "studien_anzahl": 49,
+      "konsens": "Große Meta-Analyse (Morton et al. 2018, BJSM) + ISSN Position Stand + zahlreiche RCTs",
+      "effekt_groesse": [
+        {
+          "wert": 0.3,
+          "einheit": "kg",
+          "kontext": "Zusätzliche fettfreie Masse durch Protein-Supplementierung vs. Placebo beim Krafttraining",
+          "quelle": "Morton et al. 2018, BJSM Meta-Analyse (49 RCTs, n=1.863)",
+          "erklaerung": {
+            "was_bedeutet": "Wer zum Krafttraining zusätzlich Protein supplementiert, baute in Studien im Mittel etwa 0,30 kg mehr fettfreie Masse (Muskelmasse) auf als die Placebogruppe. Das klingt nach wenig, ist aber ein echter, zusätzlicher Effekt OBEN DRAUF auf das Training – und summiert sich über längere Zeiträume. Wichtig: Der Nutzen ist am größten, wenn die Grundzufuhr vorher zu niedrig war.",
+            "studie_zeigt": "Die Protein-Supplementierung steigerte sowohl Muskelmasse als auch Kraft signifikant gegenüber Placebo. Der Effekt auf die Muskelmasse war konsistenter als der auf die Kraft. Die Wirkung nahm mit steigendem Alter ab und mit zunehmender Trainingserfahrung zu.",
+            "studien_details": "PRISMA-konforme systematische Übersicht und Meta-Regression von 49 randomisierten kontrollierten Studien mit 1.863 Teilnehmern, publiziert im British Journal of Sports Medicine 2018 (DOI 10.1136/bjsports-2017-097608). Primärer Endpunkt: Veränderung der fettfreien Masse (DXA).",
+            "zuverlaessigkeit": "Sehr hoch – größte Meta-Analyse ihrer Art, methodisch streng. Anmerkung zur Transparenz: Der Seniorautor erhielt Forschungsförderung u.a. vom US National Dairy Council; die Ergebnisse decken sich jedoch mit der breiten übrigen Literatur."
+          }
+        },
+        {
+          "wert": 1.62,
+          "einheit": "g/kg/Tag",
+          "kontext": "Breakpoint, ab dem mehr Protein kaum zusätzlichen Muskelaufbau bringt (Plateau)",
+          "quelle": "Morton et al. 2018 (95%-KI 1,03–2,20)",
+          "erklaerung": {
+            "was_bedeutet": "Die Analyse fand einen 'Sättigungspunkt' bei etwa 1,62 g Protein pro kg Körpergewicht pro Tag: Darüber hinaus brachte mehr Protein im Mittel keinen zusätzlichen Muskelaufbau. Praktisch heißt das: Ein 80-kg-Mensch braucht selten mehr als ~130 g Protein/Tag für den Muskelaufbau.",
+            "studie_zeigt": "Der Breakpoint lag bei 1,62 g/kg/Tag, allerdings mit einem breiten Vertrauensbereich von 1,03 bis 2,20 g/kg. Genau dieser weite Bereich ist Grund für die laufende Fachdebatte: Manche Forscher argumentieren, der wahre Sättigungspunkt könnte höher liegen, weshalb Fachgesellschaften vorsichtshalber 1,6–2,2 g/kg empfehlen – mit Reserve nach oben, besonders in Diätphasen.",
+            "studien_details": "Zwei-Segment-Regression (Breakpoint-Analyse) zwischen täglicher Gesamtproteinzufuhr und Veränderung der fettfreien Masse, 42 Studienarme, Proteinzufuhr 0,9–2,4 g/kg/Tag.",
+            "zuverlaessigkeit": "Hoch für die Grundaussage 'es gibt diminishing returns', moderat für den exakten Wert. Wegen des breiten Konfidenzintervalls sollte 1,62 g/kg als Orientierung, nicht als harte Obergrenze gelten."
+          }
+        },
+        {
+          "wert": 0,
+          "einheit": "kein Effekt (GFR)",
+          "kontext": "Einfluss hoher Proteinzufuhr auf die Nierenfunktion bei Gesunden (Sicherheitsbefund)",
+          "quelle": "Devries et al. 2018, Meta-Analyse 28 RCTs (n=1.358)",
+          "erklaerung": {
+            "was_bedeutet": "Das ist ein Sicherheitsbefund, der einen verbreiteten Mythos entkräftet: Eine hohe Proteinzufuhr schadet der Nierenfunktion gesunder Menschen nicht. Zwar steigt die Filtrationsrate (GFR) kurzfristig leicht an – das ist aber eine normale Anpassung, kein Schaden. Die Veränderung der Nierenfunktion unterschied sich zwischen Hoch- und Normalprotein-Gruppen nicht.",
+            "studie_zeigt": "Beim Vergleich der GFR-VERÄNDERUNG über die Studiendauer hatte die Proteinmenge keinen Effekt. Hohe Zufuhr (≥1,5 g/kg bzw. ≥100 g/Tag) beeinflusste die Nierenfunktion bei nierengesunden Erwachsenen nicht nachteilig.",
+            "studien_details": "Systematische Übersicht und Meta-Analyse von 28 RCTs mit 1.358 Teilnehmern ohne Nierenerkrankung, publiziert im Journal of Nutrition 2018. Endpunkt: glomeruläre Filtrationsrate (GFR).",
+            "zuverlaessigkeit": "Hoch für nierengesunde Personen. WICHTIGE Einschränkung: Bei VORBESTEHENDER Nierenerkrankung gilt das nicht – dort kann hohe Proteinzufuhr die Funktion verschlechtern. Im Zweifel ärztlich abklären."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "muskelaufbau",
+        "staerke": 0.9,
+        "kommentar": "Sehr gut belegt: Protein-Supplementierung steigert Muskelmasse und Kraft beim Krafttraining. Whey ist wegen Leucingehalt und schneller Aufnahme eine optimale Quelle."
+      },
+      {
+        "ziel": "kraft",
+        "staerke": 0.7,
+        "kommentar": "Verbessert Kraftzuwächse, Effekt etwas kleiner und variabler als bei der Muskelmasse."
+      },
+      {
+        "ziel": "muskelerhalt_diaet",
+        "staerke": 0.8,
+        "kommentar": "In Kaloriendefizit-Phasen hilft eine hohe Proteinzufuhr, Muskelmasse zu erhalten. Whey erleichtert das Erreichen der Zielmenge."
+      },
+      {
+        "ziel": "gewichtsmanagement",
+        "staerke": 0.55,
+        "kommentar": "Protein sättigt stärker als Kohlenhydrate/Fett und kann so die Kalorienkontrolle unterstützen."
+      },
+      {
+        "ziel": "alter_sarkopenie",
+        "staerke": 0.65,
+        "kommentar": "Im Alter steigt der Proteinbedarf und die 'anabole Resistenz'. Hochwertiges Protein plus Training wirkt der altersbedingten Muskelabnahme entgegen."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medizinisch",
+        "wert": "milcheiweissallergie",
+        "schwere": "hart",
+        "hinweis": "Whey stammt aus Milch. Bei echter Milcheiweißallergie ist es zu meiden – auf pflanzliche Proteine (Soja, Erbse, Reis-Blend) ausweichen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "laktoseintoleranz",
+        "schwere": "vorsichtig",
+        "hinweis": "Whey-Konzentrat enthält Laktose und kann Verdauungsbeschwerden auslösen. Isolat oder Hydrolysat ist nahezu laktosefrei und meist gut verträglich."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "nierenerkrankung",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei VORBESTEHENDER Nierenerkrankung sollte die Proteinzufuhr ärztlich gesteuert werden. Bei gesunden Nieren ist hohe Proteinzufuhr unbedenklich."
+      }
+    ],
+    "dosierung": {
+      "standard": "20–40 g pro Portion (ca. 0,25 g/kg Körpergewicht)",
+      "bereich": {
+        "min": 20,
+        "max": 40,
+        "einheit": "g pro Portion"
+      },
+      "obergrenze": "Kein toxisches Limit für Protein bei Gesunden. Sinnvolle Gesamtzufuhr 1,6–2,2 g/kg/Tag; in Diätphasen bis ca. 2,4 g/kg. Mehr bringt für den Muskelaufbau kaum Zusatznutzen.",
+      "timing": "Über den Tag auf 3–4 Portionen verteilen (alle 3–4 h), je 20–40 g mit 700–3000 mg Leucin. Pre- oder Post-Workout ist gleichwertig – das exakte Timing ist zweitrangig gegenüber der Tagesgesamtmenge.",
+      "quelle": "ISSN Position Stand (Jäger et al. 2017) + Morton et al. 2018 (BJSM)"
+    },
+    "population_spezifisch": {
+      "anfaenger": {
+        "relevant": true,
+        "staerke": 0.75,
+        "kommentar": "Profitieren besonders, da Protein-Supplementierung bei Trainingseinsteigern und vorher niedriger Zufuhr den größten relativen Nutzen zeigt."
+      },
+      "senioren_50plus": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "Erhöhter Proteinbedarf und anabole Resistenz im Alter. Eine etwas höhere Leucin-/Proteinmenge pro Mahlzeit hilft, die Muskelproteinsynthese auszulösen (Sarkopenie-Prävention)."
+      },
+      "vegetarier_veganer": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "Whey ist nicht vegan. Pflanzliche Alternativen (Soja, oder Erbse-Reis-Blends, ggf. mit Leucin) erreichen bei ausreichender Gesamtmenge vergleichbare Langzeit-Effekte."
+      },
+      "frauen": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "Gleiche Prinzipien wie bei Männern; Proteinbedarf richtet sich nach Körpergewicht und Trainingsziel, nicht nach Geschlecht."
+      }
+    },
+    "warnhinweise": [
+      "Whey ist ein Lebensmittel, kein Wundermittel: Es ersetzt weder Training noch eine ausreichende Gesamternährung – es macht das Erreichen der Proteinzielmenge nur bequemer.",
+      "Form nach Bedarf wählen: Konzentrat ist günstig (etwas Laktose/Fett), Isolat ist proteinreicher und nahezu laktosefrei, Hydrolysat wird am schnellsten aufgenommen (teurer, selten nötig).",
+      "Auf Qualität achten: Produkte mit unabhängiger Schadstoff-/Dopingprüfung (z.B. auf Schwermetalle) bevorzugen; Proteinpulver kann je nach Herkunft belastet sein.",
+      "Die Tagesgesamtmenge an Protein ist der wichtigste Hebel – nicht das Timing, die Marke oder die Spezialform.",
+      "Bei Verdauungsbeschwerden mit Konzentrat auf Isolat wechseln oder die Portionsgröße reduzieren."
+    ],
+    "quellen": [
+      {
+        "titel": "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults",
+        "autoren": "Morton RW, Murphy KT, McKellar SR, Schoenfeld BJ, et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28698222/",
+        "jahr": 2018,
+        "typ": "meta-analyse",
+        "doi": "10.1136/bjsports-2017-097608"
+      },
+      {
+        "titel": "International Society of Sports Nutrition Position Stand: protein and exercise",
+        "autoren": "Jäger R, Kerksick CM, Campbell BI, et al.",
+        "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8",
+        "jahr": 2017,
+        "typ": "position-stand",
+        "doi": "10.1186/s12970-017-0177-8"
+      },
+      {
+        "titel": "Changes in Kidney Function Do Not Differ between Healthy Adults Consuming Higher- Compared with Lower- or Normal-Protein Diets: A Systematic Review and Meta-Analysis",
+        "autoren": "Devries MC, Sithamparapillai A, Brimble KS, et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/30383278/",
+        "jahr": 2018,
+        "typ": "meta-analyse"
+      },
+      {
+        "titel": "Effect of Plant Versus Animal Protein on Muscle Mass, Strength, Physical Performance, and Sarcopenia: A Systematic Review and Meta-analysis of Randomized Controlled Trials",
+        "autoren": "Nichele S, et al.",
+        "url": "https://academic.oup.com/nutritionreviews/article/83/7/e1581/7954494",
+        "jahr": 2025,
+        "typ": "meta-analyse"
+      },
+      {
+        "titel": "Whey protein supplementation and muscle mass: current perspectives",
+        "autoren": "Naclerio F, Larumbe-Zabala E, et al.",
+        "url": "https://www.tandfonline.com/doi/full/10.2147/NDS.S166195",
+        "jahr": 2019,
+        "typ": "review"
+      },
+      {
+        "titel": "Muscle Protein Synthesis in Response to Plant-Based Protein Isolates With and Without Added Leucine Versus Whey Protein in Young Men and Women",
+        "autoren": "Lim C, Janssen TAH, Currier BS, Phillips SM, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11153912/",
+        "jahr": 2024,
+        "typ": "rct",
+        "doi": "10.1016/j.cdnut.2024.103769"
+      }
+    ]
+  },
+  "zink": {
+    "id": "zink",
+    "name": "Zink (Bisglycinat / Citrat)",
+    "kategorie": "gesundheit",
+    "ikon": "⚪",
+    "kurz_beschreibung": "Essentielles Spurenelement für Immunsystem, Wundheilung, Hormone und über 300 Enzyme. Sinnvoll bei Mangel oder erhöhtem Bedarf – aber mit klarer Obergrenze.",
+    "beschreibung": {
+      "was_ist_es": "Zink ist ein essentielles Spurenelement und Cofaktor für über 300 Enzyme. Es ist unverzichtbar für Immunfunktion, Wundheilung, Zellteilung, DNA-Synthese, Geschmacks-/Geruchssinn und die Hormonproduktion (u.a. Testosteron). Der Körper hat keinen großen Zinkspeicher, daher ist eine regelmäßige Zufuhr nötig. Gute Quellen sind Austern, rotes Fleisch, Schalentiere, Hülsenfrüchte und Kerne.",
+      "wie_wirkt_es": "Zink stabilisiert Enzyme und Proteine (sogenannte 'Zinkfinger') und steuert damit zahllose Stoffwechselprozesse. Im Immunsystem ist es für die Funktion und Reifung von Abwehrzellen nötig. Bei Erkältungen wird vermutet, dass Zink aus Lutschtabletten lokal im Rachen die Vermehrung von Erkältungsviren hemmt – daher wirken nur Lutschtabletten, nicht geschluckte Kapseln, gegen Erkältungssymptome.",
+      "warum_wichtig": "Ein Zinkmangel ist weltweit verbreitet, besonders bei vegetarischer/veganer Ernährung (Phytate aus Pflanzen hemmen die Aufnahme), bei Sportlern (Schweißverlust), älteren Menschen (schlechtere Aufnahme) und bei Magen-Darm-Erkrankungen. Mangelsymptome sind u.a. erhöhte Infektanfälligkeit, schlechte Wundheilung, Haarausfall und Geschmacksstörungen. Der Nutzen einer Supplementierung ist – wie bei den meisten Mineralstoffen – bei tatsächlichem Mangel am größten."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Verkürzt die Dauer von Erkältungen um ca. 33 % – aber NUR als hochdosierte Lutschtablette ab Symptombeginn",
+        "Korrigiert Mangelsymptome: stärkt Immunfunktion und Wundheilung bei nachgewiesenem Zinkmangel",
+        "Hebt niedrige Testosteronwerte bei zinkdefizitären Männern – nicht bei bereits ausreichend Versorgten"
+      ],
+      "ideal_fuer": "Menschen mit Mangelrisiko (Vegetarier/Veganer, Sportler, Senioren), bei akuter Erkältung (Lutschtablette), erhöhtem Bedarf (Wundheilung, Schwangerschaft)",
+      "dosis": "Täglich 10–25 mg elementar zum Bedarfsausgleich; bei Erkältung 75–100 mg/Tag als Lutschtablette, kurzzeitig",
+      "vorsicht_bei": "Dauerhafte Hochdosis (Kupfermangel-Risiko), Einnahme bestimmter Antibiotika (Abstand nötig), Obergrenze 40 mg/Tag dauerhaft",
+      "mythen": [
+        "„Zink steigert generell das Testosteron / wirkt wie ein Booster“ – falsch. Ein Anstieg zeigt sich nur bei MANGEL; bei ausreichend versorgten Männern bleibt der Testosteronspiegel unverändert.",
+        "„Jedes Zinkpräparat hilft gegen Erkältung“ – falsch. Nur hochdosierte LUTSCHTABLETTEN (>75 mg/Tag elementar) wirken, weil sie lokal im Rachen freigesetzt werden. Geschluckte Kapseln zeigen diesen Effekt nicht.",
+        "„Mehr Zink = stärkeres Immunsystem“ – falsch. Über der Obergrenze (40 mg/Tag) kann Zink das Immunsystem sogar schwächen und einen Kupfermangel auslösen.",
+        "„Zink kann man bedenkenlos dauerhaft hochdosieren“ – nein. Dauerhafte Hochdosis stört die Kupferaufnahme und kann zu Anämie und neurologischen Problemen führen."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 76,
+      "review_typ": "meta-analyse",
+      "studien_anzahl": 40,
+      "konsens": "Mehrere Meta-Analysen zu Erkältungs-Lutschtabletten (Hemilä) + NIH ODS Referenzwerte; Cochrane 2024 zurückhaltender (methodische Debatte)",
+      "effekt_groesse": [
+        {
+          "wert": 33,
+          "einheit": "%",
+          "kontext": "Verkürzung der Erkältungsdauer durch hochdosierte Zink-Lutschtabletten (>75 mg/Tag elementar)",
+          "quelle": "Hemilä & Chalker 2017, Meta-Analyse 7 RCTs (n=575)",
+          "erklaerung": {
+            "was_bedeutet": "Wer bei beginnender Erkältung hochdosierte Zink-Lutschtabletten nimmt, verkürzte in Studien die Erkältungsdauer im Mittel um etwa ein Drittel (33 %). Entscheidend sind drei Bedingungen: hohe Dosis (>75 mg elementares Zink pro Tag), Darreichung als LUTSCHTABLETTE (nicht geschluckt) und Beginn früh ab den ersten Symptomen.",
+            "studie_zeigt": "Über sieben randomisierte, placebokontrollierte Studien hinweg war die Erkältung in den Zinkgruppen 33 % kürzer (95%-KI 21–45 %). Zinkacetat (40 %) und Zinkgluconat (28 %) wirkten ähnlich gut; ein Dosisvorteil über 100 mg/Tag hinaus war nicht erkennbar.",
+            "studien_details": "Meta-Analyse von 7 randomisierten, doppelblinden, placebokontrollierten Studien mit 575 Teilnehmern und natürlich erworbenen Erkältungen, Zinkdosen 80–207 mg/Tag, Inverse-Varianz-Random-Effects-Modell (Hemilä & Chalker, JRSM Open 2017).",
+            "zuverlaessigkeit": "Moderat bis hoch, aber umstritten: Ein Cochrane-Review 2024 kam zu zurückhaltenderen Schlüssen, was zu einer methodischen Fachdebatte führte. Die Lutschtabletten-Evidenz für Erwachsene gilt unter den genannten Bedingungen als solide, der Effekt ist aber nicht garantiert."
+          }
+        },
+        {
+          "wert": 0,
+          "einheit": "kein Effekt ohne Mangel",
+          "kontext": "Testosteron steigt durch Zink nur bei vorbestehendem Mangel, nicht bei ausreichender Versorgung",
+          "quelle": "Te et al. 2022, systematischer Review (38 Arbeiten)",
+          "erklaerung": {
+            "was_bedeutet": "Zink wird oft als 'Testosteron-Booster' beworben. Die Wahrheit ist differenzierter: Ein Zinkmangel senkt den Testosteronspiegel, und die Korrektur dieses Mangels hebt ihn wieder an. Bei Männern mit normalem Zinkstatus bewirkt zusätzliches Zink dagegen KEINE weitere Steigerung. Zink 'optimiert' also nur, was durch Mangel gestört war.",
+            "studie_zeigt": "Der systematische Review zeigte konsistent: Zinkmangel reduziert Testosteron, Zinksupplementierung verbessert es – aber der Effekt hängt vom Ausgangszinkspiegel ab. Je niedriger Zink und Testosteron zu Beginn, desto größer der Effekt; bei Normalwerten kein relevanter Anstieg.",
+            "studien_details": "Systematischer Review aus 38 Arbeiten (8 klinische, 30 tierexperimentelle Studien); Suche nach Testosteron/Androgen kombiniert mit Zink/Zinkmangel/Zinksupplementierung. Die klinische Evidenzbasis ist begrenzt.",
+            "zuverlaessigkeit": "Moderat – die Mangel-Korrektur ist gut plausibel und konsistent, aber die Zahl hochwertiger klinischer Studien ist klein. Klare Botschaft: Zink ist kein Testosteron-Booster für Gesunde, sondern eine Mangel-Korrektur."
+          }
+        },
+        {
+          "wert": 40,
+          "einheit": "mg/Tag (Obergrenze)",
+          "kontext": "Tolerable Upper Intake Level – darüber droht Kupfermangel (Sicherheitsbefund)",
+          "quelle": "NIH Office of Dietary Supplements + Adverse-Effects-Meta-Analyse 2022",
+          "erklaerung": {
+            "was_bedeutet": "Das ist ein Sicherheitswert: Die dauerhafte Obergrenze für Zink liegt bei 40 mg pro Tag (Erwachsene). Zink und Kupfer konkurrieren im Darm um dieselben Aufnahmewege – dauerhaft zu viel Zink verdrängt die Kupferaufnahme und kann einen Kupfermangel auslösen, der sich als Blutarmut (Anämie) und neurologische Störungen äußern kann.",
+            "studie_zeigt": "Studien zeigen, dass Zinksupplementierung den Kupfer- und Ferritinspiegel senken kann. Hohe Akutdosen (wie bei Erkältungs-Lutschtabletten) sind kurzzeitig vertretbar, dürfen aber nicht zur Dauerlösung werden. Symptome einer Überdosierung sind außerdem Übelkeit und Magenbeschwerden.",
+            "studien_details": "Referenzwert des US-amerikanischen Institute of Medicine / NIH ODS; gestützt durch eine systematische Übersicht und Meta-Analyse zu unerwünschten Wirkungen von Zink (39 Studien in der Meta-Analyse, Effekte u.a. auf Serumkupfer und Ferritin).",
+            "zuverlaessigkeit": "Hoch – der Kupfer-Antagonismus ist gut belegt und der Grund für die festgelegte Obergrenze. Hochdosis nur kurzzeitig und gezielt, nicht dauerhaft."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "immunsystem",
+        "staerke": 0.65,
+        "kommentar": "Wichtig für die Immunfunktion; klarer Nutzen bei Mangel. Gegen Erkältungen wirken nur hochdosierte Lutschtabletten ab Symptombeginn."
+      },
+      {
+        "ziel": "erkaeltung_akut",
+        "staerke": 0.6,
+        "kommentar": "Hochdosierte Lutschtabletten (>75 mg/Tag elementar) verkürzen die Erkältungsdauer um ca. 33 %. Nur als Lutschtablette, nicht geschluckt, und früh begonnen."
+      },
+      {
+        "ziel": "hormonhaushalt",
+        "staerke": 0.45,
+        "kommentar": "Hebt Testosteron nur bei zinkdefizitären Männern; bei ausreichender Versorgung kein Effekt. Kein Booster für Gesunde."
+      },
+      {
+        "ziel": "wundheilung_haut",
+        "staerke": 0.5,
+        "kommentar": "Notwendig für Zellteilung und Gewebereparatur; relevant bei Mangel und schlechter Wundheilung."
+      },
+      {
+        "ziel": "gesundheit",
+        "staerke": 0.65,
+        "kommentar": "Essentielles Spurenelement mit verbreitetem Mangelrisiko, besonders bei pflanzenbasierter Ernährung. Solider Grundbaustein bei erhöhtem Bedarf."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "dosis",
+        "wert": "dauerhafte_hochdosis_kupfermangel",
+        "schwere": "hart",
+        "hinweis": "Dauerhafte Zufuhr über 40 mg/Tag stört die Kupferaufnahme und kann einen Kupfermangel mit Anämie und neurologischen Störungen verursachen. Hochdosis (z.B. bei Erkältung) nur kurzzeitig."
+      },
+      {
+        "art": "medikament",
+        "wert": "antibiotika_kupfer",
+        "schwere": "vorsichtig",
+        "hinweis": "Zink kann die Aufnahme bestimmter Antibiotika (Tetracycline, Chinolone) und umgekehrt verringern. Mehrere Stunden Abstand einhalten. Bei langfristiger Einnahme ggf. Kupfer ergänzen."
+      },
+      {
+        "art": "einnahme",
+        "wert": "nuechtern_uebelkeit",
+        "schwere": "vorsichtig",
+        "hinweis": "Auf nüchternen Magen kann Zink Übelkeit auslösen. Am besten zu einer Mahlzeit einnehmen (nicht gleichzeitig mit sehr ballaststoff-/phytatreichen Mahlzeiten, die die Aufnahme hemmen)."
+      }
+    ],
+    "dosierung": {
+      "standard": "10–25 mg elementares Zink täglich (Bedarfsausgleich)",
+      "bereich": {
+        "min": 10,
+        "max": 25,
+        "einheit": "mg"
+      },
+      "obergrenze": "Tolerable Upper Intake Level: 40 mg/Tag (Erwachsene, dauerhaft). RDA: Männer 11 mg, Frauen 8 mg. Erkältungs-Lutschtabletten 75–100 mg/Tag nur kurzzeitig (wenige Tage).",
+      "timing": "Zum Bedarfsausgleich zu einer Mahlzeit (bessere Verträglichkeit), aber nicht zeitgleich mit hohen Kalzium-/Eisendosen oder phytatreichen Speisen. Bei Erkältung: Lutschtablette alle paar Stunden ab den ersten Symptomen, über den Tag verteilt.",
+      "quelle": "NIH Office of Dietary Supplements + Hemilä Meta-Analysen (Erkältung)"
+    },
+    "population_spezifisch": {
+      "vegetarier_veganer": {
+        "relevant": true,
+        "staerke": 0.8,
+        "kommentar": "Phytate aus pflanzlichen Lebensmitteln hemmen die Zinkaufnahme deutlich. Erhöhtes Mangelrisiko – auf ausreichende Zufuhr achten, ggf. supplementieren."
+      },
+      "sportler": {
+        "relevant": true,
+        "staerke": 0.55,
+        "kommentar": "Erhöhter Verlust über Schweiß und höherer Umsatz. Ausreichende Versorgung unterstützt Immunfunktion und Regeneration; kein Leistungsbooster bei guter Versorgung."
+      },
+      "senioren_50plus": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "Schlechtere Aufnahme und häufig geringere Zufuhr. Zinkmangel im Alter kann Immunfunktion und Testosteron beeinträchtigen."
+      },
+      "schwangerschaft": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "Erhöhter Bedarf für Wachstum und Zellteilung des Kindes. Supplementierung im Rahmen der Empfehlungen, nicht überdosieren."
+      },
+      "maenner": {
+        "relevant": true,
+        "staerke": 0.45,
+        "kommentar": "Bei nachgewiesenem Zinkmangel kann eine Korrektur den Testosteronspiegel normalisieren – bei ausreichender Versorgung kein Zusatznutzen."
+      }
+    },
+    "warnhinweise": [
+      "Form ist wichtig: Zinkbisglycinat, -citrat und -picolinat werden gut aufgenommen; Zinkoxid ist günstig, aber schlechter bioverfügbar.",
+      "Achte auf den Gehalt an ELEMENTAREM Zink auf dem Etikett – nicht auf das Gesamtgewicht der Verbindung.",
+      "Die Obergrenze von 40 mg/Tag gilt für die Dauereinnahme. Hochdosierte Erkältungs-Lutschtabletten sind eine kurzzeitige Ausnahme, kein Dauerregime.",
+      "Bei längerer Einnahme über ~25 mg/Tag sollte die Kupferversorgung im Blick behalten werden (Zink-Kupfer-Balance).",
+      "Zink auf nüchternen Magen kann Übelkeit auslösen – mit einer Mahlzeit einnehmen, aber Abstand zu phytatreichen Speisen, Kalzium und Eisen halten."
+    ],
+    "quellen": [
+      {
+        "titel": "Zinc lozenges and the common cold: a meta-analysis comparing zinc acetate and zinc gluconate, and the role of zinc dosage",
+        "autoren": "Hemilä H",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5418896/",
+        "jahr": 2017,
+        "typ": "meta-analyse",
+        "doi": "10.1177/2054270417694291"
+      },
+      {
+        "titel": "The effectiveness of high dose zinc acetate lozenges on various common cold symptoms: a meta-analysis",
+        "autoren": "Hemilä H, Chalker E",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4359576/",
+        "jahr": 2015,
+        "typ": "meta-analyse",
+        "doi": "10.1186/s12875-015-0237-6"
+      },
+      {
+        "titel": "Correlation between serum zinc and testosterone: A systematic review",
+        "autoren": "Te L, Liu J, et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/36577241/",
+        "jahr": 2022,
+        "typ": "review"
+      },
+      {
+        "titel": "Adverse Effects of Excessive Zinc Intake: A Systematic Review and Meta-Analysis",
+        "autoren": "Various",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9776731/",
+        "jahr": 2022,
+        "typ": "meta-analyse"
+      },
+      {
+        "titel": "Zinc - Health Professional Fact Sheet",
+        "autoren": "NIH Office of Dietary Supplements",
+        "url": "https://ods.od.nih.gov/factsheets/Zinc-HealthProfessional/",
+        "jahr": 2024,
+        "typ": "position-stand"
+      }
+    ]
+  },
+  "ashwagandha": {
+    "id": "ashwagandha",
+    "name": "Ashwagandha (Withania somnifera)",
+    "kategorie": "gesundheit",
+    "ikon": "🌿",
+    "kurz_beschreibung": "Adaptogene Heilpflanze aus dem Ayurveda. Kann Stress, Angst und Cortisol senken – die Evidenz ist vielversprechend, aber uneinheitlich, und es gibt ernstzunehmende Sicherheitsfragen (Leber, Schilddrüse, Schwangerschaft).",
+    "beschreibung": {
+      "was_ist_es": "Ashwagandha (Withania somnifera, 'Schlafbeere') ist eine Heilpflanze aus der ayurvedischen Medizin und gilt als 'Adaptogen' – ein Stoff, der dem Körper helfen soll, sich an Stress anzupassen. Verwendet wird meist ein standardisierter Wurzelextrakt; die wirksamen Inhaltsstoffe sind die sogenannten Withanolide. Qualität und Wirkstoffgehalt schwanken zwischen Produkten erheblich.",
+      "wie_wirkt_es": "Die Withanolide beeinflussen vermutlich die Stressachse (Hypothalamus-Hypophysen-Nebennieren-Achse) und dämpfen die Ausschüttung des Stresshormons Cortisol. Außerdem werden GABA-ähnliche, beruhigende Effekte im Nervensystem diskutiert. Die genauen Mechanismen sind noch nicht abschließend geklärt.",
+      "warum_wichtig": "Chronischer Stress ist weit verbreitet und mit zahlreichen Gesundheitsproblemen verbunden. Ashwagandha ist eines der wenigen pflanzlichen Mittel mit zumindest moderater Studienbasis für Stress- und Angstlinderung. Wichtig ist eine realistische Erwartung: Es ist eine mögliche Ergänzung zu Stressmanagement, Schlaf und Bewegung – kein Ersatz für die Behandlung von Angststörungen oder Depression und nicht für jeden geeignet."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Senkt den Cortisolspiegel (Stresshormon) signifikant gegenüber Placebo",
+        "Reduziert Angstsymptome (Hamilton-Angstskala) bei chronisch gestressten Erwachsenen",
+        "Kann die wahrgenommene Stressbelastung verringern – hier ist die Evidenz allerdings uneinheitlich"
+      ],
+      "ideal_fuer": "Erwachsene mit chronischem Stress oder leichter Anspannung, die eine pflanzliche Ergänzung suchen – nach Ausschluss von Kontraindikationen (Schilddrüse, Leber, Schwangerschaft)",
+      "dosis": "300–600 mg standardisierter Wurzelextrakt (≥5 % Withanolide) täglich, kurweise über 8–12 Wochen",
+      "vorsicht_bei": "Schwangerschaft/Stillzeit (kontraindiziert), Schilddrüsenerkrankungen, Lebererkrankungen, hormonsensitivem Prostatakrebs, Autoimmunerkrankungen, vor Operationen, bei Sedativa/Schilddrüsen-/Diabetes-Medikamenten",
+      "mythen": [
+        "„Ashwagandha ist ein harmloses Naturprodukt ohne Risiken“ – falsch. Es gibt dokumentierte, wenn auch seltene Fälle von Leberschäden, sowie Effekte auf die Schilddrüse. 'Pflanzlich' heißt nicht automatisch 'ungefährlich'.",
+        "„Es wirkt sofort“ – nein. Erste Effekte zeigen sich nach ~2 Wochen, das Maximum erst nach 8–12 Wochen regelmäßiger Einnahme.",
+        "„Ashwagandha ist ein potenter Testosteron-Booster“ – überzogen. Es gibt schwache Hinweise auf einen Anstieg, vor allem bei gestressten Männern; als Booster für Gesunde ist die Evidenz dünn.",
+        "„Man kann es dauerhaft bedenkenlos nehmen“ – unklar. Studien belegen Verträglichkeit nur für etwa 3 Monate; die Langzeitsicherheit über Monate bis Jahre ist nicht untersucht."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 68,
+      "review_typ": "meta-analyse",
+      "studien_anzahl": 15,
+      "konsens": "Mehrere Meta-Analysen zeigen Cortisol-/Angstsenkung (BJPsych Open 2025, ScienceDirect 2024); eine Meta-Analyse 2025 findet jedoch keinen Effekt auf wahrgenommenen Stress – die Evidenz ist uneinheitlich",
+      "effekt_groesse": [
+        {
+          "wert": -2.4,
+          "einheit": "Standardisierte Mittelwertdifferenz (Cortisol)",
+          "kontext": "Senkung des morgendlichen Cortisolspiegels vs. Placebo",
+          "quelle": "BJPsych Open 2025, Meta-Analyse 15 RCTs (n=873)",
+          "erklaerung": {
+            "was_bedeutet": "Cortisol ist das wichtigste körpereigene Stresshormon. Ashwagandha senkte in Studien den morgendlichen Cortisolspiegel deutlich gegenüber Placebo. Das ist ein objektiver, im Blut messbarer Effekt – ein Hinweis darauf, dass die Pflanze tatsächlich in die Stressphysiologie eingreift und nicht nur subjektiv wirkt.",
+            "studie_zeigt": "Über 15 randomisierte Studien hinweg war die Cortisolsenkung statistisch hochsignifikant (etwa -2,4 standardisierte Einheiten, p<0,0001), am deutlichsten nach 8 Wochen Einnahme. Auch Angst (Hamilton-Skala) und wahrgenommener Stress sanken in dieser Auswertung. Die Lebensqualität verbesserte sich allerdings nicht signifikant.",
+            "studien_details": "Systematische Übersicht und Meta-Analyse von 15 RCTs mit 873 Teilnehmern, publiziert in BJPsych Open 2025. Analyse mit R/metafor, Outcomes über validierte Skalen (PSS, HAM-A) und Cortisol-Serumspiegel.",
+            "zuverlaessigkeit": "Moderat – der Cortisol-Effekt ist über mehrere Meta-Analysen konsistent. Einschränkungen: heterogene Extrakte, Dosen und Studiendauern, teils kleine Stichproben und mögliche Industrienähe einzelner Studien."
+          }
+        },
+        {
+          "wert": 0,
+          "einheit": "kein signifikanter Effekt (wahrgenommener Stress)",
+          "kontext": "Widersprüchlicher Befund: eine Meta-Analyse findet trotz Cortisol-Senkung keinen Effekt auf den subjektiv empfundenen Stress",
+          "quelle": "Albalawi 2025, systematischer Review & Meta-Analyse",
+          "erklaerung": {
+            "was_bedeutet": "Dieser Befund ist bewusst als Gegengewicht aufgeführt, um die Evidenz ehrlich abzubilden. Eine Meta-Analyse von 2025 bestätigte zwar die Cortisol-Senkung, fand aber KEINEN statistisch signifikanten Effekt auf den über die Perceived Stress Scale (PSS) gemessenen, subjektiv empfundenen Stress. Das heißt: Der messbare Hormoneffekt übersetzt sich nicht in jeder Studie in ein spürbar besseres Stressempfinden.",
+            "studie_zeigt": "Die Autoren kamen zum Schluss, dass die Wirksamkeit von Ashwagandha auf den wahrgenommenen Stress inkonsistent ist, während der biologische Marker Cortisol zuverlässiger reagiert. Sie betonten die uneinheitliche Studienlage und methodische Schwächen.",
+            "studien_details": "PRISMA-konforme systematische Übersicht und Meta-Analyse randomisierter kontrollierter Studien zu Cortisol und Perceived Stress Scale, publiziert 2025 (SAGE/Nutrition and Health).",
+            "zuverlaessigkeit": "Diese Diskrepanz ist selbst ein wichtiges Ergebnis: Sie zeigt, dass die Datenlage uneinheitlich ist. Wer Ashwagandha probiert, sollte einen Effekt nicht als garantiert ansehen."
+          }
+        },
+        {
+          "wert": 3,
+          "einheit": "Monate (Sicherheitsgrenze)",
+          "kontext": "Belegte Verträglichkeit nur bis ~3 Monate; seltene Leberschäden dokumentiert (Sicherheitsbefund)",
+          "quelle": "NIH ODS + LiverTox (NIDDK) + Merck Manual",
+          "erklaerung": {
+            "was_bedeutet": "Das ist ein Sicherheitsbefund: In klinischen Studien war Ashwagandha über etwa 3 Monate gut verträglich – darüber hinaus ist die Sicherheit NICHT untersucht. Wichtiger noch: Es gibt mehrere dokumentierte Fälle von akuten Leberschäden (teils mit Gelbsucht), die per standardisiertem Verfahren (RUCAM) mit Ashwagandha in Verbindung gebracht wurden.",
+            "studie_zeigt": "Fachquellen (NIH Office of Dietary Supplements, LiverTox-Datenbank, Merck Manual, britische FSA) führen als mögliche Risiken auf: Leberschäden, Beeinflussung der Schilddrüsenhormone, abortive Wirkung in der Schwangerschaft sowie Wechselwirkungen mit Sedativa, Schilddrüsen-, Diabetes- und Blutdruckmedikamenten. Häufige milde Nebenwirkungen sind Magen-Darm-Beschwerden und Schläfrigkeit.",
+            "studien_details": "Zusammenfassung mehrerer behördlicher und klinischer Sicherheitsquellen: NIH ODS Fact Sheet (2024), LiverTox/NIDDK (Update 2024), Merck Manual Professional, FSA/COT-Sicherheitsbewertung 2025, RUCAM-Fallserien.",
+            "zuverlaessigkeit": "Hoch für die Aussage 'seltene, aber reale Risiken'. Leberschäden sind selten, aber gut dokumentiert; bei Symptomen (dunkler Urin, Gelbsucht, Übelkeit) sofort absetzen und ärztlich abklären. Bei Schilddrüsenerkrankung, Schwangerschaft oder Lebererkrankung nicht ohne ärztliche Rücksprache einnehmen."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "stress",
+        "staerke": 0.6,
+        "kommentar": "Senkt Cortisol zuverlässig; der Effekt auf das subjektive Stressempfinden ist in Studien uneinheitlich. Am besten belegt bei chronisch gestressten Erwachsenen über 8+ Wochen."
+      },
+      {
+        "ziel": "angst",
+        "staerke": 0.55,
+        "kommentar": "Reduziert Angstsymptome (HAM-A) gegenüber Placebo. Ergänzend, kein Ersatz für die Behandlung einer Angststörung."
+      },
+      {
+        "ziel": "schlaf",
+        "staerke": 0.45,
+        "kommentar": "Kann den Schlaf verbessern, vor allem bei stressbedingten Schlafproblemen. Evidenz schwächer als für Cortisol/Angst."
+      },
+      {
+        "ziel": "hormonhaushalt",
+        "staerke": 0.35,
+        "kommentar": "Schwache Hinweise auf Testosteronanstieg bei gestressten Männern; kein verlässlicher Booster. Bei hormonsensitivem Prostatakrebs zu meiden."
+      },
+      {
+        "ziel": "regeneration",
+        "staerke": 0.35,
+        "kommentar": "Im Sportkontext werden Erholung und reduzierter Stress diskutiert; Evidenz begrenzt und uneinheitlich."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medizinisch",
+        "wert": "schwangerschaft_stillzeit",
+        "schwere": "hart",
+        "hinweis": "In Schwangerschaft und Stillzeit kontraindiziert – möglicher abortiver (wehenauslösender) Effekt und fehlende Sicherheitsdaten. Nicht einnehmen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "schilddruese",
+        "schwere": "hart",
+        "hinweis": "Kann Schilddrüsenhormone (T3/T4) erhöhen. Bei Schilddrüsenerkrankungen (v.a. Überfunktion) oder Einnahme von Schilddrüsenmedikamenten nur nach ärztlicher Rücksprache."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "lebererkrankung",
+        "schwere": "hart",
+        "hinweis": "Seltene, aber dokumentierte Fälle von Leberschäden. Bei bestehender Lebererkrankung oder gleichzeitiger Einnahme leberbelastender Medikamente meiden. Bei Gelbsucht/dunklem Urin sofort absetzen und Arzt aufsuchen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "prostatakrebs_autoimmun",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei hormonsensitivem Prostatakrebs und bei Autoimmunerkrankungen wegen möglicher Hormon- bzw. Immunmodulation ärztlich abklären. Vor Operationen wegen sedierender Wirkung absetzen."
+      },
+      {
+        "art": "medikament",
+        "wert": "sedativa_diabetes_blutdruck",
+        "schwere": "vorsichtig",
+        "hinweis": "Kann die Wirkung von Beruhigungsmitteln, Antiepileptika, Diabetes- und Blutdruckmedikamenten sowie Immunsuppressiva verstärken oder verändern. Vor Kombination ärztlich abklären."
+      }
+    ],
+    "dosierung": {
+      "standard": "300–600 mg standardisierter Wurzelextrakt täglich",
+      "bereich": {
+        "min": 300,
+        "max": 600,
+        "einheit": "mg"
+      },
+      "obergrenze": "Belegte Verträglichkeit nur bis etwa 3 Monate; Langzeitsicherheit unbekannt. Standardisierung auf ≥5 % Withanolide; reine Wurzelextrakte bevorzugen.",
+      "timing": "Einmal täglich, oft abends (leicht sedierende Wirkung). Wirkung baut sich über Wochen auf: erste Effekte nach ~2 Wochen, Maximum nach 8–12 Wochen. Kurweise statt dauerhaft einnehmen.",
+      "quelle": "Klinische RCTs (z.B. Shoden 240 mg, KSM-66 300–600 mg) + NIH Office of Dietary Supplements"
+    },
+    "population_spezifisch": {
+      "chronisch_gestresste": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "Hauptzielgruppe der Studien. Effekte auf Cortisol und Angst am ehesten hier nachweisbar, nach Ausschluss von Kontraindikationen."
+      },
+      "schwangere_stillende": {
+        "relevant": true,
+        "staerke": 0.0,
+        "kommentar": "KONTRAINDIZIERT – möglicher abortiver Effekt, keine Sicherheitsdaten. Nicht einnehmen."
+      },
+      "menschen_mit_schilddruesenerkrankung": {
+        "relevant": true,
+        "staerke": 0.0,
+        "kommentar": "Vorsicht – kann Schilddrüsenhormone erhöhen. Nur nach ärztlicher Rücksprache, engmaschige Kontrolle."
+      },
+      "sportler": {
+        "relevant": true,
+        "staerke": 0.35,
+        "kommentar": "Diskutiert für Stressreduktion und Regeneration; Evidenz begrenzt. Auf geprüfte Produktqualität achten (Verunreinigungen möglich)."
+      }
+    },
+    "warnhinweise": [
+      "'Pflanzlich' bedeutet nicht 'risikofrei': Es gibt seltene, aber dokumentierte Fälle von Leberschäden. Bei Übelkeit, dunklem Urin oder Gelbsucht sofort absetzen und ärztlich abklären.",
+      "In Schwangerschaft und Stillzeit nicht einnehmen (möglicher abortiver Effekt).",
+      "Bei Schilddrüsenerkrankungen Vorsicht – Ashwagandha kann die Schilddrüsenhormone erhöhen.",
+      "Produktqualität schwankt stark: Auf standardisierte Wurzelextrakte (≥5 % Withanolide) und unabhängige Schadstoffprüfung achten; Wurzel-Blatt-Kombinationen sind weniger gut untersucht.",
+      "Langzeitsicherheit über 3 Monate hinaus ist nicht belegt – kurweise einnehmen und Pausen machen.",
+      "Wechselwirkungen mit Sedativa, Schilddrüsen-, Diabetes- und Blutdruckmedikamenten sowie Immunsuppressiva möglich – vor Kombination ärztlich abklären.",
+      "Bei diagnostizierter Angststörung oder Depression ersetzt Ashwagandha keine fachärztliche Behandlung."
+    ],
+    "quellen": [
+      {
+        "titel": "Effects of Ashwagandha Supplements on Cortisol, Stress, and Anxiety Levels in Adults: A Systematic Review and Meta-Analysis",
+        "autoren": "Various",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12242034/",
+        "jahr": 2025,
+        "typ": "meta-analyse"
+      },
+      {
+        "titel": "Effects of Ashwagandha (Withania Somnifera) on stress and anxiety: A systematic review and meta-analysis",
+        "autoren": "Various",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1550830724001691",
+        "jahr": 2024,
+        "typ": "meta-analyse"
+      },
+      {
+        "titel": "Dual impact of Ashwagandha: Significant cortisol reduction but no effects on perceived stress – A systematic review and meta-analysis",
+        "autoren": "Albalawi AA, et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40746175/",
+        "jahr": 2025,
+        "typ": "meta-analyse",
+        "doi": "10.1177/02601060251363647"
+      },
+      {
+        "titel": "An investigation into the stress-relieving and pharmacological actions of an ashwagandha (Withania somnifera) extract: A randomized, double-blind, placebo-controlled study",
+        "autoren": "Lopresti AL, Smith SJ, Malvi H, Kodgule R",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6750292/",
+        "jahr": 2019,
+        "typ": "rct",
+        "doi": "10.1097/MD.0000000000017186"
+      },
+      {
+        "titel": "Ashwagandha - LiverTox: Clinical and Research Information on Drug-Induced Liver Injury",
+        "autoren": "NIDDK",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK548536/",
+        "jahr": 2024,
+        "typ": "review"
+      },
+      {
+        "titel": "Ashwagandha: Is it helpful for stress, anxiety, or sleep? - Health Professional Fact Sheet",
+        "autoren": "NIH Office of Dietary Supplements",
+        "url": "https://ods.od.nih.gov/factsheets/Ashwagandha-HealthProfessional/",
+        "jahr": 2024,
+        "typ": "position-stand"
+      }
+    ]
+  },
+  "beta_alanin": {
+    "id": "beta_alanin",
+    "name": "Beta-Alanin",
+    "kategorie": "performance",
+    "ikon": "⚡",
+    "kurz_beschreibung": "Aminosäure, die als Vorstufe von Carnosin den Muskel gegen Übersäuerung puffert. Verbessert die Leistung bei intensiven Belastungen von 1–4 Minuten – mit kleinem, aber gut belegtem Effekt.",
+    "beschreibung": {
+      "was_ist_es": "Beta-Alanin ist eine nicht-essentielle Aminosäure, die der Körper selbst bildet und die in Fleisch und Fisch vorkommt. Sie ist der geschwindigkeitsbestimmende Baustein für Carnosin – ein Dipeptid, das in hoher Konzentration in den Muskeln gespeichert wird. Durch eine Supplementierung lässt sich der Carnosingehalt der Muskulatur deutlich erhöhen.",
+      "wie_wirkt_es": "Bei intensiver Belastung sammeln sich Wasserstoff-Ionen im Muskel an und senken den pH-Wert (Übersäuerung) – das trägt zur Ermüdung bei. Carnosin wirkt als intrazellulärer Säurepuffer und verzögert diesen pH-Abfall. Mehr Carnosin bedeutet also: Die Muskulatur kann eine intensive Belastung etwas länger aufrechterhalten, bevor die Ermüdung einsetzt.",
+      "warum_wichtig": "Der körpereigene Carnosingehalt ist begrenzt, und Plasma-Beta-Alanin ist der limitierende Faktor für die Carnosin-Produktion. Über die Ernährung allein lässt sich der Muskelspeicher kaum nennenswert steigern. Für Sportler in genau dem richtigen Belastungsfenster (hochintensiv, 1–4 Minuten) ist Beta-Alanin daher eines der wenigen Performance-Supplemente mit belastbarer Evidenz – mit realistisch kleinem Effekt."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Verbessert die Leistung bei hochintensiven Belastungen von 1–4 Minuten um im Median ca. 2–3 %",
+        "Erhöht den Muskel-Carnosingehalt um 30–64 % (Säurepuffer) nach 4 Wochen",
+        "Verzögert die neuromuskuläre Ermüdung – besonders ausgeprägt bei älteren Personen"
+      ],
+      "ideal_fuer": "Sportler in hochintensiven Disziplinen von ca. 1–10 Min (Mittelstrecke, Rudern, Schwimmen, Kampfsport, CrossFit), Personen mit wiederholten intensiven Belastungen",
+      "dosis": "4–6 g täglich über mind. 4 Wochen; auf mehrere Portionen à 1,6 g aufgeteilt (gegen Kribbeln)",
+      "vorsicht_bei": "Parästhesie (harmloses Hautkribbeln) bei hoher Einzeldosis; sonst in gesunden Populationen gut verträglich",
+      "mythen": [
+        "„Beta-Alanin wirkt sofort wie ein Pre-Workout“ – falsch. Es ist kein Stimulans und wirkt nicht akut. Der Effekt entsteht erst durch wochenlange Auffüllung der Carnosinspeicher.",
+        "„Das Kribbeln zeigt, dass es wirkt“ – falsch. Die Parästhesie ist nur eine Reizung von Hautnervenrezeptoren und hat nichts mit der Wirksamkeit zu tun.",
+        "„Beta-Alanin macht generell stärker und ausdauernder“ – überzogen. Der Nutzen ist eng begrenzt auf hochintensive Belastungen von 1–4 Min; bei <60 s oder reinem Maximalkraft-/Langausdauertraining bringt es kaum etwas.",
+        "„Je mehr, desto besser“ – falsch. Was zählt, ist die kumulative Dosis über Wochen; eine höhere Tagesdosis beschleunigt das Auffüllen kaum und verstärkt nur das Kribbeln."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 78,
+      "review_typ": "meta-analyse",
+      "studien_anzahl": 40,
+      "konsens": "ISSN Position Stand 2015 + mehrere Meta-Analysen (Hobson 2012, Saunders 2017, IJSNEM 2024)",
+      "effekt_groesse": [
+        {
+          "wert": 2.85,
+          "einheit": "%",
+          "kontext": "Median-Leistungsverbesserung, am deutlichsten bei Belastungen von 60–240 Sekunden",
+          "quelle": "Hobson et al. 2012, Meta-Analyse (Amino Acids)",
+          "erklaerung": {
+            "was_bedeutet": "Beta-Alanin verbesserte die Leistung über viele Studien hinweg im Mittel um etwa 2,85 %. Das klingt nach wenig, kann aber bei einem knappen Wettkampf über wenige Minuten den Unterschied von einigen Sekunden oder Wiederholungen ausmachen. Entscheidend ist das Belastungsfenster: Der klarste Nutzen zeigt sich bei Anstrengungen von 1 bis 4 Minuten; unter 60 Sekunden gibt es keinen relevanten Effekt.",
+            "studie_zeigt": "Die Meta-Analyse fand eine mediane Verbesserung von 2,85 % bei Beta-Alanin gegenüber Placebo. Der Effekt war an die Belastungsdauer gebunden – er trat dort auf, wo die muskuläre Übersäuerung tatsächlich der begrenzende Faktor ist, und verschwand bei sehr kurzen oder sehr langen Belastungen.",
+            "studien_details": "Meta-Analyse zahlreicher placebokontrollierter Studien, publiziert in Amino Acids 2012 (Hobson et al.). Mediane Beta-Alanin-Gesamtaufnahme ca. 179 g pro Intervention. Die Effekte auf 'Kapazität' waren tendenziell größer als auf 'Performance'.",
+            "zuverlaessigkeit": "Hoch für die Grundaussage, moderat für den exakten Prozentwert. Über mehrere Meta-Analysen konsistent; bei Elite-Athleten fällt der Effekt kleiner aus (~0,5–1 %) als bei Freizeitsportlern (~2–3 %)."
+          }
+        },
+        {
+          "wert": 64,
+          "einheit": "% (Carnosin-Anstieg)",
+          "kontext": "Erhöhung des Muskel-Carnosingehalts nach 4 Wochen bei 4–6 g/Tag",
+          "quelle": "ISSN Position Stand 2015 (Trexler et al.) + Saunders Emax-Meta 2020",
+          "erklaerung": {
+            "was_bedeutet": "Das ist der Mechanismus hinter der Wirkung: Beta-Alanin füllt die Carnosinspeicher im Muskel auf. Nach vier Wochen mit 4–6 g täglich stieg der Carnosingehalt um bis zu 64 %, nach zehn Wochen sogar bis zu 80 %. Mehr Carnosin bedeutet mehr Pufferkapazität gegen die belastungsbedingte Übersäuerung.",
+            "studie_zeigt": "Die Carnosin-Antwort ist dosis- und vor allem zeitabhängig: Die kumulative Gesamtdosis bestimmt den Anstieg, nicht das Timing einzelner Portionen. Eine Bayesianische Dosis-Wirkungs-Meta-Analyse schätzte den maximalen Effekt (Emax) und die für 50 % nötige Gesamtdosis (ED50 ca. 377 g).",
+            "studien_details": "Zusammenfassung des ISSN Position Stand (JISSN 2015) und der Emax-Modell-Meta-Analyse von Saunders et al. (Frontiers in Physiology 2020), die alle publizierten Aggregatdaten zur Carnosin-Antwort einbezog.",
+            "zuverlaessigkeit": "Sehr hoch – dass Beta-Alanin den Muskel-Carnosingehalt erhöht, ist einer der am besten reproduzierten Befunde der Sporternährung."
+          }
+        },
+        {
+          "wert": 1.6,
+          "einheit": "g (Einzeldosis gegen Parästhesie)",
+          "kontext": "Aufteilung auf Portionen à 1,6 g vermeidet das Hautkribbeln (Sicherheits-/Verträglichkeitsbefund)",
+          "quelle": "ISSN Position Stand 2015 (Trexler et al.)",
+          "erklaerung": {
+            "was_bedeutet": "Das ist ein Verträglichkeitsbefund: Die einzige häufig berichtete Nebenwirkung von Beta-Alanin ist die Parästhesie – ein harmloses Kribbeln/Prickeln auf der Haut, das 10–20 Minuten nach einer größeren Einzeldosis auftritt und innerhalb einer Stunde wieder abklingt. Es lässt sich vermeiden, indem man die Tagesmenge auf kleinere Portionen (je 1,6 g) aufteilt oder ein Sustained-Release-Präparat nutzt.",
+            "studie_zeigt": "Laut ISSN ist Beta-Alanin in gesunden Populationen bei empfohlener Dosierung sicher; die Parästhesie ist die einzige regelmäßig berichtete Nebenwirkung und ohne gesundheitliche Bedeutung. Sie entsteht durch Aktivierung bestimmter Hautnervenrezeptoren, nicht durch eine allergische Reaktion.",
+            "studien_details": "International Society of Sports Nutrition Position Stand: Beta-Alanine, Journal of the International Society of Sports Nutrition 2015 (Trexler ET, Smith-Ryan AE, Stout JR, et al.), umfassende Literaturübersicht bis März 2015.",
+            "zuverlaessigkeit": "Hoch – die Parästhesie und ihre Vermeidung durch Dosisaufteilung sind gut dokumentiert. Langzeitdaten über viele Monate/Jahre sind begrenzt, kurzfristig gilt Beta-Alanin als sicher."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "ausdauer",
+        "staerke": 0.6,
+        "kommentar": "Belegter Nutzen bei hochintensiven Belastungen von 1–4 (bis 10) Min, wo muskuläre Übersäuerung limitiert. Kein Effekt bei reinem Langstrecken-Ausdauersport >25 Min."
+      },
+      {
+        "ziel": "hochintensiv_intervall",
+        "staerke": 0.65,
+        "kommentar": "Stärkster Anwendungsbereich: wiederholte intensive Intervalle, Mittelstrecke, Rudern, Schwimmen, Kampfsport, CrossFit."
+      },
+      {
+        "ziel": "kraft",
+        "staerke": 0.35,
+        "kommentar": "Für reine Maximalkraft schwache Evidenz; eher relevant bei höheren Wiederholungszahlen mit Ermüdungskomponente."
+      },
+      {
+        "ziel": "muskelausdauer",
+        "staerke": 0.55,
+        "kommentar": "Verzögert neuromuskuläre Ermüdung, mehr Wiederholungen vor dem Versagen bei intensiven Sätzen möglich."
+      },
+      {
+        "ziel": "leistung_alter",
+        "staerke": 0.5,
+        "kommentar": "Ermüdungsverzögerung ist bei älteren Personen besonders ausgeprägt (niedrigerer Ausgangs-Carnosingehalt)."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "nebenwirkung",
+        "wert": "paraesthesie",
+        "schwere": "vorsichtig",
+        "hinweis": "Hohe Einzeldosen (>0,8–1,0 g) lösen oft ein harmloses Hautkribbeln (Parästhesie) aus. Kein Grund zur Sorge – durch Aufteilung in Portionen à 1,6 g oder ein Sustained-Release-Präparat vermeidbar."
+      },
+      {
+        "art": "datenlage",
+        "wert": "langzeit_unklar",
+        "schwere": "vorsichtig",
+        "hinweis": "Die Sicherheit über sehr lange Zeiträume (viele Monate bis Jahre) ist nicht umfassend untersucht. Kurz- bis mittelfristig gilt Beta-Alanin in empfohlener Dosis als sicher."
+      }
+    ],
+    "dosierung": {
+      "standard": "4–6 g täglich über mindestens 4 Wochen",
+      "bereich": {
+        "min": 4,
+        "max": 6,
+        "einheit": "g"
+      },
+      "obergrenze": "Keine etablierte toxische Grenze; übliche Studiendosen 4–6,4 g/Tag. Entscheidend ist die kumulative Gesamtdosis über Wochen, nicht eine möglichst hohe Tagesmenge.",
+      "timing": "Tageszeit und Trainingsnähe sind unwichtig (kein Akuteffekt). Auf 2–4 Portionen à ~1,6 g aufteilen, idealerweise zu Mahlzeiten – das vermeidet das Kribbeln und kann die Carnosin-Aufnahme verbessern. Nach 4 Wochen ist der Speicher weitgehend gefüllt; eine Erhaltungsdosis hält ihn aufrecht.",
+      "quelle": "ISSN Position Stand 2015 (Trexler et al.) + IJSNEM Meta-Analyse 2024"
+    },
+    "population_spezifisch": {
+      "kraftsportler": {
+        "relevant": true,
+        "staerke": 0.5,
+        "kommentar": "Nutzen vor allem bei ermüdungslastigen Sätzen/höheren Wiederholungen, weniger bei reiner Maximalkraft."
+      },
+      "ausdauersportler_hochintensiv": {
+        "relevant": true,
+        "staerke": 0.65,
+        "kommentar": "Hauptzielgruppe: Disziplinen mit 1–10 Min hoher Intensität (Mittelstrecke, Rudern, Schwimmen)."
+      },
+      "senioren_50plus": {
+        "relevant": true,
+        "staerke": 0.5,
+        "kommentar": "Ermüdungsverzögernde Wirkung in dieser Gruppe besonders ausgeprägt; niedrigerer Ausgangs-Carnosingehalt."
+      },
+      "frauen": {
+        "relevant": true,
+        "staerke": 0.45,
+        "kommentar": "Wirkmechanismus identisch; viele Studien wurden an Männern durchgeführt, daher etwas weniger frauenspezifische Daten."
+      }
+    },
+    "warnhinweise": [
+      "Beta-Alanin ist kein Stimulans und wirkt nicht akut – es wirkt nur durch die über Wochen aufgefüllten Carnosinspeicher. Wer einen Pre-Workout-Kick sucht, ist hier falsch.",
+      "Das Hautkribbeln (Parästhesie) ist harmlos und kein Wirksamkeitssignal. Bei Aufteilung auf kleine Portionen (1,6 g) oder Sustained-Release tritt es kaum auf.",
+      "Der Nutzen ist eng auf hochintensive Belastungen von 1–4 Min begrenzt. Für Maximalkraft, sehr kurze Sprints (<60 s) oder lange Ausdauer (>25 Min) ist er gering bis nicht vorhanden.",
+      "Realistische Erwartung: Der Effekt liegt im Bereich weniger Prozent und ist bei Freizeitsportlern größer als bei Elite-Athleten.",
+      "Geduld nötig: Erste relevante Effekte nach etwa 2–4 Wochen, da sich die Carnosinspeicher erst aufbauen müssen.",
+      "Auf geprüfte Produktqualität achten (Reinheit, ggf. Dopingprüfung im Leistungssport)."
+    ],
+    "quellen": [
+      {
+        "titel": "International society of sports nutrition position stand: Beta-Alanine",
+        "autoren": "Trexler ET, Smith-Ryan AE, Stout JR, Hoffman JR, Wilborn CD, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4501114/",
+        "jahr": 2015,
+        "typ": "position-stand",
+        "doi": "10.1186/s12970-015-0090-y"
+      },
+      {
+        "titel": "Effects of beta-alanine supplementation on exercise performance: a meta-analysis",
+        "autoren": "Hobson RM, Saunders B, Ball G, Harris RC, Sale C",
+        "url": "https://link.springer.com/article/10.1007/s00726-011-1200-z",
+        "jahr": 2012,
+        "typ": "meta-analyse",
+        "doi": "10.1007/s00726-011-1200-z"
+      },
+      {
+        "titel": "Effect of Beta-Alanine Supplementation on Maximal Intensity Exercise in Trained Young Male Individuals: A Systematic Review and Meta-Analysis",
+        "autoren": "Various",
+        "url": "https://journals.humankinetics.com/view/journals/ijsnem/34/6/article-p397.xml",
+        "jahr": 2024,
+        "typ": "meta-analyse"
+      },
+      {
+        "titel": "The Muscle Carnosine Response to Beta-Alanine Supplementation: A Systematic Review With Bayesian Individual and Aggregate Data E-Max Model and Meta-Analysis",
+        "autoren": "Saunders B, et al.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7456894/",
+        "jahr": 2020,
+        "typ": "meta-analyse",
+        "doi": "10.3389/fphys.2020.00913"
+      },
+      {
+        "titel": "Dosing strategies for beta-alanine supplementation in strength and power performance: a systematic review",
+        "autoren": "Various",
+        "url": "https://www.tandfonline.com/doi/full/10.1080/15502783.2025.2566368",
+        "jahr": 2025,
+        "typ": "systematic-review"
+      }
+    ]
+  },
+  "vitamin_b12": {
+    "id": "vitamin_b12",
+    "name": "Vitamin B12 (Cobalamin)",
+    "kategorie": "gesundheit",
+    "ikon": "🔴",
+    "kurz_beschreibung": "Essentielles Vitamin für Blutbildung, Nerven und DNA-Synthese. Praktisch nur in tierischen Lebensmitteln – für Veganer/Vegetarier ein absolutes Muss, ebenso oft im Alter.",
+    "beschreibung": {
+      "was_ist_es": "Vitamin B12 (Cobalamin) ist ein wasserlösliches Vitamin, das den Mineralstoff Kobalt enthält. Es kommt natürlich praktisch ausschließlich in tierischen Lebensmitteln vor (Fleisch, Fisch, Eier, Milchprodukte). In Supplementen liegt es meist als Cyanocobalamin (stabil, gut erforscht) oder Methylcobalamin (aktive Form) vor.",
+      "wie_wirkt_es": "B12 ist Cofaktor für zwei zentrale Enzyme: Es ist nötig für die Bildung roter Blutkörperchen, die DNA-Synthese und die Funktion des Nervensystems (Aufbau der Myelinscheiden). Ein Mangel stört diese Prozesse – die Folge sind u.a. eine spezielle Blutarmut (megaloblastäre Anämie) und neurologische Schäden, die bei langem Bestehen teils irreversibel sind.",
+      "warum_wichtig": "Der Körper kann B12 nicht selbst herstellen und ist auf Zufuhr angewiesen. Veganer und weitgehend pflanzlich Essende entwickeln ohne Supplementierung früher oder später zwangsläufig einen Mangel. Auch ältere Menschen sind gefährdet, weil die Aufnahme im Magen-Darm-Trakt mit dem Alter nachlässt (weniger Magensäure und Intrinsic Factor). Die Speicher reichen lange – ein Mangel zeigt sich oft erst nach Jahren, dann aber ernst."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Verhindert und behebt B12-Mangel mit seinen Folgen (Anämie, Nervenschäden, Erschöpfung)",
+        "Unverzichtbar für Veganer/Vegetarier – ohne Supplementierung ist ein Mangel praktisch unvermeidlich",
+        "Korrigiert bei Älteren häufige Aufnahmestörungen (auch hochdosiert oral, ohne Spritze)"
+      ],
+      "ideal_fuer": "Veganer & Vegetarier (Pflicht), Menschen über 50, Personen mit Magen-Darm-Erkrankungen oder nach Magen-OP, Schwangere/Stillende mit pflanzlicher Ernährung, Metformin-Einnahme",
+      "dosis": "Vegan/Erhalt: 25–100 µg täglich oder 1.000 µg 2×/Woche; Mangel: 1.000 µg täglich",
+      "vorsicht_bei": "Sehr sicher (wasserlöslich); 'normaler' Serumwert schließt funktionellen Mangel nicht aus (MMA messen)",
+      "mythen": [
+        "„B12 gibt jedem mehr Energie“ – falsch. Energie-Effekte treten nur bei tatsächlichem MANGEL auf. Wer ausreichend versorgt ist, spürt von zusätzlichem B12 nichts.",
+        "„Methylcobalamin ist klar besser als Cyanocobalamin“ – überzogen. Bei Gesunden gibt es keinen belegten Vorteil; Cyanocobalamin ist günstig, stabil und wird von Vegan-Ernährungsexperten ausdrücklich empfohlen.",
+        "„Ein Mangel kann nur per Spritze behandelt werden“ – falsch. Hochdosiertes orales B12 (1.000–2.000 µg/Tag) ist meist genauso wirksam, sogar bei gestörter Aufnahme, da ein kleiner Teil passiv aufgenommen wird.",
+        "„Ein normaler B12-Blutwert bedeutet, dass alles in Ordnung ist“ – nicht unbedingt. Der Serumwert kann normal sein, während die Zellen unterversorgt sind. Aussagekräftiger sind Marker wie Methylmalonsäure (MMA)."
+      ]
+    },
+    "evidenz": {
+      "level": "A",
+      "score": 88,
+      "review_typ": "review",
+      "studien_anzahl": 50,
+      "konsens": "Etabliertes essentielles Vitamin; Referenzwerte von NIH/IOM und EFSA, klare Mangel- und Therapie-Evidenz",
+      "effekt_groesse": [
+        {
+          "wert": 100,
+          "einheit": "% (Mangelprävention)",
+          "kontext": "Verhindert bei Veganern den ansonsten praktisch unvermeidlichen B12-Mangel",
+          "quelle": "VeganHealth / Vegan-Ernährungsleitlinien + NIH ODS",
+          "erklaerung": {
+            "was_bedeutet": "Das ist der zentrale, unstrittige Nutzen: Bei rein pflanzlicher Ernährung gibt es kaum natürliche B12-Quellen. Ohne Supplement oder angereicherte Lebensmittel entsteht früher oder später ein Mangel – das ist keine Frage des Ob, sondern des Wann. Eine regelmäßige Supplementierung verhindert das zuverlässig.",
+            "studie_zeigt": "Ernährungsfachgesellschaften sind sich einig: Veganer MÜSSEN B12 supplementieren. Empfohlen werden z.B. 25–100 µg täglich oder 1.000 µg zweimal pro Woche. Auch bei weitgehend pflanzlicher Ernährung ist die Zufuhr meist zu niedrig.",
+            "studien_details": "Zusammenfassung der Empfehlungen von VeganHealth (basierend auf Absorptionsdaten von Heinrich/Walsh), der Academy of Nutrition and Dietetics und des NIH Office of Dietary Supplements.",
+            "zuverlaessigkeit": "Sehr hoch – einer der am besten etablierten Punkte der gesamten Ernährungsmedizin. Hier gibt es keine seriöse Gegenposition."
+          }
+        },
+        {
+          "wert": 1,
+          "einheit": "% (passive Absorption)",
+          "kontext": "Nur ca. 1 % einer oralen Dosis wird passiv aufgenommen – Grund für die hohe Supplement-Dosierung und die Wirksamkeit oraler Hochdosis-Therapie",
+          "quelle": "Kuzminski et al. 1998 (Blood) + Berlin et al.",
+          "erklaerung": {
+            "was_bedeutet": "B12 wird normalerweise über einen aufwändigen Mechanismus mit dem 'Intrinsic Factor' im Darm aufgenommen, der begrenzt ist. Zusätzlich gibt es eine zweite, vom Intrinsic Factor unabhängige passive Aufnahme – sie macht aber nur etwa 1–2 % der Dosis aus. Genau deshalb sind Supplemente so hoch dosiert (Hunderte bis Tausende µg statt der 2,4 µg RDA): Über die passive Route kommt trotzdem genug an.",
+            "studie_zeigt": "Studien zeigten, dass orale Dosen von 1.000–2.000 µg/Tag den B12-Mangel selbst bei perniziöser Anämie (fehlender Intrinsic Factor) ausgleichen können – früher hielt man dafür zwingend Injektionen für nötig. Die passive Diffusion liefert bei hoher Dosis genug Vitamin.",
+            "studien_details": "Klassische klinische Studien (Kuzminski et al., Blood 1998; Berlin et al., Acta Medica Scandinavica 1968) zur oralen vs. parenteralen B12-Therapie; passive Absorption ~1–2 % bei Dosen ab 1 mg.",
+            "zuverlaessigkeit": "Hoch – gut belegt und praxisverändernd: Für viele Patienten sind Tabletten eine gleichwertige Alternative zur Spritze. Bei schwerer Aufnahmestörung oder akuten neurologischen Symptomen bleibt die Injektion aber Mittel der Wahl."
+          }
+        },
+        {
+          "wert": 0,
+          "einheit": "praktisch keine Toxizität",
+          "kontext": "Sehr hohe Sicherheit – wasserlöslich, kein Tolerable Upper Intake Level festgelegt (Sicherheitsbefund)",
+          "quelle": "NIH Office of Dietary Supplements + IOM",
+          "erklaerung": {
+            "was_bedeutet": "Das ist ein Sicherheitsbefund zugunsten von B12: Weil es wasserlöslich ist, scheidet der Körper einen Überschuss einfach über den Urin aus. Es wurde keine Obergrenze (UL) festgelegt, weil selbst hohe Dosen keine verlässlich nachweisbaren Schäden verursachen. Auch die Cyanid-Last aus Cyanocobalamin ist physiologisch vernachlässigbar.",
+            "studie_zeigt": "Das Institute of Medicine hat für B12 kein Tolerable Upper Intake Level definiert, da keine ausreichenden Belege für schädliche Wirkungen hoher Zufuhr aus Lebensmitteln oder Supplementen vorliegen. Sehr selten sind allergische Reaktionen, eher bei Injektionen als bei oraler Gabe.",
+            "studien_details": "NIH Office of Dietary Supplements Fact Sheet (Vitamin B12); IOM Dietary Reference Intakes. Cyanid-Berechnungen z.B. bei VeganHealth zeigen Werte weit unter der EFSA-Sicherheitsschwelle.",
+            "zuverlaessigkeit": "Sehr hoch – die geringe Toxizität von B12 ist breit anerkannt. Das macht eine vorsorgliche Supplementierung in Risikogruppen unkompliziert."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "mangelpraevention",
+        "staerke": 0.95,
+        "kommentar": "Kernindikation: Verhindert B12-Mangel bei Risikogruppen. Bei Veganern unverzichtbar."
+      },
+      {
+        "ziel": "blutbildung",
+        "staerke": 0.9,
+        "kommentar": "Notwendig für die Bildung roter Blutkörperchen; Mangel führt zu megaloblastärer Anämie."
+      },
+      {
+        "ziel": "nervensystem",
+        "staerke": 0.85,
+        "kommentar": "Essentiell für die Nervenfunktion; ein langer Mangel kann zu teils irreversiblen neurologischen Schäden führen."
+      },
+      {
+        "ziel": "energie_muedigkeit",
+        "staerke": 0.5,
+        "kommentar": "Bessert Erschöpfung NUR bei tatsächlichem Mangel. Bei ausreichender Versorgung kein Energie-Effekt."
+      },
+      {
+        "ziel": "gesundheit",
+        "staerke": 0.7,
+        "kommentar": "Essentielles Vitamin; gezielte Supplementierung in Risikogruppen (vegan, Alter, Malabsorption) klar sinnvoll."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "diagnostik",
+        "wert": "serumwert_truegt",
+        "schwere": "vorsichtig",
+        "hinweis": "Ein normaler Serum-B12-Wert schließt einen funktionellen Mangel nicht sicher aus. Bei Verdacht zusätzlich Methylmalonsäure (MMA) und ggf. Holotranscobalamin bestimmen lassen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "neurologische_symptome",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei bestehenden neurologischen Symptomen oder schwerer Aufnahmestörung gehört die Behandlung in ärztliche Hand (ggf. Injektionen, Ursachenabklärung). Nicht in Eigenregie 'austherapieren'."
+      },
+      {
+        "art": "wechselwirkung",
+        "wert": "folsaeure_maskierung",
+        "schwere": "vorsichtig",
+        "hinweis": "Hohe Folsäuredosen können die Blutarmut eines B12-Mangels verschleiern, während die Nervenschäden fortschreiten. Bei Supplementierung beide Werte im Blick behalten."
+      }
+    ],
+    "dosierung": {
+      "standard": "Erhalt/vegan: 25–100 µg täglich oder 1.000 µg 2×/Woche",
+      "bereich": {
+        "min": 25,
+        "max": 1000,
+        "einheit": "µg"
+      },
+      "obergrenze": "Kein Tolerable Upper Intake Level festgelegt (sehr geringe Toxizität, wasserlöslich). RDA: 2,4 µg/Tag (Erwachsene); wegen nur ~1 % passiver Absorption werden Supplemente weit höher dosiert.",
+      "timing": "Tageszeit unwichtig. Hochdosierte Einzelgaben (z.B. 1.000 µg) sättigen die intrinsic-factor-Aufnahme und nutzen zusätzlich die passive Diffusion. Bei mehreren kleinen Portionen mehrere Stunden Abstand für bessere Aufnahme. Mangel: 1.000 µg täglich über 1–3 Monate, danach Kontrolle (Serum-B12 + MMA nach 6–8 Wochen).",
+      "quelle": "NIH Office of Dietary Supplements + VeganHealth-Empfehlungen + klinische Therapiestudien"
+    },
+    "population_spezifisch": {
+      "vegetarier_veganer": {
+        "relevant": true,
+        "staerke": 0.95,
+        "kommentar": "PFLICHT – ohne Supplementierung oder angereicherte Lebensmittel ist ein Mangel praktisch unvermeidlich. Wichtigste Zielgruppe überhaupt."
+      },
+      "senioren_50plus": {
+        "relevant": true,
+        "staerke": 0.8,
+        "kommentar": "Nachlassende Magensäure und Intrinsic-Factor-Produktion verschlechtern die Aufnahme. Hochdosiertes orales B12 ist hier besonders sinnvoll."
+      },
+      "schwangerschaft": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "Erhöhter Bedarf; B12-Mangel der Mutter kann das Kind gefährden. Bei pflanzlicher Ernährung unbedingt supplementieren."
+      },
+      "metformin_nutzer": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "Das Diabetes-Medikament Metformin kann langfristig die B12-Aufnahme verringern – Spiegel regelmäßig kontrollieren."
+      }
+    },
+    "warnhinweise": [
+      "Bei rein pflanzlicher Ernährung ist B12-Supplementierung nicht optional, sondern notwendig – ein Mangel kann ernste, teils bleibende Nervenschäden verursachen.",
+      "Ein 'normaler' Serum-B12-Wert kann trügen: Bei Symptomen zusätzlich Methylmalonsäure (MMA) bestimmen lassen.",
+      "B12-Speicher reichen oft mehrere Jahre – ein Mangel entwickelt sich schleichend und wird leicht übersehen, bis Symptome auftreten.",
+      "Cyanocobalamin ist günstig, stabil und gut belegt; Methylcobalamin ist eine legitime Präferenz, aber bei Gesunden ohne nachgewiesenen Vorteil.",
+      "Hohe Folsäurezufuhr kann einen B12-Mangel im Blutbild maskieren, während Nervenschäden fortschreiten – beide Werte zusammen betrachten.",
+      "Bei ausgeprägten neurologischen Symptomen oder schwerer Malabsorption ärztlich abklären – ggf. sind Injektionen nötig."
+    ],
+    "quellen": [
+      {
+        "titel": "Vitamin B12 - Health Professional Fact Sheet",
+        "autoren": "NIH Office of Dietary Supplements",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminB12-HealthProfessional/",
+        "jahr": 2024,
+        "typ": "position-stand"
+      },
+      {
+        "titel": "Vitamin B12: A Comprehensive Review of Natural vs Synthetic Forms of Consumption and Supplementation",
+        "autoren": "Various",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12681447/",
+        "jahr": 2025,
+        "typ": "review"
+      },
+      {
+        "titel": "Effective treatment of cobalamin deficiency with oral cobalamin",
+        "autoren": "Kuzminski AM, Del Giacco EJ, Allen RH, Stabler SP, Lindenbaum J",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/9694707/",
+        "jahr": 1998,
+        "typ": "rct",
+        "doi": "10.1182/blood.V92.4.1191"
+      },
+      {
+        "titel": "Rationale for VeganHealth's B12 Recommendations",
+        "autoren": "Norris J, Walsh S",
+        "url": "https://veganhealth.org/vitamin-b12/explanation-of-vitamin-b12-recommendations/",
+        "jahr": 2020,
+        "typ": "review"
+      }
+    ]
+  },
+  "elektrolyte": {
+    "id": "elektrolyte",
+    "name": "Elektrolyte (Natrium, Kalium, Magnesium)",
+    "kategorie": "performance",
+    "ikon": "💧",
+    "kurz_beschreibung": "Mineralstoffe, die Flüssigkeitshaushalt, Nerven- und Muskelfunktion steuern. Wichtig bei hohem Schweißverlust und langen Belastungen – im Alltag aber meist überschätzt.",
+    "beschreibung": {
+      "was_ist_es": "Elektrolyte sind elektrisch geladene Mineralstoffe – vor allem Natrium, Kalium, Magnesium, Calcium und Chlorid. Sie regulieren den Wasserhaushalt zwischen den Körperzellen, die Reizweiterleitung in Nerven und die Muskelkontraktion. Beim Schwitzen gehen sie verloren, allen voran Natrium.",
+      "wie_wirkt_es": "Natrium ist der wichtigste Elektrolyt für den Flüssigkeitshaushalt: Es hält Wasser im Blutkreislauf und steuert zusammen mit Kalium die Spannung an Zellmembranen, die für Nerven- und Muskelfunktion nötig ist. Bei starkem Schwitzen sinkt der Natriumbestand; wird dann viel reines Wasser getrunken, kann das Blut-Natrium verdünnt werden. Elektrolytgetränke ersetzen die verlorenen Mineralstoffe und stabilisieren so den Haushalt.",
+      "warum_wichtig": "Ein Verlust von mehr als ~2 % des Körpergewichts an Flüssigkeit beeinträchtigt körperliche und geistige Leistung. Pro Liter Schweiß gehen etwa 0,5–2 g Natrium verloren – stark individuell. Bei langen, heißen Belastungen oder bei 'salty sweatern' kann ein gezielter Elektrolytersatz sinnvoll sein. Umgekehrt ist im normalen Alltag bei ausgewogener Ernährung ein Elektrolytpräparat meist überflüssig."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Erhalten den Flüssigkeitshaushalt und beugen Dehydration bei hohem Schweißverlust vor",
+        "Senken das Risiko einer belastungsbedingten Hyponatriämie (Natriummangel durch zu viel reines Wasser)",
+        "Unterstützen Nerven- und Muskelfunktion bei langen, intensiven oder heißen Belastungen"
+      ],
+      "ideal_fuer": "Ausdauer- und Hitzesportler, lange Belastungen (>1–2 h), 'salty sweater', bei Krankheit mit Flüssigkeitsverlust (Durchfall/Erbrechen)",
+      "dosis": "Bedarfsabhängig; Orientierung: 300–700 mg Natrium pro Liter Flüssigkeit bei langer Belastung",
+      "vorsicht_bei": "Bluthochdruck/Niereninsuffizienz (Natrium), Herzmedikamente (Kalium), Überhydration ohne Natrium",
+      "mythen": [
+        "„Jeder braucht ständig Elektrolytgetränke“ – falsch. Im Alltag und bei kurzen Einheiten reicht Wasser plus normale Ernährung. Gezielter Ersatz lohnt erst bei hohem Schweißverlust und langen Belastungen.",
+        "„Elektrolyte verbessern direkt die Leistung“ – überzogen. In kontrollierten Studien verbessert Natrium die Zeitfahrleistung nicht zuverlässig; der Nutzen liegt im Erhalt des Flüssigkeits-/Natriumhaushalts, nicht in einem Leistungs-Boost.",
+        "„Muskelkrämpfe kommen immer von Elektrolytmangel“ – zu einfach. Belastungskrämpfe haben oft auch neuromuskuläre Ursachen (Ermüdung); Elektrolyte helfen nicht in jedem Fall.",
+        "„Viel trinken kann nie schaden“ – falsch. Übermäßiges Trinken von reinem Wasser ohne Natrium kann zu einer gefährlichen Hyponatriämie führen, vor allem bei Events über 4 Stunden."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 70,
+      "review_typ": "meta-analyse",
+      "studien_anzahl": 30,
+      "konsens": "Konsensus-Statements und Reviews zu Hydration/Hyponatriämie (Armstrong 2021, Knechtle 2019) + Hydrations-Meta-Analyse",
+      "effekt_groesse": [
+        {
+          "wert": 2,
+          "einheit": "% Körpergewicht (Leistungsschwelle)",
+          "kontext": "Ab ca. 2 % Flüssigkeitsverlust sinken körperliche und kognitive Leistung",
+          "quelle": "Hydrations-Konsensusliteratur (Armstrong 2021, Nutrients)",
+          "erklaerung": {
+            "was_bedeutet": "Verliert man durch Schwitzen mehr als etwa 2 % des Körpergewichts an Flüssigkeit (bei 80 kg also ~1,6 kg/Liter), lässt die Leistung messbar nach – Ausdauer, Kraft und auch die Konzentration. Elektrolyte (vor allem Natrium) helfen, die getrunkene Flüssigkeit im Körper zu halten und diesen Verlust effektiver auszugleichen als reines Wasser.",
+            "studie_zeigt": "Sowohl Dehydration als auch Überhydration verschlechtern bei moderaten bis schweren Ausprägungen die Leistung und können zu Beschwerden führen. Ein individueller Mittelweg – getrunken nach Durst, Bedingungen und persönlicher Schweißrate – ist verlässlicher als starre Trinkpläne.",
+            "studien_details": "Übersichtsarbeit und Konsensus-Empfehlungen zur Rehydration im Ausdauersport (Armstrong, Nutrients 2021) sowie weitere Reviews; Schweiß-Natrium ca. 20–80 mmol/L bzw. 0,5–2 g/L.",
+            "zuverlaessigkeit": "Hoch für die 2 %-Schwelle, die breit anerkannt ist. Die optimale Ersatzstrategie ist dagegen individuell und nicht für alle gleich."
+          }
+        },
+        {
+          "wert": 0,
+          "einheit": "kein konsistenter Leistungs-Boost",
+          "kontext": "Natriumzufuhr verbessert die Zeitfahrleistung in kontrollierten Studien nicht zuverlässig (ehrliche Einordnung)",
+          "quelle": "Systematische Reviews/Meta-Analysen zu CHO-Elektrolyt-Getränken",
+          "erklaerung": {
+            "was_bedeutet": "Hier wird oft mehr versprochen, als die Daten hergeben: Zusätzliches Natrium während des Sports steigert die Leistung in kontrollierten Zeitfahr-Tests NICHT zuverlässig. Der echte Wert liegt darin, den Flüssigkeits- und Natriumhaushalt stabil zu halten und einer Hyponatriämie vorzubeugen – besonders bei langen, heißen Events und bei Personen mit hohem Salzverlust.",
+            "studie_zeigt": "Meta-Analysen zur Hydration zeigen, dass kohlenhydrat-elektrolythaltige Getränke das Plasmavolumen während des Sports besser stützen als reines Wasser. Ein direkter, konsistenter Leistungsvorteil durch Natrium allein ließ sich aber nicht belegen.",
+            "studien_details": "Systematische Meta-Analyse zu hyper-/iso-/hypotonen Sportgetränken und deren Wirkung auf das Plasmavolumen während Dauerbelastung (Sports Medicine / PMC8803723) sowie weitere kontrollierte Studien.",
+            "zuverlaessigkeit": "Moderat – die Datenlage spricht klar gegen Elektrolyte als direkten Leistungsbooster, aber für ihren Nutzen im Flüssigkeitsmanagement. Genau diese ehrliche Unterscheidung ist wichtig."
+          }
+        },
+        {
+          "wert": 4,
+          "einheit": "Stunden (Hyponatriämie-Risikoschwelle)",
+          "kontext": "Belastungsbedingte Hyponatriämie tritt vor allem bei Events ab ~4 h und Überhydration auf (Sicherheitsbefund)",
+          "quelle": "Knechtle et al. 2019 + PM&R KnowledgeNow (EAH)",
+          "erklaerung": {
+            "was_bedeutet": "Das ist ein Sicherheitsbefund, der ein unterschätztes Risiko betrifft: die belastungsbedingte Hyponatriämie (EAH). Sie entsteht NICHT durch zu wenig, sondern durch zu viel Trinken – wenn man große Mengen reines Wasser ohne Natrium zuführt und das Blut-Natrium verdünnt. Symptome reichen von Übelkeit und Verwirrtheit bis zu lebensbedrohlichen Zuständen.",
+            "studie_zeigt": "Risikofaktoren sind Belastungen ab etwa 4 Stunden Dauer, freie Verfügbarkeit von Flüssigkeit, extreme Hitze oder Kälte und übermäßiges Trinken. Hier hilft Natriumzufuhr (über Elektrolytgetränke) tatsächlich, das Blut-Natrium zu stabilisieren – das ist der am besten begründete Anwendungsfall.",
+            "studien_details": "Narrativer Review zur belastungsbedingten Hyponatriämie (Knechtle et al. 2019) und klinische Übersicht (PM&R KnowledgeNow); EAH dokumentiert bei Marathon, Triathlon, Ultraläufen und langen Wanderungen.",
+            "zuverlaessigkeit": "Hoch – EAH ist gut dokumentiert und teils tödlich. Die Botschaft 'nicht blind viel Wasser trinken, bei langen Events Natrium ersetzen' ist klar belegt."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "hydration",
+        "staerke": 0.7,
+        "kommentar": "Kernnutzen: Erhalt des Flüssigkeits-/Natriumhaushalts bei hohem Schweißverlust. Natrium hält getrunkene Flüssigkeit besser im Körper als reines Wasser."
+      },
+      {
+        "ziel": "ausdauer",
+        "staerke": 0.55,
+        "kommentar": "Relevant bei langen/heißen Belastungen (>1–2 h). Kein direkter Leistungsboost, aber Schutz vor leistungsmindernder Dehydration und Hyponatriämie."
+      },
+      {
+        "ziel": "muskelfunktion",
+        "staerke": 0.45,
+        "kommentar": "Elektrolyte sind für die Muskelkontraktion nötig; Belastungskrämpfe haben aber oft auch neuromuskuläre Ursachen – Elektrolyte helfen nicht immer."
+      },
+      {
+        "ziel": "regeneration",
+        "staerke": 0.45,
+        "kommentar": "Rehydration nach dem Sport mit Natrium beschleunigt die Wiederherstellung des Flüssigkeitshaushalts."
+      },
+      {
+        "ziel": "krankheit_fluessigkeitsverlust",
+        "staerke": 0.6,
+        "kommentar": "Bei Durchfall/Erbrechen sinnvoll zur oralen Rehydration (Natrium-Glukose-Lösungen)."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medizinisch",
+        "wert": "bluthochdruck_niere",
+        "schwere": "vorsichtig",
+        "hinweis": "Hohe Natriumzufuhr kann bei Bluthochdruck oder Niereninsuffizienz problematisch sein. In diesen Fällen Natriummenge ärztlich abklären."
+      },
+      {
+        "art": "medikament",
+        "wert": "kalium_herzmedikamente",
+        "schwere": "vorsichtig",
+        "hinweis": "Kaliumpräparate können mit bestimmten Herz-/Blutdruckmedikamenten (ACE-Hemmer, Sartane, kaliumsparende Diuretika) gefährlich interagieren (Hyperkaliämie). Nicht ohne ärztliche Rücksprache zusätzlich Kalium supplementieren."
+      },
+      {
+        "art": "verhalten",
+        "wert": "ueberhydration",
+        "schwere": "hart",
+        "hinweis": "Übermäßiges Trinken von reinem Wasser ohne Natrium kann zu einer lebensgefährlichen Hyponatriämie führen. Bei langen Events nach Durst trinken und Natrium ersetzen, nicht 'auf Vorrat' literweise Wasser."
+      }
+    ],
+    "dosierung": {
+      "standard": "Bedarfsabhängig; ~300–700 mg Natrium pro Liter Flüssigkeit bei langer Belastung",
+      "bereich": {
+        "min": 300,
+        "max": 700,
+        "einheit": "mg Natrium/Liter"
+      },
+      "obergrenze": "Stark individuell – richtet sich nach Schweißrate, Dauer, Hitze und Salzverlust. Kein pauschaler Wert; bei kurzen Einheiten und im Alltag meist gar nicht nötig.",
+      "timing": "Während langer/heißer Belastungen über die Trinkflüssigkeit zuführen; nach dem Sport zur Rehydration mit Natrium. Reines Wasser bei sehr langen Events nicht im Übermaß ohne Natrium trinken. Menge an die individuelle Schweißrate anpassen.",
+      "quelle": "Hydrations-Konsensus (Armstrong 2021) + EAH-Reviews (Knechtle 2019)"
+    },
+    "population_spezifisch": {
+      "ausdauersportler": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "Hauptzielgruppe: lange/heiße Belastungen mit hohem Schweiß- und Natriumverlust. Individualisierter Ersatz sinnvoll."
+      },
+      "hitzesportler": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "Hohe Schweißraten in Hitze (bis 2 L/h) – Natriumersatz besonders relevant, Hyponatriämie-Risiko beachten."
+      },
+      "alltagssportler": {
+        "relevant": true,
+        "staerke": 0.25,
+        "kommentar": "Bei kurzen Einheiten und ausgewogener Ernährung meist überflüssig – Wasser reicht. Elektrolytprodukte sind hier oft Marketing."
+      },
+      "bei_krankheit": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "Bei Durchfall/Erbrechen sinnvoll zur oralen Rehydration; bei Kindern und Älteren auf Flüssigkeits- und Elektrolytbilanz achten."
+      }
+    },
+    "warnhinweise": [
+      "Mehr ist nicht besser: Elektrolytprodukte sind im Alltag und bei kurzen Einheiten meist überflüssig – Wasser und eine normale Ernährung genügen.",
+      "Elektrolyte sind kein direkter Leistungsbooster; ihr Nutzen liegt im Erhalt des Flüssigkeits- und Natriumhaushalts bei langen/heißen Belastungen.",
+      "Vorsicht vor Überhydration: Zu viel reines Wasser ohne Natrium kann eine gefährliche Hyponatriämie auslösen – besonders bei Events über 4 Stunden.",
+      "Der Bedarf ist hochindividuell (Schweißrate, Hitze, Salzverlust). Pauschale Trinkpläne sind weniger zuverlässig als das Trinken nach Durst plus angepasster Natriumersatz.",
+      "Bei Bluthochdruck, Nieren- oder Herzerkrankung Natrium-/Kaliummengen ärztlich abklären.",
+      "Belastungskrämpfe sind nicht immer ein Elektrolytproblem – oft spielt neuromuskuläre Ermüdung die größere Rolle."
+    ],
+    "quellen": [
+      {
+        "titel": "Rehydration during Endurance Exercise: Challenges, Research, Options, Methods",
+        "autoren": "Armstrong LE",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8001428/",
+        "jahr": 2021,
+        "typ": "review",
+        "doi": "10.3390/nu13030887"
+      },
+      {
+        "titel": "The Hydrating Effects of Hypertonic, Isotonic and Hypotonic Sports Drinks and Waters on Central Hydration During Continuous Exercise: A Systematic Meta-Analysis and Perspective",
+        "autoren": "Various",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8803723/",
+        "jahr": 2022,
+        "typ": "meta-analyse"
+      },
+      {
+        "titel": "Exercise-associated hyponatremia in endurance and ultra-endurance performance: a narrative review",
+        "autoren": "Knechtle B, et al.",
+        "url": "https://now.aapmr.org/hydration-issues-in-the-athlete-and-exercise-associated-hyponatremia/",
+        "jahr": 2019,
+        "typ": "review"
+      },
+      {
+        "titel": "Exercise-Associated Hyponatremia: Clinical Overview",
+        "autoren": "PM&R KnowledgeNow",
+        "url": "https://now.aapmr.org/hydration-issues-in-the-athlete-and-exercise-associated-hyponatremia/",
+        "jahr": 2024,
+        "typ": "review"
+      }
+    ]
+  },
+  "vitamin_c": {
+    "id": "vitamin_c",
+    "name": "Vitamin C (Ascorbinsäure)",
+    "kategorie": "gesundheit",
+    "ikon": "🍊",
+    "kurz_beschreibung": "Essentielles Antioxidans für Immunsystem, Kollagenbildung und Eisenaufnahme. Gegen Erkältungen wird es massiv überschätzt – ein echter Mangel ist in westlichen Ländern aber selten.",
+    "beschreibung": {
+      "was_ist_es": "Vitamin C (Ascorbinsäure) ist ein wasserlösliches, essentielles Vitamin, das der Mensch – anders als die meisten Tiere – nicht selbst herstellen kann. Es kommt reichlich in Obst und Gemüse vor (Paprika, Zitrusfrüchte, Beeren, Brokkoli, Kohl). Ein schwerer, langanhaltender Mangel führt zur klassischen Mangelkrankheit Skorbut, die heute aber sehr selten ist.",
+      "wie_wirkt_es": "Vitamin C ist ein wichtiges Antioxidans und Cofaktor für zahlreiche Enzyme. Es ist unentbehrlich für die Kollagenbildung (Haut, Gefäße, Bindegewebe, Wundheilung), unterstützt die normale Funktion von Immunzellen und verbessert die Aufnahme von pflanzlichem (Nicht-Häm-)Eisen aus dem Darm deutlich. Die Aufnahme im Darm ist begrenzt: Der Plasmaspiegel erreicht bei 200–400 mg/Tag ein Plateau, und ab etwa 1.000 mg sinkt der aufgenommene Anteil unter 50 %.",
+      "warum_wichtig": "Vitamin C ist für viele Körperfunktionen nötig, ein echter Mangel ist bei normaler Ernährung in westlichen Ländern aber selten – Obst und Gemüse decken den Bedarf meist problemlos (laut Ernährungserhebungen erreichen die meisten Nichtraucher die empfohlene Menge). Die populäre Vorstellung, dass Megadosen Erkältungen verhindern, ist wissenschaftlich nicht haltbar. Sinnvoll ist Vitamin C vor allem zur Deckung des Grundbedarfs und in einigen Sondersituationen (sehr geringe Zufuhr, Rauchen, extreme körperliche Belastung)."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Verkürzt bei regelmäßiger (vorbeugender) Einnahme die Erkältungsdauer leicht (Erwachsene ~8 %, Kinder ~14 %)",
+        "Halbiert das Erkältungsrisiko bei extremer körperlicher Belastung (Marathon, Kälte, Soldaten)",
+        "Unverzichtbar für Kollagenbildung, Immunfunktion und die Aufnahme von pflanzlichem Eisen"
+      ],
+      "ideal_fuer": "Menschen mit geringer Obst-/Gemüsezufuhr, Raucher (erhöhter Bedarf), Personen unter extremer körperlicher Belastung, zur Verbesserung der Eisenaufnahme bei pflanzlicher Ernährung",
+      "dosis": "Grundbedarf über Ernährung; Supplement meist 100–200 mg/Tag ausreichend, Obergrenze 2.000 mg",
+      "vorsicht_bei": "Nierensteine/Nierenerkrankung (Oxalat), G6PD-Mangel, Hämochromatose, Megadosen (Durchfall), Verfälschung von Blutzucker-/Stuhltests",
+      "mythen": [
+        "„Hochdosiertes Vitamin C verhindert Erkältungen“ – falsch. In der Allgemeinbevölkerung senkt regelmäßige Einnahme das Erkältungs-RISIKO nicht (relatives Risiko 0,97); sie verkürzt die Dauer nur geringfügig. Routinemäßige Megadosen-Prophylaxe ist nicht gerechtfertigt.",
+        "„Wenn die Erkältung da ist, hilft eine große Dosis Vitamin C“ – kaum. Erst bei Symptombeginn eingenommen, zeigt Vitamin C in Studien keinen konsistenten Nutzen auf Dauer oder Schwere.",
+        "„Viel hilft viel“ – falsch. Der Plasmaspiegel ist bei 200–400 mg gesättigt; ab ~1.000 mg sinkt die Aufnahme unter 50 %, der Rest wird ausgeschieden. Über 2.000 mg drohen Durchfall und bei Veranlagung Nierensteine.",
+        "„Vitamin C aus Supplementen ist besser als aus Obst/Gemüse“ – falsch. Die Nahrungsquelle ist mindestens gleichwertig, wird langsamer aufgenommen und liefert zusätzlich Ballaststoffe und sekundäre Pflanzenstoffe."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 75,
+      "review_typ": "meta-analyse",
+      "studien_anzahl": 50,
+      "konsens": "Umfangreicher Cochrane-Review (Hemilä & Chalker 2013, 29+31 Vergleiche) + NIH/IOM-Referenzwerte",
+      "effekt_groesse": [
+        {
+          "wert": 8,
+          "einheit": "% (Erkältungsdauer)",
+          "kontext": "Verkürzung der Erkältungsdauer bei REGELMÄSSIGER Einnahme (Erwachsene; Kinder ~14 %)",
+          "quelle": "Cochrane Review CD000980.pub4 (Hemilä & Chalker 2013), 31 Vergleiche / 9.745 Episoden",
+          "erklaerung": {
+            "was_bedeutet": "Wer dauerhaft (also vorbeugend, nicht erst bei Erkältung) regelmäßig Vitamin C einnimmt, hatte in Studien geringfügig kürzere Erkältungen: bei Erwachsenen etwa 8 %, bei Kindern etwa 14 % weniger Krankheitsdauer. Das ist ein kleiner Effekt – aus einer 7-Tage-Erkältung werden vielleicht ein paar Stunden weniger. Die HÄUFIGKEIT von Erkältungen wird dagegen nicht gesenkt.",
+            "studie_zeigt": "Über 31 Vergleiche mit 9.745 Erkältungsepisoden hinweg verkürzte regelmäßiges Vitamin C (≥0,2 g/Tag) die Dauer signifikant um 8 % bei Erwachsenen (95%-KI 3–12 %) und 14 % bei Kindern (95%-KI 7–21 %). Bei Kindern verkürzten 1–2 g/Tag die Erkältung sogar um 18 %. Auf die Erkältungshäufigkeit in der Allgemeinbevölkerung gab es keinen Effekt.",
+            "studien_details": "Cochrane Systematic Review 'Vitamin C for preventing and treating the common cold' (Hemilä & Chalker, Cochrane Database Syst Rev 2013, CD000980.pub4); nur placebokontrollierte Studien mit ≥0,2 g/Tag, Auswertung von Inzidenz, Dauer und Schwere.",
+            "zuverlaessigkeit": "Hoch – eine der umfangreichsten Evidenzbasen überhaupt. Die Aussage 'kleiner, konsistenter Effekt auf Dauer, keiner auf Häufigkeit' ist sehr gut abgesichert; die klinische Bedeutung des kleinen Dauereffekts ist begrenzt."
+          }
+        },
+        {
+          "wert": 0.48,
+          "einheit": "relatives Risiko (RR)",
+          "kontext": "Halbierung des Erkältungsrisikos bei Personen unter extremer körperlicher Belastung",
+          "quelle": "Cochrane Review CD000980.pub4, Subgruppe (598 Marathonläufer, Skifahrer, Soldaten)",
+          "erklaerung": {
+            "was_bedeutet": "Das ist die wichtige Ausnahme: Bei Menschen unter extremer körperlicher und/oder Kältebelastung – Marathonläufer, Skifahrer, Soldaten bei subarktischen Übungen – halbierte regelmäßiges Vitamin C das Risiko, überhaupt eine Erkältung zu bekommen. Das relative Risiko lag bei 0,48, also rund 52 % weniger Erkältungen. Für diese spezielle Gruppe ist eine Supplementierung tatsächlich begründbar.",
+            "studie_zeigt": "In fünf Studien mit insgesamt 598 Personen unter kurzer, extremer Belastung sank das relative Risiko auf 0,48 (95%-KI 0,35–0,64). Dieser deutliche Schutzeffekt steht in klarem Gegensatz zur Allgemeinbevölkerung, wo das relative Risiko bei 0,97 lag (kein Effekt).",
+            "studien_details": "Subgruppenanalyse des Cochrane Reviews CD000980.pub4; gepooltes RR 0,48 über 5 Studien mit Marathonläufern, Skifahrern und Soldaten. Studien mit langfristiger (nicht extremer) Belastung zeigten keinen solchen Effekt.",
+            "zuverlaessigkeit": "Hoch für diese spezielle Gruppe. Wichtig: Der Effekt lässt sich NICHT auf den normalen Alltag übertragen – er gilt nur für kurze Phasen extremer, anhaltender körperlicher oder Kältebelastung."
+          }
+        },
+        {
+          "wert": 2000,
+          "einheit": "mg/Tag (Obergrenze)",
+          "kontext": "Tolerable Upper Intake Level – darüber Durchfall und Nierenstein-Risiko bei Veranlagung (Sicherheitsbefund)",
+          "quelle": "NIH Office of Dietary Supplements + IOM Dietary Reference Intakes",
+          "erklaerung": {
+            "was_bedeutet": "Vitamin C gilt als wenig giftig, weil Überschuss über den Urin ausgeschieden wird. Trotzdem gibt es eine Obergrenze von 2.000 mg/Tag für Erwachsene: Darüber drohen vor allem Magen-Darm-Beschwerden und Durchfall (das nicht aufgenommene Vitamin zieht osmotisch Wasser in den Darm). Bei entsprechender Veranlagung steigt zudem das Risiko für Nierensteine über vermehrtes Oxalat im Urin.",
+            "studie_zeigt": "Die Aufnahme sinkt ab ~1.000 mg unter 50 %, der Plasmaspiegel ist bei 200–400 mg gesättigt. Häufigste Nebenwirkungen hoher Dosen sind Durchfall, Übelkeit und Bauchkrämpfe. Das Nierenstein-Risiko betrifft vor allem Menschen mit vorbestehender Hyperoxalurie/Steinanamnese. Bei G6PD-Mangel können sehr hohe Dosen eine Hämolyse auslösen, bei Hämochromatose die Eisenüberladung verstärken.",
+            "studien_details": "NIH Office of Dietary Supplements Fact Sheet (Vitamin C, 2024) und IOM Dietary Reference Intakes für Vitamin C (NBK225480); UL altersabhängig 400–2.000 mg, Erwachsene 2.000 mg.",
+            "zuverlaessigkeit": "Hoch – die Obergrenze und die Hauptnebenwirkung (osmotischer Durchfall) sind gut etabliert. Der Oxalat-/Nierenstein-Zusammenhang ist am klarsten bei vorbelasteten Personen; bei Gesunden ist das Risiko gering."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "immunsystem",
+        "staerke": 0.45,
+        "kommentar": "Notwendig für die Immunfunktion; verkürzt die Erkältungsdauer leicht, verhindert Erkältungen in der Allgemeinbevölkerung aber nicht. Deutlicher Präventionsnutzen nur bei extremer körperlicher Belastung."
+      },
+      {
+        "ziel": "kollagen_haut_wundheilung",
+        "staerke": 0.6,
+        "kommentar": "Unverzichtbarer Cofaktor der Kollagenbildung – wichtig für Haut, Bindegewebe, Gefäße und Wundheilung. Ein Mangel beeinträchtigt diese Prozesse direkt (Extremform: Skorbut)."
+      },
+      {
+        "ziel": "eisenaufnahme",
+        "staerke": 0.6,
+        "kommentar": "Verbessert die Aufnahme von pflanzlichem (Nicht-Häm-)Eisen deutlich – relevant bei vegetarischer/veganer Ernährung und Eisenmangel, wenn zur eisenreichen Mahlzeit eingenommen."
+      },
+      {
+        "ziel": "antioxidativ",
+        "staerke": 0.4,
+        "kommentar": "Wirkt als Antioxidans; ein klarer Zusatznutzen durch Supplemente bei bereits guter Versorgung ist nicht belegt. In sehr hohen Dosen mit Eisen sogar pro-oxidativ möglich."
+      },
+      {
+        "ziel": "gesundheit",
+        "staerke": 0.55,
+        "kommentar": "Essentielles Vitamin; bei ausgewogener Ernährung selten ein Mangel. Supplementierung v.a. bei geringer Zufuhr oder Rauchen sinnvoll."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medizinisch",
+        "wert": "nierensteine_niere",
+        "schwere": "vorsichtig",
+        "hinweis": "Hohe Dosen erhöhen das Oxalat im Urin und damit das Nierenstein-Risiko – besonders bei vorbestehender Nierenerkrankung oder Steinanamnese. Bei Risiko unter 500–1.000 mg/Tag bleiben, Dosen aufteilen und ausreichend trinken."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "g6pd_mangel",
+        "schwere": "hart",
+        "hinweis": "Bei G6PD-Mangel (erblicher Enzymdefekt) können sehr hohe Vitamin-C-Dosen eine hämolytische Anämie (Zerfall roter Blutkörperchen) auslösen. Hochdosen vermeiden."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "haemochromatose",
+        "schwere": "vorsichtig",
+        "hinweis": "Vitamin C steigert die Eisenaufnahme. Bei Hämochromatose (erbliche Eisenüberladung) können hohe Dosen die Eisenspeicher gefährlich erhöhen – nur nach ärztlicher Rücksprache."
+      },
+      {
+        "art": "diagnostik",
+        "wert": "labortests",
+        "schwere": "vorsichtig",
+        "hinweis": "Hohe Vitamin-C-Spiegel können Blutzuckermessungen (Glukometer) und Stuhltests auf verborgenes Blut verfälschen. Vor Laboruntersuchungen das medizinische Personal informieren."
+      }
+    ],
+    "dosierung": {
+      "standard": "100–200 mg täglich (Supplement, falls über die Ernährung nicht gedeckt)",
+      "bereich": {
+        "min": 100,
+        "max": 1000,
+        "einheit": "mg"
+      },
+      "obergrenze": "Tolerable Upper Intake Level: 2.000 mg/Tag (Erwachsene). RDA: Männer 90 mg, Frauen 75 mg, Schwangere 85 mg, Stillende 120 mg, Raucher +35 mg. Plasma-Plateau bei 200–400 mg; Aufnahme sinkt ab ~1.000 mg unter 50 %.",
+      "timing": "Tageszeit unwichtig (Studien zeigen keinen Unterschied); zu einer Mahlzeit zur besseren Verträglichkeit. Zur Verbesserung der Eisenaufnahme gezielt zusammen mit eisenreichen (pflanzlichen) Mahlzeiten. Höhere Mengen auf 2 Gaben aufteilen (z.B. 2×200 mg), da die Aufnahme dosislimitiert ist.",
+      "quelle": "NIH Office of Dietary Supplements + IOM Dietary Reference Intakes"
+    },
+    "population_spezifisch": {
+      "raucher": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "Rauchen erhöht den oxidativen Stress und den Vitamin-C-Umsatz – die RDA liegt 35 mg höher als bei Nichtrauchern. Raucher haben nachweislich niedrigere Plasmaspiegel."
+      },
+      "extreme_belastung": {
+        "relevant": true,
+        "staerke": 0.65,
+        "kommentar": "Bei Marathon, Kälteexposition oder militärischer Belastung halbiert regelmäßiges Vitamin C das Erkältungsrisiko (RR 0,48) – einzige gut belegte Präventionsgruppe."
+      },
+      "vegetarier_veganer": {
+        "relevant": true,
+        "staerke": 0.55,
+        "kommentar": "Verbessert die Aufnahme von pflanzlichem Eisen deutlich – sinnvoll zu eisenreichen Mahlzeiten bei Eisenmangelrisiko."
+      },
+      "geringe_obst_gemuese_zufuhr": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "Wer wenig Obst und Gemüse isst, profitiert am ehesten von einer moderaten Supplementierung zur Deckung des Grundbedarfs."
+      }
+    },
+    "warnhinweise": [
+      "Megadosen verhindern keine Erkältungen – dieser populäre Glaube (geprägt durch Linus Pauling in den 1970ern) ist durch große Meta-Analysen widerlegt.",
+      "Mehr ist nicht besser: Der Plasmaspiegel ist bei 200–400 mg gesättigt; ab ~1.000 mg sinkt die Aufnahme stark, über 2.000 mg drohen Durchfall und bei Veranlagung Nierensteine.",
+      "Die beste Vitamin-C-Quelle ist Obst und Gemüse – Supplemente sind nur bei geringer Zufuhr, Rauchen oder in Sondersituationen nötig.",
+      "Bei Nierensteinen, Nierenerkrankung, G6PD-Mangel oder Hämochromatose keine hohen Dosen ohne ärztliche Rücksprache.",
+      "Vitamin C kann Labortests (Blutzucker, Stuhlblut) verfälschen – vor Untersuchungen erwähnen.",
+      "Zur Verbesserung der Eisenaufnahme gezielt mit (pflanzlichen) eisenreichen Mahlzeiten kombinieren; in sehr hohen Dosen zusammen mit Eisen kann Vitamin C aber pro-oxidativ wirken."
+    ],
+    "quellen": [
+      {
+        "titel": "Vitamin C for preventing and treating the common cold",
+        "autoren": "Hemilä H, Chalker E",
+        "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD000980.pub4/full",
+        "jahr": 2013,
+        "typ": "meta-analyse",
+        "doi": "10.1002/14651858.CD000980.pub4"
+      },
+      {
+        "titel": "Vitamin C for Preventing and Treating the Common Cold (Overview of three meta-analyses)",
+        "autoren": "Douglas RM, Hemilä H",
+        "url": "https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.0020168",
+        "jahr": 2005,
+        "typ": "meta-analyse",
+        "doi": "10.1371/journal.pmed.0020168"
+      },
+      {
+        "titel": "Vitamin C - Health Professional Fact Sheet",
+        "autoren": "NIH Office of Dietary Supplements",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/",
+        "jahr": 2024,
+        "typ": "position-stand"
+      },
+      {
+        "titel": "Dietary Reference Intakes for Vitamin C, Vitamin E, Selenium, and Carotenoids (Vitamin C)",
+        "autoren": "Institute of Medicine (US) Panel on Dietary Antioxidants",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK225480/",
+        "jahr": 2000,
+        "typ": "position-stand"
+      }
+    ]
+  },
+  "eaas": {
+    "id": "eaas",
+    "name": "EAAs (Essentielle Aminosäuren)",
+    "kategorie": "muskelaufbau",
+    "ikon": "🧬",
+    "kurz_beschreibung": "Die neun Aminosäuren, die der Körper nicht selbst bilden kann – der eigentliche Baustoff für Muskelprotein. Sinnvoll bei niedriger Proteinzufuhr, im Alter oder in der Diät; bei ausreichend Protein meist überflüssig.",
+    "beschreibung": {
+      "was_ist_es": "Essentielle Aminosäuren (EAAs) sind die neun Aminosäuren, die der Körper nicht selbst herstellen kann und über die Nahrung aufnehmen muss: Leucin, Isoleucin, Valin (die drei BCAAs), Lysin, Methionin, Phenylalanin, Threonin, Tryptophan und Histidin. Sie sind die unverzichtbaren Bausteine für den Aufbau von Muskelprotein. Als Supplement gibt es sie in freier Form (Pulver), die schnell aufgenommen wird.",
+      "wie_wirkt_es": "Freie EAAs lassen die Aminosäure-Konzentration im Blut rasch ansteigen und stimulieren dadurch die Muskelproteinsynthese (MPS) – den Prozess des Muskelaufbaus. Leucin wirkt dabei als 'Auslöser', aber für eine vollständige Protein-Synthese werden alle neun EAAs als Material benötigt. Genau das ist der Grund, warum reine BCAAs (nur drei der neun) den Muskelaufbau nicht voll aufrechterhalten können.",
+      "warum_wichtig": "Der entscheidende Punkt für eine ehrliche Einordnung: EAAs sind der wirksame Anteil jedes hochwertigen Proteins. Wer genug Protein isst (für Trainierende ca. 1,6–2,2 g/kg), nimmt automatisch reichlich EAAs auf – ein zusätzliches EAA-Supplement bringt dann kaum Vorteil. Sinnvoll werden freie EAAs vor allem dort, wo die Proteinzufuhr niedrig ist, die Muskeln schlechter ansprechen (Alter) oder ein Kaloriendefizit besteht. Als Werkzeug für bestimmte Situationen nützlich, als Pflicht-Supplement für jeden überschätzt."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Stimulieren die Muskelproteinsynthese – freie EAAs sogar etwas stärker als die gleiche Menge intaktes Protein",
+        "Bereits kleine Mengen (1,5–3 g) lösen MPS aus; Sättigung bei ca. 15–18 g",
+        "Besonders nützlich bei niedriger Proteinzufuhr, im Alter (anabole Resistenz) und im Kaloriendefizit"
+      ],
+      "ideal_fuer": "Ältere mit anaboler Resistenz, Menschen mit niedriger Proteinzufuhr, Diätphasen (Kaloriendefizit), Veganer/Vegetarier, Situationen ohne Zugang zu einer Proteinmahlzeit",
+      "dosis": "Ca. 6–15 g freie EAAs pro Portion (mit hohem Leucinanteil); Plateau bei 15–18 g",
+      "vorsicht_bei": "Gut verträglich; bei ausreichender Proteinzufuhr meist überflüssig (Geldverschwendung), Phenylketonurie (Phenylalanin)",
+      "mythen": [
+        "„EAAs sind ein Muss für den Muskelaufbau“ – überzogen. Wer genug Protein isst (1,6–2,2 g/kg), nimmt bereits reichlich EAAs auf; ein Zusatzsupplement bringt dann kaum Vorteil.",
+        "„BCAAs reichen aus / sind dasselbe“ – falsch. BCAAs sind nur 3 der 9 EAAs. Ohne die übrigen 6 kann die Muskelproteinsynthese nicht vollständig ablaufen; die BCAA-Anabolik-Behauptung gilt als nicht belegt (Wolfe 2017).",
+        "„EAAs bauen auch ohne Training Muskeln auf“ – nur eingeschränkt. Bei gesunden, aktiven Menschen ist Training der Haupttreiber; ohne Training zeigen EAAs v.a. bei anabol-resistenten Gruppen (Ältere) funktionelle Effekte.",
+        "„Mehr EAAs = mehr Muskeln“ – falsch. Die MPS-Stimulation plateaut bei ~15–18 g pro Portion; darüber gibt es keinen zusätzlichen Nutzen."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 72,
+      "review_typ": "position-stand",
+      "studien_anzahl": 40,
+      "konsens": "ISSN Position Stand EAA 2023 + Hypertrophie-Review 2025 (46 Studien); gut belegter akuter MPS-Effekt, begrenzter Zusatznutzen bei ausreichender Proteinzufuhr",
+      "effekt_groesse": [
+        {
+          "wert": 3,
+          "einheit": "g (Schwellendosis)",
+          "kontext": "Bereits 1,5–3 g freie EAAs lösen eine messbare Muskelproteinsynthese aus; Plateau bei 15–18 g",
+          "quelle": "ISSN Position Stand EAA 2023 (Ferrando, Wolfe et al.)",
+          "erklaerung": {
+            "was_bedeutet": "EAAs sind erstaunlich potent darin, den Muskelaufbau-Prozess (Muskelproteinsynthese, MPS) anzustoßen: Schon kleine Mengen von 1,5 bis 3 Gramm in freier Form reichen aus, um die MPS messbar zu steigern. Der Effekt steigt mit der Dosis, erreicht aber bei etwa 15–18 g ein Plateau – mehr bringt dann keinen zusätzlichen Aufbau.",
+            "studie_zeigt": "Laut der offiziellen Position der International Society of Sports Nutrition (ISSN) stimulieren freie EAAs die MPS schon bei kleinen Dosen, und – wichtig – die Stimulation benötigt KEINE nicht-essentiellen Aminosäuren. Freie EAAs regen die MPS sogar stärker an als die gleiche Menge intakten Proteins, weil sie schneller und vollständiger verfügbar sind.",
+            "studien_details": "International Society of Sports Nutrition Position Stand: Essential Amino Acid Supplementation (Journal of the International Society of Sports Nutrition, 2023), umfassende Auswertung der Studienlage zu Dosis, Leucinanteil und MPS.",
+            "zuverlaessigkeit": "Hoch für den akuten MPS-Effekt – das ist über viele Stable-Isotope-Studien hinweg sehr gut belegt. Wichtige Einordnung: Ein akut erhöhter MPS-Wert bedeutet nicht automatisch proportional mehr langfristigen Muskelaufbau."
+          }
+        },
+        {
+          "wert": 1.6,
+          "einheit": "g/kg/Tag (Nutzen-Schwelle)",
+          "kontext": "Zusatznutzen v.a. UNTER ~1,6 g/kg Proteinzufuhr; oberhalb ~2,0 g/kg kein Effekt mehr (ehrliche Einordnung)",
+          "quelle": "Hypertrophie-Review 2025 (46 Studien, PMC12655760)",
+          "erklaerung": {
+            "was_bedeutet": "Das ist der ehrlichste und wichtigste Punkt: Der Zusatznutzen von Protein/EAA-Supplementen zeigt sich vor allem dann, wenn die tägliche Proteinzufuhr unter etwa 1,6 g pro kg Körpergewicht liegt oder pro Mahlzeit weniger als 2–3 g Leucin geliefert werden. Sobald die Zufuhr über ~2,0 g/kg liegt, verschwindet der Effekt – die Speicher sind dann schon 'gesättigt'. Praktisch: Wer ohnehin viel Protein isst, braucht keine EAAs.",
+            "studie_zeigt": "Über 46 ausgewertete Studien hinweg zeigten Protein/EAA konsistente Vorteile nur bei niedriger Zufuhr oder geringem Leucin pro Mahlzeit. Die Effekte erreichten ein Plateau, sobald die Gesamtzufuhr ~2,0 g/kg/Tag überstieg. EAAs sind damit ein Lückenfüller, kein universeller Wachstumsverstärker.",
+            "studien_details": "Mechanismus- und morphologiebasierte Übersichtsarbeit zu Supplementen für Muskelhypertrophie (2025), die 46 Studien zu Protein/EAA, Kreatin, HMB und weiteren auswertete und Schwellen- bzw. Plateau-Effekte herausarbeitete.",
+            "zuverlaessigkeit": "Hoch – der Schwellen-/Plateau-Effekt ist konsistent mit der Whey-Evidenz (gleiches Prinzip wie bei der Gesamtproteinmenge). Diese Einordnung schützt vor unnötigen Ausgaben."
+          }
+        },
+        {
+          "wert": 0,
+          "einheit": "kein voller MPS-Effekt durch BCAAs allein (Abgrenzung)",
+          "kontext": "BCAAs (3 der 9 EAAs) können die Muskelproteinsynthese nicht voll aufrechterhalten – EAAs schon",
+          "quelle": "Wolfe 2017 (JISSN) + ISSN Position Stand EAA 2023",
+          "erklaerung": {
+            "was_bedeutet": "Das grenzt EAAs klar von den populäreren BCAAs ab: BCAAs enthalten nur drei der neun essentiellen Aminosäuren (Leucin, Isoleucin, Valin). Leucin 'zündet' zwar die Muskelproteinsynthese, aber ohne die übrigen sechs EAAs fehlt dem Körper das Baumaterial, um neue Muskelproteine fertigzustellen. Die Synthese wird dann durch verstärkten Eiweißabbau begrenzt – unterm Strich kein echter Netto-Aufbau.",
+            "studie_zeigt": "Eine vielzitierte Analyse (Wolfe 2017) kam zum Schluss, dass die Behauptung, BCAAs allein stimulierten beim Menschen den Muskelaufbau, nicht gerechtfertigt sei. Der ISSN Position Stand bestätigt: Compositions mit ALLEN EAAs bringen deutlich mehr als einzelne Aminosäuren oder BCAAs.",
+            "studien_details": "Wolfe RR, 'Branched-chain amino acids and muscle protein synthesis in humans: myth or reality?' (JISSN 2017) sowie ISSN Position Stand EAA 2023; gestützt auf Stable-Isotope-Messungen der Netto-Proteinbilanz.",
+            "zuverlaessigkeit": "Hoch – die Überlegenheit kompletter EAAs gegenüber BCAAs ist gut belegt. Praktische Konsequenz: Wer schon Aminosäuren supplementieren will, sollte EAAs statt BCAAs wählen."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "muskelaufbau",
+        "staerke": 0.55,
+        "kommentar": "Stimulieren MPS zuverlässig; relevanter Zusatznutzen aber v.a. bei niedriger Proteinzufuhr. Bei ausreichend Protein kaum Vorteil gegenüber normaler Ernährung."
+      },
+      {
+        "ziel": "muskelerhalt_diaet",
+        "staerke": 0.6,
+        "kommentar": "Im Kaloriendefizit steigt der EAA-Bedarf; freie EAAs können helfen, die anabole Sensitivität und Muskelmasse zu erhalten."
+      },
+      {
+        "ziel": "alter_sarkopenie",
+        "staerke": 0.65,
+        "kommentar": "Bei anaboler Resistenz im Alter sinnvoll – ein höherer Leucinanteil ist nötig, um die MPS auszulösen. Funktioneller Nutzen teils auch ohne Training."
+      },
+      {
+        "ziel": "regeneration",
+        "staerke": 0.4,
+        "kommentar": "Können die Erholung unterstützen; bei ausreichender Gesamtproteinzufuhr ist der Zusatzeffekt begrenzt."
+      },
+      {
+        "ziel": "vegan_proteinqualitaet",
+        "staerke": 0.5,
+        "kommentar": "Bei pflanzlicher Ernährung mit teils unvollständigem Aminosäureprofil können EAAs gezielt Lücken füllen."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medizinisch",
+        "wert": "phenylketonurie",
+        "schwere": "hart",
+        "hinweis": "EAA-Präparate enthalten Phenylalanin. Bei Phenylketonurie (PKU, angeborene Stoffwechselstörung) sind sie kontraindiziert."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "nieren_lebererkrankung",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei fortgeschrittener Nieren- oder Lebererkrankung muss die Aminosäure-/Proteinzufuhr ärztlich gesteuert werden. Nicht in Eigenregie hochdosieren."
+      },
+      {
+        "art": "nutzen",
+        "wert": "ausreichende_proteinzufuhr",
+        "schwere": "vorsichtig",
+        "hinweis": "Keine gesundheitliche Gefahr, aber: Bei bereits ausreichender Proteinzufuhr (≥1,6 g/kg) ist der Zusatznutzen minimal – das Geld ist meist besser in normale Proteinquellen investiert."
+      }
+    ],
+    "dosierung": {
+      "standard": "6–15 g freie EAAs pro Portion (mit hohem Leucinanteil)",
+      "bereich": {
+        "min": 6,
+        "max": 15,
+        "einheit": "g"
+      },
+      "obergrenze": "Die MPS-Stimulation plateaut bei ca. 15–18 g pro Portion; höhere Mengen bringen keinen Zusatznutzen. Die sichere Obergrenze für EAAs ist laut ISSN großzügig und wird durch übliche Supplementmengen bei Weitem nicht erreicht.",
+      "timing": "Rund ums Training oder zwischen den Mahlzeiten, wenn keine Proteinmahlzeit verfügbar ist. Bei Älteren auf ausreichend Leucin (ca. 2,5–3 g) pro Portion achten. Wichtig: Die Gesamtproteinzufuhr über den Tag ist der entscheidende Hebel – EAAs sind nur ergänzend.",
+      "quelle": "ISSN Position Stand EAA 2023 + Hypertrophie-Review 2025"
+    },
+    "population_spezifisch": {
+      "senioren_50plus": {
+        "relevant": true,
+        "staerke": 0.65,
+        "kommentar": "Hauptzielgruppe: anabole Resistenz erfordert mehr Leucin/EAAs pro Portion, um die MPS auszulösen. Funktioneller Nutzen auch bei begrenztem Training."
+      },
+      "diaet_kaloriendefizit": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "Im Defizit steigt der EAA-Bedarf; gezielte EAA-Zufuhr hilft, Muskelmasse zu schützen."
+      },
+      "vegetarier_veganer": {
+        "relevant": true,
+        "staerke": 0.5,
+        "kommentar": "Können bei pflanzlicher Ernährung Aminosäure-Lücken füllen; oft genügt aber schon eine clevere Kombination pflanzlicher Proteinquellen."
+      },
+      "freizeitsportler_ausreichend_protein": {
+        "relevant": true,
+        "staerke": 0.25,
+        "kommentar": "Bei guter Proteinzufuhr meist überflüssig – das Geld ist besser in Gesamtprotein (z.B. Whey oder Lebensmittel) investiert."
+      }
+    },
+    "warnhinweise": [
+      "EAAs sind der wirksame Anteil jedes hochwertigen Proteins – bei ausreichender Proteinzufuhr (≥1,6 g/kg) bringen sie kaum Zusatznutzen und sind oft Geldverschwendung.",
+      "EAAs sind den populäreren BCAAs überlegen: BCAAs allein (3 von 9 EAAs) können den Muskelaufbau nicht voll aufrechterhalten.",
+      "Mehr ist nicht besser: Die Muskelproteinsynthese plateaut bei ~15–18 g pro Portion.",
+      "Echter Nutzen vor allem in Sondersituationen: hohes Alter (anabole Resistenz), Kaloriendefizit, niedrige oder pflanzliche Proteinzufuhr, keine Proteinmahlzeit verfügbar.",
+      "Bei Phenylketonurie wegen des Phenylalanin-Gehalts kontraindiziert; bei Nieren-/Lebererkrankung ärztlich abklären.",
+      "Ein akut erhöhter MPS-Wert ist nicht gleichbedeutend mit proportional mehr langfristigem Muskelaufbau – Training und Gesamtproteinzufuhr bleiben entscheidend."
+    ],
+    "quellen": [
+      {
+        "titel": "International Society of Sports Nutrition Position Stand: Effects of essential amino acid supplementation on exercise and performance",
+        "autoren": "Ferrando AA, Wolfe RR, Hirsch KR, et al.",
+        "url": "https://www.tandfonline.com/doi/full/10.1080/15502783.2023.2263409",
+        "jahr": 2023,
+        "typ": "position-stand",
+        "doi": "10.1080/15502783.2023.2263409"
+      },
+      {
+        "titel": "Nutritional Supplements for Muscle Hypertrophy: Mechanisms and Morphology-Focused Evidence",
+        "autoren": "Various",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12655760/",
+        "jahr": 2025,
+        "typ": "systematic-review"
+      },
+      {
+        "titel": "Branched-chain amino acids and muscle protein synthesis in humans: myth or reality?",
+        "autoren": "Wolfe RR",
+        "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0184-9",
+        "jahr": 2017,
+        "typ": "review",
+        "doi": "10.1186/s12970-017-0184-9"
+      },
+      {
+        "titel": "Anabolic response to essential amino acid plus whey protein composition is greater than whey protein alone in young healthy adults",
+        "autoren": "Park S, Church DD, Azhar G, et al.",
+        "url": "https://link.springer.com/article/10.1186/s12970-020-0340-5",
+        "jahr": 2020,
+        "typ": "rct",
+        "doi": "10.1186/s12970-020-0340-5"
+      }
+    ]
+  },
+  "kollagen": {
+    "id": "kollagen",
+    "name": "Kollagen (Hydrolysierte Peptide)",
+    "kategorie": "gesundheit",
+    "ikon": "✨",
+    "kurz_beschreibung": "Stark beworbenes Protein für Haut, Gelenke und Bindegewebe. Die Evidenz ist gemischt und von Finanzierungsbias geprägt – bei Gelenkschmerzen am ehesten belegt, als Hautwunder überschätzt.",
+    "beschreibung": {
+      "was_ist_es": "Kollagen ist das häufigste Strukturprotein im Körper und Hauptbestandteil von Haut, Sehnen, Bändern, Knorpel und Knochen. Als Supplement wird es hydrolysiert (in kleine Peptide zerlegt) angeboten, damit es besser aufgenommen wird. Wichtig: Kollagen ist ein UNVOLLSTÄNDIGES Protein – ihm fehlen mehrere essentielle Aminosäuren (u.a. Tryptophan), weshalb es als Eiweißquelle für den Muskelaufbau minderwertig ist.",
+      "wie_wirkt_es": "Gegessenes Kollagen wird im Darm wie jedes Protein in Aminosäuren und kleine Peptide zerlegt – es wandert NICHT direkt in die Haut. Die Hypothese ist, dass bestimmte Kollagen-Peptide (z.B. Prolyl-Hydroxyprolin) als Signal wirken und die körpereigene Kollagensynthese in Haut und Bindegewebe anregen können. Dieser Mechanismus ist plausibel, aber noch nicht abschließend bewiesen.",
+      "warum_wichtig": "Mit dem Alter sinkt die körpereigene Kollagenproduktion (ca. 1–1,5 % pro Jahr), was zu Faltenbildung und nachlassender Hautelastizität beiträgt. Kollagen ist deshalb zum Milliardenmarkt geworden. Die ehrliche Einordnung ist hier besonders wichtig: Ein Teil der positiven Studien ist von Herstellern finanziert, und hochwertige, unabhängige Studien finden oft keinen Effekt. Der Nutzen ist also wahrscheinlich kleiner, als das Marketing suggeriert – am ehesten belegt bei Gelenkbeschwerden."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Lindert moderat Schmerzen bei Kniearthrose (WOMAC-Score) – am besten belegter Effekt",
+        "Verbessert in Meta-Analysen Hautelastizität & -feuchtigkeit – ABER stark vom Finanzierungsbias geprägt",
+        "Liefert Bausteine (Glycin, Prolin) für Bindegewebe; Sehnen-Nutzen plausibel, aber gemischt belegt"
+      ],
+      "ideal_fuer": "Menschen mit Gelenkbeschwerden/Arthrose, Personen mit Bindegewebs-/Sehnenbelastung (oft mit Vitamin C), Interesse an Hautgesundheit (mit realistischer Erwartung)",
+      "dosis": "2,5–15 g hydrolysierte Kollagenpeptide täglich; 10 g als sinnvoller Standard",
+      "vorsicht_bei": "Sehr sicher; als Eiweißquelle minderwertig (unvollständig), nicht als Muskelaufbau-Protein nutzen; Herkunft (Allergene Fisch/Rind)",
+      "mythen": [
+        "„Gegessenes Kollagen landet direkt in Haut und Gelenken“ – falsch. Es wird im Darm in Aminosäuren/Peptide zerlegt wie jedes Protein; eine direkte 'Auffüllung' findet nicht statt.",
+        "„Die Studien beweisen klar, dass Kollagen die Haut verjüngt“ – überzogen. Eine große Meta-Analyse 2025 fand, dass der Hauteffekt in unabhängigen und hochwertigen Studien verschwindet (Finanzierungsbias) – dieser Befund ist allerdings selbst umstritten. Unterm Strich: unsichere Evidenz, der Effekt ist wahrscheinlich kleiner als beworben.",
+        "„Kollagen ist ein hochwertiges Protein für den Muskelaufbau“ – falsch. Kollagen ist unvollständig (es fehlen essentielle Aminosäuren, u.a. Tryptophan); für Muskelaufbau ist Whey oder normales Protein klar überlegen.",
+        "„Kollagen lässt die Haare nachwachsen“ – nicht belegt. Haar- und Nagel-Claims sind beliebt im Marketing, aber wissenschaftlich kaum gestützt."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 60,
+      "review_typ": "meta-analyse",
+      "studien_anzahl": 40,
+      "konsens": "Meta-Analysen zeigen Effekte auf Haut & Gelenke, aber mit erheblichem Finanzierungs-/Qualitätsbias (Am J Med 2025); Gelenkschmerz-Evidenz am robustesten",
+      "effekt_groesse": [
+        {
+          "wert": 0,
+          "einheit": "kein Hauteffekt in unabhängigen Studien (Bias-Befund)",
+          "kontext": "Hauteffekt verschwindet in hochwertigen/unabhängigen Studien – Befund aber selbst umstritten",
+          "quelle": "Myung & Park 2025, Meta-Analyse 23 RCTs (n=1.474), Am J Med",
+          "erklaerung": {
+            "was_bedeutet": "Das ist der wichtigste und ehrlichste Befund zu Kollagen: Über ALLE 23 Studien gemittelt verbesserte Kollagen zwar Hautfeuchtigkeit, Elastizität und Falten signifikant. Trennt man die Studien aber nach Qualität und Geldgeber, zeigt sich das wahre Bild: In hochwertigen Studien UND in solchen ohne Finanzierung durch Hersteller verschwand der Effekt – kein signifikanter Nutzen. Die positiven Ergebnisse stammten überproportional aus herstellerfinanzierten und methodisch schwächeren Studien.",
+            "studie_zeigt": "Die Gesamtauswertung war positiv, aber die Subgruppenanalyse entlarvte einen starken Bias: Nur gesponserte und niedrigqualitative Studien zeigten Effekte, unabhängige und hochwertige nicht. Das bedeutet nicht, dass Kollagen sicher nichts bringt – aber der echte Hauteffekt ist wahrscheinlich deutlich kleiner als beworben oder nicht vorhanden.",
+            "studien_details": "Systematic Review und Meta-Analyse von 23 RCTs mit 1.474 Teilnehmern (Myung SK & Park Y, The American Journal of Medicine 2025), mit Subgruppenanalysen nach Finanzierungsquelle und Studienqualität.",
+            "zuverlaessigkeit": "Der Befund eines Finanzierungsbias ist ernst zu nehmen, die Meta-Analyse selbst ist aber umstritten: Branchennahe Kritiker (u.a. Collagen Stewardship Alliance) bemängeln, dass mehrere Studien bei der Einteilung 'industriefinanziert vs. unabhängig' falsch zugeordnet und die Qualitätskriterien nicht offengelegt wurden. Fazit: Der Hauteffekt ist wahrscheinlich kleiner als beworben und nicht eindeutig belegt – aber 'wirkt sicher nicht' lässt sich daraus auch nicht schließen. Ehrliche Einordnung: unsichere Evidenz."
+          }
+        },
+        {
+          "wert": -1.9,
+          "einheit": "WOMAC-Schmerzpunkte",
+          "kontext": "Moderate Schmerzlinderung bei Kniearthrose vs. Placebo (am besten belegter Effekt)",
+          "quelle": "Lin et al. 2023, Meta-Analyse RCTs Knie-OA + LMCP-RCT 2025",
+          "erklaerung": {
+            "was_bedeutet": "Bei Kniearthrose (Gelenkverschleiß) ist die Evidenz am robustesten: Kollagenpeptide linderten in Studien die Schmerzen messbar – gemessen am WOMAC-Score, einem etablierten Fragebogen zu Schmerz, Steifigkeit und Funktion. Der Effekt ist moderat und kein Ersatz für andere Arthrose-Therapien, aber als ergänzende, gut verträgliche Option plausibel.",
+            "studie_zeigt": "Eine Meta-Analyse randomisierter Studien fand eine signifikante Reduktion der WOMAC-Schmerzwerte unter Kollagenpeptiden gegenüber Placebo, bei guter Verträglichkeit. Eine aktuelle RCT (2025) mit niedermolekularen Peptiden bestätigte über 180 Tage eine stärkere Schmerzbesserung als Placebo.",
+            "studien_details": "Lin CR, Tsai SHL, et al., 'Analgesic efficacy of collagen peptide in knee osteoarthritis: a meta-analysis of randomized controlled trials' (Journal of Orthopaedic Surgery and Research, 2023, DOI 10.1186/s13018-023-04182-w), ergänzt um eine LMCP-RCT 2025.",
+            "zuverlaessigkeit": "Moderat – die Gelenk-Evidenz ist konsistenter als die Haut-Evidenz, aber die Studienzahl ist begrenzt und Effektgrößen variieren. Solider als der Haut-Anspruch."
+          }
+        },
+        {
+          "wert": 0,
+          "einheit": "unvollständiges Protein (Abgrenzung)",
+          "kontext": "Kollagen ist als Eiweißquelle minderwertig – kein Ersatz für hochwertiges Protein beim Muskelaufbau",
+          "quelle": "Proteinqualitäts-Grundlagen + German J Sports Med 2024",
+          "erklaerung": {
+            "was_bedeutet": "Das grenzt Kollagen klar von Whey/EAAs ab: Obwohl Kollagen ein Protein ist, fehlen ihm mehrere essentielle Aminosäuren – Tryptophan fehlt praktisch ganz, und der Gehalt an muskelaufbau-wichtigem Leucin ist niedrig. Für den Muskelaufbau ist Kollagen deshalb minderwertig und sollte nicht als Hauptproteinquelle gezählt werden.",
+            "studie_zeigt": "In sportwissenschaftlichen Übersichtsarbeiten wird Kollagen dem Bindegewebe (Sehnen, Bänder, Knorpel) zugeordnet, nicht dem Muskelaufbau. Für Muskelhypertrophie ist hochwertiges Protein (Whey, EAAs, Lebensmittel) klar überlegen – Kollagen verfolgt ein anderes Ziel.",
+            "studien_details": "Grundlagen der Proteinqualität (DIAAS/Aminosäureprofil) sowie systematische Übersicht zu Kollagenpeptiden und muskuloskelettaler Leistung (German Journal of Sports Medicine, 2024).",
+            "zuverlaessigkeit": "Hoch – das Aminosäureprofil von Kollagen ist gut dokumentiert. Praktische Konsequenz: Kollagen für Bindegewebe/Gelenke erwägen, für Muskelaufbau aber auf Whey/Protein setzen."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "gelenkgesundheit",
+        "staerke": 0.55,
+        "kommentar": "Am besten belegter Effekt: moderate Schmerzlinderung bei Kniearthrose (WOMAC). Ergänzende Option, kein Ersatz für etablierte Therapien."
+      },
+      {
+        "ziel": "hautgesundheit",
+        "staerke": 0.35,
+        "kommentar": "Meta-Analysen zeigen Effekte, die aber bei hochwertigen/unabhängigen Studien verschwinden (Finanzierungsbias). Realistische Erwartung nötig."
+      },
+      {
+        "ziel": "sehnen_bindegewebe",
+        "staerke": 0.4,
+        "kommentar": "Plausibel als Baustein für Sehnen/Bänder, oft mit Vitamin C kombiniert; Evidenz gemischt und uneinheitlich."
+      },
+      {
+        "ziel": "knochengesundheit",
+        "staerke": 0.35,
+        "kommentar": "Kleinere Studien deuten Nutzen für die Knochendichte (v.a. postmenopausale Frauen) an; Evidenz begrenzt."
+      },
+      {
+        "ziel": "muskelaufbau",
+        "staerke": 0.1,
+        "kommentar": "Ungeeignet als Muskelaufbau-Protein – unvollständiges Aminosäureprofil. Hier ist Whey/EAA klar überlegen."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "ernaehrung",
+        "wert": "kein_vollwertiges_protein",
+        "schwere": "vorsichtig",
+        "hinweis": "Kollagen ist ein unvollständiges Protein (fehlende essentielle Aminosäuren, u.a. Tryptophan). Nicht als hochwertige Eiweißquelle oder Muskelaufbau-Protein einrechnen."
+      },
+      {
+        "art": "allergie",
+        "wert": "herkunft_allergene",
+        "schwere": "vorsichtig",
+        "hinweis": "Kollagen stammt aus Rind, Schwein, Huhn oder Fisch. Bei entsprechenden Allergien (v.a. Fisch) auf die Quelle achten. Für Vegetarier/Veganer ungeeignet (kein pflanzliches Kollagen – nur 'Booster')."
+      },
+      {
+        "art": "erwartung",
+        "wert": "marketing_realismus",
+        "schwere": "vorsichtig",
+        "hinweis": "Keine gesundheitliche Gefahr, aber: Haut- und Haar-Versprechen sind oft überzogen. Bei Gelenkbeschwerden am ehesten ein realistischer Nutzen."
+      }
+    ],
+    "dosierung": {
+      "standard": "10 g hydrolysierte Kollagenpeptide täglich",
+      "bereich": {
+        "min": 2.5,
+        "max": 15,
+        "einheit": "g"
+      },
+      "obergrenze": "Keine etablierte toxische Grenze; Studien nutzen meist 2,5–15 g/Tag. Sehr gute Verträglichkeit, keine schweren Nebenwirkungen berichtet.",
+      "timing": "Tageszeit unwichtig, Aufteilung laut aktueller Evidenz nicht nötig. Für Sehnen/Bindegewebe wird oft die Einnahme mit Vitamin C ca. 30–60 min vor Belastung diskutiert. Geduld nötig: sichtbare/spürbare Effekte erst nach Wochen bis Monaten.",
+      "quelle": "Klinische RCTs (2,5–15 g) + Meta-Analysen zu Haut und Gelenken"
+    },
+    "population_spezifisch": {
+      "menschen_mit_arthrose": {
+        "relevant": true,
+        "staerke": 0.55,
+        "kommentar": "Stärkste Indikation: moderate Schmerzlinderung bei Kniearthrose. Gut verträgliche ergänzende Option."
+      },
+      "senioren_50plus": {
+        "relevant": true,
+        "staerke": 0.45,
+        "kommentar": "Mit dem Alter sinkt die körpereigene Kollagensynthese; potenzieller Nutzen für Gelenke und ggf. Knochendichte, Evidenz begrenzt."
+      },
+      "sportler_sehnenbelastung": {
+        "relevant": true,
+        "staerke": 0.4,
+        "kommentar": "Bei hoher Sehnen-/Bänderbelastung als Bindegewebs-Unterstützung diskutiert (oft mit Vitamin C); Evidenz uneinheitlich."
+      },
+      "frauen_hautgesundheit": {
+        "relevant": true,
+        "staerke": 0.35,
+        "kommentar": "Hauptzielgruppe des Marketings. Möglicher, aber wahrscheinlich kleiner Hauteffekt – wegen Finanzierungsbias mit realistischer Erwartung."
+      }
+    },
+    "warnhinweise": [
+      "Kritisch lesen: Ein erheblicher Teil der positiven Hautstudien ist herstellerfinanziert; hochwertige unabhängige Studien finden oft keinen Effekt.",
+      "Kollagen ist ein unvollständiges Protein – kein Ersatz für hochwertiges Eiweiß und ungeeignet für den Muskelaufbau.",
+      "Gegessenes Kollagen wird verdaut wie jedes Protein und landet nicht direkt in Haut oder Gelenken.",
+      "Am ehesten realistisch ist ein moderater Nutzen bei Gelenk-/Arthroseschmerzen; Haut- und vor allem Haar-Versprechen sind überzogen.",
+      "Auf die Herkunft achten (Rind/Schwein/Huhn/Fisch) – relevant bei Allergien und für religiöse/ethische Ernährungsformen; pflanzliches Kollagen gibt es nicht.",
+      "Geduld nötig: Falls Effekte auftreten, zeigen sie sich erst nach Wochen bis Monaten regelmäßiger Einnahme."
+    ],
+    "quellen": [
+      {
+        "titel": "Effects of Collagen Supplements on Skin Aging: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+        "autoren": "Myung SK, Park Y",
+        "url": "https://www.amjmed.com/article/S0002-9343(25)00283-9/fulltext",
+        "jahr": 2025,
+        "typ": "meta-analyse",
+        "doi": "10.1016/j.amjmed.2025.04.034"
+      },
+      {
+        "titel": "Analgesic efficacy of collagen peptide in knee osteoarthritis: a meta-analysis of randomized controlled trials",
+        "autoren": "Lin CR, Tsai SHL, Huang KY, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10505327/",
+        "jahr": 2023,
+        "typ": "meta-analyse",
+        "doi": "10.1186/s13018-023-04182-w"
+      },
+      {
+        "titel": "Collagen Peptide Supplementation and Musculoskeletal Performance: A Systematic Review and Meta-Analysis",
+        "autoren": "Various",
+        "url": "https://www.germanjournalsportsmedicine.com/archive/archive-2024/issue-5/collagen-peptide-supplementation-and-musculoskeletal-performance-a-systematic-review-and-meta-analysis/",
+        "jahr": 2024,
+        "typ": "meta-analyse"
+      },
+      {
+        "titel": "The effects of hydrolyzed collagen supplementation on skin hydration and elasticity: a systematic review and meta-analysis (26 RCTs)",
+        "autoren": "Various",
+        "url": "https://link.springer.com/article/10.1007/s44403-026-00046-3",
+        "jahr": 2023,
+        "typ": "meta-analyse"
+      }
+    ]
+  },
+  "koffein": {
+    "id": "koffein",
+    "name": "Koffein",
+    "kategorie": "performance",
+    "ikon": "☕",
+    "kurz_beschreibung": "Das am besten belegte Leistungs-Supplement überhaupt. Verbessert Ausdauer, Kraft und Konzentration zuverlässig – aber Dosis, Timing und die eigene Genetik entscheiden über Nutzen und Nebenwirkungen.",
+    "beschreibung": {
+      "was_ist_es": "Koffein (1,3,7-Trimethylxanthin) ist ein natürlich vorkommendes Stimulans aus Kaffee, Tee, Kakao und Guarana. Als Supplement gibt es es in wasserfreier Form (Kapseln, Tabletten, Pulver), die etwas zuverlässiger und schneller wirkt als Kaffee. Es ist eines der am gründlichsten erforschten Substanzen der Sporternährung.",
+      "wie_wirkt_es": "Koffein blockiert im Gehirn die Adenosin-Rezeptoren – Adenosin ist der Botenstoff, der Müdigkeit signalisiert. Dadurch sinkt das wahrgenommene Anstrengungs- und Müdigkeitsempfinden, die Wachheit steigt. Zusätzlich verbessert es die neuromuskuläre Funktion und die Schmerztoleranz. Das Ergebnis: Man kann härter und länger trainieren, bevor sich Erschöpfung anfühlt.",
+      "warum_wichtig": "Anders als die meisten Supplements wirkt Koffein akut, zuverlässig und über fast alle Sportarten hinweg – von Ausdauer über Sprint bis Kraft. Gleichzeitig ist es kein 'Gratis'-Effekt: Die optimale Dosis hängt vom Körpergewicht ab, die Wirkung von der individuellen Genetik (manche Menschen bauen Koffein schnell ab, andere langsam), und zu viel oder zu spät stört Schlaf und kann Angst/Herzklopfen auslösen. Richtig dosiert ist es das wirksamste legale Leistungsmittel – falsch eingesetzt ein Schlafräuber."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Verbessert die Ausdauerleistung zuverlässig um ca. 2–4 % (am konsistentesten belegter Effekt)",
+        "Steigert Kraft, Power, Sprung- und Sprintleistung (kleine bis moderate Effekte)",
+        "Erhöht Wachheit, Konzentration und Schmerztoleranz – auch bei Schlafmangel"
+      ],
+      "ideal_fuer": "Ausdauer- und Kraftsportler, Wettkampfsituationen, Phasen mit Müdigkeit/Schlafmangel, kognitive Leistungsanforderungen",
+      "dosis": "3–6 mg/kg Körpergewicht, ca. 60 min vor der Belastung; Tageslimit ~400 mg",
+      "vorsicht_bei": "Schlafstörungen, Angststörungen, Herzrhythmusstörungen/Bluthochdruck, Schwangerschaft (≤200 mg), langsame Metabolisierer (Genetik), bestimmte Medikamente",
+      "mythen": [
+        "„Viel hilft viel“ – falsch. Oberhalb von ~6 mg/kg (bzw. ≥9 mg/kg) gibt es keinen Zusatznutzen, aber deutlich mehr Nebenwirkungen.",
+        "„Gewohnheitstrinker haben keinen Leistungsvorteil mehr“ – überzogen. Die Toleranz betrifft v.a. die subjektiven Effekte; ein ergogener Effekt bleibt meist erhalten, auch bei regelmäßigem Konsum.",
+        "„Koffein entwässert und schadet der Hydration im Sport“ – überholt. In moderaten Dosen ist der harntreibende Effekt gering und bei Gewöhnten kaum relevant.",
+        "„Koffein wirkt bei jedem gleich“ – falsch. Genetische Unterschiede (v.a. das Enzym CYP1A2) führen zu bis zu 40-fach unterschiedlicher Abbaugeschwindigkeit; manche reagieren mit Angst/Schlafproblemen, andere kaum."
+      ]
+    },
+    "evidenz": {
+      "level": "A",
+      "score": 92,
+      "review_typ": "position-stand",
+      "studien_anzahl": 100,
+      "konsens": "ISSN Position Stand 2021 + zahlreiche Meta-Analysen; einer der best-belegten ergogenen Wirkstoffe überhaupt",
+      "effekt_groesse": [
+        {
+          "wert": 2.9,
+          "einheit": "% (mittlere Leistungssteigerung)",
+          "kontext": "Verbesserung der Ausdauer-/Zeitfahrleistung bei 3–6 mg/kg (Effektgröße ~0,22)",
+          "quelle": "ISSN Position Stand 2021 (Guest et al.) + Endurance-Meta-Analyse (46 Studien)",
+          "erklaerung": {
+            "was_bedeutet": "Koffein verbessert die Ausdauerleistung im Mittel um etwa 2–4 % (in einer Meta-Analyse 2,9 % mehr mittlere Leistung, 2,3 % schnellere Zeitfahrzeit). Das klingt klein, ist im Wettkampf aber oft entscheidend – bei einem 40-Minuten-Rennen sind 2–3 % rund eine Minute. Die Ausdauer ist der Bereich mit dem konsistentesten und größten Koffein-Effekt.",
+            "studie_zeigt": "Eine Meta-Analyse von 46 placebokontrollierten Studien fand bei moderaten Dosen (3–6 mg/kg) eine signifikante mittlere Leistungssteigerung von 2,9 ± 2,2 % und eine kleine Effektgröße (Cohen's d ≈ 0,22). Der Effekt ist gut reproduzierbar, variiert aber zwischen Personen.",
+            "studien_details": "International Society of Sports Nutrition Position Stand: Caffeine and Exercise Performance (Guest et al., JISSN 2021, DOI 10.1186/s12970-020-00383-4), gestützt auf eine Meta-Analyse von 46 RCTs zur Ausdauerleistung.",
+            "zuverlaessigkeit": "Sehr hoch – Koffein gehört zu den am gründlichsten erforschten Wirkstoffen der Sporternährung. Der Ausdauereffekt ist über Dutzende Studien hinweg konsistent."
+          }
+        },
+        {
+          "wert": 6,
+          "einheit": "mg/kg (Dosis-Obergrenze des Nutzens)",
+          "kontext": "Wirksamer Bereich 3–6 mg/kg; ab ~9 mg/kg kein Zusatznutzen, aber mehr Nebenwirkungen",
+          "quelle": "ISSN Position Stand 2021 + Minimaldosis-Meta-Analyse 2022",
+          "erklaerung": {
+            "was_bedeutet": "Es gibt ein klares Dosis-Fenster: 3–6 mg pro kg Körpergewicht (bei 80 kg also 240–480 mg) sind zuverlässig leistungssteigernd. Schon ~2 mg/kg können wirken. Höhere Dosen (ab ~9 mg/kg) bringen KEINEN zusätzlichen Leistungsgewinn, erhöhen aber deutlich das Risiko für Herzrasen, Zittern, Angst und Schlafstörungen. Mehr ist hier also nicht besser, sondern schlechter.",
+            "studie_zeigt": "Der ISSN Position Stand bestätigt 3–6 mg/kg als wirksamen Bereich und ≥9 mg/kg als nutzlos-mit-mehr-Nebenwirkungen. Eine Meta-Analyse 2022 zeigte zudem, dass schon sehr niedrige Dosen (0,9–2 mg/kg) kleine ergogene Effekte auf Kraft und Muskelausdauer haben können.",
+            "studien_details": "ISSN Position Stand 2021 (Guest et al.) sowie eine meta-analytische Untersuchung der Minimaldosis bei Krafttraining (2022, 12 Studien, 0,9–2 mg/kg).",
+            "zuverlaessigkeit": "Hoch – das Dosis-Wirkungs-Fenster und das Fehlen eines Hochdosis-Vorteils sind gut etabliert und praktisch sehr relevant."
+          }
+        },
+        {
+          "wert": 400,
+          "einheit": "mg/Tag (Sicherheitsgrenze)",
+          "kontext": "EFSA-Safe-Level: 400 mg/Tag, Einzeldosis 200 mg; Schwangere ≤200 mg (Sicherheitsbefund)",
+          "quelle": "EFSA Scientific Opinion on Caffeine 2015",
+          "erklaerung": {
+            "was_bedeutet": "Die europäische Behörde EFSA hat klare Sicherheitsgrenzen festgelegt: Für gesunde Erwachsene gelten bis zu 400 mg Koffein pro Tag (ca. 4–5 Tassen Kaffee) und Einzeldosen bis 200 mg als unbedenklich. Für Schwangere und Stillende gilt eine niedrigere Grenze von 200 mg/Tag. Wichtig fürs Training: Schon 100 mg nah an der Schlafenszeit können das Einschlafen verzögern und den Schlaf verkürzen.",
+            "studie_zeigt": "Die EFSA wertete über 300 Studien aus. Ergebnis: Bis 400 mg/Tag keine Sicherheitsbedenken für gesunde Erwachsene (auch bei intensivem Sport); 200 mg Einzeldosis unbedenklich, auch <2 h vor Belastung. Über 500 mg in einer Einzeldosis können Angst, Herzrasen und Zittern auslösen.",
+            "studien_details": "EFSA Scientific Opinion on the Safety of Caffeine (EFSA Journal 2015, DOI 10.2903/j.efsa.2015.4102), umfassende Risikobewertung für die allgemeine gesunde Bevölkerung und Untergruppen.",
+            "zuverlaessigkeit": "Sehr hoch – behördliche Risikobewertung auf breiter Datenbasis. Individuelle Verträglichkeit variiert aber stark (siehe Genetik/CYP1A2)."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "ausdauer",
+        "staerke": 0.85,
+        "kommentar": "Stärkster und konsistentester Effekt: +2–4 % Ausdauerleistung bei 3–6 mg/kg. Besonders gut belegt für Zeitfahr-/Dauerbelastungen."
+      },
+      {
+        "ziel": "kraft",
+        "staerke": 0.55,
+        "kommentar": "Kleine bis moderate Steigerung von Maximalkraft und Power; etwas variabler als der Ausdauereffekt."
+      },
+      {
+        "ziel": "sprint_power",
+        "staerke": 0.6,
+        "kommentar": "Verbessert Sprint-, Sprung- und Wurfleistung sowie schnelle Bewegungsgeschwindigkeit."
+      },
+      {
+        "ziel": "kognition_wachheit",
+        "staerke": 0.8,
+        "kommentar": "Steigert Aufmerksamkeit, Vigilanz und Reaktionsfähigkeit zuverlässig – auch bei Schlafmangel. Effekt ab ~75 mg."
+      },
+      {
+        "ziel": "muskelausdauer",
+        "staerke": 0.55,
+        "kommentar": "Verzögert die Ermüdung bei wiederholten Belastungen; Effekte über Studien hinweg etwas uneinheitlich."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medizinisch",
+        "wert": "herzrhythmus_blutdruck",
+        "schwere": "hart",
+        "hinweis": "Bei Herzrhythmusstörungen, schwer einstellbarem Bluthochdruck oder bestimmten Herzerkrankungen kann Koffein gefährlich sein. Vor regelmäßiger Hochdosis-Nutzung ärztlich abklären."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "angststoerung_schlaf",
+        "schwere": "vorsichtig",
+        "hinweis": "Koffein kann Angst, Unruhe und Herzklopfen verstärken und den Schlaf empfindlich stören. Bei Angststörungen oder Schlafproblemen niedrig dosieren und nicht am Nachmittag/Abend einnehmen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "schwangerschaft_stillzeit",
+        "schwere": "vorsichtig",
+        "hinweis": "In Schwangerschaft und Stillzeit auf maximal 200 mg/Tag aus ALLEN Quellen begrenzen – der Fötus baut Koffein nur langsam ab."
+      },
+      {
+        "art": "genetik",
+        "wert": "langsame_metabolisierer",
+        "schwere": "vorsichtig",
+        "hinweis": "Das Enzym CYP1A2 bestimmt, wie schnell Koffein abgebaut wird – die Clearance variiert bis zu 40-fach. Langsame Metabolisierer (CYP1A2 C/C) reagieren stärker mit Nebenwirkungen und sollten geringer dosieren."
+      },
+      {
+        "art": "medikament",
+        "wert": "wechselwirkungen",
+        "schwere": "vorsichtig",
+        "hinweis": "Bestimmte Medikamente (einige Antibiotika wie Ciprofloxacin, orale Kontrazeptiva) verlangsamen den Koffeinabbau und verstärken die Wirkung. Bei Kombination Dosis reduzieren."
+      }
+    ],
+    "dosierung": {
+      "standard": "3–6 mg/kg Körpergewicht ca. 60 min vor der Belastung",
+      "bereich": {
+        "min": 3,
+        "max": 6,
+        "einheit": "mg/kg"
+      },
+      "obergrenze": "EFSA-Safe-Level: 400 mg/Tag (Einzeldosis 200 mg) für gesunde Erwachsene; Schwangere/Stillende ≤200 mg/Tag. Sport-Dosen ≥9 mg/kg bringen keinen Zusatznutzen, nur mehr Nebenwirkungen.",
+      "timing": "Wasserfreies Koffein (Kapsel/Tablette) ca. 60 min vor der Belastung; aus Kaffee etwas variabler. Nicht innerhalb von ~6–8 h vor dem Schlafengehen, da Koffein den Schlaf nachweislich stört. Bei Gewohnheitskonsum bleibt der Leistungseffekt meist erhalten.",
+      "quelle": "ISSN Position Stand 2021 (Guest et al.) + EFSA Scientific Opinion 2015"
+    },
+    "population_spezifisch": {
+      "ausdauersportler": {
+        "relevant": true,
+        "staerke": 0.85,
+        "kommentar": "Hauptzielgruppe: konsistenter +2–4 %-Effekt auf die Ausdauerleistung, auch in Hitze und Höhe gut belegt."
+      },
+      "kraftsportler": {
+        "relevant": true,
+        "staerke": 0.55,
+        "kommentar": "Moderate Effekte auf Kraft/Power; nützlich als Pre-Workout, auf Schlaf-Timing achten."
+      },
+      "schwangere_stillende": {
+        "relevant": true,
+        "staerke": 0.2,
+        "kommentar": "Strikte Begrenzung auf ≤200 mg/Tag aus allen Quellen; verlangsamter fötaler Koffeinabbau."
+      },
+      "schlafsensible_aengstliche": {
+        "relevant": true,
+        "staerke": 0.3,
+        "kommentar": "Genetisch bedingt (ADORA2A/CYP1A2) reagieren manche stark mit Angst und Schlafstörungen – niedrig dosieren, früh am Tag."
+      }
+    },
+    "warnhinweise": [
+      "Mehr ist nicht besser: Der Nutzen plateaut bei ~6 mg/kg; höhere Dosen bringen nur Nebenwirkungen (Herzrasen, Zittern, Angst, Schlafstörungen).",
+      "Timing ist entscheidend: Koffein am Nachmittag/Abend stört nachweislich den Schlaf – und schlechter Schlaf untergräbt jeden Leistungsvorteil.",
+      "Individuelle Genetik (CYP1A2) bestimmt Abbau und Verträglichkeit – die Clearance variiert bis zu 40-fach. Eigene Reaktion beobachten und Dosis anpassen.",
+      "Reines Koffeinpulver ist gefährlich: Schon kleine Mengenfehler können toxisch sein. Auf abgemessene Kapseln/Tabletten setzen, nicht auf loses Pulver.",
+      "EFSA-Grenze beachten: max. 400 mg/Tag (Schwangere/Stillende 200 mg) aus ALLEN Quellen – Kaffee, Tee, Energydrinks und Supplemente zusammenzählen.",
+      "Bei Herzerkrankungen, Bluthochdruck oder Angststörungen vor regelmäßiger Nutzung ärztlich abklären."
+    ],
+    "quellen": [
+      {
+        "titel": "International Society of Sports Nutrition Position Stand: Caffeine and Exercise Performance",
+        "autoren": "Guest NS, VanDusseldorp TA, Nelson MT, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7777221/",
+        "jahr": 2021,
+        "typ": "position-stand",
+        "doi": "10.1186/s12970-020-00383-4"
+      },
+      {
+        "titel": "Scientific Opinion on the Safety of Caffeine",
+        "autoren": "EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA)",
+        "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4102",
+        "jahr": 2015,
+        "typ": "position-stand",
+        "doi": "10.2903/j.efsa.2015.4102"
+      },
+      {
+        "titel": "Exploring the minimum ergogenic dose of caffeine on resistance exercise performance: A meta-analytic approach",
+        "autoren": "Various",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S089990072200017X",
+        "jahr": 2022,
+        "typ": "meta-analyse"
+      },
+      {
+        "titel": "Effects of acute caffeine intake on muscular power during resistance exercise: a systematic review and meta-analysis",
+        "autoren": "Various",
+        "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1686283/full",
+        "jahr": 2025,
+        "typ": "meta-analyse"
+      }
+    ]
+  },
+  "eisen": {
+    "id": "eisen",
+    "name": "Eisen",
+    "kategorie": "gesundheit",
+    "ikon": "🩸",
+    "kurz_beschreibung": "Essentielles Spurenelement für Sauerstofftransport und Energie. Mangel ist weltweit die häufigste Nährstoffunterversorgung – aber Eisen sollte man nur bei nachgewiesenem Bedarf supplementieren, nie blind.",
+    "beschreibung": {
+      "was_ist_es": "Eisen ist ein essentielles Spurenelement und zentraler Bestandteil von Hämoglobin (dem roten Blutfarbstoff) und Myoglobin. Es transportiert Sauerstoff im Blut und in den Muskeln und ist an der Energiegewinnung beteiligt. In der Nahrung kommt es als gut verfügbares Häm-Eisen (Fleisch, Fisch) und als schlechter verwertbares Nicht-Häm-Eisen (Pflanzen) vor. Als Supplement gibt es verschiedene Salze (z.B. Eisensulfat, -bisglycinat).",
+      "wie_wirkt_es": "Eisen ermöglicht den Sauerstofftransport von der Lunge zu allen Geweben. Fehlt Eisen, kann der Körper nicht genug funktionsfähige rote Blutkörperchen bilden – die Folge ist eine Eisenmangelanämie mit Müdigkeit, Leistungsabfall, Blässe und Kurzatmigkeit. Die Aufnahme im Darm wird über das Hormon Hepcidin streng reguliert: Nach einer Eisendosis steigt Hepcidin und blockiert die Aufnahme weiterer Dosen für etwa 24 Stunden – ein Mechanismus, der die optimale Einnahmestrategie bestimmt.",
+      "warum_wichtig": "Eisenmangel ist der häufigste Nährstoffmangel weltweit und betrifft besonders menstruierende Frauen, Schwangere, Veganer/Vegetarier (Nicht-Häm-Eisen) und Ausdauersportler (Verluste über Schweiß, Fußsohlen-Hämolyse, Magen-Darm). Gleichzeitig ist Eisen eines der wenigen Supplemente, bei denen ZUVIEL ernsthaft gefährlich ist – der Körper kann überschüssiges Eisen nicht aktiv ausscheiden. Deshalb gilt die eiserne Regel: Eisen nur bei nachgewiesenem Mangel (Bluttest) supplementieren, nie vorsorglich ins Blaue hinein."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Behebt Eisenmangel und -anämie: mehr Energie, weniger Müdigkeit, bessere Leistungsfähigkeit",
+        "Verbessert bei Sportlerinnen mit niedrigen Speichern die Ausdauerleistung (bei Mangel um 2–20 %)",
+        "Alternate-Day-Dosierung erhöht die Aufnahme um ca. 34 % und reduziert Nebenwirkungen"
+      ],
+      "ideal_fuer": "Menstruierende Frauen, Schwangere, Veganer/Vegetarier, Ausdauersportler, Menschen mit nachgewiesenem Mangel (niedriges Ferritin)",
+      "dosis": "Nur bei Mangel: 40–100 mg elementares Eisen, am besten jeden 2. Tag morgens nüchtern",
+      "vorsicht_bei": "OHNE Bluttest nicht supplementieren! Hämochromatose, Kinder (Vergiftungsgefahr), Magen-Darm-Nebenwirkungen, Obergrenze 45 mg/Tag",
+      "mythen": [
+        "„Eisen gibt jedem mehr Energie“ – falsch. Mehr Energie entsteht nur bei tatsächlichem Mangel. Ohne Mangel bringt Eisen nichts und kann bei Überladung sogar schaden.",
+        "„Man kann Eisen vorsorglich nehmen, schadet ja nicht“ – gefährlich falsch. Der Körper kann Eisen nicht aktiv ausscheiden; bei Hämochromatose (ca. 1 von 200) oder Überdosierung drohen Organschäden. Nie ohne Bluttest.",
+        "„Täglich (oder zweimal täglich) ist am effektivsten“ – überholt. Hohe/häufige Dosen treiben das Hormon Hepcidin hoch und blockieren die Aufnahme; jeden zweiten Tag wird mehr aufgenommen und besser vertragen.",
+        "„Eisen am besten zum Essen, das ist schonender“ – teils kontraproduktiv. Kaffee, Tee, Milch und Vollkorn hemmen die Aufnahme stark; nüchtern mit etwas Vitamin C ist effektiver (Verträglichkeit abwägen)."
+      ]
+    },
+    "evidenz": {
+      "level": "A",
+      "score": 88,
+      "review_typ": "meta-analyse",
+      "studien_anzahl": 60,
+      "konsens": "Gut etabliert: NIH/IOM-Referenzwerte + Meta-Analysen zu Anämie, Sportleistung und Dosierungsstrategie (Stoffel et al.)",
+      "effekt_groesse": [
+        {
+          "wert": 34,
+          "einheit": "% (höhere Eisenaufnahme)",
+          "kontext": "Alternate-Day-Dosierung (jeden 2. Tag) erhöht die fraktionelle Aufnahme vs. tägliche Gabe",
+          "quelle": "Stoffel et al. 2020, Haematologica + ScienceDirect-RCT 2023",
+          "erklaerung": {
+            "was_bedeutet": "Das ist die wichtigste moderne Erkenntnis zur Eisen-Einnahme: Nimmt man Eisen nur jeden zweiten Tag statt täglich, wird ein deutlich größerer Anteil jeder Dosis aufgenommen (in Studien rund 34 % mehr). Der Grund ist das Hormon Hepcidin: Nach einer Eisendosis steigt es an und blockiert die Aufnahme für etwa 24 Stunden. Wartet man 48 Stunden, ist Hepcidin wieder niedrig und der Darm nimmt mehr auf.",
+            "studie_zeigt": "Über 14 Dosen verteilt ergab die Alternate-Day-Gabe eine etwa 34 % höhere fraktionelle Eisenaufnahme als die tägliche Gabe. Eine RCT 2023 bestätigte zudem: jeden zweiten Tag führte zu weniger Eisenmangel nach 6 Monaten UND deutlich weniger Magen-Darm-Nebenwirkungen bei gleicher Gesamtdosis.",
+            "studien_details": "Stable-Isotope-Studien von Stoffel/Moretti et al. (u.a. Haematologica 2020) an eisendefizienten Frauen mit und ohne Anämie sowie eine doppelblinde RCT mit 150 Frauen (ScienceDirect 2023). Gemessen wurde die fraktionelle Eisenaufnahme (FIA) und der Hepcidinspiegel.",
+            "zuverlaessigkeit": "Hoch – mechanistisch (Hepcidin) gut erklärt und in mehreren Studien reproduziert. Praxisrelevant: bessere Aufnahme bei weniger Nebenwirkungen."
+          }
+        },
+        {
+          "wert": 4,
+          "einheit": "% (Leistungsverlust durch Mangel)",
+          "kontext": "Niedrige Eisenspeicher senken die Ausdauerleistung; Supplementierung bei Mangel verbessert sie",
+          "quelle": "Systematischer Review elite Athletinnen 2023 + Keller et al. 2024",
+          "erklaerung": {
+            "was_bedeutet": "Eisenmangel bremst die Leistung, lange bevor eine echte Anämie vorliegt: Schon niedrige Eisenspeicher (Ferritin unter ~50 ng/ml) sind bei Sportlerinnen mit Müdigkeit und einer um etwa 3–4 % verringerten Ausdauerkapazität verbunden. Wird der Mangel durch Supplementierung behoben, verbessert sich die Leistung wieder – je nach Ausgangslage um 2 bis 20 %. Bei Menschen OHNE Mangel bringt Eisen dagegen keinen Leistungsgewinn.",
+            "studie_zeigt": "Ein systematischer Review zu Elite-Athletinnen (2023) berichtete einen Leistungsabfall von 3–4 % bei niedrigen Eisenspeichern und eine Verbesserung von 2–20 % unter ~100 mg/Tag elementarem Eisen. Eine Analyse von 1.190 Wettkampfsportlern (Keller 2024) fand bei knapp 20 % einen Eisenmangel (Frauen 36,9 %, Männer 10,6 %), mit halbierter Chance, den VO2max-Zielwert zu erreichen.",
+            "studien_details": "Systematischer Review zu Eisenstatus und Ausdauerleistung bei Athletinnen (2023) sowie Querschnittsanalyse von 1.190 Wettkampfsportlern (Keller et al., Nutrition 2024).",
+            "zuverlaessigkeit": "Hoch für die Aussage 'Mangel mindert Leistung, Korrektur hilft'. Die genaue Größenordnung variiert je nach Ausgangs-Ferritin und Sportart."
+          }
+        },
+        {
+          "wert": 45,
+          "einheit": "mg/Tag (Obergrenze)",
+          "kontext": "Tolerable Upper Intake Level; Eisen kann nicht aktiv ausgeschieden werden – Überladung ist gefährlich (Sicherheitsbefund)",
+          "quelle": "NIH ODS / IOM + StatPearls Iron Overload",
+          "erklaerung": {
+            "was_bedeutet": "Das ist der zentrale Sicherheitsbefund und der Grund, warum Eisen ein Sonderfall ist: Der Körper hat KEINEN aktiven Weg, überschüssiges Eisen wieder loszuwerden. Die Obergrenze liegt bei 45 mg/Tag (bezogen auf Magen-Darm-Nebenwirkungen). Bei der Erbkrankheit Hämochromatose (etwa 1 von 200 in der weißen Bevölkerung) oder bei Überdosierung lagert sich Eisen in Organen ein und schädigt Leber, Herz und Bauchspeicheldrüse.",
+            "studie_zeigt": "Quellen (NIH ODS, StatPearls) belegen: Chronische Eisenüberladung führt unbehandelt zu Leberzirrhose, Herzschäden und Diabetes. Akute Überdosierung ist besonders bei Kindern lebensgefährlich – Dosen von 200–250 mg elementarem Eisen pro kg Körpergewicht können tödlich sein, weshalb Präparate kindersicher verpackt sein müssen.",
+            "studien_details": "NIH Office of Dietary Supplements Iron Fact Sheet, IOM Dietary Reference Intakes (UL 45 mg) und StatPearls 'Iron Overload and Toxicity' (2025); Hämochromatose-Prävalenz und HFE-Genetik (C282Y).",
+            "zuverlaessigkeit": "Sehr hoch – die fehlende Ausscheidung und die Toxizität sind medizinisch gut etabliert. Daraus folgt die klare Regel: Eisen nur bei nachgewiesenem Mangel und idealerweise ärztlich begleitet."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "eisenmangel_anaemie",
+        "staerke": 0.95,
+        "kommentar": "Kernindikation: behebt Eisenmangel und Eisenmangelanämie zuverlässig. Voraussetzung ist ein nachgewiesener Mangel (Ferritin/Blutbild)."
+      },
+      {
+        "ziel": "energie_muedigkeit",
+        "staerke": 0.7,
+        "kommentar": "Bessert Müdigkeit und Erschöpfung – aber nur bei tatsächlich niedrigen Eisenspeichern (auch ohne manifeste Anämie). Ohne Mangel kein Effekt."
+      },
+      {
+        "ziel": "ausdauer",
+        "staerke": 0.6,
+        "kommentar": "Bei Sportlern mit Mangel verbessert die Korrektur die Ausdauerleistung deutlich; bei normalen Speichern kein Leistungsgewinn."
+      },
+      {
+        "ziel": "schwangerschaft",
+        "staerke": 0.75,
+        "kommentar": "Erhöhter Bedarf (RDA 27 mg); Mangel gefährdet Mutter und Kind. Supplementierung meist ärztlich begleitet."
+      },
+      {
+        "ziel": "kognition_konzentration",
+        "staerke": 0.45,
+        "kommentar": "Eisenmangel kann Konzentration und kognitive Leistung beeinträchtigen; Korrektur hilft bei Mangel."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "diagnostik",
+        "wert": "kein_bluttest",
+        "schwere": "hart",
+        "hinweis": "Eisen NICHT ohne nachgewiesenen Mangel (Ferritin/Blutbild) supplementieren. Vorsorgliche Einnahme ohne Bluttest kann bei unerkannter Hämochromatose oder Überladung schaden – der Körper kann Eisen nicht aktiv ausscheiden."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "haemochromatose",
+        "schwere": "hart",
+        "hinweis": "Bei Hämochromatose (erbliche Eisenüberladung, ca. 1 von 200) sind Eisen- UND Vitamin-C-Supplemente kontraindiziert. Behandlung erfolgt durch Aderlass."
+      },
+      {
+        "art": "sicherheit",
+        "wert": "kinder_vergiftung",
+        "schwere": "hart",
+        "hinweis": "Eisenpräparate sind eine häufige Ursache tödlicher Vergiftungen bei Kindern. Kindersicher und außer Reichweite aufbewahren; 200–250 mg/kg können tödlich sein."
+      },
+      {
+        "art": "nebenwirkung",
+        "wert": "magen_darm",
+        "schwere": "vorsichtig",
+        "hinweis": "Orales Eisen verursacht häufig Verstopfung, Übelkeit und Magenschmerzen. Niedrigere Dosen, jeden 2. Tag und Eisenbisglycinat verbessern die Verträglichkeit."
+      }
+    ],
+    "dosierung": {
+      "standard": "Bei Mangel 40–100 mg elementares Eisen, jeden 2. Tag morgens nüchtern",
+      "bereich": {
+        "min": 40,
+        "max": 100,
+        "einheit": "mg"
+      },
+      "obergrenze": "Tolerable Upper Intake Level: 45 mg/Tag (Erwachsene). RDA: Männer 8 mg, menstruierende Frauen 18 mg, Schwangere 27 mg, Frauen ab 51 J. 8 mg; Vegetarier ca. 1,8× RDA. Therapeutische Dosen bei Anämie nur ärztlich begleitet.",
+      "timing": "Morgens nüchtern (Hepcidin niedrig = beste Aufnahme), mit etwas Vitamin C. NICHT zusammen mit Kaffee, Tee, Milch/Kalzium oder Vollkorn (hemmen die Aufnahme). Jeden 2. Tag statt täglich verbessert Aufnahme und Verträglichkeit. Speicher füllen sich langsam – Kontrolle des Ferritins nach ca. 8–12 Wochen.",
+      "quelle": "NIH Office of Dietary Supplements + Stoffel et al. (Dosierungsstrategie)"
+    },
+    "population_spezifisch": {
+      "menstruierende_frauen": {
+        "relevant": true,
+        "staerke": 0.85,
+        "kommentar": "Höchstes Mangelrisiko durch Menstruationsverluste (RDA 18 mg). Bei Müdigkeit Ferritin prüfen lassen."
+      },
+      "vegetarier_veganer": {
+        "relevant": true,
+        "staerke": 0.75,
+        "kommentar": "Nur Nicht-Häm-Eisen mit geringerer Bioverfügbarkeit; Bedarf ca. 1,8× RDA. Kombination mit Vitamin C verbessert die Aufnahme."
+      },
+      "ausdauersportler": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "Erhöhtes Risiko (Schweiß, Fußsohlen-Hämolyse, GI-Verluste); knapp 20 % der Wettkampfsportler betroffen, Frauen deutlich häufiger. Leistungsrelevant."
+      },
+      "schwangere": {
+        "relevant": true,
+        "staerke": 0.8,
+        "kommentar": "Stark erhöhter Bedarf (RDA 27 mg); Supplementierung meist Teil der Schwangerenvorsorge, ärztlich begleitet."
+      },
+      "maenner_postmenopausale_frauen": {
+        "relevant": true,
+        "staerke": 0.2,
+        "kommentar": "Niedriges Mangelrisiko und niedrigere RDA (8 mg). Supplementierung nur bei nachgewiesenem Mangel – sonst Überladungsrisiko."
+      }
+    },
+    "warnhinweise": [
+      "Die wichtigste Regel: Eisen nur bei nachgewiesenem Mangel (Bluttest mit Ferritin) supplementieren – niemals vorsorglich ins Blaue.",
+      "Der Körper kann überschüssiges Eisen nicht aktiv ausscheiden; Überladung schädigt Leber, Herz und Bauchspeicheldrüse.",
+      "Eisenpräparate kindersicher und außer Reichweite aufbewahren – sie sind eine häufige Ursache tödlicher Vergiftungen bei Kindern.",
+      "Jeden 2. Tag statt täglich einnehmen: bessere Aufnahme (Hepcidin-Effekt) und weniger Magen-Darm-Beschwerden.",
+      "Aufnahme-Hemmer meiden: Kaffee, Tee, Milch/Kalzium und Vollkorn nicht zeitgleich; Vitamin C fördert die Aufnahme.",
+      "Bei anhaltender Müdigkeit erst Ursache abklären lassen – nicht jeder Erschöpfungszustand ist ein Eisenmangel, und 'high Ferritin' kann auch Entzündung oder Überladung bedeuten."
+    ],
+    "quellen": [
+      {
+        "titel": "Iron - Health Professional Fact Sheet",
+        "autoren": "NIH Office of Dietary Supplements",
+        "url": "https://ods.od.nih.gov/factsheets/Iron-HealthProfessional/",
+        "jahr": 2024,
+        "typ": "position-stand"
+      },
+      {
+        "titel": "Iron absorption from supplements is greater with alternate day than with consecutive day dosing in iron-deficient anemic women",
+        "autoren": "Stoffel NU, Zeder C, Brittenham GM, Moretti D, Zimmermann MB",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7193469/",
+        "jahr": 2020,
+        "typ": "rct",
+        "doi": "10.3324/haematol.2019.220830"
+      },
+      {
+        "titel": "Alternate day versus consecutive day oral iron supplementation in iron-depleted women: a randomized double-blind placebo-controlled study",
+        "autoren": "Various",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2589537023004637",
+        "jahr": 2023,
+        "typ": "rct"
+      },
+      {
+        "titel": "Iron Overload and Toxicity",
+        "autoren": "StatPearls (NCBI Bookshelf)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK526131/",
+        "jahr": 2025,
+        "typ": "review"
+      },
+      {
+        "titel": "Iron status and endurance performance in female athletes: a systematic review",
+        "autoren": "Various",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/",
+        "jahr": 2023,
+        "typ": "systematic-review"
+      }
+    ]
+  },
+  "multivitamin": {
+    "id": "multivitamin",
+    "name": "Multivitamin",
+    "kategorie": "gesundheit",
+    "ikon": "💊",
+    "kurz_beschreibung": "Die meistverkaufte Supplement-Kategorie – und eine der am meisten überschätzten. Für gesunde, gut ernährte Menschen kaum belegter Nutzen; sinnvoll vor allem bei nachgewiesenen Mängeln oder in Risikogruppen.",
+    "beschreibung": {
+      "was_ist_es": "Ein Multivitamin (genauer: Multivitamin-Mineralstoff-Präparat, MVM) ist eine Kombination aus typischerweise 20+ Vitaminen und Mineralstoffen in einer Tablette oder Kapsel. Die Zusammensetzung variiert stark zwischen Produkten. Es wird als 'Ernährungsversicherung' vermarktet – die Idee, eventuelle Lücken in der Ernährung pauschal abzudecken.",
+      "wie_wirkt_es": "Ein Multivitamin liefert kleine bis moderate Mengen vieler Mikronährstoffe gleichzeitig. Bei einem tatsächlichen Mangel (oder erhöhtem Bedarf) kann es diesen ausgleichen und die davon abhängigen Körperfunktionen normalisieren. Bei bereits ausreichender Versorgung gibt es jedoch keinen Mechanismus, über den 'mehr' Mikronährstoffe die Gesundheit weiter verbessern würden – überschüssige wasserlösliche Vitamine werden ausgeschieden, fettlösliche können sich anreichern.",
+      "warum_wichtig": "Multivitamine sind die meistgekaufte Supplement-Kategorie und werden mit Gesundheits- und Langlebigkeitsversprechen beworben. Die ehrliche Einordnung ist hier zentral: Große, hochwertige Studien finden bei gesunden, gut ernährten Erwachsenen kaum einen Nutzen für Lebensdauer, Herz oder Krebs. Sinnvoll sind Multivitamine vor allem gezielt – bei nachgewiesenen Mängeln, bestimmten Lebensphasen oder Risikogruppen. Als Ersatz für eine gute Ernährung taugen sie nicht."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Gleichen Mikronährstoff-Lücken bei Mangel oder erhöhtem Bedarf zuverlässig aus",
+        "Möglicher kleiner Nutzen für das Gedächtnis bei Älteren (COSMOS-Studien – aber umstritten)",
+        "Bei gesunden, gut ernährten Erwachsenen: kein belegter Nutzen für Lebensdauer, Herz oder Krebs"
+      ],
+      "ideal_fuer": "Menschen mit nachgewiesenen Mängeln, einseitiger Ernährung, Risikogruppen (Ältere, Schwangere, nach Magen-OP, bestimmte Erkrankungen/Medikamente), Phasen geringer Nahrungsaufnahme",
+      "dosis": "1 Tablette täglich nach Bedarf; auf moderate Dosierungen und KEIN Beta-Carotin (Raucher) achten",
+      "vorsicht_bei": "Raucher (Beta-Carotin → Lungenkrebsrisiko), Überdosierung fettlöslicher Vitamine (A, E), als Ersatz für gesunde Ernährung ungeeignet",
+      "mythen": [
+        "„Ein Multivitamin ist eine Lebensversicherung / lässt dich länger leben“ – falsch. Die bisher größte Analyse (390.000 Erwachsene, 20 Jahre) fand KEINE niedrigere Sterblichkeit – eher das Gegenteil.",
+        "„Mehr Mikronährstoffe sind immer besser“ – falsch. Ohne Mangel bringt zusätzliche Zufuhr keinen Vorteil; manche Bestandteile (Beta-Carotin, hohe Vitamin-A-/E-Dosen) können sogar schaden.",
+        "„Ein Multivitamin gleicht eine schlechte Ernährung aus“ – falsch. Es liefert isolierte Nährstoffe, aber nicht die Ballaststoffe, sekundären Pflanzenstoffe und das Zusammenspiel echter Lebensmittel.",
+        "„Es schadet ja nicht, also nehme ich es vorsorglich“ – meist überflüssig und nicht völlig risikofrei (z.B. Beta-Carotin bei Rauchern). Gezielt bei Bedarf schlägt pauschal für alle."
+      ]
+    },
+    "evidenz": {
+      "level": "C",
+      "score": 45,
+      "review_typ": "meta-analyse",
+      "studien_anzahl": 90,
+      "konsens": "USPSTF 2022 (84 RCTs): unzureichende Evidenz für Prävention; NIH/NCI 2024 (390.000 Personen): kein Mortalitätsvorteil. Kognitionssignal (COSMOS) positiv, aber umstritten.",
+      "effekt_groesse": [
+        {
+          "wert": 0,
+          "einheit": "kein Mortalitätsvorteil",
+          "kontext": "Tägliche Multivitamin-Einnahme senkt bei gesunden Erwachsenen die Sterblichkeit nicht (großer Sicherheits-/Nutzen-Befund)",
+          "quelle": "NIH/NCI 2024, JAMA Network Open (n=390.124, >20 Jahre)",
+          "erklaerung": {
+            "was_bedeutet": "Das ist der ernüchternde Kernbefund: In der bislang größten und längsten Auswertung – fast 400.000 gesunde US-Erwachsene über mehr als 20 Jahre – hatten regelmäßige Multivitamin-Nutzer KEIN geringeres Sterberisiko als Nicht-Nutzer. Die verbreitete Vorstellung vom Multivitamin als 'Lebensverlängerer' wird damit nicht gestützt.",
+            "studie_zeigt": "Es gab keinen Überlebensvorteil; in der frühen Phase zeigte sich sogar ein leicht (4 %) höheres Sterberisiko bei Multivitamin-Nutzern. Die Forscher führen das am ehesten auf statistische Verzerrungen zurück (z.B. dass kränkere Menschen häufiger zu Multivitaminen greifen), nicht auf einen echten Schaden. Klare Botschaft: kein Langlebigkeitsnutzen für Gesunde.",
+            "studien_details": "Gepoolte Analyse von drei großen prospektiven US-Kohorten mit 390.124 generell gesunden Erwachsenen, über 20 Jahre nachverfolgt (National Cancer Institute / NIH, JAMA Network Open 2024), adjustiert für Lebensstil- und demografische Faktoren.",
+            "zuverlaessigkeit": "Sehr hoch – enorme Stichprobe, lange Nachbeobachtung, sorgfältige Bias-Kontrolle. Deckt sich mit der USPSTF-Bewertung von 2022 (unzureichende Evidenz für einen Nutzen)."
+          }
+        },
+        {
+          "wert": 1.8,
+          "einheit": "Jahre (verlangsamtes kognitives Altern)",
+          "kontext": "Möglicher Gedächtnis-/Kognitionsnutzen bei Älteren – einziges positives Signal, aber umstritten",
+          "quelle": "COSMOS-Mind & COSMOS-Web 2023 (RCTs, >3.500 bzw. 2.262 Ältere)",
+          "erklaerung": {
+            "was_bedeutet": "Das ist der einzige Bereich mit positiven Studiendaten: In den COSMOS-Studien schnitten Ältere (ab 60–65 Jahren), die drei Jahre lang täglich ein Multivitamin nahmen, bei Gedächtnis- und Denktests besser ab als die Placebogruppe. Die Forscher schätzten den Effekt auf ein um rund 60 % verlangsamtes kognitives Altern, was etwa 1,8 Jahren über die Studiendauer entspricht (eine Teilstudie nannte sogar 3,1 Jahre).",
+            "studie_zeigt": "Mehrere COSMOS-Teilstudien zeigten konsistent eine Gedächtnisverbesserung. ABER: Frühere große Studien (Age-Related Eye Disease Study, Women's Health Study, PREADViSE) fanden KEINEN kognitiven Nutzen einzelner Vitamine, und Kritiker vermuten, dass der COSMOS-Effekt teils auf der Korrektur unentdeckter Mängel beruht. Der Effekt gilt als vielversprechend, aber noch bestätigungsbedürftig.",
+            "studien_details": "COSMOS-Mind (n=2.262, Alzheimer's & Dementia 2023) und COSMOS-Web (n=3.562, Am J Clin Nutr 2023), randomisierte, placebokontrollierte Teilstudien der COcoa Supplement and Multivitamin Outcomes Study mit jährlichen bzw. webbasierten kognitiven Tests.",
+            "zuverlaessigkeit": "Moderat – mehrere RCTs in dieselbe Richtung, aber im Widerspruch zu älteren Studien und mit der offenen Frage, ob es Mangelkorrektur oder echter Zusatznutzen ist. Von den Autoren selbst als bestätigungsbedürftig eingestuft."
+          }
+        },
+        {
+          "wert": 1.2,
+          "einheit": "Odds Ratio (Lungenkrebs durch Beta-Carotin)",
+          "kontext": "Bestimmte Bestandteile können schaden: Beta-Carotin erhöht bei Risikogruppen das Lungenkrebsrisiko (Sicherheitsbefund)",
+          "quelle": "USPSTF/JAMA 2022, Meta-Analyse (Beta-Carotin: 4 RCTs, n=94.830)",
+          "erklaerung": {
+            "was_bedeutet": "Das ist der wichtigste Sicherheitsbefund: 'Viele Vitamine' ist nicht automatisch harmlos. Beta-Carotin (eine Vitamin-A-Vorstufe, in manchen Präparaten enthalten) erhöhte in Studien das Lungenkrebsrisiko deutlich – besonders bei Rauchern und Asbest-Exponierten (Odds Ratio 1,20) – und auch die kardiovaskuläre Sterblichkeit (OR 1,10). Deshalb rät die USPSTF aktiv von Beta-Carotin zur Prävention ab.",
+            "studie_zeigt": "Die USPSTF kam mit moderater Sicherheit zum Schluss, dass die Schäden von Beta-Carotin den Nutzen überwiegen und dass Vitamin E keinen Netto-Nutzen bringt. Für Multivitamine insgesamt war die Evidenz 'unzureichend'. Eine kleine Senkung der Krebsinzidenz (OR 0,93) wurde zwar beobachtet, aber mit erheblichen Einschränkungen.",
+            "studien_details": "Systematische Evidenzübersicht für die US Preventive Services Task Force (JAMA 2022), 84 Studien mit insgesamt 739.803 Teilnehmern; Beta-Carotin-Analyse über 4 RCTs (n=94.830), CVD-Mortalität über 5 RCTs (n=94.506).",
+            "zuverlaessigkeit": "Sehr hoch für den Beta-Carotin-Schaden – konsistent über mehrere große RCTs und Grundlage offizieller Empfehlungen. Praktische Konsequenz: Raucher sollten Beta-Carotin-haltige Präparate meiden."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "mangelausgleich",
+        "staerke": 0.7,
+        "kommentar": "Sinnvoll bei nachgewiesenen Mängeln oder erhöhtem Bedarf. Gezielte Einzelsupplemente sind oft passender als ein pauschales Kombipräparat."
+      },
+      {
+        "ziel": "kognition_alter",
+        "staerke": 0.4,
+        "kommentar": "Positives, aber umstrittenes Signal aus den COSMOS-Studien für Ältere. Vielversprechend, noch bestätigungsbedürftig."
+      },
+      {
+        "ziel": "allgemeine_praevention",
+        "staerke": 0.2,
+        "kommentar": "Für Lebensdauer, Herz-Kreislauf und Krebs bei gesunden Erwachsenen kein belegter Nutzen (USPSTF, NIH/NCI)."
+      },
+      {
+        "ziel": "energie_wohlbefinden",
+        "staerke": 0.3,
+        "kommentar": "Subjektiv oft berichtet, objektiv nur bei Mangel begründbar. Bei guter Versorgung kein nachweisbarer Effekt."
+      },
+      {
+        "ziel": "gesundheit",
+        "staerke": 0.4,
+        "kommentar": "Als 'Sicherheitsnetz' bei unsicherer Ernährung vertretbar, aber kein Ersatz für echte Lebensmittel und kein universeller Gesundheitsgewinn."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medizinisch",
+        "wert": "raucher_beta_carotin",
+        "schwere": "hart",
+        "hinweis": "Raucher und Asbest-Exponierte sollten Beta-Carotin-haltige Präparate meiden – es erhöht das Lungenkrebsrisiko. Auf die Inhaltsstoffliste achten."
+      },
+      {
+        "art": "dosis",
+        "wert": "fettloesliche_ueberdosis",
+        "schwere": "vorsichtig",
+        "hinweis": "Fettlösliche Vitamine (A, E, teils D) können sich anreichern. Mehrere Präparate gleichzeitig oder hochdosierte Produkte können zu Überdosierung führen – Dosierungen addieren."
+      },
+      {
+        "art": "erwartung",
+        "wert": "kein_ernaehrungsersatz",
+        "schwere": "vorsichtig",
+        "hinweis": "Ein Multivitamin ersetzt keine ausgewogene Ernährung. Bei gesunden, gut ernährten Menschen ist der Nutzen minimal – das Geld ist meist besser in gute Lebensmittel investiert."
+      }
+    ],
+    "dosierung": {
+      "standard": "1 Tablette/Kapsel täglich (bedarfsorientiert)",
+      "bereich": {
+        "min": 1,
+        "max": 1,
+        "einheit": "Tablette/Tag"
+      },
+      "obergrenze": "Auf moderate Dosierungen achten (nahe 100 % des Tagesbedarfs, nicht ein Vielfaches). Beta-Carotin meiden (v.a. Raucher); fettlösliche Vitamine A und E nicht hochdosiert. Mehrere Präparate nicht unkontrolliert kombinieren.",
+      "timing": "Zu einer Mahlzeit (verbessert die Aufnahme fettlöslicher Vitamine, schont den Magen). Tageszeit unwichtig. Wichtiger als das Timing ist die grundsätzliche Frage, ob ein Multivitamin im individuellen Fall überhaupt nötig ist.",
+      "quelle": "USPSTF/JAMA 2022 + NIH Office of Dietary Supplements"
+    },
+    "population_spezifisch": {
+      "senioren_50plus": {
+        "relevant": true,
+        "staerke": 0.55,
+        "kommentar": "Höheres Risiko für Mikronährstoffmängel (Aufnahme, Appetit, Medikamente); zudem das positive Kognitionssignal aus COSMOS. Am ehesten begründete Zielgruppe."
+      },
+      "schwangerschaft": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "Spezielle Prä-/Schwangerschaftspräparate (v.a. Folsäure, Eisen, Jod) sind sinnvoll und empfohlen – aber gezielt, nicht als beliebiges Multivitamin."
+      },
+      "einseitige_ernaehrung_risikogruppen": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "Bei stark eingeschränkter Ernährung, nach Magen-OP oder bei bestimmten Erkrankungen/Medikamenten kann ein Multivitamin Lücken schließen."
+      },
+      "gesunde_gut_ernaehrte": {
+        "relevant": true,
+        "staerke": 0.15,
+        "kommentar": "Kein belegter Nutzen für Lebensdauer/Herz/Krebs. Geld meist besser in gute Ernährung investiert."
+      }
+    },
+    "warnhinweise": [
+      "Ein Multivitamin ist kein Langlebigkeits- oder Allheilmittel: Die größte Studie (390.000 Personen, 20 Jahre) fand keinen Überlebensvorteil.",
+      "'Pflanzlich/natürlich' bzw. 'viele Vitamine' heißt nicht harmlos: Beta-Carotin erhöht bei Rauchern das Lungenkrebsrisiko, hohe A-/E-Dosen können schaden.",
+      "Es ersetzt keine gute Ernährung – echte Lebensmittel liefern Ballaststoffe und sekundäre Pflanzenstoffe, die keine Pille nachbilden kann.",
+      "Gezielt schlägt pauschal: Bei einem konkreten Mangel ist ein Einzelpräparat (z.B. Vitamin D, B12, Eisen) meist sinnvoller als ein Kombiprodukt.",
+      "Dosierungen addieren sich: Wer mehrere Präparate kombiniert, riskiert Überdosierungen einzelner Bestandteile.",
+      "Das einzige vielversprechende Signal (Kognition bei Älteren) ist noch nicht bestätigt – keine überzogenen Erwartungen."
+    ],
+    "quellen": [
+      {
+        "titel": "Vitamin, Mineral, and Multivitamin Supplementation to Prevent Cardiovascular Disease and Cancer: US Preventive Services Task Force Recommendation Statement",
+        "autoren": "US Preventive Services Task Force; Mangione CM, Barry MJ, et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/35727271/",
+        "jahr": 2022,
+        "typ": "position-stand",
+        "doi": "10.1001/jama.2022.8970"
+      },
+      {
+        "titel": "Multivitamin Use and Mortality Risk in 3 Prospective US Cohorts",
+        "autoren": "Loftfield E, O'Connell CP, Abnet CC, et al. (NIH/NCI)",
+        "url": "https://www.cancer.gov/news-events/press-releases/2024/multivitamins-do-not-lower-risk-of-death",
+        "jahr": 2024,
+        "typ": "meta-analyse",
+        "doi": "10.1001/jamanetworkopen.2024.18729"
+      },
+      {
+        "titel": "Multivitamin Supplementation Improves Memory in Older Adults: A Randomized Clinical Trial (COSMOS-Web)",
+        "autoren": "Yeung LK, Alschuler DM, Wall M, et al.",
+        "url": "https://ajcn.nutrition.org/article/S0002-9165(23)66342-7/fulltext",
+        "jahr": 2023,
+        "typ": "rct",
+        "doi": "10.1016/j.ajcnut.2023.05.011"
+      },
+      {
+        "titel": "Impact of multivitamin-mineral and cocoa extract on incidence of mild cognitive impairment and dementia (COSMOS-Mind)",
+        "autoren": "Sachs BC, Williams BJ, et al.",
+        "url": "https://alz-journals.onlinelibrary.wiley.com/doi/10.1002/alz.13078",
+        "jahr": 2023,
+        "typ": "rct",
+        "doi": "10.1002/alz.13078"
       }
     ]
   }
