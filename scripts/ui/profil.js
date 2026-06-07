@@ -225,6 +225,59 @@ function oeffneWirkstoffPopup(eid, prio, a) {
   h += '</div>';
   h += '</div>';
 
+  // ══ NEU: WISSEN AUS WIRKSTOFFE_WISSEN ══════════════════════════════
+  // Nur einblenden wenn der Wirkstoff in der neuen Wissensbasis liegt
+  if (wissen) {
+
+    // ── "Warum für dich?" – personalisierte Begründung + Top-Effekte ──
+    var begruendung = baueBegruendung(wissen, a);
+    var topEffekte  = (wissen.evidenz && wissen.evidenz.effekt_groesse) || [];
+
+    if (begruendung || topEffekte.length > 0) {
+      h += '<div class="pw-wissen-box">';
+      h += '<div class="pw-wissen-titel">★ Warum für dich?</div>';
+
+      if (begruendung) {
+        h += '<div class="pw-wissen-begruendung">' + begruendung + '</div>';
+      }
+
+      // Top 2 Effekte (nur Wert + Kontext, keine Detail-Toggles)
+      if (topEffekte.length > 0) {
+        h += '<div class="pw-wissen-effekte-titel">Wissenschaftlich belegt:</div>';
+        h += '<ul class="pw-wissen-effekte-liste">';
+        topEffekte.slice(0, 2).forEach(function (eff) {
+          h += '<li>';
+          h +=   '<span class="pw-wissen-effekt-wert">' + eff.wert + ' ' + (eff.einheit || '') + '</span>';
+          h +=   '<span class="pw-wissen-effekt-text">' + eff.kontext + '</span>';
+          h += '</li>';
+        });
+        h += '</ul>';
+      }
+
+      // Guide-Link
+      h += '<button class="pw-wissen-guide-link" onclick="oeffneInGuide(\'' + eid + '\')">';
+      h +=   'Mehr Details im Guide';
+      h +=   '<span class="pw-wissen-pfeil">→</span>';
+      h += '</button>';
+
+      h += '</div>';
+    }
+
+    // ── "Vorsicht bei" – nur wenn der User echte Risiken hat ──
+    var vorsichtHinweise = filterVorsichtFuerUser(wissen, a);
+    if (vorsichtHinweise.length > 0) {
+      h += '<div class="pw-vorsicht-box">';
+      h += '<div class="pw-vorsicht-titel">⚠️ Vorsicht bei dir</div>';
+      h += '<ul class="pw-vorsicht-liste">';
+      vorsichtHinweise.forEach(function (k) {
+        h += '<li>' + k.hinweis + '</li>';
+      });
+      h += '</ul>';
+      h += '</div>';
+    }
+  }
+  // ═════════════════════════════════════════════════════════════════════
+
   h += '<div class="pw-popup-produkte-titel">Verfügbare Produkte</div>';
   h += '<div class="pw-popup-produkte">';
 
@@ -297,4 +350,133 @@ function schliessePopup() {
     var overlay = document.getElementById('pw-overlay');
     if (overlay) overlay.style.display = 'none';
   }, 260);
+}
+
+
+// ══════════════════════════════════════════════════════════════
+// WISSEN-HELFER (für "Warum für dich?" Sektion)
+// ══════════════════════════════════════════════════════════════
+
+// ── BEGRÜNDUNG BAUEN ──
+// Matcht die Indikationen des Wirkstoffs mit den User-Antworten und
+// erstellt einen lesbaren Satz wie "Du willst Muskelaufbau und trainierst Kraft 4×/Wo".
+//
+// User-Antworten-Struktur (AW):
+//   intro          'A'-'E'   Alter (<18, 18-25, 26-35, 36-45, >45)
+//   geschlecht     'A'-'C'   Männlich, Weiblich, Keine Angabe
+//   training       'A'-'E'   Kraft 4+/Wo, Kraft 2-3/Wo, Cardio, Mix, Wenig
+//   erfahrung      'A'-'C'   Anfänger, Fortgeschritten, Profi
+//   ziele          ['A'..'F'] Muskelaufbau, Fettabbau, Energie, Ausdauer, Regeneration, Gesundheit
+//   ernaehrung     'A'-'D'   Omnivor, Flexitarisch, Vegetarisch, Vegan
+//   unvertraeglichkeiten ['A'..'E']  Keine, Laktose, Fisch, Gluten, Soja
+//   medikamente    ['A'..'G']  Keine, Blutverd., Schilddr., BluthHD, Niere, Diabetes, Antidepressiva
+//
+// Returns: HTML-String oder leerer String wenn nichts matcht.
+function baueBegruendung(wissen, a) {
+  if (!wissen.indikationen || !a) return '';
+
+  // Mapping: Welche User-Antworten passen zu welchen Indikations-Zielen?
+  // Format: { ziel-id: function(antworten) → returns true wenn passend }
+  var matcher = {
+    'muskelaufbau':           function (a) { return a.ziele && a.ziele.indexOf('A') >= 0; },
+    'kraftsteigerung':        function (a) { return a.training === 'A' || a.training === 'B'; },
+    'regeneration':           function (a) { return a.ziele && a.ziele.indexOf('E') >= 0; },
+    'fettabbau':              function (a) { return a.ziele && a.ziele.indexOf('B') >= 0; },
+    'fettabbau_muskelerhalt': function (a) { return a.ziele && a.ziele.indexOf('B') >= 0; },
+    'ausdauer_hochintensiv':  function (a) { return a.ziele && a.ziele.indexOf('D') >= 0; },
+    'sarkopenie_praevention': function (a) { return a.intro === 'D' || a.intro === 'E'; },
+    'knochengesundheit_frauen': function (a) { return a.geschlecht === 'B' && (a.intro === 'D' || a.intro === 'E'); },
+    'immunsystem':            function (a) { return a.ziele && a.ziele.indexOf('F') >= 0; },
+    'energie':                function (a) { return a.ziele && a.ziele.indexOf('C') >= 0; },
+    'gesundheit':             function (a) { return a.ziele && a.ziele.indexOf('F') >= 0; },
+    'vegan_vegetarisch':      function (a) { return a.ernaehrung === 'D' || a.ernaehrung === 'C'; },
+    'alter_ueber_50':         function (a) { return a.intro === 'E'; },
+  };
+
+  // Indikationen finden die auf den User passen, sortiert nach Stärke
+  var passende = wissen.indikationen
+    .filter(function (ind) {
+      var fn = matcher[ind.ziel];
+      return fn && fn(a) && (ind.staerke || 0) >= 0.6;  // nur starke Matches
+    })
+    .sort(function (x, y) { return (y.staerke || 0) - (x.staerke || 0); });
+
+  if (passende.length === 0) return '';
+
+  // Top 1-2 Begründungen als Bulletpoints
+  var html = '';
+  passende.slice(0, 2).forEach(function (ind) {
+    html += '<div class="pw-wissen-grund">';
+    html +=   '<span class="pw-wissen-grund-icon">✓</span>';
+    html +=   '<span>' + zielFreundlich(ind.ziel) + '</span>';
+    html += '</div>';
+  });
+
+  return html;
+}
+
+// ── ZIEL-LABEL freundlich formatieren ──
+function zielFreundlich(ziel) {
+  var labels = {
+    'muskelaufbau':              'Passt zu deinem Ziel: Muskelaufbau',
+    'kraftsteigerung':           'Du trainierst Kraft – ideal dafür',
+    'regeneration':              'Unterstützt deine Regeneration',
+    'fettabbau':                 'Passt zu deinem Ziel: Fettabbau',
+    'fettabbau_muskelerhalt':    'Schützt Muskelmasse in der Diät',
+    'ausdauer_hochintensiv':     'Wirkt bei deinem Ausdauer-Training',
+    'sarkopenie_praevention':    'Wichtig in deinem Alter zur Muskelerhaltung',
+    'knochengesundheit_frauen':  'Postmenopausal besonders relevant',
+    'immunsystem':               'Stärkt dein Immunsystem',
+    'energie':                   'Passt zu deinem Ziel: mehr Energie',
+    'gesundheit':                'Unterstützt deine allgemeine Gesundheit',
+    'vegan_vegetarisch':         'Medizinisch wichtig bei pflanzlicher Ernährung',
+    'alter_ueber_50':            'Erhöhter Bedarf in deiner Altersgruppe',
+  };
+  return labels[ziel] || ziel;
+}
+
+// ── KONTRAINDIKATIONEN für User filtern ──
+// Returns: Array der Kontraindikationen die für DIESEN User relevant sind
+function filterVorsichtFuerUser(wissen, a) {
+  if (!wissen.kontraindikationen || !a) return [];
+
+  // Hilfsfunktion: Prüft ob ein Wert in einem Array vorkommt (Quiz speichert als Array)
+  function hat(arr, wert) {
+    return Array.isArray(arr) && arr.indexOf(wert) >= 0;
+  }
+
+  // Mapping: Welche Kontraindikations-Werte passen zu welchen Quiz-Antworten?
+  // Quiz-Codes: medikamente B=Blutverd, C=Schilddr, D=BluthHD, E=Niere, F=Diabetes, G=Antidepressiva
+  // Quiz-Codes: unvertraeglichkeiten B=Laktose, C=Fisch, D=Gluten, E=Soja
+  var matcher = {
+    'niereninsuffizienz':        function (a) { return hat(a.medikamente, 'E'); },
+    'niereninsuffizienz_schwer': function (a) { return hat(a.medikamente, 'E'); },
+    'blutverduenner':            function (a) { return hat(a.medikamente, 'B'); },
+    'schilddruese':              function (a) { return hat(a.medikamente, 'C'); },
+    'bluthochdruck':             function (a) { return hat(a.medikamente, 'D'); },
+    'diabetes':                  function (a) { return hat(a.medikamente, 'F'); },
+    'antidepressiva':            function (a) { return hat(a.medikamente, 'G'); },
+    'milcheiweiss':              function (a) { return hat(a.unvertraeglichkeiten, 'B'); },
+    'laktose_intoleranz':        function (a) { return hat(a.unvertraeglichkeiten, 'B'); },
+    'fisch_schalentiere':        function (a) { return hat(a.unvertraeglichkeiten, 'C'); },
+    'soja':                      function (a) { return hat(a.unvertraeglichkeiten, 'E'); },
+  };
+
+  return wissen.kontraindikationen.filter(function (k) {
+    var fn = matcher[k.wert];
+    return fn && fn(a);
+  });
+}
+
+// ── GUIDE ÖFFNEN aus dem Popup heraus ──
+// Schließt das Popup und öffnet die Guide-Detail-Seite des Wirkstoffs.
+function oeffneInGuide(eid) {
+  schliessePopup();
+  // Kurz warten bis Popup-Animation durch ist, dann Guide öffnen
+  setTimeout(function () {
+    if (typeof guideOeffnen === 'function') guideOeffnen();
+    if (typeof guideOeffneDetail === 'function') {
+      setTimeout(function () { guideOeffneDetail(eid); }, 150);
+    }
+  }, 280);
 }

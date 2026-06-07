@@ -561,3 +561,163 @@
   white-space: nowrap;
   flex-shrink: 0;
 }
+
+
+/* ══════════════════════════════════════════════════════════════════════
+   WISSEN-BOX im Profil-Popup ("Warum für dich?")
+   Zeigt personalisierte Begründung + Top 2 Effekte + Guide-Link
+   ══════════════════════════════════════════════════════════════════════ */
+.pw-wissen-box {
+  background: linear-gradient(135deg, var(--orange-bg-soft), rgba(255, 255, 255, 0.02));
+  border: 1px solid var(--orange-border-s);
+  border-radius: var(--r);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.pw-wissen-titel {
+  font-family: var(--font-d);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--orange-l);
+  margin-bottom: 12px;
+}
+
+/* Personalisierte Begründungen mit Häkchen */
+.pw-wissen-begruendung {
+  margin-bottom: 12px;
+}
+
+.pw-wissen-grund {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+}
+
+.pw-wissen-grund-icon {
+  flex-shrink: 0;
+  color: var(--orange-l);
+  font-weight: 800;
+  margin-top: 1px;
+}
+
+/* Effekte-Liste */
+.pw-wissen-effekte-titel {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 8px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.pw-wissen-effekte-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+.pw-wissen-effekte-liste li {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 6px 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.pw-wissen-effekt-wert {
+  font-family: var(--font-d);
+  font-weight: 900;
+  color: var(--orange-l);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.pw-wissen-effekt-text {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Guide-Link – Button am Ende der Box */
+.pw-wissen-guide-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--r-sm);
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: left;
+  transition: background var(--t-fast), border-color var(--t-fast);
+}
+
+.pw-wissen-guide-link:hover,
+.pw-wissen-guide-link:active {
+  background: var(--orange-bg-soft);
+  border-color: var(--orange-border-s);
+}
+
+.pw-wissen-pfeil {
+  color: var(--orange-l);
+  font-size: 16px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+
+/* ══════════════════════════════════════════════════════════════════════
+   VORSICHT-BOX im Profil-Popup
+   Nur sichtbar wenn der User echte Risiken angegeben hat
+   ══════════════════════════════════════════════════════════════════════ */
+.pw-vorsicht-box {
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: var(--r);
+  padding: 14px 16px;
+  margin-bottom: 16px;
+}
+
+.pw-vorsicht-titel {
+  font-family: var(--font-d);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: rgba(239, 68, 68, 0.95);
+  margin-bottom: 10px;
+}
+
+.pw-vorsicht-liste {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pw-vorsicht-liste li {
+  padding: 4px 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.55;
+}
+
+.pw-vorsicht-liste li::before {
+  content: '•';
+  color: rgba(239, 68, 68, 0.7);
+  font-weight: 700;
+  margin-right: 8px;
+}
