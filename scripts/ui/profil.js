@@ -448,18 +448,36 @@ function filterVorsichtFuerUser(wissen, a) {
   // Mapping: Welche Kontraindikations-Werte passen zu welchen Quiz-Antworten?
   // Quiz-Codes: medikamente B=Blutverd, C=Schilddr, D=BluthHD, E=Niere, F=Diabetes, G=Antidepressiva
   // Quiz-Codes: unvertraeglichkeiten B=Laktose, C=Fisch, D=Gluten, E=Soja
+  // Quiz-Codes: ernaehrung A=Omnivor, B=Flexitarisch, C=Vegetarisch, D=Vegan
   var matcher = {
-    'niereninsuffizienz':        function (a) { return hat(a.medikamente, 'E'); },
-    'niereninsuffizienz_schwer': function (a) { return hat(a.medikamente, 'E'); },
-    'blutverduenner':            function (a) { return hat(a.medikamente, 'B'); },
-    'schilddruese':              function (a) { return hat(a.medikamente, 'C'); },
-    'bluthochdruck':             function (a) { return hat(a.medikamente, 'D'); },
-    'diabetes':                  function (a) { return hat(a.medikamente, 'F'); },
-    'antidepressiva':            function (a) { return hat(a.medikamente, 'G'); },
-    'milcheiweiss':              function (a) { return hat(a.unvertraeglichkeiten, 'B'); },
-    'laktose_intoleranz':        function (a) { return hat(a.unvertraeglichkeiten, 'B'); },
-    'fisch_schalentiere':        function (a) { return hat(a.unvertraeglichkeiten, 'C'); },
-    'soja':                      function (a) { return hat(a.unvertraeglichkeiten, 'E'); },
+    // Medikamente (Quiz-Frage: medikamente)
+    'niereninsuffizienz':         function (a) { return hat(a.medikamente, 'E'); },
+    'niereninsuffizienz_schwer':  function (a) { return hat(a.medikamente, 'E'); },
+    'nierenerkrankung':           function (a) { return hat(a.medikamente, 'E'); },  // alte ID, falls noch im JSON
+    'blutverduenner':             function (a) { return hat(a.medikamente, 'B'); },
+    'antikoagulantien':           function (a) { return hat(a.medikamente, 'B'); },
+    'schilddruese':               function (a) { return hat(a.medikamente, 'C'); },
+    'schilddruesenerkrankung_soja': function (a) { return hat(a.medikamente, 'C'); },
+    'bluthochdruck':              function (a) { return hat(a.medikamente, 'D'); },
+    'diabetes':                   function (a) { return hat(a.medikamente, 'F'); },
+    'diabetes_medikamente':       function (a) { return hat(a.medikamente, 'F'); },
+    'antidepressiva':             function (a) { return hat(a.medikamente, 'G'); },
+    'antidepressiva_ssri':        function (a) { return hat(a.medikamente, 'G'); },
+
+    // Unverträglichkeiten/Allergien (Quiz-Frage: unvertraeglichkeiten)
+    'milcheiweiss':               function (a) { return hat(a.unvertraeglichkeiten, 'B'); },
+    'milcheiweiss_allergie':      function (a) { return hat(a.unvertraeglichkeiten, 'B'); },
+    'milcheiweissallergie':       function (a) { return hat(a.unvertraeglichkeiten, 'B'); },  // alte ID
+    'laktose_intoleranz':         function (a) { return hat(a.unvertraeglichkeiten, 'B'); },
+    'laktoseintoleranz':          function (a) { return hat(a.unvertraeglichkeiten, 'B'); },  // alte ID
+    'fisch_schalentiere':         function (a) { return hat(a.unvertraeglichkeiten, 'C'); },
+    'soja':                       function (a) { return hat(a.unvertraeglichkeiten, 'E'); },
+    'soja_allergie':              function (a) { return hat(a.unvertraeglichkeiten, 'E'); },
+    'huelsenfrucht_allergie':     function (a) { return hat(a.unvertraeglichkeiten, 'E'); },  // Soja ist Hülsenfrucht
+
+    // Ernährungsform (Quiz-Frage: ernaehrung)
+    'vegetarisch_vegan':          function (a) { return a.ernaehrung === 'C' || a.ernaehrung === 'D'; },
+    'vegan':                      function (a) { return a.ernaehrung === 'D'; },
   };
 
   return wissen.kontraindikationen.filter(function (k) {

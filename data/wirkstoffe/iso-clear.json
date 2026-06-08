@@ -116,7 +116,7 @@
   "kontraindikationen": [
     {
       "art": "allergie",
-      "wert": "milcheiweiss_kuhmilchprotein",
+      "wert": "milcheiweiss_allergie",
       "schwere": "hart",
       "hinweis": "Bei Milcheiweiß-Allergie (Casein, Beta-Lactoglobulin): KEIN WPI. Auch Hydrolysat ist nicht sicher. Auf Pflanzen- oder Eierprotein umsteigen."
     },

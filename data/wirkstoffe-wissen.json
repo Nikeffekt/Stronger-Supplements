@@ -1028,22 +1028,34 @@
     ],
     "kontraindikationen": [
       {
-        "art": "medizinisch",
-        "wert": "milcheiweissallergie",
+        "art": "allergie",
+        "wert": "milcheiweiss_allergie",
         "schwere": "hart",
-        "hinweis": "Whey stammt aus Milch. Bei echter Milcheiweißallergie ist es zu meiden – auf pflanzliche Proteine (Soja, Erbse, Reis-Blend) ausweichen."
+        "hinweis": "Whey stammt aus Milch. Bei echter Milcheiweißallergie (Casein, Beta-Lactoglobulin) ist es zu meiden – auf pflanzliche Proteine (Soja, Erbse, Reis-Blend) ausweichen."
       },
       {
         "art": "medizinisch",
-        "wert": "laktoseintoleranz",
+        "wert": "laktose_intoleranz",
         "schwere": "vorsichtig",
-        "hinweis": "Whey-Konzentrat enthält Laktose und kann Verdauungsbeschwerden auslösen. Isolat oder Hydrolysat ist nahezu laktosefrei und meist gut verträglich."
+        "hinweis": "Whey-Konzentrat enthält 4-8% Laktose und kann Verdauungsbeschwerden auslösen. Isolat (ISO Clear) hat <1% Laktose und ist meist gut verträglich."
+      },
+      {
+        "art": "ernaehrung",
+        "wert": "vegetarisch_vegan",
+        "schwere": "hart",
+        "hinweis": "Whey ist tierischen Ursprungs (Kuhmilch). Für Veganer ungeeignet. Pflanzenprotein (Soja-Isolat oder Erbsen-Reis-Blend) wählen."
       },
       {
         "art": "medizinisch",
-        "wert": "nierenerkrankung",
+        "wert": "niereninsuffizienz_schwer",
         "schwere": "vorsichtig",
-        "hinweis": "Bei VORBESTEHENDER Nierenerkrankung sollte die Proteinzufuhr ärztlich gesteuert werden. Bei gesunden Nieren ist hohe Proteinzufuhr unbedenklich."
+        "hinweis": "Bei vorbestehender schwerer Nierenerkrankung sollte die Proteinzufuhr ärztlich gesteuert werden. Bei gesunden Nieren ist hohe Proteinzufuhr unbedenklich."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "phenylketonurie",
+        "schwere": "hart",
+        "hinweis": "Whey enthält Phenylalanin – bei PKU strikt vermeiden oder mit ärztlicher Anleitung dosieren."
       }
     ],
     "dosierung": {
@@ -1250,7 +1262,7 @@
     "kontraindikationen": [
       {
         "art": "allergie",
-        "wert": "milcheiweiss_kuhmilchprotein",
+        "wert": "milcheiweiss_allergie",
         "schwere": "hart",
         "hinweis": "Bei Milcheiweiß-Allergie (Casein, Beta-Lactoglobulin): KEIN WPI. Auch Hydrolysat ist nicht sicher. Auf Pflanzen- oder Eierprotein umsteigen."
       },
