@@ -31,6 +31,8 @@ const REIHENFOLGE = [
   'omega3',
   'magnesium',
   'whey-protein',
+  'iso-clear',
+  'pflanzenprotein',
   'zink',
   'ashwagandha',
   'beta-alanin',
@@ -39,9 +41,16 @@ const REIHENFOLGE = [
   'vitamin-c',
   'eaas',
   'kollagen',
+  'curcumin',
+  'l-carnitin',
   'koffein',
+  'pre-workout',
   'eisen',
   'multivitamin',
+  'melatonin',
+  'probiotika',
+  'zma',
+  'hmb',
 ];
 
 // ── Pflichtfelder die jeder Wirkstoff haben MUSS ──

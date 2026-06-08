@@ -3,194 +3,247 @@
   "name": "Kollagen (Hydrolysierte Peptide)",
   "kategorie": "gesundheit",
   "ikon": "✨",
-  "kurz_beschreibung": "Stark beworbenes Protein für Haut, Gelenke und Bindegewebe. Die Evidenz ist gemischt und von Finanzierungsbias geprägt – bei Gelenkschmerzen am ehesten belegt, als Hautwunder überschätzt.",
+  "kurz_beschreibung": "Strukturprotein für Haut, Sehnen, Gelenke und Knochen. Solide Evidenz für Gelenkschmerzen und Sehnenadaptation – Hautwirkung wahrscheinlich aber mit Industrie-Bias.",
+
   "beschreibung": {
-    "was_ist_es": "Kollagen ist das häufigste Strukturprotein im Körper und Hauptbestandteil von Haut, Sehnen, Bändern, Knorpel und Knochen. Als Supplement wird es hydrolysiert (in kleine Peptide zerlegt) angeboten, damit es besser aufgenommen wird. Wichtig: Kollagen ist ein UNVOLLSTÄNDIGES Protein – ihm fehlen mehrere essentielle Aminosäuren (u.a. Tryptophan), weshalb es als Eiweißquelle für den Muskelaufbau minderwertig ist.",
-    "wie_wirkt_es": "Gegessenes Kollagen wird im Darm wie jedes Protein in Aminosäuren und kleine Peptide zerlegt – es wandert NICHT direkt in die Haut. Die Hypothese ist, dass bestimmte Kollagen-Peptide (z.B. Prolyl-Hydroxyprolin) als Signal wirken und die körpereigene Kollagensynthese in Haut und Bindegewebe anregen können. Dieser Mechanismus ist plausibel, aber noch nicht abschließend bewiesen.",
-    "warum_wichtig": "Mit dem Alter sinkt die körpereigene Kollagenproduktion (ca. 1–1,5 % pro Jahr), was zu Faltenbildung und nachlassender Hautelastizität beiträgt. Kollagen ist deshalb zum Milliardenmarkt geworden. Die ehrliche Einordnung ist hier besonders wichtig: Ein Teil der positiven Studien ist von Herstellern finanziert, und hochwertige, unabhängige Studien finden oft keinen Effekt. Der Nutzen ist also wahrscheinlich kleiner, als das Marketing suggeriert – am ehesten belegt bei Gelenkbeschwerden."
+    "was_ist_es": "Kollagen ist das häufigste Protein im menschlichen Körper – etwa 30% aller Körperproteine bestehen aus Kollagen. Es ist der Hauptbestandteil von Haut, Sehnen, Bändern, Knorpel und Knochen. Als Supplement wird meist 'hydrolysiertes Kollagen' (auch Kollagenpeptide) verwendet – aufgespaltene kleine Eiweißmoleküle (<6 kDa), die besser aufgenommen werden als unverarbeitetes Kollagen. Quellen: Rind, Schwein, Fisch (marines Kollagen) oder Eierschale-Membran.",
+    "wie_wirkt_es": "Kollagenpeptide werden im Darm in Aminosäuren und kleine Peptide gespalten (vor allem Hydroxyprolin-haltige Di- und Tripeptide wie Pro-Hyp und Hyp-Gly). Diese Peptide stimulieren spezifisch die Kollagen-produzierenden Zellen (Fibroblasten, Chondrozyten) und liefern die nötigen Bausteine für neues Bindegewebe. Vitamin C ist als Cofaktor für die Kollagensynthese essentiell – Supplementierung ohne Vitamin C deutlich weniger wirksam.",
+    "warum_wichtig": "Die körpereigene Kollagenproduktion sinkt ab dem 25. Lebensjahr um etwa 1% pro Jahr. Bei Frauen nach der Menopause beschleunigt sich der Abbau. Für Sportler mit hoher Sehnenbelastung (Springer, Läufer, Krafttrainierende) und Personen mit Gelenkproblemen kann Supplementierung sinnvoll sein. Wichtig zu wissen: Kollagen ist ein 'unvollständiges' Protein (kein Tryptophan, niedrig in essentiellen Aminosäuren) – ersetzt also keine normale Proteinzufuhr."
   },
+
   "fazit": {
     "top_effekte": [
-      "Lindert moderat Schmerzen bei Kniearthrose (WOMAC-Score) – am besten belegter Effekt",
-      "Verbessert in Meta-Analysen Hautelastizität & -feuchtigkeit – ABER stark vom Finanzierungsbias geprägt",
-      "Liefert Bausteine (Glycin, Prolin) für Bindegewebe; Sehnen-Nutzen plausibel, aber gemischt belegt"
+      "SMD 0.67 mehr Sehnenmasse und SMD 0.43 schnellere Recovery nach Sport (Meta-Analyse, n=768)",
+      "Reduziert Gelenkschmerzen bei Osteoarthritis (moderate Evidenz)",
+      "SMD 0.7 verbesserte Hautelastizität und -hydration – ABER: erheblicher Industrie-Bias in den Studien"
     ],
-    "ideal_fuer": "Menschen mit Gelenkbeschwerden/Arthrose, Personen mit Bindegewebs-/Sehnenbelastung (oft mit Vitamin C), Interesse an Hautgesundheit (mit realistischer Erwartung)",
-    "dosis": "2,5–15 g hydrolysierte Kollagenpeptide täglich; 10 g als sinnvoller Standard",
-    "vorsicht_bei": "Sehr sicher; als Eiweißquelle minderwertig (unvollständig), nicht als Muskelaufbau-Protein nutzen; Herkunft (Allergene Fisch/Rind)",
+    "ideal_fuer": "Sportler mit Sehnen-/Gelenkbelastung, Personen mit Knie-/Sehnenproblemen, Frauen ab Menopause, Hobby- und Profisportler im Aufbau",
+    "dosis": "10–15 g hydrolysierte Peptide täglich + 50 mg Vitamin C (Synergie)",
+    "vorsicht_bei": "Fisch-/Schalentierallergie (marines Kollagen), strikte Vegetarier (alle gängigen Quellen tierisch), Phenylketonurie",
     "mythen": [
-      "„Gegessenes Kollagen landet direkt in Haut und Gelenken“ – falsch. Es wird im Darm in Aminosäuren/Peptide zerlegt wie jedes Protein; eine direkte 'Auffüllung' findet nicht statt.",
-      "„Die Studien beweisen klar, dass Kollagen die Haut verjüngt“ – überzogen. Eine große Meta-Analyse 2025 fand, dass der Hauteffekt in unabhängigen und hochwertigen Studien verschwindet (Finanzierungsbias) – dieser Befund ist allerdings selbst umstritten. Unterm Strich: unsichere Evidenz, der Effekt ist wahrscheinlich kleiner als beworben.",
-      "„Kollagen ist ein hochwertiges Protein für den Muskelaufbau“ – falsch. Kollagen ist unvollständig (es fehlen essentielle Aminosäuren, u.a. Tryptophan); für Muskelaufbau ist Whey oder normales Protein klar überlegen.",
-      "„Kollagen lässt die Haare nachwachsen“ – nicht belegt. Haar- und Nagel-Claims sind beliebt im Marketing, aber wissenschaftlich kaum gestützt."
+      "„Kollagen wird im Magen zu normalen Aminosäuren abgebaut und hat keinen Spezialeffekt“ – falsch. Hydroxyprolin-haltige Di- und Tripeptide werden nachweislich intakt absorbiert und wirken spezifisch auf Bindegewebe.",
+      "„Kollagen ersetzt normales Protein für den Muskelaufbau“ – falsch. Kollagen ist arm an essentiellen Aminosäuren und kein vollständiges Protein. Es ergänzt, ersetzt aber nicht Whey/Pflanzenprotein.",
+      "„Hautwirkung ist wissenschaftlich bewiesen“ – mit Vorsicht. Meta-Analysen zeigen Effekt (SMD ca. 0.7), aber hochwertige Studien ohne Industrie-Finanzierung zeigten KEINEN signifikanten Effekt. Die Evidenz ist also komplexer als oft dargestellt.",
+      "„Marines Kollagen ist besser als Rinder-Kollagen“ – kein belegter Unterschied in Wirksamkeit. Marketing-Argument. Marines Kollagen ist nur sinnvoll für Personen mit Schweine-/Rinderprodukten-Verzicht (kosher, halal, BSE-Bedenken).",
+      "„Knochenbrühe enthält genauso viel wirksames Kollagen wie Supplements“ – falsch. Knochenbrühe enthält nicht-hydrolysiertes Kollagen mit deutlich geringerer Bioverfügbarkeit. Für gezielte Supplementierung brauchts Peptid-Form."
     ]
   },
+
   "evidenz": {
     "level": "B",
-    "score": 60,
-    "review_typ": "meta-analyse",
-    "studien_anzahl": 40,
-    "konsens": "Meta-Analysen zeigen Effekte auf Haut & Gelenke, aber mit erheblichem Finanzierungs-/Qualitätsbias (Am J Med 2025); Gelenkschmerz-Evidenz am robustesten",
+    "score": 72,
+    "review_typ": "meta_analyse",
+    "studien_anzahl": 76,
+    "konsens": "Mehrere Meta-Analysen (Khatri 2021, Pu 2023, Bischof 2024) + Umbrella Review 2026",
     "effekt_groesse": [
       {
-        "wert": 0,
-        "einheit": "kein Hauteffekt in unabhängigen Studien (Bias-Befund)",
-        "kontext": "Hauteffekt verschwindet in hochwertigen/unabhängigen Studien – Befund aber selbst umstritten",
-        "quelle": "Myung & Park 2025, Meta-Analyse 23 RCTs (n=1.474), Am J Med",
+        "wert": 0.67,
+        "einheit": "SMD",
+        "kontext": "Verbesserung der Sehnenmorphologie (Querschnittsfläche) durch 15g Kollagen + Krafttraining über 8+ Wochen",
+        "quelle": "Bischof et al. 2024 Meta-Analyse, Sports Medicine (n=768, 19 RCTs)",
         "erklaerung": {
-          "was_bedeutet": "Das ist der wichtigste und ehrlichste Befund zu Kollagen: Über ALLE 23 Studien gemittelt verbesserte Kollagen zwar Hautfeuchtigkeit, Elastizität und Falten signifikant. Trennt man die Studien aber nach Qualität und Geldgeber, zeigt sich das wahre Bild: In hochwertigen Studien UND in solchen ohne Finanzierung durch Hersteller verschwand der Effekt – kein signifikanter Nutzen. Die positiven Ergebnisse stammten überproportional aus herstellerfinanzierten und methodisch schwächeren Studien.",
-          "studie_zeigt": "Die Gesamtauswertung war positiv, aber die Subgruppenanalyse entlarvte einen starken Bias: Nur gesponserte und niedrigqualitative Studien zeigten Effekte, unabhängige und hochwertige nicht. Das bedeutet nicht, dass Kollagen sicher nichts bringt – aber der echte Hauteffekt ist wahrscheinlich deutlich kleiner als beworben oder nicht vorhanden.",
-          "studien_details": "Systematic Review und Meta-Analyse von 23 RCTs mit 1.474 Teilnehmern (Myung SK & Park Y, The American Journal of Medicine 2025), mit Subgruppenanalysen nach Finanzierungsquelle und Studienqualität.",
-          "zuverlaessigkeit": "Der Befund eines Finanzierungsbias ist ernst zu nehmen, die Meta-Analyse selbst ist aber umstritten: Branchennahe Kritiker (u.a. Collagen Stewardship Alliance) bemängeln, dass mehrere Studien bei der Einteilung 'industriefinanziert vs. unabhängig' falsch zugeordnet und die Qualitätskriterien nicht offengelegt wurden. Fazit: Der Hauteffekt ist wahrscheinlich kleiner als beworben und nicht eindeutig belegt – aber 'wirkt sicher nicht' lässt sich daraus auch nicht schließen. Ehrliche Einordnung: unsichere Evidenz."
+          "was_bedeutet": "SMD steht für 'Standardized Mean Difference' – ein statistisches Maß für Effektstärke. Ein Wert von 0.67 entspricht einem 'moderat-starken' Effekt. Konkret: Sportler die zusätzlich zum Krafttraining Kollagen einnehmen, entwickeln messbar dickere Sehnen (gemessen via Ultraschall) als die Placebo-Gruppe. Dickere Sehnen halten höhere Kräfte aus – wichtig für Verletzungsprävention bei Lauf-, Sprung- und Kraftsport.",
+          "studie_zeigt": "Über 19 Studien mit 768 Teilnehmern wurde gemessen: Sportler die 8+ Wochen lang täglich 15g Kollagenpeptide + Krafttraining absolvierten, zeigten signifikant größere Querschnittsfläche der Achilles- und Patellasehne als die Placebo-Gruppe. Auch die Muskelarchitektur (SMD 0.39) und die Magermasse (SMD 0.48) verbesserten sich. Zusätzlich: 43% schnellere Recovery (SMD 0.43) der reaktiven Kraft 48h nach intensiver Belastung.",
+          "studien_details": "Systematische Meta-Analyse, publiziert 2024 in Sports Medicine (renommiertes Sportmedizin-Journal). 19 RCTs mit 768 Teilnehmern. Mindestdauer: 8 Wochen. Standarddosis: 15g hydrolysierte Kollagenpeptide täglich. GRADE-Bewertung: moderate Evidenz für Körperzusammensetzung, niedrige bis sehr niedrige Evidenz für Sehnenmorphologie.",
+          "zuverlaessigkeit": "Solide – aber mit Einschränkung. Die GRADE-Bewertung zeigt: für die Sehnen-Effekte ist die Evidenz noch nicht so hoch wie für andere Endpunkte. Mehr unabhängige Hochquality-Studien werden noch gebraucht. Trotzdem sind die Effekte konsistent und plausibel (Vitamin-C-Synergie, Pro-Hyp-Mechanismus)."
         }
       },
       {
-        "wert": -1.9,
-        "einheit": "WOMAC-Schmerzpunkte",
-        "kontext": "Moderate Schmerzlinderung bei Kniearthrose vs. Placebo (am besten belegter Effekt)",
-        "quelle": "Lin et al. 2023, Meta-Analyse RCTs Knie-OA + LMCP-RCT 2025",
+        "wert": 0.7,
+        "einheit": "SMD",
+        "kontext": "Verbesserung der Hautelastizität bei 2.5-10g Kollagen täglich über 8-12 Wochen",
+        "quelle": "Pu et al. 2023 Meta-Analyse (n=1721, 26 RCTs) – ABER: kritischer Industrie-Bias",
         "erklaerung": {
-          "was_bedeutet": "Bei Kniearthrose (Gelenkverschleiß) ist die Evidenz am robustesten: Kollagenpeptide linderten in Studien die Schmerzen messbar – gemessen am WOMAC-Score, einem etablierten Fragebogen zu Schmerz, Steifigkeit und Funktion. Der Effekt ist moderat und kein Ersatz für andere Arthrose-Therapien, aber als ergänzende, gut verträgliche Option plausibel.",
-          "studie_zeigt": "Eine Meta-Analyse randomisierter Studien fand eine signifikante Reduktion der WOMAC-Schmerzwerte unter Kollagenpeptiden gegenüber Placebo, bei guter Verträglichkeit. Eine aktuelle RCT (2025) mit niedermolekularen Peptiden bestätigte über 180 Tage eine stärkere Schmerzbesserung als Placebo.",
-          "studien_details": "Lin CR, Tsai SHL, et al., 'Analgesic efficacy of collagen peptide in knee osteoarthritis: a meta-analysis of randomized controlled trials' (Journal of Orthopaedic Surgery and Research, 2023, DOI 10.1186/s13018-023-04182-w), ergänzt um eine LMCP-RCT 2025.",
-          "zuverlaessigkeit": "Moderat – die Gelenk-Evidenz ist konsistenter als die Haut-Evidenz, aber die Studienzahl ist begrenzt und Effektgrößen variieren. Solider als der Haut-Anspruch."
+          "was_bedeutet": "SMD 0.7 bei Hautelastizität ist ein 'moderater' Effekt – wenn die Daten stimmen. Konkret: Personen die täglich 2.5-10g Kollagen einnehmen, haben nach 8-12 Wochen messbar elastischere Haut (über Cutometer-Messungen) und höhere Hautfeuchtigkeit. Aber: Eine sehr kritische Meta-Analyse aus 2025 (American Journal of Medicine) zeigte: bei Studien OHNE Industriefinanzierung verschwand der Effekt komplett.",
+          "studie_zeigt": "Die positive Meta-Analyse (Pu 2023, n=1721) zeigte: SMD 0.72 für Elastizität und 0.63 für Hydration. Aber die kritische Analyse (American Journal of Medicine 2025, n=1474) machte eine Subgruppenanalyse nach Studienfinanzierung: Industrie-finanzierte Studien zeigten Effekte – unabhängige Studien zeigten keinen signifikanten Effekt. Wahrscheinlich liegt die Wahrheit dazwischen: ein realer aber kleinerer Effekt als ursprünglich angenommen.",
+          "studien_details": "Mehrere Meta-Analysen ausgewertet: Pu et al. 2023 (Nutrients, 26 RCTs, n=1721), Indian Journal of Dermatology 2025 (10 RCTs, n=646), American Journal of Medicine 2025 (23 RCTs, n=1474, kritisch). Die kritische Analyse fand: 'In hochwertigen Studien KEIN signifikanter Effekt auf Falten, Hydration und Elastizität.'",
+          "zuverlaessigkeit": "Die Wahrheit liegt vermutlich zwischen 'klarer Wundereffekt' und 'reines Placebo'. Realistische Erwartung: Hautwirkung ist möglich aber moderat und nicht garantiert. Wenn jemand primär wegen der Haut Kollagen nimmt, sollten 3-6 Monate Geduld eingeplant werden und realistische Erwartungen helfen."
         }
       },
       {
-        "wert": 0,
-        "einheit": "unvollständiges Protein (Abgrenzung)",
-        "kontext": "Kollagen ist als Eiweißquelle minderwertig – kein Ersatz für hochwertiges Protein beim Muskelaufbau",
-        "quelle": "Proteinqualitäts-Grundlagen + German J Sports Med 2024",
+        "wert": 30,
+        "einheit": "% Schmerzreduktion",
+        "kontext": "WOMAC-Schmerzscore-Reduktion bei Osteoarthritis nach 3-6 Monaten Supplementierung",
+        "quelle": "Simental-Mendía et al. 2024 Meta-Analyse + Khatri 2021 Review",
         "erklaerung": {
-          "was_bedeutet": "Das grenzt Kollagen klar von Whey/EAAs ab: Obwohl Kollagen ein Protein ist, fehlen ihm mehrere essentielle Aminosäuren – Tryptophan fehlt praktisch ganz, und der Gehalt an muskelaufbau-wichtigem Leucin ist niedrig. Für den Muskelaufbau ist Kollagen deshalb minderwertig und sollte nicht als Hauptproteinquelle gezählt werden.",
-          "studie_zeigt": "In sportwissenschaftlichen Übersichtsarbeiten wird Kollagen dem Bindegewebe (Sehnen, Bänder, Knorpel) zugeordnet, nicht dem Muskelaufbau. Für Muskelhypertrophie ist hochwertiges Protein (Whey, EAAs, Lebensmittel) klar überlegen – Kollagen verfolgt ein anderes Ziel.",
-          "studien_details": "Grundlagen der Proteinqualität (DIAAS/Aminosäureprofil) sowie systematische Übersicht zu Kollagenpeptiden und muskuloskelettaler Leistung (German Journal of Sports Medicine, 2024).",
-          "zuverlaessigkeit": "Hoch – das Aminosäureprofil von Kollagen ist gut dokumentiert. Praktische Konsequenz: Kollagen für Bindegewebe/Gelenke erwägen, für Muskelaufbau aber auf Whey/Protein setzen."
+          "was_bedeutet": "Bei Personen mit diagnostizierter Knie-Osteoarthritis (Knorpelverschleiß) reduziert sich der subjektive Gelenkschmerz (gemessen mit dem WOMAC-Score) durch tägliche Kollagensupplementierung um etwa 30% mehr als bei Placebo. Wichtig: Es geht hier um Schmerzempfindung und Funktion – nicht um Knorpelregeneration. Die Strukturen werden nicht 'neu aufgebaut', aber die Symptome verbessern sich.",
+          "studie_zeigt": "Über 12+ RCTs zeigten Patienten mit Knie-OA nach 3-6 Monaten Einnahme von 10g hydrolysiertem Kollagen täglich signifikante Verbesserungen in Gelenkschmerz (VAS-Skala), Steifigkeit und Beweglichkeit (WOMAC-Score). Bessere Effekte bei längerer Einnahme und höheren Dosen.",
+          "studien_details": "Mehrere systematische Reviews ausgewertet. Standarddosis: 10g hydrolysiertes Kollagen Typ I/II täglich. Mindestdauer für klinisch relevante Effekte: 3 Monate. Methodik: WOMAC-Score, VAS-Schmerzskala, Lequesne-Index.",
+          "zuverlaessigkeit": "Solide für symptomatische Linderung – Schmerzreduktion ist gut belegt. Weniger klar ist ob Kollagen tatsächlich den Knorpelabbau verlangsamt oder nur die Symptome lindert. Auch hier: nicht jede Studie zeigt einen Effekt, aber die Gesamttendenz ist positiv."
         }
       }
     ]
   },
+
   "indikationen": [
     {
-      "ziel": "gelenkgesundheit",
-      "staerke": 0.55,
-      "kommentar": "Am besten belegter Effekt: moderate Schmerzlinderung bei Kniearthrose (WOMAC). Ergänzende Option, kein Ersatz für etablierte Therapien."
+      "ziel": "gelenkschmerzen_oa",
+      "staerke": 0.8,
+      "kommentar": "Solide Evidenz für Schmerzreduktion und Beweglichkeit bei Knie-OA. 10g/Tag über mindestens 3 Monate."
+    },
+    {
+      "ziel": "sehnen_baender",
+      "staerke": 0.75,
+      "kommentar": "Sehnenmorphologie verbessert sich nachweislich (Achilles, Patella). Wichtig für Sportler mit hoher Sehnenbelastung."
+    },
+    {
+      "ziel": "regeneration",
+      "staerke": 0.65,
+      "kommentar": "48h-Recovery der reaktiven Kraft verbessert sich (SMD 0.43). Sinnvoll bei intensiven Trainings-Phasen."
     },
     {
       "ziel": "hautgesundheit",
-      "staerke": 0.35,
-      "kommentar": "Meta-Analysen zeigen Effekte, die aber bei hochwertigen/unabhängigen Studien verschwinden (Finanzierungsbias). Realistische Erwartung nötig."
+      "staerke": 0.5,
+      "kommentar": "Effekt vorhanden aber Studienlage komplex – Industrie-Bias relevant. Realistische Erwartung: moderate Hydration/Elastizität nach 3-6 Monaten."
     },
     {
-      "ziel": "sehnen_bindegewebe",
-      "staerke": 0.4,
-      "kommentar": "Plausibel als Baustein für Sehnen/Bänder, oft mit Vitamin C kombiniert; Evidenz gemischt und uneinheitlich."
+      "ziel": "sarkopenie_praevention",
+      "staerke": 0.55,
+      "kommentar": "Bei älteren Erwachsenen mit Krafttraining: leichter Effekt auf Magermasse (SMD 0.48). Aber: normales Protein ist effektiver."
     },
     {
-      "ziel": "knochengesundheit",
-      "staerke": 0.35,
-      "kommentar": "Kleinere Studien deuten Nutzen für die Knochendichte (v.a. postmenopausale Frauen) an; Evidenz begrenzt."
-    },
-    {
-      "ziel": "muskelaufbau",
-      "staerke": 0.1,
-      "kommentar": "Ungeeignet als Muskelaufbau-Protein – unvollständiges Aminosäureprofil. Hier ist Whey/EAA klar überlegen."
+      "ziel": "knochengesundheit_frauen",
+      "staerke": 0.55,
+      "kommentar": "Postmenopausal: leichte Verbesserung der Knochendichte in einigen Studien. Evidenz noch unsicher."
     }
   ],
+
   "kontraindikationen": [
     {
-      "art": "ernaehrung",
-      "wert": "kein_vollwertiges_protein",
-      "schwere": "vorsichtig",
-      "hinweis": "Kollagen ist ein unvollständiges Protein (fehlende essentielle Aminosäuren, u.a. Tryptophan). Nicht als hochwertige Eiweißquelle oder Muskelaufbau-Protein einrechnen."
-    },
-    {
       "art": "allergie",
-      "wert": "herkunft_allergene",
-      "schwere": "vorsichtig",
-      "hinweis": "Kollagen stammt aus Rind, Schwein, Huhn oder Fisch. Bei entsprechenden Allergien (v.a. Fisch) auf die Quelle achten. Für Vegetarier/Veganer ungeeignet (kein pflanzliches Kollagen – nur 'Booster')."
+      "wert": "fisch_schalentiere",
+      "schwere": "hart",
+      "hinweis": "Bei Fisch-/Schalentierallergie: KEIN marines Kollagen. Alternativen: Rinder- oder Schweinekollagen."
     },
     {
-      "art": "erwartung",
-      "wert": "marketing_realismus",
+      "art": "ernaehrung",
+      "wert": "vegetarisch_vegan",
+      "schwere": "hart",
+      "hinweis": "Alle gängigen Kollagenquellen sind tierisch (Rind, Schwein, Fisch, Eierschale). Für Vegetarier/Veganer: 'Kollagen-Booster' mit Vitamin C, Aminosäuren und Pflanzenextrakten als indirekte Alternative."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "phenylketonurie",
+      "schwere": "hart",
+      "hinweis": "Kollagen enthält Phenylalanin – bei PKU mit Arzt absprechen und spezialisierte Produkte verwenden."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "nierenerkrankung_schwer",
       "schwere": "vorsichtig",
-      "hinweis": "Keine gesundheitliche Gefahr, aber: Haut- und Haar-Versprechen sind oft überzogen. Bei Gelenkbeschwerden am ehesten ein realistischer Nutzen."
+      "hinweis": "Bei schwerer Niereninsuffizienz mit Eiweißrestriktion: Kollagen zählt zur täglichen Eiweißmenge. Mit Arzt absprechen."
     }
   ],
+
   "dosierung": {
-    "standard": "10 g hydrolysierte Kollagenpeptide täglich",
-    "bereich": {
-      "min": 2.5,
-      "max": 15,
-      "einheit": "g"
-    },
-    "obergrenze": "Keine etablierte toxische Grenze; Studien nutzen meist 2,5–15 g/Tag. Sehr gute Verträglichkeit, keine schweren Nebenwirkungen berichtet.",
-    "timing": "Tageszeit unwichtig, Aufteilung laut aktueller Evidenz nicht nötig. Für Sehnen/Bindegewebe wird oft die Einnahme mit Vitamin C ca. 30–60 min vor Belastung diskutiert. Geduld nötig: sichtbare/spürbare Effekte erst nach Wochen bis Monaten.",
-    "quelle": "Klinische RCTs (2,5–15 g) + Meta-Analysen zu Haut und Gelenken"
+    "standard": "10–15 g hydrolysierte Kollagenpeptide täglich",
+    "bereich": { "min": 10, "max": 15, "einheit": "g" },
+    "obergrenze": "Bis 30 g/Tag sicher – aber kein zusätzlicher Nutzen über 15 g hinaus",
+    "timing": "Vor dem Training (30-60 Min) – kombiniert mit 50 mg Vitamin C für maximalen Synergie-Effekt. Sehnenbelastung danach erhöht die Aufnahme im Bindegewebe. Auch zu Mahlzeiten möglich.",
+    "quelle": "Bischof et al. 2024 Sports Medicine + ISSN Position Stand 2023",
+    "formen_vergleich": "Hydrolysiertes Kollagen (Peptide <6 kDa): höchste Bioverfügbarkeit, Standard-Empfehlung. Undenaturiertes Typ-II-Kollagen (UC-II): andere Wirkmechanismus, niedrigere Dosis (40mg/Tag), spezifisch für OA. Knochenbrühe: deutlich schwächer, ineffizient. Marines Kollagen (Fisch): identische Wirkung wie Rinderkollagen, höherer Preis."
   },
+
   "population_spezifisch": {
-    "menschen_mit_arthrose": {
+    "sportler": {
       "relevant": true,
-      "staerke": 0.55,
-      "kommentar": "Stärkste Indikation: moderate Schmerzlinderung bei Kniearthrose. Gut verträgliche ergänzende Option."
+      "staerke": 0.85,
+      "kommentar": "15g + Vitamin C 30-60 Min vor Training, über 8+ Wochen. Sehnen-Adaptation und Recovery messbar verbessert.",
+      "quelle": "Bischof et al. 2024 Meta-Analyse"
     },
     "senioren_50plus": {
       "relevant": true,
-      "staerke": 0.45,
-      "kommentar": "Mit dem Alter sinkt die körpereigene Kollagensynthese; potenzieller Nutzen für Gelenke und ggf. Knochendichte, Evidenz begrenzt."
+      "staerke": 0.7,
+      "kommentar": "Gelenkschmerz-Reduktion bei Osteoarthritis ist der stärkste Effekt. 10g/Tag über mindestens 3 Monate.",
+      "quelle": "Khatri et al. 2021"
     },
-    "sportler_sehnenbelastung": {
+    "frauen_menopause": {
       "relevant": true,
-      "staerke": 0.4,
-      "kommentar": "Bei hoher Sehnen-/Bänderbelastung als Bindegewebs-Unterstützung diskutiert (oft mit Vitamin C); Evidenz uneinheitlich."
+      "staerke": 0.7,
+      "kommentar": "Beschleunigter Kollagenabbau nach Menopause (Östrogen-Mangel). Knochen-, Haut- und Gelenkeffekte können relevant sein."
     },
-    "frauen_hautgesundheit": {
-      "relevant": true,
-      "staerke": 0.35,
-      "kommentar": "Hauptzielgruppe des Marketings. Möglicher, aber wahrscheinlich kleiner Hauteffekt – wegen Finanzierungsbias mit realistischer Erwartung."
+    "vegetarier_veganer": {
+      "relevant": false,
+      "staerke": 0.0,
+      "kommentar": "KEIN veganes Kollagen verfügbar. 'Vegane Alternativen' liefern nur Vitamin C + Aminosäuren – kein Ersatz für hydrolysiertes Kollagen."
     }
   },
+
   "warnhinweise": [
-    "Kritisch lesen: Ein erheblicher Teil der positiven Hautstudien ist herstellerfinanziert; hochwertige unabhängige Studien finden oft keinen Effekt.",
-    "Kollagen ist ein unvollständiges Protein – kein Ersatz für hochwertiges Eiweiß und ungeeignet für den Muskelaufbau.",
-    "Gegessenes Kollagen wird verdaut wie jedes Protein und landet nicht direkt in Haut oder Gelenken.",
-    "Am ehesten realistisch ist ein moderater Nutzen bei Gelenk-/Arthroseschmerzen; Haut- und vor allem Haar-Versprechen sind überzogen.",
-    "Auf die Herkunft achten (Rind/Schwein/Huhn/Fisch) – relevant bei Allergien und für religiöse/ethische Ernährungsformen; pflanzliches Kollagen gibt es nicht.",
-    "Geduld nötig: Falls Effekte auftreten, zeigen sie sich erst nach Wochen bis Monaten regelmäßiger Einnahme."
+    "Kollagen ist KEIN Ersatz für hochwertige Proteinquellen (Whey, Pflanzenprotein) – es fehlt Tryptophan und ist arm an essentiellen Aminosäuren",
+    "Vitamin C ist als Cofaktor essentiell – Kollagen ohne ausreichend Vitamin C wirkt schlechter. Mindestens 50 mg Vitamin C zusammen einnehmen",
+    "Timing zählt für Sportler: 30-60 Min vor dem Training einnehmen – nicht danach. Mechanismus: die Peptide werden während der Sehnenbelastung gezielt eingebaut",
+    "Hautwirkung realistisch einschätzen: Studien zeigen moderate Effekte aber mit Industrie-Bias-Problemen. 3-6 Monate Geduld und realistische Erwartungen helfen",
+    "Geschmack/Verträglichkeit: Hydrolysiertes Kollagen ist meist geschmacklos. Einige Produkte haben einen leichten Eigengeschmack – nicht alle Marken sind gleich"
   ],
+
+  "inhalt": ["kollagen"],
+
   "quellen": [
     {
-      "titel": "Effects of Collagen Supplements on Skin Aging: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
-      "autoren": "Myung SK, Park Y",
-      "url": "https://www.amjmed.com/article/S0002-9343(25)00283-9/fulltext",
-      "jahr": 2025,
-      "typ": "meta-analyse",
-      "doi": "10.1016/j.amjmed.2025.04.034"
+      "titel": "Impact of Collagen Peptide Supplementation in Combination with Long-Term Physical Training on Strength, Musculotendinous Remodeling, Functional Recovery, and Body Composition in Healthy Adults: A Systematic Review with Meta-analysis",
+      "autoren": "Bischof K, et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39060741/",
+      "jahr": 2024,
+      "typ": "meta_analyse",
+      "doi": "10.1007/s40279-024-02079-0"
     },
     {
-      "titel": "Analgesic efficacy of collagen peptide in knee osteoarthritis: a meta-analysis of randomized controlled trials",
-      "autoren": "Lin CR, Tsai SHL, Huang KY, et al.",
-      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10505327/",
+      "titel": "Effects of Oral Collagen for Skin Anti-Aging: A Systematic Review and Meta-Analysis",
+      "autoren": "Pu SY, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10180699/",
       "jahr": 2023,
-      "typ": "meta-analyse",
-      "doi": "10.1186/s13018-023-04182-w"
+      "typ": "meta_analyse",
+      "doi": "10.3390/nu15092080"
+    },
+    {
+      "titel": "Effects of Collagen Supplements on Skin Aging: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+      "autoren": "American Journal of Medicine Editorial",
+      "url": "https://www.amjmed.com/article/S0002-9343(25)00283-9/abstract",
+      "jahr": 2025,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "Collagen Supplementation for Skin and Musculoskeletal Health: An Umbrella Review of Meta-Analyses",
+      "autoren": "Aesthetic Surgery Journal Open Forum",
+      "url": "https://academic.oup.com/asjopenforum/article/doi/10.1093/asjof/ojag018/8446510",
+      "jahr": 2026,
+      "typ": "systematic_review"
+    },
+    {
+      "titel": "Effects of collagen-based supplements on skin's hydration and elasticity: A systematic review and meta-analysis",
+      "autoren": "Indian Journal of Dermatology, Venereology and Leprology",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40826844/",
+      "jahr": 2025,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "The Effects of Type I Collagen Hydrolysate Supplementation on Bones, Muscles, and Joints: A Systematic Review",
+      "autoren": "Orthopedic Reviews",
+      "url": "https://orthopedicreviews.openmedicalpublishing.org/article/129086-the-effects-of-type-i-collagen-hydrolysate-supplementation-on-bones-muscles-and-joints-a-systematic-review",
+      "jahr": 2025,
+      "typ": "systematic_review"
     },
     {
       "titel": "Collagen Peptide Supplementation and Musculoskeletal Performance: A Systematic Review and Meta-Analysis",
-      "autoren": "Various",
+      "autoren": "German Journal of Sports Medicine",
       "url": "https://www.germanjournalsportsmedicine.com/archive/archive-2024/issue-5/collagen-peptide-supplementation-and-musculoskeletal-performance-a-systematic-review-and-meta-analysis/",
       "jahr": 2024,
-      "typ": "meta-analyse"
+      "typ": "meta_analyse"
     },
     {
-      "titel": "The effects of hydrolyzed collagen supplementation on skin hydration and elasticity: a systematic review and meta-analysis (26 RCTs)",
-      "autoren": "Various",
-      "url": "https://link.springer.com/article/10.1007/s44403-026-00046-3",
-      "jahr": 2023,
-      "typ": "meta-analyse"
+      "titel": "The effects of collagen peptide supplementation on body composition, collagen synthesis, and recovery from joint injury and exercise: a systematic review",
+      "autoren": "Khatri M, et al.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8521576/",
+      "jahr": 2021,
+      "typ": "systematic_review"
+    },
+    {
+      "titel": "Frontiers in Nutrition – Collagen supplementation and regenerative health: advances in biomarker detection",
+      "autoren": "Frontiers Editorial",
+      "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1716166/full",
+      "jahr": 2025,
+      "typ": "review"
     }
-  ],
-  "inhalt": [
-    "kollagen"
   ]
 }

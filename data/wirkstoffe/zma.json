@@ -1,0 +1,256 @@
+{
+  "id": "zma",
+  "name": "ZMA (Zink + Magnesium + B6)",
+  "kategorie": "performance",
+  "ikon": "🌙",
+  "kurz_beschreibung": "Klassisches Kombi-Produkt aus Zink, Magnesium und Vitamin B6 für Schlaf und Recovery. Ursprüngliche Testosteron-Studien wurden in späteren RCTs nicht repliziert – die Versprechen sind oft überzogen.",
+
+  "beschreibung": {
+    "was_ist_es": "ZMA steht für 'Zinc Monomethionine and Magnesium Aspartate' und ist ein patentiertes Supplement-Konzept, entwickelt 1997 von Victor Conte (BALCO). Standardformel pro Portion: 30 mg Zink (270% RDI), 450 mg Magnesium (110% RDI) und 10.5 mg Vitamin B6 (650% RDI). Die spezifischen Formen (Zink-Monomethionin-Aspartat und Magnesium-Aspartat) wurden gewählt, um theoretisch bessere Bioverfügbarkeit zu erreichen.",
+    "wie_wirkt_es": "Die Theorie hinter ZMA: Athleten sollen häufiger an Zink- und Magnesium-Mangel leiden (durch Schweißverlust, höheren Bedarf, restriktive Diäten). Diese Mängel sollen Testosteron- und IGF-1-Spiegel senken. ZMA soll diese Defizite ausgleichen und damit Muskelaufbau, Schlafqualität und Recovery verbessern. PROBLEM: Die wenigsten Sportler in westlichen Ländern haben tatsächlich klinische Mängel an diesen Nährstoffen – die typische Mischkost deckt den Bedarf.",
+    "warum_wichtig": "ZMA ist ein klassisches Beispiel für ein Supplement, dessen Marketing weit über die wissenschaftliche Evidenz hinausgeht. Die berühmte Wilborn-2004-Studie (n=27 Football-Spieler) zeigte +30% Testosteron und +12% Kraft – aber spätere, größere Studien konnten das nicht replizieren. Die ehrliche Einordnung: Bei dokumentiertem Zink-/Magnesium-Mangel kann ZMA helfen. Bei Personen mit normaler Ernährung sind die Effekte sehr begrenzt – einzelne Mineralien gezielt zu supplementieren ist oft günstiger und besser."
+  },
+
+  "fazit": {
+    "top_effekte": [
+      "Bei dokumentiertem Zink-/Magnesium-Mangel: messbare Verbesserung von Hormonen und Schlaf",
+      "Moderate Verbesserung der Schlafqualität (besonders Tiefschlaf) durch Magnesium-Anteil",
+      "Testosteron-Steigerung NUR in einer kleinen Studie – nicht repliziert in größeren RCTs"
+    ],
+    "ideal_fuer": "Athleten mit nachgewiesenem Zink-/Magnesium-Mangel, intensive Sportler mit hohem Schweißverlust, Vegetarier/Veganer (Zink-Bedarf höher), bei Schlafproblemen mit Mangel-Vermutung",
+    "dosis": "1 Portion 30-60 Min. vor dem Schlafen auf nüchternen Magen – NIEMALS mit Milchprodukten (Calcium blockiert Zink-Aufnahme)",
+    "vorsicht_bei": "Langzeit-Hochdosis-B6 (Nervenschäden möglich), Antibiotika (Zink stört Aufnahme), Niereninsuffizienz, gleichzeitige Einnahme anderer Zink-/Magnesium-Präparate",
+    "mythen": [
+      "„ZMA steigert den Testosteronspiegel um 30%“ – falsch in den meisten Fällen. Die Original-Studie (n=27) ist nicht repliziert worden. Größere Studien zeigen KEINEN signifikanten Effekt bei Personen ohne Mangel.",
+      "„ZMA wirkt auch bei guter Ernährung“ – unwahrscheinlich. Die Effekte zeigen sich primär bei dokumentiertem Mangel. Bei Mischkost-Essern ist der Nutzen meist marginal.",
+      "„Die spezielle Bioverfügbarkeits-Formel ist überlegen“ – Marketing-Behauptung. Zink-Bisglycinat oder Magnesium-Citrat einzeln haben vergleichbare Aufnahme bei deutlich niedrigerem Preis.",
+      "„ZMA kann mit Milch oder Kalzium genommen werden“ – falsch. Calcium blockiert die Zink-Absorption stark. ZMA MUSS auf nüchternen Magen ohne Milchprodukte eingenommen werden.",
+      "„Vitamin B6 in der ZMA-Dosis ist sicher“ – mit Vorsicht. 10.5mg ist 650% der RDI. Bei Langzeit-Einnahme über 200mg/Tag sind Nervenschäden (Periphere Neuropathie) dokumentiert. Aufmerksam bleiben."
+    ]
+  },
+
+  "evidenz": {
+    "level": "C",
+    "score": 55,
+    "review_typ": "rct",
+    "studien_anzahl": 12,
+    "konsens": "Kontroverse Studienlage – Wilborn 2004 nicht repliziert (Koehler 2009, Brilla 2000)",
+    "effekt_groesse": [
+      {
+        "wert": 30,
+        "einheit": "% (in einer Studie)",
+        "kontext": "Anstieg des freien Testosterons in der Wilborn-2004-Studie (n=27 Football-Spieler)",
+        "quelle": "Brilla & Conte 2000 + Wilborn 2004",
+        "erklaerung": {
+          "was_bedeutet": "Die berühmte Studie zeigte: ZMA erhöht freies Testosteron in 8 Wochen von 132 auf 176 pg/mL (+30%), während in der Placebo-Gruppe das Testosteron sogar leicht sank (141 auf 127 pg/mL). Auch IGF-1 stieg in der ZMA-Gruppe. Diese Studie ist die zentrale Quelle für alle ZMA-Marketing-Behauptungen. ABER: Spätere, methodisch bessere Studien konnten diese Effekte nicht reproduzieren.",
+          "studie_zeigt": "Brilla & Conte 2000 (n=27 NCAA-Football-Spieler, 8 Wochen ZMA): Plasma-Zink stieg um 30%, freies Testosteron +30%, IGF-1 leicht gestiegen, Muskelkraft +12%. ABER: Koehler et al. 2009 (Männer im Training): KEIN signifikanter Anstieg von Testosteron, IGF-1 oder Kraft. Wilborn et al. 2004 mit anderer Population: KEINE Bestätigung der Effekte. Die Replikation hat das Original-Ergebnis nicht bestätigt.",
+          "studien_details": "Original-Studie publiziert 2000 in Journal of Exercise Physiology Online. Hauptlimitation: kleine Stichprobe (n=27), kurze Studiendauer (8 Wochen), spezifische Population (Football-Spieler in intensivem Training). Spätere Replikations-Versuche mit größeren oder anderen Populationen konnten die Effekte nicht bestätigen.",
+          "zuverlaessigkeit": "ZWEIFELHAFT als zentrale Marketing-Aussage. Das Phänomen heißt 'Replikationskrise' – ursprünglich beeindruckende Ergebnisse, die in unabhängigen Folgestudien nicht reproduzierbar waren. Aktueller wissenschaftlicher Konsens: ZMA steigert Testosteron NICHT zuverlässig bei Personen ohne Zink-/Magnesium-Mangel."
+        }
+      },
+      {
+        "wert": 11,
+        "einheit": "mg/Tag",
+        "kontext": "Durchschnittliche Zink-Aufnahme der ZMA-Studienteilnehmer aus der Nahrung – schon AUSREICHEND",
+        "quelle": "Multiple ZMA-Studien (Wilborn 2004, Koehler 2009)",
+        "erklaerung": {
+          "was_bedeutet": "In allen ZMA-Studien wurde die Nahrungs-Aufnahme der Probanden gemessen. Ergebnis: Die meisten Athleten konsumierten BEREITS ausreichende Mengen Zink (11.9 mg/Tag) und Magnesium (395 mg/Tag) – also über der RDI. Das bedeutet: ZMA wurde nicht bei Mangel-Personen getestet, sondern bei bereits-versorgten Sportlern. Trotzdem zeigte die Original-Studie Effekte – was die Replikationsprobleme erklärt.",
+          "studie_zeigt": "Diätrekord-Analyse aus mehreren ZMA-Studien: Männliche Sportler hatten typische Aufnahme von Zink 11.9 ± 3.4 mg/Tag (RDI: 11 mg), Magnesium 395 ± 103 mg/Tag (RDI: 400 mg), Vitamin B6 2.7 ± 0.9 mg/Tag (RDI: 1.3 mg). Diese Werte sind ÜBER der RDI – kein klinischer Mangel. Trotzdem wurde ZMA gegeben.",
+          "studien_details": "Methodische Limitation aller ZMA-Studien: keine Selektion nach tatsächlichem Zink-Status. Idealerweise sollte ZMA bei nachgewiesenem Mangel getestet werden – das wurde nicht gemacht.",
+          "zuverlaessigkeit": "Sehr hoch für die Aussage: Die meisten Studienteilnehmer hatten KEINEN Mangel. Praktische Konsequenz: Bei guter Mischkost-Ernährung ist der Nutzen von ZMA wahrscheinlich klein."
+        }
+      },
+      {
+        "wert": 650,
+        "einheit": "% RDI Vitamin B6",
+        "kontext": "Vitamin-B6-Gehalt der Standard-ZMA-Dosis (10.5 mg)",
+        "quelle": "ZMA-Formel-Analyse + EFSA Risiko-Bewertung",
+        "erklaerung": {
+          "was_bedeutet": "Eine Portion ZMA enthält 10.5 mg Vitamin B6 (Pyridoxin) – das 6.5-Fache der empfohlenen Tagesdosis. Kurzfristig unbedenklich, aber bei dauerhafter Einnahme PROBLEMATISCH. Hochdosis-B6 über 100-200 mg/Tag kann sensorische periphere Neuropathie (Nervenschäden in Händen/Füßen) verursachen. Die ZMA-Dosis allein ist noch sicher, aber wer zusätzlich B-Komplex oder Multivitamin nimmt, kann schnell in den Risikobereich kommen.",
+          "studie_zeigt": "EFSA-Empfehlung: Tolerable Upper Intake Level (UL) für Vitamin B6 = 25 mg/Tag bei Erwachsenen (langfristig). ZMA mit 10.5 mg/Tag bleibt darunter, aber: bei zusätzlichem Multivitamin (oft 2 mg B6) und einer Tasse Joghurt + Bananen kann die Gesamtdosis schnell die UL überschreiten. Dokumentierte Fälle von Neuropathie nach langzeitiger Einnahme.",
+          "studien_details": "EFSA Scientific Opinion 2023: Tolerable Upper Intake Level für Vitamin B6. Mehrere Case-Reports und Beobachtungsstudien zu B6-induzierter Neuropathie.",
+          "zuverlaessigkeit": "Sehr hoch. Praktische Konsequenz: Bei ZMA-Langzeitnutzung andere B6-Quellen prüfen und Pausen einlegen oder ZMA-Produkte mit geringerem B6-Anteil wählen."
+        }
+      }
+    ]
+  },
+
+  "indikationen": [
+    {
+      "ziel": "schlaf",
+      "staerke": 0.55,
+      "kommentar": "Moderate Wirkung durch Magnesium-Anteil – aber Magnesium einzeln (z.B. Bisglycinat) ist gleich wirksam und günstiger."
+    },
+    {
+      "ziel": "muskelregeneration",
+      "staerke": 0.4,
+      "kommentar": "Theoretisch über besseren Schlaf möglich. Direkte Effekte sind wissenschaftlich nicht überzeugend belegt."
+    },
+    {
+      "ziel": "testosteron_optimierung",
+      "staerke": 0.4,
+      "kommentar": "Wirksam NUR bei dokumentiertem Zink-Mangel. Bei normalem Status: kein verlässlicher Effekt – widerlegt durch Replikations-Studien."
+    },
+    {
+      "ziel": "krafttraining_recovery",
+      "staerke": 0.45,
+      "kommentar": "Original-Studie zeigte +12% Kraft – nicht repliziert. Indirekte Effekte über bessere Recovery möglich aber moderat."
+    },
+    {
+      "ziel": "immunsystem",
+      "staerke": 0.5,
+      "kommentar": "Zink ist essentiell für Immunfunktion. ZMA kann unterstützen, aber Zink-Bisglycinat einzeln ist preiswerter."
+    },
+    {
+      "ziel": "mangel_ausgleich",
+      "staerke": 0.7,
+      "kommentar": "Bei nachgewiesenem Zink- und Magnesium-Mangel: solider Effekt auf relevante Parameter. Hier ist ZMA sinnvoll."
+    }
+  ],
+
+  "kontraindikationen": [
+    {
+      "art": "medizinisch",
+      "wert": "niereninsuffizienz",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei Niereninsuffizienz kann Magnesium akkumulieren. Vor Einnahme Arzt fragen und Nierenfunktion prüfen."
+    },
+    {
+      "art": "medikament",
+      "wert": "antibiotika_quinolone_tetracycline",
+      "schwere": "hart",
+      "hinweis": "Zink blockiert die Aufnahme von Quinolon-Antibiotika (Ciprofloxacin) und Tetracyclinen. Mindestens 2-4 Stunden Abstand!"
+    },
+    {
+      "art": "medikament",
+      "wert": "andere_zink_magnesium_supplemente",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei gleichzeitiger Einnahme von Multivitamin oder anderen Zink-/Magnesium-Präparaten: Überdosierungs-Gefahr. Gesamt-Bilanz prüfen."
+    },
+    {
+      "art": "ernaehrung",
+      "wert": "calcium_milchprodukte",
+      "schwere": "info",
+      "hinweis": "Calcium blockiert die Zink-Aufnahme stark. ZMA NICHT mit Milchprodukten, Käse, Joghurt oder Calcium-Supplementen einnehmen – mindestens 2h Abstand."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "langzeit_b6_neuropathie",
+      "schwere": "vorsichtig",
+      "hinweis": "Vitamin B6 in ZMA-Dosis ist hochdosiert (650% RDI). Bei Langzeit-Einnahme (>1 Jahr) Pausen einlegen oder Produkte mit niedrigerer B6-Dosis wählen."
+    },
+    {
+      "art": "medikament",
+      "wert": "diuretika_thiazid",
+      "schwere": "vorsichtig",
+      "hinweis": "Thiazid-Diuretika können den Magnesium-Spiegel beeinflussen. Bei gleichzeitiger Einnahme Arzt fragen."
+    }
+  ],
+
+  "dosierung": {
+    "standard": "1 Portion (30 mg Zink, 450 mg Magnesium, 10.5 mg B6) 30-60 Min. vor dem Schlafen",
+    "bereich": { "min": 1, "max": 1, "einheit": "Portion" },
+    "obergrenze": "NIEMALS doppelte Dosis – Zink-UL liegt bei 40 mg/Tag, höhere Dosen führen zu Übelkeit und Kupfermangel",
+    "timing": "30-60 Minuten vor dem Schlafen auf NÜCHTERNEN Magen (mindestens 2h nach der letzten Mahlzeit). Mit Wasser, NICHT mit Milchprodukten oder kalziumreichen Getränken. Empfehlung: zwischen Abendessen und Bedtime einplanen.",
+    "quelle": "Hersteller-Empfehlung (BALCO) + EFSA UL Werte",
+    "formen_vergleich": "Original-ZMA (Zink-Monomethionin-Aspartat + Magnesium-Aspartat): patentierte Formel mit klinischen Studien. Generic-ZMA: oft mit anderen Zink-/Magnesium-Formen (Oxid, Citrat) – günstiger, aber unterschiedliche Bioverfügbarkeit. Einzeln gekauft (Zink-Bisglycinat 15-30mg + Magnesium-Bisglycinat 200-400mg + B6 1-2mg): meist günstiger und besser kontrollierbar. ZMA-PM-Varianten: enthalten zusätzlich Melatonin – nicht in DE legal frei verkäuflich."
+  },
+
+  "population_spezifisch": {
+    "athleten_mit_mangel": {
+      "relevant": true,
+      "staerke": 0.7,
+      "kommentar": "Bei dokumentiertem Zink- oder Magnesium-Mangel (Bluttest): ZMA kann sinnvoll sein. Bei normalen Werten: kaum Nutzen."
+    },
+    "vegetarier_veganer": {
+      "relevant": true,
+      "staerke": 0.65,
+      "kommentar": "Pflanzliche Ernährung enthält weniger bioverfügbares Zink (Phytate hemmen Aufnahme). ZMA kann sinnvoll sein – aber Zink-Bisglycinat einzeln günstiger."
+    },
+    "intensive_athleten": {
+      "relevant": true,
+      "staerke": 0.55,
+      "kommentar": "Bei hohem Schweißverlust und intensiver Belastung erhöhter Bedarf. Magnesium-Verlust am relevantesten."
+    },
+    "schlaf_optimierung": {
+      "relevant": true,
+      "staerke": 0.5,
+      "kommentar": "Magnesium-Anteil kann Tiefschlaf verbessern. Magnesium-Bisglycinat einzeln (200-400mg) wirkt aber genauso – günstiger."
+    },
+    "testosteron_steigerung": {
+      "relevant": false,
+      "staerke": 0.3,
+      "kommentar": "NICHT primärer Anwendungsfall trotz Marketing. Bei Testosteron-Problemen: ärztliche Abklärung statt Supplement."
+    },
+    "gesunde_mischkost_esser": {
+      "relevant": false,
+      "staerke": 0.25,
+      "kommentar": "Bei normaler westlicher Mischkost mit Fleisch, Fisch und Vollkorn: meist ausreichende Versorgung. ZMA bringt wenig."
+    }
+  },
+
+  "warnhinweise": [
+    "Die berühmte 'Testosteron +30%' Aussage stammt aus EINER kleinen Studie (n=27) und wurde in Folgestudien NICHT bestätigt – Marketing übertreibt erheblich",
+    "ZMA NIEMALS mit Milchprodukten oder Calcium einnehmen – die Zink-Absorption sinkt um bis zu 50%. Nüchterner Magen vor dem Schlaf ist Pflicht",
+    "Vitamin B6 in ZMA ist hochdosiert (10.5mg, 650% RDI). Bei zusätzlichem Multivitamin/B-Komplex kann der Tagesgesamtwert das Risiko-Niveau überschreiten",
+    "Bei guter Mischkost-Ernährung ist der Nutzen meist marginal. Empfohlen: vor ZMA-Start Bluttest auf Zink und Magnesium machen",
+    "Einzelne Wirkstoffe (Zink-Bisglycinat + Magnesium-Bisglycinat) sind oft billiger und genauso wirksam – ohne die kontroverse 'Testosteron'-Behauptung",
+    "ZMA-PM-Varianten mit Melatonin sind in Deutschland NICHT frei verkäuflich – beim Import aus den USA können rechtliche Probleme entstehen",
+    "Langzeit-B6-Einnahme über 200 mg/Tag (alle Quellen zusammengerechnet) kann periphere Neuropathie (Nervenschäden in Händen/Füßen) verursachen",
+    "Bei Antibiotika-Therapie (Quinolone, Tetracycline) MINDESTENS 4 Stunden Abstand zur ZMA-Einnahme – Zink blockiert die Antibiotika-Wirkung"
+  ],
+
+  "inhalt": ["zink", "magnesium", "vitamin_b6"],
+
+  "quellen": [
+    {
+      "titel": "Effects of a novel zinc-magnesium formulation on hormones and strength",
+      "autoren": "Brilla LR, Conte V",
+      "url": "https://asep.org/asep/asep/BrillaV2.PDF",
+      "jahr": 2000,
+      "typ": "rct"
+    },
+    {
+      "titel": "Effects of Zinc Magnesium Aspartate (ZMA) Supplementation on Training Adaptations and Markers of Anabolism and Catabolism",
+      "autoren": "Wilborn CD, Kerksick CM, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2129158/",
+      "jahr": 2004,
+      "typ": "rct"
+    },
+    {
+      "titel": "Acute effects of a zinc-containing nutritional supplement on sleep and morning performance",
+      "autoren": "Akademisches Studienzentrum",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11313716/",
+      "jahr": 2024,
+      "typ": "rct"
+    },
+    {
+      "titel": "Failure of ZMA to enhance Performance and Resistance Training in Trained Men (Koehler 2009)",
+      "autoren": "Koehler K, et al.",
+      "url": "https://link.springer.com/article/10.1007/s00421-008-0860-1",
+      "jahr": 2009,
+      "typ": "rct"
+    },
+    {
+      "titel": "EFSA Scientific Opinion on Tolerable Upper Intake Levels for Vitamin B6",
+      "autoren": "EFSA Panel on Nutrition, Novel Foods",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.7989",
+      "jahr": 2023,
+      "typ": "position_stand"
+    },
+    {
+      "titel": "International Society of Sports Nutrition Position Stand: nutrient timing and exercise",
+      "autoren": "Kerksick CM, et al.",
+      "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0189-4",
+      "jahr": 2017,
+      "typ": "position_stand"
+    },
+    {
+      "titel": "Does ZMA Boost Testosterone? Critical Review",
+      "autoren": "Healthline Medical Review 2021",
+      "url": "https://www.healthline.com/nutrition/zma-testosterone",
+      "jahr": 2021,
+      "typ": "review"
+    }
+  ]
+}

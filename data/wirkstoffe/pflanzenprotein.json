@@ -1,0 +1,275 @@
+{
+  "id": "pflanzenprotein",
+  "name": "Pflanzenprotein (Vegan)",
+  "kategorie": "performance",
+  "ikon": "🌱",
+  "kurz_beschreibung": "Veganes Protein aus Erbse, Reis, Soja, Hanf. Bei ausreichender Dosis (≥30g) und Blend-Strategie (Erbse+Reis) vergleichbar mit Whey für Muskelaufbau – Leucin-Lücke beachten.",
+
+  "beschreibung": {
+    "was_ist_es": "Pflanzenprotein ist ein Sammelbegriff für proteinhaltige Pulver aus pflanzlichen Quellen. Die wichtigsten: Erbsenprotein (höchster Lysin-Gehalt, ~85% Protein), Reisprotein (komplementär zu Erbse, gut bei Allergien), Sojaprotein-Isolat (komplettes Aminosäureprofil, hochwertige Quelle), Hanfprotein (zusätzlich Omega-3, aber niedriger Proteingehalt 50-60%), Kürbiskernprotein. Premium-Produkte sind meist BLENDS aus 2-3 Quellen – Erbse+Reis ist Standard, weil sich die Aminosäureprofile perfekt ergänzen.",
+    "wie_wirkt_es": "Wirkung über die gleichen Mechanismen wie tierisches Protein: Lieferung essentieller Aminosäuren für Muskelproteinsynthese (MPS) und Leucin als 'Schalter' für mTOR. ABER: Pflanzliche Proteine haben durchschnittlich 30-40% weniger Leucin pro Gramm Protein als Whey. Konsequenz: Höhere Dosis nötig, um den gleichen MPS-Effekt zu erreichen. Standardempfehlung: 30-40g Pflanzenprotein pro Portion (vs. 20-25g Whey). Bei Blends mit zugesetztem Leucin oder bei adäquater Gesamteiweißzufuhr verschwindet der Unterschied weitgehend.",
+    "warum_wichtig": "Pflanzenprotein war jahrelang als 'minderwertige' Whey-Alternative verschrien. Die Forschung der letzten 5 Jahre hat das deutlich revidiert: Bei AUSREICHENDER Dosis und kluger Blend-Strategie ist Pflanzenprotein für Muskelaufbau praktisch GLEICHWERTIG zu Whey. Für Veganer ist es ohnehin die einzige Wahl. Für Milcheiweiß-Allergiker ebenfalls. Auch für Personen mit ethischen Bedenken zur Milchindustrie oder Nachhaltigkeitsfokus relevant. Wichtig: NICHT alle Pflanzenproteine sind gleich – Soja und Erbsen-Reis-Blends sind die wissenschaftlich besten Optionen."
+  },
+
+  "fazit": {
+    "top_effekte": [
+      "Bei ≥30g pro Portion: vergleichbarer Muskelaufbau wie Whey (Pinckaers 2024, RCT)",
+      "Soja vs. Whey: KEIN signifikanter Unterschied in Magermasse oder Kraft (SMD -0.02, n=17 RCTs)",
+      "Erbsen-Reis-Blend stimuliert MPS gleichwertig zu Whey bei ~2.5g Leucin pro Portion"
+    ],
+    "ideal_fuer": "Veganer, Milcheiweiß-Allergiker, Personen mit ethischen Bedenken zur Tierhaltung, Reizdarm-Patienten (bessere Verträglichkeit), Hashimoto-Patienten (Whey-Probleme)",
+    "dosis": "30-40 g pro Portion (höher als Whey wegen Leucin-Lücke), 1-2 Portionen täglich",
+    "vorsicht_bei": "Soja-Allergie (bei Soja-Protein), bei einzelnem Quellen-Protein ohne Leucin-Boost: höhere Dosis nötig oder zusätzliches Leucin",
+    "mythen": [
+      "„Pflanzenprotein ist deutlich schlechter für Muskelaufbau als Whey“ – widerlegt. Bei adäquater Dosis und Blend-Strategie statistisch kein relevanter Unterschied.",
+      "„Pflanzenproteine sind unvollständige Proteine“ – nur einzelne Quellen. Soja-Isolat ist VOLLSTÄNDIG, Erbsen-Reis-Blend ergibt komplettes Aminosäureprofil. Kombinationen schlagen Einzelquellen.",
+      "„Veganer können keine Muskeln aufbauen ohne tierisches Protein“ – falsch. Mehrere Studien mit vegan-trainierenden Athleten zeigen identischen Muskelaufbau bei adäquater Gesamtproteinzufuhr (1.6-2.2g/kg KG).",
+      "„Soja-Protein senkt Testosteron bei Männern“ – widerlegt. Meta-Analyse zeigt: KEINE signifikante Reduktion von Testosteron, Östradiol oder SHBG bei normalen Dosen.",
+      "„Hanfprotein ist das beste vegane Protein“ – marketing-getrieben. Hanf hat nur 50-60% Proteingehalt und mittelmäßiges Aminosäureprofil. Soja oder Erbsen-Reis-Blends sind klar überlegen."
+    ]
+  },
+
+  "evidenz": {
+    "level": "A",
+    "score": 78,
+    "review_typ": "meta_analyse",
+    "studien_anzahl": 43,
+    "konsens": "Nguo 2024 Meta-Analyse + Pinckaers Direktvergleiche + Plant Protein Position Stand (Phillips Group)",
+    "effekt_groesse": [
+      {
+        "wert": -0.02,
+        "einheit": "SMD (nicht signifikant)",
+        "kontext": "Direkter Vergleich Soja-Protein vs. Milchprotein auf Magermasse-Entwicklung",
+        "quelle": "Nguo et al. 2024 Meta-Analyse (17 RCTs)",
+        "erklaerung": {
+          "was_bedeutet": "SMD von -0.02 ist statistisch absolut NICHT signifikant – das bedeutet: zwischen Soja-Protein und Milchprotein gibt es KEINEN messbaren Unterschied bezüglich Muskelaufbau. Diese Meta-Analyse aus 17 RCTs zerstört das alte Märchen 'Whey ist überlegen'. Bei ausreichender Gesamteiweißzufuhr sind die beiden Proteinquellen gleichwertig.",
+          "studie_zeigt": "Systematic Review mit 17 RCTs zum direkten Vergleich Soja vs. Milchprotein. Ergebnisse: KEIN Unterschied bei Magermasse (SMD -0.02, 95% CI -0.20 bis 0.16, p=0.80), KEIN Unterschied bei Muskelkraft (14 RCTs), KEIN Unterschied bei physischer Leistung (5 RCTs). ABER: Bei NICHT-Soja-Pflanzenproteinen (Reis, Chia, Hafer, Kartoffel) zeigte sich ein moderater Vorteil für Tierprotein (SMD -0.58) – wenn diese ALLEIN verwendet wurden, ohne Blending.",
+          "studien_details": "Systematische Meta-Analyse publiziert 2024 in Nutrition Reviews (Oxford). 43 RCTs eingeschlossen. PROSPERO Registration. Methodik: Random-Effects-Modell mit Subgruppen-Analysen nach Proteinquelle.",
+          "zuverlaessigkeit": "Sehr hoch für die Aussage 'Soja gleichwertig zu Whey'. Sehr wichtige Studie für vegane Sportler – widerlegt jahrzehntelange Mythen. Wichtige Einschränkung: Bei einzelnen Pflanzenproteinen ohne Blend (nur Reis, nur Hafer) ist Whey moderately besser – Lösung: Blends nutzen!"
+        }
+      },
+      {
+        "wert": 30,
+        "einheit": "g Mindest-Dosis",
+        "kontext": "Erforderliche Dosis pflanzlicher Proteine für vergleichbare Muskelproteinsynthese wie 25g Whey",
+        "quelle": "ISSN Position Stand + Plant Protein Recovery Review 2024",
+        "erklaerung": {
+          "was_bedeutet": "Pflanzenproteine haben 30-40% weniger Leucin als Whey. Konsequenz: Um den gleichen Muskelproteinsynthese-Boost zu erreichen, brauchst du etwa 30-40g Pflanzenprotein statt 20-25g Whey. Beispiel: Whey 25g enthält ~2.5g Leucin (Leucin-Schwellenwert für maximalen MPS-Effekt). Erbsenprotein braucht ~35g für die gleiche Leucinmenge. Wer zu wenig dosiert, verschenkt Wirkung – das ist der häufigste Anwender-Fehler.",
+          "studie_zeigt": "Direkte Vergleichsstudien (Phillips-Gruppe McMaster, Pinckaers 2024) zeigen: Bei 30g+ Pflanzenprotein mit ~2.5g Leucin (oft durch Blend oder Leucin-Boost) ist die Muskelproteinsynthese vergleichbar zu Whey. Bei 20g pflanzlich vs. 20g Whey: Whey klar überlegen. Bei 35g pflanzlich vs. 25g Whey: gleichwertig.",
+          "studien_details": "Multiple RCTs aus der Phillips-Gruppe an der McMaster University. Wichtigste Erkenntnis: Das frühere 'pflanzlich ist schlechter' war ein DOSIERUNGS-Problem, kein Protein-Quellen-Problem.",
+          "zuverlaessigkeit": "Sehr hoch. Praktische Konsequenz: Bei pflanzlichen Proteinen IMMER 30-40g pro Portion einplanen – nicht 20-25g wie bei Whey."
+        }
+      },
+      {
+        "wert": 2.5,
+        "einheit": "g Leucin pro Portion (Schwelle)",
+        "kontext": "Leucin-Schwellenwert für maximale Muskelproteinsynthese – pflanzliche Quellen müssen das erreichen",
+        "quelle": "Norton & Layman 2006 + Phillips Position Stand",
+        "erklaerung": {
+          "was_bedeutet": "Leucin ist die Schlüssel-Aminosäure für Muskelproteinsynthese – sie aktiviert mTOR (den molekularen 'Muskel-aufbauen'-Schalter). Studien zeigen einen Schwellenwert: ~2.5g Leucin pro Mahlzeit löst maximale MPS aus. Whey ist leucin-reich (10-12% Leucin), Soja mittel (8%), Erbse niedriger (~8%), Reis am niedrigsten (~7%). Konsequenz: Bei pflanzlichen Quellen entweder höher dosieren ODER mit Leucin anreichern ODER Blends nutzen.",
+          "studie_zeigt": "Forschung von Norton, Layman, Phillips und Pinckaers zeigt konsistent: Leucin-Schwellenwert von ~2.5g pro Mahlzeit ist nötig für maximale MPS. Pflanzliche Proteine erreichen das bei höherer Dosis. Pea-Rice-Blends mit 30g+ erreichen den Schwellenwert. Erbsen-Isolat allein bei 30g ebenfalls. Reis-Protein allein braucht ~40g für den Schwellenwert.",
+          "studien_details": "Mehrere mechanistische und klinische Studien zur Leucin-MPS-Beziehung. Wichtig: Der Schwellenwert ist additive über Mahlzeiten – wer 4 Mahlzeiten mit jeweils 2.5g Leucin hat, maximiert MPS.",
+          "zuverlaessigkeit": "Sehr hoch für die mechanistische Aussage. Praktische Anwendung: Bei pflanzlichem Protein immer Leucin-Gehalt prüfen – manche Premium-Produkte sind mit zusätzlichem Leucin angereichert."
+        }
+      }
+    ]
+  },
+
+  "indikationen": [
+    {
+      "ziel": "vegan_vegetarisch",
+      "staerke": 0.95,
+      "kommentar": "HAUPTINDIKATION. Die einzige Protein-Supplement-Option für Veganer. Soja-Isolat oder Erbsen-Reis-Blend sind die besten Optionen."
+    },
+    {
+      "ziel": "milcheiweiss_allergie",
+      "staerke": 0.95,
+      "kommentar": "Bei Kuhmilchprotein-Allergie ist Pflanzenprotein die sicherste Alternative. ACHTUNG bei Soja-Allergie: dann Erbse oder Reis wählen."
+    },
+    {
+      "ziel": "muskelaufbau",
+      "staerke": 0.8,
+      "kommentar": "Bei adäquater Dosis (30g+) vergleichbar mit Whey. Blends oder Soja sind die besten Optionen."
+    },
+    {
+      "ziel": "regeneration",
+      "staerke": 0.7,
+      "kommentar": "Aufgrund antioxidativer Polyphenole in pflanzlichen Quellen möglicherweise leichter Recovery-Vorteil. Effekt moderat."
+    },
+    {
+      "ziel": "hashimoto_autoimmun",
+      "staerke": 0.7,
+      "kommentar": "Bei Hashimoto und Autoimmun-Problemen kann Whey-Konsum Symptome verstärken. Pflanzenprotein als Alternative."
+    },
+    {
+      "ziel": "reizdarm_magenempfindlichkeit",
+      "staerke": 0.6,
+      "kommentar": "Erbsenprotein ist meist gut verträglich, auch bei Reizdarm. Soja kann FODMAP-empfindliche Personen belasten – Erbse besser."
+    },
+    {
+      "ziel": "nachhaltigkeit_oeko",
+      "staerke": 0.7,
+      "kommentar": "Deutlich besserer ökologischer Fußabdruck als Whey (Wasser-, CO2-, Flächenverbrauch). Relevant für umweltbewusste Konsumenten."
+    },
+    {
+      "ziel": "kardiovaskulaere_gesundheit",
+      "staerke": 0.55,
+      "kommentar": "Soja-Protein zeigt leichten Blutdruck-senkenden Effekt. Pflanzenproteine generell mit niedrigerem kardiovaskulären Risiko assoziiert."
+    }
+  ],
+
+  "kontraindikationen": [
+    {
+      "art": "allergie",
+      "wert": "soja_allergie",
+      "schwere": "hart",
+      "hinweis": "Bei Soja-Allergie: KEIN Soja-Protein. Auf Erbsen-, Reis- oder Hanfprotein umsteigen. Etiketten genau prüfen – Soja ist in Blends häufig."
+    },
+    {
+      "art": "allergie",
+      "wert": "huelsenfrucht_allergie",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei Hülsenfrucht-Allergie: Vorsicht mit Erbsen- und Soja-Protein. Reis- oder Hanfprotein als Alternative."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "schilddruesenerkrankung_soja",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei Hypothyreose mit Levothyroxin-Therapie: Soja kann die Aufnahme des Medikaments stören. Mindestens 4 Stunden Abstand oder anderes Pflanzenprotein wählen."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "niereninsuffizienz_schwer",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei schwerer Niereninsuffizienz mit Eiweißrestriktion: Gesamteiweißzufuhr mit Arzt absprechen. Pflanzliche Proteine sind hier oft weniger belastend als tierische."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "phytoöstrogene_brustkrebs",
+      "schwere": "info",
+      "hinweis": "Bei Östrogen-Rezeptor-positivem Brustkrebs: Soja-Isoflavone potentiell relevant. Aktuelle Evidenz zeigt KEIN erhöhtes Risiko bei moderaten Mengen – aber individuelle Absprache mit Onkologen."
+    }
+  ],
+
+  "dosierung": {
+    "standard": "30-40 g pro Portion (höher als Whey wegen Leucin-Lücke), 1-2 Portionen täglich",
+    "bereich": { "min": 25, "max": 50, "einheit": "g pro Portion" },
+    "obergrenze": "Bis zu 1.6-2.2 g Protein/kg KG/Tag aus allen Quellen (ISSN-Empfehlung für Krafttrainierende)",
+    "timing": "Nach dem Training (0-2 Std) oder als Snack zwischen Mahlzeiten. Vor dem Schlafengehen: Soja-Protein zeigt langsamere Absorption (vergleichbar mit Casein).",
+    "quelle": "ISSN Position Stand + Pinckaers 2024",
+    "formen_vergleich": "Soja-Isolat (90% Protein): Komplettes Aminosäureprofil, vergleichbar mit Whey, gut belegt. Erbsenprotein (80-85% Protein): Hoch in Lysin und BCAAs, gut verträglich. Reisprotein (80% Protein): Hoch in Methionin, hypoallergen. Erbsen-Reis-Blend: KOMPLEMENTÄR – ideale Wahl, deckt alle Aminosäuren. Hanfprotein (50-60% Protein): Niedrigerer Proteingehalt, dafür Omega-3. Premium-Multi-Blends (4-5 Quellen): teurer, aber maximales Aminosäureprofil. Mycoprotein (Quorn): pilzbasiert, hoher Proteingehalt, weniger verbreitet als Pulver."
+  },
+
+  "population_spezifisch": {
+    "veganer": {
+      "relevant": true,
+      "staerke": 0.95,
+      "kommentar": "HAUPTGRUND. Einzige Option für Muskelaufbau-Supplementierung. Soja-Isolat oder Erbsen-Reis-Blend wählen.",
+      "quelle": "Pinckaers 2024"
+    },
+    "milcheiweiss_allergiker": {
+      "relevant": true,
+      "staerke": 0.95,
+      "kommentar": "Sicherste Alternative bei Kuhmilchprotein-Allergie. Bei Soja-Allergie: Erbse oder Reis."
+    },
+    "hashimoto_patienten": {
+      "relevant": true,
+      "staerke": 0.7,
+      "kommentar": "Whey-Konsum kann bei manchen Hashimoto-Patienten Symptome verstärken. Pflanzenprotein als Alternative. ABER: Soja bei L-Thyroxin-Therapie mit Abstand."
+    },
+    "reizdarm_betroffene": {
+      "relevant": true,
+      "staerke": 0.65,
+      "kommentar": "Erbsenprotein meist gut verträglich. Soja kann FODMAP-empfindliche Personen belasten."
+    },
+    "krafttrainierende_omnivor": {
+      "relevant": true,
+      "staerke": 0.65,
+      "kommentar": "Pflanzenprotein funktioniert auch hier – aber Whey ist bei gleicher Dosis leicht überlegen. Wer Mischung will: 50/50 Whey + Pflanzlich."
+    },
+    "nachhaltigkeit_fokussiert": {
+      "relevant": true,
+      "staerke": 0.75,
+      "kommentar": "Deutlich besserer ökologischer Fußabdruck als Whey (Wasser-, CO2-, Flächenverbrauch). Relevant für Umweltschutz-Fokus."
+    },
+    "wettkampfsportler": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "Bei sehr strikter Kalorien-Kontrolle ist Whey-Isolat schlanker (weniger Kohlenhydrate). Aber für Veganer ist Pflanzenprotein die einzige Option."
+    }
+  },
+
+  "warnhinweise": [
+    "DOSIS IST ENTSCHEIDEND. 25g Pflanzenprotein wirkt NICHT wie 25g Whey – brauchst 30-40g für vergleichbaren Effekt durch Leucin-Lücke",
+    "Single-Source-Proteine (nur Reis, nur Hafer) sind unterlegen. IMMER Blends bevorzugen oder Soja-Isolat (vollständig)",
+    "Soja-Allergiker müssen Etiketten besonders sorgfältig prüfen – Soja ist in vielen 'pflanzlichen' Blends enthalten",
+    "Bei Hashimoto und L-Thyroxin: Soja-Protein NICHT zeitgleich einnehmen (mindestens 4h Abstand)",
+    "Whey ist NICHT 'besser' bei adäquater Dosis und Blend-Strategie – das alte 'tierisch überlegen'-Narrativ ist überholt",
+    "Bei Standard-Dosen kann Pflanzenprotein etwas weniger sättigend sein als Whey – kann Vorteil bei Diät oder Nachteil bei Hunger sein",
+    "Hanfprotein-Marketing als 'Super-Pflanzenprotein' ist überzogen – nur 50-60% Proteingehalt, mittelmäßiges Aminosäureprofil",
+    "Bei Personen mit ausreichender pflanzlicher Vollkost-Ernährung ist Protein-Supplementierung oft GAR NICHT nötig – Linsen, Bohnen, Tofu reichen meist"
+  ],
+
+  "inhalt": ["pflanzenprotein"],
+
+  "quellen": [
+    {
+      "titel": "Effect of Plant Versus Animal Protein on Muscle Mass, Strength, Physical Performance, and Sarcopenia: A Systematic Review and Meta-analysis",
+      "autoren": "Nguo K, et al.",
+      "url": "https://academic.oup.com/nutritionreviews/article/83/7/e1581/7954494",
+      "jahr": 2024,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "Effects of plant- versus animal-based proteins on muscle protein synthesis: A systematic review with meta-analysis",
+      "autoren": "Pinckaers PJM, et al.",
+      "url": "https://sportrxiv.org/index.php/server/preprint/view/526",
+      "jahr": 2024,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "The effects of whey, pea, and collagen protein supplementation beyond the recommended dietary allowance on integrated myofibrillar protein synthetic rates in older males: a randomized controlled trial",
+      "autoren": "McKendry J, Phillips SM, et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38760677/",
+      "jahr": 2024,
+      "typ": "rct",
+      "doi": "10.1016/j.ajcnut.2024.05.009"
+    },
+    {
+      "titel": "Plant protein blend ingestion stimulates postexercise myofibrillar protein synthesis rates equivalently to whey in resistance-trained adults",
+      "autoren": "Van der Heijden I, et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38522030/",
+      "jahr": 2024,
+      "typ": "rct",
+      "doi": "10.1249/MSS.0000000000003432"
+    },
+    {
+      "titel": "Long-term effects of plant vs. animal protein supplementation on body composition, muscle strength, physical performance, and cardiometabolic risk factors in adults",
+      "autoren": "Frontiers in Nutrition 2026",
+      "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1813846/full",
+      "jahr": 2026,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "Effect of Plant-Based Proteins on Recovery from Resistance Exercise-Induced Muscle Damage in Healthy Young Adults—A Systematic Review",
+      "autoren": "PMC Nutrients 2024",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12348865/",
+      "jahr": 2024,
+      "typ": "systematic_review"
+    },
+    {
+      "titel": "The Effect of Plant-Based Protein Ingestion on Athletic Ability in Healthy People—A Bayesian Meta-Analysis",
+      "autoren": "PMC Nutrients Bayesian Analysis",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11357476/",
+      "jahr": 2024,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "International Society of Sports Nutrition Position Stand: Protein and Exercise",
+      "autoren": "Jäger R, Kerksick CM, et al.",
+      "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8",
+      "jahr": 2017,
+      "typ": "position_stand"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "id": "pre_workout",
+  "name": "Pre-Workout (Kombi-Produkt)",
+  "kategorie": "performance",
+  "ikon": "⚡",
+  "kurz_beschreibung": "Multi-Ingredient-Supplement mit Koffein, Beta-Alanin und Citrullin als Kern. Effekt der Einzelkomponenten gut belegt – aber: Proprietary Blends und Über-Dosierungen häufig kritisch.",
+
+  "beschreibung": {
+    "was_ist_es": "Pre-Workout-Supplements (englisch Multi-Ingredient Pre-Workout Supplements, MIPS) sind Mischungen aus typischerweise 15-20 verschiedenen Wirkstoffen. Eine Analyse der Top-100-Produkte zeigt: durchschnittlich 18 Inhaltsstoffe pro Produkt, davon 44% in 'Proprietary Blends' ohne Mengenangaben. Die Hauptkomponenten mit echter Evidenz: Koffein (in 86% der Produkte, Ø 254mg), Beta-Alanin (87%, Ø 2g), L-Citrullin (71%, Ø 4g), Tyrosin (63%), Taurin (51%), Kreatin (49%).",
+    "wie_wirkt_es": "Die Wirkung kommt nicht vom 'Produkt', sondern von den Einzelkomponenten: Koffein blockiert Adenosin-Rezeptoren (-> Wachheit, Fokus, weniger wahrgenommene Anstrengung). Beta-Alanin erhöht intramuskuläre Carnosin-Speicher und puffert Milchsäure bei intensiver Belastung. L-Citrullin wird zu L-Arginin metabolisiert und verbessert NO-Produktion → bessere Durchblutung (Pump-Effekt). Synergistische Effekte zwischen den Komponenten sind theoretisch plausibel, aber selten in RCTs nachgewiesen.",
+    "warum_wichtig": "Pre-Workout ist DAS Marketing-Lieblingsprodukt der Supplement-Industrie. Tatsache: Die Wirkstoffe einzeln gekauft sind oft günstiger und besser dosierbar als ein Markenprodukt. Aber: Wer Convenience will und ein gutes Produkt mit transparenter Deklaration findet, kann von der Kombination profitieren – besonders bei intensivem Krafttraining oder vor langen Trainingseinheiten."
+  },
+
+  "fazit": {
+    "top_effekte": [
+      "Akute Steigerung der Wiederholungszahlen und Muskelausdauer (Koffein 200-300mg)",
+      "Reduktion subjektiver Erschöpfung (RPE) und schnellere Reaktion (Koffein + Tyrosin)",
+      "Verbesserte Durchblutung und 'Pump' (L-Citrullin 6-8g)"
+    ],
+    "ideal_fuer": "Krafttrainierende, Anwender die Convenience bevorzugen, Vor-Training-Energie-Mangel, Personen mit gut tolerierbarer Koffein-Empfindlichkeit",
+    "dosis": "30-45 Minuten vor dem Training. WICHTIG: einzelne Wirkstoffmengen prüfen – Standard: Koffein 200-300mg, Beta-Alanin 2-5g, Citrullin 6-8g",
+    "vorsicht_bei": "Bluthochdruck, Herzrhythmusstörungen, Schlafprobleme, Schwangerschaft, Angststörungen, gleichzeitiger Konsum anderer Stimulanzien",
+    "mythen": [
+      "„Mehr Zutaten = besseres Produkt“ – fast immer falsch. Top-Produkte enthalten 3-5 effektive Wirkstoffe in vollen Dosen. 20+ Zutaten bedeuten meist Unterdosierung jedes einzelnen.",
+      "„Proprietary Blends schützen die Geheimrezeptur“ – fast immer Marketing-Trick. Verschleiert Unterdosierung. Vermeide Produkte ohne offene Deklaration der Wirkstoffmengen.",
+      "„Das Tingeln nach Beta-Alanin (Paresthesia) zeigt dass es wirkt“ – stimmt teilweise. Ist ein Zeichen ausreichender Dosis (mind. 1.6g), aber sagt NICHTS über die Carnosin-Speicher aus (brauchen 4-8 Wochen Aufbau).",
+      "„Pre-Workout direkt nach dem Aufstehen ist optimal“ – falsch. Auf nüchternen Magen verstärkt Koffein Magenreizung und Unruhe. 30-60 Min vor Training mit etwas Essen ist besser.",
+      "„Toleranz-Entwicklung bedeutet höhere Dosen sind nötig“ – problematisch. Bei Koffein-Toleranz lieber 1-2 Wochen Deload als die Dosis erhöhen. Über 600mg/Tag steigen Nebenwirkungen exponentiell."
+    ]
+  },
+
+  "evidenz": {
+    "level": "B",
+    "score": 70,
+    "review_typ": "meta_analyse",
+    "studien_anzahl": 45,
+    "konsens": "Stratton 2022 JISSN Review + Komponenten-spezifische Meta-Analysen (Koffein, Beta-Alanin, Citrullin)",
+    "effekt_groesse": [
+      {
+        "wert": 2.6,
+        "einheit": "Wiederholungen",
+        "kontext": "Akute Steigerung der Bankdrücken-Wiederholungen mit MIPS vs. Placebo",
+        "quelle": "Stratton et al. 2022 JISSN Systematic Review (multiple RCTs)",
+        "erklaerung": {
+          "was_bedeutet": "Pre-Workout-Konsumenten schaffen im Bankdrücken durchschnittlich 2-3 mehr Wiederholungen pro Satz als die Placebo-Gruppe. Das ist ein klinisch relevanter Effekt: Bei 4 Sätzen bedeutet das ~10 zusätzliche Reps pro Übung – langfristig mehr Trainingsvolumen, was Muskelaufbau fördert. Effekt ist primär dem Koffein-Anteil zuzuschreiben (200-300mg).",
+          "studie_zeigt": "Stratton 2022 reviewte 12 RCTs zu koffeinhaltigen und 8 zu koffeinfreien MIPS. Ergebnis: Koffeinhaltige MIPS verbessern signifikant: 1) Wiederholungen bis Muskelversagen, 2) Maximalkraft (1RM-Test), 3) subjektive Energie/Fokus, 4) Time-to-Exhaustion. Koffeinfreie MIPS hatten geringere oder keine signifikanten akuten Effekte – aber chronische Effekte (4+ Wochen) durch Beta-Alanin und Citrullin.",
+          "studien_details": "Systematic Review publiziert 2022 im Journal of the International Society of Sports Nutrition (JISSN). 20 RCTs eingeschlossen, hauptsächlich an Krafttrainierten. Studiendauer: akut (Einzeldosis) bis chronisch (8 Wochen). Hauptlimitation: hohe Heterogenität der Produkte.",
+          "zuverlaessigkeit": "Solide für akute Performance-Effekte – aber: Die meisten Studien wurden mit spezifischen Marken-Produkten durchgeführt. Generalisierbarkeit auf alle MIPS limitiert. Wer einzeln Koffein nimmt, erreicht ähnliche Effekte."
+        }
+      },
+      {
+        "wert": 254,
+        "einheit": "mg Koffein durchschnittlich",
+        "kontext": "Durchschnittlicher Koffein-Gehalt der Top-100 Pre-Workout-Produkte",
+        "quelle": "Jagim et al. 2019 Marktanalyse (Top-100-Produkte)",
+        "erklaerung": {
+          "was_bedeutet": "Die meisten Pre-Workout-Produkte enthalten 254mg Koffein – das entspricht etwa 2.5 Tassen starkem Espresso. Für Performance ist das eine wirksame Dosis. Aber: viele Produkte gehen weit darüber (bis 400mg in einer Portion), was bei nicht-koffein-gewöhnten Personen zu Herzrasen, Übelkeit oder Angstzuständen führen kann. EFSA-Empfehlung: max. 200mg pro Einzeldosis, 400mg pro Tag.",
+          "studie_zeigt": "Analyse der 100 meistverkauften Pre-Workout-Produkte: 86% enthalten Koffein, durchschnittlich 254 ± 79.5 mg pro Portion. Beta-Alanin: 87%, Ø 2g (effektive Akut-Dosis 2-5g). L-Citrullin: 71%, Ø 4g (effektive Dosis 6-8g). Heißt: Die meisten Produkte haben Koffein in voller Dosis, andere Wirkstoffe oft unterdosiert.",
+          "studien_details": "Querschnitt-Marktanalyse der Top-100-Produkte basierend auf US-Verkaufsdaten. Methodik: Analyse der Inhaltsstoffe und deklarierten Mengen.",
+          "zuverlaessigkeit": "Hoch für die Aussage über typische Inhaltsstoff-Mengen. Praktische Konsequenz: Vor Kauf IMMER die deklarierten Mengen prüfen – besonders bei Beta-Alanin und Citrullin (häufig unterdosiert)."
+        }
+      },
+      {
+        "wert": 44.3,
+        "einheit": "% Proprietary Blends",
+        "kontext": "Anteil der Pre-Workout-Inhaltsstoffe in nicht-deklarierten 'Proprietary Blends'",
+        "quelle": "Jagim et al. 2019 Marktanalyse",
+        "erklaerung": {
+          "was_bedeutet": "Fast die Hälfte (44.3%) aller Inhaltsstoffe in den Top-Pre-Workout-Produkten ist in sogenannten 'Proprietary Blends' versteckt – Mischungen ohne Einzeldosen-Angabe. Konsequenz für den Käufer: Du weißt nicht ob du eine wirksame Dosis bekommst. Marketing-Argument: 'Geheim-Rezeptur, vor Konkurrenz schützen'. Realität: meist Unterdosierung kaschieren.",
+          "studie_zeigt": "Marketing-Analyse: Pro Produkt durchschnittlich 18.4 ± 9.7 Inhaltsstoffe, davon 8.1 ± 9.9 in proprietary blends. Beispiel: 'Energy & Focus Blend 5g' kann 4.8g billiges Taurin + 200mg wirksames Koffein enthalten – oder umgekehrt. Beide Mischungen wiegen 5g, kosten gleich, wirken aber komplett unterschiedlich.",
+          "studien_details": "Branchen-Analyse-Studie. Wichtige Konsequenz für den Konsumenten: Pre-Workouts MIT vollständig deklarierten Mengen pro Inhaltsstoff klar bevorzugen.",
+          "zuverlaessigkeit": "Sehr hoch. Standard-Empfehlung der Sportmedizin: NUR Produkte mit transparenter Deklaration kaufen. Marken die proprietary blends nutzen sind grundsätzlich verdächtig."
+        }
+      }
+    ]
+  },
+
+  "indikationen": [
+    {
+      "ziel": "kraftsteigerung",
+      "staerke": 0.75,
+      "kommentar": "Solide Evidenz für akute Steigerung von Maximalkraft, Wiederholungen und subjektiver Energie – PRIMÄR durch Koffein."
+    },
+    {
+      "ziel": "muskelausdauer",
+      "staerke": 0.7,
+      "kommentar": "Beta-Alanin (bei chronischer Einnahme 4+ Wochen) und Koffein (akut) verbessern Time-to-Exhaustion."
+    },
+    {
+      "ziel": "energie",
+      "staerke": 0.8,
+      "kommentar": "Subjektive Energie und Fokus klar verbessert – PRIMÄR Koffein-Effekt. Etwas zusätzliche Wirkung durch Tyrosin."
+    },
+    {
+      "ziel": "pump_durchblutung",
+      "staerke": 0.7,
+      "kommentar": "L-Citrullin verbessert NO-Produktion und Muskel-Durchblutung – wenn ausreichend dosiert (6-8g)."
+    },
+    {
+      "ziel": "intensive_workouts",
+      "staerke": 0.75,
+      "kommentar": "Bei kurzen, hochintensiven Einheiten (CrossFit, HIIT, Krafttraining) am wirksamsten."
+    },
+    {
+      "ziel": "ausdauer_lang",
+      "staerke": 0.45,
+      "kommentar": "Bei längeren Ausdauerleistungen weniger relevant – Koffein wirkt, aber andere MIPS-Komponenten weniger nützlich."
+    },
+    {
+      "ziel": "muskelaufbau",
+      "staerke": 0.5,
+      "kommentar": "INDIREKT durch mehr Trainingsvolumen. Kein direkter Muskelaufbau-Effekt – dafür braucht es Protein + Krafttraining."
+    }
+  ],
+
+  "kontraindikationen": [
+    {
+      "art": "medizinisch",
+      "wert": "bluthochdruck",
+      "schwere": "hart",
+      "hinweis": "Bei unbehandeltem oder schwer kontrollierbarem Bluthochdruck: Koffein und Stimulanzien können Blutdruck akut um 5-15 mmHg erhöhen. NUR mit Arzt absprechen."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "herzrhythmusstoerungen",
+      "schwere": "hart",
+      "hinweis": "Bei Vorhofflimmern, ventrikulären Extrasystolen oder anderen Arrhythmien: KEINE Pre-Workouts. Koffein und Yohimbe können Episoden auslösen."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "angststoerungen",
+      "schwere": "vorsichtig",
+      "hinweis": "Hohe Koffein-Dosen können Angstzustände, Panikattacken und Schlafstörungen verstärken. Bei diagnostizierten Angststörungen: vermeiden oder sehr niedrige Dosen testen."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "schwangerschaft",
+      "schwere": "hart",
+      "hinweis": "In Schwangerschaft und Stillzeit: KEIN Pre-Workout (200-400mg Koffein und Stimulanzien zu hoch dosiert). EFSA empfiehlt max. 200mg Koffein/Tag bei Schwangeren – einzelne Tasse Kaffee statt Pre-Workout."
+    },
+    {
+      "art": "medikament",
+      "wert": "blutdrucksenker",
+      "schwere": "vorsichtig",
+      "hinweis": "Koffein kann die Wirkung von Beta-Blockern, ACE-Hemmern und anderen Antihypertensiva abschwächen. Blutdruck-Monitoring."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "schlafstoerungen",
+      "schwere": "vorsichtig",
+      "hinweis": "Koffein hat Halbwertszeit von 5-6h – Pre-Workout am späten Nachmittag oder Abend stört den Schlaf nachweislich. Bei Schlafproblemen: nur morgens trainieren oder koffeinfrei."
+    },
+    {
+      "art": "alter",
+      "wert": "minderjaehrig",
+      "schwere": "hart",
+      "hinweis": "Für Personen unter 18 Jahren NICHT empfohlen. Pre-Workouts werden teilweise an Jugendliche vermarktet – dosis-mäßig aber nur für Erwachsene mit Krafttraining-Erfahrung sinnvoll."
+    }
+  ],
+
+  "dosierung": {
+    "standard": "1 Portion (5-15g Pulver) 30-45 Minuten vor dem Training",
+    "bereich": { "min": 1, "max": 1, "einheit": "Portion" },
+    "obergrenze": "Niemals doppelte Dosis – Koffein-Tagesgrenze: 400mg total (inkl. Kaffee/Tee)",
+    "timing": "30-45 Min vor dem Training. Mit etwas Wasser, idealerweise nach kleinem Snack (nicht ganz nüchtern). Nicht später als 6h vor dem Schlaf wegen Koffein-Halbwertszeit.",
+    "quelle": "Stratton 2022 JISSN + EFSA Koffein-Empfehlungen",
+    "formen_vergleich": "Mit Stimulanz (klassisch): Maximale akute Performance, aber Schlafstörungen und Toleranz-Aufbau. Stimulanz-frei: Geringere akute Wirkung, aber später am Tag trainierbar und keine Schlafstörung. Selbst zusammengestellt (Koffein 200mg + Beta-Alanin 3g + Citrullin 6g): Günstigste und kontrollierteste Option. Coffee Plus DIY: Espresso + 3g Beta-Alanin + 6g Citrullin Malat funktioniert vergleichbar zu vielen Marken-Produkten."
+  },
+
+  "population_spezifisch": {
+    "krafttrainierende": {
+      "relevant": true,
+      "staerke": 0.85,
+      "kommentar": "Stärkste Effekte bei Personen mit 1-3 Jahren Trainings-Erfahrung und intensiven Sessions. Bei Hochintensiv-Training maximaler Nutzen.",
+      "quelle": "Stratton 2022 JISSN"
+    },
+    "anfaenger": {
+      "relevant": false,
+      "staerke": 0.4,
+      "kommentar": "Anfänger profitieren mehr von guter Technik und konsistentem Training als von Pre-Workout. Erst nach 6+ Monaten Erfahrung sinnvoll."
+    },
+    "ausdauersportler": {
+      "relevant": true,
+      "staerke": 0.55,
+      "kommentar": "Hauptnutzen aus Koffein. Volle MIPS oft 'Overkill' – einfaches Koffein 3-6mg/kg KG günstiger und ebenso wirksam."
+    },
+    "koffein_empfindliche": {
+      "relevant": false,
+      "staerke": 0.2,
+      "kommentar": "Bei Koffein-Empfindlichkeit (Herzklopfen, Unruhe, Übelkeit schon bei 1 Kaffee): Pre-Workout meiden oder koffeinfreie Versionen testen."
+    },
+    "abendsportler": {
+      "relevant": false,
+      "staerke": 0.3,
+      "kommentar": "Bei abendlichem Training (>17 Uhr): Koffein stört nachweislich Schlafqualität. Stimulanzfreie Alternativen oder Koffein-Alternativen sinnvoll."
+    }
+  },
+
+  "warnhinweise": [
+    "PROPRIETARY BLENDS MEIDEN. Nur Produkte kaufen mit vollständiger Mengen-Deklaration JEDES Wirkstoffs. Marken ohne Transparenz sind verdächtig",
+    "Koffein-Tagesgrenze 400mg ist absolut – wer morgens 2 Kaffee + Pre-Workout (300mg) trinkt, ist schon über der EFSA-Grenze",
+    "Beta-Alanin-Tingeln (Paresthesia) im Gesicht/Händen ist HARMLOS – aber Zeichen dass die Dosis ausreichend ist (mind. 1.6g)",
+    "Koffein wirkt für 5-6h – Pre-Workout am späten Nachmittag oder Abend führt zu Einschlafproblemen. Strikt: nur vor 16 Uhr trainieren mit Stimulanzien",
+    "Toleranz-Aufbau ist real: Wer täglich Pre-Workout nimmt, verliert die Wirkung. 1-2 Wochen Deload alle 8-12 Wochen wiederherstellen",
+    "Wechselwirkung mit Asthma-Medikamenten (Theophyllin) und MAO-Hemmern – können toxisch verstärkt werden. Bei Medikamenten Arzt fragen",
+    "Yohimbin in einigen Pre-Workouts ist umstritten – kann Blutdruck-Spitzen und Panikattacken auslösen. Kritisch prüfen",
+    "DIY-Variante (Koffein + Beta-Alanin + Citrullin einzeln gekauft) ist oft 50-70% günstiger und besser dosierbar als Marken-Produkte"
+  ],
+
+  "inhalt": ["koffein", "beta_alanin", "citrullin"],
+
+  "quellen": [
+    {
+      "titel": "The Influence of Caffeinated and Non-Caffeinated Multi-Ingredient Pre-Workout Supplements on Resistance Exercise Performance and Subjective Outcomes",
+      "autoren": "Stratton MT, Siedler MR, Harty PS, et al.",
+      "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-022-00501-x",
+      "jahr": 2022,
+      "typ": "systematic_review",
+      "doi": "10.1186/s12970-022-00501-x"
+    },
+    {
+      "titel": "Common Ingredient Profiles of Multi-Ingredient Pre-Workout Supplements",
+      "autoren": "Jagim AR, Harty PS, Camic CL",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6413194/",
+      "jahr": 2019,
+      "typ": "marktanalyse",
+      "doi": "10.3390/nu11020254"
+    },
+    {
+      "titel": "Pre-Workout Supplements – An Evidence-Based Guide (NSCA)",
+      "autoren": "Gonzalez A, Escalante G",
+      "url": "https://www.nsca.com/education/articles/ptq/pre-workout-supplements-an-evidence--based-guide/",
+      "jahr": 2024,
+      "typ": "review"
+    },
+    {
+      "titel": "A single dose multi-ingredient pre-workout supplement enhances upper body resistance exercise performance",
+      "autoren": "Beyer KS, Gadsden M, Patterson-Zuber P, Gonzalez AM",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10846641/",
+      "jahr": 2024,
+      "typ": "rct"
+    },
+    {
+      "titel": "Effects of Multi-Ingredient Pre-Workout Supplement and Caffeine on Bench Press Performance",
+      "autoren": "Cabre HE, Greenwalt CE, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9105861/",
+      "jahr": 2022,
+      "typ": "rct"
+    },
+    {
+      "titel": "Acute effects of multi-ingredient pre-workout dietary supplement on anaerobic performance in untrained men",
+      "autoren": "BMC Sports Science 2024",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11163698/",
+      "jahr": 2024,
+      "typ": "rct"
+    },
+    {
+      "titel": "EFSA Scientific Opinion on the Safety of Caffeine",
+      "autoren": "EFSA Panel on Dietetic Products",
+      "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4102",
+      "jahr": 2015,
+      "typ": "position_stand"
+    },
+    {
+      "titel": "ISSN exercise & sport nutrition review update: research & recommendations",
+      "autoren": "Kerksick CM, Wilborn CD, et al.",
+      "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-018-0242-y",
+      "jahr": 2018,
+      "typ": "position_stand"
+    }
+  ]
+}

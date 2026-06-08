@@ -1,0 +1,287 @@
+{
+  "id": "probiotika",
+  "name": "Probiotika",
+  "kategorie": "gesundheit",
+  "ikon": "🦠",
+  "kurz_beschreibung": "Lebende Mikroorganismen für die Darmflora. Stammspezifische Evidenz: stark bei Antibiotika-Diarrhö und Reizdarm, moderat bei Immunsystem, begrenzt bei gesunden Erwachsenen.",
+
+  "beschreibung": {
+    "was_ist_es": "Probiotika sind lebende Mikroorganismen, die in ausreichender Menge eingenommen einen gesundheitlichen Nutzen bringen (WHO-Definition). Die häufigsten Stämme: Lactobacillus (z.B. L. rhamnosus, L. casei, L. plantarum), Bifidobacterium (B. longum, B. lactis), Saccharomyces boulardii (eine Hefeart) und Bacillus coagulans. Probiotika sind in Joghurt, Kefir, Sauerkraut, Kimchi und als Supplements (Pulver, Kapseln) verfügbar. Wichtig: Es gibt KEINEN 'Universal-Probiotikum' – Wirkung ist hoch stamm- und dosisabhängig.",
+    "wie_wirkt_es": "Probiotika wirken über mehrere Mechanismen gleichzeitig: 1) Verdrängung von pathogenen Bakterien durch Konkurrenz um Nährstoffe und Adhäsionsstellen, 2) Verstärkung der Darmbarriere (Tight Junctions), 3) Modulation des Immunsystems über Toll-like Rezeptoren und dendritische Zellen, 4) Produktion kurzkettiger Fettsäuren (SCFA) wie Butyrat, die die Darmschleimhaut nähren. Die Wirkung tritt meist erst nach 2-8 Wochen kontinuierlicher Einnahme auf.",
+    "warum_wichtig": "Die Darmflora ('Mikrobiom') besteht aus 10-100 Billionen Bakterien und beeinflusst Verdauung, Immunsystem, Stoffwechsel und sogar Stimmung (Darm-Hirn-Achse). Antibiotika, Stress, einseitige Ernährung, chronische Krankheiten und Alter können das Mikrobiom durcheinanderbringen. Bei gestörtem Mikrobiom (Dysbiose) können Probiotika gezielt helfen. Bei gesunder Darmflora ist der Effekt deutlich kleiner – hier ist eine ballaststoffreiche Ernährung wirksamer."
+  },
+
+  "fazit": {
+    "top_effekte": [
+      "Reduziert Antibiotika-assoziierte Diarrhö um 37% (Australien-Meta-Analyse)",
+      "C. difficile-Infektion: OR 0.19 mit L. casei (Cochrane Review positive Evidenz)",
+      "Reizdarm-Symptome: belegt für B. longum 35624, L. rhamnosus GG, L. plantarum 299v"
+    ],
+    "ideal_fuer": "Antibiotika-Therapie (begleitend), Reizdarm-Syndrom, Senioren, nach Magen-Darm-Infekten, bei Verstopfung",
+    "dosis": "1-10 Milliarden KBE (CFU) täglich – stamm- und indikationsabhängig",
+    "vorsicht_bei": "Schwer immungeschwächte Patienten, zentrale Venenkatheter, kritisch Kranke auf Intensivstation, Pankreatitis",
+    "mythen": [
+      "„Mehr KBE = bessere Wirkung“ – falsch. Über 10 Mrd. KBE bringen meist keinen zusätzlichen Nutzen. Wichtiger ist der RICHTIGE Stamm für das jeweilige Problem.",
+      "„Probiotika bauen die Darmflora dauerhaft auf“ – mit Vorsicht. Studien zeigen: nach Absetzen verschwinden die zugeführten Stämme meist binnen Wochen. Eigene Darmflora wird kaum dauerhaft verändert.",
+      "„Joghurt mit ‚probiotischen Kulturen' ersetzt Supplemente“ – meist falsch. Konventioneller Joghurt enthält 1-100 Mio. KBE pro Becher – therapeutische Dosen sind 100-1000x höher.",
+      "„Alle Probiotika wirken gleich gut“ – komplett falsch. Stamm-Spezifität ist entscheidend: L. casei Shirota hilft NICHT bei IBS, aber gegen C. difficile. B. longum 35624 hilft bei IBS, aber nicht bei Atemwegsinfekten.",
+      "„Probiotika sind harmlos – schaden kann nicht passieren“ – meist richtig, aber bei schwer immungeschwächten Patienten gibt es dokumentierte Bakteriämie-Fälle. Bei kritisch Kranken Vorsicht."
+    ]
+  },
+
+  "evidenz": {
+    "level": "B",
+    "score": 70,
+    "review_typ": "meta_analyse",
+    "studien_anzahl": 300,
+    "konsens": "Cochrane Reviews + multiple Stamm-spezifische Meta-Analysen (Goldenberg 2017/2025, Maslennikov 2026)",
+    "effekt_groesse": [
+      {
+        "wert": 37,
+        "einheit": "% Risikoreduktion",
+        "kontext": "Reduktion des Risikos für Antibiotika-assoziierte Diarrhö (AAD) bei begleitender Probiotika-Einnahme",
+        "quelle": "BMC Infectious Diseases 2024 Meta-Analyse + Cochrane Review",
+        "erklaerung": {
+          "was_bedeutet": "Wer während einer Antibiotika-Therapie Probiotika einnimmt, hat ein 37% geringeres Risiko für Durchfall als ohne. Konkret: Bei 100 Personen die Antibiotika nehmen würden normalerweise 20-30 Durchfall entwickeln. Mit Probiotika sinkt das auf etwa 13-19. Besonders relevant für Senioren, hospitalisierte Patienten und Personen mit langen Antibiotika-Therapien.",
+          "studie_zeigt": "Multiple Meta-Analysen (Cochrane 2017 mit Update 2025, BMC Infectious Diseases 2024) zeigen konsistent: Probiotika reduzieren AAD-Risiko um 35-50%. Bei C. difficile-assoziierter Diarrhö (CDAD): noch stärkerer Effekt mit OR 0.19 für L. casei. WICHTIG: Beginn der Probiotika gleichzeitig oder kurz nach Antibiotika-Start, dann 1-2 Wochen über das Antibiotika-Ende hinaus weiterführen.",
+          "studien_details": "Cochrane Database Systematic Review (Goldenberg et al. 2017/2025) mit 39 RCTs und 9.955 Teilnehmern. Wirksame Stämme: L. rhamnosus GG, L. casei, S. boulardii, Multistrain-Präparate. Dosen meist 5-40 Mrd. KBE täglich.",
+          "zuverlaessigkeit": "Sehr hoch. Eine der am besten belegten Anwendungen von Probiotika überhaupt. Cochrane-Empfehlung: 'wahrscheinlich vorteilhaft mit kleinem absoluten Nutzen bei niedrigem Nebenwirkungsrisiko'."
+        }
+      },
+      {
+        "wert": 0.19,
+        "einheit": "OR (Odds Ratio)",
+        "kontext": "Risikoreduktion für Clostridium-difficile-assoziierte Diarrhö (CDAD) mit L. casei",
+        "quelle": "Network Meta-Analyse 2020 (Mills et al.)",
+        "erklaerung": {
+          "was_bedeutet": "Lactobacillus casei reduziert das Risiko einer C.-difficile-Infektion (CDAD) während Antibiotika-Therapie auf ein Fünftel (OR 0.19). C. difficile ist eine schwere Komplikation – verursacht heftige Durchfälle und kann tödlich sein. Diese Wirkung ist hoch stamm-spezifisch: andere Lactobacillus-Arten wirken weniger gut, manche kaum.",
+          "studie_zeigt": "Network Meta-Analyse mit 9 verschiedenen probiotischen Interventionen verglichen. Rangfolge der Wirksamkeit gegen CDAD: 1) L. casei (OR 0.19), 2) L. rhamnosus (OR 0.32), 3) Saccharomyces boulardii. Alle 9 Interventionen waren wirksamer als Placebo – aber mit erheblichen Unterschieden.",
+          "studien_details": "Bayesian Network Meta-Analyse von RCTs zur CDAD-Prävention. Methodik: indirekte Vergleiche verschiedener Stämme über gemeinsame Vergleichsgruppen.",
+          "zuverlaessigkeit": "Solide für die Empfehlung von L. casei oder L. rhamnosus bei Antibiotika-Therapie zur CDAD-Prävention. Besonders relevant für ältere Patienten und Hospitalisierte. Wichtig: NICHT bei kritisch Kranken oder zentralen Venenkathetern!"
+        }
+      },
+      {
+        "wert": -0.77,
+        "einheit": "Tage Krankheitsdauer",
+        "kontext": "Verkürzung der Dauer akuter Atemwegsinfektionen bei gesunden Erwachsenen und Kindern",
+        "quelle": "King et al. 2014 Meta-Analyse (20 RCTs)",
+        "erklaerung": {
+          "was_bedeutet": "Bei akuten Atemwegsinfektionen (Erkältung, leichter Husten) reduziert eine kontinuierliche Probiotika-Einnahme die Krankheitsdauer um etwa 18 Stunden. Das ist klinisch moderate Wirkung – kein 'Schutz vor Erkältung' aber spürbar schnellere Genesung. Effekt nur sichtbar bei mindestens 4-8 Wochen kontinuierlicher Einnahme VOR der Krankheit.",
+          "studie_zeigt": "20 RCTs mit Lactobacillus- und Bifidobacterium-Stämmen. SMD -0.31 (95% CI: -0.41 bis -0.11), Reduktion der Krankheitstage um -0.77. Wirksame Stämme: L. casei DN-114001, L. rhamnosus GG, B. lactis Bb-12. Auch bessere Influenza-Impfantwort (Seroprotection-Rate +83% für H1N1, +185% für H3N2).",
+          "studien_details": "Meta-Analyse publiziert 2014 in British Journal of Nutrition. 20 RCTs, niedrige Heterogenität (I² = 3%). Methodik: 4-12 Wochen kontinuierliche Einnahme als Präventiv-Strategie.",
+          "zuverlaessigkeit": "Solide aber moderate Effektgröße. Klinisch relevant für Personen mit häufigen Erkältungen oder geschwächtem Immunsystem (Senioren). Nicht primärer Grund für Probiotika-Supplementation."
+        }
+      }
+    ]
+  },
+
+  "indikationen": [
+    {
+      "ziel": "antibiotika_diarrhoe",
+      "staerke": 0.9,
+      "kommentar": "STÄRKSTE Indikation. -37% AAD-Risiko, -80% CDAD-Risiko mit L. casei. Begleitend zur Antibiotika-Therapie standardmäßig sinnvoll."
+    },
+    {
+      "ziel": "reizdarm_ibs",
+      "staerke": 0.7,
+      "kommentar": "Stamm-spezifisch wirksam: B. longum 35624 (Bauchschmerzen), L. plantarum 299v, L. rhamnosus GG, S. cerevisiae CNCM I-3856."
+    },
+    {
+      "ziel": "verstopfung_obstipation",
+      "staerke": 0.65,
+      "kommentar": "B. lactis HN019 in Studien wirksam für Stuhlfrequenz und -konsistenz. Multistrain-Präparate ebenfalls hilfreich."
+    },
+    {
+      "ziel": "immunsystem",
+      "staerke": 0.55,
+      "kommentar": "Moderate Reduktion der Atemwegsinfekt-Dauer (-0.77 Tage). Bessere Impfantwort möglich. Effekt bei Senioren stärker."
+    },
+    {
+      "ziel": "verdauung_allgemein",
+      "staerke": 0.5,
+      "kommentar": "Kleinere Effekte auf Blähungen, Bauchgefühl. Bei gesunden Erwachsenen oft kein klarer Mehrwert."
+    },
+    {
+      "ziel": "gesundheit_senioren",
+      "staerke": 0.65,
+      "kommentar": "Bei älteren Erwachsenen: bessere zelluläre Immunfunktion, Reduktion altersbedingter Mikrobiom-Veränderungen."
+    },
+    {
+      "ziel": "kinder_durchfall",
+      "staerke": 0.75,
+      "kommentar": "Bei akuter infektiöser Diarrhö im Kindesalter: L. rhamnosus GG und S. boulardii reduzieren Krankheitsdauer um 1 Tag."
+    }
+  ],
+
+  "kontraindikationen": [
+    {
+      "art": "medizinisch",
+      "wert": "schwere_immunschwaeche",
+      "schwere": "hart",
+      "hinweis": "Bei schwerer Immunsuppression (HIV-AIDS, Chemotherapie mit Neutropenie, Organtransplantation, schwerer Pankreatitis): KEINE lebenden Probiotika ohne ärztliche Rücksprache. Dokumentierte Fälle von Probiotika-Bakteriämie und Pilzinfektionen."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "venenkatheter_zentral",
+      "schwere": "hart",
+      "hinweis": "Bei zentralem Venenkatheter (besonders ICU-Patienten): KEINE lebenden Probiotika. Risiko einer Katheterinfektion mit dem Probiotika-Stamm."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "kritisch_krank_icu",
+      "schwere": "hart",
+      "hinweis": "Bei kritisch Kranken auf Intensivstation: dokumentierte Fälle von Saccharomyces-boulardii-Fungämie. Probiotika hier nur unter ärztlicher Begleitung."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "akute_pankreatitis",
+      "schwere": "hart",
+      "hinweis": "Bei schwerer akuter Pankreatitis: PROPATRIA-Studie zeigte erhöhte Mortalität durch Probiotika – KEINE Anwendung."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "kurzdarmsyndrom",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei Kurzdarmsyndrom oder Darmperforation: Risiko der bakteriellen Translokation. Nur unter ärztlicher Kontrolle."
+    },
+    {
+      "art": "allergie",
+      "wert": "milcheiweiss",
+      "schwere": "info",
+      "hinweis": "Manche Probiotika werden in Milchbasis kultiviert. Bei Milcheiweiß-Allergie: laktose-/milchfreie Präparate wählen."
+    }
+  ],
+
+  "dosierung": {
+    "standard": "1-10 Milliarden KBE (Koloniebildende Einheiten) täglich, stamm- und indikationsabhängig",
+    "bereich": { "min": 1, "max": 50, "einheit": "Mrd. KBE" },
+    "obergrenze": "Bis zu 450 Mrd. KBE/Tag (VSL#3) bei medizinischen Indikationen verträglich – aber kein zusätzlicher Nutzen über 10 Mrd. KBE für die meisten Anwendungen",
+    "timing": "Bei Antibiotika: 2-3 Stunden Abstand zur Antibiotika-Einnahme. Generell: mit oder kurz nach einer Mahlzeit (besseres Überleben der Magenpassage). Bei Säurehemmern (PPI): keine besondere Anpassung nötig.",
+    "quelle": "Mehrere Cochrane Reviews + WGO Praxisleitlinien",
+    "formen_vergleich": "Kapseln mit magensaftresistenter Hülle: beste Überlebensrate der Bakterien. Pulver: gut für individuelle Dosierung, aber unhandlicher. Joghurt/Kefir: niedrigere KBE, aber natürliche Matrix. Mehrstamm-Präparate vs. Einzelstamm: für allgemeine Anwendung Mehrstamm OK, für spezifische Indikation (z.B. IBS, AAD) der spezifische Stamm besser. Lebendkulturen vs. inaktivierte (Postbiotika): Lebendkulturen sind Standard, Postbiotika ein neueres Forschungsfeld."
+  },
+
+  "population_spezifisch": {
+    "antibiotika_therapie": {
+      "relevant": true,
+      "staerke": 0.95,
+      "kommentar": "STÄRKSTE Indikation. Während der gesamten Antibiotika-Behandlung + 1-2 Wochen danach. L. rhamnosus GG, L. casei oder S. boulardii. 5-10 Mrd. KBE.",
+      "quelle": "Cochrane Goldenberg 2017/2025"
+    },
+    "reizdarm_patienten": {
+      "relevant": true,
+      "staerke": 0.75,
+      "kommentar": "Stamm-spezifisch wichtig. B. longum 35624 für Bauchschmerzen, L. plantarum 299v allgemein. Mindestens 4-8 Wochen testen."
+    },
+    "senioren_50plus": {
+      "relevant": true,
+      "staerke": 0.7,
+      "kommentar": "Mikrobiom-Diversität sinkt im Alter. Probiotika können Immunfunktion und Verdauung unterstützen. B. lactis HN019 gut belegt."
+    },
+    "reisende": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "Reisediarrhö-Prävention: S. boulardii und L. rhamnosus GG zeigen moderate Schutzwirkung. 1 Woche vor Reisebeginn anfangen."
+    },
+    "kinder_diarrhoe": {
+      "relevant": true,
+      "staerke": 0.8,
+      "kommentar": "Bei akuter infektiöser Diarrhö: L. rhamnosus GG oder S. boulardii reduzieren Krankheitsdauer um 1 Tag (gut belegt)."
+    },
+    "gesunde_erwachsene": {
+      "relevant": false,
+      "staerke": 0.3,
+      "kommentar": "Bei gesundem Mikrobiom und Ernährung ist der Nutzen begrenzt. Ballaststoffreiche Ernährung ist effektiver. Probiotika eher reaktiv bei Problemen."
+    }
+  },
+
+  "warnhinweise": [
+    "Stamm-Spezifität ist ENTSCHEIDEND. Auf der Packung sollte der genaue Stamm stehen (z.B. 'Lactobacillus rhamnosus GG') – nicht nur die Gattung",
+    "Mindestens 1-2 Wochen Einnahme nötig für erste Effekte – Probiotika sind keine Akuttherapie wie Loperamid",
+    "Bei kritisch Kranken, Immunsupprimierten oder mit zentralem Venenkatheter: Probiotika können gefährlich sein (Bakteriämie/Fungämie-Risiko)",
+    "Joghurt und fermentierte Lebensmittel enthalten oft NICHT die wirksamen Mengen oder Stämme – für gezielte Wirkung Supplemente nötig",
+    "Bei Antibiotika: Probiotika 2-3 Stunden ZEITLICH VERSETZT einnehmen, sonst werden sie durch das Antibiotikum abgetötet",
+    "Lagerung wichtig: Viele Präparate brauchen Kühlung, einige sind 'shelf-stable'. Verfallsdatum beachten – tote Bakterien wirken nicht",
+    "KEINE Wunderwirkung erwarten: Bei gesunder Darmflora ist eine ballaststoffreiche Ernährung (30g/Tag) langfristig wirksamer als Probiotika-Pillen",
+    "Initial mögliche Nebenwirkungen: Blähungen, leichte Verdauungsbeschwerden in den ersten Tagen – meist selbstlimitierend"
+  ],
+
+  "inhalt": ["probiotika"],
+
+  "quellen": [
+    {
+      "titel": "Strain-Specific Systematic Review with Meta-Analysis of Probiotics Efficacy in the Treatment of Irritable Bowel Syndrome",
+      "autoren": "Maslennikov R, Gosteeva E, Ananeva V, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12898053/",
+      "jahr": 2026,
+      "typ": "meta_analyse",
+      "doi": "10.3390/jcm15031152"
+    },
+    {
+      "titel": "Probiotics for the prevention of Clostridioides difficile-associated diarrhea in adults and children (Cochrane Review)",
+      "autoren": "Goldenberg JZ, Yap C, Lytvyn L, et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40931979/",
+      "jahr": 2025,
+      "typ": "meta_analyse",
+      "doi": "10.1002/14651858.CD006095.pub5"
+    },
+    {
+      "titel": "Outcome-Specific Efficacy of Different Probiotic Strains and Mixtures in Irritable Bowel Syndrome: A Systematic Review and Network Meta-Analysis",
+      "autoren": "Xie P, Luo M, Deng X, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10490209/",
+      "jahr": 2023,
+      "typ": "meta_analyse",
+      "doi": "10.3390/nu15173856"
+    },
+    {
+      "titel": "Role of probiotic as adjuvant in treating various infections: a systematic review and meta-analysis",
+      "autoren": "BMC Infectious Diseases",
+      "url": "https://link.springer.com/article/10.1186/s12879-024-09259-3",
+      "jahr": 2024,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "Efficacy of Probiotics in Irritable Bowel Syndrome: Systematic Review and Meta-analysis",
+      "autoren": "Goodoory VC, et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37541528/",
+      "jahr": 2023,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "Effectiveness of probiotics on the duration of illness in healthy children and adults who develop common acute respiratory infectious conditions: a systematic review and meta-analysis",
+      "autoren": "King S, Glanville J, Sanders ME, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4054664/",
+      "jahr": 2014,
+      "typ": "meta_analyse",
+      "doi": "10.1017/S0007114514000075"
+    },
+    {
+      "titel": "Which probiotic has the best effect on preventing Clostridium difficile-associated diarrhea? A systematic review and network meta-analysis",
+      "autoren": "Mills JP, et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31875427/",
+      "jahr": 2020,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "Probiotics: are they beneficial? – Internal Medicine Journal Review",
+      "autoren": "Fehily SR, et al.",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/imj.16388",
+      "jahr": 2024,
+      "typ": "review"
+    },
+    {
+      "titel": "Effect of Probiotics and Prebiotics on Immune Response to Influenza Vaccination in Adults: A Systematic Review and Meta-Analysis",
+      "autoren": "Yeh TL, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5707647/",
+      "jahr": 2018,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "Effects of probiotics, prebiotics, and synbiotics on gut microbiota in older adults: a systematic review and meta-analysis",
+      "autoren": "Nutrition Journal 2025",
+      "url": "https://link.springer.com/article/10.1186/s12937-025-01218-1",
+      "jahr": 2025,
+      "typ": "meta_analyse"
+    }
+  ]
+}

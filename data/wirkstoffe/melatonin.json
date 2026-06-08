@@ -1,0 +1,272 @@
+{
+  "id": "melatonin",
+  "name": "Melatonin",
+  "kategorie": "gesundheit",
+  "ikon": "🌙",
+  "kurz_beschreibung": "Körpereigenes Schlafhormon. Solide Evidenz für Jetlag, Schichtarbeit und Einschlaflatenz – schwächere Wirkung bei chronischer Insomnie bei Erwachsenen.",
+
+  "beschreibung": {
+    "was_ist_es": "Melatonin ist ein körpereigenes Hormon, das in der Zirbeldrüse (Epiphyse) produziert wird. Es ist kein 'Schlafmittel' im klassischen Sinn, sondern ein Zeitgeber-Hormon: es signalisiert dem Körper 'es ist Nacht'. Die natürliche Produktion beginnt etwa 2-3 Stunden vor der gewohnten Schlafenszeit (sogenannte DLMO = Dim Light Melatonin Onset) und steigt während der Nacht. Mit zunehmendem Alter sinkt die körpereigene Produktion. In Deutschland ist Melatonin bis 0.5mg frei verkäuflich – ab 1mg apothekenpflichtig, ab 2mg meist verschreibungspflichtig.",
+    "wie_wirkt_es": "Melatonin bindet an MT1- und MT2-Rezeptoren im Hypothalamus (suprachiasmatischer Kern – die innere Uhr des Körpers). MT1 dämpft die Wachheitssignale, MT2 verschiebt den zirkadianen Rhythmus. Anders als Benzodiazepine oder Z-Substanzen erzwingt Melatonin keinen Schlaf – es erleichtert den natürlichen Übergang. Deshalb ist das Timing wichtiger als die Dosis: ein gut getimtes 0.5mg wirkt besser als ein zu spät genommenes 5mg.",
+    "warum_wichtig": "Schichtarbeit, Jetlag, blaues Licht abends, unregelmäßige Schlafenszeiten – moderne Lebensgewohnheiten stören die natürliche Melatonin-Produktion massiv. Auch ab dem 40. Lebensjahr sinkt die körpereigene Produktion deutlich. Während Melatonin bei chronischer Insomnie nur moderate Effekte zeigt, ist es bei zirkadianen Rhythmusstörungen (Jetlag, Schichtarbeit, verzögerte Schlafphase) eine der wenigen wirklich gut belegten Optionen."
+  },
+
+  "fazit": {
+    "top_effekte": [
+      "Reduziert Einschlafzeit um etwa 7 Minuten (Meta-Analyse, n=1.689)",
+      "Verlängert Gesamtschlafzeit um ca. 8 Minuten – Plateau bei 4mg/Tag",
+      "Cochrane: gut belegte Wirksamkeit bei Jetlag (besonders nach Osten)"
+    ],
+    "ideal_fuer": "Personen mit Jetlag, Schichtarbeiter, verzögerte Schlafphase, Kinder/Jugendliche mit Schlafstörungen, ältere Erwachsene mit gestörtem Rhythmus",
+    "dosis": "0.5–4 mg Melatonin 30-60 Min. vor gewünschter Schlafenszeit (Plateau bei 4mg)",
+    "vorsicht_bei": "Schwangerschaft/Stillzeit, Autoimmunerkrankungen, Antidepressiva (SSRI), Schlafmittel, Blutverdünner, Auto fahren am Folgetag",
+    "mythen": [
+      "„Mehr Melatonin = besserer Schlaf“ – falsch. Die Dose-Response zeigt ein Plateau bei 4mg/Tag. Höhere Dosen können sogar zu paradoxer Müdigkeit am Morgen führen.",
+      "„Melatonin macht süchtig wie Schlaftabletten“ – falsch. Melatonin verursacht keine körperliche Abhängigkeit und keinen Rebound-Effekt bei Absetzen.",
+      "„Melatonin ist ein natürliches Mittel und deshalb unbedenklich“ – mit Vorsicht. Wechselwirkungen mit Antidepressiva, Blutverdünnern und bei Autoimmunerkrankungen sind real und können relevant sein.",
+      "„Melatonin hilft bei jeder Form von Schlafstörung gleich gut“ – falsch. Am besten wirkt es bei zirkadianen Rhythmusstörungen (Jetlag, Schichtarbeit). Bei chronischer Insomnie bei Erwachsenen sind die Effekte deutlich kleiner.",
+      "„Höhere US-Dosen (5-10mg) sind in Deutschland verboten weil sie zu stark wirken“ – nicht ganz richtig. Sie sind verschreibungspflichtig wegen möglicher Nebenwirkungen und unklarer Langzeitwirkung – nicht weil sie 'gefährlich stark' wirken."
+    ]
+  },
+
+  "evidenz": {
+    "level": "B",
+    "score": 75,
+    "review_typ": "meta_analyse",
+    "studien_anzahl": 70,
+    "konsens": "Cruz-Sanabria 2024 Dose-Response NMA + Ferracioli-Oda Meta-Analyse + AASM Praxisleitlinien",
+    "effekt_groesse": [
+      {
+        "wert": -7.06,
+        "einheit": "Minuten",
+        "kontext": "Schnellere Einschlafzeit durch Melatonin im Vergleich zu Placebo",
+        "quelle": "Ferracioli-Oda et al. Meta-Analyse (n=1.683, 19 RCTs)",
+        "erklaerung": {
+          "was_bedeutet": "Personen die Melatonin einnehmen, schlafen im Durchschnitt etwa 7 Minuten schneller ein als die Placebo-Gruppe. Das mag wenig klingen – aber für jemanden der normalerweise 20-30 Minuten zum Einschlafen braucht, ist das eine Reduktion um 25-35%. Bei Personen mit zirkadianen Rhythmusstörungen (Jetlag, Schichtarbeit) ist der Effekt deutlich größer.",
+          "studie_zeigt": "19 RCTs mit insgesamt 1.683 Teilnehmern wurden analysiert. Effektstärken: Einschlaflatenz -7.06 Minuten (95% CI: -4.37 bis -9.75), Gesamtschlafzeit +8.25 Minuten (95% CI: +1.74 bis +14.75), Schlafqualität SMD 0.22. Wichtiger Befund: Effekte bleiben bei längerer Einnahme stabil – keine Toleranzentwicklung wie bei klassischen Schlafmitteln. Aber: Absoluter Nutzen ist kleiner als bei verschreibungspflichtigen Schlafmedikamenten.",
+          "studien_details": "Meta-Analyse publiziert 2013 in PLOS One. 19 randomisierte kontrollierte Studien, double-blind. Verschiedene Dosen (0.5-5 mg), verschiedene Indikationen (primäre Schlafstörungen). Methodik: random-effects-Modell, meta-regression für Dosis-Effekt.",
+          "zuverlaessigkeit": "Solide für die Aussage 'Melatonin wirkt'. Aber: Die Effekte sind klein bis moderat. Bei chronischer Insomnie bei Erwachsenen zeigte eine spätere Meta-Analyse (Cho 2022) sogar gar keinen signifikanten Effekt – nur bei Kindern/Jugendlichen. Melatonin ist also kein Wunderschlafmittel, sondern ein moderates Hilfsmittel mit gutem Sicherheitsprofil."
+        }
+      },
+      {
+        "wert": 4,
+        "einheit": "mg/Tag",
+        "kontext": "Dosis-Plateau für maximale Wirksamkeit auf Einschlafzeit und Gesamtschlafzeit",
+        "quelle": "Cruz-Sanabria et al. 2024 Dose-Response Meta-Analyse (n=1.689, 26 RCTs)",
+        "erklaerung": {
+          "was_bedeutet": "Die Dosis-Wirkungs-Analyse zeigt: Melatonin wirkt zunehmend bis 4mg/Tag – danach bringt mehr keinen zusätzlichen Nutzen mehr. Über 4mg/Tag können sogar paradoxe Effekte auftreten (Tagesmüdigkeit, gestörter Rhythmus). Wichtiger: Das Timing ist entscheidender als die Dosis. Eine gut getimte Mikrodosis (0.5mg) kann besser wirken als ein schlecht getimtes 5mg.",
+          "studie_zeigt": "26 RCTs zwischen 1987 und 2020 analysiert. Dose-Response-Kurve zeigt: progressive Verbesserung der Einschlaflatenz bis 4mg, dann Plateau. Wichtige Meta-Regression: 'Insomnia-Status' (β=0.50) und 'Zeit zwischen Einnahme und Schlafenszeit' (β=-0.16) waren die wichtigsten Prädiktoren der Wirkung. Optimale Einnahme: 3 Stunden vor der gewünschten Schlafenszeit für Rhythmus-Verschiebung, 30-60 Min. für direkten Schlafanstoß.",
+          "studien_details": "Systematische Dose-Response Meta-Analyse publiziert 2024 in Journal of Pineal Research. Einer der umfassendsten Reviews zum Thema Dosis und Timing. Methodik: Standard mean differences, meta-regression mit multiplen Prädiktoren.",
+          "zuverlaessigkeit": "Sehr hoch für die Dose-Response-Aussage. Eine der besten verfügbaren Quellen für praktische Anwendungs-Empfehlungen. Wichtige praktische Konsequenz: Die deutsche Standarddosis (0.5-2mg) ist oft ausreichend – höhere US-Dosen (5-10mg) bieten kaum Vorteile bei höherem Nebenwirkungsrisiko."
+        }
+      },
+      {
+        "wert": 8.25,
+        "einheit": "Minuten",
+        "kontext": "Zusätzliche Gesamtschlafzeit pro Nacht vs. Placebo",
+        "quelle": "Ferracioli-Oda et al. + Cruz-Sanabria 2024",
+        "erklaerung": {
+          "was_bedeutet": "Wer Melatonin einnimmt, schläft im Schnitt etwa 8 Minuten länger pro Nacht. Das klingt wenig, ist aber bei Insomnie kumulativ relevant: Über eine Woche sind das fast eine Stunde mehr Schlaf. Bei Jetlag sind die Effekte deutlich größer (bis zu 1-2 Stunden bessere Schlafqualität in den ersten Nächten am Zielort).",
+          "studie_zeigt": "Gepoolte Daten aus mehreren Meta-Analysen zeigen konsistent: Gesamtschlafzeit-Steigerung zwischen 8-15 Minuten. Effekt steigt mit Dosis bis 4mg, dann Plateau. WICHTIG: Bei chronischer Insomnie bei Erwachsenen ohne komorbide Erkrankung war der Effekt in einer Subgruppenanalyse (Cho 2022) NICHT signifikant. Bei Kindern und Jugendlichen war er deutlich.",
+          "studien_details": "Daten aus mehreren Meta-Analysen kombiniert. Cruz-Sanabria 2024 zeigt: 2 mg/Tag ist signifikant wirksamer als Placebo, 3mg/Tag wirksamer als 2mg, danach Plateau.",
+          "zuverlaessigkeit": "Solide aber mit Differenzierung: Bei Jetlag und Schichtarbeit hervorragend belegt. Bei chronischer Insomnie bei Erwachsenen weniger eindeutig. Bei Kindern/Jugendlichen mit Schlafstörungen sehr gut belegt – American Academy of Sleep Medicine empfiehlt Melatonin hier explizit."
+        }
+      }
+    ]
+  },
+
+  "indikationen": [
+    {
+      "ziel": "jetlag",
+      "staerke": 0.9,
+      "kommentar": "Cochrane Review: solide Evidenz besonders bei Reisen über mehrere Zeitzonen nach Osten. AASM-Empfehlung: Standard-Indikation."
+    },
+    {
+      "ziel": "schichtarbeit",
+      "staerke": 0.8,
+      "kommentar": "Hilft bei der Anpassung an Schichtwechsel. AASM-Praxisleitlinie empfiehlt Melatonin als Hilfsmittel."
+    },
+    {
+      "ziel": "schlafphase_verzoegert",
+      "staerke": 0.8,
+      "kommentar": "Bei Delayed Sleep Phase Disorder (DSPD): wirksam wenn 5-6h vor der gewünschten Schlafenszeit genommen wird."
+    },
+    {
+      "ziel": "schlaf",
+      "staerke": 0.65,
+      "kommentar": "Moderate Wirkung bei allgemeinen Einschlafproblemen. Effekt bei Erwachsenen ohne klare Rhythmusstörung begrenzt."
+    },
+    {
+      "ziel": "schlafqualitaet_senioren",
+      "staerke": 0.7,
+      "kommentar": "Ab 55+: Natürliche Melatonin-Produktion sinkt. Retardierte Form (Circadin 2mg) ist EU-zugelassen für Insomnie über 55."
+    },
+    {
+      "ziel": "kinder_jugendliche_schlaf",
+      "staerke": 0.75,
+      "kommentar": "Gut belegt bei ADHS-bedingter Schlafstörung und Autismus-Spektrum-Störung. NUR mit Kinderarzt absprechen."
+    },
+    {
+      "ziel": "stress_angst",
+      "staerke": 0.4,
+      "kommentar": "Kleiner positiver Effekt durch besseren Schlaf möglich. Nicht primäre Indikation."
+    }
+  ],
+
+  "kontraindikationen": [
+    {
+      "art": "medizinisch",
+      "wert": "schwangerschaft",
+      "schwere": "hart",
+      "hinweis": "In Schwangerschaft und Stillzeit NICHT empfohlen – unzureichende Sicherheitsdaten. Auf Cumarin-Blutverdünner kann es einwirken."
+    },
+    {
+      "art": "medikament",
+      "wert": "antidepressiva_ssri",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei SSRIs (Fluoxetin, Sertralin) und SNRIs: Wechselwirkung möglich (Serotonin-Modulation). Mit Arzt absprechen."
+    },
+    {
+      "art": "medikament",
+      "wert": "schlafmittel_benzo",
+      "schwere": "vorsichtig",
+      "hinweis": "Kombination mit Z-Substanzen (Zopiclon, Zolpidem) oder Benzodiazepinen erhöht Tagesmüdigkeit deutlich. KEINE Selbstmedikation."
+    },
+    {
+      "art": "medikament",
+      "wert": "antikoagulantien",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei Warfarin/Marcumar: Melatonin kann INR beeinflussen. Engmaschiges Monitoring bei Therapiebeginn."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "autoimmunerkrankung",
+      "schwere": "vorsichtig",
+      "hinweis": "Melatonin moduliert das Immunsystem – bei Autoimmunerkrankungen (Lupus, MS, RA) Wirkung unvorhersehbar. Vor Einnahme Arzt fragen."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "diabetes",
+      "schwere": "info",
+      "hinweis": "Melatonin kann Insulinsensitivität reduzieren – bei Diabetes-Medikation Blutzucker beobachten."
+    },
+    {
+      "art": "verkehr",
+      "wert": "autofahren_wachheit",
+      "schwere": "vorsichtig",
+      "hinweis": "Restmüdigkeit am Morgen möglich – nicht direkt nach der Einnahme Auto fahren oder Maschinen bedienen. Bei Schichtarbeitern besondere Vorsicht."
+    }
+  ],
+
+  "dosierung": {
+    "standard": "0.5–4 mg Melatonin täglich, 30-60 Min. vor gewünschter Schlafenszeit",
+    "bereich": { "min": 0.5, "max": 4, "einheit": "mg" },
+    "obergrenze": "Plateau-Effekt bei 4mg/Tag – höhere Dosen bringen keinen Vorteil. Für Erwachsene meist 1-3mg ausreichend.",
+    "timing": "WICHTIGER als die Dosis. Für direkten Schlaf: 30-60 Min. vor Bedtime. Für Rhythmus-Verschiebung (Jetlag): 3-5h vor gewünschter Schlafenszeit. Bei Jetlag nach Osten: am ersten Abend am Ziel zur Bedtime einnehmen, 4-5 Nächte fortsetzen.",
+    "quelle": "Cruz-Sanabria 2024 + AASM Praxisleitlinien",
+    "formen_vergleich": "Sofortfreisetzung (Immediate-Release): am besten für Einschlafprobleme. Retardiert (Extended-Release, z.B. Circadin): für Durchschlafprobleme – simuliert natürlichen nächtlichen Verlauf. Sublingual: schnellere Wirkung, niedrigere Dosis möglich. Standard-Tabletten: günstig, gut etabliert. Wichtig: in DE bis 0.5mg frei verkäuflich, ab 1mg apothekenpflichtig, ab 2mg meist verschreibungspflichtig."
+  },
+
+  "population_spezifisch": {
+    "schichtarbeiter": {
+      "relevant": true,
+      "staerke": 0.85,
+      "kommentar": "30 Min. vor Tagschlaf einnehmen. Hilft beim Umstellen auf Nachtdienst. Tageslicht-Kontrolle wichtig dazu.",
+      "quelle": "AASM Praxisleitlinien"
+    },
+    "vielreisende_jetlag": {
+      "relevant": true,
+      "staerke": 0.9,
+      "kommentar": "Cochrane Review: ab 5 Zeitzonen Unterschied, Reise nach Osten. Kombiniert mit Lichttherapie deutlich wirksamer."
+    },
+    "senioren_55plus": {
+      "relevant": true,
+      "staerke": 0.75,
+      "kommentar": "Natürliche Produktion sinkt mit Alter. Retardiertes Melatonin (Circadin 2mg) EU-zugelassen. Effekt aber moderat."
+    },
+    "kinder_jugendliche_schlafstoerung": {
+      "relevant": true,
+      "staerke": 0.8,
+      "kommentar": "Bei ADHS und Autismus mit Schlafproblemen gut belegt. NUR mit Kinderarzt. Slenyto ist EU-zugelassen ab 6 Jahre."
+    },
+    "schwangere": {
+      "relevant": false,
+      "staerke": 0.0,
+      "kommentar": "NICHT EMPFOHLEN. Unzureichende Daten zur Sicherheit für Mutter und Kind."
+    }
+  },
+
+  "warnhinweise": [
+    "Melatonin ist KEIN Schlafmittel im klassischen Sinn – es erleichtert den Schlaf, erzwingt ihn nicht. Bei chronischer Insomnie ohne Rhythmusstörung sind die Effekte begrenzt",
+    "TIMING IST WICHTIGER ALS DOSIS. Eine gut getimte 0.5mg-Dosis kann besser wirken als ein zu spät genommenes 5mg",
+    "In Deutschland: Bis 0.5mg frei verkäuflich, ab 1-2mg apothekenpflichtig, höhere Dosen verschreibungspflichtig. Die US-üblichen 5-10mg sind hier nicht legal frei erhältlich",
+    "Wechselwirkungen mit Antidepressiva (SSRI), Blutverdünnern und Diabetes-Medikamenten sind real – vor Einnahme Arzt fragen wenn du Medikamente nimmst",
+    "Restmüdigkeit am Morgen ist häufige Nebenwirkung – Auto fahren oder Maschinen bedienen mit Vorsicht",
+    "Nicht mit Alkohol kombinieren – verstärkt sedierenden Effekt und Schlafqualität sinkt",
+    "Schlafhygiene (kein blaues Licht abends, regelmäßige Bedtime, dunkles kühles Zimmer) ist die Basis – Melatonin ersetzt das nicht",
+    "Im Gegensatz zu klassischen Schlafmitteln: KEIN Abhängigkeitsrisiko, KEIN Rebound-Effekt bei Absetzen"
+  ],
+
+  "inhalt": ["melatonin"],
+
+  "quellen": [
+    {
+      "titel": "Optimizing the Time and Dose of Melatonin as a Sleep-Promoting Drug: A Systematic Review of Randomized Controlled Trials and Dose-Response Meta-Analysis",
+      "autoren": "Cruz-Sanabria F, Bruno S, Crippa A, et al.",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/jpi.12985",
+      "jahr": 2024,
+      "typ": "meta_analyse",
+      "doi": "10.1111/jpi.12985"
+    },
+    {
+      "titel": "Meta-Analysis: Melatonin for the Treatment of Primary Sleep Disorders",
+      "autoren": "Ferracioli-Oda E, Qawasmi A, Bloch MH",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3656905/",
+      "jahr": 2013,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "Efficacy of melatonin for chronic insomnia: Systematic reviews and meta-analyses",
+      "autoren": "Cho et al.",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1087079222001058",
+      "jahr": 2022,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "Melatonin for the prevention and treatment of jet lag (Cochrane Review)",
+      "autoren": "Herxheimer A, Petrie KJ",
+      "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001520/full",
+      "jahr": 2002,
+      "typ": "meta_analyse",
+      "doi": "10.1002/14651858.CD001520"
+    },
+    {
+      "titel": "Practice Parameters for the Clinical Evaluation and Treatment of Circadian Rhythm Sleep Disorders – American Academy of Sleep Medicine",
+      "autoren": "Morgenthaler TI, et al. (AASM)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2082098/",
+      "jahr": 2007,
+      "typ": "position_stand"
+    },
+    {
+      "titel": "Melatonin – StatPearls (NCBI Bookshelf)",
+      "autoren": "Savage RA, Zafar N, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK534823/",
+      "jahr": 2024,
+      "typ": "review"
+    },
+    {
+      "titel": "Efficacy on sleep parameters and tolerability of melatonin in individuals with sleep or mental disorders: A systematic review and meta-analysis",
+      "autoren": "Neuroscience & Biobehavioral Reviews",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0149763422002123",
+      "jahr": 2022,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "Melatonin – National Center for Complementary and Integrative Health",
+      "autoren": "NCCIH NIH",
+      "url": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know",
+      "jahr": 2024,
+      "typ": "position_stand"
+    }
+  ]
+}

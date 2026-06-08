@@ -1,0 +1,260 @@
+{
+  "id": "hmb",
+  "name": "HMB (β-Hydroxy-β-Methylbutyrat)",
+  "kategorie": "performance",
+  "ikon": "🛡️",
+  "kurz_beschreibung": "Muskelschutz-Supplement aus dem Leucin-Stoffwechsel. Solide Evidenz bei Sarkopenie und Muskelschutz in Katabolen Phasen – bei jungen, gesunden Trainierenden kaum messbar wirksam.",
+
+  "beschreibung": {
+    "was_ist_es": "HMB (β-Hydroxy-β-Methylbutyrat) ist ein natürlicher Metabolit der essentiellen Aminosäure Leucin. Etwa 5% des aufgenommenen Leucins wird im Körper zu HMB umgewandelt. Eine durchschnittliche fleischhaltige Ernährung liefert etwa 200-400 mg HMB pro Tag. Als Supplement: meist als Calcium-HMB (Ca-HMB) in Kapseln, neuerdings auch als freie Säure (FA-HMB) mit angeblich besserer Bioverfügbarkeit. Standardosis: 3 g/Tag, aufgeteilt auf 2-3 Portionen.",
+    "wie_wirkt_es": "HMB hemmt den Muskelproteinabbau (anti-katabole Wirkung) stärker als es den Aufbau fördert – das ist sein Hauptmechanismus. Es wirkt über die Hemmung des Ubiquitin-Proteasom-Systems (das normalerweise Muskelproteine abbaut) und stabilisiert die Muskelzellmembran. Genau deshalb ist HMB besonders wertvoll in Situationen mit ERHÖHTEM Proteinabbau: Alter, Krankheit, Immobilität, Diät, extreme Belastung. Bei jungen Personen mit normalem Anabolismus ist der zusätzliche Schutz weniger relevant.",
+    "warum_wichtig": "HMB ist ein klassisches Beispiel für ein Supplement mit klarer 'Population-Spezifität'. Bei der Marketing-Botschaft 'für mehr Muskeln' werden alle Anwender angesprochen – die Evidenz zeigt aber: Bei jungen, gesunden Krafttrainierten ist der Effekt klein bis gar nicht vorhanden. Bei älteren Erwachsenen mit Sarkopenie, kachektischen Patienten und in extremen Diät-Phasen kann HMB hingegen den entscheidenden Unterschied machen. Die ehrliche Empfehlung: Junge Sportler sparen das Geld – Senioren und Diät-Phasen-Athleten profitieren messbar."
+  },
+
+  "fazit": {
+    "top_effekte": [
+      "Bei Sarkopenie: SMD 0.48 schnellere Gehgeschwindigkeit, verhindert Muskelmassen-Verlust",
+      "Bei jungen Krafttrainierten: KEINE signifikante Verbesserung von Magermasse oder Kraft (Jakubowski 2020)",
+      "Schützt Muskelmasse in Diät, bei Krankheit oder Bettlägrigkeit"
+    ],
+    "ideal_fuer": "Ältere Erwachsene (50+) mit Sarkopenie-Risiko, Personen in strikter Diät/Kaloriendefizit, hospitalisierte Patienten, Personen mit unbeabsichtigtem Muskelverlust",
+    "dosis": "3 g HMB täglich, aufgeteilt auf 2-3 Portionen mit den Mahlzeiten",
+    "vorsicht_bei": "Personen ohne erhöhten Muskelabbau-Risiko (junge Krafttrainierte): wenig Nutzen für hohe Kosten. Phenylketonurie (manche Präparate enthalten Phenylalanin)",
+    "mythen": [
+      "„HMB ist genauso wichtig wie Kreatin für Muskelaufbau“ – falsch. Bei jungen, gesunden Sportlern ist Kreatin meta-analytisch klar überlegen. HMB hat seine Stärken in anderen Populationen (Senioren, Diät, Krankheit).",
+      "„Mehr HMB bedeutet mehr Muskelschutz“ – falsch. Über 3 g/Tag bringt keinen zusätzlichen Nutzen. Höhere Dosen sind verschwendet.",
+      "„HMB sollte vom Profi-Bodybuilder genommen werden“ – mit Vorsicht. Trainerte Athleten zeigen die geringsten Effekte. Untrainerte Anfänger und Senioren profitieren mehr.",
+      "„Calcium-HMB ist genau gleich gut wie freies HMB“ – nicht ganz. Studien deuten an, dass freie Säure (FA-HMB) schnellere Absorption hat – aber für die meisten Anwendungen reicht Ca-HMB.",
+      "„HMB schützt 100% vor Muskelabbau“ – falsch. Es reduziert den Abbau – stoppt ihn aber nicht komplett. Bei langer Immobilität oder Krankheit kann trotz HMB Muskelmasse verloren gehen."
+    ]
+  },
+
+  "evidenz": {
+    "level": "B",
+    "score": 65,
+    "review_typ": "meta_analyse",
+    "studien_anzahl": 35,
+    "konsens": "Klare Population-Spezifität: positive Effekte bei Sarkopenie (Su 2024, Feng 2024), keine Effekte bei jungen Trainierten (Jakubowski 2020)",
+    "effekt_groesse": [
+      {
+        "wert": 0.48,
+        "einheit": "SMD Gehgeschwindigkeit",
+        "kontext": "Verbesserung der Gehgeschwindigkeit bei älteren Erwachsenen mit Sarkopenie nach HMB + Krafttraining",
+        "quelle": "Feng et al. 2024 Meta-Analyse (5 RCTs, n=257)",
+        "erklaerung": {
+          "was_bedeutet": "SMD (Standardized Mean Difference) von 0.48 ist ein 'moderater' Effekt. Konkret: Senioren mit Sarkopenie, die HMB UND Krafttraining absolvieren, gehen messbar schneller als die Krafttraining-allein-Gruppe. Die Gehgeschwindigkeit ist ein kritischer Marker im Alter – langsames Gehen sagt erhöhtes Sturzrisiko und Hospitalisierung voraus. Eine moderate Verbesserung kann den Unterschied zwischen 'selbstständig' und 'pflegebedürftig' machen.",
+          "studie_zeigt": "Meta-Analyse von 5 RCTs mit 257 sarkopenischen Senioren: HMB-Kombi (3 g/Tag) + Resistance Training vs. Training allein. Ergebnisse: Gehgeschwindigkeit signifikant verbessert (SMD 0.48, p=0.005), Magermasse-Erhalt besser, Handkraft-Effekte gemischt. Wichtig: Der Effekt war IN KOMBINATION mit Krafttraining – HMB allein wirkt deutlich schwächer.",
+          "studien_details": "Systematische Meta-Analyse publiziert 2024 in Frontiers in Nutrition. 5 RCTs, 257 Patienten mit klinisch diagnostizierter Sarkopenie. Cochrane Risk of Bias Tool angewendet. Dauer der Studien: 8-12 Wochen.",
+          "zuverlaessigkeit": "Solide für die Indikation Sarkopenie. AESPEN-Leitlinien (European Society for Clinical Nutrition) empfehlen HMB bei Sarkopenie und ungewolltem Gewichtsverlust. Aber: Nur in Kombination mit Krafttraining sinnvoll – nicht als Stand-alone."
+        }
+      },
+      {
+        "wert": 0.04,
+        "einheit": "kg Magermasse (nicht signifikant)",
+        "kontext": "Effekt von HMB-Supplementation auf Magermasse bei jungen, trainierten Erwachsenen",
+        "quelle": "Jakubowski et al. 2020 Meta-Analyse (Nutrients, 11 RCTs)",
+        "erklaerung": {
+          "was_bedeutet": "Eine Veränderung von 0.04 kg ist statistisch und klinisch NICHT relevant – das ist praktisch null. Bei jungen Erwachsenen die Krafttraining machen, bringt HMB-Supplementation keinen messbaren zusätzlichen Muskelaufbau. Die Honorable-Effekte aus älteren Studien (Nissen 2003) konnten in neueren, methodisch besseren RCTs nicht repliziert werden.",
+          "studie_zeigt": "Jakubowski 2020 (Phillips-Gruppe, McMaster): 11 RCTs analysiert. Bei jungen, trainierten Erwachsenen: KEIN signifikanter Effekt auf totale Körpermasse, Magermasse, Fettmasse, totale 1RM, Bankdrücken 1RM oder Beinpresse 1RM. Schlussfolgerung der Autoren: 'HMB scheint keine ergogene Wirkung bei resistance-training-induzierter Hypertrophie oder Kraftgewinn bei jungen Erwachsenen zu haben.'",
+          "studien_details": "Sehr robuste Meta-Analyse, publiziert 2020 in Nutrients. Die Phillips-Gruppe (McMaster) gilt als führend in der Muskelproteinmetabolismus-Forschung. Mehrere methodische Verbesserungen gegenüber älteren Meta-Analysen (Trim-and-Fill, Funnel Plot Analyse zur Publikations-Bias-Korrektur).",
+          "zuverlaessigkeit": "Sehr hoch. Eine der wichtigsten Quellen für die ehrliche Einordnung von HMB. Praktische Konsequenz: Junge, gesunde Sportler sollten ihr Geld lieber in Kreatin, Whey und gutes Training investieren – HMB lohnt sich nicht."
+        }
+      },
+      {
+        "wert": 0.35,
+        "einheit": "SMD Magermasse-Erhalt (Senioren)",
+        "kontext": "Schutz der Magermasse bei älteren Erwachsenen über 50 mit HMB-Supplementation",
+        "quelle": "Li et al. 2025 Meta-Analyse (Frontiers in Nutrition)",
+        "erklaerung": {
+          "was_bedeutet": "SMD von 0.35 ist ein 'kleiner bis moderater' Effekt – aber bei älteren Personen mit Tendenz zum Muskelverlust ist das klinisch relevant. HMB schützt nicht 'super stark', aber konsistent. Bei Senioren die NICHT trainieren, ist der Effekt geringer als bei kombiniertem Training.",
+          "studie_zeigt": "Meta-Analyse mit Erwachsenen über 50 Jahre. Bei HMB-Supplementation: signifikanter Erhalt der Magermasse, leichte Verbesserung der Muskelkraft. Effekt-Maximum bei 3 g/Tag über mindestens 8 Wochen. Bei Kombination mit Krafttraining: doppelter Effekt im Vergleich zu HMB allein.",
+          "studien_details": "Meta-Analyse publiziert 2025 in Frontiers in Nutrition. Dosis-Wirkungs-Analyse zeigt: 3 g/Tag ist optimale Dosis. Studiendauer mind. 8 Wochen für klinisch relevante Effekte. Subgruppen-Analyse: stärkere Effekte bei sarkopenischen vs. gesunden Senioren.",
+          "zuverlaessigkeit": "Solide für die Aussage 'HMB schützt Muskelmasse im Alter'. ESPEN-Leitlinien (European Society for Clinical Nutrition and Metabolism) empfehlen HMB explizit bei sarkopenischen Patienten und ungewolltem Gewichtsverlust."
+        }
+      }
+    ]
+  },
+
+  "indikationen": [
+    {
+      "ziel": "sarkopenie_praevention",
+      "staerke": 0.8,
+      "kommentar": "STÄRKSTE Indikation. Senioren mit Sarkopenie profitieren messbar – kombiniert mit Krafttraining. ESPEN-Empfehlung."
+    },
+    {
+      "ziel": "muskelmassen_erhalt_diaet",
+      "staerke": 0.7,
+      "kommentar": "Während Kaloriendefizit schützt HMB die Magermasse – besonders relevant bei aggressiven Diäten und Wettkampf-Vorbereitung."
+    },
+    {
+      "ziel": "muskelschutz_immobilitaet",
+      "staerke": 0.65,
+      "kommentar": "Bei Bettlägrigkeit, Krankheit, Immobilität: reduziert Muskelmassen-Verlust. Wichtig in der Reha-Phase."
+    },
+    {
+      "ziel": "alter_ueber_50",
+      "staerke": 0.7,
+      "kommentar": "Ab 50 Jahren wird HMB relevanter. Natürlicher Muskelabbau beginnt – HMB plus Krafttraining wirkt synergistisch."
+    },
+    {
+      "ziel": "muskelaufbau_anfaenger",
+      "staerke": 0.45,
+      "kommentar": "Bei UNTRAINIERTEN Anfängern kleiner Effekt nachweisbar – aber Kreatin/Whey wirken stärker."
+    },
+    {
+      "ziel": "muskelaufbau_trainiert",
+      "staerke": 0.2,
+      "kommentar": "Bei jungen, trainierten Erwachsenen: KEIN signifikanter Effekt. Marketing-Aussagen überzogen."
+    },
+    {
+      "ziel": "recovery",
+      "staerke": 0.4,
+      "kommentar": "Reduziert Muskelschaden-Marker (CK, LDH) nach intensivem Training. Klinisch eher kleiner Effekt."
+    }
+  ],
+
+  "kontraindikationen": [
+    {
+      "art": "medizinisch",
+      "wert": "phenylketonurie",
+      "schwere": "info",
+      "hinweis": "Einige HMB-Präparate enthalten Phenylalanin als Träger – bei PKU Etikett prüfen."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "niereninsuffizienz_dialyse",
+      "schwere": "vorsichtig",
+      "hinweis": "Calcium-HMB enthält Calcium – bei Dialysepatienten mit Calcium-Restriktionen: alternative Form (FA-HMB) oder ärztliche Rücksprache."
+    },
+    {
+      "art": "medikament",
+      "wert": "leucin_supplemente",
+      "schwere": "info",
+      "hinweis": "Bei gleichzeitiger Leucin/BCAA-Supplementation: HMB wird aus Leucin gebildet – mögliche additive Effekte. Insgesamt aber sicher."
+    },
+    {
+      "art": "alter",
+      "wert": "schwangerschaft_stillzeit",
+      "schwere": "vorsichtig",
+      "hinweis": "Unzureichende Sicherheitsdaten – in Schwangerschaft und Stillzeit nicht empfohlen."
+    }
+  ],
+
+  "dosierung": {
+    "standard": "3 g HMB täglich, aufgeteilt auf 2-3 Portionen mit den Mahlzeiten",
+    "bereich": { "min": 3, "max": 3, "einheit": "g" },
+    "obergrenze": "Über 3 g/Tag keine zusätzlichen Effekte. Sicher bis zu 6 g/Tag (kein Toxizitäts-Hinweis)",
+    "timing": "Aufgeteilt auf 2-3 Portionen über den Tag, mit den Mahlzeiten. Bei Sport: eine Portion 30-60 Min vor dem Training, eine nach dem Training. Bei Senioren: zu den Hauptmahlzeiten.",
+    "quelle": "ESPEN-Leitlinien + Multiple Meta-Analysen",
+    "formen_vergleich": "Calcium-HMB (Ca-HMB): Standard-Form, gut etabliert, günstiger. Freie Säure HMB (FA-HMB): Schnellere Absorption (60 Min vs. 2h Plasma-Peak), schwerer zu finden, teurer. Für die meisten Anwendungen reicht Ca-HMB völlig aus."
+  },
+
+  "population_spezifisch": {
+    "senioren_sarkopenie": {
+      "relevant": true,
+      "staerke": 0.85,
+      "kommentar": "HAUPTINDIKATION. Kombiniert mit Krafttraining 8-12 Wochen lang. ESPEN-Empfehlung.",
+      "quelle": "Feng 2024 + Su 2024 Meta-Analysen"
+    },
+    "diaet_kaloriendefizit": {
+      "relevant": true,
+      "staerke": 0.7,
+      "kommentar": "Schützt Magermasse während aggressiver Diät. Sinnvoll bei Wettkampf-Vorbereitung und ungewollter Diät."
+    },
+    "junge_trainierte": {
+      "relevant": false,
+      "staerke": 0.2,
+      "kommentar": "KEIN messbarer Effekt laut Jakubowski 2020. Geld besser für Kreatin und Whey investieren.",
+      "quelle": "Jakubowski 2020 Nutrients"
+    },
+    "rehabilitation_immobilitaet": {
+      "relevant": true,
+      "staerke": 0.65,
+      "kommentar": "Bei Bettlägrigkeit, postoperativer Reha: reduziert Muskelverlust. Klinisch relevant in Krankenhäusern."
+    },
+    "anfaenger_krafttraining": {
+      "relevant": true,
+      "staerke": 0.4,
+      "kommentar": "Kleiner Effekt nachweisbar – aber andere Supplemente (Kreatin, Whey) bringen mehr für den Preis."
+    },
+    "ausdauersportler": {
+      "relevant": false,
+      "staerke": 0.3,
+      "kommentar": "Bei langen Ausdauer-Einheiten kann HMB Muskelmassen schützen – aber Effekt klein, andere Strategien wichtiger."
+    }
+  },
+
+  "warnhinweise": [
+    "HMB ist POPULATIONSSPEZIFISCH – die Wirkung hängt stark davon ab WER es nimmt und in welcher Situation",
+    "Für junge, gesunde Krafttrainierende ist die Evidenz schwach. Kreatin (3-5g) oder Whey (25-30g) sind günstiger und wirksamer für Muskelaufbau",
+    "Bei Sarkopenie und älteren Erwachsenen MIT Krafttraining: solider Effekt, eine der wenigen wissenschaftlich begründbaren Supplemente",
+    "HMB schützt vor Muskelabbau – stoppt ihn aber nicht komplett bei langer Immobilität oder schwerer Erkrankung",
+    "Dosis-Plateau bei 3 g/Tag – mehr bringt nichts. Marketing-Versprechen von '5-10g HMB für Profi-Athleten' sind nicht durch Evidenz gestützt",
+    "Mindestens 8 Wochen kontinuierliche Einnahme nötig für klinisch relevante Effekte – ist kein Akut-Supplement",
+    "Bei Calcium-HMB-Form werden ca. 300 mg Calcium pro Tagesdosis zugeführt – bei Calcium-restriktiven Diäten beachten",
+    "Hauptanwendung: PRÄVENTIVE Muskelmassen-Erhaltung in Risiko-Populationen (Senioren, Diät, Krankheit) – nicht ‚mehr Muskeln' bei gesunden Sportlern"
+  ],
+
+  "inhalt": ["hmb"],
+
+  "quellen": [
+    {
+      "titel": "Effects of exercise with or without β-hydroxy-β-methylbutyrate supplementation on muscle mass, muscle strength, and physical performance in patients with sarcopenia: a systematic review and meta-analysis",
+      "autoren": "Feng Y, Chen P, Li T, Wan P, Shi R",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11444964/",
+      "jahr": 2024,
+      "typ": "meta_analyse",
+      "doi": "10.3389/fnut.2024.1460133"
+    },
+    {
+      "titel": "Supplementation with the Leucine Metabolite β-hydroxy-β-methylbutyrate (HMB) does not Improve Resistance Exercise-Induced Changes in Body Composition or Strength in Young Subjects: A Systematic Review and Meta-Analysis",
+      "autoren": "Jakubowski JS, Nunes EA, Teixeira FJ, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7285233/",
+      "jahr": 2020,
+      "typ": "meta_analyse",
+      "doi": "10.3390/nu12051523"
+    },
+    {
+      "titel": "The effects of β-hydroxy-β-methylbutyrate or HMB-rich nutritional supplements on sarcopenia patients: a systematic review and meta-analysis",
+      "autoren": "Su H, Zhou H, Gong Y, et al.",
+      "url": "https://doi.org/10.3389/fmed.2024.1348212",
+      "jahr": 2024,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "Effects of oral supplementation of β-hydroxy-β-methylbutyrate on muscle mass and strength in individuals over the age of 50: a meta-analysis",
+      "autoren": "Li et al.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12003145/",
+      "jahr": 2025,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "Ergogenic Benefits of β-Hydroxy-β-Methyl Butyrate (HMB) Supplementation on Body Composition and Muscle Strength: An Umbrella Review of Meta-Analyses",
+      "autoren": "Bideshki MV, et al.",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jcsm.13671",
+      "jahr": 2025,
+      "typ": "umbrella_review"
+    },
+    {
+      "titel": "Effects of beta-hydroxy-beta-methylbutyrate supplementation on strength and body composition in trained and competitive athletes: A meta-analysis",
+      "autoren": "Sanchez-Martinez J, et al.",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1440244017317590",
+      "jahr": 2018,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "The Role of HMB Supplementation in Enhancing the Effects of Resistance Training in Older Adults",
+      "autoren": "MDPI Nutrients 2025",
+      "url": "https://www.mdpi.com/2072-6643/17/22/3624",
+      "jahr": 2025,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "ESPEN guideline on definitions and terminology of clinical nutrition (Sarkopenie-Empfehlungen)",
+      "autoren": "Cederholm T, et al.",
+      "url": "https://www.espen.org/files/ESPEN-Guidelines/ESPEN-guideline-on-definitions-and-terminology-of-clinical-nutrition.pdf",
+      "jahr": 2017,
+      "typ": "position_stand"
+    }
+  ]
+}

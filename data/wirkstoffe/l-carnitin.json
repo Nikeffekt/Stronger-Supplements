@@ -1,0 +1,265 @@
+{
+  "id": "l_carnitin",
+  "name": "L-Carnitin",
+  "kategorie": "performance",
+  "ikon": "🔥",
+  "kurz_beschreibung": "Aminosäure-Derivat für Fettstoffwechsel und Regeneration. Moderate Evidenz für Gewichtsabnahme und Muskelregeneration – stärkste Effekte bei Übergewicht und Diabetes Typ 2.",
+
+  "beschreibung": {
+    "was_ist_es": "L-Carnitin ist ein vitaminähnlicher Stoff, der aus den Aminosäuren Lysin und Methionin im Körper gebildet wird – die Leber und Nieren produzieren etwa 11-34 mg pro Tag. Hauptnahrungsquellen sind rotes Fleisch (60-180 mg pro 100g), Milchprodukte, Geflügel und Fisch. Vegetarier und Veganer haben durchschnittlich niedrigere Carnitin-Speicher. Im Körper befinden sich 95% des Carnitins in den Muskeln. Die Hauptformen als Supplement: L-Carnitin (Standardform), L-Carnitin-L-Tartrat (kombiniert mit Tartrat, gut bei Sport-Recovery), Acetyl-L-Carnitin (ALCAR, geht ins Gehirn).",
+    "wie_wirkt_es": "L-Carnitin ist der zentrale Transporter für langkettige Fettsäuren in die Mitochondrien – die 'Kraftwerke' der Zellen. Dort werden die Fettsäuren zur Energiegewinnung verbrannt (Beta-Oxidation). Ohne Carnitin können diese Fette nicht effizient verbrannt werden. Zusätzlich wirkt L-Carnitin antioxidativ (neutralisiert freie Radikale), reduziert Entzündungsmarker und verbessert die Durchblutung des Muskelgewebes – relevant für Recovery nach Sport.",
+    "warum_wichtig": "Bei gesunden Erwachsenen mit normalem Fleischverzehr ist die Carnitin-Versorgung meist ausreichend. Aber: Bei Vegetariern und Veganern (5x weniger Aufnahme), bei intensivem Training (höherer Verbrauch), bei Diabetes Typ 2 und bei Übergewicht kann eine Supplementation Vorteile bringen. Wichtig zu wissen: L-Carnitin ist KEIN klassischer 'Fatburner' – es ermöglicht den Fettstoffwechsel, kann ihn aber nicht erzwingen. Ohne Kaloriendefizit keine Gewichtsabnahme."
+  },
+
+  "fazit": {
+    "top_effekte": [
+      "Gewichtsreduktion um 1.21 kg bei Übergewichtigen (Meta-Analyse, n=2.292)",
+      "Reduziert Muskelschmerz/DOMS nach Sport an allen 5 Messpunkten (0-96h)",
+      "Senkt HbA1c und BMI bei Typ-2-Diabetes (-0.16% pro g/Tag)"
+    ],
+    "ideal_fuer": "Übergewichtige im Kaloriendefizit, Typ-2-Diabetiker, Vegetarier/Veganer, Sportler in intensiven Recovery-Phasen, ältere Erwachsene",
+    "dosis": "1.000–2.000 mg täglich – maximaler Effekt bei 2g/Tag (Dose-Response-Plateau)",
+    "vorsicht_bei": "Schwere Niereninsuffizienz, Schilddrüsenunterfunktion (TMAO-Risiko), Krampfanfälle, Antikoagulantien",
+    "mythen": [
+      "„L-Carnitin verbrennt Fett auch ohne Sport“ – falsch. Es ermöglicht den Fettstoffwechsel, erzwingt ihn aber nicht. Ohne Kaloriendefizit oder Training kein Gewichtsverlust.",
+      "„Je mehr L-Carnitin, desto mehr Fettverbrennung“ – falsch. Studien zeigen ein Plateau bei 2g/Tag. Mehr bringt nichts – nur höhere Kosten.",
+      "„L-Carnitin steigert direkt die Leistung“ – falsch. Performance-Effekte sind inkonsistent. Der Hauptnutzen liegt in der Erholung NACH dem Training, nicht der Leistung WÄHREND.",
+      "„L-Carnitin Injektionen wirken besser als Tabletten“ – stimmt nur theoretisch. Höhere Bioverfügbarkeit ja, aber für die meisten Anwender kein praktischer Vorteil bei deutlich höherem Aufwand und Risiko.",
+      "„Veganer brauchen unbedingt L-Carnitin“ – nicht immer. Der Körper kann selbst Carnitin bilden. Aber Vegetarier/Veganer profitieren bei sportlicher Aktivität oder Diät messbar mehr von Supplementation."
+    ]
+  },
+
+  "evidenz": {
+    "level": "B",
+    "score": 68,
+    "review_typ": "meta_analyse",
+    "studien_anzahl": 58,
+    "konsens": "Mehrere Meta-Analysen (Pooyandjoo 2016, Khosravi 2020, Mirrafiei 2024) + Umbrella Review 2024",
+    "effekt_groesse": [
+      {
+        "wert": -1.21,
+        "einheit": "kg",
+        "kontext": "Gewichtsreduktion bei Übergewichtigen mit 2g L-Carnitin/Tag über 8-12 Wochen",
+        "quelle": "Khosravi & Salehi-Abargouei 2020 Meta-Analyse (n=2.292, 37 RCTs)",
+        "erklaerung": {
+          "was_bedeutet": "Personen mit Übergewicht (BMI >25), die zusätzlich zur Diät 2g L-Carnitin täglich einnehmen, verlieren über 8-12 Wochen etwa 1.2 kg MEHR als die Placebo-Gruppe. Das klingt nicht spektakulär, ist aber bei Diäten relevant: Wer ohne Carnitin 3 kg abnimmt, nimmt mit Carnitin ca. 4.2 kg ab. Wichtig: Bei normalgewichtigen Personen ist der Effekt deutlich kleiner oder nicht messbar. Bei Übergewicht/Adipositas wirkt es am besten.",
+          "studie_zeigt": "37 randomisierte Studien mit insgesamt 2.292 Teilnehmern. Effektstärken: Körpergewicht -1.21 kg (95% CI: -1.73 bis -0.68), BMI -0.24 kg/m² (95% CI: -0.37 bis -0.10), Fettmasse signifikant reduziert. Wichtige Dose-Response-Analyse: Effekt steigt bis 2g/Tag an und plateaut dort – höhere Dosen bringen NICHT mehr Gewichtsverlust. Hochwertige Studien (low risk of bias) bestätigten den Effekt nur für Körpergewicht.",
+          "studien_details": "Systematische Meta-Analyse mit Dose-Response-Analyse, publiziert 2020 in Clinical Nutrition ESPEN. Eingeschlossen: 37 RCTs mit 2.292 Teilnehmern. Studiendauer 8-30 Wochen, Dosis 150-4000 mg/Tag. Methodik: Random-Effects-Modell, restricted cubic splines für Dose-Response.",
+          "zuverlaessigkeit": "Solide für Übergewichtige – konsistent in mehreren unabhängigen Meta-Analysen (Pooyandjoo 2016, Mirrafiei-Umbrella 2024). Aber: Effekt ist moderat und KEIN Ersatz für Diät und Bewegung. Studien hatten hohe Heterogenität (I² >85%), was auf unterschiedliche Studienpopulationen hinweist."
+        }
+      },
+      {
+        "wert": -0.16,
+        "einheit": "% HbA1c",
+        "kontext": "Senkung des HbA1c-Wertes pro 1g L-Carnitin/Tag bei Typ-2-Diabetes",
+        "quelle": "Mirrafiei et al. 2024 Dose-Response Meta-Analyse (n=2.041, 21 RCTs)",
+        "erklaerung": {
+          "was_bedeutet": "Bei Patienten mit Typ-2-Diabetes senkt jedes zusätzliche Gramm L-Carnitin pro Tag den HbA1c-Wert um etwa 0.16%. Bei 2g/Tag wäre das also -0.32% – klinisch durchaus relevant. Zum Vergleich: Eine HbA1c-Senkung von 1% reduziert das Risiko für diabetische Folgeschäden (Augen, Nieren) um etwa 35%. L-Carnitin ist also kein Ersatz für Metformin, kann aber als Adjuvans nützlich sein.",
+          "studie_zeigt": "21 RCTs mit 2.041 Diabetes-Typ-2-Patienten. Effekte pro 1g L-Carnitin täglich: HbA1c -0.16% (GRADE: moderate Evidenz), BMI -0.37 kg/m² (GRADE: low), Nüchternblutzucker reduziert, Triglyzeride reduziert, HDL-Cholesterin erhöht. Wichtig: kein signifikanter Effekt auf Insulinresistenz (HOMA-IR).",
+          "studien_details": "Dose-Response Meta-Analyse publiziert 2024 in Clinical Therapeutics. Beobachtungszeitraum bis 24 Wochen. Studienqualität nach GRADE bewertet. Restricted cubic splines für Dose-Response. Hauptlimitation: hohe Heterogenität (I² >90%).",
+          "zuverlaessigkeit": "Moderate Evidenz für HbA1c-Effekt (GRADE moderate). Bei Typ-2-Diabetes ist L-Carnitin ein interessantes Adjuvans – aber NUR nach Rücksprache mit dem Arzt, da Wechselwirkungen mit anderen Diabetes-Medikamenten möglich sind."
+        }
+      },
+      {
+        "wert": 0.36,
+        "einheit": "SMD",
+        "kontext": "Reduktion des Muskelschmerzes (DOMS) 24-96h nach intensivem Sport",
+        "quelle": "Rahimi et al. 2020 Meta-Analyse (7 RCTs)",
+        "erklaerung": {
+          "was_bedeutet": "SMD 0.36 ist ein 'kleiner bis moderater' Effekt – aber konsistent über mehrere Zeitpunkte (0, 24, 48, 72, 96 Stunden nach dem Training). Konkret: Sportler die 2-3g L-Carnitin täglich einnehmen, empfinden nach intensivem Training weniger Muskelkater als die Placebo-Gruppe. Mechanismus: bessere Durchblutung der Muskeln, antioxidative Wirkung, reduzierte Entzündungsmarker.",
+          "studie_zeigt": "7 RCTs mit 284 gesunden Erwachsenen analysiert. L-Carnitin-Supplementation (1-3g/Tag, akut oder bis 8 Wochen) reduzierte den Muskelschmerz signifikant zu allen 5 Messpunkten (0h, 24h, 48h, 72h, 96h) nach intensivem Training. Auch Kreatinkinase (CK) und Laktatdehydrogenase (LDH) als Marker für Muskelschaden waren niedriger. WICHTIG: Performance-Effekte (Kraft, Ausdauer) waren NICHT konsistent verbessert.",
+          "studien_details": "Meta-Analyse publiziert 2020 in Nutrition. 7 RCTs eingeschlossen, 284 gesunde Erwachsene. Verschiedene Sportarten und Trainingsintensitäten. Methodik: Random-Effects-Modell, sensitivity-Analysen.",
+          "zuverlaessigkeit": "Solide für Recovery-Effekte. Hauptbotschaft: L-Carnitin hilft besser zu REGENERIEREN – aber macht dich nicht stärker oder schneller. Wer schneller wieder trainieren will, profitiert. Wer einfach mehr Leistung will, ist mit Kreatin oder Koffein besser bedient."
+        }
+      }
+    ]
+  },
+
+  "indikationen": [
+    {
+      "ziel": "fettabbau",
+      "staerke": 0.65,
+      "kommentar": "Moderate Evidenz bei Übergewicht/Adipositas. Maximaler Effekt bei 2g/Tag. KEIN Ersatz für Kaloriendefizit."
+    },
+    {
+      "ziel": "fettabbau_muskelerhalt",
+      "staerke": 0.55,
+      "kommentar": "Bei Diät unterstützt L-Carnitin den Fettstoffwechsel und kann beim Muskelmassen-Erhalt helfen. Effekt moderat."
+    },
+    {
+      "ziel": "regeneration",
+      "staerke": 0.7,
+      "kommentar": "Reduziert nachweislich Muskelschmerz (DOMS) und Marker für Muskelschaden (CK, LDH) nach intensivem Sport. Stärkster Sport-Effekt."
+    },
+    {
+      "ziel": "diabetes_t2",
+      "staerke": 0.7,
+      "kommentar": "Senkt HbA1c (-0.16% pro g/Tag) und BMI bei Typ-2-Diabetes. Interessantes Adjuvans nach ärztlicher Rücksprache."
+    },
+    {
+      "ziel": "vegan_vegetarisch",
+      "staerke": 0.6,
+      "kommentar": "Vegetarier/Veganer haben niedrigere Carnitin-Speicher. Bei sportlicher Aktivität oder Diät besonders relevant."
+    },
+    {
+      "ziel": "sarkopenie_praevention",
+      "staerke": 0.5,
+      "kommentar": "Bei Senioren möglicher Effekt auf Muskelmasse und reduzierte physische/mentale Fatigue. Evidenz noch eingeschränkt."
+    },
+    {
+      "ziel": "energie",
+      "staerke": 0.4,
+      "kommentar": "Direkter Energie-Boost wie bei Koffein NICHT zu erwarten. Aber indirekt: effizienterer Energiestoffwechsel kann subjektive Erschöpfung reduzieren."
+    }
+  ],
+
+  "kontraindikationen": [
+    {
+      "art": "medizinisch",
+      "wert": "niereninsuffizienz_schwer",
+      "schwere": "hart",
+      "hinweis": "Bei schwerer Niereninsuffizienz (Dialyse): L-Carnitin-Spiegel sind oft erniedrigt und Supplementation ist sogar therapeutisch. ABER: nur unter ärztlicher Begleitung – falsche Dosen können Komplikationen verursachen."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "schilddruesenunterfunktion",
+      "schwere": "vorsichtig",
+      "hinweis": "L-Carnitin kann die Wirkung von Schilddrüsenhormonen abschwächen. Bei Hashimoto/Hypothyreose mit Levothyroxin: zeitlicher Abstand (>4h) und Arztgespräch."
+    },
+    {
+      "art": "medikament",
+      "wert": "antikoagulantien",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei Warfarin: L-Carnitin kann die antikoagulatorische Wirkung VERSTÄRKEN (INR-Anstieg in Einzelfällen dokumentiert). Engmaschige INR-Kontrolle bei Therapiebeginn."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "epilepsie_krampfanfaelle",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei Krampfleiden kann L-Carnitin die Krampfschwelle senken (selten dokumentiert). Bei Epilepsie mit Antikonvulsiva: Rücksprache mit Neurologe."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "tmao_kardiovaskulaer",
+      "schwere": "info",
+      "hinweis": "L-Carnitin wird von Darmbakterien zu TMAO (Trimethylamin-N-Oxid) verstoffwechselt – einem Marker für kardiovaskuläres Risiko. Bei bekannten Herzerkrankungen: Vorsicht und ärztliche Begleitung empfohlen."
+    }
+  ],
+
+  "dosierung": {
+    "standard": "1.000 – 2.000 mg L-Carnitin täglich",
+    "bereich": { "min": 1000, "max": 2000, "einheit": "mg" },
+    "obergrenze": "EFSA: bis 3.000 mg/Tag als sicher eingestuft. Über 2g/Tag bringt aber keinen zusätzlichen Nutzen.",
+    "timing": "Vor dem Training (30-60 Min) für Recovery-Effekt. Mit Kohlenhydraten kombinieren – Insulin verbessert die Aufnahme in die Muskelzellen deutlich. Aufgeteilt auf 2 Dosen für stabilere Spiegel.",
+    "quelle": "EFSA + Khosravi 2020 Meta-Analyse",
+    "formen_vergleich": "L-Carnitin (Standardform): günstig, gut belegt für Gewicht und Recovery. L-Carnitin-L-Tartrat (LCLT): bevorzugt für Sport-Recovery (Spillane Studien). Acetyl-L-Carnitin (ALCAR): kreuzt Blut-Hirn-Schranke, interessant für kognitive Effekte. Propionyl-L-Carnitin: speziell für Durchblutung/PAVK. Standard-L-Carnitin ist für die meisten Anwender ausreichend."
+  },
+
+  "population_spezifisch": {
+    "uebergewichtige": {
+      "relevant": true,
+      "staerke": 0.7,
+      "kommentar": "Hauptzielgruppe mit stärkstem Effekt. 2g/Tag bei BMI >25, kombiniert mit Kaloriendefizit und Bewegung.",
+      "quelle": "Khosravi 2020 Meta-Analyse"
+    },
+    "diabetiker_t2": {
+      "relevant": true,
+      "staerke": 0.75,
+      "kommentar": "Senkt HbA1c und BMI signifikant. NUR mit ärztlicher Begleitung wegen möglicher Wechselwirkungen.",
+      "quelle": "Mirrafiei 2024 Meta-Analyse"
+    },
+    "sportler": {
+      "relevant": true,
+      "staerke": 0.6,
+      "kommentar": "2-3g/Tag bei intensiven Trainings-Phasen. Vorteil liegt in der Recovery, nicht in akuter Leistungssteigerung."
+    },
+    "vegetarier_veganer": {
+      "relevant": true,
+      "staerke": 0.55,
+      "kommentar": "5x niedrigere Aufnahme aus Nahrung. Bei Sport oder Diät besonders relevant. 1-2g/Tag ausreichend."
+    },
+    "senioren_50plus": {
+      "relevant": true,
+      "staerke": 0.5,
+      "kommentar": "Möglicher Effekt auf Muskelmasse und Fatigue. Evidenz aber noch limitiert. 1-2g/Tag."
+    }
+  },
+
+  "warnhinweise": [
+    "L-Carnitin ist KEIN Fatburner im klassischen Sinn. Ohne Kaloriendefizit keine Gewichtsabnahme – es 'ermöglicht' nur den Fettstoffwechsel",
+    "Dosierungs-Plateau bei 2g/Tag – mehr bringt nichts außer höheren Kosten und höherem TMAO-Spiegel",
+    "TMAO-Risiko beachten: Darmbakterien wandeln L-Carnitin in TMAO um – das gilt als Risikofaktor für Atherosklerose. Bei Herz-Kreislauf-Erkrankungen: Vorsicht",
+    "Aufnahme über die Nahrung ist effizienter als über Supplemente – ein 200g Rindersteak liefert ca. 200-300 mg L-Carnitin mit besserer Bioverfügbarkeit",
+    "Performance-Effekte für Sportler werden oft überschätzt – L-Carnitin macht nicht stärker oder schneller, sondern hilft besser zu regenerieren",
+    "Beim ersten Einnehmen kann L-Carnitin einen fischigen Körpergeruch verursachen – das ist harmlos und meist temporär (durch TMAO)",
+    "Bei gleichzeitiger Einnahme mehrerer 'Fettverbrenner' (CLA, Grüntee, Koffein, L-Carnitin) NICHT additiv wirksam – Geld besser sparen"
+  ],
+
+  "inhalt": ["l_carnitin"],
+
+  "quellen": [
+    {
+      "titel": "Effects of l-carnitine supplementation on weight loss and body composition: A systematic review and meta-analysis of 37 randomized controlled clinical trials with dose-response analysis",
+      "autoren": "Khosravi H, Salehi-Abargouei A",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S240545772030053X",
+      "jahr": 2020,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "The Effects of L-Carnitine Supplementation on Weight Loss, Glycemic Control, and Cardiovascular Risk Factors in Patients With Type 2 Diabetes: A Systematic Review and Dose-response Meta-Analysis",
+      "autoren": "Mirrafiei A, Jayedi A, Shab-Bidar S",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38594107/",
+      "jahr": 2024,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "The Effect of the L-Carnitine Supplementation on Obesity Indices: An Umbrella Meta-Analysis",
+      "autoren": "Umbrella Meta-Analyse 2025",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40298161/",
+      "jahr": 2025,
+      "typ": "umbrella_review"
+    },
+    {
+      "titel": "The Effect of L-Carnitine Supplementation on Exercise-Induced Muscle Damage: A Systematic Review and Meta-Analysis of Randomized Clinical Trials",
+      "autoren": "Rahimi MH et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32154768/",
+      "jahr": 2020,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "Effects of L-carnitine supplementation on markers of exercise-induced muscle damage in healthy adults: A systematic review and meta-analysis",
+      "autoren": "ClinicalNutrition ESPEN",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2950273X25000256",
+      "jahr": 2025,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "l-Carnitine Supplementation in Recovery after Exercise",
+      "autoren": "Fielding R, Riede L, Lugo JP, Bellamine A",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5872767/",
+      "jahr": 2018,
+      "typ": "review"
+    },
+    {
+      "titel": "Role of L-carnitine in exercise training: Anti-inflammatory, antioxidant, and metabolic interactions",
+      "autoren": "Sports Medicine Review",
+      "url": "https://www.sciencedirect.com/science/article/pii/S266713792500030X",
+      "jahr": 2025,
+      "typ": "review"
+    },
+    {
+      "titel": "Effects of L-Carnitine Intake on Exercise-Induced Muscle Damage and Oxidative Stress: A Narrative Scoping Review",
+      "autoren": "Nutrients 2023",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10255885/",
+      "jahr": 2023,
+      "typ": "review"
+    },
+    {
+      "titel": "L-Carnitine – Health Professional Fact Sheet",
+      "autoren": "NIH Office of Dietary Supplements",
+      "url": "https://ods.od.nih.gov/factsheets/Carnitine-HealthProfessional/",
+      "jahr": 2024,
+      "typ": "position_stand"
+    }
+  ]
+}

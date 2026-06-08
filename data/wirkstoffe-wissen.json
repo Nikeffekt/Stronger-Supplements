@@ -1,7 +1,7 @@
 {
   "_meta": {
     "schema_version": "1.3",
-    "letzte_aktualisierung": "2026-06-07",
+    "letzte_aktualisierung": "2026-06-08",
     "hinweis": "Diese Datei ist die Wissensbasis für die Empfehlungs-Engine. Jeder Eintrag basiert auf publizierten wissenschaftlichen Quellen. Bei Updates Quellen prüfen und Datum aktualisieren.",
     "disclaimer": "Stronger ist kein medizinisches Beratungssystem. Bei gesundheitlichen Fragen oder Vorerkrankungen ist eine ärztliche Beratung notwendig."
   },
@@ -80,12 +80,12 @@
     "indikationen": [
       {
         "ziel": "muskelaufbau",
-        "staerke": 1.0,
+        "staerke": 1,
         "kommentar": "Höchste Evidenz aller Supplements für Muskelaufbau in Kombination mit Krafttraining"
       },
       {
         "ziel": "kraftsteigerung",
-        "staerke": 1.0,
+        "staerke": 1,
         "kommentar": "Konsistent 5–15% mehr Kraftzuwachs vs. Training ohne Kreatin"
       },
       {
@@ -1137,6 +1137,525 @@
       "protein"
     ]
   },
+  "iso_clear": {
+    "id": "iso_clear",
+    "name": "ISO Clear (Whey Protein Isolat)",
+    "kategorie": "performance",
+    "ikon": "💧",
+    "kurz_beschreibung": "Hochreines Whey-Isolat (>90% Protein, kaum Laktose, kaum Fett). Wirkstoffidentisch zu Whey Konzentrat – aber ideal bei Laktose-Intoleranz, Kalorienreduktion und für Personen mit empfindlichem Magen.",
+    "beschreibung": {
+      "was_ist_es": "Whey Protein Isolat (WPI) ist eine weiter verarbeitete Form von Molkeprotein. Durch zusätzliche Filtrationsschritte (Mikrofiltration, Ionenaustausch oder Crossflow-Membran-Filtration) werden Laktose, Fette und Kohlenhydrate weitgehend entfernt. Das Resultat: ein Pulver mit über 90% reinem Protein, weniger als 1% Laktose und unter 1% Fett. Im Gegensatz dazu enthält Whey Konzentrat (WPC) 70-80% Protein, 4-8% Laktose und 1-8% Fett. 'ISO Clear' bezieht sich oft auf eine besonders klare, geschmacksneutrale Variante, die in Wasser kristallklar bleibt (statt cremig wie WPC).",
+      "wie_wirkt_es": "Die Wirkung ist mit Whey Konzentrat IDENTISCH: rascher Anstieg essentieller Aminosäuren (besonders Leucin) im Blut, was die Muskelproteinsynthese (mTOR-Signalweg) optimal aktiviert. Der Hauptunterschied liegt nicht im Wirkmechanismus, sondern in der Aufnahmegeschwindigkeit und der Verträglichkeit. Da kaum Laktose und Fett dabei sind, wird WPI etwas schneller absorbiert und ist für laktose-empfindliche Personen viel verträglicher.",
+      "warum_wichtig": "WPI ist KEIN Wundermittel – die Marketing-Behauptung 'besseres Protein' ist meist überzogen. Die Realität: Für 90% aller Anwender ist Whey Konzentrat genauso gut und 30-50% günstiger. WPI lohnt sich gezielt für: Laktose-Intolerante, Personen in strikter Diät (jede Kalorie zählt), Magenempfindliche und Personen die eine geschmacksneutrale Variante bevorzugen. Für Standard-Krafttraining bei gesunden Personen: Konzentrat ist meist die bessere Wahl."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Identische Muskelaufbau-Wirkung wie Whey Konzentrat (Meta-Analyse n=246, p>0.05 für Magermasse)",
+        "Über 90% Proteingehalt (vs. 70-80% bei WPC) – schneller absorbiert",
+        "Unter 1% Laktose – für Laktose-Intolerante in der Regel unproblematisch"
+      ],
+      "ideal_fuer": "Personen mit Laktose-Intoleranz, Diät/Kalorienreduktion, magenempfindliche Trainierende, Wettkampf-Vorbereitung, Personen die geschmacksneutrales Protein bevorzugen",
+      "dosis": "25-40 g pro Portion, 1-2 Portionen täglich – identisch zu Whey Konzentrat",
+      "vorsicht_bei": "Milcheiweiß-Allergie (komplette Kasein/Albumin-Allergie schließt WPI aus), strikte Vegetarier/Veganer, sehr hoher Eiweißbedarf nicht erfüllbar als Alleinquelle",
+      "mythen": [
+        "„Isolat ist wirksamer für den Muskelaufbau als Konzentrat“ – falsch. Meta-Analyse (Castro 2019) zeigt: KEIN signifikanter Unterschied in fettfreier Masse zwischen WPI und WPC.",
+        "„Isolat ist ‚saubereres' Protein und gesünder“ – Marketing-Behauptung. Whey Konzentrat enthält Lacto-Globuline, Immunglobuline und Laktoferrin – bioaktive Komponenten, die durch die zusätzliche Filtration teilweise verloren gehen.",
+        "„Isolat hat KEINE Laktose“ – nicht ganz. Es enthält noch <1% Laktose. Bei sehr schwerer Laktose-Intoleranz kann auch das noch Beschwerden machen.",
+        "„Isolat ist für jeden die bessere Wahl“ – falsch. Für 90% der Anwender ist Konzentrat gleich wirksam und deutlich günstiger. Isolat lohnt sich nur bei spezifischen Bedürfnissen.",
+        "„Wegen schnellerer Aufnahme baut Isolat mehr Muskel auf“ – falsch. Der Unterschied in der Aufnahmegeschwindigkeit (etwa 15-30 Min schneller) ist klinisch irrelevant – das anabole Fenster ist 3-5 Stunden weit, nicht Minuten."
+      ]
+    },
+    "evidenz": {
+      "level": "A",
+      "score": 82,
+      "review_typ": "meta_analyse",
+      "studien_anzahl": 25,
+      "konsens": "ISSN Position Stand + Meta-Analysen (Morton 2018, Castro 2019, Martín-Rincón 2024)",
+      "effekt_groesse": [
+        {
+          "wert": 0,
+          "einheit": "kg Magermasse-Unterschied",
+          "kontext": "Direkter Vergleich der Magermasse-Entwicklung zwischen Whey Isolat (WPI) und Whey Konzentrat (WPC)",
+          "quelle": "Castro et al. 2019 Vergleichs-Meta-Analyse (8 RCTs, n=246)",
+          "erklaerung": {
+            "was_bedeutet": "Eine direkte Vergleichs-Meta-Analyse zeigt: Zwischen Whey Isolat und Whey Konzentrat gibt es KEINEN signifikanten Unterschied in der Magermasse-Entwicklung (p > 0.05). Beide Formen sind gleich wirksam für Muskelaufbau. Der vermeintliche 'Vorteil' von Isolat ist Marketing – nicht wissenschaftlich belegt. Wichtig: Beide funktionieren gut, aber nicht eine 'besser' als die andere.",
+            "studie_zeigt": "Vergleichs-Meta-Analyse mit 246 Sportlern aus 8 RCTs. Subgruppen: WPC (Konzentrat), WPI (Isolat), WPH (Hydrolysat). Bei Fettmasse-Reduktion zeigte WPC sogar einen LEICHT besseren Effekt (-0.63 kg) als WPI (nicht signifikant). Bei Magermasse: kein signifikanter Effekt-Unterschied zwischen den Formen.",
+            "studien_details": "Systematische Meta-Analyse publiziert 2019 in Nutrients. 8 RCTs analysiert. Studiendauer durchschnittlich 64.5 Tage. Methodik: Random-Effects-Modell, Subgruppen-Analysen für verschiedene Protein-Formen.",
+            "zuverlaessigkeit": "Sehr hoch für die Aussage 'Isolat ≠ besser als Konzentrat'. Praktische Konsequenz: Wenn keine Laktose-Intoleranz oder strikte Diät vorliegt, ist Konzentrat die wirtschaftlichere Wahl."
+          }
+        },
+        {
+          "wert": 90,
+          "einheit": "% Proteingehalt",
+          "kontext": "Proteingehalt von Whey Isolat im Vergleich zu Whey Konzentrat (70-80%)",
+          "quelle": "Mehrere Marktanalysen + ISSN Position Stand",
+          "erklaerung": {
+            "was_bedeutet": "Whey Isolat hat über 90% reines Protein pro Gewichtseinheit – Konzentrat hat 70-80%. Pro 30g Portion: Isolat liefert 27-29g Protein, Konzentrat 21-24g. Das klingt nach viel, ist aber bei normaler Dosierung (25-40g pro Portion) praktisch irrelevant. Beide Formen liefern in einer Standardportion 20-30g Protein. Die 'höhere Konzentration' rechtfertigt NICHT den Preisunterschied von 30-50%.",
+            "studie_zeigt": "Marktanalyse: WPI-Produkte enthalten standardmäßig 88-92% Protein, kaum Laktose (<1%) und kaum Fett (<1%). WPC-Produkte: 70-80% Protein, 4-8% Laktose, 1-8% Fett. Was bedeutet: Pro 100g Pulver kriegst du bei WPI 90g Protein, bei WPC ca. 75g. Wer nur Protein zählt: 25% mehr Protein pro Gramm Pulver – aber der Preis ist meist doppelt so hoch.",
+            "studien_details": "Daten aus mehreren Marktanalysen und ISSN Position Stand zu Whey Protein. Verarbeitung erfolgt durch Mikrofiltration oder Ionenaustausch.",
+            "zuverlaessigkeit": "Hoch für die Aussage über Proteingehalt. Klinisch relevant: Bei der typischen Dosierung von 25-30g pro Portion ist der Unterschied vernachlässigbar."
+          }
+        },
+        {
+          "wert": 1,
+          "einheit": "% Laktose (vs. 4-8% bei WPC)",
+          "kontext": "Restlaktose-Gehalt in Whey Isolat – für die meisten Laktose-Intoleranten unproblematisch",
+          "quelle": "ISSN Position Stand + multiple klinische Studien",
+          "erklaerung": {
+            "was_bedeutet": "Whey Isolat enthält normalerweise unter 1% Laktose (oft sogar <0.5%). In einer 30g-Portion sind das also weniger als 0.3g Laktose. Zum Vergleich: Ein Glas Milch (200ml) hat ~10g Laktose. Whey Konzentrat hat 4-8% Laktose, also etwa 1.5-2.5g pro 30g-Portion – das kann bei Laktose-Intoleranz schon Probleme machen. Für die meisten Laktose-Intoleranten ist WPI gut verträglich (Schwelle: ~5g Laktose pro Mahlzeit).",
+            "studie_zeigt": "Bei Personen mit Laktose-Intoleranz: WPI zeigt deutlich weniger gastrointestinale Beschwerden (Blähungen, Krämpfe, Durchfall) als WPC. ABER: Bei Milcheiweiß-Allergie (auf Casein oder Beta-Lactoglobulin) ist auch WPI nicht geeignet – hier muss auf Pflanzenprotein oder Eierprotein umgestiegen werden.",
+            "studien_details": "Klinische Daten aus mehreren kontrollierten Studien zu Laktose-Verträglichkeit. Wichtig: Laktose-Intoleranz ist NICHT dasselbe wie Milcheiweiß-Allergie.",
+            "zuverlaessigkeit": "Sehr hoch. Praktische Konsequenz: WPI ist die bessere Wahl für Laktose-Intolerante. Bei Milcheiweiß-Allergie ist WPI aber KEIN sicherer – Pflanzenprotein wählen."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "muskelaufbau",
+        "staerke": 0.85,
+        "kommentar": "Identisch wirksam wie Whey Konzentrat. Hohe Bioverfügbarkeit, schnelle Aufnahme, optimales Aminosäureprofil."
+      },
+      {
+        "ziel": "fettabbau_muskelerhalt",
+        "staerke": 0.8,
+        "kommentar": "Bei Diät besonders interessant: hoher Proteingehalt bei wenigen Kalorien – sättigt und schützt Magermasse."
+      },
+      {
+        "ziel": "laktose_intoleranz",
+        "staerke": 0.9,
+        "kommentar": "HAUPTINDIKATION. Unter 1% Laktose – meist gut verträglich. Bei sehr schwerer Intoleranz: Hydrolysat oder Pflanzenprotein."
+      },
+      {
+        "ziel": "regeneration",
+        "staerke": 0.75,
+        "kommentar": "Schnelle Aufnahme nach Training liefert rasch BCAAs und Leucin – fördert Muskelproteinsynthese."
+      },
+      {
+        "ziel": "diaet_kalorienreduktion",
+        "staerke": 0.85,
+        "kommentar": "Wenig Kalorien pro Portion (Ø 90-120 kcal vs. 120-140 kcal bei WPC). Bei strikter Diät relevant."
+      },
+      {
+        "ziel": "magenempfindlichkeit",
+        "staerke": 0.7,
+        "kommentar": "Weniger Fett und Laktose – besser verträglich bei Reizdarm-Tendenzen, empfindlichem Magen."
+      },
+      {
+        "ziel": "wettkampfvorbereitung",
+        "staerke": 0.75,
+        "kommentar": "Wenn jede Kalorie zählt: hoher Proteingehalt pro Kalorie macht WPI ideal für die letzten Diätwochen."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "allergie",
+        "wert": "milcheiweiss_kuhmilchprotein",
+        "schwere": "hart",
+        "hinweis": "Bei Milcheiweiß-Allergie (Casein, Beta-Lactoglobulin): KEIN WPI. Auch Hydrolysat ist nicht sicher. Auf Pflanzen- oder Eierprotein umsteigen."
+      },
+      {
+        "art": "ernaehrung",
+        "wert": "vegetarisch_vegan",
+        "schwere": "hart",
+        "hinweis": "Whey ist tierischen Ursprungs (Milch). Für Veganer ungeeignet. Pflanzenprotein wählen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "niereninsuffizienz_schwer",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei schwerer Niereninsuffizienz mit Eiweißrestriktion: Gesamteiweißzufuhr mit Arzt absprechen. Whey-Proteine zählen zur Tageseiweißmenge."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "phenylketonurie",
+        "schwere": "hart",
+        "hinweis": "Whey enthält Phenylalanin – bei PKU strikt vermeiden oder mit ärztlicher Anleitung dosieren."
+      }
+    ],
+    "dosierung": {
+      "standard": "25-40 g pro Portion, 1-2 Portionen täglich",
+      "bereich": {
+        "min": 20,
+        "max": 50,
+        "einheit": "g pro Portion"
+      },
+      "obergrenze": "Bis zu 1.6-2.2 g Protein/kg KG/Tag aus allen Quellen für Krafttrainierende (ISSN-Empfehlung)",
+      "timing": "Nach dem Training (0-2 Std) für schnellen Aminosäure-Anstieg, oder als Snack zwischen Mahlzeiten zur Bedarfsdeckung. Vor dem Schlafengehen: lieber Casein (langsamer absorbiert).",
+      "quelle": "ISSN Position Stand on Protein and Exercise (2017)",
+      "formen_vergleich": "Whey Isolat (WPI): >90% Protein, <1% Laktose, ideal für Diät und Laktose-Intolerante. Whey Konzentrat (WPC): 70-80% Protein, 4-8% Laktose, günstiger und Standard-Wahl. Whey Hydrolysat (WPH): vorverdaut zu Peptiden, schnellste Aufnahme, teuerste Form, oft bitter im Geschmack. Native Whey: aus direkt entrahmter Milch (statt aus Käse-Nebenprodukt), Premium-Produkt mit höherer Bioaktivität."
+    },
+    "population_spezifisch": {
+      "laktose_intoleranten": {
+        "relevant": true,
+        "staerke": 0.95,
+        "kommentar": "HAUPTGRUND für WPI statt WPC. Unter 1% Laktose – meist gut verträglich. Verbesserte Lebensqualität.",
+        "quelle": "Multiple klinische Studien"
+      },
+      "diaet_kaloriendefizit": {
+        "relevant": true,
+        "staerke": 0.85,
+        "kommentar": "Höchster Proteingehalt pro Kalorie. Bei Wettkampfvorbereitung oder strikter Diät relevant."
+      },
+      "magenempfindliche": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "Weniger Fett und Laktose – besser verträglich. Hydrolysat noch schonender, aber teurer."
+      },
+      "wettkampfsportler": {
+        "relevant": true,
+        "staerke": 0.75,
+        "kommentar": "Letzte Diätwochen: jede Kalorie zählt. WPI ist hier optimal."
+      },
+      "budget_orientiert_gesund": {
+        "relevant": false,
+        "staerke": 0.2,
+        "kommentar": "Für gesunde Personen ohne Laktose-Probleme: WPC ist 30-50% günstiger und gleich wirksam. Geld sparen."
+      },
+      "frauen_menopause": {
+        "relevant": true,
+        "staerke": 0.65,
+        "kommentar": "Verträglichkeit nimmt im Alter manchmal ab. WPI kann eine sanftere Option sein. Whey schützt Magermasse postmenopausal."
+      }
+    },
+    "warnhinweise": [
+      "ISO Clear (WPI) ist NICHT wirksamer als Whey Konzentrat – die Meta-Analysen zeigen keinen signifikanten Unterschied beim Muskelaufbau",
+      "Preis-Aufschlag von 30-50% vs. WPC – nur sinnvoll wenn Laktose-Intoleranz, Diät oder Magen-Empfindlichkeit vorliegen",
+      "Whey ist tierischen Ursprungs (Kuhmilch) – KEIN Whey-Produkt ist vegan, auch nicht WPI",
+      "Bei Milcheiweiß-Allergie: WPI ist NICHT sicher. Pflanzenprotein wählen. Laktose-Intoleranz ≠ Milcheiweiß-Allergie",
+      "Whey ist KEIN Ersatz für eine ausgewogene Ernährung – maximal 30-40% der täglichen Eiweißzufuhr aus Pulver, der Rest aus Vollwertkost",
+      "Geschmacksneutrale 'Clear'-Varianten lassen sich auch in Saft oder Wasser auflösen ohne cremige Konsistenz – Geschmackssache",
+      "Im Vergleich zu WPC enthält WPI weniger bioaktive Komponenten (Immunglobuline, Laktoferrin) durch die intensivere Filtration",
+      "Bei sehr schwerer Laktose-Intoleranz kann auch das 1% Laktose noch Beschwerden machen – dann Hydrolysat oder Pflanzenprotein wählen"
+    ],
+    "inhalt": [
+      "whey_protein"
+    ],
+    "quellen": [
+      {
+        "titel": "Comparative Meta-Analysis of the Effect of Concentrated, Hydrolyzed, and Isolated Whey Protein Supplementation on Body Composition of Physical Activity Practitioners",
+        "autoren": "Castro LH, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6769754/",
+        "jahr": 2019,
+        "typ": "meta_analyse",
+        "doi": "10.3390/nu11092047"
+      },
+      {
+        "titel": "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults",
+        "autoren": "Morton RW, et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/28698222/",
+        "jahr": 2018,
+        "typ": "meta_analyse",
+        "doi": "10.1136/bjsports-2017-097608"
+      },
+      {
+        "titel": "International Society of Sports Nutrition Position Stand: Protein and Exercise",
+        "autoren": "Jäger R, Kerksick CM, et al.",
+        "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8",
+        "jahr": 2017,
+        "typ": "position_stand"
+      },
+      {
+        "titel": "Whey protein supplementation and muscle mass: current perspectives",
+        "autoren": "Davies RW, et al.",
+        "url": "https://www.dovepress.com/whey-protein-supplementation-and-muscle-mass-current-perspectives-peer-reviewed-fulltext-article-NDS",
+        "jahr": 2019,
+        "typ": "review"
+      },
+      {
+        "titel": "Effectiveness of Whey Protein Supplementation during Resistance Exercise Training on Skeletal Muscle Mass and Strength in Older People with Sarcopenia",
+        "autoren": "Cerda-Diez ME, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10421506/",
+        "jahr": 2023,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Differential Effect of Whey Protein on Lean Body Mass in Sarcopenia and Pre-Sarcopenia",
+        "autoren": "Nutrients 2024 Review",
+        "url": "https://www.mdpi.com/2072-6643/16/14/2289",
+        "jahr": 2024,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "DIAAS Protein Scoring System – FAO/WHO",
+        "autoren": "FAO Expert Consultation",
+        "url": "https://www.fao.org/4/i3124e/i3124e.pdf",
+        "jahr": 2013,
+        "typ": "position_stand"
+      }
+    ]
+  },
+  "pflanzenprotein": {
+    "id": "pflanzenprotein",
+    "name": "Pflanzenprotein (Vegan)",
+    "kategorie": "performance",
+    "ikon": "🌱",
+    "kurz_beschreibung": "Veganes Protein aus Erbse, Reis, Soja, Hanf. Bei ausreichender Dosis (≥30g) und Blend-Strategie (Erbse+Reis) vergleichbar mit Whey für Muskelaufbau – Leucin-Lücke beachten.",
+    "beschreibung": {
+      "was_ist_es": "Pflanzenprotein ist ein Sammelbegriff für proteinhaltige Pulver aus pflanzlichen Quellen. Die wichtigsten: Erbsenprotein (höchster Lysin-Gehalt, ~85% Protein), Reisprotein (komplementär zu Erbse, gut bei Allergien), Sojaprotein-Isolat (komplettes Aminosäureprofil, hochwertige Quelle), Hanfprotein (zusätzlich Omega-3, aber niedriger Proteingehalt 50-60%), Kürbiskernprotein. Premium-Produkte sind meist BLENDS aus 2-3 Quellen – Erbse+Reis ist Standard, weil sich die Aminosäureprofile perfekt ergänzen.",
+      "wie_wirkt_es": "Wirkung über die gleichen Mechanismen wie tierisches Protein: Lieferung essentieller Aminosäuren für Muskelproteinsynthese (MPS) und Leucin als 'Schalter' für mTOR. ABER: Pflanzliche Proteine haben durchschnittlich 30-40% weniger Leucin pro Gramm Protein als Whey. Konsequenz: Höhere Dosis nötig, um den gleichen MPS-Effekt zu erreichen. Standardempfehlung: 30-40g Pflanzenprotein pro Portion (vs. 20-25g Whey). Bei Blends mit zugesetztem Leucin oder bei adäquater Gesamteiweißzufuhr verschwindet der Unterschied weitgehend.",
+      "warum_wichtig": "Pflanzenprotein war jahrelang als 'minderwertige' Whey-Alternative verschrien. Die Forschung der letzten 5 Jahre hat das deutlich revidiert: Bei AUSREICHENDER Dosis und kluger Blend-Strategie ist Pflanzenprotein für Muskelaufbau praktisch GLEICHWERTIG zu Whey. Für Veganer ist es ohnehin die einzige Wahl. Für Milcheiweiß-Allergiker ebenfalls. Auch für Personen mit ethischen Bedenken zur Milchindustrie oder Nachhaltigkeitsfokus relevant. Wichtig: NICHT alle Pflanzenproteine sind gleich – Soja und Erbsen-Reis-Blends sind die wissenschaftlich besten Optionen."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Bei ≥30g pro Portion: vergleichbarer Muskelaufbau wie Whey (Pinckaers 2024, RCT)",
+        "Soja vs. Whey: KEIN signifikanter Unterschied in Magermasse oder Kraft (SMD -0.02, n=17 RCTs)",
+        "Erbsen-Reis-Blend stimuliert MPS gleichwertig zu Whey bei ~2.5g Leucin pro Portion"
+      ],
+      "ideal_fuer": "Veganer, Milcheiweiß-Allergiker, Personen mit ethischen Bedenken zur Tierhaltung, Reizdarm-Patienten (bessere Verträglichkeit), Hashimoto-Patienten (Whey-Probleme)",
+      "dosis": "30-40 g pro Portion (höher als Whey wegen Leucin-Lücke), 1-2 Portionen täglich",
+      "vorsicht_bei": "Soja-Allergie (bei Soja-Protein), bei einzelnem Quellen-Protein ohne Leucin-Boost: höhere Dosis nötig oder zusätzliches Leucin",
+      "mythen": [
+        "„Pflanzenprotein ist deutlich schlechter für Muskelaufbau als Whey“ – widerlegt. Bei adäquater Dosis und Blend-Strategie statistisch kein relevanter Unterschied.",
+        "„Pflanzenproteine sind unvollständige Proteine“ – nur einzelne Quellen. Soja-Isolat ist VOLLSTÄNDIG, Erbsen-Reis-Blend ergibt komplettes Aminosäureprofil. Kombinationen schlagen Einzelquellen.",
+        "„Veganer können keine Muskeln aufbauen ohne tierisches Protein“ – falsch. Mehrere Studien mit vegan-trainierenden Athleten zeigen identischen Muskelaufbau bei adäquater Gesamtproteinzufuhr (1.6-2.2g/kg KG).",
+        "„Soja-Protein senkt Testosteron bei Männern“ – widerlegt. Meta-Analyse zeigt: KEINE signifikante Reduktion von Testosteron, Östradiol oder SHBG bei normalen Dosen.",
+        "„Hanfprotein ist das beste vegane Protein“ – marketing-getrieben. Hanf hat nur 50-60% Proteingehalt und mittelmäßiges Aminosäureprofil. Soja oder Erbsen-Reis-Blends sind klar überlegen."
+      ]
+    },
+    "evidenz": {
+      "level": "A",
+      "score": 78,
+      "review_typ": "meta_analyse",
+      "studien_anzahl": 43,
+      "konsens": "Nguo 2024 Meta-Analyse + Pinckaers Direktvergleiche + Plant Protein Position Stand (Phillips Group)",
+      "effekt_groesse": [
+        {
+          "wert": -0.02,
+          "einheit": "SMD (nicht signifikant)",
+          "kontext": "Direkter Vergleich Soja-Protein vs. Milchprotein auf Magermasse-Entwicklung",
+          "quelle": "Nguo et al. 2024 Meta-Analyse (17 RCTs)",
+          "erklaerung": {
+            "was_bedeutet": "SMD von -0.02 ist statistisch absolut NICHT signifikant – das bedeutet: zwischen Soja-Protein und Milchprotein gibt es KEINEN messbaren Unterschied bezüglich Muskelaufbau. Diese Meta-Analyse aus 17 RCTs zerstört das alte Märchen 'Whey ist überlegen'. Bei ausreichender Gesamteiweißzufuhr sind die beiden Proteinquellen gleichwertig.",
+            "studie_zeigt": "Systematic Review mit 17 RCTs zum direkten Vergleich Soja vs. Milchprotein. Ergebnisse: KEIN Unterschied bei Magermasse (SMD -0.02, 95% CI -0.20 bis 0.16, p=0.80), KEIN Unterschied bei Muskelkraft (14 RCTs), KEIN Unterschied bei physischer Leistung (5 RCTs). ABER: Bei NICHT-Soja-Pflanzenproteinen (Reis, Chia, Hafer, Kartoffel) zeigte sich ein moderater Vorteil für Tierprotein (SMD -0.58) – wenn diese ALLEIN verwendet wurden, ohne Blending.",
+            "studien_details": "Systematische Meta-Analyse publiziert 2024 in Nutrition Reviews (Oxford). 43 RCTs eingeschlossen. PROSPERO Registration. Methodik: Random-Effects-Modell mit Subgruppen-Analysen nach Proteinquelle.",
+            "zuverlaessigkeit": "Sehr hoch für die Aussage 'Soja gleichwertig zu Whey'. Sehr wichtige Studie für vegane Sportler – widerlegt jahrzehntelange Mythen. Wichtige Einschränkung: Bei einzelnen Pflanzenproteinen ohne Blend (nur Reis, nur Hafer) ist Whey moderately besser – Lösung: Blends nutzen!"
+          }
+        },
+        {
+          "wert": 30,
+          "einheit": "g Mindest-Dosis",
+          "kontext": "Erforderliche Dosis pflanzlicher Proteine für vergleichbare Muskelproteinsynthese wie 25g Whey",
+          "quelle": "ISSN Position Stand + Plant Protein Recovery Review 2024",
+          "erklaerung": {
+            "was_bedeutet": "Pflanzenproteine haben 30-40% weniger Leucin als Whey. Konsequenz: Um den gleichen Muskelproteinsynthese-Boost zu erreichen, brauchst du etwa 30-40g Pflanzenprotein statt 20-25g Whey. Beispiel: Whey 25g enthält ~2.5g Leucin (Leucin-Schwellenwert für maximalen MPS-Effekt). Erbsenprotein braucht ~35g für die gleiche Leucinmenge. Wer zu wenig dosiert, verschenkt Wirkung – das ist der häufigste Anwender-Fehler.",
+            "studie_zeigt": "Direkte Vergleichsstudien (Phillips-Gruppe McMaster, Pinckaers 2024) zeigen: Bei 30g+ Pflanzenprotein mit ~2.5g Leucin (oft durch Blend oder Leucin-Boost) ist die Muskelproteinsynthese vergleichbar zu Whey. Bei 20g pflanzlich vs. 20g Whey: Whey klar überlegen. Bei 35g pflanzlich vs. 25g Whey: gleichwertig.",
+            "studien_details": "Multiple RCTs aus der Phillips-Gruppe an der McMaster University. Wichtigste Erkenntnis: Das frühere 'pflanzlich ist schlechter' war ein DOSIERUNGS-Problem, kein Protein-Quellen-Problem.",
+            "zuverlaessigkeit": "Sehr hoch. Praktische Konsequenz: Bei pflanzlichen Proteinen IMMER 30-40g pro Portion einplanen – nicht 20-25g wie bei Whey."
+          }
+        },
+        {
+          "wert": 2.5,
+          "einheit": "g Leucin pro Portion (Schwelle)",
+          "kontext": "Leucin-Schwellenwert für maximale Muskelproteinsynthese – pflanzliche Quellen müssen das erreichen",
+          "quelle": "Norton & Layman 2006 + Phillips Position Stand",
+          "erklaerung": {
+            "was_bedeutet": "Leucin ist die Schlüssel-Aminosäure für Muskelproteinsynthese – sie aktiviert mTOR (den molekularen 'Muskel-aufbauen'-Schalter). Studien zeigen einen Schwellenwert: ~2.5g Leucin pro Mahlzeit löst maximale MPS aus. Whey ist leucin-reich (10-12% Leucin), Soja mittel (8%), Erbse niedriger (~8%), Reis am niedrigsten (~7%). Konsequenz: Bei pflanzlichen Quellen entweder höher dosieren ODER mit Leucin anreichern ODER Blends nutzen.",
+            "studie_zeigt": "Forschung von Norton, Layman, Phillips und Pinckaers zeigt konsistent: Leucin-Schwellenwert von ~2.5g pro Mahlzeit ist nötig für maximale MPS. Pflanzliche Proteine erreichen das bei höherer Dosis. Pea-Rice-Blends mit 30g+ erreichen den Schwellenwert. Erbsen-Isolat allein bei 30g ebenfalls. Reis-Protein allein braucht ~40g für den Schwellenwert.",
+            "studien_details": "Mehrere mechanistische und klinische Studien zur Leucin-MPS-Beziehung. Wichtig: Der Schwellenwert ist additive über Mahlzeiten – wer 4 Mahlzeiten mit jeweils 2.5g Leucin hat, maximiert MPS.",
+            "zuverlaessigkeit": "Sehr hoch für die mechanistische Aussage. Praktische Anwendung: Bei pflanzlichem Protein immer Leucin-Gehalt prüfen – manche Premium-Produkte sind mit zusätzlichem Leucin angereichert."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "vegan_vegetarisch",
+        "staerke": 0.95,
+        "kommentar": "HAUPTINDIKATION. Die einzige Protein-Supplement-Option für Veganer. Soja-Isolat oder Erbsen-Reis-Blend sind die besten Optionen."
+      },
+      {
+        "ziel": "milcheiweiss_allergie",
+        "staerke": 0.95,
+        "kommentar": "Bei Kuhmilchprotein-Allergie ist Pflanzenprotein die sicherste Alternative. ACHTUNG bei Soja-Allergie: dann Erbse oder Reis wählen."
+      },
+      {
+        "ziel": "muskelaufbau",
+        "staerke": 0.8,
+        "kommentar": "Bei adäquater Dosis (30g+) vergleichbar mit Whey. Blends oder Soja sind die besten Optionen."
+      },
+      {
+        "ziel": "regeneration",
+        "staerke": 0.7,
+        "kommentar": "Aufgrund antioxidativer Polyphenole in pflanzlichen Quellen möglicherweise leichter Recovery-Vorteil. Effekt moderat."
+      },
+      {
+        "ziel": "hashimoto_autoimmun",
+        "staerke": 0.7,
+        "kommentar": "Bei Hashimoto und Autoimmun-Problemen kann Whey-Konsum Symptome verstärken. Pflanzenprotein als Alternative."
+      },
+      {
+        "ziel": "reizdarm_magenempfindlichkeit",
+        "staerke": 0.6,
+        "kommentar": "Erbsenprotein ist meist gut verträglich, auch bei Reizdarm. Soja kann FODMAP-empfindliche Personen belasten – Erbse besser."
+      },
+      {
+        "ziel": "nachhaltigkeit_oeko",
+        "staerke": 0.7,
+        "kommentar": "Deutlich besserer ökologischer Fußabdruck als Whey (Wasser-, CO2-, Flächenverbrauch). Relevant für umweltbewusste Konsumenten."
+      },
+      {
+        "ziel": "kardiovaskulaere_gesundheit",
+        "staerke": 0.55,
+        "kommentar": "Soja-Protein zeigt leichten Blutdruck-senkenden Effekt. Pflanzenproteine generell mit niedrigerem kardiovaskulären Risiko assoziiert."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "allergie",
+        "wert": "soja_allergie",
+        "schwere": "hart",
+        "hinweis": "Bei Soja-Allergie: KEIN Soja-Protein. Auf Erbsen-, Reis- oder Hanfprotein umsteigen. Etiketten genau prüfen – Soja ist in Blends häufig."
+      },
+      {
+        "art": "allergie",
+        "wert": "huelsenfrucht_allergie",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei Hülsenfrucht-Allergie: Vorsicht mit Erbsen- und Soja-Protein. Reis- oder Hanfprotein als Alternative."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "schilddruesenerkrankung_soja",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei Hypothyreose mit Levothyroxin-Therapie: Soja kann die Aufnahme des Medikaments stören. Mindestens 4 Stunden Abstand oder anderes Pflanzenprotein wählen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "niereninsuffizienz_schwer",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei schwerer Niereninsuffizienz mit Eiweißrestriktion: Gesamteiweißzufuhr mit Arzt absprechen. Pflanzliche Proteine sind hier oft weniger belastend als tierische."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "phytoöstrogene_brustkrebs",
+        "schwere": "info",
+        "hinweis": "Bei Östrogen-Rezeptor-positivem Brustkrebs: Soja-Isoflavone potentiell relevant. Aktuelle Evidenz zeigt KEIN erhöhtes Risiko bei moderaten Mengen – aber individuelle Absprache mit Onkologen."
+      }
+    ],
+    "dosierung": {
+      "standard": "30-40 g pro Portion (höher als Whey wegen Leucin-Lücke), 1-2 Portionen täglich",
+      "bereich": {
+        "min": 25,
+        "max": 50,
+        "einheit": "g pro Portion"
+      },
+      "obergrenze": "Bis zu 1.6-2.2 g Protein/kg KG/Tag aus allen Quellen (ISSN-Empfehlung für Krafttrainierende)",
+      "timing": "Nach dem Training (0-2 Std) oder als Snack zwischen Mahlzeiten. Vor dem Schlafengehen: Soja-Protein zeigt langsamere Absorption (vergleichbar mit Casein).",
+      "quelle": "ISSN Position Stand + Pinckaers 2024",
+      "formen_vergleich": "Soja-Isolat (90% Protein): Komplettes Aminosäureprofil, vergleichbar mit Whey, gut belegt. Erbsenprotein (80-85% Protein): Hoch in Lysin und BCAAs, gut verträglich. Reisprotein (80% Protein): Hoch in Methionin, hypoallergen. Erbsen-Reis-Blend: KOMPLEMENTÄR – ideale Wahl, deckt alle Aminosäuren. Hanfprotein (50-60% Protein): Niedrigerer Proteingehalt, dafür Omega-3. Premium-Multi-Blends (4-5 Quellen): teurer, aber maximales Aminosäureprofil. Mycoprotein (Quorn): pilzbasiert, hoher Proteingehalt, weniger verbreitet als Pulver."
+    },
+    "population_spezifisch": {
+      "veganer": {
+        "relevant": true,
+        "staerke": 0.95,
+        "kommentar": "HAUPTGRUND. Einzige Option für Muskelaufbau-Supplementierung. Soja-Isolat oder Erbsen-Reis-Blend wählen.",
+        "quelle": "Pinckaers 2024"
+      },
+      "milcheiweiss_allergiker": {
+        "relevant": true,
+        "staerke": 0.95,
+        "kommentar": "Sicherste Alternative bei Kuhmilchprotein-Allergie. Bei Soja-Allergie: Erbse oder Reis."
+      },
+      "hashimoto_patienten": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "Whey-Konsum kann bei manchen Hashimoto-Patienten Symptome verstärken. Pflanzenprotein als Alternative. ABER: Soja bei L-Thyroxin-Therapie mit Abstand."
+      },
+      "reizdarm_betroffene": {
+        "relevant": true,
+        "staerke": 0.65,
+        "kommentar": "Erbsenprotein meist gut verträglich. Soja kann FODMAP-empfindliche Personen belasten."
+      },
+      "krafttrainierende_omnivor": {
+        "relevant": true,
+        "staerke": 0.65,
+        "kommentar": "Pflanzenprotein funktioniert auch hier – aber Whey ist bei gleicher Dosis leicht überlegen. Wer Mischung will: 50/50 Whey + Pflanzlich."
+      },
+      "nachhaltigkeit_fokussiert": {
+        "relevant": true,
+        "staerke": 0.75,
+        "kommentar": "Deutlich besserer ökologischer Fußabdruck als Whey (Wasser-, CO2-, Flächenverbrauch). Relevant für Umweltschutz-Fokus."
+      },
+      "wettkampfsportler": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "Bei sehr strikter Kalorien-Kontrolle ist Whey-Isolat schlanker (weniger Kohlenhydrate). Aber für Veganer ist Pflanzenprotein die einzige Option."
+      }
+    },
+    "warnhinweise": [
+      "DOSIS IST ENTSCHEIDEND. 25g Pflanzenprotein wirkt NICHT wie 25g Whey – brauchst 30-40g für vergleichbaren Effekt durch Leucin-Lücke",
+      "Single-Source-Proteine (nur Reis, nur Hafer) sind unterlegen. IMMER Blends bevorzugen oder Soja-Isolat (vollständig)",
+      "Soja-Allergiker müssen Etiketten besonders sorgfältig prüfen – Soja ist in vielen 'pflanzlichen' Blends enthalten",
+      "Bei Hashimoto und L-Thyroxin: Soja-Protein NICHT zeitgleich einnehmen (mindestens 4h Abstand)",
+      "Whey ist NICHT 'besser' bei adäquater Dosis und Blend-Strategie – das alte 'tierisch überlegen'-Narrativ ist überholt",
+      "Bei Standard-Dosen kann Pflanzenprotein etwas weniger sättigend sein als Whey – kann Vorteil bei Diät oder Nachteil bei Hunger sein",
+      "Hanfprotein-Marketing als 'Super-Pflanzenprotein' ist überzogen – nur 50-60% Proteingehalt, mittelmäßiges Aminosäureprofil",
+      "Bei Personen mit ausreichender pflanzlicher Vollkost-Ernährung ist Protein-Supplementierung oft GAR NICHT nötig – Linsen, Bohnen, Tofu reichen meist"
+    ],
+    "inhalt": [
+      "pflanzenprotein"
+    ],
+    "quellen": [
+      {
+        "titel": "Effect of Plant Versus Animal Protein on Muscle Mass, Strength, Physical Performance, and Sarcopenia: A Systematic Review and Meta-analysis",
+        "autoren": "Nguo K, et al.",
+        "url": "https://academic.oup.com/nutritionreviews/article/83/7/e1581/7954494",
+        "jahr": 2024,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Effects of plant- versus animal-based proteins on muscle protein synthesis: A systematic review with meta-analysis",
+        "autoren": "Pinckaers PJM, et al.",
+        "url": "https://sportrxiv.org/index.php/server/preprint/view/526",
+        "jahr": 2024,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "The effects of whey, pea, and collagen protein supplementation beyond the recommended dietary allowance on integrated myofibrillar protein synthetic rates in older males: a randomized controlled trial",
+        "autoren": "McKendry J, Phillips SM, et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38760677/",
+        "jahr": 2024,
+        "typ": "rct",
+        "doi": "10.1016/j.ajcnut.2024.05.009"
+      },
+      {
+        "titel": "Plant protein blend ingestion stimulates postexercise myofibrillar protein synthesis rates equivalently to whey in resistance-trained adults",
+        "autoren": "Van der Heijden I, et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38522030/",
+        "jahr": 2024,
+        "typ": "rct",
+        "doi": "10.1249/MSS.0000000000003432"
+      },
+      {
+        "titel": "Long-term effects of plant vs. animal protein supplementation on body composition, muscle strength, physical performance, and cardiometabolic risk factors in adults",
+        "autoren": "Frontiers in Nutrition 2026",
+        "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2026.1813846/full",
+        "jahr": 2026,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Effect of Plant-Based Proteins on Recovery from Resistance Exercise-Induced Muscle Damage in Healthy Young Adults—A Systematic Review",
+        "autoren": "PMC Nutrients 2024",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12348865/",
+        "jahr": 2024,
+        "typ": "systematic_review"
+      },
+      {
+        "titel": "The Effect of Plant-Based Protein Ingestion on Athletic Ability in Healthy People—A Bayesian Meta-Analysis",
+        "autoren": "PMC Nutrients Bayesian Analysis",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11357476/",
+        "jahr": 2024,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "International Society of Sports Nutrition Position Stand: Protein and Exercise",
+        "autoren": "Jäger R, Kerksick CM, et al.",
+        "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8",
+        "jahr": 2017,
+        "typ": "position_stand"
+      }
+    ]
+  },
   "zink": {
     "id": "zink",
     "name": "Zink (Bisglycinat / Citrat)",
@@ -1494,12 +2013,12 @@
       },
       "schwangere_stillende": {
         "relevant": true,
-        "staerke": 0.0,
+        "staerke": 0,
         "kommentar": "KONTRAINDIZIERT – möglicher abortiver Effekt, keine Sicherheitsdaten. Nicht einnehmen."
       },
       "menschen_mit_schilddruesenerkrankung": {
         "relevant": true,
-        "staerke": 0.0,
+        "staerke": 0,
         "kommentar": "Vorsicht – kann Schilddrüsenhormone erhöhen. Nur nach ärztlicher Rücksprache, engmaschige Kontrolle."
       },
       "sportler": {
@@ -2560,195 +3079,770 @@
     "name": "Kollagen (Hydrolysierte Peptide)",
     "kategorie": "gesundheit",
     "ikon": "✨",
-    "kurz_beschreibung": "Stark beworbenes Protein für Haut, Gelenke und Bindegewebe. Die Evidenz ist gemischt und von Finanzierungsbias geprägt – bei Gelenkschmerzen am ehesten belegt, als Hautwunder überschätzt.",
+    "kurz_beschreibung": "Strukturprotein für Haut, Sehnen, Gelenke und Knochen. Solide Evidenz für Gelenkschmerzen und Sehnenadaptation – Hautwirkung wahrscheinlich aber mit Industrie-Bias.",
     "beschreibung": {
-      "was_ist_es": "Kollagen ist das häufigste Strukturprotein im Körper und Hauptbestandteil von Haut, Sehnen, Bändern, Knorpel und Knochen. Als Supplement wird es hydrolysiert (in kleine Peptide zerlegt) angeboten, damit es besser aufgenommen wird. Wichtig: Kollagen ist ein UNVOLLSTÄNDIGES Protein – ihm fehlen mehrere essentielle Aminosäuren (u.a. Tryptophan), weshalb es als Eiweißquelle für den Muskelaufbau minderwertig ist.",
-      "wie_wirkt_es": "Gegessenes Kollagen wird im Darm wie jedes Protein in Aminosäuren und kleine Peptide zerlegt – es wandert NICHT direkt in die Haut. Die Hypothese ist, dass bestimmte Kollagen-Peptide (z.B. Prolyl-Hydroxyprolin) als Signal wirken und die körpereigene Kollagensynthese in Haut und Bindegewebe anregen können. Dieser Mechanismus ist plausibel, aber noch nicht abschließend bewiesen.",
-      "warum_wichtig": "Mit dem Alter sinkt die körpereigene Kollagenproduktion (ca. 1–1,5 % pro Jahr), was zu Faltenbildung und nachlassender Hautelastizität beiträgt. Kollagen ist deshalb zum Milliardenmarkt geworden. Die ehrliche Einordnung ist hier besonders wichtig: Ein Teil der positiven Studien ist von Herstellern finanziert, und hochwertige, unabhängige Studien finden oft keinen Effekt. Der Nutzen ist also wahrscheinlich kleiner, als das Marketing suggeriert – am ehesten belegt bei Gelenkbeschwerden."
+      "was_ist_es": "Kollagen ist das häufigste Protein im menschlichen Körper – etwa 30% aller Körperproteine bestehen aus Kollagen. Es ist der Hauptbestandteil von Haut, Sehnen, Bändern, Knorpel und Knochen. Als Supplement wird meist 'hydrolysiertes Kollagen' (auch Kollagenpeptide) verwendet – aufgespaltene kleine Eiweißmoleküle (<6 kDa), die besser aufgenommen werden als unverarbeitetes Kollagen. Quellen: Rind, Schwein, Fisch (marines Kollagen) oder Eierschale-Membran.",
+      "wie_wirkt_es": "Kollagenpeptide werden im Darm in Aminosäuren und kleine Peptide gespalten (vor allem Hydroxyprolin-haltige Di- und Tripeptide wie Pro-Hyp und Hyp-Gly). Diese Peptide stimulieren spezifisch die Kollagen-produzierenden Zellen (Fibroblasten, Chondrozyten) und liefern die nötigen Bausteine für neues Bindegewebe. Vitamin C ist als Cofaktor für die Kollagensynthese essentiell – Supplementierung ohne Vitamin C deutlich weniger wirksam.",
+      "warum_wichtig": "Die körpereigene Kollagenproduktion sinkt ab dem 25. Lebensjahr um etwa 1% pro Jahr. Bei Frauen nach der Menopause beschleunigt sich der Abbau. Für Sportler mit hoher Sehnenbelastung (Springer, Läufer, Krafttrainierende) und Personen mit Gelenkproblemen kann Supplementierung sinnvoll sein. Wichtig zu wissen: Kollagen ist ein 'unvollständiges' Protein (kein Tryptophan, niedrig in essentiellen Aminosäuren) – ersetzt also keine normale Proteinzufuhr."
     },
     "fazit": {
       "top_effekte": [
-        "Lindert moderat Schmerzen bei Kniearthrose (WOMAC-Score) – am besten belegter Effekt",
-        "Verbessert in Meta-Analysen Hautelastizität & -feuchtigkeit – ABER stark vom Finanzierungsbias geprägt",
-        "Liefert Bausteine (Glycin, Prolin) für Bindegewebe; Sehnen-Nutzen plausibel, aber gemischt belegt"
+        "SMD 0.67 mehr Sehnenmasse und SMD 0.43 schnellere Recovery nach Sport (Meta-Analyse, n=768)",
+        "Reduziert Gelenkschmerzen bei Osteoarthritis (moderate Evidenz)",
+        "SMD 0.7 verbesserte Hautelastizität und -hydration – ABER: erheblicher Industrie-Bias in den Studien"
       ],
-      "ideal_fuer": "Menschen mit Gelenkbeschwerden/Arthrose, Personen mit Bindegewebs-/Sehnenbelastung (oft mit Vitamin C), Interesse an Hautgesundheit (mit realistischer Erwartung)",
-      "dosis": "2,5–15 g hydrolysierte Kollagenpeptide täglich; 10 g als sinnvoller Standard",
-      "vorsicht_bei": "Sehr sicher; als Eiweißquelle minderwertig (unvollständig), nicht als Muskelaufbau-Protein nutzen; Herkunft (Allergene Fisch/Rind)",
+      "ideal_fuer": "Sportler mit Sehnen-/Gelenkbelastung, Personen mit Knie-/Sehnenproblemen, Frauen ab Menopause, Hobby- und Profisportler im Aufbau",
+      "dosis": "10–15 g hydrolysierte Peptide täglich + 50 mg Vitamin C (Synergie)",
+      "vorsicht_bei": "Fisch-/Schalentierallergie (marines Kollagen), strikte Vegetarier (alle gängigen Quellen tierisch), Phenylketonurie",
       "mythen": [
-        "„Gegessenes Kollagen landet direkt in Haut und Gelenken“ – falsch. Es wird im Darm in Aminosäuren/Peptide zerlegt wie jedes Protein; eine direkte 'Auffüllung' findet nicht statt.",
-        "„Die Studien beweisen klar, dass Kollagen die Haut verjüngt“ – überzogen. Eine große Meta-Analyse 2025 fand, dass der Hauteffekt in unabhängigen und hochwertigen Studien verschwindet (Finanzierungsbias) – dieser Befund ist allerdings selbst umstritten. Unterm Strich: unsichere Evidenz, der Effekt ist wahrscheinlich kleiner als beworben.",
-        "„Kollagen ist ein hochwertiges Protein für den Muskelaufbau“ – falsch. Kollagen ist unvollständig (es fehlen essentielle Aminosäuren, u.a. Tryptophan); für Muskelaufbau ist Whey oder normales Protein klar überlegen.",
-        "„Kollagen lässt die Haare nachwachsen“ – nicht belegt. Haar- und Nagel-Claims sind beliebt im Marketing, aber wissenschaftlich kaum gestützt."
+        "„Kollagen wird im Magen zu normalen Aminosäuren abgebaut und hat keinen Spezialeffekt“ – falsch. Hydroxyprolin-haltige Di- und Tripeptide werden nachweislich intakt absorbiert und wirken spezifisch auf Bindegewebe.",
+        "„Kollagen ersetzt normales Protein für den Muskelaufbau“ – falsch. Kollagen ist arm an essentiellen Aminosäuren und kein vollständiges Protein. Es ergänzt, ersetzt aber nicht Whey/Pflanzenprotein.",
+        "„Hautwirkung ist wissenschaftlich bewiesen“ – mit Vorsicht. Meta-Analysen zeigen Effekt (SMD ca. 0.7), aber hochwertige Studien ohne Industrie-Finanzierung zeigten KEINEN signifikanten Effekt. Die Evidenz ist also komplexer als oft dargestellt.",
+        "„Marines Kollagen ist besser als Rinder-Kollagen“ – kein belegter Unterschied in Wirksamkeit. Marketing-Argument. Marines Kollagen ist nur sinnvoll für Personen mit Schweine-/Rinderprodukten-Verzicht (kosher, halal, BSE-Bedenken).",
+        "„Knochenbrühe enthält genauso viel wirksames Kollagen wie Supplements“ – falsch. Knochenbrühe enthält nicht-hydrolysiertes Kollagen mit deutlich geringerer Bioverfügbarkeit. Für gezielte Supplementierung brauchts Peptid-Form."
       ]
     },
     "evidenz": {
       "level": "B",
-      "score": 60,
-      "review_typ": "meta-analyse",
-      "studien_anzahl": 40,
-      "konsens": "Meta-Analysen zeigen Effekte auf Haut & Gelenke, aber mit erheblichem Finanzierungs-/Qualitätsbias (Am J Med 2025); Gelenkschmerz-Evidenz am robustesten",
+      "score": 72,
+      "review_typ": "meta_analyse",
+      "studien_anzahl": 76,
+      "konsens": "Mehrere Meta-Analysen (Khatri 2021, Pu 2023, Bischof 2024) + Umbrella Review 2026",
       "effekt_groesse": [
         {
-          "wert": 0,
-          "einheit": "kein Hauteffekt in unabhängigen Studien (Bias-Befund)",
-          "kontext": "Hauteffekt verschwindet in hochwertigen/unabhängigen Studien – Befund aber selbst umstritten",
-          "quelle": "Myung & Park 2025, Meta-Analyse 23 RCTs (n=1.474), Am J Med",
+          "wert": 0.67,
+          "einheit": "SMD",
+          "kontext": "Verbesserung der Sehnenmorphologie (Querschnittsfläche) durch 15g Kollagen + Krafttraining über 8+ Wochen",
+          "quelle": "Bischof et al. 2024 Meta-Analyse, Sports Medicine (n=768, 19 RCTs)",
           "erklaerung": {
-            "was_bedeutet": "Das ist der wichtigste und ehrlichste Befund zu Kollagen: Über ALLE 23 Studien gemittelt verbesserte Kollagen zwar Hautfeuchtigkeit, Elastizität und Falten signifikant. Trennt man die Studien aber nach Qualität und Geldgeber, zeigt sich das wahre Bild: In hochwertigen Studien UND in solchen ohne Finanzierung durch Hersteller verschwand der Effekt – kein signifikanter Nutzen. Die positiven Ergebnisse stammten überproportional aus herstellerfinanzierten und methodisch schwächeren Studien.",
-            "studie_zeigt": "Die Gesamtauswertung war positiv, aber die Subgruppenanalyse entlarvte einen starken Bias: Nur gesponserte und niedrigqualitative Studien zeigten Effekte, unabhängige und hochwertige nicht. Das bedeutet nicht, dass Kollagen sicher nichts bringt – aber der echte Hauteffekt ist wahrscheinlich deutlich kleiner als beworben oder nicht vorhanden.",
-            "studien_details": "Systematic Review und Meta-Analyse von 23 RCTs mit 1.474 Teilnehmern (Myung SK & Park Y, The American Journal of Medicine 2025), mit Subgruppenanalysen nach Finanzierungsquelle und Studienqualität.",
-            "zuverlaessigkeit": "Der Befund eines Finanzierungsbias ist ernst zu nehmen, die Meta-Analyse selbst ist aber umstritten: Branchennahe Kritiker (u.a. Collagen Stewardship Alliance) bemängeln, dass mehrere Studien bei der Einteilung 'industriefinanziert vs. unabhängig' falsch zugeordnet und die Qualitätskriterien nicht offengelegt wurden. Fazit: Der Hauteffekt ist wahrscheinlich kleiner als beworben und nicht eindeutig belegt – aber 'wirkt sicher nicht' lässt sich daraus auch nicht schließen. Ehrliche Einordnung: unsichere Evidenz."
+            "was_bedeutet": "SMD steht für 'Standardized Mean Difference' – ein statistisches Maß für Effektstärke. Ein Wert von 0.67 entspricht einem 'moderat-starken' Effekt. Konkret: Sportler die zusätzlich zum Krafttraining Kollagen einnehmen, entwickeln messbar dickere Sehnen (gemessen via Ultraschall) als die Placebo-Gruppe. Dickere Sehnen halten höhere Kräfte aus – wichtig für Verletzungsprävention bei Lauf-, Sprung- und Kraftsport.",
+            "studie_zeigt": "Über 19 Studien mit 768 Teilnehmern wurde gemessen: Sportler die 8+ Wochen lang täglich 15g Kollagenpeptide + Krafttraining absolvierten, zeigten signifikant größere Querschnittsfläche der Achilles- und Patellasehne als die Placebo-Gruppe. Auch die Muskelarchitektur (SMD 0.39) und die Magermasse (SMD 0.48) verbesserten sich. Zusätzlich: 43% schnellere Recovery (SMD 0.43) der reaktiven Kraft 48h nach intensiver Belastung.",
+            "studien_details": "Systematische Meta-Analyse, publiziert 2024 in Sports Medicine (renommiertes Sportmedizin-Journal). 19 RCTs mit 768 Teilnehmern. Mindestdauer: 8 Wochen. Standarddosis: 15g hydrolysierte Kollagenpeptide täglich. GRADE-Bewertung: moderate Evidenz für Körperzusammensetzung, niedrige bis sehr niedrige Evidenz für Sehnenmorphologie.",
+            "zuverlaessigkeit": "Solide – aber mit Einschränkung. Die GRADE-Bewertung zeigt: für die Sehnen-Effekte ist die Evidenz noch nicht so hoch wie für andere Endpunkte. Mehr unabhängige Hochquality-Studien werden noch gebraucht. Trotzdem sind die Effekte konsistent und plausibel (Vitamin-C-Synergie, Pro-Hyp-Mechanismus)."
           }
         },
         {
-          "wert": -1.9,
-          "einheit": "WOMAC-Schmerzpunkte",
-          "kontext": "Moderate Schmerzlinderung bei Kniearthrose vs. Placebo (am besten belegter Effekt)",
-          "quelle": "Lin et al. 2023, Meta-Analyse RCTs Knie-OA + LMCP-RCT 2025",
+          "wert": 0.7,
+          "einheit": "SMD",
+          "kontext": "Verbesserung der Hautelastizität bei 2.5-10g Kollagen täglich über 8-12 Wochen",
+          "quelle": "Pu et al. 2023 Meta-Analyse (n=1721, 26 RCTs) – ABER: kritischer Industrie-Bias",
           "erklaerung": {
-            "was_bedeutet": "Bei Kniearthrose (Gelenkverschleiß) ist die Evidenz am robustesten: Kollagenpeptide linderten in Studien die Schmerzen messbar – gemessen am WOMAC-Score, einem etablierten Fragebogen zu Schmerz, Steifigkeit und Funktion. Der Effekt ist moderat und kein Ersatz für andere Arthrose-Therapien, aber als ergänzende, gut verträgliche Option plausibel.",
-            "studie_zeigt": "Eine Meta-Analyse randomisierter Studien fand eine signifikante Reduktion der WOMAC-Schmerzwerte unter Kollagenpeptiden gegenüber Placebo, bei guter Verträglichkeit. Eine aktuelle RCT (2025) mit niedermolekularen Peptiden bestätigte über 180 Tage eine stärkere Schmerzbesserung als Placebo.",
-            "studien_details": "Lin CR, Tsai SHL, et al., 'Analgesic efficacy of collagen peptide in knee osteoarthritis: a meta-analysis of randomized controlled trials' (Journal of Orthopaedic Surgery and Research, 2023, DOI 10.1186/s13018-023-04182-w), ergänzt um eine LMCP-RCT 2025.",
-            "zuverlaessigkeit": "Moderat – die Gelenk-Evidenz ist konsistenter als die Haut-Evidenz, aber die Studienzahl ist begrenzt und Effektgrößen variieren. Solider als der Haut-Anspruch."
+            "was_bedeutet": "SMD 0.7 bei Hautelastizität ist ein 'moderater' Effekt – wenn die Daten stimmen. Konkret: Personen die täglich 2.5-10g Kollagen einnehmen, haben nach 8-12 Wochen messbar elastischere Haut (über Cutometer-Messungen) und höhere Hautfeuchtigkeit. Aber: Eine sehr kritische Meta-Analyse aus 2025 (American Journal of Medicine) zeigte: bei Studien OHNE Industriefinanzierung verschwand der Effekt komplett.",
+            "studie_zeigt": "Die positive Meta-Analyse (Pu 2023, n=1721) zeigte: SMD 0.72 für Elastizität und 0.63 für Hydration. Aber die kritische Analyse (American Journal of Medicine 2025, n=1474) machte eine Subgruppenanalyse nach Studienfinanzierung: Industrie-finanzierte Studien zeigten Effekte – unabhängige Studien zeigten keinen signifikanten Effekt. Wahrscheinlich liegt die Wahrheit dazwischen: ein realer aber kleinerer Effekt als ursprünglich angenommen.",
+            "studien_details": "Mehrere Meta-Analysen ausgewertet: Pu et al. 2023 (Nutrients, 26 RCTs, n=1721), Indian Journal of Dermatology 2025 (10 RCTs, n=646), American Journal of Medicine 2025 (23 RCTs, n=1474, kritisch). Die kritische Analyse fand: 'In hochwertigen Studien KEIN signifikanter Effekt auf Falten, Hydration und Elastizität.'",
+            "zuverlaessigkeit": "Die Wahrheit liegt vermutlich zwischen 'klarer Wundereffekt' und 'reines Placebo'. Realistische Erwartung: Hautwirkung ist möglich aber moderat und nicht garantiert. Wenn jemand primär wegen der Haut Kollagen nimmt, sollten 3-6 Monate Geduld eingeplant werden und realistische Erwartungen helfen."
           }
         },
         {
-          "wert": 0,
-          "einheit": "unvollständiges Protein (Abgrenzung)",
-          "kontext": "Kollagen ist als Eiweißquelle minderwertig – kein Ersatz für hochwertiges Protein beim Muskelaufbau",
-          "quelle": "Proteinqualitäts-Grundlagen + German J Sports Med 2024",
+          "wert": 30,
+          "einheit": "% Schmerzreduktion",
+          "kontext": "WOMAC-Schmerzscore-Reduktion bei Osteoarthritis nach 3-6 Monaten Supplementierung",
+          "quelle": "Simental-Mendía et al. 2024 Meta-Analyse + Khatri 2021 Review",
           "erklaerung": {
-            "was_bedeutet": "Das grenzt Kollagen klar von Whey/EAAs ab: Obwohl Kollagen ein Protein ist, fehlen ihm mehrere essentielle Aminosäuren – Tryptophan fehlt praktisch ganz, und der Gehalt an muskelaufbau-wichtigem Leucin ist niedrig. Für den Muskelaufbau ist Kollagen deshalb minderwertig und sollte nicht als Hauptproteinquelle gezählt werden.",
-            "studie_zeigt": "In sportwissenschaftlichen Übersichtsarbeiten wird Kollagen dem Bindegewebe (Sehnen, Bänder, Knorpel) zugeordnet, nicht dem Muskelaufbau. Für Muskelhypertrophie ist hochwertiges Protein (Whey, EAAs, Lebensmittel) klar überlegen – Kollagen verfolgt ein anderes Ziel.",
-            "studien_details": "Grundlagen der Proteinqualität (DIAAS/Aminosäureprofil) sowie systematische Übersicht zu Kollagenpeptiden und muskuloskelettaler Leistung (German Journal of Sports Medicine, 2024).",
-            "zuverlaessigkeit": "Hoch – das Aminosäureprofil von Kollagen ist gut dokumentiert. Praktische Konsequenz: Kollagen für Bindegewebe/Gelenke erwägen, für Muskelaufbau aber auf Whey/Protein setzen."
+            "was_bedeutet": "Bei Personen mit diagnostizierter Knie-Osteoarthritis (Knorpelverschleiß) reduziert sich der subjektive Gelenkschmerz (gemessen mit dem WOMAC-Score) durch tägliche Kollagensupplementierung um etwa 30% mehr als bei Placebo. Wichtig: Es geht hier um Schmerzempfindung und Funktion – nicht um Knorpelregeneration. Die Strukturen werden nicht 'neu aufgebaut', aber die Symptome verbessern sich.",
+            "studie_zeigt": "Über 12+ RCTs zeigten Patienten mit Knie-OA nach 3-6 Monaten Einnahme von 10g hydrolysiertem Kollagen täglich signifikante Verbesserungen in Gelenkschmerz (VAS-Skala), Steifigkeit und Beweglichkeit (WOMAC-Score). Bessere Effekte bei längerer Einnahme und höheren Dosen.",
+            "studien_details": "Mehrere systematische Reviews ausgewertet. Standarddosis: 10g hydrolysiertes Kollagen Typ I/II täglich. Mindestdauer für klinisch relevante Effekte: 3 Monate. Methodik: WOMAC-Score, VAS-Schmerzskala, Lequesne-Index.",
+            "zuverlaessigkeit": "Solide für symptomatische Linderung – Schmerzreduktion ist gut belegt. Weniger klar ist ob Kollagen tatsächlich den Knorpelabbau verlangsamt oder nur die Symptome lindert. Auch hier: nicht jede Studie zeigt einen Effekt, aber die Gesamttendenz ist positiv."
           }
         }
       ]
     },
     "indikationen": [
       {
-        "ziel": "gelenkgesundheit",
-        "staerke": 0.55,
-        "kommentar": "Am besten belegter Effekt: moderate Schmerzlinderung bei Kniearthrose (WOMAC). Ergänzende Option, kein Ersatz für etablierte Therapien."
+        "ziel": "gelenkschmerzen_oa",
+        "staerke": 0.8,
+        "kommentar": "Solide Evidenz für Schmerzreduktion und Beweglichkeit bei Knie-OA. 10g/Tag über mindestens 3 Monate."
+      },
+      {
+        "ziel": "sehnen_baender",
+        "staerke": 0.75,
+        "kommentar": "Sehnenmorphologie verbessert sich nachweislich (Achilles, Patella). Wichtig für Sportler mit hoher Sehnenbelastung."
+      },
+      {
+        "ziel": "regeneration",
+        "staerke": 0.65,
+        "kommentar": "48h-Recovery der reaktiven Kraft verbessert sich (SMD 0.43). Sinnvoll bei intensiven Trainings-Phasen."
       },
       {
         "ziel": "hautgesundheit",
-        "staerke": 0.35,
-        "kommentar": "Meta-Analysen zeigen Effekte, die aber bei hochwertigen/unabhängigen Studien verschwinden (Finanzierungsbias). Realistische Erwartung nötig."
+        "staerke": 0.5,
+        "kommentar": "Effekt vorhanden aber Studienlage komplex – Industrie-Bias relevant. Realistische Erwartung: moderate Hydration/Elastizität nach 3-6 Monaten."
       },
       {
-        "ziel": "sehnen_bindegewebe",
-        "staerke": 0.4,
-        "kommentar": "Plausibel als Baustein für Sehnen/Bänder, oft mit Vitamin C kombiniert; Evidenz gemischt und uneinheitlich."
+        "ziel": "sarkopenie_praevention",
+        "staerke": 0.55,
+        "kommentar": "Bei älteren Erwachsenen mit Krafttraining: leichter Effekt auf Magermasse (SMD 0.48). Aber: normales Protein ist effektiver."
       },
       {
-        "ziel": "knochengesundheit",
-        "staerke": 0.35,
-        "kommentar": "Kleinere Studien deuten Nutzen für die Knochendichte (v.a. postmenopausale Frauen) an; Evidenz begrenzt."
-      },
-      {
-        "ziel": "muskelaufbau",
-        "staerke": 0.1,
-        "kommentar": "Ungeeignet als Muskelaufbau-Protein – unvollständiges Aminosäureprofil. Hier ist Whey/EAA klar überlegen."
+        "ziel": "knochengesundheit_frauen",
+        "staerke": 0.55,
+        "kommentar": "Postmenopausal: leichte Verbesserung der Knochendichte in einigen Studien. Evidenz noch unsicher."
       }
     ],
     "kontraindikationen": [
       {
-        "art": "ernaehrung",
-        "wert": "kein_vollwertiges_protein",
-        "schwere": "vorsichtig",
-        "hinweis": "Kollagen ist ein unvollständiges Protein (fehlende essentielle Aminosäuren, u.a. Tryptophan). Nicht als hochwertige Eiweißquelle oder Muskelaufbau-Protein einrechnen."
-      },
-      {
         "art": "allergie",
-        "wert": "herkunft_allergene",
-        "schwere": "vorsichtig",
-        "hinweis": "Kollagen stammt aus Rind, Schwein, Huhn oder Fisch. Bei entsprechenden Allergien (v.a. Fisch) auf die Quelle achten. Für Vegetarier/Veganer ungeeignet (kein pflanzliches Kollagen – nur 'Booster')."
+        "wert": "fisch_schalentiere",
+        "schwere": "hart",
+        "hinweis": "Bei Fisch-/Schalentierallergie: KEIN marines Kollagen. Alternativen: Rinder- oder Schweinekollagen."
       },
       {
-        "art": "erwartung",
-        "wert": "marketing_realismus",
+        "art": "ernaehrung",
+        "wert": "vegetarisch_vegan",
+        "schwere": "hart",
+        "hinweis": "Alle gängigen Kollagenquellen sind tierisch (Rind, Schwein, Fisch, Eierschale). Für Vegetarier/Veganer: 'Kollagen-Booster' mit Vitamin C, Aminosäuren und Pflanzenextrakten als indirekte Alternative."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "phenylketonurie",
+        "schwere": "hart",
+        "hinweis": "Kollagen enthält Phenylalanin – bei PKU mit Arzt absprechen und spezialisierte Produkte verwenden."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "nierenerkrankung_schwer",
         "schwere": "vorsichtig",
-        "hinweis": "Keine gesundheitliche Gefahr, aber: Haut- und Haar-Versprechen sind oft überzogen. Bei Gelenkbeschwerden am ehesten ein realistischer Nutzen."
+        "hinweis": "Bei schwerer Niereninsuffizienz mit Eiweißrestriktion: Kollagen zählt zur täglichen Eiweißmenge. Mit Arzt absprechen."
       }
     ],
     "dosierung": {
-      "standard": "10 g hydrolysierte Kollagenpeptide täglich",
+      "standard": "10–15 g hydrolysierte Kollagenpeptide täglich",
       "bereich": {
-        "min": 2.5,
+        "min": 10,
         "max": 15,
         "einheit": "g"
       },
-      "obergrenze": "Keine etablierte toxische Grenze; Studien nutzen meist 2,5–15 g/Tag. Sehr gute Verträglichkeit, keine schweren Nebenwirkungen berichtet.",
-      "timing": "Tageszeit unwichtig, Aufteilung laut aktueller Evidenz nicht nötig. Für Sehnen/Bindegewebe wird oft die Einnahme mit Vitamin C ca. 30–60 min vor Belastung diskutiert. Geduld nötig: sichtbare/spürbare Effekte erst nach Wochen bis Monaten.",
-      "quelle": "Klinische RCTs (2,5–15 g) + Meta-Analysen zu Haut und Gelenken"
+      "obergrenze": "Bis 30 g/Tag sicher – aber kein zusätzlicher Nutzen über 15 g hinaus",
+      "timing": "Vor dem Training (30-60 Min) – kombiniert mit 50 mg Vitamin C für maximalen Synergie-Effekt. Sehnenbelastung danach erhöht die Aufnahme im Bindegewebe. Auch zu Mahlzeiten möglich.",
+      "quelle": "Bischof et al. 2024 Sports Medicine + ISSN Position Stand 2023",
+      "formen_vergleich": "Hydrolysiertes Kollagen (Peptide <6 kDa): höchste Bioverfügbarkeit, Standard-Empfehlung. Undenaturiertes Typ-II-Kollagen (UC-II): andere Wirkmechanismus, niedrigere Dosis (40mg/Tag), spezifisch für OA. Knochenbrühe: deutlich schwächer, ineffizient. Marines Kollagen (Fisch): identische Wirkung wie Rinderkollagen, höherer Preis."
     },
     "population_spezifisch": {
-      "menschen_mit_arthrose": {
+      "sportler": {
         "relevant": true,
-        "staerke": 0.55,
-        "kommentar": "Stärkste Indikation: moderate Schmerzlinderung bei Kniearthrose. Gut verträgliche ergänzende Option."
+        "staerke": 0.85,
+        "kommentar": "15g + Vitamin C 30-60 Min vor Training, über 8+ Wochen. Sehnen-Adaptation und Recovery messbar verbessert.",
+        "quelle": "Bischof et al. 2024 Meta-Analyse"
       },
       "senioren_50plus": {
         "relevant": true,
-        "staerke": 0.45,
-        "kommentar": "Mit dem Alter sinkt die körpereigene Kollagensynthese; potenzieller Nutzen für Gelenke und ggf. Knochendichte, Evidenz begrenzt."
+        "staerke": 0.7,
+        "kommentar": "Gelenkschmerz-Reduktion bei Osteoarthritis ist der stärkste Effekt. 10g/Tag über mindestens 3 Monate.",
+        "quelle": "Khatri et al. 2021"
       },
-      "sportler_sehnenbelastung": {
+      "frauen_menopause": {
         "relevant": true,
-        "staerke": 0.4,
-        "kommentar": "Bei hoher Sehnen-/Bänderbelastung als Bindegewebs-Unterstützung diskutiert (oft mit Vitamin C); Evidenz uneinheitlich."
+        "staerke": 0.7,
+        "kommentar": "Beschleunigter Kollagenabbau nach Menopause (Östrogen-Mangel). Knochen-, Haut- und Gelenkeffekte können relevant sein."
       },
-      "frauen_hautgesundheit": {
-        "relevant": true,
-        "staerke": 0.35,
-        "kommentar": "Hauptzielgruppe des Marketings. Möglicher, aber wahrscheinlich kleiner Hauteffekt – wegen Finanzierungsbias mit realistischer Erwartung."
+      "vegetarier_veganer": {
+        "relevant": false,
+        "staerke": 0,
+        "kommentar": "KEIN veganes Kollagen verfügbar. 'Vegane Alternativen' liefern nur Vitamin C + Aminosäuren – kein Ersatz für hydrolysiertes Kollagen."
       }
     },
     "warnhinweise": [
-      "Kritisch lesen: Ein erheblicher Teil der positiven Hautstudien ist herstellerfinanziert; hochwertige unabhängige Studien finden oft keinen Effekt.",
-      "Kollagen ist ein unvollständiges Protein – kein Ersatz für hochwertiges Eiweiß und ungeeignet für den Muskelaufbau.",
-      "Gegessenes Kollagen wird verdaut wie jedes Protein und landet nicht direkt in Haut oder Gelenken.",
-      "Am ehesten realistisch ist ein moderater Nutzen bei Gelenk-/Arthroseschmerzen; Haut- und vor allem Haar-Versprechen sind überzogen.",
-      "Auf die Herkunft achten (Rind/Schwein/Huhn/Fisch) – relevant bei Allergien und für religiöse/ethische Ernährungsformen; pflanzliches Kollagen gibt es nicht.",
-      "Geduld nötig: Falls Effekte auftreten, zeigen sie sich erst nach Wochen bis Monaten regelmäßiger Einnahme."
-    ],
-    "quellen": [
-      {
-        "titel": "Effects of Collagen Supplements on Skin Aging: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
-        "autoren": "Myung SK, Park Y",
-        "url": "https://www.amjmed.com/article/S0002-9343(25)00283-9/fulltext",
-        "jahr": 2025,
-        "typ": "meta-analyse",
-        "doi": "10.1016/j.amjmed.2025.04.034"
-      },
-      {
-        "titel": "Analgesic efficacy of collagen peptide in knee osteoarthritis: a meta-analysis of randomized controlled trials",
-        "autoren": "Lin CR, Tsai SHL, Huang KY, et al.",
-        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10505327/",
-        "jahr": 2023,
-        "typ": "meta-analyse",
-        "doi": "10.1186/s13018-023-04182-w"
-      },
-      {
-        "titel": "Collagen Peptide Supplementation and Musculoskeletal Performance: A Systematic Review and Meta-Analysis",
-        "autoren": "Various",
-        "url": "https://www.germanjournalsportsmedicine.com/archive/archive-2024/issue-5/collagen-peptide-supplementation-and-musculoskeletal-performance-a-systematic-review-and-meta-analysis/",
-        "jahr": 2024,
-        "typ": "meta-analyse"
-      },
-      {
-        "titel": "The effects of hydrolyzed collagen supplementation on skin hydration and elasticity: a systematic review and meta-analysis (26 RCTs)",
-        "autoren": "Various",
-        "url": "https://link.springer.com/article/10.1007/s44403-026-00046-3",
-        "jahr": 2023,
-        "typ": "meta-analyse"
-      }
+      "Kollagen ist KEIN Ersatz für hochwertige Proteinquellen (Whey, Pflanzenprotein) – es fehlt Tryptophan und ist arm an essentiellen Aminosäuren",
+      "Vitamin C ist als Cofaktor essentiell – Kollagen ohne ausreichend Vitamin C wirkt schlechter. Mindestens 50 mg Vitamin C zusammen einnehmen",
+      "Timing zählt für Sportler: 30-60 Min vor dem Training einnehmen – nicht danach. Mechanismus: die Peptide werden während der Sehnenbelastung gezielt eingebaut",
+      "Hautwirkung realistisch einschätzen: Studien zeigen moderate Effekte aber mit Industrie-Bias-Problemen. 3-6 Monate Geduld und realistische Erwartungen helfen",
+      "Geschmack/Verträglichkeit: Hydrolysiertes Kollagen ist meist geschmacklos. Einige Produkte haben einen leichten Eigengeschmack – nicht alle Marken sind gleich"
     ],
     "inhalt": [
       "kollagen"
+    ],
+    "quellen": [
+      {
+        "titel": "Impact of Collagen Peptide Supplementation in Combination with Long-Term Physical Training on Strength, Musculotendinous Remodeling, Functional Recovery, and Body Composition in Healthy Adults: A Systematic Review with Meta-analysis",
+        "autoren": "Bischof K, et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/39060741/",
+        "jahr": 2024,
+        "typ": "meta_analyse",
+        "doi": "10.1007/s40279-024-02079-0"
+      },
+      {
+        "titel": "Effects of Oral Collagen for Skin Anti-Aging: A Systematic Review and Meta-Analysis",
+        "autoren": "Pu SY, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10180699/",
+        "jahr": 2023,
+        "typ": "meta_analyse",
+        "doi": "10.3390/nu15092080"
+      },
+      {
+        "titel": "Effects of Collagen Supplements on Skin Aging: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+        "autoren": "American Journal of Medicine Editorial",
+        "url": "https://www.amjmed.com/article/S0002-9343(25)00283-9/abstract",
+        "jahr": 2025,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Collagen Supplementation for Skin and Musculoskeletal Health: An Umbrella Review of Meta-Analyses",
+        "autoren": "Aesthetic Surgery Journal Open Forum",
+        "url": "https://academic.oup.com/asjopenforum/article/doi/10.1093/asjof/ojag018/8446510",
+        "jahr": 2026,
+        "typ": "systematic_review"
+      },
+      {
+        "titel": "Effects of collagen-based supplements on skin's hydration and elasticity: A systematic review and meta-analysis",
+        "autoren": "Indian Journal of Dermatology, Venereology and Leprology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40826844/",
+        "jahr": 2025,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "The Effects of Type I Collagen Hydrolysate Supplementation on Bones, Muscles, and Joints: A Systematic Review",
+        "autoren": "Orthopedic Reviews",
+        "url": "https://orthopedicreviews.openmedicalpublishing.org/article/129086-the-effects-of-type-i-collagen-hydrolysate-supplementation-on-bones-muscles-and-joints-a-systematic-review",
+        "jahr": 2025,
+        "typ": "systematic_review"
+      },
+      {
+        "titel": "Collagen Peptide Supplementation and Musculoskeletal Performance: A Systematic Review and Meta-Analysis",
+        "autoren": "German Journal of Sports Medicine",
+        "url": "https://www.germanjournalsportsmedicine.com/archive/archive-2024/issue-5/collagen-peptide-supplementation-and-musculoskeletal-performance-a-systematic-review-and-meta-analysis/",
+        "jahr": 2024,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "The effects of collagen peptide supplementation on body composition, collagen synthesis, and recovery from joint injury and exercise: a systematic review",
+        "autoren": "Khatri M, et al.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8521576/",
+        "jahr": 2021,
+        "typ": "systematic_review"
+      },
+      {
+        "titel": "Frontiers in Nutrition – Collagen supplementation and regenerative health: advances in biomarker detection",
+        "autoren": "Frontiers Editorial",
+        "url": "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2025.1716166/full",
+        "jahr": 2025,
+        "typ": "review"
+      }
+    ]
+  },
+  "curcumin": {
+    "id": "curcumin",
+    "name": "Curcumin (Kurkuma-Extrakt)",
+    "kategorie": "gesundheit",
+    "ikon": "🌟",
+    "kurz_beschreibung": "Pflanzlicher Entzündungshemmer mit moderater Evidenz bei Knie-Arthrose. Vergleichbare Wirksamkeit wie NSAIDs bei Gelenkschmerzen – aber Bioverfügbarkeit und Lebersicherheit kritisch beachten.",
+    "beschreibung": {
+      "was_ist_es": "Curcumin ist der gelb-orange Hauptwirkstoff aus der Kurkuma-Wurzel (Curcuma longa) – einem ingwerartigen Gewächs aus Südasien. Standard-Kurkuma-Pulver enthält nur 2-5% Curcuminoide, weshalb hochkonzentrierte Extrakte verwendet werden. Es gehört zur Gruppe der Polyphenole und ist seit Jahrtausenden in der ayurvedischen und chinesischen Medizin etabliert. In den letzten 25 Jahren wurden über 18.000 wissenschaftliche Artikel zu Curcumin publiziert – einer der meistuntersuchten Naturstoffe überhaupt.",
+      "wie_wirkt_es": "Curcumin wirkt entzündungshemmend über mehrere Mechanismen gleichzeitig: Es hemmt den NF-κB-Signalweg (zentraler Entzündungs-Schalter), reduziert die Produktion von TNF-α und IL-1β (Entzündungsbotenstoffe), und neutralisiert reaktive Sauerstoffspezies (Antioxidans). Das große Problem: Standard-Curcumin hat eine extrem schlechte Bioverfügbarkeit – weniger als 1% wird oral aufgenommen. Spezielle Formulierungen (Phytosom, Mizellen, Liposomal, BCM-95) erhöhen die Aufnahme um das 7- bis 57-fache.",
+      "warum_wichtig": "Chronische Entzündungen sind an vielen modernen Krankheiten beteiligt: Arthrose, Herz-Kreislauf-Erkrankungen, Stoffwechselstörungen. Curcumin ist eine pflanzliche Alternative zu NSAIDs (Ibuprofen, Diclofenac) mit ähnlicher Wirksamkeit bei Gelenkschmerzen aber weniger Magen-Darm-Nebenwirkungen. Wichtig zu wissen: Trotz hoher Studienzahl ist die methodische Qualität vieler Studien begrenzt – und es gibt seltene aber relevante Sicherheitsprobleme."
+    },
+    "fazit": {
+      "top_effekte": [
+        "VAS-Schmerz-Reduktion um 1.63 Punkte bei Knie-Arthrose (Bayesian NMA, n=2175)",
+        "WOMAC-Gesamtscore-Verbesserung um 18.85 Punkte – vergleichbar mit NSAIDs",
+        "49% weniger Nebenwirkungen als NSAIDs (OR 0.51)"
+      ],
+      "ideal_fuer": "Personen mit Knie-Arthrose, chronischen Gelenkschmerzen, leichten Entzündungszuständen, Alternative zu Langzeit-NSAID-Einnahme",
+      "dosis": "500-2000 mg Curcuminoide täglich (Form abhängig) – Phytosom 1-2g, Standard mit Piperine 1-1.5g",
+      "vorsicht_bei": "Blutverdünner (Warfarin), Chemotherapie, Lebererkrankungen, Gallensteine, geplante Operationen, hohe Eisenwerte",
+      "mythen": [
+        "„Mehr Curcumin ist immer besser“ – falsch. Über 1.5g Standard-Curcumin werden ohnehin nicht aufgenommen. Bioverfügbarkeits-Form ist wichtiger als Dosis.",
+        "„Piperine (Schwarzer Pfeffer) ist die beste Bioverfügbarkeits-Lösung“ – mit Vorsicht. Erhöht die Aufnahme bis zu 2000%, aber DAMIT auch das Risiko von Leberschäden. Neuere Formulierungen (Mizellen, Phytosom) sind sicherer und teilweise wirksamer.",
+        "„Curcumin heilt Arthrose“ – falsch. Es lindert Symptome (Schmerz, Steifigkeit, Funktion) – verlangsamt aber nicht den Knorpelabbau strukturell.",
+        "„Kurkuma im Essen reicht für gesundheitliche Wirkung“ – nicht ausreichend. Selbst tägliche Kurkuma-Mengen in indischer Küche liefern weniger als 100 mg Curcumin – therapeutische Dosen sind 10-20x höher.",
+        "„Curcumin ist immer sicher weil es natürlich ist“ – falsch. Es gibt dokumentierte Fälle von schweren Leberschäden – besonders bei hochkonzentrierten Supplements mit Piperine."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 70,
+      "review_typ": "meta_analyse",
+      "studien_anzahl": 76,
+      "konsens": "Bayesian NMA Zhao 2024 + Umbrella Review Bideshki 2024 – allerdings methodische Qualität variabel",
+      "effekt_groesse": [
+        {
+          "wert": -1.63,
+          "einheit": "VAS-Punkte",
+          "kontext": "Schmerzreduktion bei Knie-Arthrose vs. Placebo nach 4-16 Wochen Curcumin-Therapie",
+          "quelle": "Zhao et al. 2024 Bayesian Network Meta-Analyse (n=2175, 23 Studien)",
+          "erklaerung": {
+            "was_bedeutet": "VAS steht für Visual Analogue Scale – eine 10-Punkte-Skala für Schmerz (0 = kein Schmerz, 10 = stärkster vorstellbarer Schmerz). Eine Reduktion um 1.63 Punkte ist klinisch relevant und entspricht etwa dem Effekt von NSAIDs wie Ibuprofen. Konkret: Wer mit 5/10 Schmerzen anfängt, hat nach 8-12 Wochen Curcumin etwa 3.5/10 Schmerzen. Patienten beschreiben das oft als 'spürbare Erleichterung'.",
+            "studie_zeigt": "23 RCTs mit insgesamt 2175 Patienten mit Knie-Osteoarthritis wurden in einer Bayesian Network Meta-Analyse zusammengefasst. Curcumin zeigte signifikante Reduktion der VAS-Schmerzscores (MD -1.63, 95% CI: -2.91 bis -0.45) und des WOMAC-Gesamtscores (MD -18.85, 95% CI: -29.53 bis -8.76). Wichtig: Bei direktem Vergleich mit NSAIDs war kein signifikanter Unterschied in der Schmerzreduktion (WMD 0.34) – aber 49% weniger Nebenwirkungen.",
+            "studien_details": "Bayesian Network Meta-Analyse, publiziert 2024 in Journal of Ethnopharmacology. 23 Studien aus 7 Ländern, 6 verschiedene Interventionen verglichen. Methodisch wichtig: Diese Analyse hat ALLE Curcumin-Formulierungen zusammengefasst (Standard, Phytosom, BCM-95, mit Piperine) – das ist eine Limitation.",
+            "zuverlaessigkeit": "Solide aber mit Vorbehalt. Ein kritischer Review aus 2025 (Frontiers Pharmacology) zeigte: Die methodische Qualität (AMSTAR-2, ROBIS) der Meta-Analysen ist variabel, und es gibt erhebliche Studien-Überlappungen (Corrected Covered Area = 48.25%). Die Effektgröße ist real, aber etwas geringer einzuschätzen als initial vermutet."
+          }
+        },
+        {
+          "wert": 0.51,
+          "einheit": "OR (Odds Ratio)",
+          "kontext": "Risiko für unerwünschte Nebenwirkungen mit Curcumin im Vergleich zu NSAIDs",
+          "quelle": "Zhao et al. 2024 + Mehrere RCTs (Madhu 2013, Kuptniratsaikul 2014)",
+          "erklaerung": {
+            "was_bedeutet": "OR 0.51 bedeutet: Wer Curcumin statt NSAIDs einnimmt, hat etwa halbiertes Risiko für Nebenwirkungen. Konkret: Wenn 100 Personen NSAIDs (Ibuprofen, Diclofenac) nehmen und 20 davon Nebenwirkungen entwickeln (Magenschmerzen, Übelkeit, Reflux), würden bei Curcumin nur etwa 10 von 100 Nebenwirkungen entwickeln. Hauptvorteil: kein erhöhtes Risiko für Magengeschwüre oder Nierenschäden wie bei Langzeit-NSAIDs.",
+            "studie_zeigt": "Mehrere direkte Vergleichsstudien zwischen Curcumin und Ibuprofen/Diclofenac zeigen: ähnliche Wirksamkeit bei Schmerzreduktion, aber deutlich besseres Sicherheitsprofil. Madhu et al. 2013: 367 Patienten verglichen, vergleichbare Wirksamkeit bei deutlich weniger GI-Nebenwirkungen. Kuptniratsaikul et al. 2014: 367 Patienten, kein signifikanter Unterschied in Wirksamkeit zu Ibuprofen 1200mg/Tag.",
+            "studien_details": "Daten aus mehreren RCTs mit direkten Vergleichen zu NSAIDs (Ibuprofen, Diclofenac). Bewertet wurden: GI-Beschwerden, Nierenfunktion, Blutdruck-Effekte, ödematöse Reaktionen. Methodik: 4-8 Wochen Beobachtung, standardisierte Nebenwirkungs-Erfassung.",
+            "zuverlaessigkeit": "Hoch für GI-Nebenwirkungen – konsistent in mehreren Studien. Aber Achtung: Curcumin hat EIGENE Sicherheitsrisiken (siehe Warnhinweise), die in diesen Vergleichen nicht immer adäquat erfasst wurden – speziell die seltenen aber dokumentierten Leberschäden."
+          }
+        },
+        {
+          "wert": 57,
+          "einheit": "x höhere Bioverfügbarkeit",
+          "kontext": "Mizellen-Curcumin (NovaSOL) im Vergleich zu Standard-Curcumin – pharmakokinetische Studie",
+          "quelle": "Flory et al. 2021 Cross-Over-Studie (Molecular Nutrition & Food Research)",
+          "erklaerung": {
+            "was_bedeutet": "Standard-Curcumin wird zu weniger als 1% aufgenommen – das ist katastrophal schlecht. Bioverfügbarkeits-Optimierte Formen verbessern die Aufnahme drastisch. Konkret nach der Flory-Studie: 207mg Mizellen-Curcumin entsprechen pharmakokinetisch etwa 11g Standard-Curcumin im Blut. Das macht den Unterschied zwischen 'wirkungslos' und 'klinisch effektiv'.",
+            "studie_zeigt": "Direkter Cross-Over-Vergleich bei 12 gesunden Erwachsenen: 8 verschiedene Curcumin-Formulierungen wurden mit identischer Dosis (207mg) verglichen. Ergebnis-Rangliste der Bioverfügbarkeit: Mizellen 57-fach, γ-Cyclodextrin 30-fach, Phytosom (Meriva) deutlich besser als Standard, BCM-95 ca. 7-fach, Standard-Curcumin = Baseline. Wichtig: Trotz höherer Blut-Levels translatiert sich das nicht 1:1 in bessere klinische Wirkung – Gewebeverteilung zählt mehr als Blutspiegel.",
+            "studien_details": "Randomisierte Cross-Over-Studie publiziert 2021 in Molecular Nutrition & Food Research. 12 gesunde Probanden. 24h-Pharmakokinetik mit HPLC-Analyse. Verglichene Formulierungen: Native, Liposomen, Turmeric-Öl (BCM-95), Phytosom (Meriva), Submicron-Partikel (Theracurmin), γ-Cyclodextrin (Cavacurmin), Mizellen (NovaSOL).",
+            "zuverlaessigkeit": "Sehr hoch für die pharmakokinetischen Werte. Die KLINISCHE Bedeutung ist aber komplex: Höhere Blutspiegel = nicht zwingend bessere Wirkung. Phytosom (Meriva) hat die meisten klinischen RCTs für Knie-OA, auch wenn Mizellen pharmakokinetisch besser abschneiden."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "gelenkschmerzen_oa",
+        "staerke": 0.8,
+        "kommentar": "Stärkster und am besten belegter Effekt. Vergleichbare Schmerzreduktion wie NSAIDs bei deutlich besserem Sicherheitsprofil im GI-Bereich."
+      },
+      {
+        "ziel": "entzuendung",
+        "staerke": 0.7,
+        "kommentar": "Reduziert nachweislich Entzündungsmarker (CRP, IL-6, TNF-α). Klinische Relevanz aber individuell unterschiedlich."
+      },
+      {
+        "ziel": "regeneration",
+        "staerke": 0.5,
+        "kommentar": "Möglicher Effekt auf Muskelregeneration nach intensivem Sport durch antioxidative Wirkung. Evidenz noch eingeschränkt."
+      },
+      {
+        "ziel": "stoffwechsel",
+        "staerke": 0.55,
+        "kommentar": "Leichte Verbesserung von Blutzucker, Insulinresistenz und Lipidprofil in mehreren Meta-Analysen. Effekte moderat."
+      },
+      {
+        "ziel": "stimmung",
+        "staerke": 0.45,
+        "kommentar": "Vorsichtig positive Evidenz bei depressiven Symptomen (Asadi 2020). Effekt klein, weitere Studien nötig."
+      },
+      {
+        "ziel": "autoimmun_ra",
+        "staerke": 0.65,
+        "kommentar": "Bei rheumatoider Arthritis und SLE: Reduktion von Entzündungs- und Krankheitsaktivitäts-Markern (DAS-28, Tender Joint Count). Solide Daten bei kleinen Studien."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medikament",
+        "wert": "blutverduenner",
+        "schwere": "hart",
+        "hinweis": "Bei Warfarin/Marcumar: KEINE Curcumin-Hochdosis ohne ärztliche Überwachung. Curcumin reduziert die Warfarin-Clearance und erhöht das Blutungsrisiko – mehrere dokumentierte INR-Entgleisungen. Bei ASS, Clopidogrel, DOAKs: Vorsicht und INR-Monitoring."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "lebererkrankung",
+        "schwere": "hart",
+        "hinweis": "Bei bekannten Lebererkrankungen oder erhöhten Leberwerten: KEINE Curcumin-Supplementation. Mehrere dokumentierte Fälle von akutem Leberversagen, besonders bei Piperine-Kombinationen. Bei statin-induzierten Leberbelastungen besondere Vorsicht."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "gallensteine",
+        "schwere": "vorsichtig",
+        "hinweis": "Curcumin regt die Gallenflusssekretion an – bei Gallensteinen kann dies zu Koliken führen. Vor Einnahme abklären."
+      },
+      {
+        "art": "medikament",
+        "wert": "chemotherapie",
+        "schwere": "hart",
+        "hinweis": "Bei Chemotherapie KEINE Curcumin-Supplementation ohne onkologische Rücksprache. Curcumin kann die Wirkung bestimmter Chemo-Medikamente (Doxorubicin, Cyclophosphamid, Camptothecin) reduzieren ODER verstärken – nicht vorhersehbar."
+      },
+      {
+        "art": "operation",
+        "wert": "geplante_op",
+        "schwere": "vorsichtig",
+        "hinweis": "Mindestens 2 Wochen vor geplanten Operationen pausieren – wegen erhöhtem Blutungsrisiko durch Thrombozyten-Hemmung."
+      },
+      {
+        "art": "medikament",
+        "wert": "diabetes_medikamente",
+        "schwere": "vorsichtig",
+        "hinweis": "Curcumin kann Blutzucker senken – in Kombination mit Insulin/Metformin Risiko einer Hypoglykämie. Engmaschiges Blutzucker-Monitoring."
+      }
+    ],
+    "dosierung": {
+      "standard": "Phytosom (Meriva): 1.000-2.000 mg täglich | Standard mit Piperine: 1.000-1.500 mg täglich | Mizellen: 200-500 mg täglich",
+      "bereich": {
+        "min": 200,
+        "max": 2000,
+        "einheit": "mg (Form-abhängig)"
+      },
+      "obergrenze": "EFSA: bis 3 mg/kg Körpergewicht Curcumin-Gleichwert täglich als sicher eingestuft – bei höheren Dosen Leber-Risiko",
+      "timing": "Zu fetthaltigen Mahlzeiten einnehmen – Curcumin ist fettlöslich, Aufnahme deutlich besser. Aufgeteilt auf 2 Dosen (Frühstück + Abendessen) für stabilere Blutspiegel.",
+      "quelle": "EFSA + Mehrere Meta-Analysen (Bideshki 2024, Zhao 2024)",
+      "formen_vergleich": "Phytosom (Meriva): Beste klinische Datenlage, 29x bessere Bioverfügbarkeit, sicherer als Piperine-Kombi. Mizellen (NovaSOL): Pharmakokinetisch beste Form (57x), wenig Klinikdaten. BCM-95: 7x bessere Aufnahme, etablierte Marke. Standard + Piperine: Günstig, 2000% mehr Aufnahme – aber höchstes Hepatotoxizitäts-Risiko. Reines Standard-Curcumin: Praktisch wirkungslos (<1% Aufnahme)."
+    },
+    "population_spezifisch": {
+      "senioren_50plus": {
+        "relevant": true,
+        "staerke": 0.85,
+        "kommentar": "Hauptzielgruppe für Knie-Arthrose-Behandlung. NSAID-Alternative besonders relevant wegen GI-Schutz im Alter.",
+        "quelle": "Zhao 2024 Bayesian NMA"
+      },
+      "sportler": {
+        "relevant": true,
+        "staerke": 0.5,
+        "kommentar": "Moderate Evidenz für Reduktion von Muskelschmerzen und Entzündungsmarkern nach Sport. Aber: bei Hochintensivtraining Vorsicht wegen möglicher Beeinträchtigung der Trainings-Adaptation (Antioxidans-Paradox)."
+      },
+      "frauen_menopause": {
+        "relevant": true,
+        "staerke": 0.55,
+        "kommentar": "Gelenkbeschwerden in der Menopause: Curcumin kann Linderung verschaffen. Wechselwirkung mit Hormonersatztherapie unklar – Vorsicht."
+      },
+      "patienten_chronisch_entzuendlich": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "Bei rheumatoider Arthritis, IBD, Psoriasis: Curcumin als Adjuvans interessant. NUR unter ärztlicher Begleitung wegen Wechselwirkungen mit Therapeutika."
+      }
+    },
+    "warnhinweise": [
+      "WICHTIGSTE WARNUNG: Curcumin – besonders mit Piperine – kann selten aber dokumentiert schwere Leberschäden verursachen. Bei Müdigkeit, gelblicher Haut, dunklem Urin SOFORT absetzen und Arzt aufsuchen",
+      "Standard-Curcumin ohne Bioverfügbarkeits-Verbesserung ist praktisch wirkungslos (<1% Aufnahme) – die Form ist entscheidender als die Dosis",
+      "Phytosom-Form (Meriva) hat die beste Balance aus Bioverfügbarkeit und Sicherheit – bevorzugte Wahl für die meisten Anwender",
+      "Vor jeder OP und vor wichtigen medizinischen Eingriffen 2 Wochen pausieren – Curcumin hemmt die Thrombozytenaggregation",
+      "Bei Einnahme von Blutverdünnern, Diabetes-Medikamenten oder Chemotherapie: NUR mit Arzt absprechen",
+      "Wirkung tritt langsam ein – realistischer Zeitrahmen für klinische Verbesserung bei Knie-OA: 4-12 Wochen",
+      "Bei plötzlicher Verschlechterung von Gelenkschmerzen, neuer Steifigkeit oder Schwellungen: kein Mehr-Curcumin, sondern ärztliche Abklärung"
+    ],
+    "inhalt": [
+      "curcumin"
+    ],
+    "quellen": [
+      {
+        "titel": "Efficacy and safety of curcumin therapy for knee osteoarthritis: A Bayesian network meta-analysis",
+        "autoren": "Zhao J, Liang G, Zhou G, Hong K, Yang W, Liu J, et al.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0378874123013636",
+        "jahr": 2024,
+        "typ": "meta_analyse",
+        "doi": "10.1016/j.jep.2023.117493"
+      },
+      {
+        "titel": "A critical review of systematic reviews and meta-analyses of curcumin for knee osteoarthritis",
+        "autoren": "Bideshki et al. + kritisches Update",
+        "url": "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2025.1664319/full",
+        "jahr": 2025,
+        "typ": "umbrella_review"
+      },
+      {
+        "titel": "Effects of curcumin on serum inflammatory biomarkers in patients with knee osteoarthritis: a systematic review and meta-analysis",
+        "autoren": "BMC Complementary Medicine and Therapies",
+        "url": "https://link.springer.com/article/10.1186/s12906-025-04951-6",
+        "jahr": 2025,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Increasing Post-Digestive Solubility of Curcumin Is the Most Successful Strategy to Improve its Oral Bioavailability",
+        "autoren": "Flory S, et al.",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1002/mnfr.202100613",
+        "jahr": 2021,
+        "typ": "rct"
+      },
+      {
+        "titel": "A Meta-Analysis of the Impact of Nutritional Supplementation on Osteoarthritis Symptoms",
+        "autoren": "Nutrients 2022",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9025331/",
+        "jahr": 2022,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "The efficacy and safety of Curcuma longa extract and curcumin supplements on osteoarthritis",
+        "autoren": "Zeng L, Yu G, Hao W, Yang K, Chen H",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8202067/",
+        "jahr": 2021,
+        "typ": "meta_analyse",
+        "doi": "10.1042/BSR20210817"
+      },
+      {
+        "titel": "Curcumin and multiple health outcomes: critical umbrella review of intervention meta-analyses",
+        "autoren": "Umbrella Review 2024",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12176752/",
+        "jahr": 2024,
+        "typ": "umbrella_review"
+      },
+      {
+        "titel": "Turmeric – LiverTox Database (NCBI)",
+        "autoren": "NIH National Institute of Diabetes and Digestive and Kidney Diseases",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK548561/",
+        "jahr": 2024,
+        "typ": "position_stand"
+      },
+      {
+        "titel": "Liver Injury Associated with Turmeric—A Growing Problem: Ten Cases from the Drug-Induced Liver Injury Network",
+        "autoren": "DILIN Network Halegoua-DeMarzio et al.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S0002934322007409",
+        "jahr": 2023,
+        "typ": "case_series"
+      },
+      {
+        "titel": "Highly Bioavailable Forms of Curcumin and Promising Avenues for Curcumin-Based Research",
+        "autoren": "Review 2020",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7144558/",
+        "jahr": 2020,
+        "typ": "review"
+      }
+    ]
+  },
+  "l_carnitin": {
+    "id": "l_carnitin",
+    "name": "L-Carnitin",
+    "kategorie": "performance",
+    "ikon": "🔥",
+    "kurz_beschreibung": "Aminosäure-Derivat für Fettstoffwechsel und Regeneration. Moderate Evidenz für Gewichtsabnahme und Muskelregeneration – stärkste Effekte bei Übergewicht und Diabetes Typ 2.",
+    "beschreibung": {
+      "was_ist_es": "L-Carnitin ist ein vitaminähnlicher Stoff, der aus den Aminosäuren Lysin und Methionin im Körper gebildet wird – die Leber und Nieren produzieren etwa 11-34 mg pro Tag. Hauptnahrungsquellen sind rotes Fleisch (60-180 mg pro 100g), Milchprodukte, Geflügel und Fisch. Vegetarier und Veganer haben durchschnittlich niedrigere Carnitin-Speicher. Im Körper befinden sich 95% des Carnitins in den Muskeln. Die Hauptformen als Supplement: L-Carnitin (Standardform), L-Carnitin-L-Tartrat (kombiniert mit Tartrat, gut bei Sport-Recovery), Acetyl-L-Carnitin (ALCAR, geht ins Gehirn).",
+      "wie_wirkt_es": "L-Carnitin ist der zentrale Transporter für langkettige Fettsäuren in die Mitochondrien – die 'Kraftwerke' der Zellen. Dort werden die Fettsäuren zur Energiegewinnung verbrannt (Beta-Oxidation). Ohne Carnitin können diese Fette nicht effizient verbrannt werden. Zusätzlich wirkt L-Carnitin antioxidativ (neutralisiert freie Radikale), reduziert Entzündungsmarker und verbessert die Durchblutung des Muskelgewebes – relevant für Recovery nach Sport.",
+      "warum_wichtig": "Bei gesunden Erwachsenen mit normalem Fleischverzehr ist die Carnitin-Versorgung meist ausreichend. Aber: Bei Vegetariern und Veganern (5x weniger Aufnahme), bei intensivem Training (höherer Verbrauch), bei Diabetes Typ 2 und bei Übergewicht kann eine Supplementation Vorteile bringen. Wichtig zu wissen: L-Carnitin ist KEIN klassischer 'Fatburner' – es ermöglicht den Fettstoffwechsel, kann ihn aber nicht erzwingen. Ohne Kaloriendefizit keine Gewichtsabnahme."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Gewichtsreduktion um 1.21 kg bei Übergewichtigen (Meta-Analyse, n=2.292)",
+        "Reduziert Muskelschmerz/DOMS nach Sport an allen 5 Messpunkten (0-96h)",
+        "Senkt HbA1c und BMI bei Typ-2-Diabetes (-0.16% pro g/Tag)"
+      ],
+      "ideal_fuer": "Übergewichtige im Kaloriendefizit, Typ-2-Diabetiker, Vegetarier/Veganer, Sportler in intensiven Recovery-Phasen, ältere Erwachsene",
+      "dosis": "1.000–2.000 mg täglich – maximaler Effekt bei 2g/Tag (Dose-Response-Plateau)",
+      "vorsicht_bei": "Schwere Niereninsuffizienz, Schilddrüsenunterfunktion (TMAO-Risiko), Krampfanfälle, Antikoagulantien",
+      "mythen": [
+        "„L-Carnitin verbrennt Fett auch ohne Sport“ – falsch. Es ermöglicht den Fettstoffwechsel, erzwingt ihn aber nicht. Ohne Kaloriendefizit oder Training kein Gewichtsverlust.",
+        "„Je mehr L-Carnitin, desto mehr Fettverbrennung“ – falsch. Studien zeigen ein Plateau bei 2g/Tag. Mehr bringt nichts – nur höhere Kosten.",
+        "„L-Carnitin steigert direkt die Leistung“ – falsch. Performance-Effekte sind inkonsistent. Der Hauptnutzen liegt in der Erholung NACH dem Training, nicht der Leistung WÄHREND.",
+        "„L-Carnitin Injektionen wirken besser als Tabletten“ – stimmt nur theoretisch. Höhere Bioverfügbarkeit ja, aber für die meisten Anwender kein praktischer Vorteil bei deutlich höherem Aufwand und Risiko.",
+        "„Veganer brauchen unbedingt L-Carnitin“ – nicht immer. Der Körper kann selbst Carnitin bilden. Aber Vegetarier/Veganer profitieren bei sportlicher Aktivität oder Diät messbar mehr von Supplementation."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 68,
+      "review_typ": "meta_analyse",
+      "studien_anzahl": 58,
+      "konsens": "Mehrere Meta-Analysen (Pooyandjoo 2016, Khosravi 2020, Mirrafiei 2024) + Umbrella Review 2024",
+      "effekt_groesse": [
+        {
+          "wert": -1.21,
+          "einheit": "kg",
+          "kontext": "Gewichtsreduktion bei Übergewichtigen mit 2g L-Carnitin/Tag über 8-12 Wochen",
+          "quelle": "Khosravi & Salehi-Abargouei 2020 Meta-Analyse (n=2.292, 37 RCTs)",
+          "erklaerung": {
+            "was_bedeutet": "Personen mit Übergewicht (BMI >25), die zusätzlich zur Diät 2g L-Carnitin täglich einnehmen, verlieren über 8-12 Wochen etwa 1.2 kg MEHR als die Placebo-Gruppe. Das klingt nicht spektakulär, ist aber bei Diäten relevant: Wer ohne Carnitin 3 kg abnimmt, nimmt mit Carnitin ca. 4.2 kg ab. Wichtig: Bei normalgewichtigen Personen ist der Effekt deutlich kleiner oder nicht messbar. Bei Übergewicht/Adipositas wirkt es am besten.",
+            "studie_zeigt": "37 randomisierte Studien mit insgesamt 2.292 Teilnehmern. Effektstärken: Körpergewicht -1.21 kg (95% CI: -1.73 bis -0.68), BMI -0.24 kg/m² (95% CI: -0.37 bis -0.10), Fettmasse signifikant reduziert. Wichtige Dose-Response-Analyse: Effekt steigt bis 2g/Tag an und plateaut dort – höhere Dosen bringen NICHT mehr Gewichtsverlust. Hochwertige Studien (low risk of bias) bestätigten den Effekt nur für Körpergewicht.",
+            "studien_details": "Systematische Meta-Analyse mit Dose-Response-Analyse, publiziert 2020 in Clinical Nutrition ESPEN. Eingeschlossen: 37 RCTs mit 2.292 Teilnehmern. Studiendauer 8-30 Wochen, Dosis 150-4000 mg/Tag. Methodik: Random-Effects-Modell, restricted cubic splines für Dose-Response.",
+            "zuverlaessigkeit": "Solide für Übergewichtige – konsistent in mehreren unabhängigen Meta-Analysen (Pooyandjoo 2016, Mirrafiei-Umbrella 2024). Aber: Effekt ist moderat und KEIN Ersatz für Diät und Bewegung. Studien hatten hohe Heterogenität (I² >85%), was auf unterschiedliche Studienpopulationen hinweist."
+          }
+        },
+        {
+          "wert": -0.16,
+          "einheit": "% HbA1c",
+          "kontext": "Senkung des HbA1c-Wertes pro 1g L-Carnitin/Tag bei Typ-2-Diabetes",
+          "quelle": "Mirrafiei et al. 2024 Dose-Response Meta-Analyse (n=2.041, 21 RCTs)",
+          "erklaerung": {
+            "was_bedeutet": "Bei Patienten mit Typ-2-Diabetes senkt jedes zusätzliche Gramm L-Carnitin pro Tag den HbA1c-Wert um etwa 0.16%. Bei 2g/Tag wäre das also -0.32% – klinisch durchaus relevant. Zum Vergleich: Eine HbA1c-Senkung von 1% reduziert das Risiko für diabetische Folgeschäden (Augen, Nieren) um etwa 35%. L-Carnitin ist also kein Ersatz für Metformin, kann aber als Adjuvans nützlich sein.",
+            "studie_zeigt": "21 RCTs mit 2.041 Diabetes-Typ-2-Patienten. Effekte pro 1g L-Carnitin täglich: HbA1c -0.16% (GRADE: moderate Evidenz), BMI -0.37 kg/m² (GRADE: low), Nüchternblutzucker reduziert, Triglyzeride reduziert, HDL-Cholesterin erhöht. Wichtig: kein signifikanter Effekt auf Insulinresistenz (HOMA-IR).",
+            "studien_details": "Dose-Response Meta-Analyse publiziert 2024 in Clinical Therapeutics. Beobachtungszeitraum bis 24 Wochen. Studienqualität nach GRADE bewertet. Restricted cubic splines für Dose-Response. Hauptlimitation: hohe Heterogenität (I² >90%).",
+            "zuverlaessigkeit": "Moderate Evidenz für HbA1c-Effekt (GRADE moderate). Bei Typ-2-Diabetes ist L-Carnitin ein interessantes Adjuvans – aber NUR nach Rücksprache mit dem Arzt, da Wechselwirkungen mit anderen Diabetes-Medikamenten möglich sind."
+          }
+        },
+        {
+          "wert": 0.36,
+          "einheit": "SMD",
+          "kontext": "Reduktion des Muskelschmerzes (DOMS) 24-96h nach intensivem Sport",
+          "quelle": "Rahimi et al. 2020 Meta-Analyse (7 RCTs)",
+          "erklaerung": {
+            "was_bedeutet": "SMD 0.36 ist ein 'kleiner bis moderater' Effekt – aber konsistent über mehrere Zeitpunkte (0, 24, 48, 72, 96 Stunden nach dem Training). Konkret: Sportler die 2-3g L-Carnitin täglich einnehmen, empfinden nach intensivem Training weniger Muskelkater als die Placebo-Gruppe. Mechanismus: bessere Durchblutung der Muskeln, antioxidative Wirkung, reduzierte Entzündungsmarker.",
+            "studie_zeigt": "7 RCTs mit 284 gesunden Erwachsenen analysiert. L-Carnitin-Supplementation (1-3g/Tag, akut oder bis 8 Wochen) reduzierte den Muskelschmerz signifikant zu allen 5 Messpunkten (0h, 24h, 48h, 72h, 96h) nach intensivem Training. Auch Kreatinkinase (CK) und Laktatdehydrogenase (LDH) als Marker für Muskelschaden waren niedriger. WICHTIG: Performance-Effekte (Kraft, Ausdauer) waren NICHT konsistent verbessert.",
+            "studien_details": "Meta-Analyse publiziert 2020 in Nutrition. 7 RCTs eingeschlossen, 284 gesunde Erwachsene. Verschiedene Sportarten und Trainingsintensitäten. Methodik: Random-Effects-Modell, sensitivity-Analysen.",
+            "zuverlaessigkeit": "Solide für Recovery-Effekte. Hauptbotschaft: L-Carnitin hilft besser zu REGENERIEREN – aber macht dich nicht stärker oder schneller. Wer schneller wieder trainieren will, profitiert. Wer einfach mehr Leistung will, ist mit Kreatin oder Koffein besser bedient."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "fettabbau",
+        "staerke": 0.65,
+        "kommentar": "Moderate Evidenz bei Übergewicht/Adipositas. Maximaler Effekt bei 2g/Tag. KEIN Ersatz für Kaloriendefizit."
+      },
+      {
+        "ziel": "fettabbau_muskelerhalt",
+        "staerke": 0.55,
+        "kommentar": "Bei Diät unterstützt L-Carnitin den Fettstoffwechsel und kann beim Muskelmassen-Erhalt helfen. Effekt moderat."
+      },
+      {
+        "ziel": "regeneration",
+        "staerke": 0.7,
+        "kommentar": "Reduziert nachweislich Muskelschmerz (DOMS) und Marker für Muskelschaden (CK, LDH) nach intensivem Sport. Stärkster Sport-Effekt."
+      },
+      {
+        "ziel": "diabetes_t2",
+        "staerke": 0.7,
+        "kommentar": "Senkt HbA1c (-0.16% pro g/Tag) und BMI bei Typ-2-Diabetes. Interessantes Adjuvans nach ärztlicher Rücksprache."
+      },
+      {
+        "ziel": "vegan_vegetarisch",
+        "staerke": 0.6,
+        "kommentar": "Vegetarier/Veganer haben niedrigere Carnitin-Speicher. Bei sportlicher Aktivität oder Diät besonders relevant."
+      },
+      {
+        "ziel": "sarkopenie_praevention",
+        "staerke": 0.5,
+        "kommentar": "Bei Senioren möglicher Effekt auf Muskelmasse und reduzierte physische/mentale Fatigue. Evidenz noch eingeschränkt."
+      },
+      {
+        "ziel": "energie",
+        "staerke": 0.4,
+        "kommentar": "Direkter Energie-Boost wie bei Koffein NICHT zu erwarten. Aber indirekt: effizienterer Energiestoffwechsel kann subjektive Erschöpfung reduzieren."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medizinisch",
+        "wert": "niereninsuffizienz_schwer",
+        "schwere": "hart",
+        "hinweis": "Bei schwerer Niereninsuffizienz (Dialyse): L-Carnitin-Spiegel sind oft erniedrigt und Supplementation ist sogar therapeutisch. ABER: nur unter ärztlicher Begleitung – falsche Dosen können Komplikationen verursachen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "schilddruesenunterfunktion",
+        "schwere": "vorsichtig",
+        "hinweis": "L-Carnitin kann die Wirkung von Schilddrüsenhormonen abschwächen. Bei Hashimoto/Hypothyreose mit Levothyroxin: zeitlicher Abstand (>4h) und Arztgespräch."
+      },
+      {
+        "art": "medikament",
+        "wert": "antikoagulantien",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei Warfarin: L-Carnitin kann die antikoagulatorische Wirkung VERSTÄRKEN (INR-Anstieg in Einzelfällen dokumentiert). Engmaschige INR-Kontrolle bei Therapiebeginn."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "epilepsie_krampfanfaelle",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei Krampfleiden kann L-Carnitin die Krampfschwelle senken (selten dokumentiert). Bei Epilepsie mit Antikonvulsiva: Rücksprache mit Neurologe."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "tmao_kardiovaskulaer",
+        "schwere": "info",
+        "hinweis": "L-Carnitin wird von Darmbakterien zu TMAO (Trimethylamin-N-Oxid) verstoffwechselt – einem Marker für kardiovaskuläres Risiko. Bei bekannten Herzerkrankungen: Vorsicht und ärztliche Begleitung empfohlen."
+      }
+    ],
+    "dosierung": {
+      "standard": "1.000 – 2.000 mg L-Carnitin täglich",
+      "bereich": {
+        "min": 1000,
+        "max": 2000,
+        "einheit": "mg"
+      },
+      "obergrenze": "EFSA: bis 3.000 mg/Tag als sicher eingestuft. Über 2g/Tag bringt aber keinen zusätzlichen Nutzen.",
+      "timing": "Vor dem Training (30-60 Min) für Recovery-Effekt. Mit Kohlenhydraten kombinieren – Insulin verbessert die Aufnahme in die Muskelzellen deutlich. Aufgeteilt auf 2 Dosen für stabilere Spiegel.",
+      "quelle": "EFSA + Khosravi 2020 Meta-Analyse",
+      "formen_vergleich": "L-Carnitin (Standardform): günstig, gut belegt für Gewicht und Recovery. L-Carnitin-L-Tartrat (LCLT): bevorzugt für Sport-Recovery (Spillane Studien). Acetyl-L-Carnitin (ALCAR): kreuzt Blut-Hirn-Schranke, interessant für kognitive Effekte. Propionyl-L-Carnitin: speziell für Durchblutung/PAVK. Standard-L-Carnitin ist für die meisten Anwender ausreichend."
+    },
+    "population_spezifisch": {
+      "uebergewichtige": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "Hauptzielgruppe mit stärkstem Effekt. 2g/Tag bei BMI >25, kombiniert mit Kaloriendefizit und Bewegung.",
+        "quelle": "Khosravi 2020 Meta-Analyse"
+      },
+      "diabetiker_t2": {
+        "relevant": true,
+        "staerke": 0.75,
+        "kommentar": "Senkt HbA1c und BMI signifikant. NUR mit ärztlicher Begleitung wegen möglicher Wechselwirkungen.",
+        "quelle": "Mirrafiei 2024 Meta-Analyse"
+      },
+      "sportler": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "2-3g/Tag bei intensiven Trainings-Phasen. Vorteil liegt in der Recovery, nicht in akuter Leistungssteigerung."
+      },
+      "vegetarier_veganer": {
+        "relevant": true,
+        "staerke": 0.55,
+        "kommentar": "5x niedrigere Aufnahme aus Nahrung. Bei Sport oder Diät besonders relevant. 1-2g/Tag ausreichend."
+      },
+      "senioren_50plus": {
+        "relevant": true,
+        "staerke": 0.5,
+        "kommentar": "Möglicher Effekt auf Muskelmasse und Fatigue. Evidenz aber noch limitiert. 1-2g/Tag."
+      }
+    },
+    "warnhinweise": [
+      "L-Carnitin ist KEIN Fatburner im klassischen Sinn. Ohne Kaloriendefizit keine Gewichtsabnahme – es 'ermöglicht' nur den Fettstoffwechsel",
+      "Dosierungs-Plateau bei 2g/Tag – mehr bringt nichts außer höheren Kosten und höherem TMAO-Spiegel",
+      "TMAO-Risiko beachten: Darmbakterien wandeln L-Carnitin in TMAO um – das gilt als Risikofaktor für Atherosklerose. Bei Herz-Kreislauf-Erkrankungen: Vorsicht",
+      "Aufnahme über die Nahrung ist effizienter als über Supplemente – ein 200g Rindersteak liefert ca. 200-300 mg L-Carnitin mit besserer Bioverfügbarkeit",
+      "Performance-Effekte für Sportler werden oft überschätzt – L-Carnitin macht nicht stärker oder schneller, sondern hilft besser zu regenerieren",
+      "Beim ersten Einnehmen kann L-Carnitin einen fischigen Körpergeruch verursachen – das ist harmlos und meist temporär (durch TMAO)",
+      "Bei gleichzeitiger Einnahme mehrerer 'Fettverbrenner' (CLA, Grüntee, Koffein, L-Carnitin) NICHT additiv wirksam – Geld besser sparen"
+    ],
+    "inhalt": [
+      "l_carnitin"
+    ],
+    "quellen": [
+      {
+        "titel": "Effects of l-carnitine supplementation on weight loss and body composition: A systematic review and meta-analysis of 37 randomized controlled clinical trials with dose-response analysis",
+        "autoren": "Khosravi H, Salehi-Abargouei A",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S240545772030053X",
+        "jahr": 2020,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "The Effects of L-Carnitine Supplementation on Weight Loss, Glycemic Control, and Cardiovascular Risk Factors in Patients With Type 2 Diabetes: A Systematic Review and Dose-response Meta-Analysis",
+        "autoren": "Mirrafiei A, Jayedi A, Shab-Bidar S",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/38594107/",
+        "jahr": 2024,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "The Effect of the L-Carnitine Supplementation on Obesity Indices: An Umbrella Meta-Analysis",
+        "autoren": "Umbrella Meta-Analyse 2025",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40298161/",
+        "jahr": 2025,
+        "typ": "umbrella_review"
+      },
+      {
+        "titel": "The Effect of L-Carnitine Supplementation on Exercise-Induced Muscle Damage: A Systematic Review and Meta-Analysis of Randomized Clinical Trials",
+        "autoren": "Rahimi MH et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/32154768/",
+        "jahr": 2020,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Effects of L-carnitine supplementation on markers of exercise-induced muscle damage in healthy adults: A systematic review and meta-analysis",
+        "autoren": "ClinicalNutrition ESPEN",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2950273X25000256",
+        "jahr": 2025,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "l-Carnitine Supplementation in Recovery after Exercise",
+        "autoren": "Fielding R, Riede L, Lugo JP, Bellamine A",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5872767/",
+        "jahr": 2018,
+        "typ": "review"
+      },
+      {
+        "titel": "Role of L-carnitine in exercise training: Anti-inflammatory, antioxidant, and metabolic interactions",
+        "autoren": "Sports Medicine Review",
+        "url": "https://www.sciencedirect.com/science/article/pii/S266713792500030X",
+        "jahr": 2025,
+        "typ": "review"
+      },
+      {
+        "titel": "Effects of L-Carnitine Intake on Exercise-Induced Muscle Damage and Oxidative Stress: A Narrative Scoping Review",
+        "autoren": "Nutrients 2023",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10255885/",
+        "jahr": 2023,
+        "typ": "review"
+      },
+      {
+        "titel": "L-Carnitine – Health Professional Fact Sheet",
+        "autoren": "NIH Office of Dietary Supplements",
+        "url": "https://ods.od.nih.gov/factsheets/Carnitine-HealthProfessional/",
+        "jahr": 2024,
+        "typ": "position_stand"
+      }
     ]
   },
   "koffein": {
@@ -2957,6 +4051,276 @@
     ],
     "inhalt": [
       "koffein"
+    ]
+  },
+  "pre_workout": {
+    "id": "pre_workout",
+    "name": "Pre-Workout (Kombi-Produkt)",
+    "kategorie": "performance",
+    "ikon": "⚡",
+    "kurz_beschreibung": "Multi-Ingredient-Supplement mit Koffein, Beta-Alanin und Citrullin als Kern. Effekt der Einzelkomponenten gut belegt – aber: Proprietary Blends und Über-Dosierungen häufig kritisch.",
+    "beschreibung": {
+      "was_ist_es": "Pre-Workout-Supplements (englisch Multi-Ingredient Pre-Workout Supplements, MIPS) sind Mischungen aus typischerweise 15-20 verschiedenen Wirkstoffen. Eine Analyse der Top-100-Produkte zeigt: durchschnittlich 18 Inhaltsstoffe pro Produkt, davon 44% in 'Proprietary Blends' ohne Mengenangaben. Die Hauptkomponenten mit echter Evidenz: Koffein (in 86% der Produkte, Ø 254mg), Beta-Alanin (87%, Ø 2g), L-Citrullin (71%, Ø 4g), Tyrosin (63%), Taurin (51%), Kreatin (49%).",
+      "wie_wirkt_es": "Die Wirkung kommt nicht vom 'Produkt', sondern von den Einzelkomponenten: Koffein blockiert Adenosin-Rezeptoren (-> Wachheit, Fokus, weniger wahrgenommene Anstrengung). Beta-Alanin erhöht intramuskuläre Carnosin-Speicher und puffert Milchsäure bei intensiver Belastung. L-Citrullin wird zu L-Arginin metabolisiert und verbessert NO-Produktion → bessere Durchblutung (Pump-Effekt). Synergistische Effekte zwischen den Komponenten sind theoretisch plausibel, aber selten in RCTs nachgewiesen.",
+      "warum_wichtig": "Pre-Workout ist DAS Marketing-Lieblingsprodukt der Supplement-Industrie. Tatsache: Die Wirkstoffe einzeln gekauft sind oft günstiger und besser dosierbar als ein Markenprodukt. Aber: Wer Convenience will und ein gutes Produkt mit transparenter Deklaration findet, kann von der Kombination profitieren – besonders bei intensivem Krafttraining oder vor langen Trainingseinheiten."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Akute Steigerung der Wiederholungszahlen und Muskelausdauer (Koffein 200-300mg)",
+        "Reduktion subjektiver Erschöpfung (RPE) und schnellere Reaktion (Koffein + Tyrosin)",
+        "Verbesserte Durchblutung und 'Pump' (L-Citrullin 6-8g)"
+      ],
+      "ideal_fuer": "Krafttrainierende, Anwender die Convenience bevorzugen, Vor-Training-Energie-Mangel, Personen mit gut tolerierbarer Koffein-Empfindlichkeit",
+      "dosis": "30-45 Minuten vor dem Training. WICHTIG: einzelne Wirkstoffmengen prüfen – Standard: Koffein 200-300mg, Beta-Alanin 2-5g, Citrullin 6-8g",
+      "vorsicht_bei": "Bluthochdruck, Herzrhythmusstörungen, Schlafprobleme, Schwangerschaft, Angststörungen, gleichzeitiger Konsum anderer Stimulanzien",
+      "mythen": [
+        "„Mehr Zutaten = besseres Produkt“ – fast immer falsch. Top-Produkte enthalten 3-5 effektive Wirkstoffe in vollen Dosen. 20+ Zutaten bedeuten meist Unterdosierung jedes einzelnen.",
+        "„Proprietary Blends schützen die Geheimrezeptur“ – fast immer Marketing-Trick. Verschleiert Unterdosierung. Vermeide Produkte ohne offene Deklaration der Wirkstoffmengen.",
+        "„Das Tingeln nach Beta-Alanin (Paresthesia) zeigt dass es wirkt“ – stimmt teilweise. Ist ein Zeichen ausreichender Dosis (mind. 1.6g), aber sagt NICHTS über die Carnosin-Speicher aus (brauchen 4-8 Wochen Aufbau).",
+        "„Pre-Workout direkt nach dem Aufstehen ist optimal“ – falsch. Auf nüchternen Magen verstärkt Koffein Magenreizung und Unruhe. 30-60 Min vor Training mit etwas Essen ist besser.",
+        "„Toleranz-Entwicklung bedeutet höhere Dosen sind nötig“ – problematisch. Bei Koffein-Toleranz lieber 1-2 Wochen Deload als die Dosis erhöhen. Über 600mg/Tag steigen Nebenwirkungen exponentiell."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 70,
+      "review_typ": "meta_analyse",
+      "studien_anzahl": 45,
+      "konsens": "Stratton 2022 JISSN Review + Komponenten-spezifische Meta-Analysen (Koffein, Beta-Alanin, Citrullin)",
+      "effekt_groesse": [
+        {
+          "wert": 2.6,
+          "einheit": "Wiederholungen",
+          "kontext": "Akute Steigerung der Bankdrücken-Wiederholungen mit MIPS vs. Placebo",
+          "quelle": "Stratton et al. 2022 JISSN Systematic Review (multiple RCTs)",
+          "erklaerung": {
+            "was_bedeutet": "Pre-Workout-Konsumenten schaffen im Bankdrücken durchschnittlich 2-3 mehr Wiederholungen pro Satz als die Placebo-Gruppe. Das ist ein klinisch relevanter Effekt: Bei 4 Sätzen bedeutet das ~10 zusätzliche Reps pro Übung – langfristig mehr Trainingsvolumen, was Muskelaufbau fördert. Effekt ist primär dem Koffein-Anteil zuzuschreiben (200-300mg).",
+            "studie_zeigt": "Stratton 2022 reviewte 12 RCTs zu koffeinhaltigen und 8 zu koffeinfreien MIPS. Ergebnis: Koffeinhaltige MIPS verbessern signifikant: 1) Wiederholungen bis Muskelversagen, 2) Maximalkraft (1RM-Test), 3) subjektive Energie/Fokus, 4) Time-to-Exhaustion. Koffeinfreie MIPS hatten geringere oder keine signifikanten akuten Effekte – aber chronische Effekte (4+ Wochen) durch Beta-Alanin und Citrullin.",
+            "studien_details": "Systematic Review publiziert 2022 im Journal of the International Society of Sports Nutrition (JISSN). 20 RCTs eingeschlossen, hauptsächlich an Krafttrainierten. Studiendauer: akut (Einzeldosis) bis chronisch (8 Wochen). Hauptlimitation: hohe Heterogenität der Produkte.",
+            "zuverlaessigkeit": "Solide für akute Performance-Effekte – aber: Die meisten Studien wurden mit spezifischen Marken-Produkten durchgeführt. Generalisierbarkeit auf alle MIPS limitiert. Wer einzeln Koffein nimmt, erreicht ähnliche Effekte."
+          }
+        },
+        {
+          "wert": 254,
+          "einheit": "mg Koffein durchschnittlich",
+          "kontext": "Durchschnittlicher Koffein-Gehalt der Top-100 Pre-Workout-Produkte",
+          "quelle": "Jagim et al. 2019 Marktanalyse (Top-100-Produkte)",
+          "erklaerung": {
+            "was_bedeutet": "Die meisten Pre-Workout-Produkte enthalten 254mg Koffein – das entspricht etwa 2.5 Tassen starkem Espresso. Für Performance ist das eine wirksame Dosis. Aber: viele Produkte gehen weit darüber (bis 400mg in einer Portion), was bei nicht-koffein-gewöhnten Personen zu Herzrasen, Übelkeit oder Angstzuständen führen kann. EFSA-Empfehlung: max. 200mg pro Einzeldosis, 400mg pro Tag.",
+            "studie_zeigt": "Analyse der 100 meistverkauften Pre-Workout-Produkte: 86% enthalten Koffein, durchschnittlich 254 ± 79.5 mg pro Portion. Beta-Alanin: 87%, Ø 2g (effektive Akut-Dosis 2-5g). L-Citrullin: 71%, Ø 4g (effektive Dosis 6-8g). Heißt: Die meisten Produkte haben Koffein in voller Dosis, andere Wirkstoffe oft unterdosiert.",
+            "studien_details": "Querschnitt-Marktanalyse der Top-100-Produkte basierend auf US-Verkaufsdaten. Methodik: Analyse der Inhaltsstoffe und deklarierten Mengen.",
+            "zuverlaessigkeit": "Hoch für die Aussage über typische Inhaltsstoff-Mengen. Praktische Konsequenz: Vor Kauf IMMER die deklarierten Mengen prüfen – besonders bei Beta-Alanin und Citrullin (häufig unterdosiert)."
+          }
+        },
+        {
+          "wert": 44.3,
+          "einheit": "% Proprietary Blends",
+          "kontext": "Anteil der Pre-Workout-Inhaltsstoffe in nicht-deklarierten 'Proprietary Blends'",
+          "quelle": "Jagim et al. 2019 Marktanalyse",
+          "erklaerung": {
+            "was_bedeutet": "Fast die Hälfte (44.3%) aller Inhaltsstoffe in den Top-Pre-Workout-Produkten ist in sogenannten 'Proprietary Blends' versteckt – Mischungen ohne Einzeldosen-Angabe. Konsequenz für den Käufer: Du weißt nicht ob du eine wirksame Dosis bekommst. Marketing-Argument: 'Geheim-Rezeptur, vor Konkurrenz schützen'. Realität: meist Unterdosierung kaschieren.",
+            "studie_zeigt": "Marketing-Analyse: Pro Produkt durchschnittlich 18.4 ± 9.7 Inhaltsstoffe, davon 8.1 ± 9.9 in proprietary blends. Beispiel: 'Energy & Focus Blend 5g' kann 4.8g billiges Taurin + 200mg wirksames Koffein enthalten – oder umgekehrt. Beide Mischungen wiegen 5g, kosten gleich, wirken aber komplett unterschiedlich.",
+            "studien_details": "Branchen-Analyse-Studie. Wichtige Konsequenz für den Konsumenten: Pre-Workouts MIT vollständig deklarierten Mengen pro Inhaltsstoff klar bevorzugen.",
+            "zuverlaessigkeit": "Sehr hoch. Standard-Empfehlung der Sportmedizin: NUR Produkte mit transparenter Deklaration kaufen. Marken die proprietary blends nutzen sind grundsätzlich verdächtig."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "kraftsteigerung",
+        "staerke": 0.75,
+        "kommentar": "Solide Evidenz für akute Steigerung von Maximalkraft, Wiederholungen und subjektiver Energie – PRIMÄR durch Koffein."
+      },
+      {
+        "ziel": "muskelausdauer",
+        "staerke": 0.7,
+        "kommentar": "Beta-Alanin (bei chronischer Einnahme 4+ Wochen) und Koffein (akut) verbessern Time-to-Exhaustion."
+      },
+      {
+        "ziel": "energie",
+        "staerke": 0.8,
+        "kommentar": "Subjektive Energie und Fokus klar verbessert – PRIMÄR Koffein-Effekt. Etwas zusätzliche Wirkung durch Tyrosin."
+      },
+      {
+        "ziel": "pump_durchblutung",
+        "staerke": 0.7,
+        "kommentar": "L-Citrullin verbessert NO-Produktion und Muskel-Durchblutung – wenn ausreichend dosiert (6-8g)."
+      },
+      {
+        "ziel": "intensive_workouts",
+        "staerke": 0.75,
+        "kommentar": "Bei kurzen, hochintensiven Einheiten (CrossFit, HIIT, Krafttraining) am wirksamsten."
+      },
+      {
+        "ziel": "ausdauer_lang",
+        "staerke": 0.45,
+        "kommentar": "Bei längeren Ausdauerleistungen weniger relevant – Koffein wirkt, aber andere MIPS-Komponenten weniger nützlich."
+      },
+      {
+        "ziel": "muskelaufbau",
+        "staerke": 0.5,
+        "kommentar": "INDIREKT durch mehr Trainingsvolumen. Kein direkter Muskelaufbau-Effekt – dafür braucht es Protein + Krafttraining."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medizinisch",
+        "wert": "bluthochdruck",
+        "schwere": "hart",
+        "hinweis": "Bei unbehandeltem oder schwer kontrollierbarem Bluthochdruck: Koffein und Stimulanzien können Blutdruck akut um 5-15 mmHg erhöhen. NUR mit Arzt absprechen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "herzrhythmusstoerungen",
+        "schwere": "hart",
+        "hinweis": "Bei Vorhofflimmern, ventrikulären Extrasystolen oder anderen Arrhythmien: KEINE Pre-Workouts. Koffein und Yohimbe können Episoden auslösen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "angststoerungen",
+        "schwere": "vorsichtig",
+        "hinweis": "Hohe Koffein-Dosen können Angstzustände, Panikattacken und Schlafstörungen verstärken. Bei diagnostizierten Angststörungen: vermeiden oder sehr niedrige Dosen testen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "schwangerschaft",
+        "schwere": "hart",
+        "hinweis": "In Schwangerschaft und Stillzeit: KEIN Pre-Workout (200-400mg Koffein und Stimulanzien zu hoch dosiert). EFSA empfiehlt max. 200mg Koffein/Tag bei Schwangeren – einzelne Tasse Kaffee statt Pre-Workout."
+      },
+      {
+        "art": "medikament",
+        "wert": "blutdrucksenker",
+        "schwere": "vorsichtig",
+        "hinweis": "Koffein kann die Wirkung von Beta-Blockern, ACE-Hemmern und anderen Antihypertensiva abschwächen. Blutdruck-Monitoring."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "schlafstoerungen",
+        "schwere": "vorsichtig",
+        "hinweis": "Koffein hat Halbwertszeit von 5-6h – Pre-Workout am späten Nachmittag oder Abend stört den Schlaf nachweislich. Bei Schlafproblemen: nur morgens trainieren oder koffeinfrei."
+      },
+      {
+        "art": "alter",
+        "wert": "minderjaehrig",
+        "schwere": "hart",
+        "hinweis": "Für Personen unter 18 Jahren NICHT empfohlen. Pre-Workouts werden teilweise an Jugendliche vermarktet – dosis-mäßig aber nur für Erwachsene mit Krafttraining-Erfahrung sinnvoll."
+      }
+    ],
+    "dosierung": {
+      "standard": "1 Portion (5-15g Pulver) 30-45 Minuten vor dem Training",
+      "bereich": {
+        "min": 1,
+        "max": 1,
+        "einheit": "Portion"
+      },
+      "obergrenze": "Niemals doppelte Dosis – Koffein-Tagesgrenze: 400mg total (inkl. Kaffee/Tee)",
+      "timing": "30-45 Min vor dem Training. Mit etwas Wasser, idealerweise nach kleinem Snack (nicht ganz nüchtern). Nicht später als 6h vor dem Schlaf wegen Koffein-Halbwertszeit.",
+      "quelle": "Stratton 2022 JISSN + EFSA Koffein-Empfehlungen",
+      "formen_vergleich": "Mit Stimulanz (klassisch): Maximale akute Performance, aber Schlafstörungen und Toleranz-Aufbau. Stimulanz-frei: Geringere akute Wirkung, aber später am Tag trainierbar und keine Schlafstörung. Selbst zusammengestellt (Koffein 200mg + Beta-Alanin 3g + Citrullin 6g): Günstigste und kontrollierteste Option. Coffee Plus DIY: Espresso + 3g Beta-Alanin + 6g Citrullin Malat funktioniert vergleichbar zu vielen Marken-Produkten."
+    },
+    "population_spezifisch": {
+      "krafttrainierende": {
+        "relevant": true,
+        "staerke": 0.85,
+        "kommentar": "Stärkste Effekte bei Personen mit 1-3 Jahren Trainings-Erfahrung und intensiven Sessions. Bei Hochintensiv-Training maximaler Nutzen.",
+        "quelle": "Stratton 2022 JISSN"
+      },
+      "anfaenger": {
+        "relevant": false,
+        "staerke": 0.4,
+        "kommentar": "Anfänger profitieren mehr von guter Technik und konsistentem Training als von Pre-Workout. Erst nach 6+ Monaten Erfahrung sinnvoll."
+      },
+      "ausdauersportler": {
+        "relevant": true,
+        "staerke": 0.55,
+        "kommentar": "Hauptnutzen aus Koffein. Volle MIPS oft 'Overkill' – einfaches Koffein 3-6mg/kg KG günstiger und ebenso wirksam."
+      },
+      "koffein_empfindliche": {
+        "relevant": false,
+        "staerke": 0.2,
+        "kommentar": "Bei Koffein-Empfindlichkeit (Herzklopfen, Unruhe, Übelkeit schon bei 1 Kaffee): Pre-Workout meiden oder koffeinfreie Versionen testen."
+      },
+      "abendsportler": {
+        "relevant": false,
+        "staerke": 0.3,
+        "kommentar": "Bei abendlichem Training (>17 Uhr): Koffein stört nachweislich Schlafqualität. Stimulanzfreie Alternativen oder Koffein-Alternativen sinnvoll."
+      }
+    },
+    "warnhinweise": [
+      "PROPRIETARY BLENDS MEIDEN. Nur Produkte kaufen mit vollständiger Mengen-Deklaration JEDES Wirkstoffs. Marken ohne Transparenz sind verdächtig",
+      "Koffein-Tagesgrenze 400mg ist absolut – wer morgens 2 Kaffee + Pre-Workout (300mg) trinkt, ist schon über der EFSA-Grenze",
+      "Beta-Alanin-Tingeln (Paresthesia) im Gesicht/Händen ist HARMLOS – aber Zeichen dass die Dosis ausreichend ist (mind. 1.6g)",
+      "Koffein wirkt für 5-6h – Pre-Workout am späten Nachmittag oder Abend führt zu Einschlafproblemen. Strikt: nur vor 16 Uhr trainieren mit Stimulanzien",
+      "Toleranz-Aufbau ist real: Wer täglich Pre-Workout nimmt, verliert die Wirkung. 1-2 Wochen Deload alle 8-12 Wochen wiederherstellen",
+      "Wechselwirkung mit Asthma-Medikamenten (Theophyllin) und MAO-Hemmern – können toxisch verstärkt werden. Bei Medikamenten Arzt fragen",
+      "Yohimbin in einigen Pre-Workouts ist umstritten – kann Blutdruck-Spitzen und Panikattacken auslösen. Kritisch prüfen",
+      "DIY-Variante (Koffein + Beta-Alanin + Citrullin einzeln gekauft) ist oft 50-70% günstiger und besser dosierbar als Marken-Produkte"
+    ],
+    "inhalt": [
+      "koffein",
+      "beta_alanin",
+      "citrullin"
+    ],
+    "quellen": [
+      {
+        "titel": "The Influence of Caffeinated and Non-Caffeinated Multi-Ingredient Pre-Workout Supplements on Resistance Exercise Performance and Subjective Outcomes",
+        "autoren": "Stratton MT, Siedler MR, Harty PS, et al.",
+        "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-022-00501-x",
+        "jahr": 2022,
+        "typ": "systematic_review",
+        "doi": "10.1186/s12970-022-00501-x"
+      },
+      {
+        "titel": "Common Ingredient Profiles of Multi-Ingredient Pre-Workout Supplements",
+        "autoren": "Jagim AR, Harty PS, Camic CL",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6413194/",
+        "jahr": 2019,
+        "typ": "marktanalyse",
+        "doi": "10.3390/nu11020254"
+      },
+      {
+        "titel": "Pre-Workout Supplements – An Evidence-Based Guide (NSCA)",
+        "autoren": "Gonzalez A, Escalante G",
+        "url": "https://www.nsca.com/education/articles/ptq/pre-workout-supplements-an-evidence--based-guide/",
+        "jahr": 2024,
+        "typ": "review"
+      },
+      {
+        "titel": "A single dose multi-ingredient pre-workout supplement enhances upper body resistance exercise performance",
+        "autoren": "Beyer KS, Gadsden M, Patterson-Zuber P, Gonzalez AM",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10846641/",
+        "jahr": 2024,
+        "typ": "rct"
+      },
+      {
+        "titel": "Effects of Multi-Ingredient Pre-Workout Supplement and Caffeine on Bench Press Performance",
+        "autoren": "Cabre HE, Greenwalt CE, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9105861/",
+        "jahr": 2022,
+        "typ": "rct"
+      },
+      {
+        "titel": "Acute effects of multi-ingredient pre-workout dietary supplement on anaerobic performance in untrained men",
+        "autoren": "BMC Sports Science 2024",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11163698/",
+        "jahr": 2024,
+        "typ": "rct"
+      },
+      {
+        "titel": "EFSA Scientific Opinion on the Safety of Caffeine",
+        "autoren": "EFSA Panel on Dietetic Products",
+        "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2015.4102",
+        "jahr": 2015,
+        "typ": "position_stand"
+      },
+      {
+        "titel": "ISSN exercise & sport nutrition review update: research & recommendations",
+        "autoren": "Kerksick CM, Wilborn CD, et al.",
+        "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-018-0242-y",
+        "jahr": 2018,
+        "typ": "position_stand"
+      }
     ]
   },
   "eisen": {
@@ -3374,6 +4738,1067 @@
       "eisen",
       "magnesium_trace",
       "multivitamin"
+    ]
+  },
+  "melatonin": {
+    "id": "melatonin",
+    "name": "Melatonin",
+    "kategorie": "gesundheit",
+    "ikon": "🌙",
+    "kurz_beschreibung": "Körpereigenes Schlafhormon. Solide Evidenz für Jetlag, Schichtarbeit und Einschlaflatenz – schwächere Wirkung bei chronischer Insomnie bei Erwachsenen.",
+    "beschreibung": {
+      "was_ist_es": "Melatonin ist ein körpereigenes Hormon, das in der Zirbeldrüse (Epiphyse) produziert wird. Es ist kein 'Schlafmittel' im klassischen Sinn, sondern ein Zeitgeber-Hormon: es signalisiert dem Körper 'es ist Nacht'. Die natürliche Produktion beginnt etwa 2-3 Stunden vor der gewohnten Schlafenszeit (sogenannte DLMO = Dim Light Melatonin Onset) und steigt während der Nacht. Mit zunehmendem Alter sinkt die körpereigene Produktion. In Deutschland ist Melatonin bis 0.5mg frei verkäuflich – ab 1mg apothekenpflichtig, ab 2mg meist verschreibungspflichtig.",
+      "wie_wirkt_es": "Melatonin bindet an MT1- und MT2-Rezeptoren im Hypothalamus (suprachiasmatischer Kern – die innere Uhr des Körpers). MT1 dämpft die Wachheitssignale, MT2 verschiebt den zirkadianen Rhythmus. Anders als Benzodiazepine oder Z-Substanzen erzwingt Melatonin keinen Schlaf – es erleichtert den natürlichen Übergang. Deshalb ist das Timing wichtiger als die Dosis: ein gut getimtes 0.5mg wirkt besser als ein zu spät genommenes 5mg.",
+      "warum_wichtig": "Schichtarbeit, Jetlag, blaues Licht abends, unregelmäßige Schlafenszeiten – moderne Lebensgewohnheiten stören die natürliche Melatonin-Produktion massiv. Auch ab dem 40. Lebensjahr sinkt die körpereigene Produktion deutlich. Während Melatonin bei chronischer Insomnie nur moderate Effekte zeigt, ist es bei zirkadianen Rhythmusstörungen (Jetlag, Schichtarbeit, verzögerte Schlafphase) eine der wenigen wirklich gut belegten Optionen."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Reduziert Einschlafzeit um etwa 7 Minuten (Meta-Analyse, n=1.689)",
+        "Verlängert Gesamtschlafzeit um ca. 8 Minuten – Plateau bei 4mg/Tag",
+        "Cochrane: gut belegte Wirksamkeit bei Jetlag (besonders nach Osten)"
+      ],
+      "ideal_fuer": "Personen mit Jetlag, Schichtarbeiter, verzögerte Schlafphase, Kinder/Jugendliche mit Schlafstörungen, ältere Erwachsene mit gestörtem Rhythmus",
+      "dosis": "0.5–4 mg Melatonin 30-60 Min. vor gewünschter Schlafenszeit (Plateau bei 4mg)",
+      "vorsicht_bei": "Schwangerschaft/Stillzeit, Autoimmunerkrankungen, Antidepressiva (SSRI), Schlafmittel, Blutverdünner, Auto fahren am Folgetag",
+      "mythen": [
+        "„Mehr Melatonin = besserer Schlaf“ – falsch. Die Dose-Response zeigt ein Plateau bei 4mg/Tag. Höhere Dosen können sogar zu paradoxer Müdigkeit am Morgen führen.",
+        "„Melatonin macht süchtig wie Schlaftabletten“ – falsch. Melatonin verursacht keine körperliche Abhängigkeit und keinen Rebound-Effekt bei Absetzen.",
+        "„Melatonin ist ein natürliches Mittel und deshalb unbedenklich“ – mit Vorsicht. Wechselwirkungen mit Antidepressiva, Blutverdünnern und bei Autoimmunerkrankungen sind real und können relevant sein.",
+        "„Melatonin hilft bei jeder Form von Schlafstörung gleich gut“ – falsch. Am besten wirkt es bei zirkadianen Rhythmusstörungen (Jetlag, Schichtarbeit). Bei chronischer Insomnie bei Erwachsenen sind die Effekte deutlich kleiner.",
+        "„Höhere US-Dosen (5-10mg) sind in Deutschland verboten weil sie zu stark wirken“ – nicht ganz richtig. Sie sind verschreibungspflichtig wegen möglicher Nebenwirkungen und unklarer Langzeitwirkung – nicht weil sie 'gefährlich stark' wirken."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 75,
+      "review_typ": "meta_analyse",
+      "studien_anzahl": 70,
+      "konsens": "Cruz-Sanabria 2024 Dose-Response NMA + Ferracioli-Oda Meta-Analyse + AASM Praxisleitlinien",
+      "effekt_groesse": [
+        {
+          "wert": -7.06,
+          "einheit": "Minuten",
+          "kontext": "Schnellere Einschlafzeit durch Melatonin im Vergleich zu Placebo",
+          "quelle": "Ferracioli-Oda et al. Meta-Analyse (n=1.683, 19 RCTs)",
+          "erklaerung": {
+            "was_bedeutet": "Personen die Melatonin einnehmen, schlafen im Durchschnitt etwa 7 Minuten schneller ein als die Placebo-Gruppe. Das mag wenig klingen – aber für jemanden der normalerweise 20-30 Minuten zum Einschlafen braucht, ist das eine Reduktion um 25-35%. Bei Personen mit zirkadianen Rhythmusstörungen (Jetlag, Schichtarbeit) ist der Effekt deutlich größer.",
+            "studie_zeigt": "19 RCTs mit insgesamt 1.683 Teilnehmern wurden analysiert. Effektstärken: Einschlaflatenz -7.06 Minuten (95% CI: -4.37 bis -9.75), Gesamtschlafzeit +8.25 Minuten (95% CI: +1.74 bis +14.75), Schlafqualität SMD 0.22. Wichtiger Befund: Effekte bleiben bei längerer Einnahme stabil – keine Toleranzentwicklung wie bei klassischen Schlafmitteln. Aber: Absoluter Nutzen ist kleiner als bei verschreibungspflichtigen Schlafmedikamenten.",
+            "studien_details": "Meta-Analyse publiziert 2013 in PLOS One. 19 randomisierte kontrollierte Studien, double-blind. Verschiedene Dosen (0.5-5 mg), verschiedene Indikationen (primäre Schlafstörungen). Methodik: random-effects-Modell, meta-regression für Dosis-Effekt.",
+            "zuverlaessigkeit": "Solide für die Aussage 'Melatonin wirkt'. Aber: Die Effekte sind klein bis moderat. Bei chronischer Insomnie bei Erwachsenen zeigte eine spätere Meta-Analyse (Cho 2022) sogar gar keinen signifikanten Effekt – nur bei Kindern/Jugendlichen. Melatonin ist also kein Wunderschlafmittel, sondern ein moderates Hilfsmittel mit gutem Sicherheitsprofil."
+          }
+        },
+        {
+          "wert": 4,
+          "einheit": "mg/Tag",
+          "kontext": "Dosis-Plateau für maximale Wirksamkeit auf Einschlafzeit und Gesamtschlafzeit",
+          "quelle": "Cruz-Sanabria et al. 2024 Dose-Response Meta-Analyse (n=1.689, 26 RCTs)",
+          "erklaerung": {
+            "was_bedeutet": "Die Dosis-Wirkungs-Analyse zeigt: Melatonin wirkt zunehmend bis 4mg/Tag – danach bringt mehr keinen zusätzlichen Nutzen mehr. Über 4mg/Tag können sogar paradoxe Effekte auftreten (Tagesmüdigkeit, gestörter Rhythmus). Wichtiger: Das Timing ist entscheidender als die Dosis. Eine gut getimte Mikrodosis (0.5mg) kann besser wirken als ein schlecht getimtes 5mg.",
+            "studie_zeigt": "26 RCTs zwischen 1987 und 2020 analysiert. Dose-Response-Kurve zeigt: progressive Verbesserung der Einschlaflatenz bis 4mg, dann Plateau. Wichtige Meta-Regression: 'Insomnia-Status' (β=0.50) und 'Zeit zwischen Einnahme und Schlafenszeit' (β=-0.16) waren die wichtigsten Prädiktoren der Wirkung. Optimale Einnahme: 3 Stunden vor der gewünschten Schlafenszeit für Rhythmus-Verschiebung, 30-60 Min. für direkten Schlafanstoß.",
+            "studien_details": "Systematische Dose-Response Meta-Analyse publiziert 2024 in Journal of Pineal Research. Einer der umfassendsten Reviews zum Thema Dosis und Timing. Methodik: Standard mean differences, meta-regression mit multiplen Prädiktoren.",
+            "zuverlaessigkeit": "Sehr hoch für die Dose-Response-Aussage. Eine der besten verfügbaren Quellen für praktische Anwendungs-Empfehlungen. Wichtige praktische Konsequenz: Die deutsche Standarddosis (0.5-2mg) ist oft ausreichend – höhere US-Dosen (5-10mg) bieten kaum Vorteile bei höherem Nebenwirkungsrisiko."
+          }
+        },
+        {
+          "wert": 8.25,
+          "einheit": "Minuten",
+          "kontext": "Zusätzliche Gesamtschlafzeit pro Nacht vs. Placebo",
+          "quelle": "Ferracioli-Oda et al. + Cruz-Sanabria 2024",
+          "erklaerung": {
+            "was_bedeutet": "Wer Melatonin einnimmt, schläft im Schnitt etwa 8 Minuten länger pro Nacht. Das klingt wenig, ist aber bei Insomnie kumulativ relevant: Über eine Woche sind das fast eine Stunde mehr Schlaf. Bei Jetlag sind die Effekte deutlich größer (bis zu 1-2 Stunden bessere Schlafqualität in den ersten Nächten am Zielort).",
+            "studie_zeigt": "Gepoolte Daten aus mehreren Meta-Analysen zeigen konsistent: Gesamtschlafzeit-Steigerung zwischen 8-15 Minuten. Effekt steigt mit Dosis bis 4mg, dann Plateau. WICHTIG: Bei chronischer Insomnie bei Erwachsenen ohne komorbide Erkrankung war der Effekt in einer Subgruppenanalyse (Cho 2022) NICHT signifikant. Bei Kindern und Jugendlichen war er deutlich.",
+            "studien_details": "Daten aus mehreren Meta-Analysen kombiniert. Cruz-Sanabria 2024 zeigt: 2 mg/Tag ist signifikant wirksamer als Placebo, 3mg/Tag wirksamer als 2mg, danach Plateau.",
+            "zuverlaessigkeit": "Solide aber mit Differenzierung: Bei Jetlag und Schichtarbeit hervorragend belegt. Bei chronischer Insomnie bei Erwachsenen weniger eindeutig. Bei Kindern/Jugendlichen mit Schlafstörungen sehr gut belegt – American Academy of Sleep Medicine empfiehlt Melatonin hier explizit."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "jetlag",
+        "staerke": 0.9,
+        "kommentar": "Cochrane Review: solide Evidenz besonders bei Reisen über mehrere Zeitzonen nach Osten. AASM-Empfehlung: Standard-Indikation."
+      },
+      {
+        "ziel": "schichtarbeit",
+        "staerke": 0.8,
+        "kommentar": "Hilft bei der Anpassung an Schichtwechsel. AASM-Praxisleitlinie empfiehlt Melatonin als Hilfsmittel."
+      },
+      {
+        "ziel": "schlafphase_verzoegert",
+        "staerke": 0.8,
+        "kommentar": "Bei Delayed Sleep Phase Disorder (DSPD): wirksam wenn 5-6h vor der gewünschten Schlafenszeit genommen wird."
+      },
+      {
+        "ziel": "schlaf",
+        "staerke": 0.65,
+        "kommentar": "Moderate Wirkung bei allgemeinen Einschlafproblemen. Effekt bei Erwachsenen ohne klare Rhythmusstörung begrenzt."
+      },
+      {
+        "ziel": "schlafqualitaet_senioren",
+        "staerke": 0.7,
+        "kommentar": "Ab 55+: Natürliche Melatonin-Produktion sinkt. Retardierte Form (Circadin 2mg) ist EU-zugelassen für Insomnie über 55."
+      },
+      {
+        "ziel": "kinder_jugendliche_schlaf",
+        "staerke": 0.75,
+        "kommentar": "Gut belegt bei ADHS-bedingter Schlafstörung und Autismus-Spektrum-Störung. NUR mit Kinderarzt absprechen."
+      },
+      {
+        "ziel": "stress_angst",
+        "staerke": 0.4,
+        "kommentar": "Kleiner positiver Effekt durch besseren Schlaf möglich. Nicht primäre Indikation."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medizinisch",
+        "wert": "schwangerschaft",
+        "schwere": "hart",
+        "hinweis": "In Schwangerschaft und Stillzeit NICHT empfohlen – unzureichende Sicherheitsdaten. Auf Cumarin-Blutverdünner kann es einwirken."
+      },
+      {
+        "art": "medikament",
+        "wert": "antidepressiva_ssri",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei SSRIs (Fluoxetin, Sertralin) und SNRIs: Wechselwirkung möglich (Serotonin-Modulation). Mit Arzt absprechen."
+      },
+      {
+        "art": "medikament",
+        "wert": "schlafmittel_benzo",
+        "schwere": "vorsichtig",
+        "hinweis": "Kombination mit Z-Substanzen (Zopiclon, Zolpidem) oder Benzodiazepinen erhöht Tagesmüdigkeit deutlich. KEINE Selbstmedikation."
+      },
+      {
+        "art": "medikament",
+        "wert": "antikoagulantien",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei Warfarin/Marcumar: Melatonin kann INR beeinflussen. Engmaschiges Monitoring bei Therapiebeginn."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "autoimmunerkrankung",
+        "schwere": "vorsichtig",
+        "hinweis": "Melatonin moduliert das Immunsystem – bei Autoimmunerkrankungen (Lupus, MS, RA) Wirkung unvorhersehbar. Vor Einnahme Arzt fragen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "diabetes",
+        "schwere": "info",
+        "hinweis": "Melatonin kann Insulinsensitivität reduzieren – bei Diabetes-Medikation Blutzucker beobachten."
+      },
+      {
+        "art": "verkehr",
+        "wert": "autofahren_wachheit",
+        "schwere": "vorsichtig",
+        "hinweis": "Restmüdigkeit am Morgen möglich – nicht direkt nach der Einnahme Auto fahren oder Maschinen bedienen. Bei Schichtarbeitern besondere Vorsicht."
+      }
+    ],
+    "dosierung": {
+      "standard": "0.5–4 mg Melatonin täglich, 30-60 Min. vor gewünschter Schlafenszeit",
+      "bereich": {
+        "min": 0.5,
+        "max": 4,
+        "einheit": "mg"
+      },
+      "obergrenze": "Plateau-Effekt bei 4mg/Tag – höhere Dosen bringen keinen Vorteil. Für Erwachsene meist 1-3mg ausreichend.",
+      "timing": "WICHTIGER als die Dosis. Für direkten Schlaf: 30-60 Min. vor Bedtime. Für Rhythmus-Verschiebung (Jetlag): 3-5h vor gewünschter Schlafenszeit. Bei Jetlag nach Osten: am ersten Abend am Ziel zur Bedtime einnehmen, 4-5 Nächte fortsetzen.",
+      "quelle": "Cruz-Sanabria 2024 + AASM Praxisleitlinien",
+      "formen_vergleich": "Sofortfreisetzung (Immediate-Release): am besten für Einschlafprobleme. Retardiert (Extended-Release, z.B. Circadin): für Durchschlafprobleme – simuliert natürlichen nächtlichen Verlauf. Sublingual: schnellere Wirkung, niedrigere Dosis möglich. Standard-Tabletten: günstig, gut etabliert. Wichtig: in DE bis 0.5mg frei verkäuflich, ab 1mg apothekenpflichtig, ab 2mg meist verschreibungspflichtig."
+    },
+    "population_spezifisch": {
+      "schichtarbeiter": {
+        "relevant": true,
+        "staerke": 0.85,
+        "kommentar": "30 Min. vor Tagschlaf einnehmen. Hilft beim Umstellen auf Nachtdienst. Tageslicht-Kontrolle wichtig dazu.",
+        "quelle": "AASM Praxisleitlinien"
+      },
+      "vielreisende_jetlag": {
+        "relevant": true,
+        "staerke": 0.9,
+        "kommentar": "Cochrane Review: ab 5 Zeitzonen Unterschied, Reise nach Osten. Kombiniert mit Lichttherapie deutlich wirksamer."
+      },
+      "senioren_55plus": {
+        "relevant": true,
+        "staerke": 0.75,
+        "kommentar": "Natürliche Produktion sinkt mit Alter. Retardiertes Melatonin (Circadin 2mg) EU-zugelassen. Effekt aber moderat."
+      },
+      "kinder_jugendliche_schlafstoerung": {
+        "relevant": true,
+        "staerke": 0.8,
+        "kommentar": "Bei ADHS und Autismus mit Schlafproblemen gut belegt. NUR mit Kinderarzt. Slenyto ist EU-zugelassen ab 6 Jahre."
+      },
+      "schwangere": {
+        "relevant": false,
+        "staerke": 0,
+        "kommentar": "NICHT EMPFOHLEN. Unzureichende Daten zur Sicherheit für Mutter und Kind."
+      }
+    },
+    "warnhinweise": [
+      "Melatonin ist KEIN Schlafmittel im klassischen Sinn – es erleichtert den Schlaf, erzwingt ihn nicht. Bei chronischer Insomnie ohne Rhythmusstörung sind die Effekte begrenzt",
+      "TIMING IST WICHTIGER ALS DOSIS. Eine gut getimte 0.5mg-Dosis kann besser wirken als ein zu spät genommenes 5mg",
+      "In Deutschland: Bis 0.5mg frei verkäuflich, ab 1-2mg apothekenpflichtig, höhere Dosen verschreibungspflichtig. Die US-üblichen 5-10mg sind hier nicht legal frei erhältlich",
+      "Wechselwirkungen mit Antidepressiva (SSRI), Blutverdünnern und Diabetes-Medikamenten sind real – vor Einnahme Arzt fragen wenn du Medikamente nimmst",
+      "Restmüdigkeit am Morgen ist häufige Nebenwirkung – Auto fahren oder Maschinen bedienen mit Vorsicht",
+      "Nicht mit Alkohol kombinieren – verstärkt sedierenden Effekt und Schlafqualität sinkt",
+      "Schlafhygiene (kein blaues Licht abends, regelmäßige Bedtime, dunkles kühles Zimmer) ist die Basis – Melatonin ersetzt das nicht",
+      "Im Gegensatz zu klassischen Schlafmitteln: KEIN Abhängigkeitsrisiko, KEIN Rebound-Effekt bei Absetzen"
+    ],
+    "inhalt": [
+      "melatonin"
+    ],
+    "quellen": [
+      {
+        "titel": "Optimizing the Time and Dose of Melatonin as a Sleep-Promoting Drug: A Systematic Review of Randomized Controlled Trials and Dose-Response Meta-Analysis",
+        "autoren": "Cruz-Sanabria F, Bruno S, Crippa A, et al.",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/jpi.12985",
+        "jahr": 2024,
+        "typ": "meta_analyse",
+        "doi": "10.1111/jpi.12985"
+      },
+      {
+        "titel": "Meta-Analysis: Melatonin for the Treatment of Primary Sleep Disorders",
+        "autoren": "Ferracioli-Oda E, Qawasmi A, Bloch MH",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3656905/",
+        "jahr": 2013,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Efficacy of melatonin for chronic insomnia: Systematic reviews and meta-analyses",
+        "autoren": "Cho et al.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1087079222001058",
+        "jahr": 2022,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Melatonin for the prevention and treatment of jet lag (Cochrane Review)",
+        "autoren": "Herxheimer A, Petrie KJ",
+        "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001520/full",
+        "jahr": 2002,
+        "typ": "meta_analyse",
+        "doi": "10.1002/14651858.CD001520"
+      },
+      {
+        "titel": "Practice Parameters for the Clinical Evaluation and Treatment of Circadian Rhythm Sleep Disorders – American Academy of Sleep Medicine",
+        "autoren": "Morgenthaler TI, et al. (AASM)",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2082098/",
+        "jahr": 2007,
+        "typ": "position_stand"
+      },
+      {
+        "titel": "Melatonin – StatPearls (NCBI Bookshelf)",
+        "autoren": "Savage RA, Zafar N, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK534823/",
+        "jahr": 2024,
+        "typ": "review"
+      },
+      {
+        "titel": "Efficacy on sleep parameters and tolerability of melatonin in individuals with sleep or mental disorders: A systematic review and meta-analysis",
+        "autoren": "Neuroscience & Biobehavioral Reviews",
+        "url": "https://www.sciencedirect.com/science/article/pii/S0149763422002123",
+        "jahr": 2022,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Melatonin – National Center for Complementary and Integrative Health",
+        "autoren": "NCCIH NIH",
+        "url": "https://www.nccih.nih.gov/health/melatonin-what-you-need-to-know",
+        "jahr": 2024,
+        "typ": "position_stand"
+      }
+    ]
+  },
+  "probiotika": {
+    "id": "probiotika",
+    "name": "Probiotika",
+    "kategorie": "gesundheit",
+    "ikon": "🦠",
+    "kurz_beschreibung": "Lebende Mikroorganismen für die Darmflora. Stammspezifische Evidenz: stark bei Antibiotika-Diarrhö und Reizdarm, moderat bei Immunsystem, begrenzt bei gesunden Erwachsenen.",
+    "beschreibung": {
+      "was_ist_es": "Probiotika sind lebende Mikroorganismen, die in ausreichender Menge eingenommen einen gesundheitlichen Nutzen bringen (WHO-Definition). Die häufigsten Stämme: Lactobacillus (z.B. L. rhamnosus, L. casei, L. plantarum), Bifidobacterium (B. longum, B. lactis), Saccharomyces boulardii (eine Hefeart) und Bacillus coagulans. Probiotika sind in Joghurt, Kefir, Sauerkraut, Kimchi und als Supplements (Pulver, Kapseln) verfügbar. Wichtig: Es gibt KEINEN 'Universal-Probiotikum' – Wirkung ist hoch stamm- und dosisabhängig.",
+      "wie_wirkt_es": "Probiotika wirken über mehrere Mechanismen gleichzeitig: 1) Verdrängung von pathogenen Bakterien durch Konkurrenz um Nährstoffe und Adhäsionsstellen, 2) Verstärkung der Darmbarriere (Tight Junctions), 3) Modulation des Immunsystems über Toll-like Rezeptoren und dendritische Zellen, 4) Produktion kurzkettiger Fettsäuren (SCFA) wie Butyrat, die die Darmschleimhaut nähren. Die Wirkung tritt meist erst nach 2-8 Wochen kontinuierlicher Einnahme auf.",
+      "warum_wichtig": "Die Darmflora ('Mikrobiom') besteht aus 10-100 Billionen Bakterien und beeinflusst Verdauung, Immunsystem, Stoffwechsel und sogar Stimmung (Darm-Hirn-Achse). Antibiotika, Stress, einseitige Ernährung, chronische Krankheiten und Alter können das Mikrobiom durcheinanderbringen. Bei gestörtem Mikrobiom (Dysbiose) können Probiotika gezielt helfen. Bei gesunder Darmflora ist der Effekt deutlich kleiner – hier ist eine ballaststoffreiche Ernährung wirksamer."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Reduziert Antibiotika-assoziierte Diarrhö um 37% (Australien-Meta-Analyse)",
+        "C. difficile-Infektion: OR 0.19 mit L. casei (Cochrane Review positive Evidenz)",
+        "Reizdarm-Symptome: belegt für B. longum 35624, L. rhamnosus GG, L. plantarum 299v"
+      ],
+      "ideal_fuer": "Antibiotika-Therapie (begleitend), Reizdarm-Syndrom, Senioren, nach Magen-Darm-Infekten, bei Verstopfung",
+      "dosis": "1-10 Milliarden KBE (CFU) täglich – stamm- und indikationsabhängig",
+      "vorsicht_bei": "Schwer immungeschwächte Patienten, zentrale Venenkatheter, kritisch Kranke auf Intensivstation, Pankreatitis",
+      "mythen": [
+        "„Mehr KBE = bessere Wirkung“ – falsch. Über 10 Mrd. KBE bringen meist keinen zusätzlichen Nutzen. Wichtiger ist der RICHTIGE Stamm für das jeweilige Problem.",
+        "„Probiotika bauen die Darmflora dauerhaft auf“ – mit Vorsicht. Studien zeigen: nach Absetzen verschwinden die zugeführten Stämme meist binnen Wochen. Eigene Darmflora wird kaum dauerhaft verändert.",
+        "„Joghurt mit ‚probiotischen Kulturen' ersetzt Supplemente“ – meist falsch. Konventioneller Joghurt enthält 1-100 Mio. KBE pro Becher – therapeutische Dosen sind 100-1000x höher.",
+        "„Alle Probiotika wirken gleich gut“ – komplett falsch. Stamm-Spezifität ist entscheidend: L. casei Shirota hilft NICHT bei IBS, aber gegen C. difficile. B. longum 35624 hilft bei IBS, aber nicht bei Atemwegsinfekten.",
+        "„Probiotika sind harmlos – schaden kann nicht passieren“ – meist richtig, aber bei schwer immungeschwächten Patienten gibt es dokumentierte Bakteriämie-Fälle. Bei kritisch Kranken Vorsicht."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 70,
+      "review_typ": "meta_analyse",
+      "studien_anzahl": 300,
+      "konsens": "Cochrane Reviews + multiple Stamm-spezifische Meta-Analysen (Goldenberg 2017/2025, Maslennikov 2026)",
+      "effekt_groesse": [
+        {
+          "wert": 37,
+          "einheit": "% Risikoreduktion",
+          "kontext": "Reduktion des Risikos für Antibiotika-assoziierte Diarrhö (AAD) bei begleitender Probiotika-Einnahme",
+          "quelle": "BMC Infectious Diseases 2024 Meta-Analyse + Cochrane Review",
+          "erklaerung": {
+            "was_bedeutet": "Wer während einer Antibiotika-Therapie Probiotika einnimmt, hat ein 37% geringeres Risiko für Durchfall als ohne. Konkret: Bei 100 Personen die Antibiotika nehmen würden normalerweise 20-30 Durchfall entwickeln. Mit Probiotika sinkt das auf etwa 13-19. Besonders relevant für Senioren, hospitalisierte Patienten und Personen mit langen Antibiotika-Therapien.",
+            "studie_zeigt": "Multiple Meta-Analysen (Cochrane 2017 mit Update 2025, BMC Infectious Diseases 2024) zeigen konsistent: Probiotika reduzieren AAD-Risiko um 35-50%. Bei C. difficile-assoziierter Diarrhö (CDAD): noch stärkerer Effekt mit OR 0.19 für L. casei. WICHTIG: Beginn der Probiotika gleichzeitig oder kurz nach Antibiotika-Start, dann 1-2 Wochen über das Antibiotika-Ende hinaus weiterführen.",
+            "studien_details": "Cochrane Database Systematic Review (Goldenberg et al. 2017/2025) mit 39 RCTs und 9.955 Teilnehmern. Wirksame Stämme: L. rhamnosus GG, L. casei, S. boulardii, Multistrain-Präparate. Dosen meist 5-40 Mrd. KBE täglich.",
+            "zuverlaessigkeit": "Sehr hoch. Eine der am besten belegten Anwendungen von Probiotika überhaupt. Cochrane-Empfehlung: 'wahrscheinlich vorteilhaft mit kleinem absoluten Nutzen bei niedrigem Nebenwirkungsrisiko'."
+          }
+        },
+        {
+          "wert": 0.19,
+          "einheit": "OR (Odds Ratio)",
+          "kontext": "Risikoreduktion für Clostridium-difficile-assoziierte Diarrhö (CDAD) mit L. casei",
+          "quelle": "Network Meta-Analyse 2020 (Mills et al.)",
+          "erklaerung": {
+            "was_bedeutet": "Lactobacillus casei reduziert das Risiko einer C.-difficile-Infektion (CDAD) während Antibiotika-Therapie auf ein Fünftel (OR 0.19). C. difficile ist eine schwere Komplikation – verursacht heftige Durchfälle und kann tödlich sein. Diese Wirkung ist hoch stamm-spezifisch: andere Lactobacillus-Arten wirken weniger gut, manche kaum.",
+            "studie_zeigt": "Network Meta-Analyse mit 9 verschiedenen probiotischen Interventionen verglichen. Rangfolge der Wirksamkeit gegen CDAD: 1) L. casei (OR 0.19), 2) L. rhamnosus (OR 0.32), 3) Saccharomyces boulardii. Alle 9 Interventionen waren wirksamer als Placebo – aber mit erheblichen Unterschieden.",
+            "studien_details": "Bayesian Network Meta-Analyse von RCTs zur CDAD-Prävention. Methodik: indirekte Vergleiche verschiedener Stämme über gemeinsame Vergleichsgruppen.",
+            "zuverlaessigkeit": "Solide für die Empfehlung von L. casei oder L. rhamnosus bei Antibiotika-Therapie zur CDAD-Prävention. Besonders relevant für ältere Patienten und Hospitalisierte. Wichtig: NICHT bei kritisch Kranken oder zentralen Venenkathetern!"
+          }
+        },
+        {
+          "wert": -0.77,
+          "einheit": "Tage Krankheitsdauer",
+          "kontext": "Verkürzung der Dauer akuter Atemwegsinfektionen bei gesunden Erwachsenen und Kindern",
+          "quelle": "King et al. 2014 Meta-Analyse (20 RCTs)",
+          "erklaerung": {
+            "was_bedeutet": "Bei akuten Atemwegsinfektionen (Erkältung, leichter Husten) reduziert eine kontinuierliche Probiotika-Einnahme die Krankheitsdauer um etwa 18 Stunden. Das ist klinisch moderate Wirkung – kein 'Schutz vor Erkältung' aber spürbar schnellere Genesung. Effekt nur sichtbar bei mindestens 4-8 Wochen kontinuierlicher Einnahme VOR der Krankheit.",
+            "studie_zeigt": "20 RCTs mit Lactobacillus- und Bifidobacterium-Stämmen. SMD -0.31 (95% CI: -0.41 bis -0.11), Reduktion der Krankheitstage um -0.77. Wirksame Stämme: L. casei DN-114001, L. rhamnosus GG, B. lactis Bb-12. Auch bessere Influenza-Impfantwort (Seroprotection-Rate +83% für H1N1, +185% für H3N2).",
+            "studien_details": "Meta-Analyse publiziert 2014 in British Journal of Nutrition. 20 RCTs, niedrige Heterogenität (I² = 3%). Methodik: 4-12 Wochen kontinuierliche Einnahme als Präventiv-Strategie.",
+            "zuverlaessigkeit": "Solide aber moderate Effektgröße. Klinisch relevant für Personen mit häufigen Erkältungen oder geschwächtem Immunsystem (Senioren). Nicht primärer Grund für Probiotika-Supplementation."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "antibiotika_diarrhoe",
+        "staerke": 0.9,
+        "kommentar": "STÄRKSTE Indikation. -37% AAD-Risiko, -80% CDAD-Risiko mit L. casei. Begleitend zur Antibiotika-Therapie standardmäßig sinnvoll."
+      },
+      {
+        "ziel": "reizdarm_ibs",
+        "staerke": 0.7,
+        "kommentar": "Stamm-spezifisch wirksam: B. longum 35624 (Bauchschmerzen), L. plantarum 299v, L. rhamnosus GG, S. cerevisiae CNCM I-3856."
+      },
+      {
+        "ziel": "verstopfung_obstipation",
+        "staerke": 0.65,
+        "kommentar": "B. lactis HN019 in Studien wirksam für Stuhlfrequenz und -konsistenz. Multistrain-Präparate ebenfalls hilfreich."
+      },
+      {
+        "ziel": "immunsystem",
+        "staerke": 0.55,
+        "kommentar": "Moderate Reduktion der Atemwegsinfekt-Dauer (-0.77 Tage). Bessere Impfantwort möglich. Effekt bei Senioren stärker."
+      },
+      {
+        "ziel": "verdauung_allgemein",
+        "staerke": 0.5,
+        "kommentar": "Kleinere Effekte auf Blähungen, Bauchgefühl. Bei gesunden Erwachsenen oft kein klarer Mehrwert."
+      },
+      {
+        "ziel": "gesundheit_senioren",
+        "staerke": 0.65,
+        "kommentar": "Bei älteren Erwachsenen: bessere zelluläre Immunfunktion, Reduktion altersbedingter Mikrobiom-Veränderungen."
+      },
+      {
+        "ziel": "kinder_durchfall",
+        "staerke": 0.75,
+        "kommentar": "Bei akuter infektiöser Diarrhö im Kindesalter: L. rhamnosus GG und S. boulardii reduzieren Krankheitsdauer um 1 Tag."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medizinisch",
+        "wert": "schwere_immunschwaeche",
+        "schwere": "hart",
+        "hinweis": "Bei schwerer Immunsuppression (HIV-AIDS, Chemotherapie mit Neutropenie, Organtransplantation, schwerer Pankreatitis): KEINE lebenden Probiotika ohne ärztliche Rücksprache. Dokumentierte Fälle von Probiotika-Bakteriämie und Pilzinfektionen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "venenkatheter_zentral",
+        "schwere": "hart",
+        "hinweis": "Bei zentralem Venenkatheter (besonders ICU-Patienten): KEINE lebenden Probiotika. Risiko einer Katheterinfektion mit dem Probiotika-Stamm."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "kritisch_krank_icu",
+        "schwere": "hart",
+        "hinweis": "Bei kritisch Kranken auf Intensivstation: dokumentierte Fälle von Saccharomyces-boulardii-Fungämie. Probiotika hier nur unter ärztlicher Begleitung."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "akute_pankreatitis",
+        "schwere": "hart",
+        "hinweis": "Bei schwerer akuter Pankreatitis: PROPATRIA-Studie zeigte erhöhte Mortalität durch Probiotika – KEINE Anwendung."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "kurzdarmsyndrom",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei Kurzdarmsyndrom oder Darmperforation: Risiko der bakteriellen Translokation. Nur unter ärztlicher Kontrolle."
+      },
+      {
+        "art": "allergie",
+        "wert": "milcheiweiss",
+        "schwere": "info",
+        "hinweis": "Manche Probiotika werden in Milchbasis kultiviert. Bei Milcheiweiß-Allergie: laktose-/milchfreie Präparate wählen."
+      }
+    ],
+    "dosierung": {
+      "standard": "1-10 Milliarden KBE (Koloniebildende Einheiten) täglich, stamm- und indikationsabhängig",
+      "bereich": {
+        "min": 1,
+        "max": 50,
+        "einheit": "Mrd. KBE"
+      },
+      "obergrenze": "Bis zu 450 Mrd. KBE/Tag (VSL#3) bei medizinischen Indikationen verträglich – aber kein zusätzlicher Nutzen über 10 Mrd. KBE für die meisten Anwendungen",
+      "timing": "Bei Antibiotika: 2-3 Stunden Abstand zur Antibiotika-Einnahme. Generell: mit oder kurz nach einer Mahlzeit (besseres Überleben der Magenpassage). Bei Säurehemmern (PPI): keine besondere Anpassung nötig.",
+      "quelle": "Mehrere Cochrane Reviews + WGO Praxisleitlinien",
+      "formen_vergleich": "Kapseln mit magensaftresistenter Hülle: beste Überlebensrate der Bakterien. Pulver: gut für individuelle Dosierung, aber unhandlicher. Joghurt/Kefir: niedrigere KBE, aber natürliche Matrix. Mehrstamm-Präparate vs. Einzelstamm: für allgemeine Anwendung Mehrstamm OK, für spezifische Indikation (z.B. IBS, AAD) der spezifische Stamm besser. Lebendkulturen vs. inaktivierte (Postbiotika): Lebendkulturen sind Standard, Postbiotika ein neueres Forschungsfeld."
+    },
+    "population_spezifisch": {
+      "antibiotika_therapie": {
+        "relevant": true,
+        "staerke": 0.95,
+        "kommentar": "STÄRKSTE Indikation. Während der gesamten Antibiotika-Behandlung + 1-2 Wochen danach. L. rhamnosus GG, L. casei oder S. boulardii. 5-10 Mrd. KBE.",
+        "quelle": "Cochrane Goldenberg 2017/2025"
+      },
+      "reizdarm_patienten": {
+        "relevant": true,
+        "staerke": 0.75,
+        "kommentar": "Stamm-spezifisch wichtig. B. longum 35624 für Bauchschmerzen, L. plantarum 299v allgemein. Mindestens 4-8 Wochen testen."
+      },
+      "senioren_50plus": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "Mikrobiom-Diversität sinkt im Alter. Probiotika können Immunfunktion und Verdauung unterstützen. B. lactis HN019 gut belegt."
+      },
+      "reisende": {
+        "relevant": true,
+        "staerke": 0.6,
+        "kommentar": "Reisediarrhö-Prävention: S. boulardii und L. rhamnosus GG zeigen moderate Schutzwirkung. 1 Woche vor Reisebeginn anfangen."
+      },
+      "kinder_diarrhoe": {
+        "relevant": true,
+        "staerke": 0.8,
+        "kommentar": "Bei akuter infektiöser Diarrhö: L. rhamnosus GG oder S. boulardii reduzieren Krankheitsdauer um 1 Tag (gut belegt)."
+      },
+      "gesunde_erwachsene": {
+        "relevant": false,
+        "staerke": 0.3,
+        "kommentar": "Bei gesundem Mikrobiom und Ernährung ist der Nutzen begrenzt. Ballaststoffreiche Ernährung ist effektiver. Probiotika eher reaktiv bei Problemen."
+      }
+    },
+    "warnhinweise": [
+      "Stamm-Spezifität ist ENTSCHEIDEND. Auf der Packung sollte der genaue Stamm stehen (z.B. 'Lactobacillus rhamnosus GG') – nicht nur die Gattung",
+      "Mindestens 1-2 Wochen Einnahme nötig für erste Effekte – Probiotika sind keine Akuttherapie wie Loperamid",
+      "Bei kritisch Kranken, Immunsupprimierten oder mit zentralem Venenkatheter: Probiotika können gefährlich sein (Bakteriämie/Fungämie-Risiko)",
+      "Joghurt und fermentierte Lebensmittel enthalten oft NICHT die wirksamen Mengen oder Stämme – für gezielte Wirkung Supplemente nötig",
+      "Bei Antibiotika: Probiotika 2-3 Stunden ZEITLICH VERSETZT einnehmen, sonst werden sie durch das Antibiotikum abgetötet",
+      "Lagerung wichtig: Viele Präparate brauchen Kühlung, einige sind 'shelf-stable'. Verfallsdatum beachten – tote Bakterien wirken nicht",
+      "KEINE Wunderwirkung erwarten: Bei gesunder Darmflora ist eine ballaststoffreiche Ernährung (30g/Tag) langfristig wirksamer als Probiotika-Pillen",
+      "Initial mögliche Nebenwirkungen: Blähungen, leichte Verdauungsbeschwerden in den ersten Tagen – meist selbstlimitierend"
+    ],
+    "inhalt": [
+      "probiotika"
+    ],
+    "quellen": [
+      {
+        "titel": "Strain-Specific Systematic Review with Meta-Analysis of Probiotics Efficacy in the Treatment of Irritable Bowel Syndrome",
+        "autoren": "Maslennikov R, Gosteeva E, Ananeva V, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12898053/",
+        "jahr": 2026,
+        "typ": "meta_analyse",
+        "doi": "10.3390/jcm15031152"
+      },
+      {
+        "titel": "Probiotics for the prevention of Clostridioides difficile-associated diarrhea in adults and children (Cochrane Review)",
+        "autoren": "Goldenberg JZ, Yap C, Lytvyn L, et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/40931979/",
+        "jahr": 2025,
+        "typ": "meta_analyse",
+        "doi": "10.1002/14651858.CD006095.pub5"
+      },
+      {
+        "titel": "Outcome-Specific Efficacy of Different Probiotic Strains and Mixtures in Irritable Bowel Syndrome: A Systematic Review and Network Meta-Analysis",
+        "autoren": "Xie P, Luo M, Deng X, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10490209/",
+        "jahr": 2023,
+        "typ": "meta_analyse",
+        "doi": "10.3390/nu15173856"
+      },
+      {
+        "titel": "Role of probiotic as adjuvant in treating various infections: a systematic review and meta-analysis",
+        "autoren": "BMC Infectious Diseases",
+        "url": "https://link.springer.com/article/10.1186/s12879-024-09259-3",
+        "jahr": 2024,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Efficacy of Probiotics in Irritable Bowel Syndrome: Systematic Review and Meta-analysis",
+        "autoren": "Goodoory VC, et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/37541528/",
+        "jahr": 2023,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Effectiveness of probiotics on the duration of illness in healthy children and adults who develop common acute respiratory infectious conditions: a systematic review and meta-analysis",
+        "autoren": "King S, Glanville J, Sanders ME, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4054664/",
+        "jahr": 2014,
+        "typ": "meta_analyse",
+        "doi": "10.1017/S0007114514000075"
+      },
+      {
+        "titel": "Which probiotic has the best effect on preventing Clostridium difficile-associated diarrhea? A systematic review and network meta-analysis",
+        "autoren": "Mills JP, et al.",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/31875427/",
+        "jahr": 2020,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Probiotics: are they beneficial? – Internal Medicine Journal Review",
+        "autoren": "Fehily SR, et al.",
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/imj.16388",
+        "jahr": 2024,
+        "typ": "review"
+      },
+      {
+        "titel": "Effect of Probiotics and Prebiotics on Immune Response to Influenza Vaccination in Adults: A Systematic Review and Meta-Analysis",
+        "autoren": "Yeh TL, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5707647/",
+        "jahr": 2018,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Effects of probiotics, prebiotics, and synbiotics on gut microbiota in older adults: a systematic review and meta-analysis",
+        "autoren": "Nutrition Journal 2025",
+        "url": "https://link.springer.com/article/10.1186/s12937-025-01218-1",
+        "jahr": 2025,
+        "typ": "meta_analyse"
+      }
+    ]
+  },
+  "zma": {
+    "id": "zma",
+    "name": "ZMA (Zink + Magnesium + B6)",
+    "kategorie": "performance",
+    "ikon": "🌙",
+    "kurz_beschreibung": "Klassisches Kombi-Produkt aus Zink, Magnesium und Vitamin B6 für Schlaf und Recovery. Ursprüngliche Testosteron-Studien wurden in späteren RCTs nicht repliziert – die Versprechen sind oft überzogen.",
+    "beschreibung": {
+      "was_ist_es": "ZMA steht für 'Zinc Monomethionine and Magnesium Aspartate' und ist ein patentiertes Supplement-Konzept, entwickelt 1997 von Victor Conte (BALCO). Standardformel pro Portion: 30 mg Zink (270% RDI), 450 mg Magnesium (110% RDI) und 10.5 mg Vitamin B6 (650% RDI). Die spezifischen Formen (Zink-Monomethionin-Aspartat und Magnesium-Aspartat) wurden gewählt, um theoretisch bessere Bioverfügbarkeit zu erreichen.",
+      "wie_wirkt_es": "Die Theorie hinter ZMA: Athleten sollen häufiger an Zink- und Magnesium-Mangel leiden (durch Schweißverlust, höheren Bedarf, restriktive Diäten). Diese Mängel sollen Testosteron- und IGF-1-Spiegel senken. ZMA soll diese Defizite ausgleichen und damit Muskelaufbau, Schlafqualität und Recovery verbessern. PROBLEM: Die wenigsten Sportler in westlichen Ländern haben tatsächlich klinische Mängel an diesen Nährstoffen – die typische Mischkost deckt den Bedarf.",
+      "warum_wichtig": "ZMA ist ein klassisches Beispiel für ein Supplement, dessen Marketing weit über die wissenschaftliche Evidenz hinausgeht. Die berühmte Wilborn-2004-Studie (n=27 Football-Spieler) zeigte +30% Testosteron und +12% Kraft – aber spätere, größere Studien konnten das nicht replizieren. Die ehrliche Einordnung: Bei dokumentiertem Zink-/Magnesium-Mangel kann ZMA helfen. Bei Personen mit normaler Ernährung sind die Effekte sehr begrenzt – einzelne Mineralien gezielt zu supplementieren ist oft günstiger und besser."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Bei dokumentiertem Zink-/Magnesium-Mangel: messbare Verbesserung von Hormonen und Schlaf",
+        "Moderate Verbesserung der Schlafqualität (besonders Tiefschlaf) durch Magnesium-Anteil",
+        "Testosteron-Steigerung NUR in einer kleinen Studie – nicht repliziert in größeren RCTs"
+      ],
+      "ideal_fuer": "Athleten mit nachgewiesenem Zink-/Magnesium-Mangel, intensive Sportler mit hohem Schweißverlust, Vegetarier/Veganer (Zink-Bedarf höher), bei Schlafproblemen mit Mangel-Vermutung",
+      "dosis": "1 Portion 30-60 Min. vor dem Schlafen auf nüchternen Magen – NIEMALS mit Milchprodukten (Calcium blockiert Zink-Aufnahme)",
+      "vorsicht_bei": "Langzeit-Hochdosis-B6 (Nervenschäden möglich), Antibiotika (Zink stört Aufnahme), Niereninsuffizienz, gleichzeitige Einnahme anderer Zink-/Magnesium-Präparate",
+      "mythen": [
+        "„ZMA steigert den Testosteronspiegel um 30%“ – falsch in den meisten Fällen. Die Original-Studie (n=27) ist nicht repliziert worden. Größere Studien zeigen KEINEN signifikanten Effekt bei Personen ohne Mangel.",
+        "„ZMA wirkt auch bei guter Ernährung“ – unwahrscheinlich. Die Effekte zeigen sich primär bei dokumentiertem Mangel. Bei Mischkost-Essern ist der Nutzen meist marginal.",
+        "„Die spezielle Bioverfügbarkeits-Formel ist überlegen“ – Marketing-Behauptung. Zink-Bisglycinat oder Magnesium-Citrat einzeln haben vergleichbare Aufnahme bei deutlich niedrigerem Preis.",
+        "„ZMA kann mit Milch oder Kalzium genommen werden“ – falsch. Calcium blockiert die Zink-Absorption stark. ZMA MUSS auf nüchternen Magen ohne Milchprodukte eingenommen werden.",
+        "„Vitamin B6 in der ZMA-Dosis ist sicher“ – mit Vorsicht. 10.5mg ist 650% der RDI. Bei Langzeit-Einnahme über 200mg/Tag sind Nervenschäden (Periphere Neuropathie) dokumentiert. Aufmerksam bleiben."
+      ]
+    },
+    "evidenz": {
+      "level": "C",
+      "score": 55,
+      "review_typ": "rct",
+      "studien_anzahl": 12,
+      "konsens": "Kontroverse Studienlage – Wilborn 2004 nicht repliziert (Koehler 2009, Brilla 2000)",
+      "effekt_groesse": [
+        {
+          "wert": 30,
+          "einheit": "% (in einer Studie)",
+          "kontext": "Anstieg des freien Testosterons in der Wilborn-2004-Studie (n=27 Football-Spieler)",
+          "quelle": "Brilla & Conte 2000 + Wilborn 2004",
+          "erklaerung": {
+            "was_bedeutet": "Die berühmte Studie zeigte: ZMA erhöht freies Testosteron in 8 Wochen von 132 auf 176 pg/mL (+30%), während in der Placebo-Gruppe das Testosteron sogar leicht sank (141 auf 127 pg/mL). Auch IGF-1 stieg in der ZMA-Gruppe. Diese Studie ist die zentrale Quelle für alle ZMA-Marketing-Behauptungen. ABER: Spätere, methodisch bessere Studien konnten diese Effekte nicht reproduzieren.",
+            "studie_zeigt": "Brilla & Conte 2000 (n=27 NCAA-Football-Spieler, 8 Wochen ZMA): Plasma-Zink stieg um 30%, freies Testosteron +30%, IGF-1 leicht gestiegen, Muskelkraft +12%. ABER: Koehler et al. 2009 (Männer im Training): KEIN signifikanter Anstieg von Testosteron, IGF-1 oder Kraft. Wilborn et al. 2004 mit anderer Population: KEINE Bestätigung der Effekte. Die Replikation hat das Original-Ergebnis nicht bestätigt.",
+            "studien_details": "Original-Studie publiziert 2000 in Journal of Exercise Physiology Online. Hauptlimitation: kleine Stichprobe (n=27), kurze Studiendauer (8 Wochen), spezifische Population (Football-Spieler in intensivem Training). Spätere Replikations-Versuche mit größeren oder anderen Populationen konnten die Effekte nicht bestätigen.",
+            "zuverlaessigkeit": "ZWEIFELHAFT als zentrale Marketing-Aussage. Das Phänomen heißt 'Replikationskrise' – ursprünglich beeindruckende Ergebnisse, die in unabhängigen Folgestudien nicht reproduzierbar waren. Aktueller wissenschaftlicher Konsens: ZMA steigert Testosteron NICHT zuverlässig bei Personen ohne Zink-/Magnesium-Mangel."
+          }
+        },
+        {
+          "wert": 11,
+          "einheit": "mg/Tag",
+          "kontext": "Durchschnittliche Zink-Aufnahme der ZMA-Studienteilnehmer aus der Nahrung – schon AUSREICHEND",
+          "quelle": "Multiple ZMA-Studien (Wilborn 2004, Koehler 2009)",
+          "erklaerung": {
+            "was_bedeutet": "In allen ZMA-Studien wurde die Nahrungs-Aufnahme der Probanden gemessen. Ergebnis: Die meisten Athleten konsumierten BEREITS ausreichende Mengen Zink (11.9 mg/Tag) und Magnesium (395 mg/Tag) – also über der RDI. Das bedeutet: ZMA wurde nicht bei Mangel-Personen getestet, sondern bei bereits-versorgten Sportlern. Trotzdem zeigte die Original-Studie Effekte – was die Replikationsprobleme erklärt.",
+            "studie_zeigt": "Diätrekord-Analyse aus mehreren ZMA-Studien: Männliche Sportler hatten typische Aufnahme von Zink 11.9 ± 3.4 mg/Tag (RDI: 11 mg), Magnesium 395 ± 103 mg/Tag (RDI: 400 mg), Vitamin B6 2.7 ± 0.9 mg/Tag (RDI: 1.3 mg). Diese Werte sind ÜBER der RDI – kein klinischer Mangel. Trotzdem wurde ZMA gegeben.",
+            "studien_details": "Methodische Limitation aller ZMA-Studien: keine Selektion nach tatsächlichem Zink-Status. Idealerweise sollte ZMA bei nachgewiesenem Mangel getestet werden – das wurde nicht gemacht.",
+            "zuverlaessigkeit": "Sehr hoch für die Aussage: Die meisten Studienteilnehmer hatten KEINEN Mangel. Praktische Konsequenz: Bei guter Mischkost-Ernährung ist der Nutzen von ZMA wahrscheinlich klein."
+          }
+        },
+        {
+          "wert": 650,
+          "einheit": "% RDI Vitamin B6",
+          "kontext": "Vitamin-B6-Gehalt der Standard-ZMA-Dosis (10.5 mg)",
+          "quelle": "ZMA-Formel-Analyse + EFSA Risiko-Bewertung",
+          "erklaerung": {
+            "was_bedeutet": "Eine Portion ZMA enthält 10.5 mg Vitamin B6 (Pyridoxin) – das 6.5-Fache der empfohlenen Tagesdosis. Kurzfristig unbedenklich, aber bei dauerhafter Einnahme PROBLEMATISCH. Hochdosis-B6 über 100-200 mg/Tag kann sensorische periphere Neuropathie (Nervenschäden in Händen/Füßen) verursachen. Die ZMA-Dosis allein ist noch sicher, aber wer zusätzlich B-Komplex oder Multivitamin nimmt, kann schnell in den Risikobereich kommen.",
+            "studie_zeigt": "EFSA-Empfehlung: Tolerable Upper Intake Level (UL) für Vitamin B6 = 25 mg/Tag bei Erwachsenen (langfristig). ZMA mit 10.5 mg/Tag bleibt darunter, aber: bei zusätzlichem Multivitamin (oft 2 mg B6) und einer Tasse Joghurt + Bananen kann die Gesamtdosis schnell die UL überschreiten. Dokumentierte Fälle von Neuropathie nach langzeitiger Einnahme.",
+            "studien_details": "EFSA Scientific Opinion 2023: Tolerable Upper Intake Level für Vitamin B6. Mehrere Case-Reports und Beobachtungsstudien zu B6-induzierter Neuropathie.",
+            "zuverlaessigkeit": "Sehr hoch. Praktische Konsequenz: Bei ZMA-Langzeitnutzung andere B6-Quellen prüfen und Pausen einlegen oder ZMA-Produkte mit geringerem B6-Anteil wählen."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "schlaf",
+        "staerke": 0.55,
+        "kommentar": "Moderate Wirkung durch Magnesium-Anteil – aber Magnesium einzeln (z.B. Bisglycinat) ist gleich wirksam und günstiger."
+      },
+      {
+        "ziel": "muskelregeneration",
+        "staerke": 0.4,
+        "kommentar": "Theoretisch über besseren Schlaf möglich. Direkte Effekte sind wissenschaftlich nicht überzeugend belegt."
+      },
+      {
+        "ziel": "testosteron_optimierung",
+        "staerke": 0.4,
+        "kommentar": "Wirksam NUR bei dokumentiertem Zink-Mangel. Bei normalem Status: kein verlässlicher Effekt – widerlegt durch Replikations-Studien."
+      },
+      {
+        "ziel": "krafttraining_recovery",
+        "staerke": 0.45,
+        "kommentar": "Original-Studie zeigte +12% Kraft – nicht repliziert. Indirekte Effekte über bessere Recovery möglich aber moderat."
+      },
+      {
+        "ziel": "immunsystem",
+        "staerke": 0.5,
+        "kommentar": "Zink ist essentiell für Immunfunktion. ZMA kann unterstützen, aber Zink-Bisglycinat einzeln ist preiswerter."
+      },
+      {
+        "ziel": "mangel_ausgleich",
+        "staerke": 0.7,
+        "kommentar": "Bei nachgewiesenem Zink- und Magnesium-Mangel: solider Effekt auf relevante Parameter. Hier ist ZMA sinnvoll."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medizinisch",
+        "wert": "niereninsuffizienz",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei Niereninsuffizienz kann Magnesium akkumulieren. Vor Einnahme Arzt fragen und Nierenfunktion prüfen."
+      },
+      {
+        "art": "medikament",
+        "wert": "antibiotika_quinolone_tetracycline",
+        "schwere": "hart",
+        "hinweis": "Zink blockiert die Aufnahme von Quinolon-Antibiotika (Ciprofloxacin) und Tetracyclinen. Mindestens 2-4 Stunden Abstand!"
+      },
+      {
+        "art": "medikament",
+        "wert": "andere_zink_magnesium_supplemente",
+        "schwere": "vorsichtig",
+        "hinweis": "Bei gleichzeitiger Einnahme von Multivitamin oder anderen Zink-/Magnesium-Präparaten: Überdosierungs-Gefahr. Gesamt-Bilanz prüfen."
+      },
+      {
+        "art": "ernaehrung",
+        "wert": "calcium_milchprodukte",
+        "schwere": "info",
+        "hinweis": "Calcium blockiert die Zink-Aufnahme stark. ZMA NICHT mit Milchprodukten, Käse, Joghurt oder Calcium-Supplementen einnehmen – mindestens 2h Abstand."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "langzeit_b6_neuropathie",
+        "schwere": "vorsichtig",
+        "hinweis": "Vitamin B6 in ZMA-Dosis ist hochdosiert (650% RDI). Bei Langzeit-Einnahme (>1 Jahr) Pausen einlegen oder Produkte mit niedrigerer B6-Dosis wählen."
+      },
+      {
+        "art": "medikament",
+        "wert": "diuretika_thiazid",
+        "schwere": "vorsichtig",
+        "hinweis": "Thiazid-Diuretika können den Magnesium-Spiegel beeinflussen. Bei gleichzeitiger Einnahme Arzt fragen."
+      }
+    ],
+    "dosierung": {
+      "standard": "1 Portion (30 mg Zink, 450 mg Magnesium, 10.5 mg B6) 30-60 Min. vor dem Schlafen",
+      "bereich": {
+        "min": 1,
+        "max": 1,
+        "einheit": "Portion"
+      },
+      "obergrenze": "NIEMALS doppelte Dosis – Zink-UL liegt bei 40 mg/Tag, höhere Dosen führen zu Übelkeit und Kupfermangel",
+      "timing": "30-60 Minuten vor dem Schlafen auf NÜCHTERNEN Magen (mindestens 2h nach der letzten Mahlzeit). Mit Wasser, NICHT mit Milchprodukten oder kalziumreichen Getränken. Empfehlung: zwischen Abendessen und Bedtime einplanen.",
+      "quelle": "Hersteller-Empfehlung (BALCO) + EFSA UL Werte",
+      "formen_vergleich": "Original-ZMA (Zink-Monomethionin-Aspartat + Magnesium-Aspartat): patentierte Formel mit klinischen Studien. Generic-ZMA: oft mit anderen Zink-/Magnesium-Formen (Oxid, Citrat) – günstiger, aber unterschiedliche Bioverfügbarkeit. Einzeln gekauft (Zink-Bisglycinat 15-30mg + Magnesium-Bisglycinat 200-400mg + B6 1-2mg): meist günstiger und besser kontrollierbar. ZMA-PM-Varianten: enthalten zusätzlich Melatonin – nicht in DE legal frei verkäuflich."
+    },
+    "population_spezifisch": {
+      "athleten_mit_mangel": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "Bei dokumentiertem Zink- oder Magnesium-Mangel (Bluttest): ZMA kann sinnvoll sein. Bei normalen Werten: kaum Nutzen."
+      },
+      "vegetarier_veganer": {
+        "relevant": true,
+        "staerke": 0.65,
+        "kommentar": "Pflanzliche Ernährung enthält weniger bioverfügbares Zink (Phytate hemmen Aufnahme). ZMA kann sinnvoll sein – aber Zink-Bisglycinat einzeln günstiger."
+      },
+      "intensive_athleten": {
+        "relevant": true,
+        "staerke": 0.55,
+        "kommentar": "Bei hohem Schweißverlust und intensiver Belastung erhöhter Bedarf. Magnesium-Verlust am relevantesten."
+      },
+      "schlaf_optimierung": {
+        "relevant": true,
+        "staerke": 0.5,
+        "kommentar": "Magnesium-Anteil kann Tiefschlaf verbessern. Magnesium-Bisglycinat einzeln (200-400mg) wirkt aber genauso – günstiger."
+      },
+      "testosteron_steigerung": {
+        "relevant": false,
+        "staerke": 0.3,
+        "kommentar": "NICHT primärer Anwendungsfall trotz Marketing. Bei Testosteron-Problemen: ärztliche Abklärung statt Supplement."
+      },
+      "gesunde_mischkost_esser": {
+        "relevant": false,
+        "staerke": 0.25,
+        "kommentar": "Bei normaler westlicher Mischkost mit Fleisch, Fisch und Vollkorn: meist ausreichende Versorgung. ZMA bringt wenig."
+      }
+    },
+    "warnhinweise": [
+      "Die berühmte 'Testosteron +30%' Aussage stammt aus EINER kleinen Studie (n=27) und wurde in Folgestudien NICHT bestätigt – Marketing übertreibt erheblich",
+      "ZMA NIEMALS mit Milchprodukten oder Calcium einnehmen – die Zink-Absorption sinkt um bis zu 50%. Nüchterner Magen vor dem Schlaf ist Pflicht",
+      "Vitamin B6 in ZMA ist hochdosiert (10.5mg, 650% RDI). Bei zusätzlichem Multivitamin/B-Komplex kann der Tagesgesamtwert das Risiko-Niveau überschreiten",
+      "Bei guter Mischkost-Ernährung ist der Nutzen meist marginal. Empfohlen: vor ZMA-Start Bluttest auf Zink und Magnesium machen",
+      "Einzelne Wirkstoffe (Zink-Bisglycinat + Magnesium-Bisglycinat) sind oft billiger und genauso wirksam – ohne die kontroverse 'Testosteron'-Behauptung",
+      "ZMA-PM-Varianten mit Melatonin sind in Deutschland NICHT frei verkäuflich – beim Import aus den USA können rechtliche Probleme entstehen",
+      "Langzeit-B6-Einnahme über 200 mg/Tag (alle Quellen zusammengerechnet) kann periphere Neuropathie (Nervenschäden in Händen/Füßen) verursachen",
+      "Bei Antibiotika-Therapie (Quinolone, Tetracycline) MINDESTENS 4 Stunden Abstand zur ZMA-Einnahme – Zink blockiert die Antibiotika-Wirkung"
+    ],
+    "inhalt": [
+      "zink",
+      "magnesium",
+      "vitamin_b6"
+    ],
+    "quellen": [
+      {
+        "titel": "Effects of a novel zinc-magnesium formulation on hormones and strength",
+        "autoren": "Brilla LR, Conte V",
+        "url": "https://asep.org/asep/asep/BrillaV2.PDF",
+        "jahr": 2000,
+        "typ": "rct"
+      },
+      {
+        "titel": "Effects of Zinc Magnesium Aspartate (ZMA) Supplementation on Training Adaptations and Markers of Anabolism and Catabolism",
+        "autoren": "Wilborn CD, Kerksick CM, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2129158/",
+        "jahr": 2004,
+        "typ": "rct"
+      },
+      {
+        "titel": "Acute effects of a zinc-containing nutritional supplement on sleep and morning performance",
+        "autoren": "Akademisches Studienzentrum",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11313716/",
+        "jahr": 2024,
+        "typ": "rct"
+      },
+      {
+        "titel": "Failure of ZMA to enhance Performance and Resistance Training in Trained Men (Koehler 2009)",
+        "autoren": "Koehler K, et al.",
+        "url": "https://link.springer.com/article/10.1007/s00421-008-0860-1",
+        "jahr": 2009,
+        "typ": "rct"
+      },
+      {
+        "titel": "EFSA Scientific Opinion on Tolerable Upper Intake Levels for Vitamin B6",
+        "autoren": "EFSA Panel on Nutrition, Novel Foods",
+        "url": "https://efsa.onlinelibrary.wiley.com/doi/10.2903/j.efsa.2023.7989",
+        "jahr": 2023,
+        "typ": "position_stand"
+      },
+      {
+        "titel": "International Society of Sports Nutrition Position Stand: nutrient timing and exercise",
+        "autoren": "Kerksick CM, et al.",
+        "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0189-4",
+        "jahr": 2017,
+        "typ": "position_stand"
+      },
+      {
+        "titel": "Does ZMA Boost Testosterone? Critical Review",
+        "autoren": "Healthline Medical Review 2021",
+        "url": "https://www.healthline.com/nutrition/zma-testosterone",
+        "jahr": 2021,
+        "typ": "review"
+      }
+    ]
+  },
+  "hmb": {
+    "id": "hmb",
+    "name": "HMB (β-Hydroxy-β-Methylbutyrat)",
+    "kategorie": "performance",
+    "ikon": "🛡️",
+    "kurz_beschreibung": "Muskelschutz-Supplement aus dem Leucin-Stoffwechsel. Solide Evidenz bei Sarkopenie und Muskelschutz in Katabolen Phasen – bei jungen, gesunden Trainierenden kaum messbar wirksam.",
+    "beschreibung": {
+      "was_ist_es": "HMB (β-Hydroxy-β-Methylbutyrat) ist ein natürlicher Metabolit der essentiellen Aminosäure Leucin. Etwa 5% des aufgenommenen Leucins wird im Körper zu HMB umgewandelt. Eine durchschnittliche fleischhaltige Ernährung liefert etwa 200-400 mg HMB pro Tag. Als Supplement: meist als Calcium-HMB (Ca-HMB) in Kapseln, neuerdings auch als freie Säure (FA-HMB) mit angeblich besserer Bioverfügbarkeit. Standardosis: 3 g/Tag, aufgeteilt auf 2-3 Portionen.",
+      "wie_wirkt_es": "HMB hemmt den Muskelproteinabbau (anti-katabole Wirkung) stärker als es den Aufbau fördert – das ist sein Hauptmechanismus. Es wirkt über die Hemmung des Ubiquitin-Proteasom-Systems (das normalerweise Muskelproteine abbaut) und stabilisiert die Muskelzellmembran. Genau deshalb ist HMB besonders wertvoll in Situationen mit ERHÖHTEM Proteinabbau: Alter, Krankheit, Immobilität, Diät, extreme Belastung. Bei jungen Personen mit normalem Anabolismus ist der zusätzliche Schutz weniger relevant.",
+      "warum_wichtig": "HMB ist ein klassisches Beispiel für ein Supplement mit klarer 'Population-Spezifität'. Bei der Marketing-Botschaft 'für mehr Muskeln' werden alle Anwender angesprochen – die Evidenz zeigt aber: Bei jungen, gesunden Krafttrainierten ist der Effekt klein bis gar nicht vorhanden. Bei älteren Erwachsenen mit Sarkopenie, kachektischen Patienten und in extremen Diät-Phasen kann HMB hingegen den entscheidenden Unterschied machen. Die ehrliche Empfehlung: Junge Sportler sparen das Geld – Senioren und Diät-Phasen-Athleten profitieren messbar."
+    },
+    "fazit": {
+      "top_effekte": [
+        "Bei Sarkopenie: SMD 0.48 schnellere Gehgeschwindigkeit, verhindert Muskelmassen-Verlust",
+        "Bei jungen Krafttrainierten: KEINE signifikante Verbesserung von Magermasse oder Kraft (Jakubowski 2020)",
+        "Schützt Muskelmasse in Diät, bei Krankheit oder Bettlägrigkeit"
+      ],
+      "ideal_fuer": "Ältere Erwachsene (50+) mit Sarkopenie-Risiko, Personen in strikter Diät/Kaloriendefizit, hospitalisierte Patienten, Personen mit unbeabsichtigtem Muskelverlust",
+      "dosis": "3 g HMB täglich, aufgeteilt auf 2-3 Portionen mit den Mahlzeiten",
+      "vorsicht_bei": "Personen ohne erhöhten Muskelabbau-Risiko (junge Krafttrainierte): wenig Nutzen für hohe Kosten. Phenylketonurie (manche Präparate enthalten Phenylalanin)",
+      "mythen": [
+        "„HMB ist genauso wichtig wie Kreatin für Muskelaufbau“ – falsch. Bei jungen, gesunden Sportlern ist Kreatin meta-analytisch klar überlegen. HMB hat seine Stärken in anderen Populationen (Senioren, Diät, Krankheit).",
+        "„Mehr HMB bedeutet mehr Muskelschutz“ – falsch. Über 3 g/Tag bringt keinen zusätzlichen Nutzen. Höhere Dosen sind verschwendet.",
+        "„HMB sollte vom Profi-Bodybuilder genommen werden“ – mit Vorsicht. Trainerte Athleten zeigen die geringsten Effekte. Untrainerte Anfänger und Senioren profitieren mehr.",
+        "„Calcium-HMB ist genau gleich gut wie freies HMB“ – nicht ganz. Studien deuten an, dass freie Säure (FA-HMB) schnellere Absorption hat – aber für die meisten Anwendungen reicht Ca-HMB.",
+        "„HMB schützt 100% vor Muskelabbau“ – falsch. Es reduziert den Abbau – stoppt ihn aber nicht komplett. Bei langer Immobilität oder Krankheit kann trotz HMB Muskelmasse verloren gehen."
+      ]
+    },
+    "evidenz": {
+      "level": "B",
+      "score": 65,
+      "review_typ": "meta_analyse",
+      "studien_anzahl": 35,
+      "konsens": "Klare Population-Spezifität: positive Effekte bei Sarkopenie (Su 2024, Feng 2024), keine Effekte bei jungen Trainierten (Jakubowski 2020)",
+      "effekt_groesse": [
+        {
+          "wert": 0.48,
+          "einheit": "SMD Gehgeschwindigkeit",
+          "kontext": "Verbesserung der Gehgeschwindigkeit bei älteren Erwachsenen mit Sarkopenie nach HMB + Krafttraining",
+          "quelle": "Feng et al. 2024 Meta-Analyse (5 RCTs, n=257)",
+          "erklaerung": {
+            "was_bedeutet": "SMD (Standardized Mean Difference) von 0.48 ist ein 'moderater' Effekt. Konkret: Senioren mit Sarkopenie, die HMB UND Krafttraining absolvieren, gehen messbar schneller als die Krafttraining-allein-Gruppe. Die Gehgeschwindigkeit ist ein kritischer Marker im Alter – langsames Gehen sagt erhöhtes Sturzrisiko und Hospitalisierung voraus. Eine moderate Verbesserung kann den Unterschied zwischen 'selbstständig' und 'pflegebedürftig' machen.",
+            "studie_zeigt": "Meta-Analyse von 5 RCTs mit 257 sarkopenischen Senioren: HMB-Kombi (3 g/Tag) + Resistance Training vs. Training allein. Ergebnisse: Gehgeschwindigkeit signifikant verbessert (SMD 0.48, p=0.005), Magermasse-Erhalt besser, Handkraft-Effekte gemischt. Wichtig: Der Effekt war IN KOMBINATION mit Krafttraining – HMB allein wirkt deutlich schwächer.",
+            "studien_details": "Systematische Meta-Analyse publiziert 2024 in Frontiers in Nutrition. 5 RCTs, 257 Patienten mit klinisch diagnostizierter Sarkopenie. Cochrane Risk of Bias Tool angewendet. Dauer der Studien: 8-12 Wochen.",
+            "zuverlaessigkeit": "Solide für die Indikation Sarkopenie. AESPEN-Leitlinien (European Society for Clinical Nutrition) empfehlen HMB bei Sarkopenie und ungewolltem Gewichtsverlust. Aber: Nur in Kombination mit Krafttraining sinnvoll – nicht als Stand-alone."
+          }
+        },
+        {
+          "wert": 0.04,
+          "einheit": "kg Magermasse (nicht signifikant)",
+          "kontext": "Effekt von HMB-Supplementation auf Magermasse bei jungen, trainierten Erwachsenen",
+          "quelle": "Jakubowski et al. 2020 Meta-Analyse (Nutrients, 11 RCTs)",
+          "erklaerung": {
+            "was_bedeutet": "Eine Veränderung von 0.04 kg ist statistisch und klinisch NICHT relevant – das ist praktisch null. Bei jungen Erwachsenen die Krafttraining machen, bringt HMB-Supplementation keinen messbaren zusätzlichen Muskelaufbau. Die Honorable-Effekte aus älteren Studien (Nissen 2003) konnten in neueren, methodisch besseren RCTs nicht repliziert werden.",
+            "studie_zeigt": "Jakubowski 2020 (Phillips-Gruppe, McMaster): 11 RCTs analysiert. Bei jungen, trainierten Erwachsenen: KEIN signifikanter Effekt auf totale Körpermasse, Magermasse, Fettmasse, totale 1RM, Bankdrücken 1RM oder Beinpresse 1RM. Schlussfolgerung der Autoren: 'HMB scheint keine ergogene Wirkung bei resistance-training-induzierter Hypertrophie oder Kraftgewinn bei jungen Erwachsenen zu haben.'",
+            "studien_details": "Sehr robuste Meta-Analyse, publiziert 2020 in Nutrients. Die Phillips-Gruppe (McMaster) gilt als führend in der Muskelproteinmetabolismus-Forschung. Mehrere methodische Verbesserungen gegenüber älteren Meta-Analysen (Trim-and-Fill, Funnel Plot Analyse zur Publikations-Bias-Korrektur).",
+            "zuverlaessigkeit": "Sehr hoch. Eine der wichtigsten Quellen für die ehrliche Einordnung von HMB. Praktische Konsequenz: Junge, gesunde Sportler sollten ihr Geld lieber in Kreatin, Whey und gutes Training investieren – HMB lohnt sich nicht."
+          }
+        },
+        {
+          "wert": 0.35,
+          "einheit": "SMD Magermasse-Erhalt (Senioren)",
+          "kontext": "Schutz der Magermasse bei älteren Erwachsenen über 50 mit HMB-Supplementation",
+          "quelle": "Li et al. 2025 Meta-Analyse (Frontiers in Nutrition)",
+          "erklaerung": {
+            "was_bedeutet": "SMD von 0.35 ist ein 'kleiner bis moderater' Effekt – aber bei älteren Personen mit Tendenz zum Muskelverlust ist das klinisch relevant. HMB schützt nicht 'super stark', aber konsistent. Bei Senioren die NICHT trainieren, ist der Effekt geringer als bei kombiniertem Training.",
+            "studie_zeigt": "Meta-Analyse mit Erwachsenen über 50 Jahre. Bei HMB-Supplementation: signifikanter Erhalt der Magermasse, leichte Verbesserung der Muskelkraft. Effekt-Maximum bei 3 g/Tag über mindestens 8 Wochen. Bei Kombination mit Krafttraining: doppelter Effekt im Vergleich zu HMB allein.",
+            "studien_details": "Meta-Analyse publiziert 2025 in Frontiers in Nutrition. Dosis-Wirkungs-Analyse zeigt: 3 g/Tag ist optimale Dosis. Studiendauer mind. 8 Wochen für klinisch relevante Effekte. Subgruppen-Analyse: stärkere Effekte bei sarkopenischen vs. gesunden Senioren.",
+            "zuverlaessigkeit": "Solide für die Aussage 'HMB schützt Muskelmasse im Alter'. ESPEN-Leitlinien (European Society for Clinical Nutrition and Metabolism) empfehlen HMB explizit bei sarkopenischen Patienten und ungewolltem Gewichtsverlust."
+          }
+        }
+      ]
+    },
+    "indikationen": [
+      {
+        "ziel": "sarkopenie_praevention",
+        "staerke": 0.8,
+        "kommentar": "STÄRKSTE Indikation. Senioren mit Sarkopenie profitieren messbar – kombiniert mit Krafttraining. ESPEN-Empfehlung."
+      },
+      {
+        "ziel": "muskelmassen_erhalt_diaet",
+        "staerke": 0.7,
+        "kommentar": "Während Kaloriendefizit schützt HMB die Magermasse – besonders relevant bei aggressiven Diäten und Wettkampf-Vorbereitung."
+      },
+      {
+        "ziel": "muskelschutz_immobilitaet",
+        "staerke": 0.65,
+        "kommentar": "Bei Bettlägrigkeit, Krankheit, Immobilität: reduziert Muskelmassen-Verlust. Wichtig in der Reha-Phase."
+      },
+      {
+        "ziel": "alter_ueber_50",
+        "staerke": 0.7,
+        "kommentar": "Ab 50 Jahren wird HMB relevanter. Natürlicher Muskelabbau beginnt – HMB plus Krafttraining wirkt synergistisch."
+      },
+      {
+        "ziel": "muskelaufbau_anfaenger",
+        "staerke": 0.45,
+        "kommentar": "Bei UNTRAINIERTEN Anfängern kleiner Effekt nachweisbar – aber Kreatin/Whey wirken stärker."
+      },
+      {
+        "ziel": "muskelaufbau_trainiert",
+        "staerke": 0.2,
+        "kommentar": "Bei jungen, trainierten Erwachsenen: KEIN signifikanter Effekt. Marketing-Aussagen überzogen."
+      },
+      {
+        "ziel": "recovery",
+        "staerke": 0.4,
+        "kommentar": "Reduziert Muskelschaden-Marker (CK, LDH) nach intensivem Training. Klinisch eher kleiner Effekt."
+      }
+    ],
+    "kontraindikationen": [
+      {
+        "art": "medizinisch",
+        "wert": "phenylketonurie",
+        "schwere": "info",
+        "hinweis": "Einige HMB-Präparate enthalten Phenylalanin als Träger – bei PKU Etikett prüfen."
+      },
+      {
+        "art": "medizinisch",
+        "wert": "niereninsuffizienz_dialyse",
+        "schwere": "vorsichtig",
+        "hinweis": "Calcium-HMB enthält Calcium – bei Dialysepatienten mit Calcium-Restriktionen: alternative Form (FA-HMB) oder ärztliche Rücksprache."
+      },
+      {
+        "art": "medikament",
+        "wert": "leucin_supplemente",
+        "schwere": "info",
+        "hinweis": "Bei gleichzeitiger Leucin/BCAA-Supplementation: HMB wird aus Leucin gebildet – mögliche additive Effekte. Insgesamt aber sicher."
+      },
+      {
+        "art": "alter",
+        "wert": "schwangerschaft_stillzeit",
+        "schwere": "vorsichtig",
+        "hinweis": "Unzureichende Sicherheitsdaten – in Schwangerschaft und Stillzeit nicht empfohlen."
+      }
+    ],
+    "dosierung": {
+      "standard": "3 g HMB täglich, aufgeteilt auf 2-3 Portionen mit den Mahlzeiten",
+      "bereich": {
+        "min": 3,
+        "max": 3,
+        "einheit": "g"
+      },
+      "obergrenze": "Über 3 g/Tag keine zusätzlichen Effekte. Sicher bis zu 6 g/Tag (kein Toxizitäts-Hinweis)",
+      "timing": "Aufgeteilt auf 2-3 Portionen über den Tag, mit den Mahlzeiten. Bei Sport: eine Portion 30-60 Min vor dem Training, eine nach dem Training. Bei Senioren: zu den Hauptmahlzeiten.",
+      "quelle": "ESPEN-Leitlinien + Multiple Meta-Analysen",
+      "formen_vergleich": "Calcium-HMB (Ca-HMB): Standard-Form, gut etabliert, günstiger. Freie Säure HMB (FA-HMB): Schnellere Absorption (60 Min vs. 2h Plasma-Peak), schwerer zu finden, teurer. Für die meisten Anwendungen reicht Ca-HMB völlig aus."
+    },
+    "population_spezifisch": {
+      "senioren_sarkopenie": {
+        "relevant": true,
+        "staerke": 0.85,
+        "kommentar": "HAUPTINDIKATION. Kombiniert mit Krafttraining 8-12 Wochen lang. ESPEN-Empfehlung.",
+        "quelle": "Feng 2024 + Su 2024 Meta-Analysen"
+      },
+      "diaet_kaloriendefizit": {
+        "relevant": true,
+        "staerke": 0.7,
+        "kommentar": "Schützt Magermasse während aggressiver Diät. Sinnvoll bei Wettkampf-Vorbereitung und ungewollter Diät."
+      },
+      "junge_trainierte": {
+        "relevant": false,
+        "staerke": 0.2,
+        "kommentar": "KEIN messbarer Effekt laut Jakubowski 2020. Geld besser für Kreatin und Whey investieren.",
+        "quelle": "Jakubowski 2020 Nutrients"
+      },
+      "rehabilitation_immobilitaet": {
+        "relevant": true,
+        "staerke": 0.65,
+        "kommentar": "Bei Bettlägrigkeit, postoperativer Reha: reduziert Muskelverlust. Klinisch relevant in Krankenhäusern."
+      },
+      "anfaenger_krafttraining": {
+        "relevant": true,
+        "staerke": 0.4,
+        "kommentar": "Kleiner Effekt nachweisbar – aber andere Supplemente (Kreatin, Whey) bringen mehr für den Preis."
+      },
+      "ausdauersportler": {
+        "relevant": false,
+        "staerke": 0.3,
+        "kommentar": "Bei langen Ausdauer-Einheiten kann HMB Muskelmassen schützen – aber Effekt klein, andere Strategien wichtiger."
+      }
+    },
+    "warnhinweise": [
+      "HMB ist POPULATIONSSPEZIFISCH – die Wirkung hängt stark davon ab WER es nimmt und in welcher Situation",
+      "Für junge, gesunde Krafttrainierende ist die Evidenz schwach. Kreatin (3-5g) oder Whey (25-30g) sind günstiger und wirksamer für Muskelaufbau",
+      "Bei Sarkopenie und älteren Erwachsenen MIT Krafttraining: solider Effekt, eine der wenigen wissenschaftlich begründbaren Supplemente",
+      "HMB schützt vor Muskelabbau – stoppt ihn aber nicht komplett bei langer Immobilität oder schwerer Erkrankung",
+      "Dosis-Plateau bei 3 g/Tag – mehr bringt nichts. Marketing-Versprechen von '5-10g HMB für Profi-Athleten' sind nicht durch Evidenz gestützt",
+      "Mindestens 8 Wochen kontinuierliche Einnahme nötig für klinisch relevante Effekte – ist kein Akut-Supplement",
+      "Bei Calcium-HMB-Form werden ca. 300 mg Calcium pro Tagesdosis zugeführt – bei Calcium-restriktiven Diäten beachten",
+      "Hauptanwendung: PRÄVENTIVE Muskelmassen-Erhaltung in Risiko-Populationen (Senioren, Diät, Krankheit) – nicht ‚mehr Muskeln' bei gesunden Sportlern"
+    ],
+    "inhalt": [
+      "hmb"
+    ],
+    "quellen": [
+      {
+        "titel": "Effects of exercise with or without β-hydroxy-β-methylbutyrate supplementation on muscle mass, muscle strength, and physical performance in patients with sarcopenia: a systematic review and meta-analysis",
+        "autoren": "Feng Y, Chen P, Li T, Wan P, Shi R",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11444964/",
+        "jahr": 2024,
+        "typ": "meta_analyse",
+        "doi": "10.3389/fnut.2024.1460133"
+      },
+      {
+        "titel": "Supplementation with the Leucine Metabolite β-hydroxy-β-methylbutyrate (HMB) does not Improve Resistance Exercise-Induced Changes in Body Composition or Strength in Young Subjects: A Systematic Review and Meta-Analysis",
+        "autoren": "Jakubowski JS, Nunes EA, Teixeira FJ, et al.",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7285233/",
+        "jahr": 2020,
+        "typ": "meta_analyse",
+        "doi": "10.3390/nu12051523"
+      },
+      {
+        "titel": "The effects of β-hydroxy-β-methylbutyrate or HMB-rich nutritional supplements on sarcopenia patients: a systematic review and meta-analysis",
+        "autoren": "Su H, Zhou H, Gong Y, et al.",
+        "url": "https://doi.org/10.3389/fmed.2024.1348212",
+        "jahr": 2024,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Effects of oral supplementation of β-hydroxy-β-methylbutyrate on muscle mass and strength in individuals over the age of 50: a meta-analysis",
+        "autoren": "Li et al.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12003145/",
+        "jahr": 2025,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "Ergogenic Benefits of β-Hydroxy-β-Methyl Butyrate (HMB) Supplementation on Body Composition and Muscle Strength: An Umbrella Review of Meta-Analyses",
+        "autoren": "Bideshki MV, et al.",
+        "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jcsm.13671",
+        "jahr": 2025,
+        "typ": "umbrella_review"
+      },
+      {
+        "titel": "Effects of beta-hydroxy-beta-methylbutyrate supplementation on strength and body composition in trained and competitive athletes: A meta-analysis",
+        "autoren": "Sanchez-Martinez J, et al.",
+        "url": "https://www.sciencedirect.com/science/article/abs/pii/S1440244017317590",
+        "jahr": 2018,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "The Role of HMB Supplementation in Enhancing the Effects of Resistance Training in Older Adults",
+        "autoren": "MDPI Nutrients 2025",
+        "url": "https://www.mdpi.com/2072-6643/17/22/3624",
+        "jahr": 2025,
+        "typ": "meta_analyse"
+      },
+      {
+        "titel": "ESPEN guideline on definitions and terminology of clinical nutrition (Sarkopenie-Empfehlungen)",
+        "autoren": "Cederholm T, et al.",
+        "url": "https://www.espen.org/files/ESPEN-Guidelines/ESPEN-guideline-on-definitions-and-terminology-of-clinical-nutrition.pdf",
+        "jahr": 2017,
+        "typ": "position_stand"
+      }
     ]
   }
 }

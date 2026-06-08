@@ -1,0 +1,252 @@
+{
+  "id": "iso_clear",
+  "name": "ISO Clear (Whey Protein Isolat)",
+  "kategorie": "performance",
+  "ikon": "💧",
+  "kurz_beschreibung": "Hochreines Whey-Isolat (>90% Protein, kaum Laktose, kaum Fett). Wirkstoffidentisch zu Whey Konzentrat – aber ideal bei Laktose-Intoleranz, Kalorienreduktion und für Personen mit empfindlichem Magen.",
+
+  "beschreibung": {
+    "was_ist_es": "Whey Protein Isolat (WPI) ist eine weiter verarbeitete Form von Molkeprotein. Durch zusätzliche Filtrationsschritte (Mikrofiltration, Ionenaustausch oder Crossflow-Membran-Filtration) werden Laktose, Fette und Kohlenhydrate weitgehend entfernt. Das Resultat: ein Pulver mit über 90% reinem Protein, weniger als 1% Laktose und unter 1% Fett. Im Gegensatz dazu enthält Whey Konzentrat (WPC) 70-80% Protein, 4-8% Laktose und 1-8% Fett. 'ISO Clear' bezieht sich oft auf eine besonders klare, geschmacksneutrale Variante, die in Wasser kristallklar bleibt (statt cremig wie WPC).",
+    "wie_wirkt_es": "Die Wirkung ist mit Whey Konzentrat IDENTISCH: rascher Anstieg essentieller Aminosäuren (besonders Leucin) im Blut, was die Muskelproteinsynthese (mTOR-Signalweg) optimal aktiviert. Der Hauptunterschied liegt nicht im Wirkmechanismus, sondern in der Aufnahmegeschwindigkeit und der Verträglichkeit. Da kaum Laktose und Fett dabei sind, wird WPI etwas schneller absorbiert und ist für laktose-empfindliche Personen viel verträglicher.",
+    "warum_wichtig": "WPI ist KEIN Wundermittel – die Marketing-Behauptung 'besseres Protein' ist meist überzogen. Die Realität: Für 90% aller Anwender ist Whey Konzentrat genauso gut und 30-50% günstiger. WPI lohnt sich gezielt für: Laktose-Intolerante, Personen in strikter Diät (jede Kalorie zählt), Magenempfindliche und Personen die eine geschmacksneutrale Variante bevorzugen. Für Standard-Krafttraining bei gesunden Personen: Konzentrat ist meist die bessere Wahl."
+  },
+
+  "fazit": {
+    "top_effekte": [
+      "Identische Muskelaufbau-Wirkung wie Whey Konzentrat (Meta-Analyse n=246, p>0.05 für Magermasse)",
+      "Über 90% Proteingehalt (vs. 70-80% bei WPC) – schneller absorbiert",
+      "Unter 1% Laktose – für Laktose-Intolerante in der Regel unproblematisch"
+    ],
+    "ideal_fuer": "Personen mit Laktose-Intoleranz, Diät/Kalorienreduktion, magenempfindliche Trainierende, Wettkampf-Vorbereitung, Personen die geschmacksneutrales Protein bevorzugen",
+    "dosis": "25-40 g pro Portion, 1-2 Portionen täglich – identisch zu Whey Konzentrat",
+    "vorsicht_bei": "Milcheiweiß-Allergie (komplette Kasein/Albumin-Allergie schließt WPI aus), strikte Vegetarier/Veganer, sehr hoher Eiweißbedarf nicht erfüllbar als Alleinquelle",
+    "mythen": [
+      "„Isolat ist wirksamer für den Muskelaufbau als Konzentrat“ – falsch. Meta-Analyse (Castro 2019) zeigt: KEIN signifikanter Unterschied in fettfreier Masse zwischen WPI und WPC.",
+      "„Isolat ist ‚saubereres' Protein und gesünder“ – Marketing-Behauptung. Whey Konzentrat enthält Lacto-Globuline, Immunglobuline und Laktoferrin – bioaktive Komponenten, die durch die zusätzliche Filtration teilweise verloren gehen.",
+      "„Isolat hat KEINE Laktose“ – nicht ganz. Es enthält noch <1% Laktose. Bei sehr schwerer Laktose-Intoleranz kann auch das noch Beschwerden machen.",
+      "„Isolat ist für jeden die bessere Wahl“ – falsch. Für 90% der Anwender ist Konzentrat gleich wirksam und deutlich günstiger. Isolat lohnt sich nur bei spezifischen Bedürfnissen.",
+      "„Wegen schnellerer Aufnahme baut Isolat mehr Muskel auf“ – falsch. Der Unterschied in der Aufnahmegeschwindigkeit (etwa 15-30 Min schneller) ist klinisch irrelevant – das anabole Fenster ist 3-5 Stunden weit, nicht Minuten."
+    ]
+  },
+
+  "evidenz": {
+    "level": "A",
+    "score": 82,
+    "review_typ": "meta_analyse",
+    "studien_anzahl": 25,
+    "konsens": "ISSN Position Stand + Meta-Analysen (Morton 2018, Castro 2019, Martín-Rincón 2024)",
+    "effekt_groesse": [
+      {
+        "wert": 0.0,
+        "einheit": "kg Magermasse-Unterschied",
+        "kontext": "Direkter Vergleich der Magermasse-Entwicklung zwischen Whey Isolat (WPI) und Whey Konzentrat (WPC)",
+        "quelle": "Castro et al. 2019 Vergleichs-Meta-Analyse (8 RCTs, n=246)",
+        "erklaerung": {
+          "was_bedeutet": "Eine direkte Vergleichs-Meta-Analyse zeigt: Zwischen Whey Isolat und Whey Konzentrat gibt es KEINEN signifikanten Unterschied in der Magermasse-Entwicklung (p > 0.05). Beide Formen sind gleich wirksam für Muskelaufbau. Der vermeintliche 'Vorteil' von Isolat ist Marketing – nicht wissenschaftlich belegt. Wichtig: Beide funktionieren gut, aber nicht eine 'besser' als die andere.",
+          "studie_zeigt": "Vergleichs-Meta-Analyse mit 246 Sportlern aus 8 RCTs. Subgruppen: WPC (Konzentrat), WPI (Isolat), WPH (Hydrolysat). Bei Fettmasse-Reduktion zeigte WPC sogar einen LEICHT besseren Effekt (-0.63 kg) als WPI (nicht signifikant). Bei Magermasse: kein signifikanter Effekt-Unterschied zwischen den Formen.",
+          "studien_details": "Systematische Meta-Analyse publiziert 2019 in Nutrients. 8 RCTs analysiert. Studiendauer durchschnittlich 64.5 Tage. Methodik: Random-Effects-Modell, Subgruppen-Analysen für verschiedene Protein-Formen.",
+          "zuverlaessigkeit": "Sehr hoch für die Aussage 'Isolat ≠ besser als Konzentrat'. Praktische Konsequenz: Wenn keine Laktose-Intoleranz oder strikte Diät vorliegt, ist Konzentrat die wirtschaftlichere Wahl."
+        }
+      },
+      {
+        "wert": 90,
+        "einheit": "% Proteingehalt",
+        "kontext": "Proteingehalt von Whey Isolat im Vergleich zu Whey Konzentrat (70-80%)",
+        "quelle": "Mehrere Marktanalysen + ISSN Position Stand",
+        "erklaerung": {
+          "was_bedeutet": "Whey Isolat hat über 90% reines Protein pro Gewichtseinheit – Konzentrat hat 70-80%. Pro 30g Portion: Isolat liefert 27-29g Protein, Konzentrat 21-24g. Das klingt nach viel, ist aber bei normaler Dosierung (25-40g pro Portion) praktisch irrelevant. Beide Formen liefern in einer Standardportion 20-30g Protein. Die 'höhere Konzentration' rechtfertigt NICHT den Preisunterschied von 30-50%.",
+          "studie_zeigt": "Marktanalyse: WPI-Produkte enthalten standardmäßig 88-92% Protein, kaum Laktose (<1%) und kaum Fett (<1%). WPC-Produkte: 70-80% Protein, 4-8% Laktose, 1-8% Fett. Was bedeutet: Pro 100g Pulver kriegst du bei WPI 90g Protein, bei WPC ca. 75g. Wer nur Protein zählt: 25% mehr Protein pro Gramm Pulver – aber der Preis ist meist doppelt so hoch.",
+          "studien_details": "Daten aus mehreren Marktanalysen und ISSN Position Stand zu Whey Protein. Verarbeitung erfolgt durch Mikrofiltration oder Ionenaustausch.",
+          "zuverlaessigkeit": "Hoch für die Aussage über Proteingehalt. Klinisch relevant: Bei der typischen Dosierung von 25-30g pro Portion ist der Unterschied vernachlässigbar."
+        }
+      },
+      {
+        "wert": 1.0,
+        "einheit": "% Laktose (vs. 4-8% bei WPC)",
+        "kontext": "Restlaktose-Gehalt in Whey Isolat – für die meisten Laktose-Intoleranten unproblematisch",
+        "quelle": "ISSN Position Stand + multiple klinische Studien",
+        "erklaerung": {
+          "was_bedeutet": "Whey Isolat enthält normalerweise unter 1% Laktose (oft sogar <0.5%). In einer 30g-Portion sind das also weniger als 0.3g Laktose. Zum Vergleich: Ein Glas Milch (200ml) hat ~10g Laktose. Whey Konzentrat hat 4-8% Laktose, also etwa 1.5-2.5g pro 30g-Portion – das kann bei Laktose-Intoleranz schon Probleme machen. Für die meisten Laktose-Intoleranten ist WPI gut verträglich (Schwelle: ~5g Laktose pro Mahlzeit).",
+          "studie_zeigt": "Bei Personen mit Laktose-Intoleranz: WPI zeigt deutlich weniger gastrointestinale Beschwerden (Blähungen, Krämpfe, Durchfall) als WPC. ABER: Bei Milcheiweiß-Allergie (auf Casein oder Beta-Lactoglobulin) ist auch WPI nicht geeignet – hier muss auf Pflanzenprotein oder Eierprotein umgestiegen werden.",
+          "studien_details": "Klinische Daten aus mehreren kontrollierten Studien zu Laktose-Verträglichkeit. Wichtig: Laktose-Intoleranz ist NICHT dasselbe wie Milcheiweiß-Allergie.",
+          "zuverlaessigkeit": "Sehr hoch. Praktische Konsequenz: WPI ist die bessere Wahl für Laktose-Intolerante. Bei Milcheiweiß-Allergie ist WPI aber KEIN sicherer – Pflanzenprotein wählen."
+        }
+      }
+    ]
+  },
+
+  "indikationen": [
+    {
+      "ziel": "muskelaufbau",
+      "staerke": 0.85,
+      "kommentar": "Identisch wirksam wie Whey Konzentrat. Hohe Bioverfügbarkeit, schnelle Aufnahme, optimales Aminosäureprofil."
+    },
+    {
+      "ziel": "fettabbau_muskelerhalt",
+      "staerke": 0.8,
+      "kommentar": "Bei Diät besonders interessant: hoher Proteingehalt bei wenigen Kalorien – sättigt und schützt Magermasse."
+    },
+    {
+      "ziel": "laktose_intoleranz",
+      "staerke": 0.9,
+      "kommentar": "HAUPTINDIKATION. Unter 1% Laktose – meist gut verträglich. Bei sehr schwerer Intoleranz: Hydrolysat oder Pflanzenprotein."
+    },
+    {
+      "ziel": "regeneration",
+      "staerke": 0.75,
+      "kommentar": "Schnelle Aufnahme nach Training liefert rasch BCAAs und Leucin – fördert Muskelproteinsynthese."
+    },
+    {
+      "ziel": "diaet_kalorienreduktion",
+      "staerke": 0.85,
+      "kommentar": "Wenig Kalorien pro Portion (Ø 90-120 kcal vs. 120-140 kcal bei WPC). Bei strikter Diät relevant."
+    },
+    {
+      "ziel": "magenempfindlichkeit",
+      "staerke": 0.7,
+      "kommentar": "Weniger Fett und Laktose – besser verträglich bei Reizdarm-Tendenzen, empfindlichem Magen."
+    },
+    {
+      "ziel": "wettkampfvorbereitung",
+      "staerke": 0.75,
+      "kommentar": "Wenn jede Kalorie zählt: hoher Proteingehalt pro Kalorie macht WPI ideal für die letzten Diätwochen."
+    }
+  ],
+
+  "kontraindikationen": [
+    {
+      "art": "allergie",
+      "wert": "milcheiweiss_kuhmilchprotein",
+      "schwere": "hart",
+      "hinweis": "Bei Milcheiweiß-Allergie (Casein, Beta-Lactoglobulin): KEIN WPI. Auch Hydrolysat ist nicht sicher. Auf Pflanzen- oder Eierprotein umsteigen."
+    },
+    {
+      "art": "ernaehrung",
+      "wert": "vegetarisch_vegan",
+      "schwere": "hart",
+      "hinweis": "Whey ist tierischen Ursprungs (Milch). Für Veganer ungeeignet. Pflanzenprotein wählen."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "niereninsuffizienz_schwer",
+      "schwere": "vorsichtig",
+      "hinweis": "Bei schwerer Niereninsuffizienz mit Eiweißrestriktion: Gesamteiweißzufuhr mit Arzt absprechen. Whey-Proteine zählen zur Tageseiweißmenge."
+    },
+    {
+      "art": "medizinisch",
+      "wert": "phenylketonurie",
+      "schwere": "hart",
+      "hinweis": "Whey enthält Phenylalanin – bei PKU strikt vermeiden oder mit ärztlicher Anleitung dosieren."
+    }
+  ],
+
+  "dosierung": {
+    "standard": "25-40 g pro Portion, 1-2 Portionen täglich",
+    "bereich": { "min": 20, "max": 50, "einheit": "g pro Portion" },
+    "obergrenze": "Bis zu 1.6-2.2 g Protein/kg KG/Tag aus allen Quellen für Krafttrainierende (ISSN-Empfehlung)",
+    "timing": "Nach dem Training (0-2 Std) für schnellen Aminosäure-Anstieg, oder als Snack zwischen Mahlzeiten zur Bedarfsdeckung. Vor dem Schlafengehen: lieber Casein (langsamer absorbiert).",
+    "quelle": "ISSN Position Stand on Protein and Exercise (2017)",
+    "formen_vergleich": "Whey Isolat (WPI): >90% Protein, <1% Laktose, ideal für Diät und Laktose-Intolerante. Whey Konzentrat (WPC): 70-80% Protein, 4-8% Laktose, günstiger und Standard-Wahl. Whey Hydrolysat (WPH): vorverdaut zu Peptiden, schnellste Aufnahme, teuerste Form, oft bitter im Geschmack. Native Whey: aus direkt entrahmter Milch (statt aus Käse-Nebenprodukt), Premium-Produkt mit höherer Bioaktivität."
+  },
+
+  "population_spezifisch": {
+    "laktose_intoleranten": {
+      "relevant": true,
+      "staerke": 0.95,
+      "kommentar": "HAUPTGRUND für WPI statt WPC. Unter 1% Laktose – meist gut verträglich. Verbesserte Lebensqualität.",
+      "quelle": "Multiple klinische Studien"
+    },
+    "diaet_kaloriendefizit": {
+      "relevant": true,
+      "staerke": 0.85,
+      "kommentar": "Höchster Proteingehalt pro Kalorie. Bei Wettkampfvorbereitung oder strikter Diät relevant."
+    },
+    "magenempfindliche": {
+      "relevant": true,
+      "staerke": 0.7,
+      "kommentar": "Weniger Fett und Laktose – besser verträglich. Hydrolysat noch schonender, aber teurer."
+    },
+    "wettkampfsportler": {
+      "relevant": true,
+      "staerke": 0.75,
+      "kommentar": "Letzte Diätwochen: jede Kalorie zählt. WPI ist hier optimal."
+    },
+    "budget_orientiert_gesund": {
+      "relevant": false,
+      "staerke": 0.2,
+      "kommentar": "Für gesunde Personen ohne Laktose-Probleme: WPC ist 30-50% günstiger und gleich wirksam. Geld sparen."
+    },
+    "frauen_menopause": {
+      "relevant": true,
+      "staerke": 0.65,
+      "kommentar": "Verträglichkeit nimmt im Alter manchmal ab. WPI kann eine sanftere Option sein. Whey schützt Magermasse postmenopausal."
+    }
+  },
+
+  "warnhinweise": [
+    "ISO Clear (WPI) ist NICHT wirksamer als Whey Konzentrat – die Meta-Analysen zeigen keinen signifikanten Unterschied beim Muskelaufbau",
+    "Preis-Aufschlag von 30-50% vs. WPC – nur sinnvoll wenn Laktose-Intoleranz, Diät oder Magen-Empfindlichkeit vorliegen",
+    "Whey ist tierischen Ursprungs (Kuhmilch) – KEIN Whey-Produkt ist vegan, auch nicht WPI",
+    "Bei Milcheiweiß-Allergie: WPI ist NICHT sicher. Pflanzenprotein wählen. Laktose-Intoleranz ≠ Milcheiweiß-Allergie",
+    "Whey ist KEIN Ersatz für eine ausgewogene Ernährung – maximal 30-40% der täglichen Eiweißzufuhr aus Pulver, der Rest aus Vollwertkost",
+    "Geschmacksneutrale 'Clear'-Varianten lassen sich auch in Saft oder Wasser auflösen ohne cremige Konsistenz – Geschmackssache",
+    "Im Vergleich zu WPC enthält WPI weniger bioaktive Komponenten (Immunglobuline, Laktoferrin) durch die intensivere Filtration",
+    "Bei sehr schwerer Laktose-Intoleranz kann auch das 1% Laktose noch Beschwerden machen – dann Hydrolysat oder Pflanzenprotein wählen"
+  ],
+
+  "inhalt": ["whey_protein"],
+
+  "quellen": [
+    {
+      "titel": "Comparative Meta-Analysis of the Effect of Concentrated, Hydrolyzed, and Isolated Whey Protein Supplementation on Body Composition of Physical Activity Practitioners",
+      "autoren": "Castro LH, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6769754/",
+      "jahr": 2019,
+      "typ": "meta_analyse",
+      "doi": "10.3390/nu11092047"
+    },
+    {
+      "titel": "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults",
+      "autoren": "Morton RW, et al.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28698222/",
+      "jahr": 2018,
+      "typ": "meta_analyse",
+      "doi": "10.1136/bjsports-2017-097608"
+    },
+    {
+      "titel": "International Society of Sports Nutrition Position Stand: Protein and Exercise",
+      "autoren": "Jäger R, Kerksick CM, et al.",
+      "url": "https://jissn.biomedcentral.com/articles/10.1186/s12970-017-0177-8",
+      "jahr": 2017,
+      "typ": "position_stand"
+    },
+    {
+      "titel": "Whey protein supplementation and muscle mass: current perspectives",
+      "autoren": "Davies RW, et al.",
+      "url": "https://www.dovepress.com/whey-protein-supplementation-and-muscle-mass-current-perspectives-peer-reviewed-fulltext-article-NDS",
+      "jahr": 2019,
+      "typ": "review"
+    },
+    {
+      "titel": "Effectiveness of Whey Protein Supplementation during Resistance Exercise Training on Skeletal Muscle Mass and Strength in Older People with Sarcopenia",
+      "autoren": "Cerda-Diez ME, et al.",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10421506/",
+      "jahr": 2023,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "Differential Effect of Whey Protein on Lean Body Mass in Sarcopenia and Pre-Sarcopenia",
+      "autoren": "Nutrients 2024 Review",
+      "url": "https://www.mdpi.com/2072-6643/16/14/2289",
+      "jahr": 2024,
+      "typ": "meta_analyse"
+    },
+    {
+      "titel": "DIAAS Protein Scoring System – FAO/WHO",
+      "autoren": "FAO Expert Consultation",
+      "url": "https://www.fao.org/4/i3124e/i3124e.pdf",
+      "jahr": 2013,
+      "typ": "position_stand"
+    }
+  ]
+}
