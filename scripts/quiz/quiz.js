@@ -1,7 +1,8 @@
 /* ============================================================
-   quiz.js – SupplAI Quiz-Engine
+   quiz.js – Stronger Quiz-Engine (Spec v2, Juni 2026)
    Enthält: Fragen, Antwort-Logik, Dosierungs-Engine
    Wird geladen von: index.html vor app.js
+   Spec-Dokument: QUIZ-SPEC.md
 ============================================================ */
 
 // ── GLOBALER STATE ──
@@ -15,22 +16,28 @@ var fQueue = [];                      // Fragen-Queue
 // Wählt passendes Emoji je nach Geschlecht und Alter
 function getAvatar(a) {
   var w = a.geschlecht === 'B';
-  var alter = a.intro;
+  var alter = a.alter || 0;  // konkrete Zahl, Fallback: Kategorie aus a.intro
+  // Falls a.alter fehlt (alte Daten), aus Kategorie ableiten
+  if (!alter && a.intro) {
+    alter = a.intro === 'A' ? 16 : a.intro === 'B' ? 22 : a.intro === 'C' ? 30 :
+            a.intro === 'D' ? 40 : 55;
+  }
   if (w) {
-    if (alter === 'A') return '👧';
-    if (alter === 'B' || alter === 'C') return '👩';
-    if (alter === 'D') return '👩‍🦱';
+    if (alter < 18) return '👧';
+    if (alter <= 35) return '👩';
+    if (alter <= 50) return '👩‍🦱';
     return '👩‍🦳';
   } else {
-    if (alter === 'A') return '👦';
-    if (alter === 'B' || alter === 'C') return '👨';
-    if (alter === 'D') return '👨‍🦱';
+    if (alter < 18) return '👦';
+    if (alter <= 35) return '👨';
+    if (alter <= 50) return '👨‍🦱';
     return '👨‍🦳';
   }
 }
 
 // ── FRAGEN-QUEUE ──
 // Definiert alle Quiz-Fragen in der richtigen Reihenfolge
+// Quiz-Spec v2 – siehe QUIZ-SPEC.md
 function initQueue() {
   fQueue = [
     {
@@ -45,94 +52,93 @@ function initQueue() {
       hint: 'Relevant für Eisen, Magnesium und Dosierungen.',
       opts: [
         { k: 'A', l: 'Männlich' },
-        { k: 'B', l: 'Weiblich' },
-        { k: 'C', l: 'Keine Angabe' }
+        { k: 'B', l: 'Weiblich' }
       ]
     },
+    // Schritt 3 (Größe) wurde entfernt – wurde von Engine nie genutzt
     {
-      id: 'groesse', typ: 'rad', tag: 'Schritt 3',
-      frage: 'Wie groß bist du?',
-      hint: 'Basis für BMI-Berechnung.',
-      einheit: 'cm', min: 140, max: 220, std: 175
-    },
-    {
-      id: 'gewicht', typ: 'rad', tag: 'Schritt 4',
+      id: 'gewicht', typ: 'rad', tag: 'Schritt 3',
       frage: 'Wie viel wiegst du?',
       hint: 'Grundlage für exakte Proteindosierung.',
       einheit: 'kg', min: 40, max: 200, std: 75
     },
     {
-      id: 'training', typ: 'choice', tag: 'Schritt 5',
+      id: 'training', typ: 'choice', tag: 'Schritt 4',
       frage: 'Deine Trainingsform?',
       hint: 'Bestimmt deinen Supplement-Bedarf.',
       opts: [
         { k: 'A', l: 'Kraft 4+×/Woche' },
         { k: 'B', l: 'Kraft 2–3×/Woche' },
         { k: 'C', l: 'Hauptsächlich Cardio' },
-        { k: 'D', l: 'Mix' },
-        { k: 'E', l: 'Wenig Sport' }
+        { k: 'D', l: 'Mix (Kraft + Cardio kombiniert)' },
+        { k: 'E', l: 'Wenig Sport (≤ 1×/Woche)' }
       ]
     },
     {
-      id: 'erfahrung', typ: 'choice', tag: 'Schritt 6',
-      frage: 'Deine Erfahrung?',
-      hint: 'Einsteiger brauchen einfachere Stacks.',
+      id: 'erfahrung', typ: 'choice', tag: 'Schritt 5',
+      frage: 'Wie lange trainierst du regelmäßig?',
+      hint: 'Beeinflusst die Komplexität deines Stacks.',
       opts: [
-        { k: 'einsteiger',     l: 'Einsteiger (< 1 Jahr)' },
-        { k: 'fortgeschritten',l: 'Fortgeschritten (1–3 J.)' },
-        { k: 'profi',          l: 'Profi (> 3 Jahre)' }
+        { k: 'einsteiger',     l: 'Anfänger (< 1 Jahr)' },
+        { k: 'fortgeschritten',l: 'Erfahren (1–3 Jahre)' },
+        { k: 'profi',          l: 'Sehr erfahren (3+ Jahre)' }
       ]
     },
     {
-      id: 'ziele', typ: 'multi', tag: 'Schritt 7',
+      id: 'ziele', typ: 'multi', tag: 'Schritt 6',
       frage: 'Deine Ziele?',
-      hint: 'Mehrfachauswahl möglich.',
+      hint: 'Wähle deine 3 wichtigsten – das schärft die Empfehlungen.',
+      max: 3,  // NEU: Max-3-Limit
       opts: [
         { k: 'A', l: '💪 Muskelaufbau' },
         { k: 'B', l: '🔥 Fettabbau' },
         { k: 'C', l: '⚡ Mehr Energie' },
         { k: 'D', l: '🏃 Ausdauer' },
         { k: 'E', l: '😴 Regeneration' },
-        { k: 'F', l: '❤️ Gesundheit' }
+        { k: 'F', l: '❤️ Gesundheit' },
+        { k: 'G', l: '🧘 Stress reduzieren' }  // NEU
       ]
     },
     {
-      id: 'ernaehrung', typ: 'choice', tag: 'Schritt 8',
+      id: 'ernaehrung', typ: 'choice', tag: 'Schritt 7',
       frage: 'Deine Ernährungsweise?',
-      hint: 'Veganer brauchen andere Produkte.',
+      hint: 'Beeinflusst Protein-Form, B12, Eisen und Omega-3.',
       opts: [
-        { k: 'A', l: 'Alles' },
-        { k: 'B', l: 'Flexitarisch' },
-        { k: 'C', l: 'Vegetarisch' },
-        { k: 'D', l: 'Vegan' }
+        { k: 'A', l: 'Alles essen' },
+        { k: 'B', l: 'Flexitarisch (selten Fleisch)' },
+        { k: 'C', l: 'Pescetarisch (Fisch, kein Fleisch)' },  // NEU
+        { k: 'D', l: 'Vegetarisch' },
+        { k: 'E', l: 'Vegan' }
       ]
     },
     {
-      id: 'unvertraeglichkeiten', typ: 'multi', tag: 'Schritt 9',
+      id: 'unvertraeglichkeiten', typ: 'multi', tag: 'Schritt 8',
       frage: 'Unverträglichkeiten oder Allergien?',
-      hint: 'Beeinflusst direkt welche Produkte wir empfehlen.',
+      hint: 'Wichtig für deine Sicherheit – wir filtern Produkte entsprechend.',
       exkl: 'A',
       opts: [
         { k: 'A', l: 'Keine' },
         { k: 'B', l: '🥛 Laktoseintoleranz' },
-        { k: 'C', l: '🐟 Fischallergie' },
-        { k: 'D', l: '🌾 Glutenunverträglichkeit' },
-        { k: 'E', l: '🌱 Sojaallergie' }
+        { k: 'C', l: '🥛 Milcheiweiß-Allergie' },  // NEU – verschiebt nachfolgende Codes!
+        { k: 'D', l: '🐟 Fischallergie' },
+        { k: 'E', l: '🌾 Glutenunverträglichkeit' },
+        { k: 'F', l: '🌱 Sojaallergie' }
       ]
     },
     {
-      id: 'medikamente', typ: 'multi', tag: 'Schritt 10',
-      frage: 'Medikamente oder Erkrankungen?',
-      hint: 'Wichtig für deine Sicherheit – beeinflusst die Auswahl.',
+      id: 'medikamente', typ: 'multi', tag: 'Schritt 9',
+      frage: 'Erkrankungen oder regelmäßige Medikamente?',
+      hint: 'Sicherheitsrelevant. Wir empfehlen nichts was problematisch wäre.',
       exkl: 'A',
       opts: [
         { k: 'A', l: 'Keine' },
-        { k: 'B', l: 'Blutverdünner' },
+        { k: 'B', l: 'Blutverdünner / Gerinnungshemmer' },
         { k: 'C', l: 'Schilddrüsenerkrankung' },
-        { k: 'D', l: 'Bluthochdruck' },
+        { k: 'D', l: 'Bluthochdruck / Herzerkrankung' },
         { k: 'E', l: 'Nierenerkrankung' },
-        { k: 'F', l: 'Diabetes' },
-        { k: 'G', l: 'Antidepressiva' }
+        { k: 'F', l: 'Lebererkrankung' },  // NEU – verschiebt nachfolgende Codes!
+        { k: 'G', l: 'Diabetes' },
+        { k: 'H', l: 'Antidepressiva / Psychopharmaka' }
       ]
     },
     // Situationsfrage wird dynamisch via injectSituation() angehängt
@@ -141,45 +147,65 @@ function initQueue() {
 
 // ── SITUATIONSFRAGE DYNAMISCH EINBAUEN ──
 // Wird nach Geschlecht- und Medikamente-Frage aufgerufen
+// Quiz-Spec v2: Multi-Select statt Single-Select, Reha-Option ergänzt
 function injectSituation() {
   var geschlecht = AW['geschlecht'];
-  var alter      = AW['intro'];
+  var alter      = AW['alter'] || 0;        // jetzt als Zahl verfügbar
   var w          = geschlecht === 'B';
-  var aelteresFrau = w && (alter === 'C' || alter === 'D' || alter === 'E');
-  var jungesFrau   = w && (alter === 'A' || alter === 'B' || alter === 'C');
 
-  // Vorherige Situationsfrage entfernen
-  fQueue = fQueue.filter(function (f) { return f.id !== 'situation'; });
+  // Vorherige Situationsfrage UND ggf. vorherige Folgefrage entfernen
+  fQueue = fQueue.filter(function (f) {
+    return f.id !== 'situation' && f.id !== 'schlafproblem_typ';
+  });
 
+  // Optionen kontext-gefiltert aufbauen
   var opts = [{ k: 'A', l: 'Keine besondere Situation' }];
 
-  if (w) {
-    if (jungesFrau || alter === 'C') {
-      opts.push({ k: 'B', l: '🤰 Schwanger oder stillend' });
-    }
-    if (aelteresFrau) {
-      opts.push({ k: 'C', l: '🌸 Wechseljahre' });
-    }
+  // Schwangerschaft: nur Frauen 18-50
+  if (w && alter >= 18 && alter <= 50) {
+    opts.push({ k: 'B', l: '🤰 Schwangerschaft / Stillzeit' });
   }
-  opts.push({ k: 'D', l: '😴 Starke Schlafprobleme' });
+  // Wechseljahre: nur Frauen ab 40
+  if (w && alter >= 40) {
+    opts.push({ k: 'C', l: '🌗 Wechseljahre' });
+  }
+  // Schlafprobleme: alle
+  opts.push({ k: 'D', l: '😴 Schlafprobleme' });
+  // Reha: alle (NEU)
+  opts.push({ k: 'E', l: '💊 Reha / nach Krankheit' });
 
-  if (opts.length > 2) {
+  fQueue.push({
+    id: 'situation', typ: 'multi',         // jetzt Multi-Select
+    tag: 'Schritt ' + (fQueue.length + 1),
+    frage: 'Aktuelle Situation?',
+    hint: 'Beeinflusst spezielle Empfehlungen.',
+    exkl: 'A',                              // "Keine" exklusiv
+    opts: opts
+  });
+
+  // Folgefrage zu Schlafproblemen wird nach Beantwortung dynamisch eingefügt
+  // (siehe Funktion injectSchlafproblemTyp)
+}
+
+// ── FOLGEFRAGE: Schlafproblem-Typ ──
+// Wird nur eingefügt wenn in Situation 'D' ausgewählt wurde
+function injectSchlafproblemTyp() {
+  var sit = AW['situation'] || [];
+  var hatSchlafproblem = Array.isArray(sit) && sit.indexOf('D') >= 0;
+
+  // Vorherige Folgefrage entfernen
+  fQueue = fQueue.filter(function (f) { return f.id !== 'schlafproblem_typ'; });
+
+  if (hatSchlafproblem) {
     fQueue.push({
-      id: 'situation', typ: 'choice',
+      id: 'schlafproblem_typ', typ: 'choice',
       tag: 'Schritt ' + (fQueue.length + 1),
-      frage: 'Gibt es etwas Besonderes das wir berücksichtigen sollen?',
-      hint: 'Beeinflusst deine Supplement-Empfehlung.',
-      opts: opts
-    });
-  } else {
-    fQueue.push({
-      id: 'situation', typ: 'choice',
-      tag: 'Schritt ' + (fQueue.length + 1),
-      frage: 'Hast du Schlafprobleme?',
-      hint: 'Bestimmte Supplements können gezielt helfen.',
+      frage: 'Welche Art Schlafproblem?',
+      hint: 'Bestimmt die richtige Empfehlung.',
       opts: [
-        { k: 'A', l: 'Nein, ich schlafe gut' },
-        { k: 'D', l: '😴 Ja, ich habe Schlafprobleme' }
+        { k: 'A', l: 'Einschlafen (> 30 Min bis Schlaf)' },
+        { k: 'B', l: 'Durchschlafen (Aufwachen, schwer wieder einschlafen)' },
+        { k: 'C', l: 'Beides' }
       ]
     });
   }
@@ -395,9 +421,11 @@ function bindQuiz(f) {
       var gewaehlterWert = radWerteW[ridx];
 
       if (f.id === 'intro') {
-        // Geburtsjahr → Alterskategorie A–E
+        // Geburtsjahr → Alterskategorie A–E (für Rückwärtskompatibilität)
+        // UND konkretes Alter als Zahl (für neue Engine)
         AW['geburtsjahr'] = gewaehlterWert;
         var alter = new Date().getFullYear() - gewaehlterWert;
+        AW['alter'] = alter;  // NEU: konkrete Zahl
         AW[f.id] = alter < 18 ? 'A' : alter <= 25 ? 'B' : alter <= 35 ? 'C' : alter <= 45 ? 'D' : 'E';
       } else {
         // Numerischer Wert direkt speichern (z.B. Gewicht in kg)
@@ -445,6 +473,11 @@ function bindQuiz(f) {
               btn.classList.remove('sel');
               multiSel = multiSel.filter(function (x) { return x !== k; });
             } else {
+              // NEU: Max-Limit prüfen (für Ziele-Frage max:3)
+              if (f.max && multiSel.length >= f.max) {
+                toast('Maximal ' + f.max + ' Optionen wählbar.');
+                return;
+              }
               btn.classList.add('sel');
               multiSel.push(k);
             }
@@ -461,6 +494,10 @@ function naechste() {
   // Nach Geschlecht oder Medikamente → Situationsfrage dynamisch einbauen
   if (aktFrage && (aktFrage.id === 'geschlecht' || aktFrage.id === 'medikamente')) {
     injectSituation();
+  }
+  // Nach Situation → ggf. Schlafproblem-Folgefrage einbauen
+  if (aktFrage && aktFrage.id === 'situation') {
+    injectSchlafproblemTyp();
   }
   qIdx++;
   if (qIdx >= fQueue.length) zeige('s-login');

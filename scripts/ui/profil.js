@@ -376,21 +376,43 @@ function baueBegruendung(wissen, a) {
   if (!wissen.indikationen || !a) return '';
 
   // Mapping: Welche User-Antworten passen zu welchen Indikations-Zielen?
-  // Format: { ziel-id: function(antworten) → returns true wenn passend }
+  // Quiz-Spec v2: alter als Zahl, ernaehrung A-E (C=Pesce, D=Veg, E=Vegan),
+  //               ziel G=Stress NEU, situation als Multi-Array
   var matcher = {
+    // Ziele ────────────────────────────────────────────────────────────
     'muskelaufbau':           function (a) { return a.ziele && a.ziele.indexOf('A') >= 0; },
     'kraftsteigerung':        function (a) { return a.training === 'A' || a.training === 'B'; },
-    'regeneration':           function (a) { return a.ziele && a.ziele.indexOf('E') >= 0; },
     'fettabbau':              function (a) { return a.ziele && a.ziele.indexOf('B') >= 0; },
     'fettabbau_muskelerhalt': function (a) { return a.ziele && a.ziele.indexOf('B') >= 0; },
-    'ausdauer_hochintensiv':  function (a) { return a.ziele && a.ziele.indexOf('D') >= 0; },
-    'sarkopenie_praevention': function (a) { return a.intro === 'D' || a.intro === 'E'; },
-    'knochengesundheit_frauen': function (a) { return a.geschlecht === 'B' && (a.intro === 'D' || a.intro === 'E'); },
-    'immunsystem':            function (a) { return a.ziele && a.ziele.indexOf('F') >= 0; },
     'energie':                function (a) { return a.ziele && a.ziele.indexOf('C') >= 0; },
+    'ausdauer_hochintensiv':  function (a) { return a.ziele && a.ziele.indexOf('D') >= 0; },
+    'regeneration':           function (a) { return a.ziele && a.ziele.indexOf('E') >= 0; },
     'gesundheit':             function (a) { return a.ziele && a.ziele.indexOf('F') >= 0; },
-    'vegan_vegetarisch':      function (a) { return a.ernaehrung === 'D' || a.ernaehrung === 'C'; },
-    'alter_ueber_50':         function (a) { return a.intro === 'E'; },
+    'immunsystem':            function (a) { return a.ziele && a.ziele.indexOf('F') >= 0; },
+    'stress_angst':           function (a) { return a.ziele && a.ziele.indexOf('G') >= 0; },  // NEU
+    'stress_reduktion':       function (a) { return a.ziele && a.ziele.indexOf('G') >= 0; },  // NEU
+
+    // Alter (jetzt als Zahl) ───────────────────────────────────────────
+    'sarkopenie_praevention': function (a) { return (a.alter || 0) >= 50; },
+    'alter_ueber_50':         function (a) { return (a.alter || 0) >= 50; },
+    'alter_ueber_60':         function (a) { return (a.alter || 0) >= 60; },
+    'senioren':               function (a) { return (a.alter || 0) >= 50; },
+
+    // Geschlecht-spezifisch ────────────────────────────────────────────
+    'knochengesundheit_frauen': function (a) { return a.geschlecht === 'B' && (a.alter || 0) >= 50; },
+    'frauen_eisen':             function (a) { return a.geschlecht === 'B'; },
+
+    // Ernährung (Codes verschoben!) ────────────────────────────────────
+    'vegan_vegetarisch':      function (a) { return a.ernaehrung === 'D' || a.ernaehrung === 'E'; },
+    'vegan':                  function (a) { return a.ernaehrung === 'E'; },
+    'vegetarisch':            function (a) { return a.ernaehrung === 'D'; },
+
+    // Situation (jetzt Multi-Array) ────────────────────────────────────
+    'schwangerschaft':        function (a) { return Array.isArray(a.situation) && a.situation.indexOf('B') >= 0; },
+    'wechseljahre':           function (a) { return Array.isArray(a.situation) && a.situation.indexOf('C') >= 0; },
+    'schlafprobleme':         function (a) { return Array.isArray(a.situation) && a.situation.indexOf('D') >= 0; },
+    'schlaf':                 function (a) { return Array.isArray(a.situation) && a.situation.indexOf('D') >= 0; },
+    'reha_krankheit':         function (a) { return Array.isArray(a.situation) && a.situation.indexOf('E') >= 0; },
   };
 
   // Indikationen finden die auf den User passen, sortiert nach Stärke
@@ -425,12 +447,24 @@ function zielFreundlich(ziel) {
     'fettabbau_muskelerhalt':    'Schützt Muskelmasse in der Diät',
     'ausdauer_hochintensiv':     'Wirkt bei deinem Ausdauer-Training',
     'sarkopenie_praevention':    'Wichtig in deinem Alter zur Muskelerhaltung',
+    'alter_ueber_50':            'Erhöhter Bedarf in deiner Altersgruppe',
+    'alter_ueber_60':            'Wichtig in deiner Altersgruppe',
+    'senioren':                  'Relevant in deiner Altersgruppe',
     'knochengesundheit_frauen':  'Postmenopausal besonders relevant',
+    'frauen_eisen':              'Frauen haben oft niedrigere Eisenwerte',
     'immunsystem':               'Stärkt dein Immunsystem',
     'energie':                   'Passt zu deinem Ziel: mehr Energie',
     'gesundheit':                'Unterstützt deine allgemeine Gesundheit',
+    'stress_angst':              'Passt zu deinem Ziel: Stress reduzieren',     // NEU
+    'stress_reduktion':          'Passt zu deinem Ziel: Stress reduzieren',     // NEU
     'vegan_vegetarisch':         'Medizinisch wichtig bei pflanzlicher Ernährung',
-    'alter_ueber_50':            'Erhöhter Bedarf in deiner Altersgruppe',
+    'vegan':                     'Besonders relevant bei veganer Ernährung',
+    'vegetarisch':               'Bei vegetarischer Ernährung wichtig',
+    'schwangerschaft':           'Wichtig in der Schwangerschaft',
+    'wechseljahre':              'Relevant in den Wechseljahren',
+    'schlafprobleme':            'Du hast Schlafprobleme angegeben',            // NEU
+    'schlaf':                    'Du hast Schlafprobleme angegeben',
+    'reha_krankheit':            'Unterstützt deine Rehabilitation',            // NEU
   };
   return labels[ziel] || ziel;
 }
@@ -446,38 +480,64 @@ function filterVorsichtFuerUser(wissen, a) {
   }
 
   // Mapping: Welche Kontraindikations-Werte passen zu welchen Quiz-Antworten?
-  // Quiz-Codes: medikamente B=Blutverd, C=Schilddr, D=BluthHD, E=Niere, F=Diabetes, G=Antidepressiva
-  // Quiz-Codes: unvertraeglichkeiten B=Laktose, C=Fisch, D=Gluten, E=Soja
-  // Quiz-Codes: ernaehrung A=Omnivor, B=Flexitarisch, C=Vegetarisch, D=Vegan
+  // Quiz-Spec v2 (Juni 2026) – Codes geändert!
+  //
+  // medikamente:    B=Blutverd, C=Schilddr, D=BluthHD/Herz, E=Niere,
+  //                 F=Leber (NEU), G=Diabetes, H=Antidepressiva
+  // unvertraeglichkeiten: B=Laktose, C=Milcheiweiß (NEU), D=Fisch,
+  //                       E=Gluten, F=Soja
+  // ernaehrung:     A=Alles, B=Flexi, C=Pescetarisch, D=Vegetarisch, E=Vegan
   var matcher = {
-    // Medikamente (Quiz-Frage: medikamente)
+    // Medikamente / Erkrankungen ───────────────────────────────────────
     'niereninsuffizienz':         function (a) { return hat(a.medikamente, 'E'); },
     'niereninsuffizienz_schwer':  function (a) { return hat(a.medikamente, 'E'); },
-    'nierenerkrankung':           function (a) { return hat(a.medikamente, 'E'); },  // alte ID, falls noch im JSON
+    'nierenerkrankung':           function (a) { return hat(a.medikamente, 'E'); },
     'blutverduenner':             function (a) { return hat(a.medikamente, 'B'); },
     'antikoagulantien':           function (a) { return hat(a.medikamente, 'B'); },
     'schilddruese':               function (a) { return hat(a.medikamente, 'C'); },
+    'schilddruesenerkrankung':    function (a) { return hat(a.medikamente, 'C'); },
     'schilddruesenerkrankung_soja': function (a) { return hat(a.medikamente, 'C'); },
     'bluthochdruck':              function (a) { return hat(a.medikamente, 'D'); },
-    'diabetes':                   function (a) { return hat(a.medikamente, 'F'); },
-    'diabetes_medikamente':       function (a) { return hat(a.medikamente, 'F'); },
-    'antidepressiva':             function (a) { return hat(a.medikamente, 'G'); },
-    'antidepressiva_ssri':        function (a) { return hat(a.medikamente, 'G'); },
+    'herzerkrankung':             function (a) { return hat(a.medikamente, 'D'); },
+    'kardiovaskulaer':            function (a) { return hat(a.medikamente, 'D'); },
+    'lebererkrankung':            function (a) { return hat(a.medikamente, 'F'); },  // NEU
+    'leberschaeden':              function (a) { return hat(a.medikamente, 'F'); },  // NEU
+    'diabetes':                   function (a) { return hat(a.medikamente, 'G'); },  // verschoben F→G
+    'diabetes_medikamente':       function (a) { return hat(a.medikamente, 'G'); },
+    'antidepressiva':             function (a) { return hat(a.medikamente, 'H'); },  // verschoben G→H
+    'antidepressiva_ssri':        function (a) { return hat(a.medikamente, 'H'); },
+    'psychopharmaka':             function (a) { return hat(a.medikamente, 'H'); },
 
-    // Unverträglichkeiten/Allergien (Quiz-Frage: unvertraeglichkeiten)
-    'milcheiweiss':               function (a) { return hat(a.unvertraeglichkeiten, 'B'); },
-    'milcheiweiss_allergie':      function (a) { return hat(a.unvertraeglichkeiten, 'B'); },
-    'milcheiweissallergie':       function (a) { return hat(a.unvertraeglichkeiten, 'B'); },  // alte ID
+    // Unverträglichkeiten / Allergien ──────────────────────────────────
     'laktose_intoleranz':         function (a) { return hat(a.unvertraeglichkeiten, 'B'); },
-    'laktoseintoleranz':          function (a) { return hat(a.unvertraeglichkeiten, 'B'); },  // alte ID
-    'fisch_schalentiere':         function (a) { return hat(a.unvertraeglichkeiten, 'C'); },
-    'soja':                       function (a) { return hat(a.unvertraeglichkeiten, 'E'); },
-    'soja_allergie':              function (a) { return hat(a.unvertraeglichkeiten, 'E'); },
-    'huelsenfrucht_allergie':     function (a) { return hat(a.unvertraeglichkeiten, 'E'); },  // Soja ist Hülsenfrucht
+    'laktoseintoleranz':          function (a) { return hat(a.unvertraeglichkeiten, 'B'); },
+    'milcheiweiss':               function (a) { return hat(a.unvertraeglichkeiten, 'C'); },  // NEU: jetzt C
+    'milcheiweiss_allergie':      function (a) { return hat(a.unvertraeglichkeiten, 'C'); },  // NEU
+    'milcheiweissallergie':       function (a) { return hat(a.unvertraeglichkeiten, 'C'); },  // alte ID, jetzt korrekt
+    'milcheiweiss_kuhmilchprotein': function (a) { return hat(a.unvertraeglichkeiten, 'C'); },
+    'fisch_schalentiere':         function (a) { return hat(a.unvertraeglichkeiten, 'D'); },  // verschoben C→D
+    'fischallergie':              function (a) { return hat(a.unvertraeglichkeiten, 'D'); },
+    'gluten':                     function (a) { return hat(a.unvertraeglichkeiten, 'E'); },  // verschoben D→E
+    'glutenunvertraeglichkeit':   function (a) { return hat(a.unvertraeglichkeiten, 'E'); },
+    'zoeliakie':                  function (a) { return hat(a.unvertraeglichkeiten, 'E'); },
+    'soja':                       function (a) { return hat(a.unvertraeglichkeiten, 'F'); },  // verschoben E→F
+    'soja_allergie':              function (a) { return hat(a.unvertraeglichkeiten, 'F'); },
+    'huelsenfrucht_allergie':     function (a) { return hat(a.unvertraeglichkeiten, 'F'); },
 
-    // Ernährungsform (Quiz-Frage: ernaehrung)
-    'vegetarisch_vegan':          function (a) { return a.ernaehrung === 'C' || a.ernaehrung === 'D'; },
-    'vegan':                      function (a) { return a.ernaehrung === 'D'; },
+    // Ernährungsform ───────────────────────────────────────────────────
+    'vegetarisch_vegan':          function (a) { return a.ernaehrung === 'D' || a.ernaehrung === 'E'; },  // D=Vegetarisch, E=Vegan
+    'vegan':                      function (a) { return a.ernaehrung === 'E'; },                          // jetzt E
+    'vegetarisch':                function (a) { return a.ernaehrung === 'D'; },                          // jetzt D
+
+    // Situation ────────────────────────────────────────────────────────
+    'schwangerschaft':            function (a) { return hat(a.situation, 'B'); },
+    'stillzeit':                  function (a) { return hat(a.situation, 'B'); },
+    'wechseljahre':               function (a) { return hat(a.situation, 'C'); },
+    'autoimmunerkrankung':        function (a) { return false; },  // Quiz erfasst das nicht direkt
+
+    // Alter ────────────────────────────────────────────────────────────
+    'minderjaehrig':              function (a) { return (a.alter || 0) < 18; },
+    'kinder':                     function (a) { return (a.alter || 0) < 18; },
   };
 
   return wissen.kontraindikationen.filter(function (k) {
