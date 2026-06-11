@@ -1,11 +1,18 @@
 /* ============================================================
    ki-chat.js – Floating Button & Overlay-Logik
    Verbindet sich mit dem Cloudflare Worker (sicherer Proxy)
-   Kennt: Wirkstoffe, Produkte, Quiz-Antworten, User-Stack
 
-   Abhängigkeiten:
-   - ki-system-prompt.js (kiSystemPrompt-Funktion)
-   - app.js (globale Variablen: AW, NP, meinStack)
+   Architektur:
+   - kiSystemPrompt() (ki-system-prompt.js) baut Basis-Prompt
+   - kiLadeKontextFuerNachricht() (ki-context-loader.js) ergaenzt
+     bei Bedarf Volldetails zu erkannten Wirkstoffen
+   - kiVerlauf wird mit jeder Nachricht aktualisiert
+
+   Abhaengigkeiten:
+   - ki-keywords.js          (kiAnalysiereNachricht)
+   - ki-context-loader.js    (kiLadeKontextFuerNachricht)
+   - ki-system-prompt.js     (kiSystemPrompt)
+   - state.js                (AW, NP, meinStack)
 ============================================================ */
 
 // ── Konfiguration ──
@@ -14,7 +21,7 @@ var KI_PROXY_URL = 'https://stronger-proxy.stronger-supplements.workers.dev';
 // ── State ──
 var kiOffen      = false;
 var kiLaedt      = false;
-var kiVerlauf    = [];   // Array von { role: 'user'|'assistant', content: '...' }
+var kiVerlauf    = [];   // Array von { role, content }
 var kiBegruesst  = false;
 
 
@@ -49,16 +56,21 @@ function kiChatToggle() {
 // ── Begrüßungsnachricht ──
 function kiBegruessen() {
   var name = (NP && NP.name && NP.name !== 'Nutzer') ? ', ' + NP.name : '';
-  var quizGemacht = AW && Object.keys(AW).length > 5;
+  var quizGemacht    = AW && Object.keys(AW).length > 5;
   var stackVorhanden = meinStack && Object.keys(meinStack).length > 0;
 
   var text;
   if (quizGemacht && stackVorhanden) {
-    text = 'Hey' + name + '! 👋 Ich kenne deinen Stack und dein Profil. Frag mich alles – Timing, Dosierung, Wechselwirkungen oder neue Empfehlungen.';
+    text = 'Hey' + name + '! 👋 Ich kenne dein Profil und deinen Stack. ' +
+           'Frag mich alles – Dosierungen, Wechselwirkungen, Mythen, ' +
+           'oder warum ein bestimmter Wirkstoff in deiner Empfehlung ist.';
   } else if (quizGemacht) {
-    text = 'Hey' + name + '! 👋 Ich hab dein Quiz-Profil geladen. Stell mir eine Frage zu deinen Supplements oder deinem Stack.';
+    text = 'Hey' + name + '! 👋 Dein Quiz-Profil ist geladen. ' +
+           'Stell mir Fragen zu Supplements oder lass dir Hintergründe erklären.';
   } else {
-    text = 'Hey' + name + '! 👋 Ich bin dein persönlicher Supplement-Assistent. Frag mich alles – von Kreatin bis Vitamin D. Tipp: Füll das Quiz aus für personalisierte Empfehlungen.';
+    text = 'Hey' + name + '! 👋 Ich bin dein Stronger-Assistent. ' +
+           'Frag mich alles rund um Supplements – von Kreatin bis Vitamin D. ' +
+           'Für persönliche Empfehlungen mach am besten kurz das Quiz.';
   }
 
   kiNachrichtHinzufuegen('ki', text);
@@ -74,13 +86,11 @@ function kiNachrichtHinzufuegen(rolle, text) {
 
   var bubble = document.createElement('div');
   bubble.className = 'ki-msg-bubble';
-  // Zeilenumbrüche respektieren
   bubble.innerHTML = text.replace(/\n/g, '<br>');
 
   div.appendChild(bubble);
   container.appendChild(div);
 
-  // Scroll nach unten
   container.scrollTop = container.scrollHeight;
 }
 
@@ -96,13 +106,20 @@ function kiTippAnzeigen(an) {
     var div = document.createElement('div');
     div.id = 'ki-typing-indicator';
     div.className = 'ki-msg ki-msg-ki';
-    div.innerHTML = '<div class="ki-msg-bubble"><div class="ki-typing"><span></span><span></span><span></span></div></div>';
+    div.innerHTML = '<div class="ki-msg-bubble"><div class="ki-typing">' +
+                    '<span></span><span></span><span></span></div></div>';
     container.appendChild(div);
     container.scrollTop = container.scrollHeight;
-    if (status) { status.textContent = 'schreibt…'; status.classList.add('tippt'); }
+    if (status) {
+      status.textContent = 'schreibt…';
+      status.classList.add('tippt');
+    }
   } else if (!an && bestehend) {
     bestehend.remove();
-    if (status) { status.textContent = 'Online · Dein Supplement-Experte'; status.classList.remove('tippt'); }
+    if (status) {
+      status.textContent = 'Online · Dein Supplement-Experte';
+      status.classList.remove('tippt');
+    }
   }
 }
 
@@ -130,22 +147,34 @@ function kiSenden() {
   }
 
   // KI anfragen
-  kiAnfragen();
+  kiAnfragen(text);
 }
 
 // ── API-Anfrage an Cloudflare Worker ──
-function kiAnfragen() {
+// Bekommt die letzte User-Nachricht zur Smart-Context-Erkennung
+function kiAnfragen(letzteUserNachricht) {
   kiLaedt = true;
   kiTippAnzeigen(true);
 
   var sendBtn = document.getElementById('ki-send');
   if (sendBtn) sendBtn.disabled = true;
 
+  // Basis-Prompt + Smart-Context bauen
+  var basisPrompt = kiSystemPrompt();
+  var smartKontext = '';
+
+  // Nur wenn der Loader verfuegbar ist (defensiv programmiert)
+  if (typeof kiLadeKontextFuerNachricht === 'function') {
+    smartKontext = kiLadeKontextFuerNachricht(letzteUserNachricht);
+  }
+
+  var voller_prompt = basisPrompt + (smartKontext || '');
+
   fetch(KI_PROXY_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      systemPrompt: kiSystemPrompt(),
+      systemPrompt: voller_prompt,
       messages:     kiVerlauf
     })
   })
@@ -155,7 +184,6 @@ function kiAnfragen() {
     kiTippAnzeigen(false);
     if (sendBtn) sendBtn.disabled = false;
 
-    // Antwort extrahieren
     var antwort = '';
     if (daten.content && daten.content[0] && daten.content[0].text) {
       antwort = daten.content[0].text;
@@ -165,7 +193,6 @@ function kiAnfragen() {
       antwort = '⚠️ Unbekannter Fehler. Bitte versuche es nochmal.';
     }
 
-    // Antwort zum Verlauf hinzufügen und anzeigen
     kiVerlauf.push({ role: 'assistant', content: antwort });
     kiNachrichtHinzufuegen('ki', antwort);
   })
@@ -173,7 +200,8 @@ function kiAnfragen() {
     kiLaedt = false;
     kiTippAnzeigen(false);
     if (sendBtn) sendBtn.disabled = false;
-    kiNachrichtHinzufuegen('ki', '⚠️ Verbindungsfehler. Prüfe deine Internetverbindung.');
+    kiNachrichtHinzufuegen('ki',
+      '⚠️ Verbindungsfehler. Prüfe deine Internetverbindung.');
     console.error('KI-Fehler:', err);
   });
 }

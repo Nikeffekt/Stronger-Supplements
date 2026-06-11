@@ -1,96 +1,281 @@
 /* ============================================================
-   ki-system-prompt.js – Wirkstoff-Index & System-Prompt
-   Wird vor ki-chat.js geladen
-   Greift auf globale Variablen zu: AW (Quiz), NP (Profil), meinStack
+   ki-system-prompt.js – Stronger KI-Assistent System-Prompt
+
+   Wird VOR ki-chat.js geladen, NACH ki-context-loader.js.
+
+   Aufgabe: Basis-System-Prompt erzeugen (immer mit dabei).
+   Smart-Loaded Wirkstoff-Details werden in ki-chat.js
+   zusaetzlich angehaengt.
+
+   Abhaengigkeiten:
+   - state.js              (AW, NP, meinStack, WIRKSTOFFE_WISSEN, DB)
+   - ki-context-loader.js  (kiLadeKontextFuerNachricht)
 ============================================================ */
 
-// ── Komprimierter Wirkstoff-Index (für System-Prompt) ──
-var KI_WIRKSTOFFE = {
-  "magnesium":        { name: "Magnesium",         kat: "gesundheit",    prio: "essential",   tagline: "Muskelkontraktion, Nerven & Schlaf",          timing: "Abends", brands: ["ESN","Myprotein","Thorne","NOW Foods"] },
-  "vitamin_d3_k2":    { name: "Vitamin D3+K2",     kat: "gesundheit",    prio: "essential",   tagline: "Knochen, Immunsystem & Testosteron",           timing: "Morgens zu Fett", brands: ["ESN","Myprotein","Thorne"] },
-  "omega_3":          { name: "Omega-3",            kat: "gesundheit",    prio: "essential",   tagline: "Entzündung, Herz, Gehirn & Recovery",          timing: "Zu Mahlzeiten", brands: ["Norsan","Nordic Naturals","ESN"] },
-  "zink":             { name: "Zink",               kat: "gesundheit",    prio: "essential",   tagline: "Testosteron, Immunsystem & Enzyme",             timing: "Morgens nüchtern", brands: ["ESN","Thorne","NOW Foods"] },
-  "vitamin_c":        { name: "Vitamin C",          kat: "gesundheit",    prio: "empfohlen",   tagline: "Kollagensynthese & Antioxidans",                timing: "Morgens/mittags", brands: ["ESN","Myprotein","NOW Foods"] },
-  "probiotika":       { name: "Probiotika",         kat: "verdauung",     prio: "empfohlen",   tagline: "Darmflora & Nährstoffaufnahme",                 timing: "Nüchtern morgens", brands: ["ESN","Thorne","NOW Foods"] },
-  "verdauungsenzyme": { name: "Verdauungsenzyme",   kat: "verdauung",     prio: "empfohlen",   tagline: "Proteinverwertung & Blähungen",                 timing: "Zu Mahlzeiten", brands: ["ESN","Myprotein","Thorne"] },
-  "whey_protein":     { name: "Whey Protein",       kat: "muskelaufbau",  prio: "essential",   tagline: "Muskelaufbau, Sättigung & Recovery",            timing: "Post-Workout", brands: ["ESN","Myprotein","Optimum Nutrition"] },
-  "iso_clear":        { name: "Iso Clear",          kat: "muskelaufbau",  prio: "empfohlen",   tagline: "Whey Isolat, fettarm & leichte Textur",         timing: "Post-Workout", brands: ["ESN","Myprotein","BioTechUSA"] },
-  "kreatin":          { name: "Kreatin Monohydrat", kat: "muskelaufbau",  prio: "essential",   tagline: "Kraft, Schnellkraft & Muskelmasse",             timing: "Täglich konsistent", brands: ["ESN","Myprotein","Optimum Nutrition"] },
-  "eaa_bcaa":         { name: "EAA & BCAA",         kat: "muskelaufbau",  prio: "empfohlen",   tagline: "Muskelproteinsynthese & Anti-Katabolismus",     timing: "Intra-Workout", brands: ["ESN","Myprotein","BioTechUSA"] },
-  "pre_workout":      { name: "Pre-Workout",        kat: "muskelaufbau",  prio: "optional",    tagline: "Energie, Fokus & Pump",                         timing: "20-30 Min. vor Training", brands: ["ESN","Myprotein","BioTechUSA"] },
-  "l_carnitin":       { name: "L-Carnitin",         kat: "muskelaufbau",  prio: "empfohlen",   tagline: "Fettverbrennung & Energie",                     timing: "Vor Training/Mahlzeit", brands: ["ESN","Myprotein","NOW Foods"] },
-  "beta_alanin":      { name: "Beta-Alanin",        kat: "muskelaufbau",  prio: "empfohlen",   tagline: "Ausdauer & Muskelpuffer",                       timing: "Pre-Workout", brands: ["ESN","Myprotein","NOW Foods"] },
-  "ashwagandha":      { name: "Ashwagandha",        kat: "regeneration",  prio: "empfohlen",   tagline: "Cortisol senken, Schlaf & Stressresistenz",     timing: "Abends", brands: ["ESN","Myprotein","Thorne"] },
-  "melatonin":        { name: "Melatonin",          kat: "regeneration",  prio: "optional",    tagline: "Einschlafhilfe & Schlafqualität",               timing: "30 Min. vor Schlaf", brands: ["ESN","Myprotein","NOW Foods"] },
-  "zma":              { name: "ZMA",                kat: "regeneration",  prio: "optional",    tagline: "Zink + Magnesium + B6 für Schlaf & Testosteron", timing: "Abends nüchtern", brands: ["ESN","Myprotein","NOW Foods"] },
-  "kollagen":         { name: "Kollagen Peptide",   kat: "gelenke",       prio: "empfohlen",   tagline: "Gelenke, Haut & Bindegewebe",                   timing: "Mit Vitamin C", brands: ["Norsan","ESN","Myprotein"] },
-  "glucosamin_chond": { name: "Glucosamin+Chondroitin", kat: "gelenke",  prio: "optional",    tagline: "Knorpelschutz & Gelenkschmierung",              timing: "Zu Mahlzeiten", brands: ["ESN","Myprotein","Thorne"] },
-  "curcumin":         { name: "Curcumin",           kat: "gelenke",       prio: "empfohlen",   tagline: "Entzündungshemmend & Antioxidans",              timing: "Zu Fett", brands: ["ESN","Thorne","NOW Foods"] },
-  "l_glutamin":       { name: "L-Glutamin",         kat: "muskelaufbau",  prio: "optional",    tagline: "Darmgesundheit & Muskelregeneration",           timing: "Post-Workout/Abends", brands: ["ESN","Myprotein","NOW Foods"] },
-  "hmb":              { name: "HMB",                kat: "muskelaufbau",  prio: "optional",    tagline: "Muskelschutz beim Abnehmen",                    timing: "Mit Mahlzeiten", brands: ["ESN","Myprotein","Thorne"] },
-  "msm":              { name: "MSM",                kat: "gelenke",       prio: "optional",    tagline: "Schwefel für Gelenke & Haut",                   timing: "Zu Mahlzeiten", brands: ["ESN","Myprotein","NOW Foods"] },
-  "grüner_tee_egcg":  { name: "Grüner Tee (EGCG)", kat: "fettabbau",     prio: "optional",    tagline: "Fettverbrennung & Antioxidans",                 timing: "Vor Training/morgens", brands: ["ESN","Myprotein","NOW Foods"] },
-  "cla":              { name: "CLA",                kat: "fettabbau",     prio: "optional",    tagline: "Körperfettreduktion & Muskeldefinition",        timing: "Zu Mahlzeiten", brands: ["ESN","Myprotein","NOW Foods"] }
-};
 
-// ── System-Prompt aufbauen ──
-// Wird bei jeder Anfrage neu gebaut damit User-Kontext aktuell ist
+/* ──────────────────────────────────────────────────────────
+   WIRKSTOFF-UEBERSICHT (kompakt fuer Basis-Prompt)
+   Aus WIRKSTOFFE_WISSEN nur die wichtigsten Felder
+────────────────────────────────────────────────────────── */
+function kiBaueWirkstoffUebersicht() {
+  if (typeof WIRKSTOFFE_WISSEN === 'undefined' || !WIRKSTOFFE_WISSEN) {
+    return '(Wissensbasis noch nicht geladen)';
+  }
+
+  var zeilen = [];
+  Object.keys(WIRKSTOFFE_WISSEN).forEach(function (wid) {
+    if (wid === '_meta') return;
+    var w = WIRKSTOFFE_WISSEN[wid];
+    if (!w || !w.name) return;
+
+    // Kompakt: Name [Kategorie, Level-X] – Kurzbeschreibung
+    var lvl = (w.evidenz && w.evidenz.level) ? w.evidenz.level : '?';
+    var kat = w.kategorie || '?';
+    var kb  = w.kurz_beschreibung || '';
+
+    // Kurzbeschreibung auf max 100 Zeichen kuerzen
+    if (kb.length > 100) kb = kb.substring(0, 97) + '...';
+
+    zeilen.push('- ' + w.name + ' [' + kat + ', Level ' + lvl + ']: ' + kb);
+  });
+
+  return zeilen.join('\n');
+}
+
+
+/* ──────────────────────────────────────────────────────────
+   USER-PROFIL FORMATIEREN
+   Quiz-Antworten lesbar darstellen
+────────────────────────────────────────────────────────── */
+function kiBaueUserProfil() {
+  if (!AW || Object.keys(AW).length === 0) {
+    return 'Noch kein Quiz ausgefuellt.';
+  }
+
+  var z = [];
+
+  // Demografie
+  if (AW.alter)       z.push('Alter: ' + AW.alter + ' Jahre');
+  else if (AW.intro)  z.push('Jahrgang: ' + AW.intro);
+
+  if (AW.geschlecht) {
+    var g = { A: 'Maennlich', B: 'Weiblich' }[AW.geschlecht] || AW.geschlecht;
+    z.push('Geschlecht: ' + g);
+  }
+
+  if (AW.gewicht)    z.push('Gewicht: ' + AW.gewicht + ' kg');
+
+  // Training
+  if (AW.training) {
+    var tMap = {
+      A: 'Krafttraining 4+ x/Woche',
+      B: 'Krafttraining 2-3 x/Woche',
+      C: 'Hauptsaechlich Cardio',
+      D: 'Mix: Kraft + Cardio',
+      E: 'Wenig Sport (max 1x/Woche)'
+    };
+    z.push('Training: ' + (tMap[AW.training] || AW.training));
+  }
+
+  if (AW.erfahrung) {
+    var eMap = {
+      einsteiger:        'Anfaenger (max. 1 Jahr)',
+      fortgeschritten:   'Erfahren (1-3 Jahre)',
+      profi:             'Sehr erfahren (3+ Jahre)'
+    };
+    z.push('Erfahrung: ' + (eMap[AW.erfahrung] || AW.erfahrung));
+  }
+
+  // Ziele (Multi-Select)
+  if (AW.ziele) {
+    var zMap = {
+      A: 'Muskelaufbau', B: 'Fettabbau', C: 'Mehr Energie',
+      D: 'Ausdauer', E: 'Regeneration', F: 'Gesundheit',
+      G: 'Stress reduzieren'
+    };
+    var ziele = (AW.ziele || '').split(',').map(function (c) {
+      return zMap[c.trim()] || c.trim();
+    });
+    z.push('Ziele: ' + ziele.join(', '));
+  }
+
+  // Ernaehrung
+  if (AW.ernaehrung) {
+    var enMap = {
+      A: 'Alles essen', B: 'Flexitarisch', C: 'Pescetarisch',
+      D: 'Vegetarisch', E: 'Vegan'
+    };
+    z.push('Ernaehrung: ' + (enMap[AW.ernaehrung] || AW.ernaehrung));
+  }
+
+  // Allergien
+  if (AW.allergien && AW.allergien !== 'A') {
+    var aMap = {
+      B: 'Laktoseintoleranz', C: 'Milcheiweiss-Allergie',
+      D: 'Fischallergie', E: 'Glutenunvertraeglichkeit',
+      F: 'Sojaallergie'
+    };
+    var allergien = (AW.allergien || '').split(',').map(function (c) {
+      return aMap[c.trim()] || c.trim();
+    });
+    z.push('Allergien: ' + allergien.join(', '));
+  } else if (AW.allergien === 'A') {
+    z.push('Allergien: keine');
+  }
+
+  // Medikamente / Erkrankungen – SICHERHEITSRELEVANT
+  if (AW.medikamente && AW.medikamente !== 'A') {
+    var mMap = {
+      B: 'Blutverduenner / Gerinnungshemmer',
+      C: 'Schilddruesenerkrankung',
+      D: 'Bluthochdruck / Herzerkrankung',
+      E: 'Nierenerkrankung',
+      F: 'Lebererkrankung',
+      G: 'Diabetes',
+      H: 'Antidepressiva / Psychopharmaka'
+    };
+    var medis = (AW.medikamente || '').split(',').map(function (c) {
+      return mMap[c.trim()] || c.trim();
+    });
+    z.push('!!! MEDIKAMENTE/ERKRANKUNGEN: ' + medis.join(', '));
+  } else if (AW.medikamente === 'A') {
+    z.push('Medikamente/Erkrankungen: keine');
+  }
+
+  // Situation
+  if (AW.situation && AW.situation !== 'A') {
+    var sMap = {
+      B: 'Schwangerschaft/Stillzeit',
+      C: 'Wechseljahre',
+      D: 'Schlafprobleme',
+      E: 'Reha/nach Krankheit'
+    };
+    var sits = (AW.situation || '').split(',').map(function (c) {
+      return sMap[c.trim()] || c.trim();
+    });
+    z.push('Situation: ' + sits.join(', '));
+  }
+
+  return z.join('\n');
+}
+
+
+/* ──────────────────────────────────────────────────────────
+   AKTUELLER STACK
+────────────────────────────────────────────────────────── */
+function kiBaueStack() {
+  if (!meinStack || Object.keys(meinStack).length === 0) {
+    return 'Kein Stack ausgewaehlt.';
+  }
+
+  var z = [];
+  Object.keys(meinStack).forEach(function (sid) {
+    var s = meinStack[sid];
+    if (!s || !s.prod) return;
+    var line = '- ' + (s.prod.marke || '') + ' ' + (s.prod.name || sid);
+    if (s.preis) line += ' (' + s.preis + ' EUR/Monat)';
+    z.push(line);
+  });
+  return z.join('\n');
+}
+
+
+/* ──────────────────────────────────────────────────────────
+   HAUPT-FUNKTION
+   Wird von ki-chat.js bei JEDER Anfrage aufgerufen.
+   Kontext-Erweiterung passiert durch ki-context-loader.js
+   in ki-chat.js (NACH dieser Basis-Prompt).
+────────────────────────────────────────────────────────── */
 function kiSystemPrompt() {
-  // Wirkstoff-Index als kompakter Text
-  var wIndex = Object.entries(KI_WIRKSTOFFE).map(function(entry) {
-    var w = entry[1];
-    return w.name + ' [' + w.kat + ', ' + w.prio + ']: ' + w.tagline + ' · Timing: ' + w.timing + ' · Marken: ' + w.brands.join(', ');
-  }).join('\n');
-
-  // Quiz-Antworten des Users
-  var quizInfo = 'Noch kein Quiz ausgefüllt.';
-  if (AW && Object.keys(AW).length > 0) {
-    var zeilen = [];
-    if (AW.intro)       zeilen.push('Jahrgang: ' + AW.intro);
-    if (AW.geschlecht)  zeilen.push('Geschlecht: ' + ({ A:'Männlich', B:'Weiblich', C:'k.A.' }[AW.geschlecht] || AW.geschlecht));
-    if (AW.groesse)     zeilen.push('Größe: ' + AW.groesse + ' cm');
-    if (AW.gewicht)     zeilen.push('Gewicht: ' + AW.gewicht + ' kg');
-    if (AW.ziel)        zeilen.push('Ziel: ' + AW.ziel);
-    if (AW.training)    zeilen.push('Training: ' + AW.training + 'x/Woche');
-    if (AW.ernaehrung)  zeilen.push('Ernährung: ' + AW.ernaehrung);
-    if (AW.schlaf)      zeilen.push('Schlaf: ' + AW.schlaf);
-    if (AW.stress)      zeilen.push('Stress: ' + AW.stress);
-    if (AW.allergien)   zeilen.push('Allergien: ' + AW.allergien);
-    if (AW.medis)       zeilen.push('Medikamente: ' + AW.medis);
-    quizInfo = zeilen.join('\n');
-  }
-
-  // Aktueller Stack des Users
-  var stackInfo = 'Kein Stack ausgewählt.';
-  if (meinStack && Object.keys(meinStack).length > 0) {
-    stackInfo = Object.values(meinStack).map(function(s) {
-      return '- ' + s.prod.name + ' (' + (s.preis || '?') + ' €/Monat)';
-    }).join('\n');
-  }
-
-  // User-Name
   var userName = (NP && NP.name && NP.name !== 'Nutzer') ? NP.name : null;
+  var hasQuiz  = AW && Object.keys(AW).length > 0;
+  var hasStack = meinStack && Object.keys(meinStack).length > 0;
 
   return [
-    'Du bist der KI-Supplement-Assistent von SupplAI – einer App die Supplement-Stacks personalisiert empfiehlt.',
-    'Du bist präzise, wissenschaftlich fundiert und sprichst den User direkt und freundlich an (Du-Form).',
-    'Antworte kompakt (max. 3-4 Sätze) außer der User fragt nach einer detaillierten Erklärung.',
-    'Verwende Emojis sparsam aber sinnvoll.',
-    'Empfehle immer konkrete Produkte aus unserem Sortiment wenn möglich.',
-    'Weise auf Wechselwirkungen, Überdosierungsrisiken und Timing-Regeln hin.',
+
+    /* ── ROLLE & TON ── */
+    'Du bist der KI-Assistent von Stronger – einer App fuer ' +
+    'evidenzbasierte Supplement-Empfehlungen.',
     '',
-    '── VERFÜGBARE WIRKSTOFFE & PRODUKTE ──',
-    wIndex,
+    'TON UND STIL:',
+    '- Locker und freundlich, aber fachlich praezise.',
+    '- Du-Form, direkt, ohne unnoetige Hoeflichkeitsfloskeln.',
+    '- Kompakt: standardmaessig 2-4 Saetze.',
+    '- Bei komplexen Themen: laenger, gut strukturiert.',
+    '- Emojis nur sparsam (max. 1 pro Antwort, wenn ueberhaupt).',
+    '- Keine Marketing-Sprache, keine Heilsversprechen.',
     '',
-    '── USER-PROFIL (aus Quiz) ──',
-    quizInfo,
+
+    /* ── KERN-VERHALTENSREGELN ── */
+    'VERHALTEN:',
+    '1. EHRLICHKEIT geht ueber Verkaufsinteresse. Wenn etwas',
+    '   ueberbewertet ist, sag das offen.',
+    '2. Bei medizinisch heiklen Themen (Medikamente, Erkrankungen,',
+    '   Schwangerschaft, Niere, Leber, Herz): IMMER Quellen nennen',
+    '   und auf aerztliche Beratung verweisen.',
+    '3. Bei allen anderen Themen: Quellen nur wenn User explizit',
+    '   danach fragt – sonst stoert es den Gespraechsfluss.',
+    '4. Wenn du etwas nicht weisst: sag das ehrlich.',
+    '5. Erfinde KEINE Produkte, Wirkstoffe oder Studien.',
+    '   Halte dich strikt an die Wissensbasis.',
+    '6. Bei Mythen (z.B. "Schadet Kreatin den Nieren?"): klar',
+    '   aufklaeren mit Quelle.',
     '',
-    '── AKTUELLER STACK DES USERS ──',
-    stackInfo,
+
+    /* ── SICHERHEITS-PROTOKOLL (immer aktiv) ── */
+    'SICHERHEITS-REGELN:',
+    '- Curcumin: HART ausschliessen bei Lebererkrankung (DILIN-Daten)',
+    '  und bei Blutverduennern.',
+    '- Ashwagandha: HART ausschliessen bei Schilddruesenerkrankung',
+    '  und Antidepressiva.',
+    '- Kreatin, ZMA, HMB: HART ausschliessen bei Nierenerkrankung.',
+    '- Pre-Workout: HART ausschliessen bei Herz/Hypertonie/',
+    '  Antidepressiva/Diabetes/Schilddruese.',
+    '- Vitamin K2: HART ausschliessen bei Blutverduennern.',
+    '- Melatonin: HART ausschliessen bei Antidepressiva.',
+    '- Schwangerschaft: STARK eingeschraenkte Auswahl, viele',
+    '  Wirkstoffe ausgeschlossen.',
+    '- Notfall-Symptome (Atemnot, Brustschmerz, Ohnmacht, schwere',
+    '  allergische Reaktion): sofort auf Notfallversorgung verweisen.',
     '',
-    userName ? ('── USER-NAME: ' + userName) : '',
+
+    /* ── EMPFEHLUNGS-LOGIK ── */
+    'EMPFEHLUNGEN:',
+    'Du gibst aktuell KEINE eigenen Stack-Empfehlungen.',
+    '- Wenn der User das Quiz gemacht hat: erklaere seinen',
+    '  vorhandenen Stack oder beantworte Detail-Fragen dazu.',
+    '- Wenn User nach NEUEN Empfehlungen fragt: erklaere',
+    '  Hintergrund-Wissen zu passenden Wirkstoffen und verweise',
+    '  freundlich aufs Quiz fuer eine personalisierte Auswertung.',
+    '- Du kannst zu jedem einzelnen Wirkstoff alles erklaeren',
+    '  (Wirkung, Dosis, Timing, Vorsicht).',
     '',
-    'Halte dich an diese Daten. Erfinde keine Produkte oder Wirkstoffe die nicht im Index stehen.',
-    'Du bist kein Arzt – weise bei medizinischen Fragen auf einen Arzt hin.'
+
+    /* ── WIRKSTOFF-UEBERSICHT (kompakt) ── */
+    '── VERFUEGBARE WIRKSTOFFE IN DER WISSENSBASIS ──',
+    '(Volldetails werden bei Bedarf zusaetzlich injected)',
+    '',
+    kiBaueWirkstoffUebersicht(),
+    '',
+
+    /* ── USER-KONTEXT ── */
+    '── USER-PROFIL ──',
+    userName ? ('Name: ' + userName) : 'Name: nicht angegeben',
+    '',
+    kiBaueUserProfil(),
+    '',
+    '── AKTUELLER STACK ──',
+    kiBaueStack(),
+    '',
+
+    /* ── STATUS-FLAGS ── */
+    'STATUS:',
+    '- Quiz ausgefuellt: ' + (hasQuiz ? 'JA' : 'NEIN'),
+    '- Stack vorhanden: ' + (hasStack ? 'JA' : 'NEIN'),
+    '',
+
+    'Bei jeder Antwort: respektiere das Profil, halte dich an',
+    'die Sicherheitsregeln, und bleibe ehrlich.'
+
   ].join('\n');
 }
